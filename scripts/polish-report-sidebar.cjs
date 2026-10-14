@@ -1,6 +1,6 @@
 // Shared navigation treatment for the three analysis pages. No model/data edits.
 const fs=require('fs'),path=require('path'),crypto=require('crypto');
-const report=path.resolve(__dirname,'../powerbi-ledningsrapport/LedningsrapportUtanScroll.Report');
+let report=path.resolve(__dirname,'../powerbi-ledningsrapport/LedningsrapportUtanScroll.Report');
 const read=p=>JSON.parse(fs.readFileSync(p,'utf8').replace(/^\uFEFF/,''));
 const lit=v=>({expr:{Literal:{Value:typeof v==='boolean'?String(v):typeof v==='number'?`${v}D`:"'"+v.replace(/'/g,"''")+"'"}}});
 const color=c=>({solid:{color:lit(c)}});
@@ -11,7 +11,8 @@ function decorate(page,key,label,box,ink='#708198',size=10.5,back=null){
  const v={$schema:'https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json',name,position:{x:box[0],y:box[1],width:box[2],height:box[3],z:180,tabOrder:180},visual:{visualType:'textbox',objects:{general:[{properties:{paragraphs:[{textRuns:[{value:label,textStyle:{fontFamily:'Segoe UI Semibold',fontSize:size+'pt',color:ink}}],horizontalTextAlignment:'left'}]}}]},visualContainerObjects:{background:[{properties:{show:lit(!!back),color:color(back||'#FFFFFF'),transparency:lit(0)}}],border:[{properties:{show:lit(false)}}],padding:[{properties:{top:lit(0),bottom:lit(0),left:lit(0),right:lit(0)}}],general:[{properties:{altText:lit(label||'Avdelare')}}]}}};
  const dir=path.join(report,'definition/pages',page,'visuals',name);fs.mkdirSync(dir,{recursive:true});fs.writeFileSync(path.join(dir,'visual.json'),JSON.stringify(v,null,2)+'\n');
 }
-function polish(){
+function polish(reportPath){
+ if(reportPath)report=path.resolve(reportPath);
  const reportFile=path.join(report,'definition/report.json'), definition=read(reportFile);
  const resources=definition.resourcePackages.find(p=>p.name==='RegisteredResources');
  const logo='AubecoLogoBlue202610140002.svg';
@@ -20,8 +21,8 @@ function polish(){
  for(const name of fs.readdirSync(path.join(report,'StaticResources/RegisteredResources')).filter(n=>n.startsWith('navigation-')&&n.endsWith('.png'))){if(!resources.items.some(r=>r.name===name))resources.items.push({name,path:name,type:'Image'});}
  fs.writeFileSync(reportFile,JSON.stringify(definition,null,2)+'\n');
  const meta=read(path.join(report,'definition/pages/pages.json')),home=meta.pageOrder[0];
- const targets=[meta.pageOrder[1],meta.pageOrder[2],meta.pageOrder[3]];
- const rows=[{label:'Start',kind:'home',y:24,h:48,target:home},{label:'Ledningsöversikt',kind:'overview',y:156,h:56,target:targets[0]},{label:'Försäljningsöversikt',kind:'sales',y:224,h:56,target:targets[1]},{label:'Kunder',kind:'customers',y:292,h:56,target:targets[2]},{label:'Budget',kind:'budget',y:360,h:56},{label:'Projekt / beläggning',kind:'projects',y:428,h:56}];
+ const targets=meta.pageOrder.slice(1).filter(p=>!['Hidden','HiddenInViewMode'].includes(read(path.join(report,'definition/pages',p,'page.json')).visibility));
+ const rows=[{label:'Start',kind:'home',y:24,h:48,target:home},{label:'Ledningsöversikt',kind:'overview',y:156,h:56,target:targets[0]},{label:'Försäljningsöversikt',kind:'sales',y:224,h:56,target:targets[1]},{label:'Kunder',kind:'customers',y:292,h:56,target:targets[2]},{label:'Budget',kind:'budget',y:360,h:56,target:targets[3]},{label:targets[4]?'Uppdrag / beläggning':'Projekt / beläggning',kind:'projects',y:428,h:56,target:targets[4]}];
  let count=0;
  for(const page of targets.filter(Boolean)){
   const dir=path.join(report,'definition/pages',page,'visuals');let updated=0;
@@ -35,7 +36,7 @@ function polish(){
    }
    if(!['actionButton','image'].includes(v.visual.visualType)||v.position.x>=50)continue;
    const raw=(v.visual.objects.text||[]).map(x=>x.properties?.text?.expr?.Literal?.Value||'').join(' ');
-   const row=v.visual.visualType==='image'&&v.position.y===24?rows[0]:rows.find(r=>r.label==='Start'?raw.includes('Start'):raw.includes(r.label));if(!row)continue;
+   const row=v.visual.visualType==='image'&&v.position.y===24?rows[0]:rows.find(r=>r.label==='Start'?raw.includes('Start'):raw.includes(r.label)||(r.kind==='projects'&&raw.includes('Projekt / beläggning')));if(!row)continue;
    const active=row.target===page,disabled=!row.target,isHome=row.kind==='home';
    Object.assign(v.position,{x:16,y:row.y,width:240,height:row.h,z:200+rows.indexOf(row),tabOrder:200+rows.indexOf(row)});
    if(isHome){

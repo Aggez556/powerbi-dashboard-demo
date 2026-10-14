@@ -1,0 +1,27 @@
+﻿NodID,Rad,Undergrupp,Post,Etikett,Förälder,Överförälder,Nivå,Typ,Ordning,HarBarn,Avsnitt
+r1,Nettoomsättning,,,Nettoomsättning,,,0,grupp,1000,1,Intäkter
+r1_s1,Nettoomsättning,Produktförsäljning,,Produktförsäljning,r1,,1,konto,1010,0,
+r1_s2,Nettoomsättning,Teknisk service,,Teknisk service,r1,,1,konto,1020,0,
+r1_s3,Nettoomsättning,Bemanning,,Bemanning,r1,,1,konto,1030,0,
+r2,Direkta kostnader,,,Direkta kostnader,,,0,grupp,2000,1,Kostnader
+r2_s1,Direkta kostnader,Varor och material,,Varor och material,r2,,1,konto,2010,0,
+r2_s2,Direkta kostnader,Direkt leveranspersonal,,Direkt leveranspersonal,r2,,1,konto,2020,0,
+r2_s3,Direkta kostnader,Underleverantörer,,Underleverantörer,r2,,1,konto,2030,0,
+r2_s4,Direkta kostnader,Övrigt direkt,,Övrigt direkt,r2,,1,konto,2040,0,
+r2_s5,Direkta kostnader,Ej uppdragsfördelad personal,,Ej uppdragsfördelad personal,r2,,1,konto,2050,0,
+r3,Bruttovinst,,,Bruttovinst,,,0,resultat,3000,0,
+r4,Bruttomarginal,,,Bruttomarginal,,,0,marginal,4000,0,
+r5,Gemensam personal,,,Gemensam personal,,,0,grupp,5000,1,Gemensamma kostnader
+r5_s1,Gemensam personal,Löner och sociala avgifter,,Löner och sociala avgifter,r5,,1,konto,5010,0,
+r6,Övriga rörelsekostnader,,,Övriga rörelsekostnader,,,0,grupp,6000,1,
+r6_s1,Övriga rörelsekostnader,Lokaler,,Lokaler,r6,,1,konto,6010,0,
+r6_s2,Övriga rörelsekostnader,IT,,IT,r6,,1,grupp,6020,1,
+a4002,Övriga rörelsekostnader,IT,Licenser,Licenser,r6_s2,r6,2,konto,6021,0,
+a4003,Övriga rörelsekostnader,IT,IT-drift,IT-drift,r6_s2,r6,2,konto,6022,0,
+a4004,Övriga rörelsekostnader,IT,IT-konsulter,IT-konsulter,r6_s2,r6,2,konto,6023,0,
+r6_s3,Övriga rörelsekostnader,Marknadsföring,,Marknadsföring,r6,,1,konto,6030,0,
+r6_s4,Övriga rörelsekostnader,Administration och övrigt,,Administration och övrigt,r6,,1,konto,6040,0,
+r7,Avskrivningar,,,Avskrivningar,,,0,grupp,7000,1,
+r7_s1,Avskrivningar,Avskrivningar enligt plan,,Avskrivningar enligt plan,r7,,1,konto,7010,0,
+r8,Rörelseresultat,,,Rörelseresultat,,,0,resultat,8000,0,
+r9,Rörelsemarginal,,,Rörelsemarginal,,,0,marginal,9000,0,

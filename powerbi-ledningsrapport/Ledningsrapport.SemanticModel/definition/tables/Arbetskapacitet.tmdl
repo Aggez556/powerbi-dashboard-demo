@@ -1,0 +1,41 @@
+/// Reproducerbar uppdragsanalys. Separata datumroller för utfall och plan.
+table 'Arbetskapacitet'
+
+	column 'ResursID'
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: ResursID
+		isHidden
+
+	column 'Datumnyckel'
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: Datumnyckel
+		isHidden
+
+	column 'Schematimmar'
+		dataType: double
+		summarizeBy: none
+		sourceColumn: Schematimmar
+		isHidden
+
+	column 'Frånvaro'
+		dataType: double
+		summarizeBy: none
+		sourceColumn: Frånvaro
+		isHidden
+
+	column 'Tillgängligt'
+		dataType: double
+		summarizeBy: none
+		sourceColumn: Tillgängligt
+		isHidden
+
+	partition 'Arbetskapacitet' = m
+		mode: import
+		source =
+			let
+			 Source=Csv.Document(File.Contents(DataFolder & "/Arbetskapacitet.csv"),[Delimiter=",",Encoding=65001,QuoteStyle=QuoteStyle.Csv]),
+			 Headers=Table.PromoteHeaders(Source,[PromoteAllScalars=true]),
+			 Typed=Table.TransformColumnTypes(Headers,{{"ResursID", Int64.Type},{"Datumnyckel", Int64.Type},{"Schematimmar", type number},{"Frånvaro", type number},{"Tillgängligt", type number}},"en-US")
+			in Typed

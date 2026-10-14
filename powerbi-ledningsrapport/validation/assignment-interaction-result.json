@@ -1,0 +1,2289 @@
+﻿{
+    "status":  "queried",
+    "resultSets":  [
+                       [
+                           {
+                               "Uppdragsstatusval[Urval]":  "Alla",
+                               "[Visible]":  1243,
+                               "[Booked]":  6800,
+                               "[Jobs]":  960
+                           },
+                           {
+                               "Uppdragsstatusval[Urval]":  "Avslutade",
+                               "[Visible]":  960,
+                               "[Booked]":  6800,
+                               "[Jobs]":  960
+                           },
+                           {
+                               "Uppdragsstatusval[Urval]":  "Behöver uppföljning",
+                               "[Visible]":  12,
+                               "[Booked]":  6800,
+                               "[Jobs]":  960
+                           },
+                           {
+                               "Uppdragsstatusval[Urval]":  "Pågående",
+                               "[Visible]":  283,
+                               "[Booked]":  6800,
+                               "[Jobs]":  960
+                           }
+                       ],
+                       [
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 301",
+                               "Planveckor[Vecka]":  "v41",
+                               "[Booked]":  30,
+                               "[Capacity]":  35,
+                               "[Free]":  5,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 301",
+                               "Planveckor[Vecka]":  "v42",
+                               "[Booked]":  30,
+                               "[Capacity]":  35,
+                               "[Free]":  5,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 301",
+                               "Planveckor[Vecka]":  "v43",
+                               "[Booked]":  30,
+                               "[Capacity]":  35,
+                               "[Free]":  5,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 301",
+                               "Planveckor[Vecka]":  "v44",
+                               "[Booked]":  30,
+                               "[Capacity]":  35,
+                               "[Free]":  5,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 301",
+                               "Planveckor[Vecka]":  "v45",
+                               "[Booked]":  30,
+                               "[Capacity]":  35,
+                               "[Free]":  5,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 301",
+                               "Planveckor[Vecka]":  "v46",
+                               "[Booked]":  30,
+                               "[Capacity]":  35,
+                               "[Free]":  5,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 301",
+                               "Planveckor[Vecka]":  "v47",
+                               "[Booked]":  30,
+                               "[Capacity]":  35,
+                               "[Free]":  5,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 301",
+                               "Planveckor[Vecka]":  "v48",
+                               "[Booked]":  30,
+                               "[Capacity]":  35,
+                               "[Free]":  5,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 302",
+                               "Planveckor[Vecka]":  "v41",
+                               "[Booked]":  30,
+                               "[Capacity]":  35,
+                               "[Free]":  5,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 302",
+                               "Planveckor[Vecka]":  "v42",
+                               "[Booked]":  30,
+                               "[Capacity]":  35,
+                               "[Free]":  5,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 302",
+                               "Planveckor[Vecka]":  "v43",
+                               "[Booked]":  30,
+                               "[Capacity]":  35,
+                               "[Free]":  5,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 302",
+                               "Planveckor[Vecka]":  "v44",
+                               "[Booked]":  30,
+                               "[Capacity]":  35,
+                               "[Free]":  5,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 302",
+                               "Planveckor[Vecka]":  "v45",
+                               "[Booked]":  30,
+                               "[Capacity]":  35,
+                               "[Free]":  5,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 302",
+                               "Planveckor[Vecka]":  "v46",
+                               "[Booked]":  30,
+                               "[Capacity]":  35,
+                               "[Free]":  5,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 302",
+                               "Planveckor[Vecka]":  "v47",
+                               "[Booked]":  30,
+                               "[Capacity]":  35,
+                               "[Free]":  5,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 302",
+                               "Planveckor[Vecka]":  "v48",
+                               "[Booked]":  30,
+                               "[Capacity]":  35,
+                               "[Free]":  5,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 303",
+                               "Planveckor[Vecka]":  "v41",
+                               "[Booked]":  30,
+                               "[Capacity]":  35,
+                               "[Free]":  5,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 303",
+                               "Planveckor[Vecka]":  "v42",
+                               "[Booked]":  30,
+                               "[Capacity]":  35,
+                               "[Free]":  5,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 303",
+                               "Planveckor[Vecka]":  "v43",
+                               "[Booked]":  30,
+                               "[Capacity]":  35,
+                               "[Free]":  5,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 303",
+                               "Planveckor[Vecka]":  "v44",
+                               "[Booked]":  30,
+                               "[Capacity]":  35,
+                               "[Free]":  5,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 303",
+                               "Planveckor[Vecka]":  "v45",
+                               "[Booked]":  30,
+                               "[Capacity]":  35,
+                               "[Free]":  5,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 303",
+                               "Planveckor[Vecka]":  "v46",
+                               "[Booked]":  30,
+                               "[Capacity]":  35,
+                               "[Free]":  5,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 303",
+                               "Planveckor[Vecka]":  "v47",
+                               "[Booked]":  30,
+                               "[Capacity]":  35,
+                               "[Free]":  5,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 303",
+                               "Planveckor[Vecka]":  "v48",
+                               "[Booked]":  30,
+                               "[Capacity]":  35,
+                               "[Free]":  5,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 304",
+                               "Planveckor[Vecka]":  "v41",
+                               "[Booked]":  30,
+                               "[Capacity]":  35,
+                               "[Free]":  5,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 304",
+                               "Planveckor[Vecka]":  "v42",
+                               "[Booked]":  30,
+                               "[Capacity]":  35,
+                               "[Free]":  5,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 304",
+                               "Planveckor[Vecka]":  "v43",
+                               "[Booked]":  30,
+                               "[Capacity]":  35,
+                               "[Free]":  5,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 304",
+                               "Planveckor[Vecka]":  "v44",
+                               "[Booked]":  30,
+                               "[Capacity]":  35,
+                               "[Free]":  5,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 304",
+                               "Planveckor[Vecka]":  "v45",
+                               "[Booked]":  30,
+                               "[Capacity]":  35,
+                               "[Free]":  5,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 304",
+                               "Planveckor[Vecka]":  "v46",
+                               "[Booked]":  30,
+                               "[Capacity]":  35,
+                               "[Free]":  5,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 304",
+                               "Planveckor[Vecka]":  "v47",
+                               "[Booked]":  30,
+                               "[Capacity]":  35,
+                               "[Free]":  5,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 304",
+                               "Planveckor[Vecka]":  "v48",
+                               "[Booked]":  30,
+                               "[Capacity]":  35,
+                               "[Free]":  5,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 305",
+                               "Planveckor[Vecka]":  "v41",
+                               "[Booked]":  30,
+                               "[Capacity]":  35,
+                               "[Free]":  5,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 305",
+                               "Planveckor[Vecka]":  "v42",
+                               "[Booked]":  30,
+                               "[Capacity]":  35,
+                               "[Free]":  5,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 305",
+                               "Planveckor[Vecka]":  "v43",
+                               "[Booked]":  30,
+                               "[Capacity]":  35,
+                               "[Free]":  5,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 305",
+                               "Planveckor[Vecka]":  "v44",
+                               "[Booked]":  30,
+                               "[Capacity]":  35,
+                               "[Free]":  5,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 305",
+                               "Planveckor[Vecka]":  "v45",
+                               "[Booked]":  30,
+                               "[Capacity]":  35,
+                               "[Free]":  5,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 305",
+                               "Planveckor[Vecka]":  "v46",
+                               "[Booked]":  30,
+                               "[Capacity]":  35,
+                               "[Free]":  5,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 305",
+                               "Planveckor[Vecka]":  "v47",
+                               "[Booked]":  30,
+                               "[Capacity]":  35,
+                               "[Free]":  5,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 305",
+                               "Planveckor[Vecka]":  "v48",
+                               "[Booked]":  30,
+                               "[Capacity]":  35,
+                               "[Free]":  5,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 306",
+                               "Planveckor[Vecka]":  "v41",
+                               "[Booked]":  30,
+                               "[Capacity]":  35,
+                               "[Free]":  5,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 306",
+                               "Planveckor[Vecka]":  "v42",
+                               "[Booked]":  30,
+                               "[Capacity]":  35,
+                               "[Free]":  5,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 306",
+                               "Planveckor[Vecka]":  "v43",
+                               "[Booked]":  30,
+                               "[Capacity]":  35,
+                               "[Free]":  5,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 306",
+                               "Planveckor[Vecka]":  "v44",
+                               "[Booked]":  30,
+                               "[Capacity]":  35,
+                               "[Free]":  5,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 306",
+                               "Planveckor[Vecka]":  "v45",
+                               "[Booked]":  30,
+                               "[Capacity]":  35,
+                               "[Free]":  5,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 306",
+                               "Planveckor[Vecka]":  "v46",
+                               "[Booked]":  30,
+                               "[Capacity]":  35,
+                               "[Free]":  5,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 306",
+                               "Planveckor[Vecka]":  "v47",
+                               "[Booked]":  30,
+                               "[Capacity]":  35,
+                               "[Free]":  5,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 306",
+                               "Planveckor[Vecka]":  "v48",
+                               "[Booked]":  30,
+                               "[Capacity]":  35,
+                               "[Free]":  5,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 307",
+                               "Planveckor[Vecka]":  "v41",
+                               "[Booked]":  30,
+                               "[Capacity]":  35,
+                               "[Free]":  5,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 307",
+                               "Planveckor[Vecka]":  "v42",
+                               "[Booked]":  30,
+                               "[Capacity]":  35,
+                               "[Free]":  5,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 307",
+                               "Planveckor[Vecka]":  "v43",
+                               "[Booked]":  30,
+                               "[Capacity]":  35,
+                               "[Free]":  5,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 307",
+                               "Planveckor[Vecka]":  "v44",
+                               "[Booked]":  30,
+                               "[Capacity]":  35,
+                               "[Free]":  5,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 307",
+                               "Planveckor[Vecka]":  "v45",
+                               "[Booked]":  30,
+                               "[Capacity]":  35,
+                               "[Free]":  5,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 307",
+                               "Planveckor[Vecka]":  "v46",
+                               "[Booked]":  30,
+                               "[Capacity]":  35,
+                               "[Free]":  5,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 307",
+                               "Planveckor[Vecka]":  "v47",
+                               "[Booked]":  30,
+                               "[Capacity]":  35,
+                               "[Free]":  5,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 307",
+                               "Planveckor[Vecka]":  "v48",
+                               "[Booked]":  30,
+                               "[Capacity]":  35,
+                               "[Free]":  5,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 308",
+                               "Planveckor[Vecka]":  "v41",
+                               "[Booked]":  30,
+                               "[Capacity]":  35,
+                               "[Free]":  5,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 308",
+                               "Planveckor[Vecka]":  "v42",
+                               "[Booked]":  30,
+                               "[Capacity]":  35,
+                               "[Free]":  5,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 308",
+                               "Planveckor[Vecka]":  "v43",
+                               "[Booked]":  30,
+                               "[Capacity]":  35,
+                               "[Free]":  5,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 308",
+                               "Planveckor[Vecka]":  "v44",
+                               "[Booked]":  30,
+                               "[Capacity]":  35,
+                               "[Free]":  5,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 308",
+                               "Planveckor[Vecka]":  "v45",
+                               "[Booked]":  30,
+                               "[Capacity]":  35,
+                               "[Free]":  5,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 308",
+                               "Planveckor[Vecka]":  "v46",
+                               "[Booked]":  30,
+                               "[Capacity]":  35,
+                               "[Free]":  5,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 308",
+                               "Planveckor[Vecka]":  "v47",
+                               "[Booked]":  30,
+                               "[Capacity]":  35,
+                               "[Free]":  5,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 308",
+                               "Planveckor[Vecka]":  "v48",
+                               "[Booked]":  30,
+                               "[Capacity]":  35,
+                               "[Free]":  5,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 309",
+                               "Planveckor[Vecka]":  "v41",
+                               "[Booked]":  30,
+                               "[Capacity]":  35,
+                               "[Free]":  5,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 309",
+                               "Planveckor[Vecka]":  "v42",
+                               "[Booked]":  30,
+                               "[Capacity]":  35,
+                               "[Free]":  5,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 309",
+                               "Planveckor[Vecka]":  "v43",
+                               "[Booked]":  30,
+                               "[Capacity]":  35,
+                               "[Free]":  5,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 309",
+                               "Planveckor[Vecka]":  "v44",
+                               "[Booked]":  30,
+                               "[Capacity]":  35,
+                               "[Free]":  5,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 309",
+                               "Planveckor[Vecka]":  "v45",
+                               "[Booked]":  30,
+                               "[Capacity]":  35,
+                               "[Free]":  5,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 309",
+                               "Planveckor[Vecka]":  "v46",
+                               "[Booked]":  30,
+                               "[Capacity]":  35,
+                               "[Free]":  5,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 309",
+                               "Planveckor[Vecka]":  "v47",
+                               "[Booked]":  30,
+                               "[Capacity]":  35,
+                               "[Free]":  5,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 309",
+                               "Planveckor[Vecka]":  "v48",
+                               "[Booked]":  30,
+                               "[Capacity]":  35,
+                               "[Free]":  5,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 310",
+                               "Planveckor[Vecka]":  "v41",
+                               "[Booked]":  30,
+                               "[Capacity]":  35,
+                               "[Free]":  5,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 310",
+                               "Planveckor[Vecka]":  "v42",
+                               "[Booked]":  30,
+                               "[Capacity]":  35,
+                               "[Free]":  5,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 310",
+                               "Planveckor[Vecka]":  "v43",
+                               "[Booked]":  30,
+                               "[Capacity]":  35,
+                               "[Free]":  5,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 310",
+                               "Planveckor[Vecka]":  "v44",
+                               "[Booked]":  30,
+                               "[Capacity]":  35,
+                               "[Free]":  5,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 310",
+                               "Planveckor[Vecka]":  "v45",
+                               "[Booked]":  30,
+                               "[Capacity]":  35,
+                               "[Free]":  5,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 310",
+                               "Planveckor[Vecka]":  "v46",
+                               "[Booked]":  30,
+                               "[Capacity]":  35,
+                               "[Free]":  5,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 310",
+                               "Planveckor[Vecka]":  "v47",
+                               "[Booked]":  30,
+                               "[Capacity]":  35,
+                               "[Free]":  5,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 310",
+                               "Planveckor[Vecka]":  "v48",
+                               "[Booked]":  30,
+                               "[Capacity]":  35,
+                               "[Free]":  5,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 401",
+                               "Planveckor[Vecka]":  "v41",
+                               "[Booked]":  18,
+                               "[Capacity]":  25,
+                               "[Free]":  7,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 401",
+                               "Planveckor[Vecka]":  "v42",
+                               "[Booked]":  18,
+                               "[Capacity]":  25,
+                               "[Free]":  7,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 401",
+                               "Planveckor[Vecka]":  "v43",
+                               "[Booked]":  18,
+                               "[Capacity]":  25,
+                               "[Free]":  7,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 401",
+                               "Planveckor[Vecka]":  "v44",
+                               "[Booked]":  18,
+                               "[Capacity]":  25,
+                               "[Free]":  7,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 401",
+                               "Planveckor[Vecka]":  "v45",
+                               "[Booked]":  18,
+                               "[Capacity]":  25,
+                               "[Free]":  7,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 401",
+                               "Planveckor[Vecka]":  "v46",
+                               "[Booked]":  18,
+                               "[Capacity]":  25,
+                               "[Free]":  7,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 401",
+                               "Planveckor[Vecka]":  "v47",
+                               "[Booked]":  18,
+                               "[Capacity]":  25,
+                               "[Free]":  7,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 401",
+                               "Planveckor[Vecka]":  "v48",
+                               "[Booked]":  18,
+                               "[Capacity]":  25,
+                               "[Free]":  7,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 402",
+                               "Planveckor[Vecka]":  "v41",
+                               "[Booked]":  18,
+                               "[Capacity]":  25,
+                               "[Free]":  7,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 402",
+                               "Planveckor[Vecka]":  "v42",
+                               "[Booked]":  18,
+                               "[Capacity]":  25,
+                               "[Free]":  7,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 402",
+                               "Planveckor[Vecka]":  "v43",
+                               "[Booked]":  18,
+                               "[Capacity]":  25,
+                               "[Free]":  7,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 402",
+                               "Planveckor[Vecka]":  "v44",
+                               "[Booked]":  18,
+                               "[Capacity]":  25,
+                               "[Free]":  7,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 402",
+                               "Planveckor[Vecka]":  "v45",
+                               "[Booked]":  18,
+                               "[Capacity]":  25,
+                               "[Free]":  7,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 402",
+                               "Planveckor[Vecka]":  "v46",
+                               "[Booked]":  18,
+                               "[Capacity]":  25,
+                               "[Free]":  7,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 402",
+                               "Planveckor[Vecka]":  "v47",
+                               "[Booked]":  18,
+                               "[Capacity]":  25,
+                               "[Free]":  7,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 402",
+                               "Planveckor[Vecka]":  "v48",
+                               "[Booked]":  18,
+                               "[Capacity]":  25,
+                               "[Free]":  7,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 403",
+                               "Planveckor[Vecka]":  "v41",
+                               "[Booked]":  18,
+                               "[Capacity]":  25,
+                               "[Free]":  7,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 403",
+                               "Planveckor[Vecka]":  "v42",
+                               "[Booked]":  18,
+                               "[Capacity]":  25,
+                               "[Free]":  7,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 403",
+                               "Planveckor[Vecka]":  "v43",
+                               "[Booked]":  18,
+                               "[Capacity]":  25,
+                               "[Free]":  7,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 403",
+                               "Planveckor[Vecka]":  "v44",
+                               "[Booked]":  18,
+                               "[Capacity]":  25,
+                               "[Free]":  7,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 403",
+                               "Planveckor[Vecka]":  "v45",
+                               "[Booked]":  18,
+                               "[Capacity]":  25,
+                               "[Free]":  7,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 403",
+                               "Planveckor[Vecka]":  "v46",
+                               "[Booked]":  18,
+                               "[Capacity]":  25,
+                               "[Free]":  7,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 403",
+                               "Planveckor[Vecka]":  "v47",
+                               "[Booked]":  18,
+                               "[Capacity]":  25,
+                               "[Free]":  7,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 403",
+                               "Planveckor[Vecka]":  "v48",
+                               "[Booked]":  18,
+                               "[Capacity]":  25,
+                               "[Free]":  7,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 404",
+                               "Planveckor[Vecka]":  "v41",
+                               "[Booked]":  18,
+                               "[Capacity]":  25,
+                               "[Free]":  7,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 404",
+                               "Planveckor[Vecka]":  "v42",
+                               "[Booked]":  18,
+                               "[Capacity]":  25,
+                               "[Free]":  7,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 404",
+                               "Planveckor[Vecka]":  "v43",
+                               "[Booked]":  18,
+                               "[Capacity]":  25,
+                               "[Free]":  7,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 404",
+                               "Planveckor[Vecka]":  "v44",
+                               "[Booked]":  18,
+                               "[Capacity]":  25,
+                               "[Free]":  7,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 404",
+                               "Planveckor[Vecka]":  "v45",
+                               "[Booked]":  18,
+                               "[Capacity]":  25,
+                               "[Free]":  7,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 404",
+                               "Planveckor[Vecka]":  "v46",
+                               "[Booked]":  18,
+                               "[Capacity]":  25,
+                               "[Free]":  7,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 404",
+                               "Planveckor[Vecka]":  "v47",
+                               "[Booked]":  18,
+                               "[Capacity]":  25,
+                               "[Free]":  7,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 404",
+                               "Planveckor[Vecka]":  "v48",
+                               "[Booked]":  18,
+                               "[Capacity]":  25,
+                               "[Free]":  7,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 405",
+                               "Planveckor[Vecka]":  "v41",
+                               "[Booked]":  18,
+                               "[Capacity]":  25,
+                               "[Free]":  7,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 405",
+                               "Planveckor[Vecka]":  "v42",
+                               "[Booked]":  18,
+                               "[Capacity]":  25,
+                               "[Free]":  7,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 405",
+                               "Planveckor[Vecka]":  "v43",
+                               "[Booked]":  18,
+                               "[Capacity]":  25,
+                               "[Free]":  7,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 405",
+                               "Planveckor[Vecka]":  "v44",
+                               "[Booked]":  18,
+                               "[Capacity]":  25,
+                               "[Free]":  7,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 405",
+                               "Planveckor[Vecka]":  "v45",
+                               "[Booked]":  18,
+                               "[Capacity]":  25,
+                               "[Free]":  7,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 405",
+                               "Planveckor[Vecka]":  "v46",
+                               "[Booked]":  18,
+                               "[Capacity]":  25,
+                               "[Free]":  7,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 405",
+                               "Planveckor[Vecka]":  "v47",
+                               "[Booked]":  18,
+                               "[Capacity]":  25,
+                               "[Free]":  7,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 405",
+                               "Planveckor[Vecka]":  "v48",
+                               "[Booked]":  18,
+                               "[Capacity]":  25,
+                               "[Free]":  7,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 406",
+                               "Planveckor[Vecka]":  "v41",
+                               "[Booked]":  18,
+                               "[Capacity]":  25,
+                               "[Free]":  7,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 406",
+                               "Planveckor[Vecka]":  "v42",
+                               "[Booked]":  18,
+                               "[Capacity]":  25,
+                               "[Free]":  7,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 406",
+                               "Planveckor[Vecka]":  "v43",
+                               "[Booked]":  18,
+                               "[Capacity]":  25,
+                               "[Free]":  7,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 406",
+                               "Planveckor[Vecka]":  "v44",
+                               "[Booked]":  18,
+                               "[Capacity]":  25,
+                               "[Free]":  7,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 406",
+                               "Planveckor[Vecka]":  "v45",
+                               "[Booked]":  18,
+                               "[Capacity]":  25,
+                               "[Free]":  7,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 406",
+                               "Planveckor[Vecka]":  "v46",
+                               "[Booked]":  18,
+                               "[Capacity]":  25,
+                               "[Free]":  7,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 406",
+                               "Planveckor[Vecka]":  "v47",
+                               "[Booked]":  18,
+                               "[Capacity]":  25,
+                               "[Free]":  7,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 406",
+                               "Planveckor[Vecka]":  "v48",
+                               "[Booked]":  18,
+                               "[Capacity]":  25,
+                               "[Free]":  7,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 407",
+                               "Planveckor[Vecka]":  "v41",
+                               "[Booked]":  18,
+                               "[Capacity]":  25,
+                               "[Free]":  7,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 407",
+                               "Planveckor[Vecka]":  "v42",
+                               "[Booked]":  18,
+                               "[Capacity]":  25,
+                               "[Free]":  7,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 407",
+                               "Planveckor[Vecka]":  "v43",
+                               "[Booked]":  18,
+                               "[Capacity]":  25,
+                               "[Free]":  7,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 407",
+                               "Planveckor[Vecka]":  "v44",
+                               "[Booked]":  18,
+                               "[Capacity]":  25,
+                               "[Free]":  7,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 407",
+                               "Planveckor[Vecka]":  "v45",
+                               "[Booked]":  18,
+                               "[Capacity]":  25,
+                               "[Free]":  7,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 407",
+                               "Planveckor[Vecka]":  "v46",
+                               "[Booked]":  18,
+                               "[Capacity]":  25,
+                               "[Free]":  7,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 407",
+                               "Planveckor[Vecka]":  "v47",
+                               "[Booked]":  18,
+                               "[Capacity]":  25,
+                               "[Free]":  7,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 407",
+                               "Planveckor[Vecka]":  "v48",
+                               "[Booked]":  18,
+                               "[Capacity]":  25,
+                               "[Free]":  7,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 408",
+                               "Planveckor[Vecka]":  "v41",
+                               "[Booked]":  18,
+                               "[Capacity]":  25,
+                               "[Free]":  7,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 408",
+                               "Planveckor[Vecka]":  "v42",
+                               "[Booked]":  18,
+                               "[Capacity]":  25,
+                               "[Free]":  7,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 408",
+                               "Planveckor[Vecka]":  "v43",
+                               "[Booked]":  18,
+                               "[Capacity]":  25,
+                               "[Free]":  7,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 408",
+                               "Planveckor[Vecka]":  "v44",
+                               "[Booked]":  18,
+                               "[Capacity]":  25,
+                               "[Free]":  7,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 408",
+                               "Planveckor[Vecka]":  "v45",
+                               "[Booked]":  18,
+                               "[Capacity]":  25,
+                               "[Free]":  7,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 408",
+                               "Planveckor[Vecka]":  "v46",
+                               "[Booked]":  18,
+                               "[Capacity]":  25,
+                               "[Free]":  7,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 408",
+                               "Planveckor[Vecka]":  "v47",
+                               "[Booked]":  18,
+                               "[Capacity]":  25,
+                               "[Free]":  7,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 408",
+                               "Planveckor[Vecka]":  "v48",
+                               "[Booked]":  18,
+                               "[Capacity]":  25,
+                               "[Free]":  7,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 409",
+                               "Planveckor[Vecka]":  "v41",
+                               "[Booked]":  18,
+                               "[Capacity]":  25,
+                               "[Free]":  7,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 409",
+                               "Planveckor[Vecka]":  "v42",
+                               "[Booked]":  18,
+                               "[Capacity]":  25,
+                               "[Free]":  7,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 409",
+                               "Planveckor[Vecka]":  "v43",
+                               "[Booked]":  18,
+                               "[Capacity]":  25,
+                               "[Free]":  7,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 409",
+                               "Planveckor[Vecka]":  "v44",
+                               "[Booked]":  18,
+                               "[Capacity]":  25,
+                               "[Free]":  7,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 409",
+                               "Planveckor[Vecka]":  "v45",
+                               "[Booked]":  18,
+                               "[Capacity]":  25,
+                               "[Free]":  7,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 409",
+                               "Planveckor[Vecka]":  "v46",
+                               "[Booked]":  18,
+                               "[Capacity]":  25,
+                               "[Free]":  7,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 409",
+                               "Planveckor[Vecka]":  "v47",
+                               "[Booked]":  18,
+                               "[Capacity]":  25,
+                               "[Free]":  7,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 409",
+                               "Planveckor[Vecka]":  "v48",
+                               "[Booked]":  18,
+                               "[Capacity]":  25,
+                               "[Free]":  7,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 410",
+                               "Planveckor[Vecka]":  "v41",
+                               "[Booked]":  18,
+                               "[Capacity]":  25,
+                               "[Free]":  7,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 410",
+                               "Planveckor[Vecka]":  "v42",
+                               "[Booked]":  18,
+                               "[Capacity]":  25,
+                               "[Free]":  7,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 410",
+                               "Planveckor[Vecka]":  "v43",
+                               "[Booked]":  18,
+                               "[Capacity]":  25,
+                               "[Free]":  7,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 410",
+                               "Planveckor[Vecka]":  "v44",
+                               "[Booked]":  18,
+                               "[Capacity]":  25,
+                               "[Free]":  7,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 410",
+                               "Planveckor[Vecka]":  "v45",
+                               "[Booked]":  18,
+                               "[Capacity]":  25,
+                               "[Free]":  7,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 410",
+                               "Planveckor[Vecka]":  "v46",
+                               "[Booked]":  18,
+                               "[Capacity]":  25,
+                               "[Free]":  7,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 410",
+                               "Planveckor[Vecka]":  "v47",
+                               "[Booked]":  18,
+                               "[Capacity]":  25,
+                               "[Free]":  7,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Resurser[Medarbetare]":  "Medarbetare 410",
+                               "Planveckor[Vecka]":  "v48",
+                               "[Booked]":  18,
+                               "[Capacity]":  25,
+                               "[Free]":  7,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Nord",
+                               "Resurser[Medarbetare]":  "Medarbetare 101",
+                               "Planveckor[Vecka]":  "v41",
+                               "[Booked]":  44,
+                               "[Capacity]":  40,
+                               "[Free]":  0,
+                               "[Over]":  4.0000000000000036
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Nord",
+                               "Resurser[Medarbetare]":  "Medarbetare 101",
+                               "Planveckor[Vecka]":  "v42",
+                               "[Booked]":  44,
+                               "[Capacity]":  40,
+                               "[Free]":  0,
+                               "[Over]":  4.0000000000000036
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Nord",
+                               "Resurser[Medarbetare]":  "Medarbetare 101",
+                               "Planveckor[Vecka]":  "v43",
+                               "[Booked]":  44,
+                               "[Capacity]":  40,
+                               "[Free]":  0,
+                               "[Over]":  4.0000000000000036
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Nord",
+                               "Resurser[Medarbetare]":  "Medarbetare 101",
+                               "Planveckor[Vecka]":  "v44",
+                               "[Booked]":  44,
+                               "[Capacity]":  40,
+                               "[Free]":  0,
+                               "[Over]":  4.0000000000000036
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Nord",
+                               "Resurser[Medarbetare]":  "Medarbetare 101",
+                               "Planveckor[Vecka]":  "v45",
+                               "[Booked]":  36,
+                               "[Capacity]":  40,
+                               "[Free]":  3.9999999999999991,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Nord",
+                               "Resurser[Medarbetare]":  "Medarbetare 101",
+                               "Planveckor[Vecka]":  "v46",
+                               "[Booked]":  36,
+                               "[Capacity]":  40,
+                               "[Free]":  3.9999999999999991,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Nord",
+                               "Resurser[Medarbetare]":  "Medarbetare 101",
+                               "Planveckor[Vecka]":  "v47",
+                               "[Booked]":  36,
+                               "[Capacity]":  40,
+                               "[Free]":  3.9999999999999991,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Nord",
+                               "Resurser[Medarbetare]":  "Medarbetare 101",
+                               "Planveckor[Vecka]":  "v48",
+                               "[Booked]":  36,
+                               "[Capacity]":  40,
+                               "[Free]":  3.9999999999999991,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Nord",
+                               "Resurser[Medarbetare]":  "Medarbetare 102",
+                               "Planveckor[Vecka]":  "v41",
+                               "[Booked]":  44,
+                               "[Capacity]":  40,
+                               "[Free]":  0,
+                               "[Over]":  4.0000000000000036
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Nord",
+                               "Resurser[Medarbetare]":  "Medarbetare 102",
+                               "Planveckor[Vecka]":  "v42",
+                               "[Booked]":  44,
+                               "[Capacity]":  40,
+                               "[Free]":  0,
+                               "[Over]":  4.0000000000000036
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Nord",
+                               "Resurser[Medarbetare]":  "Medarbetare 102",
+                               "Planveckor[Vecka]":  "v43",
+                               "[Booked]":  44,
+                               "[Capacity]":  40,
+                               "[Free]":  0,
+                               "[Over]":  4.0000000000000036
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Nord",
+                               "Resurser[Medarbetare]":  "Medarbetare 102",
+                               "Planveckor[Vecka]":  "v44",
+                               "[Booked]":  44,
+                               "[Capacity]":  40,
+                               "[Free]":  0,
+                               "[Over]":  4.0000000000000036
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Nord",
+                               "Resurser[Medarbetare]":  "Medarbetare 102",
+                               "Planveckor[Vecka]":  "v45",
+                               "[Booked]":  36,
+                               "[Capacity]":  40,
+                               "[Free]":  3.9999999999999991,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Nord",
+                               "Resurser[Medarbetare]":  "Medarbetare 102",
+                               "Planveckor[Vecka]":  "v46",
+                               "[Booked]":  36,
+                               "[Capacity]":  40,
+                               "[Free]":  3.9999999999999991,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Nord",
+                               "Resurser[Medarbetare]":  "Medarbetare 102",
+                               "Planveckor[Vecka]":  "v47",
+                               "[Booked]":  36,
+                               "[Capacity]":  40,
+                               "[Free]":  3.9999999999999991,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Nord",
+                               "Resurser[Medarbetare]":  "Medarbetare 102",
+                               "Planveckor[Vecka]":  "v48",
+                               "[Booked]":  36,
+                               "[Capacity]":  40,
+                               "[Free]":  3.9999999999999991,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Nord",
+                               "Resurser[Medarbetare]":  "Medarbetare 103",
+                               "Planveckor[Vecka]":  "v41",
+                               "[Booked]":  44,
+                               "[Capacity]":  40,
+                               "[Free]":  0,
+                               "[Over]":  4.0000000000000036
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Nord",
+                               "Resurser[Medarbetare]":  "Medarbetare 103",
+                               "Planveckor[Vecka]":  "v42",
+                               "[Booked]":  44,
+                               "[Capacity]":  40,
+                               "[Free]":  0,
+                               "[Over]":  4.0000000000000036
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Nord",
+                               "Resurser[Medarbetare]":  "Medarbetare 103",
+                               "Planveckor[Vecka]":  "v43",
+                               "[Booked]":  44,
+                               "[Capacity]":  40,
+                               "[Free]":  0,
+                               "[Over]":  4.0000000000000036
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Nord",
+                               "Resurser[Medarbetare]":  "Medarbetare 103",
+                               "Planveckor[Vecka]":  "v44",
+                               "[Booked]":  44,
+                               "[Capacity]":  40,
+                               "[Free]":  0,
+                               "[Over]":  4.0000000000000036
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Nord",
+                               "Resurser[Medarbetare]":  "Medarbetare 103",
+                               "Planveckor[Vecka]":  "v45",
+                               "[Booked]":  36,
+                               "[Capacity]":  40,
+                               "[Free]":  3.9999999999999991,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Nord",
+                               "Resurser[Medarbetare]":  "Medarbetare 103",
+                               "Planveckor[Vecka]":  "v46",
+                               "[Booked]":  36,
+                               "[Capacity]":  40,
+                               "[Free]":  3.9999999999999991,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Nord",
+                               "Resurser[Medarbetare]":  "Medarbetare 103",
+                               "Planveckor[Vecka]":  "v47",
+                               "[Booked]":  36,
+                               "[Capacity]":  40,
+                               "[Free]":  3.9999999999999991,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Nord",
+                               "Resurser[Medarbetare]":  "Medarbetare 103",
+                               "Planveckor[Vecka]":  "v48",
+                               "[Booked]":  36,
+                               "[Capacity]":  40,
+                               "[Free]":  3.9999999999999991,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Nord",
+                               "Resurser[Medarbetare]":  "Medarbetare 104",
+                               "Planveckor[Vecka]":  "v41",
+                               "[Booked]":  44,
+                               "[Capacity]":  40,
+                               "[Free]":  0,
+                               "[Over]":  4.0000000000000036
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Nord",
+                               "Resurser[Medarbetare]":  "Medarbetare 104",
+                               "Planveckor[Vecka]":  "v42",
+                               "[Booked]":  44,
+                               "[Capacity]":  40,
+                               "[Free]":  0,
+                               "[Over]":  4.0000000000000036
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Nord",
+                               "Resurser[Medarbetare]":  "Medarbetare 104",
+                               "Planveckor[Vecka]":  "v43",
+                               "[Booked]":  44,
+                               "[Capacity]":  40,
+                               "[Free]":  0,
+                               "[Over]":  4.0000000000000036
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Nord",
+                               "Resurser[Medarbetare]":  "Medarbetare 104",
+                               "Planveckor[Vecka]":  "v44",
+                               "[Booked]":  44,
+                               "[Capacity]":  40,
+                               "[Free]":  0,
+                               "[Over]":  4.0000000000000036
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Nord",
+                               "Resurser[Medarbetare]":  "Medarbetare 104",
+                               "Planveckor[Vecka]":  "v45",
+                               "[Booked]":  36,
+                               "[Capacity]":  40,
+                               "[Free]":  3.9999999999999991,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Nord",
+                               "Resurser[Medarbetare]":  "Medarbetare 104",
+                               "Planveckor[Vecka]":  "v46",
+                               "[Booked]":  36,
+                               "[Capacity]":  40,
+                               "[Free]":  3.9999999999999991,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Nord",
+                               "Resurser[Medarbetare]":  "Medarbetare 104",
+                               "Planveckor[Vecka]":  "v47",
+                               "[Booked]":  36,
+                               "[Capacity]":  40,
+                               "[Free]":  3.9999999999999991,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Nord",
+                               "Resurser[Medarbetare]":  "Medarbetare 104",
+                               "Planveckor[Vecka]":  "v48",
+                               "[Booked]":  36,
+                               "[Capacity]":  40,
+                               "[Free]":  3.9999999999999991,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Nord",
+                               "Resurser[Medarbetare]":  "Medarbetare 105",
+                               "Planveckor[Vecka]":  "v41",
+                               "[Booked]":  44,
+                               "[Capacity]":  40,
+                               "[Free]":  0,
+                               "[Over]":  4.0000000000000036
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Nord",
+                               "Resurser[Medarbetare]":  "Medarbetare 105",
+                               "Planveckor[Vecka]":  "v42",
+                               "[Booked]":  44,
+                               "[Capacity]":  40,
+                               "[Free]":  0,
+                               "[Over]":  4.0000000000000036
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Nord",
+                               "Resurser[Medarbetare]":  "Medarbetare 105",
+                               "Planveckor[Vecka]":  "v43",
+                               "[Booked]":  44,
+                               "[Capacity]":  40,
+                               "[Free]":  0,
+                               "[Over]":  4.0000000000000036
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Nord",
+                               "Resurser[Medarbetare]":  "Medarbetare 105",
+                               "Planveckor[Vecka]":  "v44",
+                               "[Booked]":  44,
+                               "[Capacity]":  40,
+                               "[Free]":  0,
+                               "[Over]":  4.0000000000000036
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Nord",
+                               "Resurser[Medarbetare]":  "Medarbetare 105",
+                               "Planveckor[Vecka]":  "v45",
+                               "[Booked]":  36,
+                               "[Capacity]":  40,
+                               "[Free]":  3.9999999999999991,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Nord",
+                               "Resurser[Medarbetare]":  "Medarbetare 105",
+                               "Planveckor[Vecka]":  "v46",
+                               "[Booked]":  36,
+                               "[Capacity]":  40,
+                               "[Free]":  3.9999999999999991,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Nord",
+                               "Resurser[Medarbetare]":  "Medarbetare 105",
+                               "Planveckor[Vecka]":  "v47",
+                               "[Booked]":  36,
+                               "[Capacity]":  40,
+                               "[Free]":  3.9999999999999991,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Nord",
+                               "Resurser[Medarbetare]":  "Medarbetare 105",
+                               "Planveckor[Vecka]":  "v48",
+                               "[Booked]":  36,
+                               "[Capacity]":  40,
+                               "[Free]":  3.9999999999999991,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Syd",
+                               "Resurser[Medarbetare]":  "Medarbetare 201",
+                               "Planveckor[Vecka]":  "v41",
+                               "[Booked]":  36,
+                               "[Capacity]":  40,
+                               "[Free]":  3.9999999999999991,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Syd",
+                               "Resurser[Medarbetare]":  "Medarbetare 201",
+                               "Planveckor[Vecka]":  "v42",
+                               "[Booked]":  36,
+                               "[Capacity]":  40,
+                               "[Free]":  3.9999999999999991,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Syd",
+                               "Resurser[Medarbetare]":  "Medarbetare 201",
+                               "Planveckor[Vecka]":  "v43",
+                               "[Booked]":  36,
+                               "[Capacity]":  40,
+                               "[Free]":  3.9999999999999991,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Syd",
+                               "Resurser[Medarbetare]":  "Medarbetare 201",
+                               "Planveckor[Vecka]":  "v44",
+                               "[Booked]":  36,
+                               "[Capacity]":  40,
+                               "[Free]":  3.9999999999999991,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Syd",
+                               "Resurser[Medarbetare]":  "Medarbetare 201",
+                               "Planveckor[Vecka]":  "v45",
+                               "[Booked]":  32,
+                               "[Capacity]":  40,
+                               "[Free]":  7.9999999999999982,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Syd",
+                               "Resurser[Medarbetare]":  "Medarbetare 201",
+                               "Planveckor[Vecka]":  "v46",
+                               "[Booked]":  32,
+                               "[Capacity]":  40,
+                               "[Free]":  7.9999999999999982,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Syd",
+                               "Resurser[Medarbetare]":  "Medarbetare 201",
+                               "Planveckor[Vecka]":  "v47",
+                               "[Booked]":  32,
+                               "[Capacity]":  40,
+                               "[Free]":  7.9999999999999982,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Syd",
+                               "Resurser[Medarbetare]":  "Medarbetare 201",
+                               "Planveckor[Vecka]":  "v48",
+                               "[Booked]":  32,
+                               "[Capacity]":  40,
+                               "[Free]":  7.9999999999999982,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Syd",
+                               "Resurser[Medarbetare]":  "Medarbetare 202",
+                               "Planveckor[Vecka]":  "v41",
+                               "[Booked]":  36,
+                               "[Capacity]":  40,
+                               "[Free]":  3.9999999999999991,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Syd",
+                               "Resurser[Medarbetare]":  "Medarbetare 202",
+                               "Planveckor[Vecka]":  "v42",
+                               "[Booked]":  36,
+                               "[Capacity]":  40,
+                               "[Free]":  3.9999999999999991,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Syd",
+                               "Resurser[Medarbetare]":  "Medarbetare 202",
+                               "Planveckor[Vecka]":  "v43",
+                               "[Booked]":  36,
+                               "[Capacity]":  40,
+                               "[Free]":  3.9999999999999991,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Syd",
+                               "Resurser[Medarbetare]":  "Medarbetare 202",
+                               "Planveckor[Vecka]":  "v44",
+                               "[Booked]":  36,
+                               "[Capacity]":  40,
+                               "[Free]":  3.9999999999999991,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Syd",
+                               "Resurser[Medarbetare]":  "Medarbetare 202",
+                               "Planveckor[Vecka]":  "v45",
+                               "[Booked]":  32,
+                               "[Capacity]":  40,
+                               "[Free]":  7.9999999999999982,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Syd",
+                               "Resurser[Medarbetare]":  "Medarbetare 202",
+                               "Planveckor[Vecka]":  "v46",
+                               "[Booked]":  32,
+                               "[Capacity]":  40,
+                               "[Free]":  7.9999999999999982,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Syd",
+                               "Resurser[Medarbetare]":  "Medarbetare 202",
+                               "Planveckor[Vecka]":  "v47",
+                               "[Booked]":  32,
+                               "[Capacity]":  40,
+                               "[Free]":  7.9999999999999982,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Syd",
+                               "Resurser[Medarbetare]":  "Medarbetare 202",
+                               "Planveckor[Vecka]":  "v48",
+                               "[Booked]":  32,
+                               "[Capacity]":  40,
+                               "[Free]":  7.9999999999999982,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Syd",
+                               "Resurser[Medarbetare]":  "Medarbetare 203",
+                               "Planveckor[Vecka]":  "v41",
+                               "[Booked]":  36,
+                               "[Capacity]":  40,
+                               "[Free]":  3.9999999999999991,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Syd",
+                               "Resurser[Medarbetare]":  "Medarbetare 203",
+                               "Planveckor[Vecka]":  "v42",
+                               "[Booked]":  36,
+                               "[Capacity]":  40,
+                               "[Free]":  3.9999999999999991,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Syd",
+                               "Resurser[Medarbetare]":  "Medarbetare 203",
+                               "Planveckor[Vecka]":  "v43",
+                               "[Booked]":  36,
+                               "[Capacity]":  40,
+                               "[Free]":  3.9999999999999991,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Syd",
+                               "Resurser[Medarbetare]":  "Medarbetare 203",
+                               "Planveckor[Vecka]":  "v44",
+                               "[Booked]":  36,
+                               "[Capacity]":  40,
+                               "[Free]":  3.9999999999999991,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Syd",
+                               "Resurser[Medarbetare]":  "Medarbetare 203",
+                               "Planveckor[Vecka]":  "v45",
+                               "[Booked]":  32,
+                               "[Capacity]":  40,
+                               "[Free]":  7.9999999999999982,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Syd",
+                               "Resurser[Medarbetare]":  "Medarbetare 203",
+                               "Planveckor[Vecka]":  "v46",
+                               "[Booked]":  32,
+                               "[Capacity]":  40,
+                               "[Free]":  7.9999999999999982,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Syd",
+                               "Resurser[Medarbetare]":  "Medarbetare 203",
+                               "Planveckor[Vecka]":  "v47",
+                               "[Booked]":  32,
+                               "[Capacity]":  40,
+                               "[Free]":  7.9999999999999982,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Syd",
+                               "Resurser[Medarbetare]":  "Medarbetare 203",
+                               "Planveckor[Vecka]":  "v48",
+                               "[Booked]":  32,
+                               "[Capacity]":  40,
+                               "[Free]":  7.9999999999999982,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Syd",
+                               "Resurser[Medarbetare]":  "Medarbetare 204",
+                               "Planveckor[Vecka]":  "v41",
+                               "[Booked]":  36,
+                               "[Capacity]":  40,
+                               "[Free]":  3.9999999999999991,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Syd",
+                               "Resurser[Medarbetare]":  "Medarbetare 204",
+                               "Planveckor[Vecka]":  "v42",
+                               "[Booked]":  36,
+                               "[Capacity]":  40,
+                               "[Free]":  3.9999999999999991,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Syd",
+                               "Resurser[Medarbetare]":  "Medarbetare 204",
+                               "Planveckor[Vecka]":  "v43",
+                               "[Booked]":  36,
+                               "[Capacity]":  40,
+                               "[Free]":  3.9999999999999991,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Syd",
+                               "Resurser[Medarbetare]":  "Medarbetare 204",
+                               "Planveckor[Vecka]":  "v44",
+                               "[Booked]":  36,
+                               "[Capacity]":  40,
+                               "[Free]":  3.9999999999999991,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Syd",
+                               "Resurser[Medarbetare]":  "Medarbetare 204",
+                               "Planveckor[Vecka]":  "v45",
+                               "[Booked]":  32,
+                               "[Capacity]":  40,
+                               "[Free]":  7.9999999999999982,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Syd",
+                               "Resurser[Medarbetare]":  "Medarbetare 204",
+                               "Planveckor[Vecka]":  "v46",
+                               "[Booked]":  32,
+                               "[Capacity]":  40,
+                               "[Free]":  7.9999999999999982,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Syd",
+                               "Resurser[Medarbetare]":  "Medarbetare 204",
+                               "Planveckor[Vecka]":  "v47",
+                               "[Booked]":  32,
+                               "[Capacity]":  40,
+                               "[Free]":  7.9999999999999982,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Syd",
+                               "Resurser[Medarbetare]":  "Medarbetare 204",
+                               "Planveckor[Vecka]":  "v48",
+                               "[Booked]":  32,
+                               "[Capacity]":  40,
+                               "[Free]":  7.9999999999999982,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Syd",
+                               "Resurser[Medarbetare]":  "Medarbetare 205",
+                               "Planveckor[Vecka]":  "v41",
+                               "[Booked]":  36,
+                               "[Capacity]":  40,
+                               "[Free]":  3.9999999999999991,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Syd",
+                               "Resurser[Medarbetare]":  "Medarbetare 205",
+                               "Planveckor[Vecka]":  "v42",
+                               "[Booked]":  36,
+                               "[Capacity]":  40,
+                               "[Free]":  3.9999999999999991,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Syd",
+                               "Resurser[Medarbetare]":  "Medarbetare 205",
+                               "Planveckor[Vecka]":  "v43",
+                               "[Booked]":  36,
+                               "[Capacity]":  40,
+                               "[Free]":  3.9999999999999991,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Syd",
+                               "Resurser[Medarbetare]":  "Medarbetare 205",
+                               "Planveckor[Vecka]":  "v44",
+                               "[Booked]":  36,
+                               "[Capacity]":  40,
+                               "[Free]":  3.9999999999999991,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Syd",
+                               "Resurser[Medarbetare]":  "Medarbetare 205",
+                               "Planveckor[Vecka]":  "v45",
+                               "[Booked]":  32,
+                               "[Capacity]":  40,
+                               "[Free]":  7.9999999999999982,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Syd",
+                               "Resurser[Medarbetare]":  "Medarbetare 205",
+                               "Planveckor[Vecka]":  "v46",
+                               "[Booked]":  32,
+                               "[Capacity]":  40,
+                               "[Free]":  7.9999999999999982,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Syd",
+                               "Resurser[Medarbetare]":  "Medarbetare 205",
+                               "Planveckor[Vecka]":  "v47",
+                               "[Booked]":  32,
+                               "[Capacity]":  40,
+                               "[Free]":  7.9999999999999982,
+                               "[Over]":  0
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Syd",
+                               "Resurser[Medarbetare]":  "Medarbetare 205",
+                               "Planveckor[Vecka]":  "v48",
+                               "[Booked]":  32,
+                               "[Capacity]":  40,
+                               "[Free]":  7.9999999999999982,
+                               "[Over]":  0
+                           }
+                       ],
+                       [
+                           {
+                               "Trendaxel[Månad]":  "Apr 26",
+                               "[Technical]":  0.5725,
+                               "[Staffing]":  0.19,
+                               "[Target]":  0.82000000000000006,
+                               "[Selected]":  null
+                           },
+                           {
+                               "Trendaxel[Månad]":  "Aug 26",
+                               "[Technical]":  0.56309523809523809,
+                               "[Staffing]":  0.20952380952380953,
+                               "[Target]":  0.82000000000000006,
+                               "[Selected]":  null
+                           },
+                           {
+                               "Trendaxel[Månad]":  "Dec 25",
+                               "[Technical]":  0.51764705882352946,
+                               "[Staffing]":  0.14803921568627451,
+                               "[Target]":  0.82000000000000006,
+                               "[Selected]":  null
+                           },
+                           {
+                               "Trendaxel[Månad]":  "Feb 26",
+                               "[Technical]":  0.4925,
+                               "[Staffing]":  0.14916666666666667,
+                               "[Target]":  0.82000000000000006,
+                               "[Selected]":  null
+                           },
+                           {
+                               "Trendaxel[Månad]":  "Jan 26",
+                               "[Technical]":  0.47125,
+                               "[Staffing]":  0.12583333333333332,
+                               "[Target]":  0.82000000000000006,
+                               "[Selected]":  null
+                           },
+                           {
+                               "Trendaxel[Månad]":  "Jul 26",
+                               "[Technical]":  0.54722222222222228,
+                               "[Staffing]":  0.19351851851851851,
+                               "[Target]":  0.82000000000000006,
+                               "[Selected]":  null
+                           },
+                           {
+                               "Trendaxel[Månad]":  "Jun 26",
+                               "[Technical]":  0.63690476190476186,
+                               "[Staffing]":  0.18968253968253967,
+                               "[Target]":  0.82000000000000006,
+                               "[Selected]":  null
+                           },
+                           {
+                               "Trendaxel[Månad]":  "Maj 26",
+                               "[Technical]":  0.64736842105263159,
+                               "[Staffing]":  0.20964912280701756,
+                               "[Target]":  0.82000000000000006,
+                               "[Selected]":  null
+                           },
+                           {
+                               "Trendaxel[Månad]":  "Mar 26",
+                               "[Technical]":  0.5,
+                               "[Staffing]":  0.16515151515151516,
+                               "[Target]":  0.82000000000000006,
+                               "[Selected]":  null
+                           },
+                           {
+                               "Trendaxel[Månad]":  "Nov 25",
+                               "[Technical]":  0.3825,
+                               "[Staffing]":  0.12583333333333332,
+                               "[Target]":  0.82000000000000006,
+                               "[Selected]":  null
+                           },
+                           {
+                               "Trendaxel[Månad]":  "Okt 25",
+                               "[Technical]":  0.29021739130434782,
+                               "[Staffing]":  0.081884057971014487,
+                               "[Target]":  0.82000000000000006,
+                               "[Selected]":  null
+                           },
+                           {
+                               "Trendaxel[Månad]":  "Sep 26",
+                               "[Technical]":  0.68977272727272732,
+                               "[Staffing]":  0.33106060606060606,
+                               "[Target]":  0.82000000000000006,
+                               "[Selected]":  0.47454545454545455
+                           }
+                       ],
+                       [
+                           {
+                               "[Revenue]":  139500000,
+                               "[GrossProfit]":  36040000,
+                               "[EBIT]":  8000000,
+                               "[Customers]":  270,
+                               "[Jobs]":  960
+                           }
+                       ]
+                   ],
+    "source":  "Actual local Power BI Desktop DAX"
+}

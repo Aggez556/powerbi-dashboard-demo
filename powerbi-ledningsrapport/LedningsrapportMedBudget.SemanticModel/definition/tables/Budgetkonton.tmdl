@@ -1,0 +1,51 @@
+/// Budget: Budgetkonton. Utility selectors are intentionally disconnected.
+table 'Budgetkonton'
+
+	column 'KontoID'
+		dataType: int64
+		sourceColumn: KontoID
+		summarizeBy: none
+		isHidden
+
+	column 'RRgrupp'
+		dataType: string
+		sourceColumn: RRgrupp
+		summarizeBy: none
+		sortByColumn: 'Gruppordning'
+
+	column 'Undergrupp'
+		dataType: string
+		sourceColumn: Undergrupp
+		summarizeBy: none
+
+	column 'Post'
+		dataType: string
+		sourceColumn: Post
+		summarizeBy: none
+
+	column 'Gruppordning'
+		dataType: int64
+		sourceColumn: Gruppordning
+		summarizeBy: none
+		isHidden
+
+	column 'Underordning'
+		dataType: int64
+		sourceColumn: Underordning
+		summarizeBy: none
+		isHidden
+
+	column 'Postordning'
+		dataType: int64
+		sourceColumn: Postordning
+		summarizeBy: none
+		isHidden
+
+	partition 'Budgetkonton' = m
+		mode: import
+		source =
+			let
+			 Source=Csv.Document(File.Contents(DataFolder & "/Budgetkonton.csv"),[Delimiter=",",Encoding=65001,QuoteStyle=QuoteStyle.Csv]),
+			 Headers=Table.PromoteHeaders(Source,[PromoteAllScalars=true]),
+			 Typed=Table.TransformColumnTypes(Headers,{{"KontoID", Int64.Type}, {"RRgrupp", type text}, {"Undergrupp", type text}, {"Post", type text}, {"Gruppordning", Int64.Type}, {"Underordning", Int64.Type}, {"Postordning", Int64.Type}},"en-US")
+			in Typed

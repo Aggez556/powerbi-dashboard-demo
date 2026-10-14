@@ -1,0 +1,34 @@
+/// Budget: Budgetjämförelsescenario. Utility selectors are intentionally disconnected.
+table Budgetjämförelsescenario
+	lineageTag: c8f7e546-6c18-4d29-b376-5a31c5ef556f
+
+	column ScenarioID
+		dataType: int64
+		isHidden
+		lineageTag: a5fc5db7-92f1-41b7-a6d0-95ad3f84c110
+		summarizeBy: none
+		sourceColumn: ScenarioID
+
+	column Scenario
+		dataType: string
+		lineageTag: 87daf0f7-b1f0-422b-8211-3440271b1260
+		summarizeBy: none
+		sourceColumn: Scenario
+		sortByColumn: Ordning
+
+	column Ordning
+		dataType: int64
+		isHidden
+		lineageTag: 1b15a201-86bd-4421-9554-54e0e48a0fdd
+		summarizeBy: none
+		sourceColumn: Ordning
+
+	partition Budgetjämförelsescenario = m
+		mode: import
+		source =
+				let
+				 Source=Csv.Document(File.Contents(DataFolder & "/Budgetjämförelsescenario.csv"),[Delimiter=",",Encoding=65001,QuoteStyle=QuoteStyle.Csv]),
+				 Headers=Table.PromoteHeaders(Source,[PromoteAllScalars=true]),
+				 Typed=Table.TransformColumnTypes(Headers,{{"ScenarioID", Int64.Type}, {"Scenario", type text}, {"Ordning", Int64.Type}},"en-US")
+				in Typed
+

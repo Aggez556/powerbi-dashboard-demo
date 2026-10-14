@@ -1,0 +1,23 @@
+/// Budget: Budgetjämförelse. Utility selectors are intentionally disconnected.
+table 'Budgetjämförelse'
+
+	column 'Läge'
+		dataType: string
+		sourceColumn: Läge
+		summarizeBy: none
+		sortByColumn: 'Ordning'
+
+	column 'Ordning'
+		dataType: int64
+		sourceColumn: Ordning
+		summarizeBy: none
+		isHidden
+
+	partition 'Budgetjämförelse' = m
+		mode: import
+		source =
+			let
+			 Source=Csv.Document(File.Contents(DataFolder & "/Budgetjämförelse.csv"),[Delimiter=",",Encoding=65001,QuoteStyle=QuoteStyle.Csv]),
+			 Headers=Table.PromoteHeaders(Source,[PromoteAllScalars=true]),
+			 Typed=Table.TransformColumnTypes(Headers,{{"Läge", type text}, {"Ordning", Int64.Type}},"en-US")
+			in Typed

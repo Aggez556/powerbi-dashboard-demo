@@ -266,6 +266,27 @@ cultureInfo sv-SE
 			          }
 			        }
 			      ]
+			    },
+			    "budgetrader.rad": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Budgetrader",
+			          "ConceptualProperty": "Rad"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Rad": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
 			    }
 			  }
 			}

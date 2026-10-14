@@ -1,0 +1,273 @@
+cultureInfo sv-SE
+
+	linguisticMetadata =
+			{
+			  "Version": "2.0.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "försäljning.rörelsemarginal_trend": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Försäljning",
+			          "ConceptualProperty": "Rörelsemarginal trend"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Rörelsemarginal": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "försäljning.sälj_omsättning_mkr": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Försäljning",
+			          "ConceptualProperty": "Sälj omsättning Mkr"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Omsättning": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Vald period": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "försäljning.sälj_tillväxt": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Försäljning",
+			          "ConceptualProperty": "Sälj tillväxt"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Tillväxt": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "försäljning.sälj_bruttovinst_mkr": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Försäljning",
+			          "ConceptualProperty": "Sälj bruttovinst Mkr"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Bruttovinst": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "försäljning.sälj_bruttomarginal": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Försäljning",
+			          "ConceptualProperty": "Sälj bruttomarginal"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Marginal": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "försäljning.sälj_omsättning_föregående_år_mkr": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Försäljning",
+			          "ConceptualProperty": "Sälj omsättning föregående år Mkr"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Föregående år": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "försäljning.kundstatus_text": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Försäljning",
+			          "ConceptualProperty": "Kundstatus text"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Status": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "försäljning.kund_omsättning_mkr": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Försäljning",
+			          "ConceptualProperty": "Kund omsättning Mkr"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Omsättning": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "försäljning.kund_förändring_procent": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Försäljning",
+			          "ConceptualProperty": "Kund förändring procent"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Förändring": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "försäljning.kund_marginal": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Försäljning",
+			          "ConceptualProperty": "Kund marginal"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Marginal": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "försäljning.kund_senaste_köp_text": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Försäljning",
+			          "ConceptualProperty": "Kund senaste köp text"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Senaste köp": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "kunder.kund": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Kunder",
+			          "ConceptualProperty": "Kund"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Kund": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    }
+			  }
+			}
+		contentType: json
+

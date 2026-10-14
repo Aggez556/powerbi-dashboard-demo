@@ -1,0 +1,141 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/bookmark/2.1.0/schema.json",
+  "name": "1d272cd4d136cf2f04e3",
+  "displayName": "Budget – Expandera alla",
+  "options": {
+    "targetVisualNames": [
+      "2fe3adc88d453480ae9c"
+    ],
+    "suppressData": false,
+    "suppressDisplay": true,
+    "suppressActiveSection": true,
+    "applyOnlyToTargetVisuals": true
+  },
+  "explorationState": {
+    "version": "1.3",
+    "activeSection": "cbe967640ff6843fb323",
+    "sections": {
+      "cbe967640ff6843fb323": {
+        "visualContainers": {
+          "2fe3adc88d453480ae9c": {
+            "singleVisual": {
+              "expansionStates": [
+                {
+                  "roles": [
+                    "Rows"
+                  ],
+                  "levels": [
+                    {
+                      "queryRefs": [
+                        "Budgetrader.Rad"
+                      ],
+                      "identityKeys": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Entity": "Budgetrader"
+                              }
+                            },
+                            "Property": "Rad"
+                          }
+                        }
+                      ],
+                      "isCollapsed": false,
+                      "isPinned": true
+                    },
+                    {
+                      "queryRefs": [
+                        "Budgetrader.Undergrupp"
+                      ],
+                      "identityKeys": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Entity": "Budgetrader"
+                              }
+                            },
+                            "Property": "Undergrupp"
+                          }
+                        }
+                      ],
+                      "isCollapsed": false,
+                      "isPinned": true
+                    },
+                    {
+                      "queryRefs": [
+                        "Budgetrader.Post"
+                      ],
+                      "identityKeys": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Entity": "Budgetrader"
+                              }
+                            },
+                            "Property": "Post"
+                          }
+                        }
+                      ],
+                      "isCollapsed": false,
+                      "isPinned": true
+                    }
+                  ],
+                  "root": {}
+                },
+                {
+                  "roles": [
+                    "Columns"
+                  ],
+                  "levels": [
+                    {
+                      "queryRefs": [
+                        "Budgetkolumner.Grupp"
+                      ],
+                      "identityKeys": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Entity": "Budgetkolumner"
+                              }
+                            },
+                            "Property": "Grupp"
+                          }
+                        }
+                      ],
+                      "isCollapsed": false,
+                      "isPinned": true
+                    },
+                    {
+                      "queryRefs": [
+                        "Budgetkolumner.Kolumn"
+                      ],
+                      "identityKeys": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Entity": "Budgetkolumner"
+                              }
+                            },
+                            "Property": "Kolumn"
+                          }
+                        }
+                      ],
+                      "isCollapsed": false,
+                      "isPinned": true
+                    }
+                  ],
+                  "root": {}
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

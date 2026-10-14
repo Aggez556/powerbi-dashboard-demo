@@ -1,0 +1,60 @@
+/// Budget: Budgetkonton. Utility selectors are intentionally disconnected.
+table Budgetkonton
+	lineageTag: 7e8c508a-1a08-44ac-a974-f117bc72df6b
+
+	column KontoID
+		dataType: int64
+		isHidden
+		lineageTag: 23c42798-34a2-4b68-92e8-3a4a24b89f62
+		summarizeBy: none
+		sourceColumn: KontoID
+
+	column RRgrupp
+		dataType: string
+		lineageTag: 71d91c5e-69b6-4eb8-827d-041b59b9151f
+		summarizeBy: none
+		sourceColumn: RRgrupp
+		sortByColumn: Gruppordning
+
+	column Undergrupp
+		dataType: string
+		lineageTag: 5606a91e-4865-4422-bd39-05e8ca8ecf73
+		summarizeBy: none
+		sourceColumn: Undergrupp
+
+	column Post
+		dataType: string
+		lineageTag: f28d18f8-e288-41c1-95cc-d077872b0170
+		summarizeBy: none
+		sourceColumn: Post
+
+	column Gruppordning
+		dataType: int64
+		isHidden
+		lineageTag: 6cefcc2d-9dbb-4765-9832-9fbcad6b5697
+		summarizeBy: none
+		sourceColumn: Gruppordning
+
+	column Underordning
+		dataType: int64
+		isHidden
+		lineageTag: 58c440cb-242d-48c7-9d18-98082f9553a2
+		summarizeBy: none
+		sourceColumn: Underordning
+
+	column Postordning
+		dataType: int64
+		isHidden
+		lineageTag: 735d2990-3dd0-46b7-80d1-80124c810bc3
+		summarizeBy: none
+		sourceColumn: Postordning
+
+	partition Budgetkonton = m
+		mode: import
+		source =
+				let
+				 Source=Csv.Document(File.Contents(DataFolder & "/Budgetkonton.csv"),[Delimiter=",",Encoding=65001,QuoteStyle=QuoteStyle.Csv]),
+				 Headers=Table.PromoteHeaders(Source,[PromoteAllScalars=true]),
+				 Typed=Table.TransformColumnTypes(Headers,{{"KontoID", Int64.Type}, {"RRgrupp", type text}, {"Undergrupp", type text}, {"Post", type text}, {"Gruppordning", Int64.Type}, {"Underordning", Int64.Type}, {"Postordning", Int64.Type}},"en-US")
+				in Typed
+

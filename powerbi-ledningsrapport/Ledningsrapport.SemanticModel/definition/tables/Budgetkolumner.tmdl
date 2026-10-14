@@ -1,0 +1,60 @@
+/// Budget: Budgetkolumner. Utility selectors are intentionally disconnected.
+table Budgetkolumner
+	lineageTag: 77ac1b54-9dc6-4ae3-a3f2-7454767f2d63
+
+	column LägeID
+		dataType: int64
+		isHidden
+		lineageTag: a1681cb5-96d7-4862-9ad0-d987a44f4aba
+		summarizeBy: none
+		sourceColumn: LägeID
+
+	column ScenarioA
+		dataType: int64
+		lineageTag: 914b46ec-f60e-47e2-87c1-3394c43b1557
+		summarizeBy: none
+		sourceColumn: ScenarioA
+
+	column ScenarioB
+		dataType: int64
+		lineageTag: 0600f425-3606-4d44-836f-d64ef6f09dd9
+		summarizeBy: none
+		sourceColumn: ScenarioB
+
+	column MånadID
+		dataType: int64
+		isHidden
+		lineageTag: a8c7dae4-0347-4f14-97af-4e6c2e36bb7c
+		summarizeBy: none
+		sourceColumn: MånadID
+
+	column Grupp
+		dataType: string
+		lineageTag: 6d63a7f9-e768-4762-aa7b-26c6f84e276f
+		summarizeBy: none
+		sourceColumn: Grupp
+		sortByColumn: MånadID
+
+	column Position
+		dataType: int64
+		isHidden
+		lineageTag: cf893f12-373e-4f55-a12b-e7796479ae99
+		summarizeBy: none
+		sourceColumn: Position
+
+	column Kolumn
+		dataType: string
+		lineageTag: f56d94dd-c6a4-4ce7-835a-11e5dba4b46d
+		summarizeBy: none
+		sourceColumn: Kolumn
+		sortByColumn: Position
+
+	partition Budgetkolumner = m
+		mode: import
+		source =
+				let
+				 Source=Csv.Document(File.Contents(DataFolder & "/Budgetkolumner.csv"),[Delimiter=",",Encoding=65001,QuoteStyle=QuoteStyle.Csv]),
+				 Headers=Table.PromoteHeaders(Source,[PromoteAllScalars=true]),
+				 Typed=Table.TransformColumnTypes(Headers,{{"LägeID", Int64.Type}, {"ScenarioA", Int64.Type}, {"ScenarioB", Int64.Type}, {"MånadID", Int64.Type}, {"Grupp", type text}, {"Position", Int64.Type}, {"Kolumn", type text}},"en-US")
+				in Typed
+

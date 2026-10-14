@@ -1,0 +1,438 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 414.50401899717843,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 1504.7386504521451,
+            "y": 252.25519431265923
+          },
+          "nodeIndex": "Budgetscenarier",
+          "nodeLineageTag": "49a9317b-fff4-4f1a-9edd-a08a7d23ed45",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 50,
+            "y": 431.51196509095712
+          },
+          "nodeIndex": "Artiklar",
+          "nodeLineageTag": "f015febe-e3ce-4cd7-8107-525ae43008cb",
+          "size": {
+            "height": 224,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1954.9979935132587,
+            "y": 412.26984742844786
+          },
+          "nodeIndex": "Bryggaxel",
+          "nodeLineageTag": "ff34364d-923d-4c5f-a12e-0afc62f32233",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 631.993340638662,
+            "y": 528.78422777245282
+          },
+          "nodeIndex": "Budget",
+          "nodeLineageTag": "525e749d-9848-4b80-b5bf-50d377f5b4de",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2238.9979935132587,
+            "y": 448.26984742844786
+          },
+          "nodeIndex": "Budgetår",
+          "nodeLineageTag": "fb8c4365-352e-4def-aeff-4b22773758ce",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2522.9979935132587,
+            "y": 436.26984742844786
+          },
+          "nodeIndex": "Budgetjämförelse",
+          "nodeLineageTag": "4b9c0913-e0bc-40e5-872f-5e5ca8d716fe",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2806.9979935132587,
+            "y": 424.26984742844786
+          },
+          "nodeIndex": "Budgetjämförelsescenario",
+          "nodeLineageTag": "c8f7e546-6c18-4d29-b376-5a31c5ef556f",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 3090.9979935132587,
+            "y": 376.26984742844786
+          },
+          "nodeIndex": "Budgetkolumner",
+          "nodeLineageTag": "77ac1b54-9dc6-4ae3-a3f2-7454767f2d63",
+          "size": {
+            "height": 248,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1636.6078710660222,
+            "y": 602.45143815981874
+          },
+          "nodeIndex": "Budgetkonton",
+          "nodeLineageTag": "7e8c508a-1a08-44ac-a974-f117bc72df6b",
+          "size": {
+            "height": 248,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 3374.9979935132587,
+            "y": 424.26984742844786
+          },
+          "nodeIndex": "Budgetmånader",
+          "nodeLineageTag": "d7d25baf-8ec0-4a48-b627-215bf0505c3c",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1220.5335237155239,
+            "y": 271.99092305964234
+          },
+          "nodeIndex": "Budgetperioder",
+          "nodeLineageTag": "fb22c4e1-006a-48a8-8721-7a79c6051d8d",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 3658.9979935132587,
+            "y": 376.26984742844786
+          },
+          "nodeIndex": "Budgetrader",
+          "nodeLineageTag": "9b3633bc-d3e6-48fb-8dbc-b5fc236b8cb1",
+          "size": {
+            "height": 248,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1720.9979935132587,
+            "y": 50.088256697076986
+          },
+          "nodeIndex": "Budgetscenarion",
+          "nodeLineageTag": "36b67338-cf29-4195-8aac-77c8e033870b",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 3942.9979935132587,
+            "y": 436.26984742844786
+          },
+          "nodeIndex": "Budgetvisning",
+          "nodeLineageTag": "de79c10b-b4f9-46fe-8adb-1a506bb8cd32",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 917.30943203941661,
+            "y": 511.93266263181152
+          },
+          "nodeIndex": "Datum",
+          "nodeLineageTag": "dfc20cee-ebec-4c31-9587-25d943f40ec0",
+          "size": {
+            "height": 248,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 640.78101961709172,
+            "y": 226.13072048180607
+          },
+          "nodeIndex": "Direkta kostnader",
+          "nodeLineageTag": "da3dafda-871b-4f07-bc74-b73bc49d6c2c",
+          "size": {
+            "height": 224,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 345.19626898792717,
+            "y": 438.11198349898979
+          },
+          "nodeIndex": "Försäljning",
+          "nodeLineageTag": "0c6d2c71-19e2-47ce-a69d-fee4b36982a5",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 4226.9979935132587,
+            "y": 412.26984742844786
+          },
+          "nodeIndex": "Försäljningsserie",
+          "nodeLineageTag": "1597cfc2-4fab-46bc-b905-5a3c518e25f9",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 385.72529827309779,
+            "y": 798.53969485689572
+          },
+          "nodeIndex": "Gemensamma kostnader",
+          "nodeLineageTag": "ba51828c-aa2f-4ffc-80a0-17090e625372",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 4510.9979935132587,
+            "y": 424.26984742844786
+          },
+          "nodeIndex": "Helårsval",
+          "nodeLineageTag": "eddc5c68-89e7-49c7-82e0-edcf098ea372",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 4794.9979935132587,
+            "y": 436.26984742844786
+          },
+          "nodeIndex": "Kundbassteg",
+          "nodeLineageTag": "b85326c5-168c-4150-a122-25b5f680193f",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 345.501035659845,
+            "y": 144.25666740143197
+          },
+          "nodeIndex": "Kunder",
+          "nodeLineageTag": "8281f140-d94c-4bce-924b-e938d15f773d",
+          "size": {
+            "height": 224,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 5078.9979935132587,
+            "y": 436.26984742844786
+          },
+          "nodeIndex": "Kundgrupper",
+          "nodeLineageTag": "23bce2cf-9158-4e37-b944-5830d9c5573b",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 5362.9979935132587,
+            "y": 436.26984742844786
+          },
+          "nodeIndex": "Kundintäktssteg",
+          "nodeLineageTag": "096c5e8c-36db-401c-915b-165494d8f168",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 5646.9979935132587,
+            "y": 436.26984742844786
+          },
+          "nodeIndex": "Kundstatusval",
+          "nodeLineageTag": "461d1ead-4a65-41b9-b36a-6f3b773dee30",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 5930.9979935132587,
+            "y": 424.26984742844786
+          },
+          "nodeIndex": "Månadsval",
+          "nodeLineageTag": "838bed9d-59c4-40d4-a944-03f1764da04c",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 652.35153546715344,
+            "y": -50
+          },
+          "nodeIndex": "Områden",
+          "nodeLineageTag": "176bb8c1-e51e-462a-a965-9b444f90f5d8",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 6214.9979935132587,
+            "y": 436.26984742844786
+          },
+          "nodeIndex": "Områdesval",
+          "nodeLineageTag": "c574b688-08a0-44bb-bda0-d0a860732cbf",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 6498.9979935132587,
+            "y": 436.26984742844786
+          },
+          "nodeIndex": "Periodtyp",
+          "nodeLineageTag": "b6becec2-edff-468b-9701-bb3520aba4dd",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 6782.9979935132587,
+            "y": 424.26984742844786
+          },
+          "nodeIndex": "R12val",
+          "nodeLineageTag": "2085c3e1-9ba6-4023-8c6e-e781428fb8bb",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 7066.9979935132587,
+            "y": 424.26984742844786
+          },
+          "nodeIndex": "Trendaxel",
+          "nodeLineageTag": "214940df-53f1-4791-8b44-3082c8d6aec2",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 936.53352371552387,
+            "y": 137.27576225354858
+          },
+          "nodeIndex": "Uppdrag",
+          "nodeLineageTag": "214889ad-3dec-4e24-9e25-82e49072ea93",
+          "size": {
+            "height": 224,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "Alla tabeller",
+      "zoomValue": 28.419508051274089,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "Alla tabeller",
+  "defaultDiagram": "Alla tabeller"
+}

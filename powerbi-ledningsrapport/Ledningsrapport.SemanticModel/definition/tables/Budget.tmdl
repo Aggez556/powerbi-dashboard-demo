@@ -22,9 +22,9 @@ table Budget
 		mode: import
 		source =
 				let
-					Source = Csv.Document(File.Contents(DataFolder & "/Budget.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
-					Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
-					Typed = Table.TransformColumnTypes(Headers, {{"Datumnyckel", Int64.Type}, {"Rörelseresultat", Currency.Type}}, "en-US")
-				in
-					Typed
+				 Source=Table.SelectRows(Budgetscenarier,each [ScenarioID]=1 and [Månadsnyckel]<=202610),
+				 Grouped=Table.Group(Source,{"Månadsnyckel"},{{"Rörelseresultat",each List.Sum([Belopp]),Currency.Type}}),
+				 Key=Table.AddColumn(Grouped,"Datumnyckel",each [Månadsnyckel]*100+15,Int64.Type),
+				 Selected=Table.SelectColumns(Key,{"Datumnyckel","Rörelseresultat"})
+				in Selected
 

@@ -1,0 +1,24 @@
+{
+  "nodes": 26,
+  "rootRows": 9,
+  "expandableNodes": [
+    "r1",
+    "r2",
+    "r5",
+    "r6",
+    "r6_s2",
+    "r7"
+  ],
+  "calculatedNodes": [
+    "r3",
+    "r4",
+    "r8",
+    "r9"
+  ],
+  "financialAmountsInNodeTable": false,
+  "measures": [
+    "Rapportv\u00e4rde",
+    "Rapporttext",
+    "Rapportf\u00e4rg"
+  ]
+}

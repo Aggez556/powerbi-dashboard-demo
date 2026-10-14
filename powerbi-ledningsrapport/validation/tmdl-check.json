@@ -1,7 +1,7 @@
 ﻿{
-    "tables":  27,
+    "tables":  50,
     "status":  "passed",
     "measures":  191,
-    "relationships":  18,
+    "relationships":  29,
     "source":  "Microsoft TOM TMDL deserialization (not DAX execution)"
 }

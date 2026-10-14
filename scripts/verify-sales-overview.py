@@ -75,7 +75,7 @@ assert len(summary(20251001,20260930)['months'])==12
 
 report=BASE/'LedningsrapportUtanScroll.Report'
 pages=json.loads((report/'definition/pages/pages.json').read_text())['pageOrder']
-assert len(pages)==4
+assert len(pages)==5
 for page in pages:
     values=[json.loads(p.read_text(encoding='utf-8')) for p in (report/'definition/pages'/page/'visuals').glob('*/visual.json')]
     assert not any('Hygiengruppen' in json.dumps(v,ensure_ascii=False) for v in values)

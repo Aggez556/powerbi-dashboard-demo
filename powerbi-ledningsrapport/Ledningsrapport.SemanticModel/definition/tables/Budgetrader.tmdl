@@ -1,0 +1,62 @@
+/// Budget: Budgetrader. Utility selectors are intentionally disconnected.
+table Budgetrader
+	lineageTag: 9b3633bc-d3e6-48fb-8dbc-b5fc236b8cb1
+
+	column KontoID
+		dataType: int64
+		isHidden
+		lineageTag: 1ec111c3-8bbd-46d3-a2d7-91b03c37c8c2
+		summarizeBy: none
+		sourceColumn: KontoID
+
+	column Rad
+		dataType: string
+		lineageTag: 3bf91b6d-e7a7-4092-b92d-379ac971f736
+		summarizeBy: none
+		sourceColumn: Rad
+		sortByColumn: Radordning
+
+	column Undergrupp
+		dataType: string
+		lineageTag: 6e743ac0-11b3-4839-85a7-058a0c25b7f2
+		summarizeBy: none
+		sourceColumn: Undergrupp
+		sortByColumn: Underordning
+
+	column Post
+		dataType: string
+		lineageTag: c7900e64-3b11-4f10-8022-8c2aed9a7cb1
+		summarizeBy: none
+		sourceColumn: Post
+		sortByColumn: Postordning
+
+	column Radordning
+		dataType: int64
+		isHidden
+		lineageTag: 4f637700-b0a2-4d04-89e1-4d735d7fcadc
+		summarizeBy: none
+		sourceColumn: Radordning
+
+	column Underordning
+		dataType: int64
+		isHidden
+		lineageTag: bbd024f9-ece0-45f1-9ee0-30b9b8cb7745
+		summarizeBy: none
+		sourceColumn: Underordning
+
+	column Postordning
+		dataType: int64
+		isHidden
+		lineageTag: 36d49bd5-2f35-41e9-b46e-1ca30bbc42aa
+		summarizeBy: none
+		sourceColumn: Postordning
+
+	partition Budgetrader = m
+		mode: import
+		source =
+				let
+				 Source=Csv.Document(File.Contents(DataFolder & "/Budgetrader.csv"),[Delimiter=",",Encoding=65001,QuoteStyle=QuoteStyle.Csv]),
+				 Headers=Table.PromoteHeaders(Source,[PromoteAllScalars=true]),
+				 Typed=Table.TransformColumnTypes(Headers,{{"KontoID", Int64.Type}, {"Rad", type text}, {"Undergrupp", type text}, {"Post", type text}, {"Radordning", Int64.Type}, {"Underordning", Int64.Type}, {"Postordning", Int64.Type}},"en-US")
+				in Typed
+

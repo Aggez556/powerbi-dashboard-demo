@@ -1,0 +1,11 @@
+{
+  "capacity": 8000.0,
+  "booked": 6800.0,
+  "free": 1280.0,
+  "over": 80.00000000000007,
+  "jobsR12": 960,
+  "hoursR12": 15348,
+  "financeRows": 5265,
+  "resources": 30,
+  "registryRows": 3436
+}

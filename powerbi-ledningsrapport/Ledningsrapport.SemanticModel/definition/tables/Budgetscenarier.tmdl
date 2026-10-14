@@ -1,0 +1,398 @@
+/// Budget: Budgetscenarier. Utility selectors are intentionally disconnected.
+table Budgetscenarier
+	lineageTag: 49a9317b-fff4-4f1a-9edd-a08a7d23ed45
+
+	/// Budget calculation: Budget valt år.
+	measure 'Budget valt år' = SELECTEDVALUE('Budgetår'[År],2026)
+		formatString: 0
+		displayFolder: Budget
+		lineageTag: be38876f-24ae-4a00-883f-b1d146a63354
+
+	/// Budget calculation: Budget jämförelseläge.
+	measure 'Budget jämförelseläge' = IF([Budget valt år]<2026,1,SELECTEDVALUE('Budgetjämförelse'[Ordning],1))
+		formatString: 0
+		displayFolder: Budget
+		lineageTag: f4810a67-c775-4123-8b96-f73bc539f6db
+
+	/// Budget calculation: Budget scenario A.
+	measure 'Budget scenario A' = IF([Budget valt år]<2026,1,SELECTEDVALUE('Budgetscenarion'[ScenarioID],1))
+		formatString: 0
+		displayFolder: Budget
+		lineageTag: 922b4dbf-09bf-4756-bc7a-8c1b1fe3e2ba
+
+	/// Budget calculation: Budget scenario B.
+	measure 'Budget scenario B' = VAR _a=[Budget scenario A] VAR _b=SELECTEDVALUE('Budgetjämförelsescenario'[ScenarioID],2) RETURN IF(_a=_b,IF(_a=1,2,1),_b)
+		formatString: 0
+		displayFolder: Budget
+		lineageTag: f0c218cd-ef34-4445-951b-0e682a5eea16
+
+	/// Budget calculation: Budget scenario tillgängligt.
+	measure 'Budget scenario tillgängligt' = VAR _s=SELECTEDVALUE('Budgetscenarion'[ScenarioID]) RETURN IF([Budget valt år]=2026 || _s=1,1,0)
+		formatString: 0
+		displayFolder: Budget
+		lineageTag: c3f964a3-1988-4bd4-847c-d0f643410230
+
+	/// Budget calculation: Budget jämförelse tillgänglig.
+	measure 'Budget jämförelse tillgänglig' = IF(SELECTEDVALUE('Budgetjämförelse'[Ordning])=1 || [Budget valt år]=2026,1,0)
+		formatString: 0
+		displayFolder: Budget
+		lineageTag: 91f55b1d-b275-408a-a79c-cd09c57551d7
+
+	/// Budget calculation: Budget B tillgängligt.
+	measure 'Budget B tillgängligt' = IF([Budget jämförelseläge]=2 && SELECTEDVALUE('Budgetjämförelsescenario'[ScenarioID])<>[Budget scenario A],1,0)
+		formatString: 0
+		displayFolder: Budget
+		lineageTag: 99ec8b6b-b6cd-4bd2-b2f5-ea0907a99cb8
+
+	/// Budget calculation: Budget månad tillgänglig.
+	measure 'Budget månad tillgänglig' = IF([Budget jämförelseläge]=2 || [Budget valt år]<2026 || SELECTEDVALUE('Budgetmånader'[Nummer])<=9,1,0)
+		formatString: 0
+		displayFolder: Budget
+		lineageTag: e102479e-4860-4caa-aac8-ba074091aa79
+
+	/// Budget calculation: Budget A namn.
+	measure 'Budget A namn' = VAR _s=[Budget scenario A] RETURN MAXX(FILTER(ALL('Budgetscenarion'),'Budgetscenarion'[ScenarioID]=_s),'Budgetscenarion'[Scenario])
+		formatString: @
+		displayFolder: Budget
+		lineageTag: a1255fb0-789c-4a28-b2e5-5712fb82914a
+
+	/// Budget calculation: Budget B namn.
+	measure 'Budget B namn' = VAR _s=[Budget scenario B] RETURN MAXX(FILTER(ALL('Budgetjämförelsescenario'),'Budgetjämförelsescenario'[ScenarioID]=_s),'Budgetjämförelsescenario'[Scenario])
+		formatString: @
+		displayFolder: Budget
+		lineageTag: 07dc7f75-f4f6-4bb5-a44e-9c0ccb3a9378
+
+	/// Budget calculation: RR utfall en post.
+	measure 'RR utfall en post' =
+			VAR _year=[Budget valt år]
+			VAR _limit=IF([Budget jämförelseläge]=1 && _year=2026,9,12)
+			VAR _column=SELECTEDVALUE('Budgetkolumner'[MånadID],13)
+			VAR _acc=SELECTEDVALUE('Budgetvisning'[Ordning],1)=2
+			VAR _months=FILTER(VALUES('Budgetmånader'[Nummer]),'Budgetmånader'[Nummer]<=_limit && (_column=13 || IF(_acc,'Budgetmånader'[Nummer]<=_column,'Budgetmånader'[Nummer]=_column)))
+			VAR _keys=SELECTCOLUMNS(_months,"MonthKey",_year*100+'Budgetmånader'[Nummer])
+			VAR _k=SELECTEDVALUE('Budgetkonton'[KontoID])
+			RETURN SUMX(_keys,VAR _date=[MonthKey]*100+15
+			VAR _admin=CALCULATE(SUM('Gemensamma kostnader'[Belopp]),REMOVEFILTERS('Datum'),REMOVEFILTERS('Gemensamma kostnader'[Kostnadstyp]),TREATAS({_date},'Gemensamma kostnader'[Datumnyckel]),'Gemensamma kostnader'[Kostnadstyp]="Administration")
+			RETURN SWITCH(_k,
+			1001,CALCULATE(SUM('Försäljning'[Nettointäkt]),TREATAS({_date},'Försäljning'[Datumnyckel]),'Försäljning'[Områdesnyckel]=1),
+			1002,CALCULATE(SUM('Försäljning'[Nettointäkt]),TREATAS({_date},'Försäljning'[Datumnyckel]),'Försäljning'[Områdesnyckel]=2),
+			1003,CALCULATE(SUM('Försäljning'[Nettointäkt]),TREATAS({_date},'Försäljning'[Datumnyckel]),'Försäljning'[Områdesnyckel]=3),
+			2001,-CALCULATE(SUM('Direkta kostnader'[Belopp]),TREATAS({_date},'Direkta kostnader'[Datumnyckel]),'Direkta kostnader'[Kostnadstyp]="Varukostnad"),
+			2002,-CALCULATE(SUM('Direkta kostnader'[Belopp]),TREATAS({_date},'Direkta kostnader'[Datumnyckel]),'Direkta kostnader'[Kostnadstyp]="Direkt leveranspersonal"),
+			2003,-CALCULATE(SUM('Direkta kostnader'[Belopp]),TREATAS({_date},'Direkta kostnader'[Datumnyckel]),'Direkta kostnader'[Kostnadstyp]="Underleverantörer"),
+			2004,-CALCULATE(SUM('Direkta kostnader'[Belopp]),TREATAS({_date},'Direkta kostnader'[Datumnyckel]),'Direkta kostnader'[Kostnadstyp]="Övrigt direkt"),
+			2005,-CALCULATE(SUM('Direkta kostnader'[Belopp]),TREATAS({_date},'Direkta kostnader'[Datumnyckel]),'Direkta kostnader'[Kostnadstyp]="Ej uppdragsfördelad personal"),
+			3001,-ROUND(_admin*.6,0),
+			4001,-CALCULATE(SUM('Gemensamma kostnader'[Belopp]),TREATAS({_date},'Gemensamma kostnader'[Datumnyckel]),'Gemensamma kostnader'[Kostnadstyp]="Lokaler och drift"),
+			4002,-ROUND(_admin*.10,0),4003,-ROUND(_admin*.06,0),4004,-ROUND(_admin*.04,0),4005,-ROUND(_admin*.08,0),
+			4006,-(_admin-ROUND(_admin*.6,0)-ROUND(_admin*.10,0)-ROUND(_admin*.06,0)-ROUND(_admin*.04,0)-ROUND(_admin*.08,0)),
+			5001,-CALCULATE(SUM('Gemensamma kostnader'[Belopp]),TREATAS({_date},'Gemensamma kostnader'[Datumnyckel]),'Gemensamma kostnader'[Kostnadstyp]="Avskrivningar")))
+		formatString: #,##0
+		isHidden
+		displayFolder: Budget
+		lineageTag: deac7a64-683a-4a73-8eeb-639b23f2b06b
+
+	/// Budget calculation: RR utfall konton.
+	measure 'RR utfall konton' = CALCULATE(SUMX(VALUES('Budgetkonton'[KontoID]),[RR utfall en post]),REMOVEFILTERS('Datum'),REMOVEFILTERS('Områden'),REMOVEFILTERS('Kunder'),REMOVEFILTERS('Artiklar'))
+		formatString: #,##0
+		isHidden
+		displayFolder: Budget
+		lineageTag: 302d73ee-d337-4585-9ab6-33438cc5a93a
+
+	/// Budget calculation: RR budget A konton.
+	measure 'RR budget A konton' =
+			VAR _year=[Budget valt år]
+			VAR _limit=IF([Budget jämförelseläge]=1 && _year=2026,9,12)
+			VAR _column=SELECTEDVALUE('Budgetkolumner'[MånadID],13)
+			VAR _acc=SELECTEDVALUE('Budgetvisning'[Ordning],1)=2
+			VAR _months=FILTER(VALUES('Budgetmånader'[Nummer]),'Budgetmånader'[Nummer]<=_limit && (_column=13 || IF(_acc,'Budgetmånader'[Nummer]<=_column,'Budgetmånader'[Nummer]=_column)))
+			VAR _keys=SELECTCOLUMNS(_months,"MonthKey",_year*100+'Budgetmånader'[Nummer])
+			VAR _scenario=[Budget scenario A] RETURN CALCULATE(SUM('Budgetscenarier'[Belopp]),REMOVEFILTERS('Budgetscenarion'),REMOVEFILTERS('Budgetperioder'),TREATAS(_keys,'Budgetscenarier'[Månadsnyckel]),TREATAS({_scenario},'Budgetscenarier'[ScenarioID]))
+		formatString: #,##0
+		isHidden
+		displayFolder: Budget
+		lineageTag: 0b604bd3-d43e-4fa5-ab91-bd2478c5d038
+
+	/// Budget calculation: RR budget B konton.
+	measure 'RR budget B konton' =
+			VAR _year=[Budget valt år]
+			VAR _limit=IF([Budget jämförelseläge]=1 && _year=2026,9,12)
+			VAR _column=SELECTEDVALUE('Budgetkolumner'[MånadID],13)
+			VAR _acc=SELECTEDVALUE('Budgetvisning'[Ordning],1)=2
+			VAR _months=FILTER(VALUES('Budgetmånader'[Nummer]),'Budgetmånader'[Nummer]<=_limit && (_column=13 || IF(_acc,'Budgetmånader'[Nummer]<=_column,'Budgetmånader'[Nummer]=_column)))
+			VAR _keys=SELECTCOLUMNS(_months,"MonthKey",_year*100+'Budgetmånader'[Nummer])
+			VAR _scenario=[Budget scenario B] RETURN CALCULATE(SUM('Budgetscenarier'[Belopp]),REMOVEFILTERS('Budgetscenarion'),REMOVEFILTERS('Budgetperioder'),TREATAS(_keys,'Budgetscenarier'[Månadsnyckel]),TREATAS({_scenario},'Budgetscenarier'[ScenarioID]))
+		formatString: #,##0
+		isHidden
+		displayFolder: Budget
+		lineageTag: 979e7d95-d414-428a-b6ec-36c44af4aee4
+
+	/// Budget calculation: RR rad utfall.
+	measure 'RR rad utfall' =
+			VAR _row=SELECTEDVALUE('Budgetrader'[KontoID],0)
+			VAR _ids=VALUES('Budgetrader'[KontoID])
+			VAR _blank=(ISINSCOPE('Budgetrader'[Undergrupp]) && ISBLANK(SELECTEDVALUE('Budgetrader'[Undergrupp]))) || (ISINSCOPE('Budgetrader'[Post]) && ISBLANK(SELECTEDVALUE('Budgetrader'[Post])))
+			VAR _sales=CALCULATE([RR utfall konton],REMOVEFILTERS('Budgetkonton'),'Budgetkonton'[RRgrupp]="Nettoomsättning")
+			VAR _direct=CALCULATE([RR utfall konton],REMOVEFILTERS('Budgetkonton'),'Budgetkonton'[RRgrupp]="Direkta kostnader")
+			VAR _all=CALCULATE([RR utfall konton],REMOVEFILTERS('Budgetkonton'))
+			RETURN IF(_blank,BLANK(),SWITCH(_row,-1,_sales+_direct,-2,DIVIDE(_sales+_direct,_sales),-3,_all,-4,DIVIDE(_all,_sales),CALCULATE([RR utfall konton],TREATAS(_ids,'Budgetkonton'[KontoID]))))
+		formatString: #,##0
+		isHidden
+		displayFolder: Budget
+		lineageTag: 34413dcf-7674-49a5-adc6-d73066e53d60
+
+	/// Budget calculation: RR rad A.
+	measure 'RR rad A' =
+			VAR _row=SELECTEDVALUE('Budgetrader'[KontoID],0)
+			VAR _ids=VALUES('Budgetrader'[KontoID])
+			VAR _blank=(ISINSCOPE('Budgetrader'[Undergrupp]) && ISBLANK(SELECTEDVALUE('Budgetrader'[Undergrupp]))) || (ISINSCOPE('Budgetrader'[Post]) && ISBLANK(SELECTEDVALUE('Budgetrader'[Post])))
+			VAR _sales=CALCULATE([RR budget A konton],REMOVEFILTERS('Budgetkonton'),'Budgetkonton'[RRgrupp]="Nettoomsättning")
+			VAR _direct=CALCULATE([RR budget A konton],REMOVEFILTERS('Budgetkonton'),'Budgetkonton'[RRgrupp]="Direkta kostnader")
+			VAR _all=CALCULATE([RR budget A konton],REMOVEFILTERS('Budgetkonton'))
+			RETURN IF(_blank,BLANK(),SWITCH(_row,-1,_sales+_direct,-2,DIVIDE(_sales+_direct,_sales),-3,_all,-4,DIVIDE(_all,_sales),CALCULATE([RR budget A konton],TREATAS(_ids,'Budgetkonton'[KontoID]))))
+		formatString: #,##0
+		isHidden
+		displayFolder: Budget
+		lineageTag: e4973cfa-0e72-4cb9-8171-3aff3c3e85c0
+
+	/// Budget calculation: RR rad B.
+	measure 'RR rad B' =
+			VAR _row=SELECTEDVALUE('Budgetrader'[KontoID],0)
+			VAR _ids=VALUES('Budgetrader'[KontoID])
+			VAR _blank=(ISINSCOPE('Budgetrader'[Undergrupp]) && ISBLANK(SELECTEDVALUE('Budgetrader'[Undergrupp]))) || (ISINSCOPE('Budgetrader'[Post]) && ISBLANK(SELECTEDVALUE('Budgetrader'[Post])))
+			VAR _sales=CALCULATE([RR budget B konton],REMOVEFILTERS('Budgetkonton'),'Budgetkonton'[RRgrupp]="Nettoomsättning")
+			VAR _direct=CALCULATE([RR budget B konton],REMOVEFILTERS('Budgetkonton'),'Budgetkonton'[RRgrupp]="Direkta kostnader")
+			VAR _all=CALCULATE([RR budget B konton],REMOVEFILTERS('Budgetkonton'))
+			RETURN IF(_blank,BLANK(),SWITCH(_row,-1,_sales+_direct,-2,DIVIDE(_sales+_direct,_sales),-3,_all,-4,DIVIDE(_all,_sales),CALCULATE([RR budget B konton],TREATAS(_ids,'Budgetkonton'[KontoID]))))
+		formatString: #,##0
+		isHidden
+		displayFolder: Budget
+		lineageTag: c13065df-fa47-40e2-adad-abe5a72f1c18
+
+	/// Budget calculation: Budget kolumn synlig.
+	measure 'Budget kolumn synlig' =
+			VAR _m=SELECTEDVALUE('Budgetkolumner'[MånadID]) VAR _mode=[Budget jämförelseläge] VAR _a=[Budget scenario A] VAR _b=[Budget scenario B]
+			VAR _match=COUNTROWS(FILTER('Budgetkolumner','Budgetkolumner'[LägeID]=_mode && 'Budgetkolumner'[ScenarioA]=_a && 'Budgetkolumner'[ScenarioB]=IF(_mode=1,0,_b)))>0
+			RETURN IF(_match && (_m=13 || CONTAINS(VALUES('Budgetmånader'[Nummer]),'Budgetmånader'[Nummer],_m)) && (_m=13 || _mode=2 || [Budget valt år]<2026 || _m<=9),1,0)
+		formatString: 0
+		displayFolder: Budget
+		lineageTag: 4b4301be-e4c3-4698-9312-ca6923ff0fe6
+
+	/// Budget calculation: Budget matrisvärde.
+	measure 'Budget matrisvärde' =
+			VAR _slot=SELECTEDVALUE('Budgetkolumner'[Position]) VAR _mode=[Budget jämförelseläge]
+			VAR _a=[RR rad A] VAR _b=IF(_mode=1,[RR rad utfall],[RR rad B])
+			VAR _margin=SELECTEDVALUE('Budgetrader'[KontoID]) IN {-2,-4}
+			VAR _diff=IF(_mode=1,_b-_a,_a-_b)
+			VAR _value=SWITCH(_slot,1,_a,2,_b,3,IF(_margin,_diff*100,_diff))
+			RETURN IF(ISINSCOPE('Budgetrader'[Rad]) && [Budget kolumn synlig]=1 && NOT ISBLANK(_a) && NOT ISBLANK(_b),IF(_margin,_value,DIVIDE(_value,1000)))
+		displayFolder: Budget
+		lineageTag: 4090eca7-d8ea-452e-a148-89ca095d17ba
+
+		formatStringDefinition = IF(SELECTEDVALUE('Budgetrader'[KontoID]) IN {-2,-4},IF(SELECTEDVALUE('Budgetkolumner'[Position])=3,"+0.0 ""pp"";−0.0 ""pp"";0.0 ""pp""","0.0 %"),IF(SELECTEDVALUE('Budgetkolumner'[Position])=3,"+#,##0;−#,##0;0","#,##0;−#,##0;0"))
+
+	/// Budget calculation: Budget matrisfärg.
+	measure 'Budget matrisfärg' = IF(SELECTEDVALUE('Budgetkolumner'[Position])=3,IF([Budget matrisvärde]<0,"#B42318",IF([Budget matrisvärde]>0,"#007956","#5B6B80")),"#0F3163")
+		formatString: @
+		displayFolder: Budget
+		lineageTag: c7c103cd-dd69-4a64-9100-496f032a6e8e
+
+	/// Budget calculation: Budget radbakgrund.
+	measure 'Budget radbakgrund' = IF(NOT ISINSCOPE('Budgetrader'[Undergrupp]),SWITCH(SELECTEDVALUE('Budgetrader'[Rad]),"Bruttovinst","#E8EEF6","Rörelseresultat","#E8EEF6","Bruttomarginal","#F5F7FB","Rörelsemarginal","#F5F7FB","#FFFFFF"),"#FFFFFF")
+		formatString: @
+		displayFolder: Budget
+		lineageTag: 13cac10a-f881-4e03-8d9d-c27ec3c529c9
+
+	/// Budget calculation: Budget omsättning huvud.
+	measure 'Budget omsättning huvud' = CALCULATE(IF([Budget jämförelseläge]=1,[RR rad utfall],[RR rad A]),REMOVEFILTERS('Budgetkolumner'),REMOVEFILTERS('Budgetrader'),'Budgetrader'[Rad]="Nettoomsättning")
+		formatString: #,##0
+		isHidden
+		displayFolder: Budget
+		lineageTag: 4cedcd6d-effa-495f-8ff8-8e40fa9d870b
+
+	/// Budget calculation: Budget omsättning bas.
+	measure 'Budget omsättning bas' = CALCULATE(IF([Budget jämförelseläge]=1,[RR rad A],[RR rad B]),REMOVEFILTERS('Budgetkolumner'),REMOVEFILTERS('Budgetrader'),'Budgetrader'[Rad]="Nettoomsättning")
+		formatString: #,##0
+		isHidden
+		displayFolder: Budget
+		lineageTag: 5d58db82-e272-4db3-9b50-1e3784d8cffb
+
+	/// Budget calculation: Budget omsättning värde.
+	measure 'Budget omsättning värde' = VAR _v=[Budget omsättning huvud] RETURN IF(ISBLANK(_v),"—",FORMAT(_v/1000000,"0.00 ""Mkr""","sv-SE"))
+		formatString: @
+		displayFolder: Budget
+		lineageTag: e8187d23-756c-4483-9b68-2f8a79188625
+
+	/// Budget calculation: Budget omsättning jämförelse.
+	measure 'Budget omsättning jämförelse' = VAR _v=[Budget omsättning bas] RETURN IF([Budget jämförelseläge]=1,"Budget: ",[Budget B namn] & ": ") & IF(ISBLANK(_v),"—",FORMAT(_v/1000000,"0.00 ""Mkr""","sv-SE"))
+		formatString: @
+		displayFolder: Budget
+		lineageTag: 3b66f23e-8f11-4d65-bfe5-9fb71673d56e
+
+	/// Budget calculation: Budget omsättning avvikelse.
+	measure 'Budget omsättning avvikelse' = VAR _h=[Budget omsättning huvud] VAR _b=[Budget omsättning bas] VAR _d=_h-_b RETURN IF(ISBLANK(_h)||ISBLANK(_b),"—",FORMAT(_d/1000000,"+0.00 ""Mkr"";−0.00 ""Mkr"";0.00 ""Mkr""","sv-SE") & " · " & IF(_b>0,FORMAT(DIVIDE(_d,_b),"+0.0 %;−0.0 %;0.0 %","sv-SE"),"—"))
+		formatString: @
+		displayFolder: Budget
+		lineageTag: cfe947af-2034-440c-8311-92b7ab264535
+
+	/// Budget calculation: Budget omsättning färg.
+	measure 'Budget omsättning färg' = IF([Budget omsättning huvud]-[Budget omsättning bas]<0,"#B42318",IF([Budget omsättning huvud]-[Budget omsättning bas]>0,"#007956","#5B6B80"))
+		formatString: @
+		displayFolder: Budget
+		lineageTag: db4aebe3-06e9-42d6-b12b-2c65b7338304
+
+	/// Budget calculation: Budget resultat huvud.
+	measure 'Budget resultat huvud' = CALCULATE(IF([Budget jämförelseläge]=1,[RR rad utfall],[RR rad A]),REMOVEFILTERS('Budgetkolumner'),REMOVEFILTERS('Budgetrader'),'Budgetrader'[Rad]="Rörelseresultat")
+		formatString: #,##0
+		isHidden
+		displayFolder: Budget
+		lineageTag: 44298346-e029-44a6-b881-40cef8c6bd38
+
+	/// Budget calculation: Budget resultat bas.
+	measure 'Budget resultat bas' = CALCULATE(IF([Budget jämförelseläge]=1,[RR rad A],[RR rad B]),REMOVEFILTERS('Budgetkolumner'),REMOVEFILTERS('Budgetrader'),'Budgetrader'[Rad]="Rörelseresultat")
+		formatString: #,##0
+		isHidden
+		displayFolder: Budget
+		lineageTag: 81d7cbff-d852-475f-98bc-ac4b872670ce
+
+	/// Budget calculation: Budget resultat värde.
+	measure 'Budget resultat värde' = VAR _v=[Budget resultat huvud] RETURN IF(ISBLANK(_v),"—",FORMAT(_v/1000000,"0.00 ""Mkr""","sv-SE"))
+		formatString: @
+		displayFolder: Budget
+		lineageTag: 5bc40f4e-15f4-48e5-acc2-79abe4f728c4
+
+	/// Budget calculation: Budget resultat jämförelse.
+	measure 'Budget resultat jämförelse' = VAR _v=[Budget resultat bas] RETURN IF([Budget jämförelseläge]=1,"Budget: ",[Budget B namn] & ": ") & IF(ISBLANK(_v),"—",FORMAT(_v/1000000,"0.00 ""Mkr""","sv-SE"))
+		formatString: @
+		displayFolder: Budget
+		lineageTag: 0fcf196e-6eba-43ab-8d53-3d0f047cb02b
+
+	/// Budget calculation: Budget resultat avvikelse.
+	measure 'Budget resultat avvikelse' = VAR _h=[Budget resultat huvud] VAR _b=[Budget resultat bas] VAR _d=_h-_b RETURN IF(ISBLANK(_h)||ISBLANK(_b),"—",FORMAT(_d/1000000,"+0.00 ""Mkr"";−0.00 ""Mkr"";0.00 ""Mkr""","sv-SE") & " · " & IF(_b>0,FORMAT(DIVIDE(_d,_b),"+0.0 %;−0.0 %;0.0 %","sv-SE"),"—"))
+		formatString: @
+		displayFolder: Budget
+		lineageTag: a65e9bee-b985-408f-b1f0-86b79dc17384
+
+	/// Budget calculation: Budget resultat färg.
+	measure 'Budget resultat färg' = IF([Budget resultat huvud]-[Budget resultat bas]<0,"#B42318",IF([Budget resultat huvud]-[Budget resultat bas]>0,"#007956","#5B6B80"))
+		formatString: @
+		displayFolder: Budget
+		lineageTag: bc56dc1a-f027-4757-89ae-48dc412067c3
+
+	/// Budget calculation: Budget marginal huvud.
+	measure 'Budget marginal huvud' = CALCULATE(IF([Budget jämförelseläge]=1,[RR rad utfall],[RR rad A]),REMOVEFILTERS('Budgetkolumner'),REMOVEFILTERS('Budgetrader'),'Budgetrader'[Rad]="Bruttomarginal")
+		formatString: 0.0 %
+		isHidden
+		displayFolder: Budget
+		lineageTag: d80be9d8-a121-497a-941f-5a2558d8b62d
+
+	/// Budget calculation: Budget marginal bas.
+	measure 'Budget marginal bas' = CALCULATE(IF([Budget jämförelseläge]=1,[RR rad A],[RR rad B]),REMOVEFILTERS('Budgetkolumner'),REMOVEFILTERS('Budgetrader'),'Budgetrader'[Rad]="Bruttomarginal")
+		formatString: 0.0 %
+		isHidden
+		displayFolder: Budget
+		lineageTag: 76474cb6-fcdd-4cb5-97f5-be15542e5d7d
+
+	/// Budget calculation: Budget marginal värde.
+	measure 'Budget marginal värde' = VAR _v=[Budget marginal huvud] RETURN IF(ISBLANK(_v),"—",FORMAT(_v,"0.0 %","sv-SE"))
+		formatString: @
+		displayFolder: Budget
+		lineageTag: dc84874d-9dab-42e3-8be1-a6a144613925
+
+	/// Budget calculation: Budget marginal jämförelse.
+	measure 'Budget marginal jämförelse' = VAR _v=[Budget marginal bas] RETURN IF([Budget jämförelseläge]=1,"Budget: ",[Budget B namn] & ": ") & IF(ISBLANK(_v),"—",FORMAT(_v,"0.0 %","sv-SE"))
+		formatString: @
+		displayFolder: Budget
+		lineageTag: 084254a2-faf7-4a06-87a8-da7bc175a10f
+
+	/// Budget calculation: Budget marginal avvikelse.
+	measure 'Budget marginal avvikelse' = VAR _h=[Budget marginal huvud] VAR _b=[Budget marginal bas] VAR _d=_h-_b RETURN IF(ISBLANK(_h)||ISBLANK(_b),"—",FORMAT(_d*100,"+0.0;−0.0;0.0","sv-SE") & " procentenheter")
+		formatString: @
+		displayFolder: Budget
+		lineageTag: 775acb5f-025e-4fad-8909-b090ba1b52c2
+
+	/// Budget calculation: Budget marginal färg.
+	measure 'Budget marginal färg' = IF([Budget marginal huvud]-[Budget marginal bas]<0,"#B42318",IF([Budget marginal huvud]-[Budget marginal bas]>0,"#007956","#5B6B80"))
+		formatString: @
+		displayFolder: Budget
+		lineageTag: 180d5d4d-029f-4a23-a094-4884a6a9c91d
+
+	/// Budget calculation: Budget periodetikett.
+	measure 'Budget periodetikett' =
+			VAR _year=[Budget valt år] VAR _max=IF([Budget jämförelseläge]=1 && _year=2026,9,12)
+			VAR _months=FILTER(VALUES('Budgetmånader'[Nummer]),'Budgetmånader'[Nummer]<=_max)
+			VAR _first=MINX(_months,'Budgetmånader'[Nummer]) VAR _last=MAXX(_months,'Budgetmånader'[Nummer]) VAR _count=COUNTROWS(_months)
+			VAR _text=IF(_count=0,"Ingen avslutad månad vald",IF(_count=_last-_first+1,FORMAT(DATE(_year,_first,1),"MMMM","sv-SE") & IF(_last<>_first,"–" & FORMAT(DATE(_year,_last,1),"MMMM","sv-SE"),""),CONCATENATEX(_months,FORMAT(DATE(_year,'Budgetmånader'[Nummer],1),"MMM","sv-SE"),", ",'Budgetmånader'[Nummer],ASC)))
+			RETURN _text & " " & _year
+		formatString: @
+		displayFolder: Budget
+		lineageTag: 7335146f-e7d2-48ef-9525-290c041f78e2
+
+	/// Budget calculation: Budget matrisrubrik.
+	measure 'Budget matrisrubrik' = IF([Budget jämförelseläge]=1,[Budget A namn] & " mot utfall","A: " & [Budget A namn] & " · B: " & [Budget B namn]) & " · " & [Budget periodetikett]
+		formatString: @
+		displayFolder: Budget
+		lineageTag: c5eb2dcf-c480-4964-82ba-514b6716d0ff
+
+	/// Budget calculation: Budget visningsetikett.
+	measure 'Budget visningsetikett' = IF(SELECTEDVALUE('Budgetvisning'[Ordning],1)=2,"Ackumulerat inom vald period · Belopp i tkr","Belopp i tkr · Marginaler i %")
+		formatString: @
+		displayFolder: Budget
+		lineageTag: c6afc23b-b761-48c3-add1-ce42bd34ef7e
+
+	/// Budget calculation: Budget KPI prefix.
+	measure 'Budget KPI prefix' = IF([Budget jämförelseläge]=2,"Scenario A · " & [Budget A namn],"Utfall · " & [Budget periodetikett])
+		formatString: @
+		displayFolder: Budget
+		lineageTag: 61b28287-e0f0-4ead-a2c4-6af101003df1
+
+	/// Budget calculation: Budget utfallsnot.
+	measure 'Budget utfallsnot' = IF([Budget jämförelseläge]=1,"Utfall t.o.m. september 2026","Budgetscenarier från Excel · ingen utfallsjämförelse")
+		formatString: @
+		displayFolder: Budget
+		lineageTag: da06552f-f670-41b2-80df-b2a54aa02d0a
+
+	column Månadsnyckel
+		dataType: int64
+		isHidden
+		lineageTag: 3ebb1be6-b157-4c8f-9fde-9fcbfffef643
+		summarizeBy: none
+		sourceColumn: Månadsnyckel
+
+	column KontoID
+		dataType: int64
+		isHidden
+		lineageTag: 4d34f31e-b673-4c51-b81f-1ff189acae07
+		summarizeBy: none
+		sourceColumn: KontoID
+
+	column ScenarioID
+		dataType: int64
+		isHidden
+		lineageTag: 1dd16b84-6ba8-4b62-86ce-c27a8f0f8e9d
+		summarizeBy: none
+		sourceColumn: ScenarioID
+
+	column Belopp
+		dataType: decimal
+		isHidden
+		lineageTag: 91e70600-36eb-42df-a217-0852d5cb2e67
+		summarizeBy: none
+		sourceColumn: Belopp
+
+	partition Budgetscenarier = m
+		mode: import
+		source =
+				let
+				 Source=Excel.Workbook(File.Contents(BudgetWorkbook),null,true),
+				 Tables=Table.SelectRows(Source,each [Kind]="Table" and Text.StartsWith([Name],"Budget_")),
+				 Combined=Table.Combine(Tables[Data]),
+				 Unpivot=Table.UnpivotOtherColumns(Combined,{"År","ScenarioID","KontoID","Post"},"Månad","Belopp"),
+				 Months={"Januari","Februari","Mars","April","Maj","Juni","Juli","Augusti","September","Oktober","November","December"},
+				 Key=Table.AddColumn(Unpivot,"Månadsnyckel",each Number.From([År])*100+List.PositionOf(Months,[Månad])+1,Int64.Type),
+				 Selected=Table.SelectColumns(Key,{"Månadsnyckel","KontoID","ScenarioID","Belopp"}),
+				 Typed=Table.TransformColumnTypes(Selected,{{"Månadsnyckel",Int64.Type},{"KontoID",Int64.Type},{"ScenarioID",Int64.Type},{"Belopp",Currency.Type}},"sv-SE")
+				in Typed
+
+	annotation PBI_ResultType = Table
+

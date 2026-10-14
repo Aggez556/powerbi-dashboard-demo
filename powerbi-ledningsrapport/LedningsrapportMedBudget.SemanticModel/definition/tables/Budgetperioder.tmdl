@@ -1,0 +1,27 @@
+/// Budget: Budgetperioder. Utility selectors are intentionally disconnected.
+table 'Budgetperioder'
+
+	column 'Månadsnyckel'
+		dataType: int64
+		sourceColumn: Månadsnyckel
+		summarizeBy: none
+		isHidden
+
+	column 'År'
+		dataType: int64
+		sourceColumn: År
+		summarizeBy: none
+
+	column 'Nummer'
+		dataType: int64
+		sourceColumn: Nummer
+		summarizeBy: none
+
+	partition 'Budgetperioder' = m
+		mode: import
+		source =
+			let
+			 Source=Csv.Document(File.Contents(DataFolder & "/Budgetperioder.csv"),[Delimiter=",",Encoding=65001,QuoteStyle=QuoteStyle.Csv]),
+			 Headers=Table.PromoteHeaders(Source,[PromoteAllScalars=true]),
+			 Typed=Table.TransformColumnTypes(Headers,{{"Månadsnyckel", Int64.Type}, {"År", Int64.Type}, {"Nummer", Int64.Type}},"en-US")
+			in Typed

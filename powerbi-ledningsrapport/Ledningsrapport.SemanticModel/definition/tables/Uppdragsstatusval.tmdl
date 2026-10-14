@@ -1,0 +1,16 @@
+/// Reproducerbar uppdragsanalys. Separata datumroller för utfall och plan.
+table 'Uppdragsstatusval'
+
+	column 'Urval'
+		dataType: string
+		summarizeBy: none
+		sourceColumn: Urval
+
+	partition 'Uppdragsstatusval' = m
+		mode: import
+		source =
+			let
+			 Source=Csv.Document(File.Contents(DataFolder & "/Uppdragsstatusval.csv"),[Delimiter=",",Encoding=65001,QuoteStyle=QuoteStyle.Csv]),
+			 Headers=Table.PromoteHeaders(Source,[PromoteAllScalars=true]),
+			 Typed=Table.TransformColumnTypes(Headers,{{"Urval", type text}},"en-US")
+			in Typed

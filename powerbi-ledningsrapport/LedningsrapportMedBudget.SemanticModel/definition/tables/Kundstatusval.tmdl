@@ -1,0 +1,28 @@
+/// Frikopplad presentationsaxel för kundanalys.
+table Kundstatusval
+	lineageTag: 461d1ead-4a65-41b9-b36a-6f3b773dee30
+
+	column Status
+		dataType: string
+		lineageTag: b43f7390-10e9-46bc-873a-b00828b1fdfe
+		summarizeBy: none
+		sourceColumn: Status
+		sortByColumn: Ordning
+
+	column Ordning
+		dataType: int64
+		isHidden
+		lineageTag: 677724ae-1d31-4656-b238-9b8497bd3002
+		summarizeBy: none
+		sourceColumn: Ordning
+
+	partition Kundstatusval = m
+		mode: import
+		source =
+				let
+					Source = Csv.Document(File.Contents(DataFolder & "/Kundstatusval.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+					Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+					Typed = Table.TransformColumnTypes(Headers, {{"Status", type text}, {"Ordning", Int64.Type}}, "en-US")
+				in
+					Typed
+

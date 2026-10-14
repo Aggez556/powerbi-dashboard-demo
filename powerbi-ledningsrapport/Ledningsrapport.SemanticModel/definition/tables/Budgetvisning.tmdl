@@ -1,0 +1,27 @@
+/// Budget: Budgetvisning. Utility selectors are intentionally disconnected.
+table Budgetvisning
+	lineageTag: de79c10b-b4f9-46fe-8adb-1a506bb8cd32
+
+	column Visning
+		dataType: string
+		lineageTag: ad6c715b-6c67-447a-bffb-bd5da163cf51
+		summarizeBy: none
+		sourceColumn: Visning
+		sortByColumn: Ordning
+
+	column Ordning
+		dataType: int64
+		isHidden
+		lineageTag: 99c01caf-6c20-4348-b20d-e18ff741b66c
+		summarizeBy: none
+		sourceColumn: Ordning
+
+	partition Budgetvisning = m
+		mode: import
+		source =
+				let
+				 Source=Csv.Document(File.Contents(DataFolder & "/Budgetvisning.csv"),[Delimiter=",",Encoding=65001,QuoteStyle=QuoteStyle.Csv]),
+				 Headers=Table.PromoteHeaders(Source,[PromoteAllScalars=true]),
+				 Typed=Table.TransformColumnTypes(Headers,{{"Visning", type text}, {"Ordning", Int64.Type}},"en-US")
+				in Typed
+

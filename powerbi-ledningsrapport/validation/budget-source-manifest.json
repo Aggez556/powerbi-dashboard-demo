@@ -1,0 +1,40 @@
+{
+  "workbook": "powerbi-ledningsrapport\\data\\Budgetscenarier.xlsx",
+  "sourceActualHashes": {
+    "Försäljning": "dd29469b945f1ebe91234f0dce3bd0a689b4b77d8d9176bdd6e8cab6a6f2c753",
+    "Direkta kostnader": "caa37561863de697d86423c3c4a014955234d102fe51368ceefadc40606cc3d6",
+    "Gemensamma kostnader": "322b63550939e5410618202eb9a3e9faa12463abcf51f9af8b4f96a2aa6ccb86",
+    "Budget": "2720df4cf2974e4fcd58a2f9e67eaca2b8e2f3ffa28a55dbf4b60a55524eb620",
+    "Uppdrag": "f30a440bb8711892121d87c3477c4db9152728d28d81ccabb7c6378354cdfde9",
+    "Kunder": "76d6381a475e390faa0d95a37dcf5cc290e1936074f130a9172754fec7297d90",
+    "Artiklar": "e0f9143256f8265535a0f78eae73f109d46b1bed23e18edbd492ff5d9c5bdba1"
+  },
+  "latestCompleteActualMonth": 202609,
+  "historicalScenarios": "Fastställd budget only 2023–2025",
+  "assumptions": {
+    "adminToPersonnel": 0.6,
+    "adminToLicenses": 0.1,
+    "adminToITOperations": 0.06,
+    "adminToITConsultants": 0.04,
+    "adminToMarketing": 0.08,
+    "adminResidual": 0.12
+  },
+  "referenceActualQ3": {
+    "1001": 27273681,
+    "1002": 9626005,
+    "1003": 7861237,
+    "2001": -17317543,
+    "2002": -10692270,
+    "2003": -2276393,
+    "2004": -1664482,
+    "2005": -1426789,
+    "3001": -4168745,
+    "4001": -2122972,
+    "4002": -694791,
+    "4003": -416875,
+    "4004": -277916,
+    "4005": -555832,
+    "4006": -833749,
+    "5001": -578992
+  }
+}

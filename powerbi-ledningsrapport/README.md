@@ -50,3 +50,11 @@ Datageneratorn anropar automatiskt `extend-sales-overview-data.py`, som i sin tu
 Genomförda kontroller finns i `validation/customer-independent-checks.json` (24 period-/branschfall), `validation/sales-independent-checks.json` (16 period-/områdesfall), `validation/sales-data-enrichment.json`, `validation/data-checks.json` och `validation/tmdl-check.json`. De kontrollerar sparade data, fältbindningar och modellsyntax. `validation/customer-live-check.dax` och `validation/sales-live-check.dax` innehåller frågor för faktisk DAX-kontroll efter import.
 
 **Desktop-kontroll för Kunder:** full import är nu genomförd i Desktop och den uppdaterade datacachen har sparats. `validation/customer-live-verification.json` innehåller verifierade faktiska DAX-resultat, inklusive de exakta standardvärdena och diagrammens summeringar. Ett reserverat DAX-variabelnamn i kundgruppstrenden har rättats. Vid framtida ändring av CSV-filerna krävs en ny Uppdatera och Spara i Desktop. Renderad granskning och senaste preview-resultat redovisas separat i leveransmeddelandet. Ingen PBIX-export eller publicering har genomförts.
+
+
+## Budget
+
+Budgetscenarier och native resultaträkning finns på sidan **Budget**. Budgetkällan är [data/Budgetscenarier.xlsx](data/Budgetscenarier.xlsx). Se [BUDGET.md](BUDGET.md) för redigering, uppdatering, avstämningar och verifieringsstatus.
+
+
+Budget är en femte sida i det befintliga projektet [Ledningsrapport.pbip](Ledningsrapport.pbip). Välj Uppdatera för att läsa in Excel-budgeten.

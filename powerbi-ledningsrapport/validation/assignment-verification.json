@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "scope": "Actual Desktop DAX compared with independent CSV calculations; UI interactions not yet reviewed",
+  "periodAreaResourceCases": 12,
+  "weeklyGroupCells": 32,
+  "assignmentRowsChecked": 3436,
+  "visibleAssignments": 1243,
+  "standardJobs": 960,
+  "previousJobs": 840,
+  "standardHours": 15348,
+  "availableHours": 48600,
+  "planBooked": 6800,
+  "planCapacity": 8000,
+  "planFree": 1280,
+  "planOver": 80,
+  "statusFiltersVerified": true,
+  "employeeWeekCells": 240,
+  "monthContextMonths": 12,
+  "selectedMonthMarkers": 1,
+  "previousReportTotalsPreserved": true
+}

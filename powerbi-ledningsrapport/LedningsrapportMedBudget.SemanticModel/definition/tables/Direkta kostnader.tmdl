@@ -1,0 +1,60 @@
+/// Reproducerbar lokal demodata; Direkta kostnader.csv.
+table 'Direkta kostnader'
+	lineageTag: da3dafda-871b-4f07-bc74-b73bc49d6c2c
+
+	/// Källfält i lokal demodata: Direkta kostnader.Datumnyckel.
+	column Datumnyckel
+		dataType: int64
+		isHidden
+		lineageTag: cabff915-b602-41a1-841d-494769b19de6
+		summarizeBy: none
+		sourceColumn: Datumnyckel
+
+	/// Källfält i lokal demodata: Direkta kostnader.Områdesnyckel.
+	column Områdesnyckel
+		dataType: int64
+		isHidden
+		lineageTag: 52ec95fe-6cff-45d0-a3db-3a7f1a66dce7
+		summarizeBy: none
+		sourceColumn: Områdesnyckel
+
+	/// Källfält i lokal demodata: Direkta kostnader.Kostnadstyp.
+	column Kostnadstyp
+		dataType: string
+		lineageTag: 83df677c-c77a-4d64-beb0-253b87527a7b
+		summarizeBy: none
+		sourceColumn: Kostnadstyp
+
+	/// Källfält i lokal demodata: Direkta kostnader.Belopp.
+	column Belopp
+		dataType: decimal
+		isHidden
+		lineageTag: 94b7b7e4-8784-467d-a6e9-6396fd426c2a
+		summarizeBy: none
+		sourceColumn: Belopp
+
+	/// Underlag för försäljningsanalys.
+	column Artikelnyckel
+		dataType: int64
+		isHidden
+		lineageTag: 85a3d3fc-aaa4-41f4-8bdb-511afd3f1302
+		summarizeBy: none
+		sourceColumn: Artikelnyckel
+
+	column Kundnyckel
+		dataType: int64
+		isHidden
+		lineageTag: c1e0b05f-c5bc-4c2d-a3f3-9a3b106a9e20
+		summarizeBy: none
+		sourceColumn: Kundnyckel
+
+	partition 'Direkta kostnader' = m
+		mode: import
+		source =
+				let
+					Source = Csv.Document(File.Contents(DataFolder & "/Direkta kostnader.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+					Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+					Typed = Table.TransformColumnTypes(Headers, {{"Datumnyckel", Int64.Type}, {"Områdesnyckel", Int64.Type}, {"Kostnadstyp", type text}, {"Belopp", Currency.Type}, {"Artikelnyckel", Int64.Type}, {"Kundnyckel", Int64.Type}}, "en-US")
+				in
+					Typed
+

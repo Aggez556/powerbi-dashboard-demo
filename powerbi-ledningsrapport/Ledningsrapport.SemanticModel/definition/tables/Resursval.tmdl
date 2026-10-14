@@ -1,0 +1,16 @@
+/// Reproducerbar uppdragsanalys. Separata datumroller för utfall och plan.
+table 'Resursval'
+
+	column 'Resursgrupp'
+		dataType: string
+		summarizeBy: none
+		sourceColumn: Resursgrupp
+
+	partition 'Resursval' = m
+		mode: import
+		source =
+			let
+			 Source=Csv.Document(File.Contents(DataFolder & "/Resursval.csv"),[Delimiter=",",Encoding=65001,QuoteStyle=QuoteStyle.Csv]),
+			 Headers=Table.PromoteHeaders(Source,[PromoteAllScalars=true]),
+			 Typed=Table.TransformColumnTypes(Headers,{{"Resursgrupp", type text}},"en-US")
+			in Typed

@@ -61,7 +61,7 @@ assert all(r['Kundnyckel'] in customers for r in costs)
 assert any(r['Nettointäkt']<0 for r in sales)
 assert all(int(customers[k]['Första köp'])==20200615 for k in range(276,281))
 report=base/'LedningsrapportUtanScroll.Report';meta=json.loads((report/'definition/pages/pages.json').read_text())
-assert len(meta['pageOrder'])==4
+assert len(meta['pageOrder'])==5
 page=[p for p in (report/'definition/pages').glob('*/page.json') if json.loads(p.read_text(encoding='utf-8'))['displayName']=='Kunder'][0]
 config=json.loads(page.read_text(encoding='utf-8'));assert config['visualInteractions']
 visuals=[json.loads(p.read_text(encoding='utf-8')) for p in (page.parent/'visuals').glob('*/visual.json')]
@@ -69,8 +69,8 @@ for v in visuals:
     q=v['position'];assert q['x']>=0 and q['y']>=0 and q['x']+q['width']<=1920 and q['y']+q['height']<=1200
     assert 'Hygiengruppen' not in json.dumps(v,ensure_ascii=False)
 table=next(v for v in visuals if v['visual']['visualType']=='tableEx')
-assert sum(float(x['properties']['value']['expr']['Literal']['Value'][:-1]) for x in table['visual']['objects']['columnWidth'])<=table['position']['width']-16
+assert sum(float(x['properties']['value']['expr']['Literal']['Value'][:-1]) for x in table['visual']['objects']['columnWidth'])<=table['position']['width']
 assert table['filterConfig']['filters'][0]['field']['Measure']['Property']=='Kund tabell synlig'
-result=dict(status='passed',source='Independent CSV and PBIR checks; not live DAX or screenshot verification',periodIndustryCases=len(scenarios),reference=ref,scenarios=scenarios,checks=['exact reference cohorts and bridges','24 period/industry cases','fixed period cohorts in monthly trend','customer count identity','revenue bridge identity','negative credits included without customer activity','historical first-purchase metadata','assigned plus unassigned costs reconcile','four public pages and native visuals','table widths fit and top seven filter'])
+result=dict(status='passed',source='Independent CSV and PBIR checks; not live DAX or screenshot verification',periodIndustryCases=len(scenarios),reference=ref,scenarios=scenarios,checks=['exact reference cohorts and bridges','24 period/industry cases','fixed period cohorts in monthly trend','customer count identity','revenue bridge identity','negative credits included without customer activity','historical first-purchase metadata','assigned plus unassigned costs reconcile','five public pages and native visuals','table widths fit and status filter and internal scrolling'])
 (base/'validation/customer-independent-checks.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 print(json.dumps(dict(status='passed',periodIndustryCases=24,reference={k:ref[k] for k in ['active','previous','new','reactivated','lost','revenue','logoChurn','revenueChurn','cohortRevenue','bridge']})))

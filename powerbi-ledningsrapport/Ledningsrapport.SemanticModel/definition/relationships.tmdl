@@ -75,3 +75,55 @@ relationship 'Kundanalys direkta kostnader'
 	fromColumn: 'Direkta kostnader'.Kundnyckel
 	toColumn: Kunder.Kundnyckel
 
+relationship 'Excelbudget till Budgetkonton'
+	fromColumn: Budgetscenarier.KontoID
+	toColumn: Budgetkonton.KontoID
+
+relationship 'Excelbudget till Budgetscenarion'
+	fromColumn: Budgetscenarier.ScenarioID
+	toColumn: Budgetscenarion.ScenarioID
+
+relationship 'Excelbudget till Budgetperioder'
+	fromColumn: Budgetscenarier.Månadsnyckel
+	toColumn: Budgetperioder.Månadsnyckel
+
+
+relationship 'Uppdragsanalys 0'
+	fromColumn: 'Resurser'.'Områdesnyckel'
+	toColumn: 'Uppdragsområden'.'Områdesnyckel'
+	crossFilteringBehavior: oneDirection
+
+relationship 'Uppdragsanalys 1'
+	fromColumn: 'Uppdragsregister'.'ResursID'
+	toColumn: 'Resurser'.'ResursID'
+	crossFilteringBehavior: oneDirection
+
+relationship 'Uppdragsanalys 2'
+	fromColumn: 'Uppdragsregister'.'Kundnyckel'
+	toColumn: 'Kunder'.'Kundnyckel'
+	crossFilteringBehavior: oneDirection
+
+relationship 'Uppdragsanalys 3'
+	fromColumn: 'Utförd tid'.'UppdragID'
+	toColumn: 'Uppdragsregister'.'UppdragID'
+	crossFilteringBehavior: oneDirection
+
+relationship 'Uppdragsanalys 4'
+	fromColumn: 'Uppdragsekonomi'.'UppdragID'
+	toColumn: 'Uppdragsregister'.'UppdragID'
+	crossFilteringBehavior: oneDirection
+
+relationship 'Uppdragsanalys 5'
+	fromColumn: 'Arbetskapacitet'.'ResursID'
+	toColumn: 'Resurser'.'ResursID'
+	crossFilteringBehavior: oneDirection
+
+relationship 'Uppdragsanalys 6'
+	fromColumn: 'Planbokningar'.'ResursID'
+	toColumn: 'Resurser'.'ResursID'
+	crossFilteringBehavior: oneDirection
+
+relationship 'Uppdragsanalys 7'
+	fromColumn: 'Planbokningar'.'VeckaID'
+	toColumn: 'Planveckor'.'VeckaID'
+	crossFilteringBehavior: oneDirection

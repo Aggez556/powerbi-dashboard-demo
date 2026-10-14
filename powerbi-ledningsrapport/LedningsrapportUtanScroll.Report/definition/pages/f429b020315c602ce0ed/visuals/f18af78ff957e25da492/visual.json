@@ -396,7 +396,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#F2F5F9'"
+                      "Value": "'#E6EDF6'"
                     }
                   }
                 }
@@ -1056,7 +1056,21 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
+                }
+              }
+            },
+            "type": {
+              "expr": {
+                "Literal": {
+                  "Value": "'PageNavigation'"
+                }
+              }
+            },
+            "navigationSection": {
+              "expr": {
+                "Literal": {
+                  "Value": "'cbe967640ff6843fb323'"
                 }
               }
             }

@@ -1,0 +1,16 @@
+﻿{
+    "status":  "queried",
+    "resultSets":  [
+                       [
+                           {
+                               "[Case]":  "Completed",
+                               "[Risk]":  0
+                           },
+                           {
+                               "[Case]":  "Ongoing",
+                               "[Risk]":  1
+                           }
+                       ]
+                   ],
+    "source":  "Actual local Power BI Desktop DAX"
+}

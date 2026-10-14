@@ -1,0 +1,26 @@
+EVALUATE
+CALCULATETABLE(
+ SUMMARIZECOLUMNS('Uppdragsstatusval'[Urval],
+  "Visible",COUNTROWS(FILTER('Uppdragsregister',[Uppdrag synligt]=1)),
+  "Booked",[Plan bokat],"Jobs",[Uppdrag utförda]),
+ TREATAS({"R12"},'Periodtyp'[Periodtyp]),TREATAS({"September 2026"},'R12val'[Period]))
+ORDER BY 'Uppdragsstatusval'[Urval]
+
+EVALUATE
+CALCULATETABLE(
+ SUMMARIZECOLUMNS('Resurser'[Resursgrupp],'Resurser'[Medarbetare],'Planveckor'[Vecka],
+ "Booked",[Plan bokat],"Capacity",[Plan kapacitet],"Free",[Plan ledigt],"Over",[Plan överbeläggning]),
+ TREATAS({"R12"},'Periodtyp'[Periodtyp]),TREATAS({"September 2026"},'R12val'[Period]))
+ORDER BY 'Resurser'[Resursgrupp],'Resurser'[Medarbetare],'Planveckor'[Vecka]
+
+EVALUATE
+CALCULATETABLE(
+ SUMMARIZECOLUMNS('Trendaxel'[Månad],
+ "Technical",[Trend teknisk],"Staffing",[Trend bemanning],"Target",[Trend mål],"Selected",[Trend vald månad]),
+ TREATAS({"Månad"},'Periodtyp'[Periodtyp]),TREATAS({"September 2026"},'Månadsval'[Period]))
+ORDER BY 'Trendaxel'[Månad]
+
+EVALUATE
+CALCULATETABLE(
+ ROW("Revenue",[Nettoomsättning],"GrossProfit",[Bruttovinst],"EBIT",[Rörelseresultat],"Customers",[Aktiva kunder],"Jobs",[Utförda uppdrag]),
+ TREATAS({"R12"},'Periodtyp'[Periodtyp]),TREATAS({"September 2026"},'R12val'[Period]))

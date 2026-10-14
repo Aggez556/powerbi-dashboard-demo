@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "source": "Actual Power BI Desktop DAX",
+  "checkedCells": 936,
+  "resultSetRows": [
+    234,
+    702
+  ],
+  "calculatedRowsHaveNoChildren": true
+}

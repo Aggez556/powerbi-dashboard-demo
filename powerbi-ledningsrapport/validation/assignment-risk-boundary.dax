@@ -1,0 +1,5 @@
+DEFINE MEASURE 'Planinställning'[Risk boundary] = IF(SELECTEDVALUE('Uppdragsregister'[Status])="Pågående" && (0>1 || .28<=.30-.02+0.0000001),1,0)
+EVALUATE UNION(
+CALCULATETABLE(ROW("Case","Ongoing","Risk",[Risk boundary]),TREATAS({"Pågående"},'Uppdragsregister'[Status])),
+CALCULATETABLE(ROW("Case","Completed","Risk",[Risk boundary]),TREATAS({"Avslutat"},'Uppdragsregister'[Status])))
+ORDER BY [Case]

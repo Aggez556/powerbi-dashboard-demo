@@ -1,0 +1,28 @@
+/// Reproducerbart analysunderlag.
+table Områdesval
+	lineageTag: c574b688-08a0-44bb-bda0-d0a860732cbf
+
+	column Verksamhetsområde
+		dataType: string
+		lineageTag: dd5c4fa6-7942-4e78-8e55-2564fedf9eb2
+		summarizeBy: none
+		sourceColumn: Verksamhetsområde
+		sortByColumn: Områdesval
+
+	column Områdesval
+		dataType: int64
+		isHidden
+		lineageTag: 67eff474-1574-44f1-9ebb-e78c030c96b6
+		summarizeBy: none
+		sourceColumn: Områdesval
+
+	partition Områdesval = m
+		mode: import
+		source =
+				let
+					Source = Csv.Document(File.Contents(DataFolder & "/Områdesval.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+					Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+					Typed = Table.TransformColumnTypes(Headers, {{"Verksamhetsområde", type text}, {"Områdesval", Int64.Type}}, "en-US")
+				in
+					Typed
+

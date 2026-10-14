@@ -9,7 +9,7 @@ model Model
 
 annotation PBI_TimeIntelligenceEnabled = 0
 
-annotation PBI_QueryOrder = ["Datum","Kunder","Områden","Försäljning","Direkta kostnader","Gemensamma kostnader","Uppdrag","Budget","Periodtyp","Trendaxel","Bryggaxel","R12val","Månadsval","Helårsval","DataFolder","Artiklar","Försäljningsserie","Områdesval","Kundstatusval","Kundgrupper","Kundbassteg","Kundintäktssteg"]
+annotation PBI_QueryOrder = ["Datum","Kunder","Områden","Försäljning","Direkta kostnader","Gemensamma kostnader","Uppdrag","Budget","Periodtyp","Trendaxel","Bryggaxel","R12val","Månadsval","Helårsval","DataFolder","Artiklar","Försäljningsserie","Områdesval","Kundstatusval","Kundgrupper","Kundbassteg","Kundintäktssteg","Budgetkonton","Budgetrader","Budgetscenarion","Budgetjämförelsescenario","Budgetår","Budgetmånader","Budgetperioder","Budgetjämförelse","Budgetvisning","Budgetkolumner","Budgetscenarier","BudgetWorkbook"]
 
 annotation __PBI_TimeIntelligenceEnabled = 1
 
@@ -42,6 +42,41 @@ ref table Kundstatusval
 ref table Kundgrupper
 ref table Kundbassteg
 ref table Kundintäktssteg
+ref table Budgetkonton
+ref table Budgetrader
+ref table Budgetscenarion
+ref table Budgetjämförelsescenario
+ref table Budgetår
+ref table Budgetmånader
+ref table Budgetperioder
+ref table Budgetjämförelse
+ref table Budgetvisning
+ref table Budgetkolumner
+ref table Budgetscenarier
 
 ref cultureInfo sv-SE
 
+
+ref table Budgetrapportnoder
+
+ref table 'Resurser'
+
+ref table 'Uppdragsregister'
+
+ref table 'Utförd tid'
+
+ref table 'Uppdragsekonomi'
+
+ref table 'Arbetskapacitet'
+
+ref table 'Planbokningar'
+
+ref table 'Planveckor'
+
+ref table 'Planinställning'
+
+ref table 'Uppdragsområden'
+
+ref table 'Resursval'
+
+ref table 'Uppdragsstatusval'

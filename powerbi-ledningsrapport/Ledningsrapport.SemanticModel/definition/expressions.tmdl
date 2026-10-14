@@ -3,3 +3,8 @@ expression DataFolder = "C:/dev/codex-labb/powerbi-ledningsrapport/data" meta [I
 
 	annotation PBI_ResultType = Text
 
+expression BudgetWorkbook = DataFolder & "/Budgetscenarier.xlsx" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
+	lineageTag: 9a1afe50-d151-41b6-99ee-bda4fb8f57ec
+
+	annotation PBI_ResultType = Text
+

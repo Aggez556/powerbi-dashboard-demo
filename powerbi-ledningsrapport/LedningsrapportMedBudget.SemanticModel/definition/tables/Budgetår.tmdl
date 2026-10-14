@@ -1,0 +1,16 @@
+/// Budget: Budgetår. Utility selectors are intentionally disconnected.
+table 'Budgetår'
+
+	column 'År'
+		dataType: int64
+		sourceColumn: År
+		summarizeBy: none
+
+	partition 'Budgetår' = m
+		mode: import
+		source =
+			let
+			 Source=Csv.Document(File.Contents(DataFolder & "/Budgetår.csv"),[Delimiter=",",Encoding=65001,QuoteStyle=QuoteStyle.Csv]),
+			 Headers=Table.PromoteHeaders(Source,[PromoteAllScalars=true]),
+			 Typed=Table.TransformColumnTypes(Headers,{{"År", Int64.Type}},"en-US")
+			in Typed

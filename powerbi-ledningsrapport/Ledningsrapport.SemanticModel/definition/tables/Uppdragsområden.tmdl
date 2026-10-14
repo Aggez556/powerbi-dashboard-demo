@@ -1,0 +1,22 @@
+/// Reproducerbar uppdragsanalys. Separata datumroller för utfall och plan.
+table 'Uppdragsområden'
+
+	column 'Områdesnyckel'
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: Områdesnyckel
+		isHidden
+
+	column 'Område'
+		dataType: string
+		summarizeBy: none
+		sourceColumn: Område
+
+	partition 'Uppdragsområden' = m
+		mode: import
+		source =
+			let
+			 Source=Csv.Document(File.Contents(DataFolder & "/Uppdragsområden.csv"),[Delimiter=",",Encoding=65001,QuoteStyle=QuoteStyle.Csv]),
+			 Headers=Table.PromoteHeaders(Source,[PromoteAllScalars=true]),
+			 Typed=Table.TransformColumnTypes(Headers,{{"Områdesnyckel", Int64.Type},{"Område", type text}},"en-US")
+			in Typed

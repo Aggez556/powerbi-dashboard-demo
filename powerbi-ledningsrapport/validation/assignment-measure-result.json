@@ -1,0 +1,12 @@
+﻿{
+    "status":  "queried",
+    "resultSets":  [
+                       [
+                           {
+                               "[Name]":  "Uppdrag risk",
+                               "[Expression]":  "IF(SELECTEDVALUE(\u0027Uppdragsregister\u0027[Status])=\"Pågående\" \u0026\u0026 ([Uppdrag hela timmar]\u003e[Uppdrag planerade] || [Uppdrag prognos]\u003c=[Uppdrag kalkyl]-.02+0.0000001),1,0)"
+                           }
+                       ]
+                   ],
+    "source":  "Actual local Power BI Desktop DAX"
+}

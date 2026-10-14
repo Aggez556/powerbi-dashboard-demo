@@ -1,0 +1,56 @@
+/// Reproducerbar uppdragsanalys. Separata datumroller för utfall och plan.
+table 'Resurser'
+
+	column 'ResursID'
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: ResursID
+		isHidden
+
+	column 'Medarbetare'
+		dataType: string
+		summarizeBy: none
+		sourceColumn: Medarbetare
+
+	column 'Resursgrupp'
+		dataType: string
+		summarizeBy: none
+		sourceColumn: Resursgrupp
+
+	column 'GruppID'
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: GruppID
+		isHidden
+
+	column 'Områdesnyckel'
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: Områdesnyckel
+		isHidden
+
+	column 'Område'
+		dataType: string
+		summarizeBy: none
+		sourceColumn: Område
+
+	column 'Veckotimmar'
+		dataType: double
+		summarizeBy: none
+		sourceColumn: Veckotimmar
+		isHidden
+
+	column 'Mål'
+		dataType: double
+		summarizeBy: none
+		sourceColumn: Mål
+		isHidden
+
+	partition 'Resurser' = m
+		mode: import
+		source =
+			let
+			 Source=Csv.Document(File.Contents(DataFolder & "/Resurser.csv"),[Delimiter=",",Encoding=65001,QuoteStyle=QuoteStyle.Csv]),
+			 Headers=Table.PromoteHeaders(Source,[PromoteAllScalars=true]),
+			 Typed=Table.TransformColumnTypes(Headers,{{"ResursID", Int64.Type},{"Medarbetare", type text},{"Resursgrupp", type text},{"GruppID", Int64.Type},{"Områdesnyckel", Int64.Type},{"Område", type text},{"Veckotimmar", type number},{"Mål", type number}},"en-US")
+			in Typed

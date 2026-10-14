@@ -1,0 +1,29 @@
+/// Reproducerbar lokal demodata; Budget.csv.
+table Budget
+	lineageTag: 525e749d-9848-4b80-b5bf-50d377f5b4de
+
+	/// Källfält i lokal demodata: Budget.Datumnyckel.
+	column Datumnyckel
+		dataType: int64
+		isHidden
+		lineageTag: 66a210e6-7dc2-4e9c-b93b-64f29ce5c286
+		summarizeBy: none
+		sourceColumn: Datumnyckel
+
+	/// Källfält i lokal demodata: Budget.Rörelseresultat.
+	column Rörelseresultat
+		dataType: decimal
+		isHidden
+		lineageTag: 560c8513-af0b-4ab0-9c8a-658a66a1a20a
+		summarizeBy: none
+		sourceColumn: Rörelseresultat
+
+	partition Budget = m
+		mode: import
+		source =
+			let
+			 Source=Table.SelectRows(Budgetscenarier,each [ScenarioID]=1 and [Månadsnyckel]<=202610),
+			 Grouped=Table.Group(Source,{"Månadsnyckel"},{{"Rörelseresultat",each List.Sum([Belopp]),Currency.Type}}),
+			 Key=Table.AddColumn(Grouped,"Datumnyckel",each [Månadsnyckel]*100+15,Int64.Type),
+			 Selected=Table.SelectColumns(Key,{"Datumnyckel","Rörelseresultat"})
+			in Selected

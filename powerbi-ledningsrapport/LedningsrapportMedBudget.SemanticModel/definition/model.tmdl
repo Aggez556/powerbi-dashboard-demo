@@ -1,0 +1,69 @@
+model Model
+	culture: sv-SE
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	discourageImplicitMeasures
+	sourceQueryCulture: en-US
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation PBI_TimeIntelligenceEnabled = 0
+
+annotation PBI_QueryOrder = ["Datum","Kunder","Områden","Försäljning","Direkta kostnader","Gemensamma kostnader","Uppdrag","Budget","Periodtyp","Trendaxel","Bryggaxel","R12val","Månadsval","Helårsval","DataFolder","Artiklar","Försäljningsserie","Områdesval","Kundstatusval","Kundgrupper","Kundbassteg","Kundintäktssteg"]
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table Datum
+ref table Kunder
+ref table Områden
+ref table Försäljning
+ref table 'Direkta kostnader'
+ref table 'Gemensamma kostnader'
+ref table Uppdrag
+ref table Budget
+ref table Periodtyp
+ref table Trendaxel
+ref table Bryggaxel
+ref table R12val
+ref table Månadsval
+ref table Helårsval
+ref table DateTableTemplate_023d4333-7488-4f50-aca6-bd5e3254769b
+ref table LocalDateTable_3d6a0f91-1dc2-404a-ba41-f7a4ef707410
+ref table LocalDateTable_f0d2acef-e62f-4d6f-bb54-4aca544598b0
+ref table LocalDateTable_ab4a90d1-4f02-41f9-b507-ba553491aef3
+ref table LocalDateTable_2522623d-48b9-4577-8ee7-3d6d096634f7
+ref table LocalDateTable_22d874ac-8916-43e9-82d3-d07586a720c3
+ref table Artiklar
+ref table Försäljningsserie
+ref table Områdesval
+ref table Kundstatusval
+ref table Kundgrupper
+ref table Kundbassteg
+ref table Kundintäktssteg
+
+ref cultureInfo sv-SE
+
+
+ref table 'Budgetkonton'
+
+ref table 'Budgetrader'
+
+ref table 'Budgetscenarion'
+
+ref table 'Budgetjämförelsescenario'
+
+ref table 'Budgetår'
+
+ref table 'Budgetmånader'
+
+ref table 'Budgetperioder'
+
+ref table 'Budgetjämförelse'
+
+ref table 'Budgetvisning'
+
+ref table 'Budgetkolumner'
+
+ref table 'Budgetscenarier'

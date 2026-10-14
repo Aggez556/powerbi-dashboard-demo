@@ -1,0 +1,51 @@
+/// Budget: Budgetkolumner. Utility selectors are intentionally disconnected.
+table 'Budgetkolumner'
+
+	column 'LägeID'
+		dataType: int64
+		sourceColumn: LägeID
+		summarizeBy: none
+		isHidden
+
+	column 'ScenarioA'
+		dataType: int64
+		sourceColumn: ScenarioA
+		summarizeBy: none
+
+	column 'ScenarioB'
+		dataType: int64
+		sourceColumn: ScenarioB
+		summarizeBy: none
+
+	column 'MånadID'
+		dataType: int64
+		sourceColumn: MånadID
+		summarizeBy: none
+		isHidden
+
+	column 'Grupp'
+		dataType: string
+		sourceColumn: Grupp
+		summarizeBy: none
+		sortByColumn: 'MånadID'
+
+	column 'Position'
+		dataType: int64
+		sourceColumn: Position
+		summarizeBy: none
+		isHidden
+
+	column 'Kolumn'
+		dataType: string
+		sourceColumn: Kolumn
+		summarizeBy: none
+		sortByColumn: 'Position'
+
+	partition 'Budgetkolumner' = m
+		mode: import
+		source =
+			let
+			 Source=Csv.Document(File.Contents(DataFolder & "/Budgetkolumner.csv"),[Delimiter=",",Encoding=65001,QuoteStyle=QuoteStyle.Csv]),
+			 Headers=Table.PromoteHeaders(Source,[PromoteAllScalars=true]),
+			 Typed=Table.TransformColumnTypes(Headers,{{"LägeID", Int64.Type}, {"ScenarioA", Int64.Type}, {"ScenarioB", Int64.Type}, {"MånadID", Int64.Type}, {"Grupp", type text}, {"Position", Int64.Type}, {"Kolumn", type text}},"en-US")
+			in Typed

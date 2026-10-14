@@ -1,0 +1,2 @@
+EVALUATE
+SELECTCOLUMNS(FILTER(INFO.VIEW.MEASURES(),[Name]="Uppdrag risk"),"Name",[Name],"Expression",[Expression])

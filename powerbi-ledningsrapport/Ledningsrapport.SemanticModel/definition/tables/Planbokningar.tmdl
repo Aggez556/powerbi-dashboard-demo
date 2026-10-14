@@ -1,0 +1,65 @@
+/// Reproducerbar uppdragsanalys. Separata datumroller för utfall och plan.
+table 'Planbokningar'
+
+	column 'ResursID'
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: ResursID
+		isHidden
+
+	column 'Datumnyckel'
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: Datumnyckel
+		isHidden
+
+	column 'VeckaID'
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: VeckaID
+		isHidden
+
+	column 'Snapshot'
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: Snapshot
+		isHidden
+
+	column 'UppdragID'
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: UppdragID
+		isHidden
+
+	column 'Kapacitet'
+		dataType: double
+		summarizeBy: none
+		sourceColumn: Kapacitet
+		isHidden
+
+	column 'Bokat'
+		dataType: double
+		summarizeBy: none
+		sourceColumn: Bokat
+		isHidden
+
+	column 'Ledigt'
+		dataType: double
+		summarizeBy: none
+		sourceColumn: Ledigt
+		isHidden
+
+	column 'Överbokat'
+		dataType: double
+		summarizeBy: none
+		sourceColumn: Överbokat
+		isHidden
+
+	partition 'Planbokningar' = m
+		mode: import
+		source =
+			let
+			 Source=Csv.Document(File.Contents(DataFolder & "/Planbokningar.csv"),[Delimiter=",",Encoding=65001,QuoteStyle=QuoteStyle.Csv]),
+			 Headers=Table.PromoteHeaders(Source,[PromoteAllScalars=true]),
+			 Typed=Table.TransformColumnTypes(Headers,{{"ResursID", Int64.Type},{"Datumnyckel", Int64.Type},{"VeckaID", Int64.Type},{"Snapshot", Int64.Type},{"UppdragID", Int64.Type},{"Kapacitet", type number},{"Bokat", type number},{"Ledigt", type number},{"Överbokat", type number}},"en-US")
+			in Typed

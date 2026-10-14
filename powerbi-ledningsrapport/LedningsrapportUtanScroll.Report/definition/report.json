@@ -67,6 +67,11 @@
           "type": "Image"
         },
         {
+          "name": "navigation-budget-FFFFFF.png",
+          "path": "navigation-budget-FFFFFF.png",
+          "type": "Image"
+        },
+        {
           "name": "navigation-customers-0F3163.png",
           "path": "navigation-customers-0F3163.png",
           "type": "Image"
@@ -100,6 +105,17 @@
           "name": "navigation-sales-FFFFFF.png",
           "path": "navigation-sales-FFFFFF.png",
           "type": "Image"
+        }
+      ]
+    },
+    {
+      "name": "deneb7E15AEF80B9E4D4F8E12924291ECE89A",
+      "type": "CustomVisual",
+      "items": [
+        {
+          "name": "deneb7E15AEF80B9E4D4F8E12924291ECE89A.pbiviz.json",
+          "path": "deneb7E15AEF80B9E4D4F8E12924291ECE89A.pbiviz.json",
+          "type": "CustomVisualMetadata"
         }
       ]
     }

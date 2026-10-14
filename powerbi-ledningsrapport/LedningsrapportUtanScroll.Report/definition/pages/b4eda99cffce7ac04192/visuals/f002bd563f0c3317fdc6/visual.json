@@ -19,7 +19,7 @@
               {
                 "textRuns": [
                   {
-                    "value": "Projekt / beläggning",
+                    "value": "Uppdrag / beläggning",
                     "textStyle": {
                       "fontFamily": "Segoe UI",
                       "fontSize": "12pt",
@@ -119,7 +119,7 @@
             "altText": {
               "expr": {
                 "Literal": {
-                  "Value": "'Projekt / beläggning'"
+                  "Value": "'Uppdrag / beläggning'"
                 }
               }
             }
@@ -132,7 +132,21 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
+                }
+              }
+            },
+            "type": {
+              "expr": {
+                "Literal": {
+                  "Value": "'PageNavigation'"
+                }
+              }
+            },
+            "navigationSection": {
+              "expr": {
+                "Literal": {
+                  "Value": "'30e52cac0a5174639318'"
                 }
               }
             }

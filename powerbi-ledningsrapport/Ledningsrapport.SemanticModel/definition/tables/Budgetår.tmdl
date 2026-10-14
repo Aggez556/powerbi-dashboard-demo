@@ -1,0 +1,19 @@
+/// Budget: Budgetår. Utility selectors are intentionally disconnected.
+table Budgetår
+	lineageTag: fb8c4365-352e-4def-aeff-4b22773758ce
+
+	column År
+		dataType: int64
+		lineageTag: 2c29f537-af71-4404-a574-0298ad89f119
+		summarizeBy: none
+		sourceColumn: År
+
+	partition Budgetår = m
+		mode: import
+		source =
+				let
+				 Source=Csv.Document(File.Contents(DataFolder & "/Budgetår.csv"),[Delimiter=",",Encoding=65001,QuoteStyle=QuoteStyle.Csv]),
+				 Headers=Table.PromoteHeaders(Source,[PromoteAllScalars=true]),
+				 Typed=Table.TransformColumnTypes(Headers,{{"År", Int64.Type}},"en-US")
+				in Typed
+

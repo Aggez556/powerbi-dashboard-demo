@@ -1,0 +1,102 @@
+/// Disconnected financial statement presentation tree. Amounts are calculated from shared actuals and Excel budgets.
+table Budgetrapportnoder
+
+	measure 'Rapportvärde' = ```
+			VAR _rad=SELECTEDVALUE('Budgetrapportnoder'[Rad])
+			VAR _sub=SELECTEDVALUE('Budgetrapportnoder'[Undergrupp])
+			VAR _post=SELECTEDVALUE('Budgetrapportnoder'[Post])
+			VAR _ids=SELECTCOLUMNS(FILTER(ALL('Budgetrader'),'Budgetrader'[Rad]=_rad && (_sub="" || 'Budgetrader'[Undergrupp]=_sub) && (_post="" || 'Budgetrader'[Post]=_post)),"KontoID",'Budgetrader'[KontoID])
+			VAR _mode=[Budget jämförelseläge]
+			VAR _slot=SELECTEDVALUE('Budgetkolumner'[Position])
+			VAR _a=CALCULATE([RR rad A],REMOVEFILTERS('Budgetrader'),TREATAS(_ids,'Budgetrader'[KontoID]))
+			VAR _b=IF(_mode=1,CALCULATE([RR rad utfall],REMOVEFILTERS('Budgetrader'),TREATAS(_ids,'Budgetrader'[KontoID])),CALCULATE([RR rad B],REMOVEFILTERS('Budgetrader'),TREATAS(_ids,'Budgetrader'[KontoID])))
+			VAR _margin=SELECTEDVALUE('Budgetrapportnoder'[Typ])="marginal"
+			VAR _diff=IF(_mode=1,_b-_a,_a-_b)
+			VAR _value=SWITCH(_slot,1,_a,2,_b,3,IF(_margin,_diff*100,_diff))
+			RETURN IF(HASONEVALUE('Budgetrapportnoder'[NodID]) && [Budget kolumn synlig]=1 && NOT ISBLANK(_a) && NOT ISBLANK(_b),IF(_margin,_value,DIVIDE(_value,1000)))
+			```
+		formatString: #,##0
+		displayFolder: Budget\Resultaträkning
+
+	measure 'Rapporttext' = ```
+			VAR _v=[Rapportvärde] VAR _slot=SELECTEDVALUE('Budgetkolumner'[Position]) VAR _margin=SELECTEDVALUE('Budgetrapportnoder'[Typ])="marginal"
+			RETURN IF(ISBLANK(_v),BLANK(),IF(_margin,IF(_slot=3,FORMAT(_v,"+0.0;−0.0;0.0","sv-SE") & " pp",FORMAT(_v,"0.0 %","sv-SE")),FORMAT(_v,IF(_slot=3,"+#,##0;−#,##0;0","#,##0;−#,##0;0"),"sv-SE")))
+			```
+		formatString: @
+		displayFolder: Budget\Resultaträkning
+
+	measure 'Rapportfärg' = ```
+			VAR _v=[Rapportvärde] RETURN IF(ISBLANK(_v),BLANK(),IF(SELECTEDVALUE('Budgetkolumner'[Position])=3,IF(_v<0,"#B42318",IF(_v>0,"#007956","#5B6B80")),IF(SELECTEDVALUE('Budgetrapportnoder'[Typ])="marginal","#5B6B80","#0F3163")))
+			```
+		formatString: @
+		displayFolder: Budget\Resultaträkning
+
+	column 'NodID'
+		dataType: string
+		sourceColumn: NodID
+		summarizeBy: none
+		sortByColumn: Ordning
+
+	column 'Rad'
+		dataType: string
+		sourceColumn: Rad
+		summarizeBy: none
+
+	column 'Undergrupp'
+		dataType: string
+		sourceColumn: Undergrupp
+		summarizeBy: none
+
+	column 'Post'
+		dataType: string
+		sourceColumn: Post
+		summarizeBy: none
+
+	column 'Etikett'
+		dataType: string
+		sourceColumn: Etikett
+		summarizeBy: none
+
+	column 'Förälder'
+		dataType: string
+		sourceColumn: Förälder
+		summarizeBy: none
+
+	column 'Överförälder'
+		dataType: string
+		sourceColumn: Överförälder
+		summarizeBy: none
+
+	column 'Nivå'
+		dataType: int64
+		sourceColumn: Nivå
+		summarizeBy: none
+
+	column 'Typ'
+		dataType: string
+		sourceColumn: Typ
+		summarizeBy: none
+
+	column 'Ordning'
+		dataType: int64
+		sourceColumn: Ordning
+		summarizeBy: none
+
+	column 'HarBarn'
+		dataType: int64
+		sourceColumn: HarBarn
+		summarizeBy: none
+
+	column 'Avsnitt'
+		dataType: string
+		sourceColumn: Avsnitt
+		summarizeBy: none
+
+	partition Budgetrapportnoder = m
+		mode: import
+		source =
+			let
+			 Source=Csv.Document(File.Contents(DataFolder & "/Budgetrapportnoder.csv"),[Delimiter=",",Encoding=65001,QuoteStyle=QuoteStyle.Csv]),
+			 Headers=Table.PromoteHeaders(Source,[PromoteAllScalars=true]),
+			 Typed=Table.TransformColumnTypes(Headers,{{"NodID", type text}, {"Rad", type text}, {"Undergrupp", type text}, {"Post", type text}, {"Etikett", type text}, {"Förälder", type text}, {"Överförälder", type text}, {"Nivå", Int64.Type}, {"Typ", type text}, {"Ordning", Int64.Type}, {"HarBarn", Int64.Type}, {"Avsnitt", type text}},"sv-SE")
+			in Typed

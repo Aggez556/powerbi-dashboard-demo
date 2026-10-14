@@ -1,0 +1,53 @@
+/// Budget: Budgetrader. Utility selectors are intentionally disconnected.
+table 'Budgetrader'
+
+	column 'KontoID'
+		dataType: int64
+		sourceColumn: KontoID
+		summarizeBy: none
+		isHidden
+
+	column 'Rad'
+		dataType: string
+		sourceColumn: Rad
+		summarizeBy: none
+		sortByColumn: 'Radordning'
+
+	column 'Undergrupp'
+		dataType: string
+		sourceColumn: Undergrupp
+		summarizeBy: none
+		sortByColumn: 'Underordning'
+
+	column 'Post'
+		dataType: string
+		sourceColumn: Post
+		summarizeBy: none
+		sortByColumn: 'Postordning'
+
+	column 'Radordning'
+		dataType: int64
+		sourceColumn: Radordning
+		summarizeBy: none
+		isHidden
+
+	column 'Underordning'
+		dataType: int64
+		sourceColumn: Underordning
+		summarizeBy: none
+		isHidden
+
+	column 'Postordning'
+		dataType: int64
+		sourceColumn: Postordning
+		summarizeBy: none
+		isHidden
+
+	partition 'Budgetrader' = m
+		mode: import
+		source =
+			let
+			 Source=Csv.Document(File.Contents(DataFolder & "/Budgetrader.csv"),[Delimiter=",",Encoding=65001,QuoteStyle=QuoteStyle.Csv]),
+			 Headers=Table.PromoteHeaders(Source,[PromoteAllScalars=true]),
+			 Typed=Table.TransformColumnTypes(Headers,{{"KontoID", Int64.Type}, {"Rad", type text}, {"Undergrupp", type text}, {"Post", type text}, {"Radordning", Int64.Type}, {"Underordning", Int64.Type}, {"Postordning", Int64.Type}},"en-US")
+			in Typed

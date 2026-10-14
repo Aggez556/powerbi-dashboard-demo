@@ -1,0 +1,31 @@
+﻿ResursID,Medarbetare,Resursgrupp,GruppID,Områdesnyckel,Område,Veckotimmar,Mål
+101,Medarbetare 101,Tekniker Nord,1,2,Teknisk service,40,0.82
+102,Medarbetare 102,Tekniker Nord,1,2,Teknisk service,40,0.82
+103,Medarbetare 103,Tekniker Nord,1,2,Teknisk service,40,0.82
+104,Medarbetare 104,Tekniker Nord,1,2,Teknisk service,40,0.82
+105,Medarbetare 105,Tekniker Nord,1,2,Teknisk service,40,0.82
+201,Medarbetare 201,Tekniker Syd,2,2,Teknisk service,40,0.82
+202,Medarbetare 202,Tekniker Syd,2,2,Teknisk service,40,0.82
+203,Medarbetare 203,Tekniker Syd,2,2,Teknisk service,40,0.82
+204,Medarbetare 204,Tekniker Syd,2,2,Teknisk service,40,0.82
+205,Medarbetare 205,Tekniker Syd,2,2,Teknisk service,40,0.82
+301,Medarbetare 301,Diskpersonal,3,3,Bemanning,35,0.82
+302,Medarbetare 302,Diskpersonal,3,3,Bemanning,35,0.82
+303,Medarbetare 303,Diskpersonal,3,3,Bemanning,35,0.82
+304,Medarbetare 304,Diskpersonal,3,3,Bemanning,35,0.82
+305,Medarbetare 305,Diskpersonal,3,3,Bemanning,35,0.82
+306,Medarbetare 306,Diskpersonal,3,3,Bemanning,35,0.82
+307,Medarbetare 307,Diskpersonal,3,3,Bemanning,35,0.82
+308,Medarbetare 308,Diskpersonal,3,3,Bemanning,35,0.82
+309,Medarbetare 309,Diskpersonal,3,3,Bemanning,35,0.82
+310,Medarbetare 310,Diskpersonal,3,3,Bemanning,35,0.82
+401,Medarbetare 401,Städpersonal,4,3,Bemanning,25,0.82
+402,Medarbetare 402,Städpersonal,4,3,Bemanning,25,0.82
+403,Medarbetare 403,Städpersonal,4,3,Bemanning,25,0.82
+404,Medarbetare 404,Städpersonal,4,3,Bemanning,25,0.82
+405,Medarbetare 405,Städpersonal,4,3,Bemanning,25,0.82
+406,Medarbetare 406,Städpersonal,4,3,Bemanning,25,0.82
+407,Medarbetare 407,Städpersonal,4,3,Bemanning,25,0.82
+408,Medarbetare 408,Städpersonal,4,3,Bemanning,25,0.82
+409,Medarbetare 409,Städpersonal,4,3,Bemanning,25,0.82
+410,Medarbetare 410,Städpersonal,4,3,Bemanning,25,0.82

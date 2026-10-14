@@ -1,0 +1,590 @@
+{
+  "page": "cbe967640ff6843fb323",
+  "visuals": [
+    {
+      "page": "cbe967640ff6843fb323",
+      "key": "sidebar",
+      "type": "textbox",
+      "box": [
+        0,
+        0,
+        272,
+        1200
+      ]
+    },
+    {
+      "page": "cbe967640ff6843fb323",
+      "key": "start",
+      "type": "actionButton",
+      "box": [
+        16,
+        24,
+        240,
+        48
+      ]
+    },
+    {
+      "page": "cbe967640ff6843fb323",
+      "key": "nav0",
+      "type": "actionButton",
+      "box": [
+        16,
+        156,
+        240,
+        56
+      ]
+    },
+    {
+      "page": "cbe967640ff6843fb323",
+      "key": "nav1",
+      "type": "actionButton",
+      "box": [
+        16,
+        224,
+        240,
+        56
+      ]
+    },
+    {
+      "page": "cbe967640ff6843fb323",
+      "key": "nav2",
+      "type": "actionButton",
+      "box": [
+        16,
+        292,
+        240,
+        56
+      ]
+    },
+    {
+      "page": "cbe967640ff6843fb323",
+      "key": "nav3",
+      "type": "actionButton",
+      "box": [
+        16,
+        360,
+        240,
+        56
+      ]
+    },
+    {
+      "page": "cbe967640ff6843fb323",
+      "key": "nav4",
+      "type": "actionButton",
+      "box": [
+        16,
+        428,
+        240,
+        56
+      ]
+    },
+    {
+      "page": "cbe967640ff6843fb323",
+      "key": "title",
+      "type": "textbox",
+      "box": [
+        304,
+        24,
+        1100,
+        64
+      ]
+    },
+    {
+      "page": "cbe967640ff6843fb323",
+      "key": "subtitle",
+      "type": "textbox",
+      "box": [
+        304,
+        88,
+        1100,
+        40
+      ]
+    },
+    {
+      "page": "cbe967640ff6843fb323",
+      "key": "year",
+      "type": "slicer",
+      "box": [
+        1712,
+        16,
+        176,
+        88
+      ]
+    },
+    {
+      "page": "cbe967640ff6843fb323",
+      "key": "kpi-prefix",
+      "type": "cardVisual",
+      "box": [
+        304,
+        120,
+        1584,
+        28
+      ]
+    },
+    {
+      "page": "cbe967640ff6843fb323",
+      "key": "kpi-panel0",
+      "type": "textbox",
+      "box": [
+        288,
+        160,
+        526,
+        208
+      ]
+    },
+    {
+      "page": "cbe967640ff6843fb323",
+      "key": "kpi-title0",
+      "type": "textbox",
+      "box": [
+        312,
+        176,
+        478,
+        32
+      ]
+    },
+    {
+      "page": "cbe967640ff6843fb323",
+      "key": "kpi-value0",
+      "type": "cardVisual",
+      "box": [
+        312,
+        216,
+        478,
+        64
+      ]
+    },
+    {
+      "page": "cbe967640ff6843fb323",
+      "key": "kpi-budget0",
+      "type": "cardVisual",
+      "box": [
+        312,
+        286,
+        478,
+        30
+      ]
+    },
+    {
+      "page": "cbe967640ff6843fb323",
+      "key": "kpi-diff0",
+      "type": "cardVisual",
+      "box": [
+        312,
+        326,
+        478,
+        30
+      ]
+    },
+    {
+      "page": "cbe967640ff6843fb323",
+      "key": "kpi-panel1",
+      "type": "textbox",
+      "box": [
+        830,
+        160,
+        526,
+        208
+      ]
+    },
+    {
+      "page": "cbe967640ff6843fb323",
+      "key": "kpi-title1",
+      "type": "textbox",
+      "box": [
+        854,
+        176,
+        478,
+        32
+      ]
+    },
+    {
+      "page": "cbe967640ff6843fb323",
+      "key": "kpi-value1",
+      "type": "cardVisual",
+      "box": [
+        854,
+        216,
+        478,
+        64
+      ]
+    },
+    {
+      "page": "cbe967640ff6843fb323",
+      "key": "kpi-budget1",
+      "type": "cardVisual",
+      "box": [
+        854,
+        286,
+        478,
+        30
+      ]
+    },
+    {
+      "page": "cbe967640ff6843fb323",
+      "key": "kpi-diff1",
+      "type": "cardVisual",
+      "box": [
+        854,
+        326,
+        478,
+        30
+      ]
+    },
+    {
+      "page": "cbe967640ff6843fb323",
+      "key": "kpi-panel2",
+      "type": "textbox",
+      "box": [
+        1372,
+        160,
+        526,
+        208
+      ]
+    },
+    {
+      "page": "cbe967640ff6843fb323",
+      "key": "kpi-title2",
+      "type": "textbox",
+      "box": [
+        1396,
+        176,
+        478,
+        32
+      ]
+    },
+    {
+      "page": "cbe967640ff6843fb323",
+      "key": "kpi-value2",
+      "type": "cardVisual",
+      "box": [
+        1396,
+        216,
+        478,
+        64
+      ]
+    },
+    {
+      "page": "cbe967640ff6843fb323",
+      "key": "kpi-budget2",
+      "type": "cardVisual",
+      "box": [
+        1396,
+        286,
+        478,
+        30
+      ]
+    },
+    {
+      "page": "cbe967640ff6843fb323",
+      "key": "kpi-diff2",
+      "type": "cardVisual",
+      "box": [
+        1396,
+        326,
+        478,
+        30
+      ]
+    },
+    {
+      "page": "cbe967640ff6843fb323",
+      "key": "filters-panel",
+      "type": "textbox",
+      "box": [
+        288,
+        392,
+        296,
+        792
+      ]
+    },
+    {
+      "page": "cbe967640ff6843fb323",
+      "key": "matrix-panel",
+      "type": "textbox",
+      "box": [
+        600,
+        392,
+        1300,
+        792
+      ]
+    },
+    {
+      "page": "cbe967640ff6843fb323",
+      "key": "scenario-label",
+      "type": "textbox",
+      "box": [
+        312,
+        412,
+        248,
+        32
+      ]
+    },
+    {
+      "page": "cbe967640ff6843fb323",
+      "key": "scenario",
+      "type": "advancedSlicerVisual",
+      "box": [
+        312,
+        452,
+        248,
+        120
+      ]
+    },
+    {
+      "page": "cbe967640ff6843fb323",
+      "key": "scenario-help",
+      "type": "textbox",
+      "box": [
+        312,
+        580,
+        248,
+        28
+      ]
+    },
+    {
+      "page": "cbe967640ff6843fb323",
+      "key": "comparison-label",
+      "type": "textbox",
+      "box": [
+        312,
+        620,
+        248,
+        32
+      ]
+    },
+    {
+      "page": "cbe967640ff6843fb323",
+      "key": "comparison",
+      "type": "advancedSlicerVisual",
+      "box": [
+        312,
+        660,
+        248,
+        80
+      ]
+    },
+    {
+      "page": "cbe967640ff6843fb323",
+      "key": "mode-0-0",
+      "type": "actionButton",
+      "box": [
+        312,
+        660,
+        248,
+        44
+      ]
+    },
+    {
+      "page": "cbe967640ff6843fb323",
+      "key": "mode-0-1",
+      "type": "actionButton",
+      "box": [
+        312,
+        706,
+        248,
+        44
+      ]
+    },
+    {
+      "page": "cbe967640ff6843fb323",
+      "key": "mode-1-0",
+      "type": "actionButton",
+      "box": [
+        312,
+        660,
+        248,
+        44
+      ]
+    },
+    {
+      "page": "cbe967640ff6843fb323",
+      "key": "mode-1-1",
+      "type": "actionButton",
+      "box": [
+        312,
+        706,
+        248,
+        44
+      ]
+    },
+    {
+      "page": "cbe967640ff6843fb323",
+      "key": "scenario-b",
+      "type": "slicer",
+      "box": [
+        312,
+        752,
+        248,
+        80
+      ]
+    },
+    {
+      "page": "cbe967640ff6843fb323",
+      "key": "months-label",
+      "type": "textbox",
+      "box": [
+        312,
+        840,
+        248,
+        32
+      ]
+    },
+    {
+      "page": "cbe967640ff6843fb323",
+      "key": "months",
+      "type": "advancedSlicerVisual",
+      "box": [
+        312,
+        878,
+        248,
+        136
+      ]
+    },
+    {
+      "page": "cbe967640ff6843fb323",
+      "key": "period",
+      "type": "cardVisual",
+      "box": [
+        312,
+        1018,
+        248,
+        28
+      ]
+    },
+    {
+      "page": "cbe967640ff6843fb323",
+      "key": "view-label",
+      "type": "textbox",
+      "box": [
+        312,
+        1052,
+        248,
+        30
+      ]
+    },
+    {
+      "page": "cbe967640ff6843fb323",
+      "key": "view",
+      "type": "advancedSlicerVisual",
+      "box": [
+        312,
+        1088,
+        248,
+        40
+      ]
+    },
+    {
+      "page": "cbe967640ff6843fb323",
+      "key": "reset",
+      "type": "actionButton",
+      "box": [
+        312,
+        1136,
+        248,
+        44
+      ]
+    },
+    {
+      "page": "cbe967640ff6843fb323",
+      "key": "matrix-title",
+      "type": "textbox",
+      "box": [
+        624,
+        412,
+        680,
+        42
+      ]
+    },
+    {
+      "page": "cbe967640ff6843fb323",
+      "key": "matrix-subtitle",
+      "type": "cardVisual",
+      "box": [
+        624,
+        462,
+        1252,
+        36
+      ]
+    },
+    {
+      "page": "cbe967640ff6843fb323",
+      "key": "matrix-unit",
+      "type": "cardVisual",
+      "box": [
+        624,
+        508,
+        1252,
+        28
+      ]
+    },
+    {
+      "page": "cbe967640ff6843fb323",
+      "key": "expand",
+      "type": "actionButton",
+      "box": [
+        1536,
+        412,
+        168,
+        44
+      ]
+    },
+    {
+      "page": "cbe967640ff6843fb323",
+      "key": "collapse",
+      "type": "actionButton",
+      "box": [
+        1716,
+        412,
+        160,
+        44
+      ]
+    },
+    {
+      "page": "cbe967640ff6843fb323",
+      "key": "matrix",
+      "type": "pivotTable",
+      "box": [
+        624,
+        548,
+        1252,
+        572
+      ]
+    },
+    {
+      "page": "cbe967640ff6843fb323",
+      "key": "matrix-help",
+      "type": "textbox",
+      "box": [
+        624,
+        1132,
+        1252,
+        28
+      ]
+    },
+    {
+      "page": "cbe967640ff6843fb323",
+      "key": "source-note",
+      "type": "cardVisual",
+      "box": [
+        624,
+        1156,
+        1252,
+        24
+      ]
+    }
+  ],
+  "default": {
+    "year": 2026,
+    "scenario": "Fastställd budget",
+    "mode": "Scenario mot utfall",
+    "months": [
+      7,
+      8,
+      9
+    ],
+    "view": "Månad"
+  },
+  "nativeMatrix": true,
+  "screenshotsVerified": false
+}

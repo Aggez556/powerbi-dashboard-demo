@@ -1,0 +1,33 @@
+/// Reproducerbar uppdragsanalys. Separata datumroller för utfall och plan.
+table 'Planveckor'
+
+	column 'VeckaID'
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: VeckaID
+		isHidden
+
+	column 'Vecka'
+		dataType: string
+		summarizeBy: none
+		sourceColumn: Vecka
+		sortByColumn: VeckaID
+
+	column 'Veckostart'
+		dataType: dateTime
+		summarizeBy: none
+		sourceColumn: Veckostart
+
+	column 'Veckoslut'
+		dataType: dateTime
+		summarizeBy: none
+		sourceColumn: Veckoslut
+
+	partition 'Planveckor' = m
+		mode: import
+		source =
+			let
+			 Source=Csv.Document(File.Contents(DataFolder & "/Planveckor.csv"),[Delimiter=",",Encoding=65001,QuoteStyle=QuoteStyle.Csv]),
+			 Headers=Table.PromoteHeaders(Source,[PromoteAllScalars=true]),
+			 Typed=Table.TransformColumnTypes(Headers,{{"VeckaID", Int64.Type},{"Vecka", type text},{"Veckostart", type date},{"Veckoslut", type date}},"en-US")
+			in Typed

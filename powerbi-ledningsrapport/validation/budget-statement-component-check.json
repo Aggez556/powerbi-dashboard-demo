@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "engine": "Local Vega dataflow, not Power BI Desktop rendering",
+  "defaultVisibleRows": 16,
+  "collapsedRows": 9,
+  "expandedRows": 26,
+  "defaultColumns": 9,
+  "wideColumns": 21,
+  "onlyRealGroupsExpand": true,
+  "calculatedRowsHaveNoChildren": true,
+  "expandCollapseSignals": true,
+  "horizontalAndVerticalScrollSignals": true,
+  "rootAmountsMatchPreviousLiveDAX": true
+}

@@ -32,7 +32,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Kommer senare'"
+                  "Value": "'Öppna budget →'"
                 }
               }
             },
@@ -97,6 +97,13 @@
                       "Value": "'#5B6B80'"
                     }
                   }
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Öppna budget →'"
                 }
               }
             }
@@ -382,6 +389,33 @@
               "expr": {
                 "Literal": {
                   "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "visualLink": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "type": {
+              "expr": {
+                "Literal": {
+                  "Value": "'PageNavigation'"
+                }
+              }
+            },
+            "navigationSection": {
+              "expr": {
+                "Literal": {
+                  "Value": "'cbe967640ff6843fb323'"
                 }
               }
             }

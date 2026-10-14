@@ -1,0 +1,39 @@
+/// Reproducerbar uppdragsanalys. Separata datumroller för utfall och plan.
+table 'Utförd tid'
+
+	column 'UppdragID'
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: UppdragID
+		isHidden
+
+	column 'Datumnyckel'
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: Datumnyckel
+		isHidden
+
+	column 'Timmar'
+		dataType: double
+		summarizeBy: none
+		sourceColumn: Timmar
+		isHidden
+
+	column 'Godkänd'
+		dataType: string
+		summarizeBy: none
+		sourceColumn: Godkänd
+
+	column 'Debiterbar'
+		dataType: string
+		summarizeBy: none
+		sourceColumn: Debiterbar
+
+	partition 'Utförd tid' = m
+		mode: import
+		source =
+			let
+			 Source=Csv.Document(File.Contents(DataFolder & "/Utförd tid.csv"),[Delimiter=",",Encoding=65001,QuoteStyle=QuoteStyle.Csv]),
+			 Headers=Table.PromoteHeaders(Source,[PromoteAllScalars=true]),
+			 Typed=Table.TransformColumnTypes(Headers,{{"UppdragID", Int64.Type},{"Datumnyckel", Int64.Type},{"Timmar", type number},{"Godkänd", type text},{"Debiterbar", type text}},"en-US")
+			in Typed

@@ -1,0 +1,34 @@
+EVALUATE
+CALCULATETABLE(
+ ROW("Omsättning",[Budget omsättning huvud],"Budgetomsättning",[Budget omsättning bas],"EBIT",[Budget resultat huvud],"BudgetEBIT",[Budget resultat bas],"Bruttomarginal",[Budget marginal huvud],"Budgetmarginal",[Budget marginal bas],"Titel",[Budget matrisrubrik],"KPItext",[Budget omsättning värde],"Avvikelse",[Budget resultat avvikelse]),
+ TREATAS({2026},'Budgetår'[År]),TREATAS({7,8,9},'Budgetmånader'[Nummer]),TREATAS({1},'Budgetscenarion'[ScenarioID]),TREATAS({1},'Budgetjämförelse'[Ordning]))
+
+EVALUATE
+CALCULATETABLE(
+ SUMMARIZECOLUMNS('Budgetrader'[Rad],'Budgetkolumner'[Grupp],'Budgetkolumner'[Kolumn],"Värde",[Budget matrisvärde],"Färg",IF(NOT ISBLANK([Budget matrisvärde]),[Budget matrisfärg])),
+ TREATAS({2026},'Budgetår'[År]),TREATAS({7,8,9},'Budgetmånader'[Nummer]),TREATAS({1},'Budgetscenarion'[ScenarioID]),TREATAS({1},'Budgetjämförelse'[Ordning]))
+ORDER BY 'Budgetrader'[Rad], 'Budgetkolumner'[Grupp], 'Budgetkolumner'[Kolumn]
+
+EVALUATE
+CALCULATETABLE(
+ ROW("A",[Budget A namn],"B",[Budget B namn],"OmsättningA",[Budget omsättning huvud],"OmsättningB",[Budget omsättning bas],"EBITA",[Budget resultat huvud],"EBITB",[Budget resultat bas],"Titel",[Budget matrisrubrik]),
+ TREATAS({2026},'Budgetår'[År]),TREATAS({1,2,3,4,5,6,7,8,9,10,11,12},'Budgetmånader'[Nummer]),TREATAS({2},'Budgetscenarion'[ScenarioID]),TREATAS({1},'Budgetjämförelsescenario'[ScenarioID]),TREATAS({2},'Budgetjämförelse'[Ordning]))
+
+EVALUATE
+CALCULATETABLE(
+ SUMMARIZECOLUMNS('Budgetrader'[Rad],'Budgetkolumner'[Grupp],'Budgetkolumner'[Kolumn],"Värde",[Budget matrisvärde]),
+ TREATAS({2026},'Budgetår'[År]),TREATAS({1,3,9},'Budgetmånader'[Nummer]),TREATAS({1},'Budgetscenarion'[ScenarioID]),TREATAS({1},'Budgetjämförelse'[Ordning]),TREATAS({2},'Budgetvisning'[Ordning]))
+ORDER BY 'Budgetrader'[Rad], 'Budgetkolumner'[Grupp], 'Budgetkolumner'[Kolumn]
+
+EVALUATE
+CALCULATETABLE(ROW("Omsättning",[Nettoomsättning],"Bruttovinst",[Bruttovinst],"EBIT",[Rörelseresultat],"BudgetEBIT",[Budgetresultat],"Kunder",[Aktiva kunder],"Uppdrag",[Utförda uppdrag]),TREATAS({"R12"},'Periodtyp'[Periodtyp]),TREATAS({"September 2026"},'R12val'[Period]))
+
+// Split-layout checks
+
+EVALUATE
+CALCULATETABLE(SUMMARIZECOLUMNS('Budgetrader'[Rad],'Budgetkolumner'[Grupp],'Budgetkolumner'[Kolumn],"Värde",[Budget matrisvärde]),TREATAS({2026},'Budgetår'[År]),TREATAS({7,8,9},'Budgetmånader'[Nummer]),TREATAS({1},'Budgetscenarion'[ScenarioID]),TREATAS({1},'Budgetjämförelse'[Ordning]),TREATAS({1001,1002,1003,2001,2002,2003,2004,2005,3001,4001,4002,4003,4004,4005,4006,5001},'Budgetrader'[KontoID]))
+ORDER BY 'Budgetrader'[Rad],'Budgetkolumner'[Grupp],'Budgetkolumner'[Kolumn]
+
+EVALUATE
+CALCULATETABLE(SUMMARIZECOLUMNS('Budgetrader'[Rad],'Budgetkolumner'[Grupp],'Budgetkolumner'[Kolumn],"Värde",[Budget matrisvärde]),TREATAS({2026},'Budgetår'[År]),TREATAS({7,8,9},'Budgetmånader'[Nummer]),TREATAS({1},'Budgetscenarion'[ScenarioID]),TREATAS({1},'Budgetjämförelse'[Ordning]),TREATAS({-1,-2,-3,-4},'Budgetrader'[KontoID]))
+ORDER BY 'Budgetrader'[Rad],'Budgetkolumner'[Grupp],'Budgetkolumner'[Kolumn]

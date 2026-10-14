@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "source": "Actual Desktop DAX",
+  "defaultMatrixCells": 81,
+  "accumulatedMatrixCells": 81,
+  "defaultKPIs": {
+    "[Omsättning]": 44760923,
+    "[Budgetomsättning]": 42522878,
+    "[EBIT]": 1733574,
+    "[BudgetEBIT]": 3128451,
+    "[Bruttomarginal]": 0.2543166055802737,
+    "[Budgetmarginal]": 0.2621659333594495,
+    "[Titel]": "Fastställd budget mot utfall · juli–september 2026",
+    "[KPItext]": "44,76 Mkr",
+    "[Avvikelse]": "−1,39 Mkr · −44,6 %"
+  },
+  "referenceR12": {
+    "[Omsättning]": 139500000,
+    "[Bruttovinst]": 36040000,
+    "[EBIT]": 8000000,
+    "[BudgetEBIT]": 9750000,
+    "[Kunder]": 270,
+    "[Uppdrag]": 960
+  },
+  "columnLeafActive": true,
+  "screenshotsVerified": false
+}

@@ -1,0 +1,639 @@
+{
+  "status": "passed",
+  "scope": "Independent persisted workbook/CSV calculations and PBIR configuration; not live DAX or UI",
+  "baselineMonthlyReconciliations": 46,
+  "cases": [
+    {
+      "year": 2024,
+      "scenario": 1,
+      "months": [
+        7
+      ],
+      "actual": {
+        "revenue": 6987466,
+        "grossProfit": 1938374,
+        "EBIT": 465210,
+        "grossMargin": 0.2774072889943221,
+        "operatingMargin": 0.06657778370585274
+      },
+      "budget": {
+        "revenue": 6638093,
+        "grossProfit": 1891946,
+        "EBIT": 523361,
+        "grossMargin": 0.2850134820346747,
+        "operatingMargin": 0.07884207105866098
+      }
+    },
+    {
+      "year": 2024,
+      "scenario": 1,
+      "months": [
+        7,
+        8,
+        9
+      ],
+      "actual": {
+        "revenue": 25620704,
+        "grossProfit": 7107373,
+        "EBIT": 1705769,
+        "grossMargin": 0.2774074045740507,
+        "operatingMargin": 0.06657775680168664
+      },
+      "budget": {
+        "revenue": 24339670,
+        "grossProfit": 6937138,
+        "EBIT": 1918991,
+        "grossMargin": 0.2850136423377967,
+        "operatingMargin": 0.07884211248550206
+      }
+    },
+    {
+      "year": 2024,
+      "scenario": 1,
+      "months": [
+        1,
+        3,
+        9
+      ],
+      "actual": {
+        "revenue": 26483352,
+        "grossProfit": 7346679,
+        "EBIT": 1763202,
+        "grossMargin": 0.27740744449569676,
+        "operatingMargin": 0.06657775042977944
+      },
+      "budget": {
+        "revenue": 25159185,
+        "grossProfit": 7170712,
+        "EBIT": 1983604,
+        "grossMargin": 0.2850136838693304,
+        "operatingMargin": 0.07884214055423497
+      }
+    },
+    {
+      "year": 2024,
+      "scenario": 1,
+      "months": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "actual": {
+        "revenue": 99619207,
+        "grossProfit": 27695006,
+        "EBIT": 6929433,
+        "grossMargin": 0.27800869766008074,
+        "operatingMargin": 0.06955920658954853
+      },
+      "budget": {
+        "revenue": 94638252,
+        "grossProfit": 27029500,
+        "EBIT": 7554896,
+        "grossMargin": 0.2856086141574128,
+        "operatingMargin": 0.07982920056469343
+      }
+    },
+    {
+      "year": 2025,
+      "scenario": 1,
+      "months": [
+        7
+      ],
+      "actual": {
+        "revenue": 11911919,
+        "grossProfit": 3276131,
+        "EBIT": 893747,
+        "grossMargin": 0.2750296572701678,
+        "operatingMargin": 0.07502964048026182
+      },
+      "budget": {
+        "revenue": 11316323,
+        "grossProfit": 3198682,
+        "EBIT": 943027,
+        "grossMargin": 0.2826608961232372,
+        "operatingMargin": 0.08333334069732722
+      }
+    },
+    {
+      "year": 2025,
+      "scenario": 1,
+      "months": [
+        7,
+        8,
+        9
+      ],
+      "actual": {
+        "revenue": 38504021,
+        "grossProfit": 10431596,
+        "EBIT": 2730792,
+        "grossMargin": 0.2709222499125481,
+        "operatingMargin": 0.07092225510681079
+      },
+      "budget": {
+        "revenue": 36578819,
+        "grossProfit": 10190739,
+        "EBIT": 3048235,
+        "grossMargin": 0.27859672014014447,
+        "operatingMargin": 0.08333333561151879
+      }
+    },
+    {
+      "year": 2025,
+      "scenario": 1,
+      "months": [
+        1,
+        3,
+        9
+      ],
+      "actual": {
+        "revenue": 31541419,
+        "grossProfit": 8528197,
+        "EBIT": 2219913,
+        "grossMargin": 0.2703808918679277,
+        "operatingMargin": 0.07038088552705889
+      },
+      "budget": {
+        "revenue": 29964349,
+        "grossProfit": 8331920,
+        "EBIT": 2497029,
+        "grossMargin": 0.2780611052154011,
+        "operatingMargin": 0.0833333305522506
+      }
+    },
+    {
+      "year": 2025,
+      "scenario": 1,
+      "months": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "actual": {
+        "revenue": 123557846,
+        "grossProfit": 33575633,
+        "EBIT": 9415252,
+        "grossMargin": 0.27174019365795676,
+        "operatingMargin": 0.0762011665370081
+      },
+      "budget": {
+        "revenue": 117379955,
+        "grossProfit": 32796673,
+        "EBIT": 9545614,
+        "grossMargin": 0.27940607917254695,
+        "operatingMargin": 0.08132235184448657
+      }
+    },
+    {
+      "year": 2026,
+      "scenario": 1,
+      "months": [
+        7
+      ],
+      "actual": {
+        "revenue": 13847606,
+        "grossProfit": 3587825,
+        "EBIT": 589408,
+        "grossMargin": 0.2590935212916948,
+        "operatingMargin": 0.0425638915491963
+      },
+      "budget": {
+        "revenue": 13155226,
+        "grossProfit": 3511032,
+        "EBIT": 967843,
+        "grossMargin": 0.26689256421744484,
+        "operatingMargin": 0.07357098996246815
+      }
+    },
+    {
+      "year": 2026,
+      "scenario": 1,
+      "months": [
+        7,
+        8,
+        9
+      ],
+      "actual": {
+        "revenue": 44760923,
+        "grossProfit": 11383446,
+        "EBIT": 1733574,
+        "grossMargin": 0.2543166055802737,
+        "operatingMargin": 0.038729630307221326
+      },
+      "budget": {
+        "revenue": 42522878,
+        "grossProfit": 11148050,
+        "EBIT": 3128451,
+        "grossMargin": 0.2621659333594495,
+        "operatingMargin": 0.07357100805829747
+      }
+    },
+    {
+      "year": 2026,
+      "scenario": 1,
+      "months": [
+        1,
+        3,
+        9
+      ],
+      "actual": {
+        "revenue": 36666899,
+        "grossProfit": 9291035,
+        "EBIT": 2018441,
+        "grossMargin": 0.25339025806354665,
+        "operatingMargin": 0.05504804210467867
+      },
+      "budget": {
+        "revenue": 34833555,
+        "grossProfit": 9100243,
+        "EBIT": 2562740,
+        "grossMargin": 0.26124933271955736,
+        "operatingMargin": 0.07357101507440168
+      }
+    },
+    {
+      "year": 2026,
+      "scenario": 1,
+      "months": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "actual": {
+        "revenue": 114047711,
+        "grossProfit": 29330786,
+        "EBIT": 5830056,
+        "grossMargin": 0.2571799621651328,
+        "operatingMargin": 0.051119447719560104
+      },
+      "budget": {
+        "revenue": 108345329,
+        "grossProfit": 28711417,
+        "EBIT": 7971076,
+        "grossMargin": 0.2649991214665101,
+        "operatingMargin": 0.0735710166148464
+      }
+    },
+    {
+      "year": 2026,
+      "scenario": 2,
+      "months": [
+        7
+      ],
+      "actual": {
+        "revenue": 13847606,
+        "grossProfit": 3587825,
+        "EBIT": 589408,
+        "grossMargin": 0.2590935212916948,
+        "operatingMargin": 0.0425638915491963
+      },
+      "budget": {
+        "revenue": 12102809,
+        "grossProfit": 2940824,
+        "EBIT": 349823,
+        "grossMargin": 0.24298689667828352,
+        "operatingMargin": 0.028904281642385666
+      }
+    },
+    {
+      "year": 2026,
+      "scenario": 2,
+      "months": [
+        7,
+        8,
+        9
+      ],
+      "actual": {
+        "revenue": 44760923,
+        "grossProfit": 11383446,
+        "EBIT": 1733574,
+        "grossMargin": 0.2543166055802737,
+        "operatingMargin": 0.038729630307221326
+      },
+      "budget": {
+        "revenue": 39121049,
+        "grossProfit": 9314962,
+        "EBIT": 1144595,
+        "grossMargin": 0.23810614076324998,
+        "operatingMargin": 0.029257778849437293
+      }
+    },
+    {
+      "year": 2026,
+      "scenario": 2,
+      "months": [
+        1,
+        3,
+        9
+      ],
+      "actual": {
+        "revenue": 36666899,
+        "grossProfit": 9291035,
+        "EBIT": 2018441,
+        "grossMargin": 0.25339025806354665,
+        "operatingMargin": 0.05504804210467867
+      },
+      "budget": {
+        "revenue": 32046871,
+        "grossProfit": 7600225,
+        "EBIT": 939819,
+        "grossMargin": 0.2371596590506449,
+        "operatingMargin": 0.029326388838398606
+      }
+    },
+    {
+      "year": 2026,
+      "scenario": 2,
+      "months": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "actual": {
+        "revenue": 114047711,
+        "grossProfit": 29330786,
+        "EBIT": 5830056,
+        "grossMargin": 0.2571799621651328,
+        "operatingMargin": 0.051119447719560104
+      },
+      "budget": {
+        "revenue": 99677706,
+        "grossProfit": 24025488,
+        "EBIT": 2895232,
+        "grossMargin": 0.24103171074181823,
+        "operatingMargin": 0.029045933300270773
+      }
+    },
+    {
+      "year": 2026,
+      "scenario": 3,
+      "months": [
+        7
+      ],
+      "actual": {
+        "revenue": 13847606,
+        "grossProfit": 3587825,
+        "EBIT": 589408,
+        "grossMargin": 0.2590935212916948,
+        "operatingMargin": 0.0425638915491963
+      },
+      "budget": {
+        "revenue": 14470749,
+        "grossProfit": 4247904,
+        "EBIT": 1632997,
+        "grossMargin": 0.29355108018251164,
+        "operatingMargin": 0.11284813246363405
+      }
+    },
+    {
+      "year": 2026,
+      "scenario": 3,
+      "months": [
+        7,
+        8,
+        9
+      ],
+      "actual": {
+        "revenue": 44760923,
+        "grossProfit": 11383446,
+        "EBIT": 1733574,
+        "grossMargin": 0.2543166055802737,
+        "operatingMargin": 0.038729630307221326
+      },
+      "budget": {
+        "revenue": 46775167,
+        "grossProfit": 13517851,
+        "EBIT": 5272099,
+        "grossMargin": 0.28899631721250724,
+        "operatingMargin": 0.1127114949691147
+      }
+    },
+    {
+      "year": 2026,
+      "scenario": 3,
+      "months": [
+        1,
+        3,
+        9
+      ],
+      "actual": {
+        "revenue": 36666899,
+        "grossProfit": 9291035,
+        "EBIT": 2018441,
+        "grossMargin": 0.25339025806354665,
+        "operatingMargin": 0.05504804210467867
+      },
+      "budget": {
+        "revenue": 38316910,
+        "grossProfit": 11039600,
+        "EBIT": 4317739,
+        "grossMargin": 0.2881130028491337,
+        "operatingMargin": 0.11268494771629549
+      }
+    },
+    {
+      "year": 2026,
+      "scenario": 3,
+      "months": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "actual": {
+        "revenue": 114047711,
+        "grossProfit": 29330786,
+        "EBIT": 5830056,
+        "grossMargin": 0.2571799621651328,
+        "operatingMargin": 0.051119447719560104
+      },
+      "budget": {
+        "revenue": 119179865,
+        "grossProfit": 34767921,
+        "EBIT": 13442701,
+        "grossMargin": 0.2917264673860807,
+        "operatingMargin": 0.11279339005795988
+      }
+    },
+    {
+      "scenarioA": 1,
+      "scenarioB": 2,
+      "year": 2026,
+      "months": "full year incl. future months",
+      "A": {
+        "revenue": 141400611,
+        "grossProfit": 37555983,
+        "EBIT": 10402987,
+        "grossMargin": 0.26559986363849586,
+        "operatingMargin": 0.07357101872777622
+      },
+      "B": {
+        "revenue": 130088565,
+        "grossProfit": 31436169,
+        "EBIT": 3772701,
+        "grossMargin": 0.24165205450609745,
+        "operatingMargin": 0.029001019420884535
+      },
+      "differenceEBIT": 6630286
+    },
+    {
+      "scenarioA": 1,
+      "scenarioB": 3,
+      "year": 2026,
+      "months": "full year incl. future months",
+      "A": {
+        "revenue": 141400611,
+        "grossProfit": 37555983,
+        "EBIT": 10402987,
+        "grossMargin": 0.26559986363849586,
+        "operatingMargin": 0.07357101872777622
+      },
+      "B": {
+        "revenue": 155540675,
+        "grossProfit": 45465370,
+        "EBIT": 17546656,
+        "grossMargin": 0.29230534070911035,
+        "operatingMargin": 0.11281072298291106
+      },
+      "differenceEBIT": -7143669
+    },
+    {
+      "scenarioA": 2,
+      "scenarioB": 1,
+      "year": 2026,
+      "months": "full year incl. future months",
+      "A": {
+        "revenue": 130088565,
+        "grossProfit": 31436169,
+        "EBIT": 3772701,
+        "grossMargin": 0.24165205450609745,
+        "operatingMargin": 0.029001019420884535
+      },
+      "B": {
+        "revenue": 141400611,
+        "grossProfit": 37555983,
+        "EBIT": 10402987,
+        "grossMargin": 0.26559986363849586,
+        "operatingMargin": 0.07357101872777622
+      },
+      "differenceEBIT": -6630286
+    },
+    {
+      "scenarioA": 2,
+      "scenarioB": 3,
+      "year": 2026,
+      "months": "full year incl. future months",
+      "A": {
+        "revenue": 130088565,
+        "grossProfit": 31436169,
+        "EBIT": 3772701,
+        "grossMargin": 0.24165205450609745,
+        "operatingMargin": 0.029001019420884535
+      },
+      "B": {
+        "revenue": 155540675,
+        "grossProfit": 45465370,
+        "EBIT": 17546656,
+        "grossMargin": 0.29230534070911035,
+        "operatingMargin": 0.11281072298291106
+      },
+      "differenceEBIT": -13773955
+    },
+    {
+      "scenarioA": 3,
+      "scenarioB": 1,
+      "year": 2026,
+      "months": "full year incl. future months",
+      "A": {
+        "revenue": 155540675,
+        "grossProfit": 45465370,
+        "EBIT": 17546656,
+        "grossMargin": 0.29230534070911035,
+        "operatingMargin": 0.11281072298291106
+      },
+      "B": {
+        "revenue": 141400611,
+        "grossProfit": 37555983,
+        "EBIT": 10402987,
+        "grossMargin": 0.26559986363849586,
+        "operatingMargin": 0.07357101872777622
+      },
+      "differenceEBIT": 7143669
+    },
+    {
+      "scenarioA": 3,
+      "scenarioB": 2,
+      "year": 2026,
+      "months": "full year incl. future months",
+      "A": {
+        "revenue": 155540675,
+        "grossProfit": 45465370,
+        "EBIT": 17546656,
+        "grossMargin": 0.29230534070911035,
+        "operatingMargin": 0.11281072298291106
+      },
+      "B": {
+        "revenue": 130088565,
+        "grossProfit": 31436169,
+        "EBIT": 3772701,
+        "grossMargin": 0.24165205450609745,
+        "operatingMargin": 0.029001019420884535
+      },
+      "differenceEBIT": 13773955
+    }
+  ],
+  "referenceQ3Actual": {
+    "revenue": 44760923,
+    "grossProfit": 11383446,
+    "EBIT": 1733574,
+    "grossMargin": 0.2543166055802737,
+    "operatingMargin": 0.038729630307221326
+  },
+  "referenceQ3Budget": {
+    "revenue": 42522878,
+    "grossProfit": 11148050,
+    "EBIT": 3128451,
+    "grossMargin": 0.2621659333594495,
+    "operatingMargin": 0.07357100805829747
+  },
+  "excelEditReadRestoreTest": true,
+  "actualSourcesUnchanged": true,
+  "defaultExpansionConfigured": true,
+  "UIInteractionsVerified": false,
+  "liveExcelRefreshVerified": false,
+  "screenshotsVerified": false
+}

@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "source": "Actual Desktop DAX",
+  "accountRows": 5,
+  "calculatedRows": 4,
+  "accountCells": 45,
+  "calculatedCells": 36,
+  "monthlyValuesUnchanged": true,
+  "screenshotReview": "not yet verified"
+}
