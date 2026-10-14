@@ -1,0 +1,1694 @@
+{
+  "status": "passed",
+  "source": "Independent persisted CSV and PBIR checks; not live DAX or rendered screenshots",
+  "periodAreaCases": 16,
+  "cases": [
+    {
+      "mode": "R12",
+      "start": 20251001,
+      "end": 20260930,
+      "previousStart": 20241001,
+      "previousEnd": 20250930,
+      "variants": [
+        {
+          "area": 0,
+          "current": {
+            "revenue": 139500000,
+            "grossProfit": 36040000,
+            "margin": 0.25835125448028673,
+            "buyers": 270,
+            "revenuePerCustomer": 516666.6666666667,
+            "orders": 1200,
+            "orderNet": 85025000,
+            "orderAverage": 70854.16666666667,
+            "billedHours": "92563.9627",
+            "hourRevenue": 47509606,
+            "hourlyRate": 513.2624470062797,
+            "categories": {
+              "Maskiner": {
+                "revenue": 35000000,
+                "grossProfit": 7000000
+              },
+              "Rengöringsprodukter": {
+                "revenue": 30000000,
+                "grossProfit": 10800000
+              },
+              "Förbrukningsmaterial": {
+                "revenue": 20000000,
+                "grossProfit": 6000000
+              },
+              "Service": {
+                "revenue": 12000000,
+                "grossProfit": 4320000
+              },
+              "Reparationer": {
+                "revenue": 10000000,
+                "grossProfit": 2300000
+              },
+              "Installationer": {
+                "revenue": 8000000,
+                "grossProfit": 2680000
+              },
+              "Diskpersonal": {
+                "revenue": 14000000,
+                "grossProfit": 1680000
+              },
+              "Städpersonal": {
+                "revenue": 10500000,
+                "grossProfit": 1260000
+              }
+            },
+            "industries": {
+              "Restaurang": 52000000,
+              "Hotell": 36000000,
+              "Catering": 22000000,
+              "Kontor": 17500000,
+              "Livsmedel": 12000000
+            },
+            "months": {
+              "202510": 8776652,
+              "202511": 7898986,
+              "202512": 8776651,
+              "202601": 9361761,
+              "202602": 10044391,
+              "202603": 11409647,
+              "202604": 11994757,
+              "202605": 12726145,
+              "202606": 13750087,
+              "202607": 13847606,
+              "202608": 15017826,
+              "202609": 15895491
+            }
+          },
+          "previous": {
+            "revenue": 120000000,
+            "grossProfit": 33000000,
+            "margin": 0.275,
+            "buyers": 240,
+            "revenuePerCustomer": 500000.0,
+            "orders": 1200,
+            "orderNet": 73017500,
+            "orderAverage": 60847.916666666664,
+            "billedHours": "84428.6465",
+            "hourRevenue": 41430061,
+            "hourlyRate": 490.7109460768153,
+            "categories": {
+              "Maskiner": {
+                "revenue": 30000000,
+                "grossProfit": 8424658
+              },
+              "Rengöringsprodukter": {
+                "revenue": 25000000,
+                "grossProfit": 7020548
+              },
+              "Förbrukningsmaterial": {
+                "revenue": 18000000,
+                "grossProfit": 5054794
+              },
+              "Service": {
+                "revenue": 9000000,
+                "grossProfit": 2641304
+              },
+              "Reparationer": {
+                "revenue": 8000000,
+                "grossProfit": 2347826
+              },
+              "Installationer": {
+                "revenue": 6000000,
+                "grossProfit": 1760870
+              },
+              "Diskpersonal": {
+                "revenue": 14000000,
+                "grossProfit": 3354167
+              },
+              "Städpersonal": {
+                "revenue": 10000000,
+                "grossProfit": 2395833
+              }
+            },
+            "industries": {
+              "Restaurang": 45000000,
+              "Hotell": 31000000,
+              "Catering": 18000000,
+              "Kontor": 15000000,
+              "Livsmedel": 11000000
+            },
+            "months": {
+              "202410": 7549808,
+              "202411": 6794827,
+              "202412": 7549808,
+              "202501": 8053128,
+              "202502": 8640335,
+              "202503": 9814750,
+              "202504": 10318070,
+              "202505": 10947221,
+              "202506": 11828032,
+              "202507": 11911919,
+              "202508": 12918561,
+              "202509": 13673541
+            }
+          },
+          "growth": 0.1625000000000001
+        },
+        {
+          "area": 1,
+          "current": {
+            "revenue": 85000000,
+            "grossProfit": 23800000,
+            "margin": 0.28,
+            "buyers": 230,
+            "revenuePerCustomer": 369565.2173913043,
+            "orders": 1200,
+            "orderNet": 85025000,
+            "orderAverage": 70854.16666666667,
+            "billedHours": "0",
+            "hourRevenue": 0,
+            "hourlyRate": null,
+            "categories": {
+              "Maskiner": {
+                "revenue": 35000000,
+                "grossProfit": 7000000
+              },
+              "Rengöringsprodukter": {
+                "revenue": 30000000,
+                "grossProfit": 10800000
+              },
+              "Förbrukningsmaterial": {
+                "revenue": 20000000,
+                "grossProfit": 6000000
+              }
+            },
+            "industries": {
+              "Restaurang": 31707157,
+              "Hotell": 21926199,
+              "Catering": 13399342,
+              "Kontor": 10658569,
+              "Livsmedel": 7308733
+            },
+            "months": {
+              "202510": 5347781,
+              "202511": 4813002,
+              "202512": 5347780,
+              "202601": 5704299,
+              "202602": 6120238,
+              "202603": 6952115,
+              "202604": 7308633,
+              "202605": 7754282,
+              "202606": 8378189,
+              "202607": 8437609,
+              "202608": 9150647,
+              "202609": 9685425
+            }
+          },
+          "previous": {
+            "revenue": 73000000,
+            "grossProfit": 20500000,
+            "margin": 0.2808219178082192,
+            "buyers": 205,
+            "revenuePerCustomer": 356097.56097560975,
+            "orders": 1200,
+            "orderNet": 73017500,
+            "orderAverage": 60847.916666666664,
+            "billedHours": "0",
+            "hourRevenue": 0,
+            "hourlyRate": null,
+            "categories": {
+              "Maskiner": {
+                "revenue": 30000000,
+                "grossProfit": 8424658
+              },
+              "Rengöringsprodukter": {
+                "revenue": 25000000,
+                "grossProfit": 7020548
+              },
+              "Förbrukningsmaterial": {
+                "revenue": 18000000,
+                "grossProfit": 5054794
+              }
+            },
+            "industries": {
+              "Restaurang": 27396376,
+              "Hotell": 18849498,
+              "Catering": 10944868,
+              "Kontor": 9120724,
+              "Livsmedel": 6688534
+            },
+            "months": {
+              "202410": 4592800,
+              "202411": 4133520,
+              "202412": 4592800,
+              "202501": 4898986,
+              "202502": 5256204,
+              "202503": 5970640,
+              "202504": 6276826,
+              "202505": 6659559,
+              "202506": 7195386,
+              "202507": 7246417,
+              "202508": 7858791,
+              "202509": 8318071
+            }
+          },
+          "growth": 0.1643835616438356
+        },
+        {
+          "area": 2,
+          "current": {
+            "revenue": 30000000,
+            "grossProfit": 9300000,
+            "margin": 0.31,
+            "buyers": 145,
+            "revenuePerCustomer": 206896.55172413794,
+            "orders": 0,
+            "orderNet": 0,
+            "orderAverage": null,
+            "billedHours": "29364.3053",
+            "hourRevenue": 23991332,
+            "hourlyRate": 817.0236535444276,
+            "categories": {
+              "Service": {
+                "revenue": 12000000,
+                "grossProfit": 4320000
+              },
+              "Reparationer": {
+                "revenue": 10000000,
+                "grossProfit": 2300000
+              },
+              "Installationer": {
+                "revenue": 8000000,
+                "grossProfit": 2680000
+              }
+            },
+            "industries": {
+              "Restaurang": 11173125,
+              "Hotell": 7745916,
+              "Catering": 4733614,
+              "Kontor": 3765374,
+              "Livsmedel": 2581971
+            },
+            "months": {
+              "202510": 1887452,
+              "202511": 1698707,
+              "202512": 1887452,
+              "202601": 2013282,
+              "202602": 2160084,
+              "202603": 2453687,
+              "202604": 2579518,
+              "202605": 2736805,
+              "202606": 2957008,
+              "202607": 2977980,
+              "202608": 3229640,
+              "202609": 3418385
+            }
+          },
+          "previous": {
+            "revenue": 23000000,
+            "grossProfit": 6750000,
+            "margin": 0.29347826086956524,
+            "buyers": 130,
+            "revenuePerCustomer": 176923.07692307694,
+            "orders": 0,
+            "orderNet": 0,
+            "orderAverage": null,
+            "billedHours": "22508.8095",
+            "hourRevenue": 18391720,
+            "hourlyRate": 817.0898598613134,
+            "categories": {
+              "Service": {
+                "revenue": 9000000,
+                "grossProfit": 2641304
+              },
+              "Reparationer": {
+                "revenue": 8000000,
+                "grossProfit": 2347826
+              },
+              "Installationer": {
+                "revenue": 6000000,
+                "grossProfit": 1760870
+              }
+            },
+            "industries": {
+              "Restaurang": 8613988,
+              "Hotell": 5946220,
+              "Catering": 3452642,
+              "Kontor": 2877203,
+              "Livsmedel": 2109947
+            },
+            "months": {
+              "202410": 1447047,
+              "202411": 1302342,
+              "202412": 1447047,
+              "202501": 1543516,
+              "202502": 1656064,
+              "202503": 1881160,
+              "202504": 1977630,
+              "202505": 2098217,
+              "202506": 2267039,
+              "202507": 2283118,
+              "202508": 2476058,
+              "202509": 2620762
+            }
+          },
+          "growth": 0.30434782608695654
+        },
+        {
+          "area": 3,
+          "current": {
+            "revenue": 24500000,
+            "grossProfit": 2940000,
+            "margin": 0.12,
+            "buyers": 80,
+            "revenuePerCustomer": 306250.0,
+            "orders": 0,
+            "orderNet": 0,
+            "orderAverage": null,
+            "billedHours": "63199.6574",
+            "hourRevenue": 23518274,
+            "hourlyRate": 372.12660586353115,
+            "categories": {
+              "Diskpersonal": {
+                "revenue": 14000000,
+                "grossProfit": 1680000
+              },
+              "Städpersonal": {
+                "revenue": 10500000,
+                "grossProfit": 1260000
+              }
+            },
+            "industries": {
+              "Restaurang": 9119718,
+              "Hotell": 6327885,
+              "Catering": 3867044,
+              "Kontor": 3076057,
+              "Livsmedel": 2109296
+            },
+            "months": {
+              "202510": 1541419,
+              "202511": 1387277,
+              "202512": 1541419,
+              "202601": 1644180,
+              "202602": 1764069,
+              "202603": 2003845,
+              "202604": 2106606,
+              "202605": 2235058,
+              "202606": 2414890,
+              "202607": 2432017,
+              "202608": 2637539,
+              "202609": 2791681
+            }
+          },
+          "previous": {
+            "revenue": 24000000,
+            "grossProfit": 5750000,
+            "margin": 0.23958333333333334,
+            "buyers": 80,
+            "revenuePerCustomer": 300000.0,
+            "orders": 0,
+            "orderNet": 0,
+            "orderAverage": null,
+            "billedHours": "61919.8370",
+            "hourRevenue": 23038341,
+            "hourlyRate": 372.06721006064663,
+            "categories": {
+              "Diskpersonal": {
+                "revenue": 14000000,
+                "grossProfit": 3354167
+              },
+              "Städpersonal": {
+                "revenue": 10000000,
+                "grossProfit": 2395833
+              }
+            },
+            "industries": {
+              "Restaurang": 8989636,
+              "Hotell": 6204282,
+              "Catering": 3602490,
+              "Kontor": 3002073,
+              "Livsmedel": 2201519
+            },
+            "months": {
+              "202410": 1509961,
+              "202411": 1358965,
+              "202412": 1509961,
+              "202501": 1610626,
+              "202502": 1728067,
+              "202503": 1962950,
+              "202504": 2063614,
+              "202505": 2189445,
+              "202506": 2365607,
+              "202507": 2382384,
+              "202508": 2583712,
+              "202509": 2734708
+            }
+          },
+          "growth": 0.02083333333333326
+        }
+      ]
+    },
+    {
+      "mode": "Helår 2025",
+      "start": 20250101,
+      "end": 20251231,
+      "previousStart": 20240101,
+      "previousEnd": 20241231,
+      "variants": [
+        {
+          "area": 0,
+          "current": {
+            "revenue": 123557846,
+            "grossProfit": 33575633,
+            "margin": 0.27174019365795676,
+            "buyers": 280,
+            "revenuePerCustomer": 441278.02142857143,
+            "orders": 1200,
+            "orderNet": 75202943,
+            "orderAverage": 62669.119166666664,
+            "billedHours": "85912.9414",
+            "hourRevenue": 42539275,
+            "hourlyRate": 495.14397140638465,
+            "categories": {
+              "Maskiner": {
+                "revenue": 30912268,
+                "grossProfit": 8174037
+              },
+              "Rengöringsprodukter": {
+                "revenue": 25912268,
+                "grossProfit": 7711809
+              },
+              "Förbrukningsmaterial": {
+                "revenue": 18364907,
+                "grossProfit": 5228723
+              },
+              "Service": {
+                "revenue": 9547361,
+                "grossProfit": 2951141
+              },
+              "Reparationer": {
+                "revenue": 8364907,
+                "grossProfit": 2343978
+              },
+              "Installationer": {
+                "revenue": 6364907,
+                "grossProfit": 1931331
+              },
+              "Diskpersonal": {
+                "revenue": 14000000,
+                "grossProfit": 3047105
+              },
+              "Städpersonal": {
+                "revenue": 10091228,
+                "grossProfit": 2187509
+              }
+            },
+            "industries": {
+              "Restaurang": 46276899,
+              "Hotell": 31912372,
+              "Catering": 18729947,
+              "Kontor": 15456188,
+              "Livsmedel": 11182440
+            },
+            "months": {
+              "202501": 8053128,
+              "202502": 8640335,
+              "202503": 9814750,
+              "202504": 10318070,
+              "202505": 10947221,
+              "202506": 11828032,
+              "202507": 11911919,
+              "202508": 12918561,
+              "202509": 13673541,
+              "202510": 8776652,
+              "202511": 7898986,
+              "202512": 8776651
+            }
+          },
+          "previous": {
+            "revenue": 99619207,
+            "grossProfit": 27695006,
+            "margin": 0.27800869766008074,
+            "buyers": 240,
+            "revenuePerCustomer": 415080.0291666667,
+            "orders": 1200,
+            "orderNet": 61315870,
+            "orderAverage": 51096.558333333334,
+            "billedHours": "65253.1385",
+            "hourRevenue": 33420575,
+            "hourlyRate": 512.1680852178474,
+            "categories": {
+              "Maskiner": {
+                "revenue": 25229362,
+                "grossProfit": 5590656
+              },
+              "Rengöringsprodukter": {
+                "revenue": 21494843,
+                "grossProfit": 7512375
+              },
+              "Förbrukningsmaterial": {
+                "revenue": 14573165,
+                "grossProfit": 4388545
+              },
+              "Service": {
+                "revenue": 8359039,
+                "grossProfit": 2833611
+              },
+              "Reparationer": {
+                "revenue": 7057093,
+                "grossProfit": 1684564
+              },
+              "Installationer": {
+                "revenue": 5572691,
+                "grossProfit": 1780733
+              },
+              "Diskpersonal": {
+                "revenue": 9956709,
+                "grossProfit": 2243711
+              },
+              "Städpersonal": {
+                "revenue": 7376305,
+                "grossProfit": 1660811
+              }
+            },
+            "industries": {
+              "Restaurang": 37177605,
+              "Hotell": 25716334,
+              "Catering": 15543151,
+              "Kontor": 12488322,
+              "Livsmedel": 8693795
+            },
+            "months": {
+              "202401": 7850114,
+              "202402": 7677586,
+              "202403": 8885294,
+              "202404": 8971560,
+              "202405": 9316620,
+              "202406": 9402886,
+              "202407": 6987466,
+              "202408": 8885294,
+              "202409": 9747944,
+              "202410": 7549808,
+              "202411": 6794827,
+              "202412": 7549808
+            }
+          },
+          "growth": 0.24030144106648033
+        },
+        {
+          "area": 1,
+          "current": {
+            "revenue": 75189443,
+            "grossProfit": 21114569,
+            "margin": 0.2808182659366156,
+            "buyers": 240,
+            "revenuePerCustomer": 313289.3458333333,
+            "orders": 1200,
+            "orderNet": 75202943,
+            "orderAverage": 62669.119166666664,
+            "billedHours": "0",
+            "hourRevenue": 0,
+            "hourlyRate": null,
+            "categories": {
+              "Maskiner": {
+                "revenue": 30912268,
+                "grossProfit": 8174037
+              },
+              "Rengöringsprodukter": {
+                "revenue": 25912268,
+                "grossProfit": 7711809
+              },
+              "Förbrukningsmaterial": {
+                "revenue": 18364907,
+                "grossProfit": 5228723
+              }
+            },
+            "industries": {
+              "Restaurang": 28182802,
+              "Hotell": 19410887,
+              "Catering": 11392740,
+              "Kontor": 9401327,
+              "Livsmedel": 6801687
+            },
+            "months": {
+              "202501": 4898986,
+              "202502": 5256204,
+              "202503": 5970640,
+              "202504": 6276826,
+              "202505": 6659559,
+              "202506": 7195386,
+              "202507": 7246417,
+              "202508": 7858791,
+              "202509": 8318071,
+              "202510": 5347781,
+              "202511": 4813002,
+              "202512": 5347780
+            }
+          },
+          "previous": {
+            "revenue": 61297370,
+            "grossProfit": 17491576,
+            "margin": 0.2853560601376535,
+            "buyers": 191,
+            "revenuePerCustomer": 320928.6387434555,
+            "orders": 1200,
+            "orderNet": 61315870,
+            "orderAverage": 51096.558333333334,
+            "billedHours": "0",
+            "hourRevenue": 0,
+            "hourlyRate": null,
+            "categories": {
+              "Maskiner": {
+                "revenue": 25229362,
+                "grossProfit": 5590656
+              },
+              "Rengöringsprodukter": {
+                "revenue": 21494843,
+                "grossProfit": 7512375
+              },
+              "Förbrukningsmaterial": {
+                "revenue": 14573165,
+                "grossProfit": 4388545
+              }
+            },
+            "industries": {
+              "Restaurang": 22898182,
+              "Hotell": 15814376,
+              "Catering": 9559539,
+              "Kontor": 7679838,
+              "Livsmedel": 5345435
+            },
+            "months": {
+              "202401": 4845750,
+              "202402": 4739250,
+              "202403": 5484750,
+              "202404": 5538000,
+              "202405": 5751000,
+              "202406": 5804250,
+              "202407": 4313250,
+              "202408": 5484750,
+              "202409": 6017250,
+              "202410": 4592800,
+              "202411": 4133520,
+              "202412": 4592800
+            }
+          },
+          "growth": 0.22663407908039113
+        },
+        {
+          "area": 2,
+          "current": {
+            "revenue": 24277175,
+            "grossProfit": 7226450,
+            "margin": 0.29766436992772016,
+            "buyers": 170,
+            "revenuePerCustomer": 142806.91176470587,
+            "orders": 0,
+            "orderNet": 0,
+            "orderAverage": null,
+            "billedHours": "23759.5924",
+            "hourRevenue": 19413367,
+            "hourlyRate": 817.0749174973221,
+            "categories": {
+              "Service": {
+                "revenue": 9547361,
+                "grossProfit": 2951141
+              },
+              "Reparationer": {
+                "revenue": 8364907,
+                "grossProfit": 2343978
+              },
+              "Installationer": {
+                "revenue": 6364907,
+                "grossProfit": 1931331
+              }
+            },
+            "industries": {
+              "Restaurang": 9080819,
+              "Hotell": 6274616,
+              "Catering": 3686404,
+              "Kontor": 3039271,
+              "Livsmedel": 2196065
+            },
+            "months": {
+              "202501": 1543516,
+              "202502": 1656064,
+              "202503": 1881160,
+              "202504": 1977630,
+              "202505": 2098217,
+              "202506": 2267039,
+              "202507": 2283118,
+              "202508": 2476058,
+              "202509": 2620762,
+              "202510": 1887452,
+              "202511": 1698707,
+              "202512": 1887452
+            }
+          },
+          "previous": {
+            "revenue": 20988823,
+            "grossProfit": 6298908,
+            "margin": 0.3001077287659246,
+            "buyers": 137,
+            "revenuePerCustomer": 153203.08759124088,
+            "orders": 0,
+            "orderNet": 0,
+            "orderAverage": null,
+            "billedHours": "20540.7056",
+            "hourRevenue": 16782557,
+            "hourlyRate": 817.0389726047191,
+            "categories": {
+              "Service": {
+                "revenue": 8359039,
+                "grossProfit": 2833611
+              },
+              "Reparationer": {
+                "revenue": 7057093,
+                "grossProfit": 1684564
+              },
+              "Installationer": {
+                "revenue": 5572691,
+                "grossProfit": 1780733
+              }
+            },
+            "industries": {
+              "Restaurang": 7822304,
+              "Hotell": 5422085,
+              "Catering": 3280423,
+              "Kontor": 2633303,
+              "Livsmedel": 1830708
+            },
+            "months": {
+              "202401": 1696012,
+              "202402": 1658738,
+              "202403": 1919662,
+              "202404": 1938300,
+              "202405": 2012850,
+              "202406": 2031488,
+              "202407": 1509638,
+              "202408": 1919662,
+              "202409": 2106037,
+              "202410": 1447047,
+              "202411": 1302342,
+              "202412": 1447047
+            }
+          },
+          "growth": 0.15667157705794166
+        },
+        {
+          "area": 3,
+          "current": {
+            "revenue": 24091228,
+            "grossProfit": 5234614,
+            "margin": 0.2172829878161462,
+            "buyers": 110,
+            "revenuePerCustomer": 219011.16363636364,
+            "orders": 0,
+            "orderNet": 0,
+            "orderAverage": null,
+            "billedHours": "62153.3490",
+            "hourRevenue": 23125908,
+            "hourlyRate": 372.0782286405838,
+            "categories": {
+              "Diskpersonal": {
+                "revenue": 14000000,
+                "grossProfit": 3047105
+              },
+              "Städpersonal": {
+                "revenue": 10091228,
+                "grossProfit": 2187509
+              }
+            },
+            "industries": {
+              "Restaurang": 9013278,
+              "Hotell": 6226869,
+              "Catering": 3650803,
+              "Kontor": 3015590,
+              "Livsmedel": 2184688
+            },
+            "months": {
+              "202501": 1610626,
+              "202502": 1728067,
+              "202503": 1962950,
+              "202504": 2063614,
+              "202505": 2189445,
+              "202506": 2365607,
+              "202507": 2382384,
+              "202508": 2583712,
+              "202509": 2734708,
+              "202510": 1541419,
+              "202511": 1387277,
+              "202512": 1541419
+            }
+          },
+          "previous": {
+            "revenue": 17333014,
+            "grossProfit": 3904522,
+            "margin": 0.22526503469044679,
+            "buyers": 100,
+            "revenuePerCustomer": 173330.14,
+            "orders": 0,
+            "orderNet": 0,
+            "orderAverage": null,
+            "billedHours": "44712.4329",
+            "hourRevenue": 16638018,
+            "hourlyRate": 372.11166829617986,
+            "categories": {
+              "Diskpersonal": {
+                "revenue": 9956709,
+                "grossProfit": 2243711
+              },
+              "Städpersonal": {
+                "revenue": 7376305,
+                "grossProfit": 1660811
+              }
+            },
+            "industries": {
+              "Restaurang": 6457119,
+              "Hotell": 4479873,
+              "Catering": 2703189,
+              "Kontor": 2175181,
+              "Livsmedel": 1517652
+            },
+            "months": {
+              "202401": 1308352,
+              "202402": 1279598,
+              "202403": 1480882,
+              "202404": 1495260,
+              "202405": 1552770,
+              "202406": 1567148,
+              "202407": 1164578,
+              "202408": 1480882,
+              "202409": 1624657,
+              "202410": 1509961,
+              "202411": 1358965,
+              "202412": 1509961
+            }
+          },
+          "growth": 0.38990414477251334
+        }
+      ]
+    },
+    {
+      "mode": "Helår 2024",
+      "start": 20240101,
+      "end": 20241231,
+      "previousStart": 20230101,
+      "previousEnd": 20231231,
+      "variants": [
+        {
+          "area": 0,
+          "current": {
+            "revenue": 99619207,
+            "grossProfit": 27695006,
+            "margin": 0.27800869766008074,
+            "buyers": 240,
+            "revenuePerCustomer": 415080.0291666667,
+            "orders": 1200,
+            "orderNet": 61315870,
+            "orderAverage": 51096.558333333334,
+            "billedHours": "65253.1385",
+            "hourRevenue": 33420575,
+            "hourlyRate": 512.1680852178474,
+            "categories": {
+              "Maskiner": {
+                "revenue": 25229362,
+                "grossProfit": 5590656
+              },
+              "Rengöringsprodukter": {
+                "revenue": 21494843,
+                "grossProfit": 7512375
+              },
+              "Förbrukningsmaterial": {
+                "revenue": 14573165,
+                "grossProfit": 4388545
+              },
+              "Service": {
+                "revenue": 8359039,
+                "grossProfit": 2833611
+              },
+              "Reparationer": {
+                "revenue": 7057093,
+                "grossProfit": 1684564
+              },
+              "Installationer": {
+                "revenue": 5572691,
+                "grossProfit": 1780733
+              },
+              "Diskpersonal": {
+                "revenue": 9956709,
+                "grossProfit": 2243711
+              },
+              "Städpersonal": {
+                "revenue": 7376305,
+                "grossProfit": 1660811
+              }
+            },
+            "industries": {
+              "Restaurang": 37177605,
+              "Hotell": 25716334,
+              "Catering": 15543151,
+              "Kontor": 12488322,
+              "Livsmedel": 8693795
+            },
+            "months": {
+              "202401": 7850114,
+              "202402": 7677586,
+              "202403": 8885294,
+              "202404": 8971560,
+              "202405": 9316620,
+              "202406": 9402886,
+              "202407": 6987466,
+              "202408": 8885294,
+              "202409": 9747944,
+              "202410": 7549808,
+              "202411": 6794827,
+              "202412": 7549808
+            }
+          },
+          "previous": {
+            "revenue": 98901000,
+            "grossProfit": 27435870,
+            "margin": 0.2774074074074074,
+            "buyers": 220,
+            "revenuePerCustomer": 449550.0,
+            "orders": 1200,
+            "orderNet": 61068000,
+            "orderAverage": 50890.0,
+            "billedHours": "63431.5426",
+            "hourRevenue": 32908423,
+            "hourlyRate": 518.8021865954116,
+            "categories": {
+              "Maskiner": {
+                "revenue": 25138237,
+                "grossProfit": 5117425
+              },
+              "Rengöringsprodukter": {
+                "revenue": 21547057,
+                "grossProfit": 7895458
+              },
+              "Förbrukningsmaterial": {
+                "revenue": 14364706,
+                "grossProfit": 4386367
+              },
+              "Service": {
+                "revenue": 8547000,
+                "grossProfit": 2977665
+              },
+              "Reparationer": {
+                "revenue": 7122499,
+                "grossProfit": 1585331
+              },
+              "Installationer": {
+                "revenue": 5698001,
+                "grossProfit": 1847254
+              },
+              "Diskpersonal": {
+                "revenue": 9419141,
+                "grossProfit": 2072213
+              },
+              "Städpersonal": {
+                "revenue": 7064359,
+                "grossProfit": 1554157
+              }
+            },
+            "industries": {
+              "Restaurang": 36866324,
+              "Hotell": 25522838,
+              "Catering": 15597291,
+              "Kontor": 12406936,
+              "Livsmedel": 8507611
+            },
+            "months": {
+              "202301": 7371000,
+              "202302": 7209000,
+              "202303": 8343000,
+              "202304": 8424000,
+              "202305": 8748000,
+              "202306": 8829000,
+              "202307": 6561000,
+              "202308": 8343000,
+              "202309": 9153000,
+              "202310": 8829000,
+              "202311": 8343000,
+              "202312": 8748000
+            }
+          },
+          "growth": 0.0072618780396558336
+        },
+        {
+          "area": 1,
+          "current": {
+            "revenue": 61297370,
+            "grossProfit": 17491576,
+            "margin": 0.2853560601376535,
+            "buyers": 191,
+            "revenuePerCustomer": 320928.6387434555,
+            "orders": 1200,
+            "orderNet": 61315870,
+            "orderAverage": 51096.558333333334,
+            "billedHours": "0",
+            "hourRevenue": 0,
+            "hourlyRate": null,
+            "categories": {
+              "Maskiner": {
+                "revenue": 25229362,
+                "grossProfit": 5590656
+              },
+              "Rengöringsprodukter": {
+                "revenue": 21494843,
+                "grossProfit": 7512375
+              },
+              "Förbrukningsmaterial": {
+                "revenue": 14573165,
+                "grossProfit": 4388545
+              }
+            },
+            "industries": {
+              "Restaurang": 22898182,
+              "Hotell": 15814376,
+              "Catering": 9559539,
+              "Kontor": 7679838,
+              "Livsmedel": 5345435
+            },
+            "months": {
+              "202401": 4845750,
+              "202402": 4739250,
+              "202403": 5484750,
+              "202404": 5538000,
+              "202405": 5751000,
+              "202406": 5804250,
+              "202407": 4313250,
+              "202408": 5484750,
+              "202409": 6017250,
+              "202410": 4592800,
+              "202411": 4133520,
+              "202412": 4592800
+            }
+          },
+          "previous": {
+            "revenue": 61050000,
+            "grossProfit": 17399250,
+            "margin": 0.285,
+            "buyers": 180,
+            "revenuePerCustomer": 339166.6666666667,
+            "orders": 1200,
+            "orderNet": 61068000,
+            "orderAverage": 50890.0,
+            "billedHours": "0",
+            "hourRevenue": 0,
+            "hourlyRate": null,
+            "categories": {
+              "Maskiner": {
+                "revenue": 25138237,
+                "grossProfit": 5117425
+              },
+              "Rengöringsprodukter": {
+                "revenue": 21547057,
+                "grossProfit": 7895458
+              },
+              "Förbrukningsmaterial": {
+                "revenue": 14364706,
+                "grossProfit": 4386367
+              }
+            },
+            "industries": {
+              "Restaurang": 22778601,
+              "Hotell": 15745947,
+              "Catering": 9622524,
+              "Kontor": 7654281,
+              "Livsmedel": 5248647
+            },
+            "months": {
+              "202301": 4550000,
+              "202302": 4450000,
+              "202303": 5150000,
+              "202304": 5200000,
+              "202305": 5400000,
+              "202306": 5450000,
+              "202307": 4050000,
+              "202308": 5150000,
+              "202309": 5650000,
+              "202310": 5450000,
+              "202311": 5150000,
+              "202312": 5400000
+            }
+          },
+          "growth": 0.00405192465192461
+        },
+        {
+          "area": 2,
+          "current": {
+            "revenue": 20988823,
+            "grossProfit": 6298908,
+            "margin": 0.3001077287659246,
+            "buyers": 137,
+            "revenuePerCustomer": 153203.08759124088,
+            "orders": 0,
+            "orderNet": 0,
+            "orderAverage": null,
+            "billedHours": "20540.7056",
+            "hourRevenue": 16782557,
+            "hourlyRate": 817.0389726047191,
+            "categories": {
+              "Service": {
+                "revenue": 8359039,
+                "grossProfit": 2833611
+              },
+              "Reparationer": {
+                "revenue": 7057093,
+                "grossProfit": 1684564
+              },
+              "Installationer": {
+                "revenue": 5572691,
+                "grossProfit": 1780733
+              }
+            },
+            "industries": {
+              "Restaurang": 7822304,
+              "Hotell": 5422085,
+              "Catering": 3280423,
+              "Kontor": 2633303,
+              "Livsmedel": 1830708
+            },
+            "months": {
+              "202401": 1696012,
+              "202402": 1658738,
+              "202403": 1919662,
+              "202404": 1938300,
+              "202405": 2012850,
+              "202406": 2031488,
+              "202407": 1509638,
+              "202408": 1919662,
+              "202409": 2106037,
+              "202410": 1447047,
+              "202411": 1302342,
+              "202412": 1447047
+            }
+          },
+          "previous": {
+            "revenue": 21367500,
+            "grossProfit": 6410250,
+            "margin": 0.3,
+            "buyers": 130,
+            "revenuePerCustomer": 164365.38461538462,
+            "orders": 0,
+            "orderNet": 0,
+            "orderAverage": null,
+            "billedHours": "20912.2993",
+            "hourRevenue": 17085878,
+            "hourlyRate": 817.0253186841104,
+            "categories": {
+              "Service": {
+                "revenue": 8547000,
+                "grossProfit": 2977665
+              },
+              "Reparationer": {
+                "revenue": 7122499,
+                "grossProfit": 1585331
+              },
+              "Installationer": {
+                "revenue": 5698001,
+                "grossProfit": 1847254
+              }
+            },
+            "industries": {
+              "Restaurang": 7956023,
+              "Hotell": 5517865,
+              "Catering": 3372030,
+              "Kontor": 2682294,
+              "Livsmedel": 1839288
+            },
+            "months": {
+              "202301": 1592500,
+              "202302": 1557500,
+              "202303": 1802500,
+              "202304": 1820000,
+              "202305": 1890000,
+              "202306": 1907500,
+              "202307": 1417500,
+              "202308": 1802500,
+              "202309": 1977500,
+              "202310": 1907500,
+              "202311": 1802500,
+              "202312": 1890000
+            }
+          },
+          "growth": -0.01772210132210128
+        },
+        {
+          "area": 3,
+          "current": {
+            "revenue": 17333014,
+            "grossProfit": 3904522,
+            "margin": 0.22526503469044679,
+            "buyers": 100,
+            "revenuePerCustomer": 173330.14,
+            "orders": 0,
+            "orderNet": 0,
+            "orderAverage": null,
+            "billedHours": "44712.4329",
+            "hourRevenue": 16638018,
+            "hourlyRate": 372.11166829617986,
+            "categories": {
+              "Diskpersonal": {
+                "revenue": 9956709,
+                "grossProfit": 2243711
+              },
+              "Städpersonal": {
+                "revenue": 7376305,
+                "grossProfit": 1660811
+              }
+            },
+            "industries": {
+              "Restaurang": 6457119,
+              "Hotell": 4479873,
+              "Catering": 2703189,
+              "Kontor": 2175181,
+              "Livsmedel": 1517652
+            },
+            "months": {
+              "202401": 1308352,
+              "202402": 1279598,
+              "202403": 1480882,
+              "202404": 1495260,
+              "202405": 1552770,
+              "202406": 1567148,
+              "202407": 1164578,
+              "202408": 1480882,
+              "202409": 1624657,
+              "202410": 1509961,
+              "202411": 1358965,
+              "202412": 1509961
+            }
+          },
+          "previous": {
+            "revenue": 16483500,
+            "grossProfit": 3626370,
+            "margin": 0.22,
+            "buyers": 80,
+            "revenuePerCustomer": 206043.75,
+            "orders": 0,
+            "orderNet": 0,
+            "orderAverage": null,
+            "billedHours": "42519.2433",
+            "hourRevenue": 15822545,
+            "hourlyRate": 372.1266836373826,
+            "categories": {
+              "Diskpersonal": {
+                "revenue": 9419141,
+                "grossProfit": 2072213
+              },
+              "Städpersonal": {
+                "revenue": 7064359,
+                "grossProfit": 1554157
+              }
+            },
+            "industries": {
+              "Restaurang": 6131700,
+              "Hotell": 4259026,
+              "Catering": 2602737,
+              "Kontor": 2070361,
+              "Livsmedel": 1419676
+            },
+            "months": {
+              "202301": 1228500,
+              "202302": 1201500,
+              "202303": 1390500,
+              "202304": 1404000,
+              "202305": 1458000,
+              "202306": 1471500,
+              "202307": 1093500,
+              "202308": 1390500,
+              "202309": 1525500,
+              "202310": 1471500,
+              "202311": 1390500,
+              "202312": 1458000
+            }
+          },
+          "growth": 0.051537234203900884
+        }
+      ]
+    },
+    {
+      "mode": "Månad",
+      "start": 20260901,
+      "end": 20260930,
+      "previousStart": 20250901,
+      "previousEnd": 20250930,
+      "variants": [
+        {
+          "area": 0,
+          "current": {
+            "revenue": 15895491,
+            "grossProfit": 4001265,
+            "margin": 0.251723271712714,
+            "buyers": 161,
+            "revenuePerCustomer": 98729.75776397515,
+            "orders": 100,
+            "orderNet": 9685425,
+            "orderAverage": 96854.25,
+            "billedHours": "10547.4596",
+            "hourRevenue": 5413638,
+            "hourlyRate": 513.264634832069,
+            "categories": {
+              "Maskiner": {
+                "revenue": 3988116,
+                "grossProfit": 754901
+              },
+              "Rengöringsprodukter": {
+                "revenue": 3418385,
+                "grossProfit": 1201322
+              },
+              "Förbrukningsmaterial": {
+                "revenue": 2278924,
+                "grossProfit": 662317
+              },
+              "Service": {
+                "revenue": 1367354,
+                "grossProfit": 485741
+              },
+              "Reparationer": {
+                "revenue": 1139462,
+                "grossProfit": 255553
+              },
+              "Installationer": {
+                "revenue": 911569,
+                "grossProfit": 300868
+              },
+              "Diskpersonal": {
+                "revenue": 1595247,
+                "grossProfit": 194608
+              },
+              "Städpersonal": {
+                "revenue": 1196434,
+                "grossProfit": 145955
+              }
+            },
+            "industries": {
+              "Restaurang": 5926060,
+              "Hotell": 4101709,
+              "Catering": 2506599,
+              "Kontor": 1993887,
+              "Livsmedel": 1367236
+            },
+            "months": {
+              "202609": 15895491
+            }
+          },
+          "previous": {
+            "revenue": 13673541,
+            "grossProfit": 3677940,
+            "margin": 0.26898226289737237,
+            "buyers": 186,
+            "revenuePerCustomer": 73513.66129032258,
+            "orders": 100,
+            "orderNet": 8318071,
+            "orderAverage": 83180.71,
+            "billedHours": "9620.7712",
+            "hourRevenue": 4721103,
+            "hourlyRate": 490.71980840787484,
+            "categories": {
+              "Maskiner": {
+                "revenue": 3418386,
+                "grossProfit": 926904
+              },
+              "Rengöringsprodukter": {
+                "revenue": 2848654,
+                "grossProfit": 772419
+              },
+              "Förbrukningsmaterial": {
+                "revenue": 2051031,
+                "grossProfit": 556142
+              },
+              "Service": {
+                "revenue": 1025516,
+                "grossProfit": 295986
+              },
+              "Reparationer": {
+                "revenue": 911569,
+                "grossProfit": 263098
+              },
+              "Installationer": {
+                "revenue": 683677,
+                "grossProfit": 197324
+              },
+              "Diskpersonal": {
+                "revenue": 1595246,
+                "grossProfit": 388539
+              },
+              "Städpersonal": {
+                "revenue": 1139462,
+                "grossProfit": 277528
+              }
+            },
+            "industries": {
+              "Restaurang": 5129879,
+              "Hotell": 3531380,
+              "Catering": 2050479,
+              "Kontor": 1708732,
+              "Livsmedel": 1253071
+            },
+            "months": {
+              "202509": 13673541
+            }
+          },
+          "growth": 0.16249996983224757
+        },
+        {
+          "area": 1,
+          "current": {
+            "revenue": 9685425,
+            "grossProfit": 2618540,
+            "margin": 0.2703588123391591,
+            "buyers": 100,
+            "revenuePerCustomer": 96854.25,
+            "orders": 100,
+            "orderNet": 9685425,
+            "orderAverage": 96854.25,
+            "billedHours": "0",
+            "hourRevenue": 0,
+            "hourlyRate": null,
+            "categories": {
+              "Maskiner": {
+                "revenue": 3988116,
+                "grossProfit": 754901
+              },
+              "Rengöringsprodukter": {
+                "revenue": 3418385,
+                "grossProfit": 1201322
+              },
+              "Förbrukningsmaterial": {
+                "revenue": 2278924,
+                "grossProfit": 662317
+              }
+            },
+            "industries": {
+              "Restaurang": 3613196,
+              "Hotell": 2498289,
+              "Catering": 1526731,
+              "Kontor": 1214446,
+              "Livsmedel": 832763
+            },
+            "months": {
+              "202609": 9685425
+            }
+          },
+          "previous": {
+            "revenue": 8318071,
+            "grossProfit": 2255465,
+            "margin": 0.2711524102162629,
+            "buyers": 100,
+            "revenuePerCustomer": 83180.71,
+            "orders": 100,
+            "orderNet": 8318071,
+            "orderAverage": 83180.71,
+            "billedHours": "0",
+            "hourRevenue": 0,
+            "hourlyRate": null,
+            "categories": {
+              "Maskiner": {
+                "revenue": 3418386,
+                "grossProfit": 926904
+              },
+              "Rengöringsprodukter": {
+                "revenue": 2848654,
+                "grossProfit": 772419
+              },
+              "Förbrukningsmaterial": {
+                "revenue": 2051031,
+                "grossProfit": 556142
+              }
+            },
+            "industries": {
+              "Restaurang": 3122479,
+              "Hotell": 2147511,
+              "Catering": 1246942,
+              "Kontor": 1039118,
+              "Livsmedel": 762021
+            },
+            "months": {
+              "202509": 8318071
+            }
+          },
+          "growth": 0.16438354517531772
+        },
+        {
+          "area": 2,
+          "current": {
+            "revenue": 3418385,
+            "grossProfit": 1042162,
+            "margin": 0.30486969724007096,
+            "buyers": 70,
+            "revenuePerCustomer": 48834.07142857143,
+            "orders": 0,
+            "orderNet": 0,
+            "orderAverage": null,
+            "billedHours": "3346.0553",
+            "hourRevenue": 2733804,
+            "hourlyRate": 817.0229583474008,
+            "categories": {
+              "Service": {
+                "revenue": 1367354,
+                "grossProfit": 485741
+              },
+              "Reparationer": {
+                "revenue": 1139462,
+                "grossProfit": 255553
+              },
+              "Installationer": {
+                "revenue": 911569,
+                "grossProfit": 300868
+              }
+            },
+            "industries": {
+              "Restaurang": 1273421,
+              "Hotell": 882500,
+              "Catering": 539305,
+              "Kontor": 428993,
+              "Livsmedel": 294166
+            },
+            "months": {
+              "202609": 3418385
+            }
+          },
+          "previous": {
+            "revenue": 2620762,
+            "grossProfit": 756408,
+            "margin": 0.2886214009513264,
+            "buyers": 70,
+            "revenuePerCustomer": 37439.45714285714,
+            "orders": 0,
+            "orderNet": 0,
+            "orderAverage": null,
+            "billedHours": "2565.1139",
+            "hourRevenue": 2095924,
+            "hourlyRate": 817.0880833010963,
+            "categories": {
+              "Service": {
+                "revenue": 1025516,
+                "grossProfit": 295986
+              },
+              "Reparationer": {
+                "revenue": 911569,
+                "grossProfit": 263098
+              },
+              "Installationer": {
+                "revenue": 683677,
+                "grossProfit": 197324
+              }
+            },
+            "industries": {
+              "Restaurang": 982298,
+              "Hotell": 677232,
+              "Catering": 393231,
+              "Kontor": 327693,
+              "Livsmedel": 240308
+            },
+            "months": {
+              "202509": 2620762
+            }
+          },
+          "growth": 0.3043477431373014
+        },
+        {
+          "area": 3,
+          "current": {
+            "revenue": 2791681,
+            "grossProfit": 340563,
+            "margin": 0.12199209007046292,
+            "buyers": 45,
+            "revenuePerCustomer": 62037.35555555556,
+            "orders": 0,
+            "orderNet": 0,
+            "orderAverage": null,
+            "billedHours": "7201.4043",
+            "hourRevenue": 2679834,
+            "hourlyRate": 372.1265864770292,
+            "categories": {
+              "Diskpersonal": {
+                "revenue": 1595247,
+                "grossProfit": 194608
+              },
+              "Städpersonal": {
+                "revenue": 1196434,
+                "grossProfit": 145955
+              }
+            },
+            "industries": {
+              "Restaurang": 1039443,
+              "Hotell": 720920,
+              "Catering": 440563,
+              "Kontor": 350448,
+              "Livsmedel": 240307
+            },
+            "months": {
+              "202609": 2791681
+            }
+          },
+          "previous": {
+            "revenue": 2734708,
+            "grossProfit": 666067,
+            "margin": 0.2435605556425037,
+            "buyers": 45,
+            "revenuePerCustomer": 60771.28888888889,
+            "orders": 0,
+            "orderNet": 0,
+            "orderAverage": null,
+            "billedHours": "7055.6573",
+            "hourRevenue": 2625179,
+            "hourlyRate": 372.06724878772104,
+            "categories": {
+              "Diskpersonal": {
+                "revenue": 1595246,
+                "grossProfit": 388539
+              },
+              "Städpersonal": {
+                "revenue": 1139462,
+                "grossProfit": 277528
+              }
+            },
+            "industries": {
+              "Restaurang": 1025102,
+              "Hotell": 706637,
+              "Catering": 410306,
+              "Kontor": 341921,
+              "Livsmedel": 250742
+            },
+            "months": {
+              "202509": 2734708
+            }
+          },
+          "growth": 0.02083330286085383
+        }
+      ]
+    }
+  ],
+  "checks": [
+    "shared sales and costs",
+    "category/article and area integrity",
+    "unique positive-order set and matching net order income",
+    "time-billed income only; negative credited hours included",
+    "16 period/area cases",
+    "category, industry and area reconciliation",
+    "weighted margins and unique buyers",
+    "September reference controls",
+    "three-page sales navigation"
+  ]
+}

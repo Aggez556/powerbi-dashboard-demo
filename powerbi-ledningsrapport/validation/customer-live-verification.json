@@ -1,0 +1,39 @@
+{
+  "status": "passed",
+  "source": "Actual refreshed Desktop DAX, compared with independent persisted CSV calculations",
+  "reference": {
+    "Aktiva": 270,
+    "Tidigare": 240,
+    "Fortsatta": 230,
+    "Helt nya": 35,
+    "Återaktiverade": 5,
+    "Förlorade": 10,
+    "Intäkt": 139500000,
+    "Tidigare intäkt": 120000000,
+    "Fortsatta intäkt": 110000000,
+    "Nya intäkt": 27000000,
+    "Återaktiverade intäkt": 2500000,
+    "Förlorad intäkt": 4000000,
+    "Minskning": -18000000,
+    "Ökning": 12000000,
+    "Ledning intäkt": 139500000,
+    "Ledning bryggfel": 0
+  },
+  "trendRows": 29,
+  "trendGroupsMkr": {
+    "Fortsatta": 110.0,
+    "Helt nya": 27.000000000000004,
+    "Återaktiverade": 2.5000000000000004
+  },
+  "lostCustomerRows": 10,
+  "checks": [
+    "all reference KPIs",
+    "financial bridge amounts",
+    "five industry cases",
+    "full years 2024/2025",
+    "monthly customer analysis uses R12",
+    "cohort trend sums",
+    "lost-only follow-up filter",
+    "overview reconciliation"
+  ]
+}

@@ -1,0 +1,187 @@
+/// Lokal testdata från FactSales.csv.
+table Försäljning
+	lineageTag: f88c7d35-36d0-47da-b45c-15a073f8f568
+
+	/// Nettoomsättning exklusive moms efter rabatt.
+	measure Omsättning = SUM('Försäljning'[Radomsättning])
+		formatString: #,##0.00 " kr"
+		displayFolder: Nyckeltal
+		lineageTag: 98ee93a3-6914-4296-8b59-ffd823186a49
+
+	/// Varukostnad; exkluderar rörelsekostnader.
+	measure Kostnad = SUM('Försäljning'[Radkostnad])
+		formatString: #,##0.00 " kr"
+		displayFolder: Nyckeltal
+		lineageTag: ea933567-c3ee-479e-8bd7-cc385b6f8696
+
+	/// Omsättning minus varukostnad.
+	measure Bruttovinst = [Omsättning] - [Kostnad]
+		formatString: #,##0.00 " kr"
+		displayFolder: Nyckeltal
+		lineageTag: 785c3a32-9e53-46b3-989d-1f5de66aa85b
+
+	/// Viktad marginal; inte medelvärdet av produktmarginalerna.
+	measure Bruttomarginal = DIVIDE([Bruttovinst], [Omsättning])
+		formatString: 0.0 %
+		displayFolder: Nyckeltal
+		lineageTag: 964320b5-77ae-4ab1-b2b7-2b8eca488f91
+
+	/// Unika order med minst en orderrad i aktuellt filter.
+	measure 'Antal order' = DISTINCTCOUNT('Försäljning'[Ordernyckel])
+		formatString: #,##0
+		displayFolder: Nyckeltal
+		lineageTag: 10206b14-86de-4ab5-ab61-5a62e194fc7e
+
+	/// Omsättning för motsvarande kalenderdatum föregående år; 2023 saknas.
+	measure 'Omsättning föregående år' = CALCULATE([Omsättning], SAMEPERIODLASTYEAR('Datum'[Datum]))
+		formatString: #,##0.00 " kr"
+		displayFolder: Nyckeltal
+		lineageTag: dd679c43-8098-4b81-899b-6a4a933f387a
+
+	/// Visas endast vid ett valt år och tillgänglig jämförelse; annars blank.
+	measure 'Tillväxt mot föregående år' = IF(HASONEVALUE('Datum'[År]), DIVIDE([Omsättning] - [Omsättning föregående år], [Omsättning föregående år]), BLANK())
+		formatString: 0.0 %;-0.0 %;0.0 %
+		displayFolder: Nyckeltal
+		lineageTag: 39241180-c68b-4750-a252-4a822a5e609b
+
+	/// Antal orderrader i aktuellt filter.
+	measure 'Antal orderrader' = COUNTROWS('Försäljning')
+		formatString: #,##0
+		displayFolder: Nyckeltal
+		lineageTag: 89992d60-2554-4a1a-a2a1-aae9f44a8ba1
+
+	/// Kundrankning inom aktuellt urval; lika belopp delar rankning.
+	measure Kundrankning = RANKX(ALLSELECTED('Kunder'[Kund]), [Omsättning], , DESC, DENSE)
+		formatString: 0
+		displayFolder: Nyckeltal
+		lineageTag: 40ae1691-d8e3-4478-832d-438541bf6245
+
+	/// Fiktiv budgetsimulering; inget skrivs tillbaka.
+	measure 'Planering bas' =
+			VAR PY = [Omsättning föregående år]
+			RETURN COALESCE(PY, [Omsättning])
+		formatString: #,##0;-#,##0;" "
+		displayFolder: Budgetplanering
+
+	/// Fiktiv budgetsimulering; inget skrivs tillbaka.
+	measure 'Planering justerad' = [Planering bas] * (1 + DIVIDE(SELECTEDVALUE('Budgetjustering'[Procent], 3), 100))
+		formatString: #,##0;-#,##0;" "
+		displayFolder: Budgetplanering
+
+	/// Fiktiv budgetsimulering; inget skrivs tillbaka.
+	measure 'Planerad omsättning' =
+			VAR Bas = [Planering bas]
+			VAR AnnualBase = CALCULATE([Planering bas], ALLEXCEPT('Datum', 'Datum'[År]))
+			VAR MonthCount = COUNTROWS(VALUES('Datum'[Månadsnummer]))
+			VAR EvenSpread = SELECTEDVALUE('Budgetfördelning'[Fördelning], "Fördela över hela året") = "Fördela över hela året"
+			VAR Vikt = IF(EvenSpread, DIVIDE(MonthCount, 12), DIVIDE(Bas, AnnualBase))
+			VAR AnnualAmount = SELECTEDVALUE('Budgetbelopp'[Belopp], 0)
+			RETURN (IF(EvenSpread, AnnualBase * DIVIDE(MonthCount, 12), Bas) * SELECTEDVALUE('Budgetscenario'[Faktor], 1.05) * (1 + DIVIDE(SELECTEDVALUE('Budgetjustering'[Procent], 3), 100))) + AnnualAmount * Vikt
+		formatString: #,##0;-#,##0;" "
+		displayFolder: Budgetplanering
+
+	/// Fiktiv budgetsimulering; inget skrivs tillbaka.
+	measure 'Resultat utfall' =
+			VAR Kod = SELECTEDVALUE('Resultatrader'[Beräkning])
+			VAR SelectedVersion = SELECTEDVALUE('Budgetversion'[Version], "Actuals")
+			VAR RevenueValue = SWITCH(SelectedVersion, "Actuals PY", [Omsättning föregående år], "Max YTD PY", CALCULATE([Omsättning föregående år], DATESYTD('Datum'[Datum])), "Budget", [Planerad omsättning], [Omsättning])
+			VAR Varukostnad = SWITCH(SelectedVersion, "Actuals PY", CALCULATE([Kostnad], SAMEPERIODLASTYEAR('Datum'[Datum])), "Max YTD PY", CALCULATE([Kostnad], SAMEPERIODLASTYEAR(DATESYTD('Datum'[Datum]))), "Budget", RevenueValue * 0.73, [Kostnad])
+			RETURN SWITCH(Kod, 0, 0, 1, RevenueValue, 2, RevenueValue * 0.04, 3, RevenueValue * 1.04, 4, -Varukostnad, 5, -RevenueValue * 0.08, 6, -RevenueValue * 0.12, 7, -Varukostnad - RevenueValue * 0.20, 8, RevenueValue * 0.84 - Varukostnad, 9, -RevenueValue * 0.03, 10, RevenueValue * 0.81 - Varukostnad)
+		formatString: #,##0;-#,##0;" "
+		displayFolder: Budgetplanering
+
+	/// Fiktiv budgetsimulering; inget skrivs tillbaka.
+	measure 'Resultat budget' =
+			VAR Kod = SELECTEDVALUE('Resultatrader'[Beräkning])
+			VAR RevenueValue = [Planerad omsättning]
+			RETURN SWITCH(Kod, 0, 0, 1, RevenueValue, 2, RevenueValue * 0.04, 3, RevenueValue * 1.04, 4, -RevenueValue * 0.73, 5, -RevenueValue * 0.08, 6, -RevenueValue * 0.12, 7, -RevenueValue * 0.93, 8, RevenueValue * 0.11, 9, -RevenueValue * 0.03, 10, RevenueValue * 0.08)
+		formatString: #,##0;-#,##0;" "
+		displayFolder: Budgetplanering
+
+	/// Fiktiv budgetsimulering; inget skrivs tillbaka.
+	measure 'Resultatrad bakgrund' =
+			VAR Rad = SELECTEDVALUE('Resultatrader'[Rad])
+			RETURN IF(LEFT(Rad, 5) = "Summa" || Rad IN {"Resultat före avskrivningar", "Rörelseresultat"}, "#E1E8F2", "#FFFFFF")
+		formatString: @
+		displayFolder: Budgetplanering
+
+	column Radnyckel
+		dataType: int64
+		isHidden
+		lineageTag: 9cc45ea1-26c8-4898-a97d-6d4bea16983c
+		summarizeBy: none
+		sourceColumn: SalesLineKey
+
+	column Ordernyckel
+		dataType: int64
+		isHidden
+		lineageTag: d7aef3e6-143f-4e16-a933-3da173f9dc2e
+		summarizeBy: none
+		sourceColumn: OrderKey
+
+	column Datumnyckel
+		dataType: int64
+		isHidden
+		lineageTag: fb2d700b-7f46-4419-94e5-03510500dd50
+		summarizeBy: none
+		sourceColumn: DateKey
+
+	column Kundnyckel
+		dataType: int64
+		isHidden
+		lineageTag: e85ab0e5-4cec-4de4-a2ea-0cb2ce2f5c9d
+		summarizeBy: none
+		sourceColumn: CustomerKey
+
+	column Produktnyckel
+		dataType: int64
+		isHidden
+		lineageTag: 16bf16a6-74ef-4af5-9cb2-19d1c7132676
+		summarizeBy: none
+		sourceColumn: ProductKey
+
+	column 'Antal enheter'
+		dataType: int64
+		isHidden
+		lineageTag: 641476c4-d1bc-4f16-ae1f-b6773a5df3ef
+		summarizeBy: none
+		sourceColumn: Quantity
+
+	column Enhetspris
+		dataType: decimal
+		isHidden
+		lineageTag: 85f3fcc1-6ef6-43a8-a29c-1873ec781807
+		summarizeBy: none
+		sourceColumn: UnitPrice
+
+	column Enhetskostnad
+		dataType: decimal
+		isHidden
+		lineageTag: 673a999d-02b7-45d9-b8c8-f2fc7d3bf8f8
+		summarizeBy: none
+		sourceColumn: UnitCost
+
+	column Radomsättning
+		dataType: decimal
+		isHidden
+		lineageTag: f3b1121f-2ead-4d37-a8ef-d3f8079d2de5
+		summarizeBy: none
+		sourceColumn: Revenue
+
+	column Radkostnad
+		dataType: decimal
+		isHidden
+		lineageTag: 7935db5b-1ad4-4d00-8a08-ae760d066b16
+		summarizeBy: none
+		sourceColumn: Cost
+
+	partition Försäljning = m
+		mode: import
+		source =
+				let
+					Source = Csv.Document(File.Contents(DataFolder & "/FactSales.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+					Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+					Typed = Table.TransformColumnTypes(Headers, {{"SalesLineKey", Int64.Type}, {"OrderKey", Int64.Type}, {"DateKey", Int64.Type}, {"CustomerKey", Int64.Type}, {"ProductKey", Int64.Type}, {"Quantity", Int64.Type}, {"UnitPrice", Currency.Type}, {"UnitCost", Currency.Type}, {"Revenue", Currency.Type}, {"Cost", Currency.Type}}, "en-US")
+				in
+					Typed
+

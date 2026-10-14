@@ -1,0 +1,36 @@
+﻿{
+    "measures":  [
+                     {
+                         "error":  "",
+                         "name":  "Planering bas",
+                         "state":  "Ready"
+                     },
+                     {
+                         "error":  "",
+                         "name":  "Planering justerad",
+                         "state":  "Ready"
+                     },
+                     {
+                         "error":  "",
+                         "name":  "Planerad omsättning",
+                         "state":  "Ready"
+                     },
+                     {
+                         "error":  "",
+                         "name":  "Resultat utfall",
+                         "state":  "Ready"
+                     },
+                     {
+                         "error":  "",
+                         "name":  "Resultat budget",
+                         "state":  "Ready"
+                     },
+                     {
+                         "error":  "",
+                         "name":  "Resultatrad bakgrund",
+                         "state":  "Ready"
+                     }
+                 ],
+    "status":  "passed",
+    "operation":  "Update six local budget measure expressions and calculate"
+}

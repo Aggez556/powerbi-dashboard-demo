@@ -1,0 +1,23 @@
+﻿{
+    "changes":  [
+                    {
+                        "before":  "FORMAT([Aktiva kunder]-[Aktiva kunder föregående år],\"+0;−0;0\",\"sv-SE\") \u0026 \" mot föregående år\"",
+                        "name":  "Kundförändring korttext",
+                        "after":  "FORMAT([Aktiva kunder]-[Aktiva kunder föregående år],\"+0;−0;0\",\"sv-SE\") \u0026 \" mot föregående år\""
+                    },
+                    {
+                        "before":  "FORMAT([Rörelsemarginal],\"0.0 %\",\"sv-SE\") \u0026 \" marginal · \" \u0026 FORMAT([Rörelseresultat förändring],\"+0.0 %;−0.0 %;0.0 %\",\"sv-SE\")",
+                        "name":  "Rörelsemarginal korttext",
+                        "after":  "FORMAT([Rörelsemarginal],\"0.0 %\",\"sv-SE\") \u0026 \" marginal · \" \u0026 FORMAT([Rörelseresultat förändring],\"+0.0 %;−0.0 %;0.0 %\",\"sv-SE\")"
+                    }
+                ],
+    "status":  "passed",
+    "rows":  [
+                 {
+                     "profitText":  "5,7 % marginal · −11,1 %",
+                     "customerText":  "+30 mot föregående år"
+                 }
+             ],
+    "desktopProcessId":  11132,
+    "source":  "Live Desktop DAX engine"
+}

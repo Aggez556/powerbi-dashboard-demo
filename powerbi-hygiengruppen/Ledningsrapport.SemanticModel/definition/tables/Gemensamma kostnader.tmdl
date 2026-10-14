@@ -1,0 +1,37 @@
+/// Reproducerbar lokal demodata; Gemensamma kostnader.csv.
+table 'Gemensamma kostnader'
+	lineageTag: 07ce0609-a30d-42ab-953a-f24cc5b7676e
+
+	/// Källfält i lokal demodata: Gemensamma kostnader.Datumnyckel.
+	column Datumnyckel
+		dataType: int64
+		isHidden
+		lineageTag: c5943148-7c7f-4eef-8bf0-49e5c2e59dbe
+		summarizeBy: none
+		sourceColumn: Datumnyckel
+
+	/// Källfält i lokal demodata: Gemensamma kostnader.Kostnadstyp.
+	column Kostnadstyp
+		dataType: string
+		lineageTag: af56a06d-ac5d-4c6d-9bf4-762d0d13375a
+		summarizeBy: none
+		sourceColumn: Kostnadstyp
+
+	/// Källfält i lokal demodata: Gemensamma kostnader.Belopp.
+	column Belopp
+		dataType: decimal
+		isHidden
+		lineageTag: ba123de7-4db9-45fc-94dc-a73f8bfb60db
+		summarizeBy: none
+		sourceColumn: Belopp
+
+	partition 'Gemensamma kostnader' = m
+		mode: import
+		source =
+				let
+					Source = Csv.Document(File.Contents(DataFolder & "/Gemensamma kostnader.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+					Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+					Typed = Table.TransformColumnTypes(Headers, {{"Datumnyckel", Int64.Type}, {"Kostnadstyp", type text}, {"Belopp", Currency.Type}}, "en-US")
+				in
+					Typed
+

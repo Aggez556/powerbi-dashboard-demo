@@ -1,0 +1,9 @@
+EVALUATE
+SUMMARIZECOLUMNS(
+    'Resultatrader'[Rad],
+    'Datum'[År],
+    'Datum'[Månad],
+    TREATAS({2025}, 'Datum'[År]),
+    "Budget", [Resultat budget],
+    "Actuals", [Resultat utfall]
+)

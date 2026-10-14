@@ -1,0 +1,55 @@
+/// Reproducerbart analysunderlag.
+table Artiklar
+	lineageTag: f015febe-e3ce-4cd7-8107-525ae43008cb
+
+	column Artikelnyckel
+		dataType: int64
+		isHidden
+		lineageTag: d0cedf2d-f469-4510-988b-4e24a11ab74d
+		summarizeBy: none
+		sourceColumn: Artikelnyckel
+
+	column Kategori
+		dataType: string
+		lineageTag: 2f3f1940-add2-473e-b0bc-c56eccf0e4c9
+		summarizeBy: none
+		sourceColumn: Kategori
+		sortByColumn: Kategoriordning
+
+	column Artikel
+		dataType: string
+		lineageTag: 16634494-b2d7-47ec-9515-f90f6b880de1
+		summarizeBy: none
+		sourceColumn: Artikel
+
+	column Kategoriordning
+		dataType: int64
+		isHidden
+		lineageTag: 729bc948-0fa5-42a4-8836-d0456005612a
+		summarizeBy: none
+		sourceColumn: Kategoriordning
+
+	column Område
+		dataType: string
+		lineageTag: aab382ea-c2e6-4a1b-a85d-58851fbe2d4b
+		summarizeBy: none
+		sourceColumn: Område
+		sortByColumn: Områdesordning
+
+	column Områdesordning
+		dataType: int64
+		isHidden
+		lineageTag: 52f8cbf8-0ed0-4183-b6a6-a2ee49af4c9d
+		summarizeBy: none
+		sourceColumn: Områdesordning
+
+	partition Artiklar = m
+		mode: import
+		source =
+				let
+					Source = Csv.Document(File.Contents(DataFolder & "/Artiklar.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+					Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+					Typed = Table.TransformColumnTypes(Headers, {{"Artikelnyckel", Int64.Type}, {"Kategori", type text}, {"Artikel", type text}, {"Kategoriordning", Int64.Type}, {"Område", type text}, {"Områdesordning", Int64.Type}}, "en-US")
+				in
+					Typed
+

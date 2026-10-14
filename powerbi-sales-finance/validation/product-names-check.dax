@@ -1,0 +1,3 @@
+EVALUATE
+SUMMARIZECOLUMNS('Produkter'[Produktnyckel], 'Produkter'[Produkt], 'Produkter'[Kategori], "Omsättning", [Omsättning], "Bruttovinst", [Bruttovinst])
+ORDER BY 'Produkter'[Produktnyckel]

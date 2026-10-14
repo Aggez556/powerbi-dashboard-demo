@@ -1,0 +1,23 @@
+EVALUATE
+CALCULATETABLE(UNION(ADDCOLUMNS(CALCULATETABLE(UNION(ROW("Rank", 1, "Namn", [Säljanalys säljare 1 namn], "Belopp", [Säljanalys säljare 1 belopp], "Tillväxt", [Säljanalys säljare 1 tillväxt]),
+ROW("Rank", 2, "Namn", [Säljanalys säljare 2 namn], "Belopp", [Säljanalys säljare 2 belopp], "Tillväxt", [Säljanalys säljare 2 tillväxt]),
+ROW("Rank", 3, "Namn", [Säljanalys säljare 3 namn], "Belopp", [Säljanalys säljare 3 belopp], "Tillväxt", [Säljanalys säljare 3 tillväxt]),
+ROW("Rank", 4, "Namn", [Säljanalys säljare 4 namn], "Belopp", [Säljanalys säljare 4 belopp], "Tillväxt", [Säljanalys säljare 4 tillväxt]),
+ROW("Rank", 5, "Namn", [Säljanalys säljare 5 namn], "Belopp", [Säljanalys säljare 5 belopp], "Tillväxt", [Säljanalys säljare 5 tillväxt]),
+ROW("Rank", 6, "Namn", [Säljanalys säljare 6 namn], "Belopp", [Säljanalys säljare 6 belopp], "Tillväxt", [Säljanalys säljare 6 tillväxt]),
+ROW("Rank", 7, "Namn", [Säljanalys säljare 7 namn], "Belopp", [Säljanalys säljare 7 belopp], "Tillväxt", [Säljanalys säljare 7 tillväxt]))), "Period", "Full"),
+ADDCOLUMNS(CALCULATETABLE(UNION(ROW("Rank", 1, "Namn", [Säljanalys säljare 1 namn], "Belopp", [Säljanalys säljare 1 belopp], "Tillväxt", [Säljanalys säljare 1 tillväxt]),
+ROW("Rank", 2, "Namn", [Säljanalys säljare 2 namn], "Belopp", [Säljanalys säljare 2 belopp], "Tillväxt", [Säljanalys säljare 2 tillväxt]),
+ROW("Rank", 3, "Namn", [Säljanalys säljare 3 namn], "Belopp", [Säljanalys säljare 3 belopp], "Tillväxt", [Säljanalys säljare 3 tillväxt]),
+ROW("Rank", 4, "Namn", [Säljanalys säljare 4 namn], "Belopp", [Säljanalys säljare 4 belopp], "Tillväxt", [Säljanalys säljare 4 tillväxt]),
+ROW("Rank", 5, "Namn", [Säljanalys säljare 5 namn], "Belopp", [Säljanalys säljare 5 belopp], "Tillväxt", [Säljanalys säljare 5 tillväxt]),
+ROW("Rank", 6, "Namn", [Säljanalys säljare 6 namn], "Belopp", [Säljanalys säljare 6 belopp], "Tillväxt", [Säljanalys säljare 6 tillväxt]),
+ROW("Rank", 7, "Namn", [Säljanalys säljare 7 namn], "Belopp", [Säljanalys säljare 7 belopp], "Tillväxt", [Säljanalys säljare 7 tillväxt])), TREATAS({10}, 'Datum'[Månadsnummer])), "Period", "October"),
+ADDCOLUMNS(CALCULATETABLE(UNION(ROW("Rank", 1, "Namn", [Säljanalys säljare 1 namn], "Belopp", [Säljanalys säljare 1 belopp], "Tillväxt", [Säljanalys säljare 1 tillväxt]),
+ROW("Rank", 2, "Namn", [Säljanalys säljare 2 namn], "Belopp", [Säljanalys säljare 2 belopp], "Tillväxt", [Säljanalys säljare 2 tillväxt]),
+ROW("Rank", 3, "Namn", [Säljanalys säljare 3 namn], "Belopp", [Säljanalys säljare 3 belopp], "Tillväxt", [Säljanalys säljare 3 tillväxt]),
+ROW("Rank", 4, "Namn", [Säljanalys säljare 4 namn], "Belopp", [Säljanalys säljare 4 belopp], "Tillväxt", [Säljanalys säljare 4 tillväxt]),
+ROW("Rank", 5, "Namn", [Säljanalys säljare 5 namn], "Belopp", [Säljanalys säljare 5 belopp], "Tillväxt", [Säljanalys säljare 5 tillväxt]),
+ROW("Rank", 6, "Namn", [Säljanalys säljare 6 namn], "Belopp", [Säljanalys säljare 6 belopp], "Tillväxt", [Säljanalys säljare 6 tillväxt]),
+ROW("Rank", 7, "Namn", [Säljanalys säljare 7 namn], "Belopp", [Säljanalys säljare 7 belopp], "Tillväxt", [Säljanalys säljare 7 tillväxt])), TREATAS({9,10}, 'Datum'[Månadsnummer])), "Period", "SepOct")), TREATAS({2025}, 'Datum'[År]))
+ORDER BY [Period], [Rank]

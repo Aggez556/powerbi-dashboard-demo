@@ -1,0 +1,8 @@
+EVALUATE
+CALCULATETABLE(
+    UNION(
+        ROW("Period", "Helår", "Vinst", [Bruttovinst], "Kostnad", [Kostnad], "Omsättning", [Omsättning], "Enheter", [Sålda enheter], "Marginal", [Bruttomarginal], "Omsättning per enhet", [Omsättning per enhet], "Vinst per enhet", [Bruttovinst per enhet], "Produktaxel", [Finans produktaxel max], "Topp 5", [Finans topprodukter andel etikett], "Kostnadsförändring", [Finans KPI 2 förändring etikett]),
+        CALCULATETABLE(ROW("Period", "Oktober", "Vinst", [Bruttovinst], "Kostnad", [Kostnad], "Omsättning", [Omsättning], "Enheter", [Sålda enheter], "Marginal", [Bruttomarginal], "Omsättning per enhet", [Omsättning per enhet], "Vinst per enhet", [Bruttovinst per enhet], "Produktaxel", [Finans produktaxel max], "Topp 5", [Finans topprodukter andel etikett], "Kostnadsförändring", [Finans KPI 2 förändring etikett]), TREATAS({10}, 'Datum'[Månadsnummer])),
+        CALCULATETABLE(ROW("Period", "September–oktober", "Vinst", [Bruttovinst], "Kostnad", [Kostnad], "Omsättning", [Omsättning], "Enheter", [Sålda enheter], "Marginal", [Bruttomarginal], "Omsättning per enhet", [Omsättning per enhet], "Vinst per enhet", [Bruttovinst per enhet], "Produktaxel", [Finans produktaxel max], "Topp 5", [Finans topprodukter andel etikett], "Kostnadsförändring", [Finans KPI 2 förändring etikett]), TREATAS({9,10}, 'Datum'[Månadsnummer]))
+    ), TREATAS({2025}, 'Datum'[År])
+)

@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "source": "Actual Desktop DAX compared with independent CSV/SQL expectations",
+  "rowCount": 180,
+  "annualActualRevenue": 13818582.35,
+  "annualActualCost": 10388591.370000001,
+  "annualBudgetRevenue": 12541532.5668,
+  "budgetMeasuresReady": true,
+  "visualRendering": "not verified"
+}

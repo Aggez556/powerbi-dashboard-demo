@@ -1,0 +1,37 @@
+﻿{
+    "status":  "passed",
+    "rows":  [
+                 {
+                     "Datum[År]":  2024,
+                     "[Omsättning]":  13205760.73,
+                     "[Kostnad]":  9885680.85,
+                     "[Bruttovinst]":  3320079.88,
+                     "[Bruttomarginal]":  0.25141148229784716,
+                     "[Sålda enheter]":  20585,
+                     "[Leveranser]":  1834,
+                     "[Omsättning PY]":  null,
+                     "[Omsättning YoY]":  null,
+                     "[Enheter YoY]":  null,
+                     "[Vinst YoY]":  null,
+                     "[Leveranser YoY]":  null,
+                     "[Marginal pp]":  25.141148229784715
+                 },
+                 {
+                     "Datum[År]":  2025,
+                     "[Omsättning]":  15374362.6,
+                     "[Kostnad]":  11277584.28,
+                     "[Bruttovinst]":  4096778.32,
+                     "[Bruttomarginal]":  0.2664681734513013,
+                     "[Sålda enheter]":  24244,
+                     "[Leveranser]":  2166,
+                     "[Omsättning PY]":  13205760.73,
+                     "[Omsättning YoY]":  0.164216353327795,
+                     "[Enheter YoY]":  0.17775078940976438,
+                     "[Vinst YoY]":  0.23393968460782938,
+                     "[Leveranser YoY]":  0.18102508178844057,
+                     "[Marginal pp]":  1.5056691153454149
+                 }
+             ],
+    "desktopProcessId":  33584,
+    "source":  "Actual Desktop engine, full refresh and DAX query"
+}

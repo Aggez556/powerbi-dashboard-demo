@@ -1,0 +1,55 @@
+/// Lokal testdata från DimProduct.csv.
+table Produkter
+	lineageTag: fcd3a509-0a14-486f-9cfc-b913f976c92a
+
+	column Produktnyckel
+		dataType: int64
+		isHidden
+		isKey
+		lineageTag: 3e8837e1-0080-4a90-a463-8abbbd7afe6f
+		summarizeBy: none
+		sourceColumn: ProductKey
+
+	column Produkt
+		dataType: string
+		lineageTag: 8c2a9c36-0267-496b-9a32-c9a9df037c18
+		summarizeBy: none
+		sourceColumn: ProductName
+
+	column Kategori
+		dataType: string
+		lineageTag: ce2d0b14-8b44-4d06-8b42-388736777857
+		summarizeBy: none
+		sourceColumn: Category
+
+	column Listpris
+		dataType: decimal
+		isHidden
+		lineageTag: 8b0f0da4-bede-4765-a877-2b4cc49f2424
+		summarizeBy: none
+		sourceColumn: ListPrice
+
+	column Standardkostnad
+		dataType: decimal
+		isHidden
+		lineageTag: 68763382-85f5-441b-a831-792e9c6f02e0
+		summarizeBy: none
+		sourceColumn: StandardUnitCost
+
+	column Standardmarginal
+		dataType: decimal
+		isHidden
+		lineageTag: ae2967a1-2ac2-46e9-b4ae-5c25ae148b65
+		summarizeBy: none
+		sourceColumn: StandardMargin
+
+	partition Produkter = m
+		mode: import
+		source =
+				let
+					Source = Csv.Document(File.Contents(DataFolder & "/DimProduct.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+					Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+					Typed = Table.TransformColumnTypes(Headers, {{"ProductKey", Int64.Type}, {"ProductName", type text}, {"Category", type text}, {"ListPrice", Currency.Type}, {"StandardUnitCost", Currency.Type}, {"StandardMargin", Currency.Type}}, "en-US")
+				in
+					Typed
+

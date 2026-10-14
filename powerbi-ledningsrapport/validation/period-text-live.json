@@ -1,0 +1,48 @@
+﻿{
+    "changes":  [
+                    {
+                        "before":  "FORMAT([Aktiva kunder]-[Aktiva kunder föregående år],\"+0;−0;0\",\"sv-SE\") \u0026 \" mot föregående år\"",
+                        "name":  "Kundförändring korttext",
+                        "after":  "FORMAT([Aktiva kunder]-[Aktiva kunder föregående år],\"+0;−0;0\",\"sv-SE\") \u0026 \" mot föregående år\""
+                    },
+                    {
+                        "before":  "FORMAT([Rörelsemarginal],\"0.0 %\",\"sv-SE\") \u0026 \" marginal · \" \u0026 FORMAT([Rörelseresultat förändring],\"+0.0 %;−0.0 %;0.0 %\",\"sv-SE\")",
+                        "name":  "Rörelsemarginal korttext",
+                        "after":  "FORMAT([Rörelsemarginal],\"0.0 %\",\"sv-SE\") \u0026 \" marginal · \" \u0026 FORMAT([Rörelseresultat förändring],\"+0.0 %;−0.0 %;0.0 %\",\"sv-SE\")"
+                    },
+                    {
+                        "before":  "\"Vald period: \" \u0026 FORMAT([Periodstart],\"d MMM yyyy\",\"sv-SE\") \u0026 \" – \" \u0026 FORMAT([Periodslut],\"d MMM yyyy\",\"sv-SE\") \u0026 \"    |    Jämför med: \" \u0026 FORMAT([Jämförelsestart],\"d MMM yyyy\",\"sv-SE\") \u0026 \" – \" \u0026 FORMAT([Jämförelseslut],\"d MMM yyyy\",\"sv-SE\")",
+                        "name":  "Periodtext",
+                        "after":  "VAR mode=[Vald periodtyp] VAR currentLabel=SWITCH(mode,\"Helår\",FORMAT([Periodslut],\"yyyy\"),\"Månad\",FORMAT([Periodslut],\"MMMM yyyy\",\"sv-SE\"),FORMAT([Periodstart],\"MMM yyyy\",\"sv-SE\") \u0026 \" – \" \u0026 FORMAT([Periodslut],\"MMM yyyy\",\"sv-SE\")) VAR previousLabel=SWITCH(mode,\"Helår\",FORMAT([Jämförelseslut],\"yyyy\"),\"Månad\",FORMAT([Jämförelseslut],\"MMMM yyyy\",\"sv-SE\"),FORMAT([Jämförelsestart],\"MMM yyyy\",\"sv-SE\") \u0026 \" – \" \u0026 FORMAT([Jämförelseslut],\"MMM yyyy\",\"sv-SE\")) RETURN \"Vald period: \" \u0026 currentLabel \u0026 \"    |    Jämför med: \" \u0026 previousLabel"
+                    }
+                ],
+    "status":  "passed",
+    "rows":  [
+                 {
+                     "[Fall]":  "R12 februari 2025",
+                     "[Text]":  "Vald period: mar 2024 – feb 2025    |    Jämför med: mar 2023 – feb 2024",
+                     "[Start]":  "2024-03-01",
+                     "[Slut]":  "2025-02-28"
+                 },
+                 {
+                     "[Fall]":  "R12 oktober 2026",
+                     "[Text]":  "Vald period: nov 2025 – okt 2026    |    Jämför med: nov 2024 – okt 2025",
+                     "[Start]":  "2025-11-01",
+                     "[Slut]":  "2026-10-31"
+                 },
+                 {
+                     "[Fall]":  "Helår 2025",
+                     "[Text]":  "Vald period: 2025    |    Jämför med: 2024",
+                     "[Start]":  "2025-01-01",
+                     "[Slut]":  "2025-12-31"
+                 },
+                 {
+                     "[Fall]":  "Månad februari 2025",
+                     "[Text]":  "Vald period: februari 2025    |    Jämför med: februari 2024",
+                     "[Start]":  "2025-02-01",
+                     "[Slut]":  "2025-02-28"
+                 }
+             ],
+    "desktopProcessId":  11132,
+    "source":  "Live Desktop DAX engine"
+}

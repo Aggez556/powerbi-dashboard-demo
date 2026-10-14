@@ -1,0 +1,84 @@
+/// Lokal testdata från DimDate.csv.
+table Datum
+	lineageTag: d999bc0b-8ab4-4827-86a9-f4c1b3cd25b8
+	dataCategory: Time
+
+	column Datumnyckel
+		dataType: int64
+		isHidden
+		lineageTag: 8dda90b3-5832-4434-874d-9a045df57907
+		summarizeBy: none
+		sourceColumn: DateKey
+
+	column Datum
+		dataType: dateTime
+		isKey
+		formatString: yyyy-MM-dd
+		lineageTag: 74b68449-c970-4d6e-a2d1-f6b8375dd46e
+		summarizeBy: none
+		sourceColumn: Date
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column År
+		dataType: int64
+		lineageTag: b218fabe-c755-4a60-8546-bf8e10d1e4e5
+		summarizeBy: none
+		sourceColumn: Year
+
+	column Månadsnummer
+		dataType: int64
+		isHidden
+		lineageTag: 0192e15f-5733-42a0-914d-51d01ab93c65
+		summarizeBy: none
+		sourceColumn: MonthNumber
+
+	column Månad
+		dataType: string
+		lineageTag: db03633e-678d-4da5-b9d7-152ab2fe3182
+		summarizeBy: none
+		sourceColumn: Month
+		sortByColumn: Månadsnummer
+
+	column År–månad
+		dataType: string
+		lineageTag: bfa5f0eb-e39b-4641-b41d-2cbae2b9a99c
+		summarizeBy: none
+		sourceColumn: YearMonth
+		sortByColumn: Årsmånadsnummer
+
+	column Årsmånadsnummer
+		dataType: int64
+		isHidden
+		lineageTag: bcd708e2-9053-4209-a971-de2b2d0a69d3
+		summarizeBy: none
+		sourceColumn: YearMonthSort
+
+	column Kvartal
+		dataType: string
+		lineageTag: 9ad7be07-8064-4288-af43-6b3017af3973
+		summarizeBy: none
+		sourceColumn: Quarter
+
+	column 'Månad kort' = FORMAT('Datum'[Datum], "mmm", "sv-SE")
+		dataType: string
+		lineageTag: 58073781-9387-482b-a057-0f1bdd301ffd
+		summarizeBy: none
+		sortByColumn: Månadsnummer
+
+	column 'Månad bokstav' = UPPER(LEFT(FORMAT('Datum'[Datum], "mmm", "sv-SE"), 1)) & REPT(UNICHAR(8203), 'Datum'[Månadsnummer])
+		dataType: string
+		lineageTag: 09e8ab57-c753-401b-ae47-990c1d25d095
+		summarizeBy: none
+		sortByColumn: Månadsnummer
+
+	partition Datum = m
+		mode: import
+		source =
+				let
+					Source = Csv.Document(File.Contents(DataFolder & "/DimDate.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+					Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+					Typed = Table.TransformColumnTypes(Headers, {{"DateKey", Int64.Type}, {"Date", type date}, {"Year", Int64.Type}, {"MonthNumber", Int64.Type}, {"Month", type text}, {"YearMonth", type text}, {"YearMonthSort", Int64.Type}, {"Quarter", type text}}, "en-US")
+				in
+					Typed
+

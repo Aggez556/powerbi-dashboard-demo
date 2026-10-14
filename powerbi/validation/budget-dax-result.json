@@ -1,0 +1,1267 @@
+﻿{
+    "status":  "passed",
+    "rows":  [
+                 {
+                     "Resultatrader[Rad]":  "Intäkter",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "januari",
+                     "[Budget]":  0,
+                     "[Actuals]":  0
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Intäkter",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "februari",
+                     "[Budget]":  0,
+                     "[Actuals]":  0
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Intäkter",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "mars",
+                     "[Budget]":  0,
+                     "[Actuals]":  0
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Intäkter",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "april",
+                     "[Budget]":  0,
+                     "[Actuals]":  0
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Intäkter",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "maj",
+                     "[Budget]":  0,
+                     "[Actuals]":  0
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Intäkter",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "juni",
+                     "[Budget]":  0,
+                     "[Actuals]":  0
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Intäkter",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "juli",
+                     "[Budget]":  0,
+                     "[Actuals]":  0
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Intäkter",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "augusti",
+                     "[Budget]":  0,
+                     "[Actuals]":  0
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Intäkter",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "september",
+                     "[Budget]":  0,
+                     "[Actuals]":  0
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Intäkter",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "oktober",
+                     "[Budget]":  0,
+                     "[Actuals]":  0
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Intäkter",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "november",
+                     "[Budget]":  0,
+                     "[Actuals]":  0
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Intäkter",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "december",
+                     "[Budget]":  0,
+                     "[Actuals]":  0
+                 },
+                 {
+                     "Resultatrader[Rad]":  "",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "januari",
+                     "[Budget]":  0,
+                     "[Actuals]":  0
+                 },
+                 {
+                     "Resultatrader[Rad]":  "",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "februari",
+                     "[Budget]":  0,
+                     "[Actuals]":  0
+                 },
+                 {
+                     "Resultatrader[Rad]":  "",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "mars",
+                     "[Budget]":  0,
+                     "[Actuals]":  0
+                 },
+                 {
+                     "Resultatrader[Rad]":  "",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "april",
+                     "[Budget]":  0,
+                     "[Actuals]":  0
+                 },
+                 {
+                     "Resultatrader[Rad]":  "",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "maj",
+                     "[Budget]":  0,
+                     "[Actuals]":  0
+                 },
+                 {
+                     "Resultatrader[Rad]":  "",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "juni",
+                     "[Budget]":  0,
+                     "[Actuals]":  0
+                 },
+                 {
+                     "Resultatrader[Rad]":  "",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "juli",
+                     "[Budget]":  0,
+                     "[Actuals]":  0
+                 },
+                 {
+                     "Resultatrader[Rad]":  "",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "augusti",
+                     "[Budget]":  0,
+                     "[Actuals]":  0
+                 },
+                 {
+                     "Resultatrader[Rad]":  "",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "september",
+                     "[Budget]":  0,
+                     "[Actuals]":  0
+                 },
+                 {
+                     "Resultatrader[Rad]":  "",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "oktober",
+                     "[Budget]":  0,
+                     "[Actuals]":  0
+                 },
+                 {
+                     "Resultatrader[Rad]":  "",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "november",
+                     "[Budget]":  0,
+                     "[Actuals]":  0
+                 },
+                 {
+                     "Resultatrader[Rad]":  "",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "december",
+                     "[Budget]":  0,
+                     "[Actuals]":  0
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Kostnader",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "januari",
+                     "[Budget]":  0,
+                     "[Actuals]":  0
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Kostnader",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "februari",
+                     "[Budget]":  0,
+                     "[Actuals]":  0
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Kostnader",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "mars",
+                     "[Budget]":  0,
+                     "[Actuals]":  0
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Kostnader",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "april",
+                     "[Budget]":  0,
+                     "[Actuals]":  0
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Kostnader",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "maj",
+                     "[Budget]":  0,
+                     "[Actuals]":  0
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Kostnader",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "juni",
+                     "[Budget]":  0,
+                     "[Actuals]":  0
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Kostnader",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "juli",
+                     "[Budget]":  0,
+                     "[Actuals]":  0
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Kostnader",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "augusti",
+                     "[Budget]":  0,
+                     "[Actuals]":  0
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Kostnader",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "september",
+                     "[Budget]":  0,
+                     "[Actuals]":  0
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Kostnader",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "oktober",
+                     "[Budget]":  0,
+                     "[Actuals]":  0
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Kostnader",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "november",
+                     "[Budget]":  0,
+                     "[Actuals]":  0
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Kostnader",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "december",
+                     "[Budget]":  0,
+                     "[Actuals]":  0
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Avskrivningar",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "januari",
+                     "[Budget]":  0,
+                     "[Actuals]":  0
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Avskrivningar",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "februari",
+                     "[Budget]":  0,
+                     "[Actuals]":  0
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Avskrivningar",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "mars",
+                     "[Budget]":  0,
+                     "[Actuals]":  0
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Avskrivningar",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "april",
+                     "[Budget]":  0,
+                     "[Actuals]":  0
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Avskrivningar",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "maj",
+                     "[Budget]":  0,
+                     "[Actuals]":  0
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Avskrivningar",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "juni",
+                     "[Budget]":  0,
+                     "[Actuals]":  0
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Avskrivningar",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "juli",
+                     "[Budget]":  0,
+                     "[Actuals]":  0
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Avskrivningar",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "augusti",
+                     "[Budget]":  0,
+                     "[Actuals]":  0
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Avskrivningar",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "september",
+                     "[Budget]":  0,
+                     "[Actuals]":  0
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Avskrivningar",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "oktober",
+                     "[Budget]":  0,
+                     "[Actuals]":  0
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Avskrivningar",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "november",
+                     "[Budget]":  0,
+                     "[Actuals]":  0
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Avskrivningar",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "december",
+                     "[Budget]":  0,
+                     "[Actuals]":  0
+                 },
+                 {
+                     "Resultatrader[Rad]":  "  Nettoomsättning",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "januari",
+                     "[Budget]":  1045127.7139,
+                     "[Actuals]":  972701.07
+                 },
+                 {
+                     "Resultatrader[Rad]":  "  Nettoomsättning",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "februari",
+                     "[Budget]":  1045127.7139,
+                     "[Actuals]":  831028.32
+                 },
+                 {
+                     "Resultatrader[Rad]":  "  Nettoomsättning",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "mars",
+                     "[Budget]":  1045127.7139,
+                     "[Actuals]":  932665.27
+                 },
+                 {
+                     "Resultatrader[Rad]":  "  Nettoomsättning",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "april",
+                     "[Budget]":  1045127.7139,
+                     "[Actuals]":  1047820.07
+                 },
+                 {
+                     "Resultatrader[Rad]":  "  Nettoomsättning",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "maj",
+                     "[Budget]":  1045127.7139,
+                     "[Actuals]":  929898.01
+                 },
+                 {
+                     "Resultatrader[Rad]":  "  Nettoomsättning",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "juni",
+                     "[Budget]":  1045127.7139,
+                     "[Actuals]":  1240602.3
+                 },
+                 {
+                     "Resultatrader[Rad]":  "  Nettoomsättning",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "juli",
+                     "[Budget]":  1045127.7139,
+                     "[Actuals]":  794733.7
+                 },
+                 {
+                     "Resultatrader[Rad]":  "  Nettoomsättning",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "augusti",
+                     "[Budget]":  1045127.7139,
+                     "[Actuals]":  1044181.62
+                 },
+                 {
+                     "Resultatrader[Rad]":  "  Nettoomsättning",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "september",
+                     "[Budget]":  1045127.7139,
+                     "[Actuals]":  1202217.43
+                 },
+                 {
+                     "Resultatrader[Rad]":  "  Nettoomsättning",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "oktober",
+                     "[Budget]":  1045127.7139,
+                     "[Actuals]":  1442629.29
+                 },
+                 {
+                     "Resultatrader[Rad]":  "  Nettoomsättning",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "november",
+                     "[Budget]":  1045127.7139,
+                     "[Actuals]":  1667513.17
+                 },
+                 {
+                     "Resultatrader[Rad]":  "  Nettoomsättning",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "december",
+                     "[Budget]":  1045127.7139,
+                     "[Actuals]":  1712592.1
+                 },
+                 {
+                     "Resultatrader[Rad]":  "  Övriga rörelseintäkter",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "januari",
+                     "[Budget]":  41805.108556,
+                     "[Actuals]":  38908.042799999996
+                 },
+                 {
+                     "Resultatrader[Rad]":  "  Övriga rörelseintäkter",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "februari",
+                     "[Budget]":  41805.108556,
+                     "[Actuals]":  33241.1328
+                 },
+                 {
+                     "Resultatrader[Rad]":  "  Övriga rörelseintäkter",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "mars",
+                     "[Budget]":  41805.108556,
+                     "[Actuals]":  37306.6108
+                 },
+                 {
+                     "Resultatrader[Rad]":  "  Övriga rörelseintäkter",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "april",
+                     "[Budget]":  41805.108556,
+                     "[Actuals]":  41912.8028
+                 },
+                 {
+                     "Resultatrader[Rad]":  "  Övriga rörelseintäkter",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "maj",
+                     "[Budget]":  41805.108556,
+                     "[Actuals]":  37195.9204
+                 },
+                 {
+                     "Resultatrader[Rad]":  "  Övriga rörelseintäkter",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "juni",
+                     "[Budget]":  41805.108556,
+                     "[Actuals]":  49624.092000000004
+                 },
+                 {
+                     "Resultatrader[Rad]":  "  Övriga rörelseintäkter",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "juli",
+                     "[Budget]":  41805.108556,
+                     "[Actuals]":  31789.347999999998
+                 },
+                 {
+                     "Resultatrader[Rad]":  "  Övriga rörelseintäkter",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "augusti",
+                     "[Budget]":  41805.108556,
+                     "[Actuals]":  41767.2648
+                 },
+                 {
+                     "Resultatrader[Rad]":  "  Övriga rörelseintäkter",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "september",
+                     "[Budget]":  41805.108556,
+                     "[Actuals]":  48088.697199999995
+                 },
+                 {
+                     "Resultatrader[Rad]":  "  Övriga rörelseintäkter",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "oktober",
+                     "[Budget]":  41805.108556,
+                     "[Actuals]":  57705.1716
+                 },
+                 {
+                     "Resultatrader[Rad]":  "  Övriga rörelseintäkter",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "november",
+                     "[Budget]":  41805.108556,
+                     "[Actuals]":  66700.526799999992
+                 },
+                 {
+                     "Resultatrader[Rad]":  "  Övriga rörelseintäkter",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "december",
+                     "[Budget]":  41805.108556,
+                     "[Actuals]":  68503.684000000008
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Summa intäkter",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "januari",
+                     "[Budget]":  1086932.822456,
+                     "[Actuals]":  1011609.1128
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Summa intäkter",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "februari",
+                     "[Budget]":  1086932.822456,
+                     "[Actuals]":  864269.4528
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Summa intäkter",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "mars",
+                     "[Budget]":  1086932.822456,
+                     "[Actuals]":  969971.8808
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Summa intäkter",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "april",
+                     "[Budget]":  1086932.822456,
+                     "[Actuals]":  1089732.8728
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Summa intäkter",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "maj",
+                     "[Budget]":  1086932.822456,
+                     "[Actuals]":  967093.93040000007
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Summa intäkter",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "juni",
+                     "[Budget]":  1086932.822456,
+                     "[Actuals]":  1290226.392
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Summa intäkter",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "juli",
+                     "[Budget]":  1086932.822456,
+                     "[Actuals]":  826523.048
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Summa intäkter",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "augusti",
+                     "[Budget]":  1086932.822456,
+                     "[Actuals]":  1085948.8848
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Summa intäkter",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "september",
+                     "[Budget]":  1086932.822456,
+                     "[Actuals]":  1250306.1272
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Summa intäkter",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "oktober",
+                     "[Budget]":  1086932.822456,
+                     "[Actuals]":  1500334.4616
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Summa intäkter",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "november",
+                     "[Budget]":  1086932.822456,
+                     "[Actuals]":  1734213.6968
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Summa intäkter",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "december",
+                     "[Budget]":  1086932.822456,
+                     "[Actuals]":  1781095.7840000002
+                 },
+                 {
+                     "Resultatrader[Rad]":  "  Varu- och underkonsultkostnader",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "januari",
+                     "[Budget]":  -762943.231147,
+                     "[Actuals]":  -750242.3
+                 },
+                 {
+                     "Resultatrader[Rad]":  "  Varu- och underkonsultkostnader",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "februari",
+                     "[Budget]":  -762943.231147,
+                     "[Actuals]":  -622523.54
+                 },
+                 {
+                     "Resultatrader[Rad]":  "  Varu- och underkonsultkostnader",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "mars",
+                     "[Budget]":  -762943.231147,
+                     "[Actuals]":  -715513.41
+                 },
+                 {
+                     "Resultatrader[Rad]":  "  Varu- och underkonsultkostnader",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "april",
+                     "[Budget]":  -762943.231147,
+                     "[Actuals]":  -772030.02
+                 },
+                 {
+                     "Resultatrader[Rad]":  "  Varu- och underkonsultkostnader",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "maj",
+                     "[Budget]":  -762943.231147,
+                     "[Actuals]":  -673944.38
+                 },
+                 {
+                     "Resultatrader[Rad]":  "  Varu- och underkonsultkostnader",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "juni",
+                     "[Budget]":  -762943.231147,
+                     "[Actuals]":  -928746.23
+                 },
+                 {
+                     "Resultatrader[Rad]":  "  Varu- och underkonsultkostnader",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "juli",
+                     "[Budget]":  -762943.231147,
+                     "[Actuals]":  -576617.8
+                 },
+                 {
+                     "Resultatrader[Rad]":  "  Varu- och underkonsultkostnader",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "augusti",
+                     "[Budget]":  -762943.231147,
+                     "[Actuals]":  -767955.65
+                 },
+                 {
+                     "Resultatrader[Rad]":  "  Varu- och underkonsultkostnader",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "september",
+                     "[Budget]":  -762943.231147,
+                     "[Actuals]":  -924248.84
+                 },
+                 {
+                     "Resultatrader[Rad]":  "  Varu- och underkonsultkostnader",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "oktober",
+                     "[Budget]":  -762943.231147,
+                     "[Actuals]":  -1094930.76
+                 },
+                 {
+                     "Resultatrader[Rad]":  "  Varu- och underkonsultkostnader",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "november",
+                     "[Budget]":  -762943.231147,
+                     "[Actuals]":  -1269269.26
+                 },
+                 {
+                     "Resultatrader[Rad]":  "  Varu- och underkonsultkostnader",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "december",
+                     "[Budget]":  -762943.231147,
+                     "[Actuals]":  -1292569.18
+                 },
+                 {
+                     "Resultatrader[Rad]":  "  Övriga externa kostnader",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "januari",
+                     "[Budget]":  -83610.217112,
+                     "[Actuals]":  -77816.085599999991
+                 },
+                 {
+                     "Resultatrader[Rad]":  "  Övriga externa kostnader",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "februari",
+                     "[Budget]":  -83610.217112,
+                     "[Actuals]":  -66482.2656
+                 },
+                 {
+                     "Resultatrader[Rad]":  "  Övriga externa kostnader",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "mars",
+                     "[Budget]":  -83610.217112,
+                     "[Actuals]":  -74613.2216
+                 },
+                 {
+                     "Resultatrader[Rad]":  "  Övriga externa kostnader",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "april",
+                     "[Budget]":  -83610.217112,
+                     "[Actuals]":  -83825.6056
+                 },
+                 {
+                     "Resultatrader[Rad]":  "  Övriga externa kostnader",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "maj",
+                     "[Budget]":  -83610.217112,
+                     "[Actuals]":  -74391.8408
+                 },
+                 {
+                     "Resultatrader[Rad]":  "  Övriga externa kostnader",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "juni",
+                     "[Budget]":  -83610.217112,
+                     "[Actuals]":  -99248.184000000008
+                 },
+                 {
+                     "Resultatrader[Rad]":  "  Övriga externa kostnader",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "juli",
+                     "[Budget]":  -83610.217112,
+                     "[Actuals]":  -63578.695999999996
+                 },
+                 {
+                     "Resultatrader[Rad]":  "  Övriga externa kostnader",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "augusti",
+                     "[Budget]":  -83610.217112,
+                     "[Actuals]":  -83534.5296
+                 },
+                 {
+                     "Resultatrader[Rad]":  "  Övriga externa kostnader",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "september",
+                     "[Budget]":  -83610.217112,
+                     "[Actuals]":  -96177.39439999999
+                 },
+                 {
+                     "Resultatrader[Rad]":  "  Övriga externa kostnader",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "oktober",
+                     "[Budget]":  -83610.217112,
+                     "[Actuals]":  -115410.3432
+                 },
+                 {
+                     "Resultatrader[Rad]":  "  Övriga externa kostnader",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "november",
+                     "[Budget]":  -83610.217112,
+                     "[Actuals]":  -133401.05359999998
+                 },
+                 {
+                     "Resultatrader[Rad]":  "  Övriga externa kostnader",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "december",
+                     "[Budget]":  -83610.217112,
+                     "[Actuals]":  -137007.36800000002
+                 },
+                 {
+                     "Resultatrader[Rad]":  "  Personalkostnader",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "januari",
+                     "[Budget]":  -125415.32566799999,
+                     "[Actuals]":  -116724.12839999999
+                 },
+                 {
+                     "Resultatrader[Rad]":  "  Personalkostnader",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "februari",
+                     "[Budget]":  -125415.32566799999,
+                     "[Actuals]":  -99723.398399999991
+                 },
+                 {
+                     "Resultatrader[Rad]":  "  Personalkostnader",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "mars",
+                     "[Budget]":  -125415.32566799999,
+                     "[Actuals]":  -111919.8324
+                 },
+                 {
+                     "Resultatrader[Rad]":  "  Personalkostnader",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "april",
+                     "[Budget]":  -125415.32566799999,
+                     "[Actuals]":  -125738.40839999999
+                 },
+                 {
+                     "Resultatrader[Rad]":  "  Personalkostnader",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "maj",
+                     "[Budget]":  -125415.32566799999,
+                     "[Actuals]":  -111587.7612
+                 },
+                 {
+                     "Resultatrader[Rad]":  "  Personalkostnader",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "juni",
+                     "[Budget]":  -125415.32566799999,
+                     "[Actuals]":  -148872.276
+                 },
+                 {
+                     "Resultatrader[Rad]":  "  Personalkostnader",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "juli",
+                     "[Budget]":  -125415.32566799999,
+                     "[Actuals]":  -95368.044
+                 },
+                 {
+                     "Resultatrader[Rad]":  "  Personalkostnader",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "augusti",
+                     "[Budget]":  -125415.32566799999,
+                     "[Actuals]":  -125301.7944
+                 },
+                 {
+                     "Resultatrader[Rad]":  "  Personalkostnader",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "september",
+                     "[Budget]":  -125415.32566799999,
+                     "[Actuals]":  -144266.09159999999
+                 },
+                 {
+                     "Resultatrader[Rad]":  "  Personalkostnader",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "oktober",
+                     "[Budget]":  -125415.32566799999,
+                     "[Actuals]":  -173115.5148
+                 },
+                 {
+                     "Resultatrader[Rad]":  "  Personalkostnader",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "november",
+                     "[Budget]":  -125415.32566799999,
+                     "[Actuals]":  -200101.58039999998
+                 },
+                 {
+                     "Resultatrader[Rad]":  "  Personalkostnader",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "december",
+                     "[Budget]":  -125415.32566799999,
+                     "[Actuals]":  -205511.052
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Summa kostnader",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "januari",
+                     "[Budget]":  -971968.773927,
+                     "[Actuals]":  -944782.51400000008
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Summa kostnader",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "februari",
+                     "[Budget]":  -971968.773927,
+                     "[Actuals]":  -788729.204
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Summa kostnader",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "mars",
+                     "[Budget]":  -971968.773927,
+                     "[Actuals]":  -902046.464
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Summa kostnader",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "april",
+                     "[Budget]":  -971968.773927,
+                     "[Actuals]":  -981594.034
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Summa kostnader",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "maj",
+                     "[Budget]":  -971968.773927,
+                     "[Actuals]":  -859923.98200000008
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Summa kostnader",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "juni",
+                     "[Budget]":  -971968.773927,
+                     "[Actuals]":  -1176866.69
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Summa kostnader",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "juli",
+                     "[Budget]":  -971968.773927,
+                     "[Actuals]":  -735564.54
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Summa kostnader",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "augusti",
+                     "[Budget]":  -971968.773927,
+                     "[Actuals]":  -976791.974
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Summa kostnader",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "september",
+                     "[Budget]":  -971968.773927,
+                     "[Actuals]":  -1164692.326
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Summa kostnader",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "oktober",
+                     "[Budget]":  -971968.773927,
+                     "[Actuals]":  -1383456.618
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Summa kostnader",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "november",
+                     "[Budget]":  -971968.773927,
+                     "[Actuals]":  -1602771.894
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Summa kostnader",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "december",
+                     "[Budget]":  -971968.773927,
+                     "[Actuals]":  -1635087.6
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Resultat före avskrivningar",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "januari",
+                     "[Budget]":  114964.04852899999,
+                     "[Actuals]":  66826.59879999992
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Resultat före avskrivningar",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "februari",
+                     "[Budget]":  114964.04852899999,
+                     "[Actuals]":  75540.248799999943
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Resultat före avskrivningar",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "mars",
+                     "[Budget]":  114964.04852899999,
+                     "[Actuals]":  67925.4168
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Resultat före avskrivningar",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "april",
+                     "[Budget]":  114964.04852899999,
+                     "[Actuals]":  108138.83879999991
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Resultat före avskrivningar",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "maj",
+                     "[Budget]":  114964.04852899999,
+                     "[Actuals]":  107169.9484
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Resultat före avskrivningar",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "juni",
+                     "[Budget]":  114964.04852899999,
+                     "[Actuals]":  113359.70200000005
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Resultat före avskrivningar",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "juli",
+                     "[Budget]":  114964.04852899999,
+                     "[Actuals]":  90958.507999999914
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Resultat före avskrivningar",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "augusti",
+                     "[Budget]":  114964.04852899999,
+                     "[Actuals]":  109156.91079999995
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Resultat före avskrivningar",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "september",
+                     "[Budget]":  114964.04852899999,
+                     "[Actuals]":  85613.801199999987
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Resultat före avskrivningar",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "oktober",
+                     "[Budget]":  114964.04852899999,
+                     "[Actuals]":  116877.84360000002
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Resultat före avskrivningar",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "november",
+                     "[Budget]":  114964.04852899999,
+                     "[Actuals]":  131441.80279999995
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Resultat före avskrivningar",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "december",
+                     "[Budget]":  114964.04852899999,
+                     "[Actuals]":  146008.18400000012
+                 },
+                 {
+                     "Resultatrader[Rad]":  "  Avskrivningar enligt plan",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "januari",
+                     "[Budget]":  -31353.831416999998,
+                     "[Actuals]":  -29181.032099999997
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Summa avskrivningar",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "januari",
+                     "[Budget]":  -31353.831416999998,
+                     "[Actuals]":  -29181.032099999997
+                 },
+                 {
+                     "Resultatrader[Rad]":  "  Avskrivningar enligt plan",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "februari",
+                     "[Budget]":  -31353.831416999998,
+                     "[Actuals]":  -24930.849599999998
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Summa avskrivningar",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "februari",
+                     "[Budget]":  -31353.831416999998,
+                     "[Actuals]":  -24930.849599999998
+                 },
+                 {
+                     "Resultatrader[Rad]":  "  Avskrivningar enligt plan",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "mars",
+                     "[Budget]":  -31353.831416999998,
+                     "[Actuals]":  -27979.9581
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Summa avskrivningar",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "mars",
+                     "[Budget]":  -31353.831416999998,
+                     "[Actuals]":  -27979.9581
+                 },
+                 {
+                     "Resultatrader[Rad]":  "  Avskrivningar enligt plan",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "april",
+                     "[Budget]":  -31353.831416999998,
+                     "[Actuals]":  -31434.602099999996
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Summa avskrivningar",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "april",
+                     "[Budget]":  -31353.831416999998,
+                     "[Actuals]":  -31434.602099999996
+                 },
+                 {
+                     "Resultatrader[Rad]":  "  Avskrivningar enligt plan",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "maj",
+                     "[Budget]":  -31353.831416999998,
+                     "[Actuals]":  -27896.9403
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Summa avskrivningar",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "maj",
+                     "[Budget]":  -31353.831416999998,
+                     "[Actuals]":  -27896.9403
+                 },
+                 {
+                     "Resultatrader[Rad]":  "  Avskrivningar enligt plan",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "juni",
+                     "[Budget]":  -31353.831416999998,
+                     "[Actuals]":  -37218.069
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Summa avskrivningar",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "juni",
+                     "[Budget]":  -31353.831416999998,
+                     "[Actuals]":  -37218.069
+                 },
+                 {
+                     "Resultatrader[Rad]":  "  Avskrivningar enligt plan",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "juli",
+                     "[Budget]":  -31353.831416999998,
+                     "[Actuals]":  -23842.011
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Summa avskrivningar",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "juli",
+                     "[Budget]":  -31353.831416999998,
+                     "[Actuals]":  -23842.011
+                 },
+                 {
+                     "Resultatrader[Rad]":  "  Avskrivningar enligt plan",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "augusti",
+                     "[Budget]":  -31353.831416999998,
+                     "[Actuals]":  -31325.4486
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Summa avskrivningar",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "augusti",
+                     "[Budget]":  -31353.831416999998,
+                     "[Actuals]":  -31325.4486
+                 },
+                 {
+                     "Resultatrader[Rad]":  "  Avskrivningar enligt plan",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "september",
+                     "[Budget]":  -31353.831416999998,
+                     "[Actuals]":  -36066.522899999996
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Summa avskrivningar",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "september",
+                     "[Budget]":  -31353.831416999998,
+                     "[Actuals]":  -36066.522899999996
+                 },
+                 {
+                     "Resultatrader[Rad]":  "  Avskrivningar enligt plan",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "oktober",
+                     "[Budget]":  -31353.831416999998,
+                     "[Actuals]":  -43278.8787
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Summa avskrivningar",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "oktober",
+                     "[Budget]":  -31353.831416999998,
+                     "[Actuals]":  -43278.8787
+                 },
+                 {
+                     "Resultatrader[Rad]":  "  Avskrivningar enligt plan",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "november",
+                     "[Budget]":  -31353.831416999998,
+                     "[Actuals]":  -50025.395099999994
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Summa avskrivningar",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "november",
+                     "[Budget]":  -31353.831416999998,
+                     "[Actuals]":  -50025.395099999994
+                 },
+                 {
+                     "Resultatrader[Rad]":  "  Avskrivningar enligt plan",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "december",
+                     "[Budget]":  -31353.831416999998,
+                     "[Actuals]":  -51377.763
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Summa avskrivningar",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "december",
+                     "[Budget]":  -31353.831416999998,
+                     "[Actuals]":  -51377.763
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Rörelseresultat",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "januari",
+                     "[Budget]":  83610.217112,
+                     "[Actuals]":  37645.566699999967
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Rörelseresultat",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "februari",
+                     "[Budget]":  83610.217112,
+                     "[Actuals]":  50609.399199999985
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Rörelseresultat",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "mars",
+                     "[Budget]":  83610.217112,
+                     "[Actuals]":  39945.458700000076
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Rörelseresultat",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "april",
+                     "[Budget]":  83610.217112,
+                     "[Actuals]":  76704.236700000009
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Rörelseresultat",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "maj",
+                     "[Budget]":  83610.217112,
+                     "[Actuals]":  79273.0081000001
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Rörelseresultat",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "juni",
+                     "[Budget]":  83610.217112,
+                     "[Actuals]":  76141.633000000147
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Rörelseresultat",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "juli",
+                     "[Budget]":  83610.217112,
+                     "[Actuals]":  67116.496999999974
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Rörelseresultat",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "augusti",
+                     "[Budget]":  83610.217112,
+                     "[Actuals]":  77831.462200000067
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Rörelseresultat",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "september",
+                     "[Budget]":  83610.217112,
+                     "[Actuals]":  49547.278300000005
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Rörelseresultat",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "oktober",
+                     "[Budget]":  83610.217112,
+                     "[Actuals]":  73598.964900000021
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Rörelseresultat",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "november",
+                     "[Budget]":  83610.217112,
+                     "[Actuals]":  81416.4077000001
+                 },
+                 {
+                     "Resultatrader[Rad]":  "Rörelseresultat",
+                     "Datum[År]":  2025,
+                     "Datum[Månad]":  "december",
+                     "[Budget]":  83610.217112,
+                     "[Actuals]":  94630.421000000322
+                 }
+             ],
+    "source":  "Actual local Desktop DAX engine",
+    "rowCount":  180
+}

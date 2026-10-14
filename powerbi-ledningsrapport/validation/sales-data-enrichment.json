@@ -1,0 +1,76 @@
+{
+  "status": "passed",
+  "monthAreaGroupsPreservedAfterDocumentedPriorMixAdjustment": 138,
+  "priorMixAdjustment": "Previous R12 service/staff revenue and matching direct cost transferred 2 Mkr, to reconcile requested category totals 73/23/24 Mkr. Company monthly revenue and gross profit by area remain unchanged.",
+  "salesRows": 102258,
+  "costRows": 3680,
+  "categories": [
+    {
+      "name": "Maskiner",
+      "revenue": 35000000,
+      "grossProfit": 7000000
+    },
+    {
+      "name": "Rengöringsprodukter",
+      "revenue": 30000000,
+      "grossProfit": 10800000
+    },
+    {
+      "name": "Förbrukningsmaterial",
+      "revenue": 20000000,
+      "grossProfit": 6000000
+    },
+    {
+      "name": "Service",
+      "revenue": 12000000,
+      "grossProfit": 4320000
+    },
+    {
+      "name": "Reparationer",
+      "revenue": 10000000,
+      "grossProfit": 2300000
+    },
+    {
+      "name": "Installationer",
+      "revenue": 8000000,
+      "grossProfit": 2680000
+    },
+    {
+      "name": "Diskpersonal",
+      "revenue": 14000000,
+      "grossProfit": 1680000
+    },
+    {
+      "name": "Städpersonal",
+      "revenue": 10500000,
+      "grossProfit": 1260000
+    }
+  ],
+  "industries": [
+    {
+      "name": "Restaurang",
+      "revenue": 52000000,
+      "previous": 45000000
+    },
+    {
+      "name": "Hotell",
+      "revenue": 36000000,
+      "previous": 31000000
+    },
+    {
+      "name": "Catering",
+      "revenue": 22000000,
+      "previous": 18000000
+    },
+    {
+      "name": "Kontor",
+      "revenue": 17500000,
+      "previous": 15000000
+    },
+    {
+      "name": "Livsmedel",
+      "revenue": 12000000,
+      "previous": 11000000
+    }
+  ]
+}

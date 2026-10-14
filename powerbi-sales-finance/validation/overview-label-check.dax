@@ -1,0 +1,11 @@
+EVALUATE
+CALCULATETABLE(
+    ROW(
+        "Marknad", [Marknadsbelopp etikett],
+        "Omsättning", [Omsättning etikett],
+        "Produkt", [Produktvärde etikett]
+    ),
+    TREATAS({2025}, 'Datum'[År]),
+    TREATAS({"Land"}, 'Analysaxel'[Typ]),
+    TREATAS({"Norge"}, 'Analysaxel'[Namn])
+)

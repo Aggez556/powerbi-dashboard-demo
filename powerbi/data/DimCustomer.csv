@@ -1,0 +1,101 @@
+﻿CustomerKey,CustomerName,City,Segment
+1,Handelskund 001 AB,Göteborg,Mellanstora företag
+2,Handelskund 002 AB,Malmö,Större företag
+3,Handelskund 003 AB,Uppsala,Småföretag
+4,Handelskund 004 AB,Västerås,Mellanstora företag
+5,Handelskund 005 AB,Stockholm,Större företag
+6,Handelskund 006 AB,Göteborg,Småföretag
+7,Handelskund 007 AB,Malmö,Mellanstora företag
+8,Handelskund 008 AB,Uppsala,Större företag
+9,Handelskund 009 AB,Västerås,Småföretag
+10,Handelskund 010 AB,Stockholm,Mellanstora företag
+11,Handelskund 011 AB,Göteborg,Större företag
+12,Handelskund 012 AB,Malmö,Småföretag
+13,Handelskund 013 AB,Uppsala,Mellanstora företag
+14,Handelskund 014 AB,Västerås,Större företag
+15,Handelskund 015 AB,Stockholm,Småföretag
+16,Handelskund 016 AB,Göteborg,Mellanstora företag
+17,Handelskund 017 AB,Malmö,Större företag
+18,Handelskund 018 AB,Uppsala,Småföretag
+19,Handelskund 019 AB,Västerås,Mellanstora företag
+20,Handelskund 020 AB,Stockholm,Större företag
+21,Handelskund 021 AB,Göteborg,Småföretag
+22,Handelskund 022 AB,Malmö,Mellanstora företag
+23,Handelskund 023 AB,Uppsala,Större företag
+24,Handelskund 024 AB,Västerås,Småföretag
+25,Handelskund 025 AB,Stockholm,Mellanstora företag
+26,Handelskund 026 AB,Göteborg,Större företag
+27,Handelskund 027 AB,Malmö,Småföretag
+28,Handelskund 028 AB,Uppsala,Mellanstora företag
+29,Handelskund 029 AB,Västerås,Större företag
+30,Handelskund 030 AB,Stockholm,Småföretag
+31,Handelskund 031 AB,Göteborg,Mellanstora företag
+32,Handelskund 032 AB,Malmö,Större företag
+33,Handelskund 033 AB,Uppsala,Småföretag
+34,Handelskund 034 AB,Västerås,Mellanstora företag
+35,Handelskund 035 AB,Stockholm,Större företag
+36,Handelskund 036 AB,Göteborg,Småföretag
+37,Handelskund 037 AB,Malmö,Mellanstora företag
+38,Handelskund 038 AB,Uppsala,Större företag
+39,Handelskund 039 AB,Västerås,Småföretag
+40,Handelskund 040 AB,Stockholm,Mellanstora företag
+41,Handelskund 041 AB,Göteborg,Större företag
+42,Handelskund 042 AB,Malmö,Småföretag
+43,Handelskund 043 AB,Uppsala,Mellanstora företag
+44,Handelskund 044 AB,Västerås,Större företag
+45,Handelskund 045 AB,Stockholm,Småföretag
+46,Handelskund 046 AB,Göteborg,Mellanstora företag
+47,Handelskund 047 AB,Malmö,Större företag
+48,Handelskund 048 AB,Uppsala,Småföretag
+49,Handelskund 049 AB,Västerås,Mellanstora företag
+50,Handelskund 050 AB,Stockholm,Större företag
+51,Handelskund 051 AB,Göteborg,Småföretag
+52,Handelskund 052 AB,Malmö,Mellanstora företag
+53,Handelskund 053 AB,Uppsala,Större företag
+54,Handelskund 054 AB,Västerås,Småföretag
+55,Handelskund 055 AB,Stockholm,Mellanstora företag
+56,Handelskund 056 AB,Göteborg,Större företag
+57,Handelskund 057 AB,Malmö,Småföretag
+58,Handelskund 058 AB,Uppsala,Mellanstora företag
+59,Handelskund 059 AB,Västerås,Större företag
+60,Handelskund 060 AB,Stockholm,Småföretag
+61,Handelskund 061 AB,Göteborg,Mellanstora företag
+62,Handelskund 062 AB,Malmö,Större företag
+63,Handelskund 063 AB,Uppsala,Småföretag
+64,Handelskund 064 AB,Västerås,Mellanstora företag
+65,Handelskund 065 AB,Stockholm,Större företag
+66,Handelskund 066 AB,Göteborg,Småföretag
+67,Handelskund 067 AB,Malmö,Mellanstora företag
+68,Handelskund 068 AB,Uppsala,Större företag
+69,Handelskund 069 AB,Västerås,Småföretag
+70,Handelskund 070 AB,Stockholm,Mellanstora företag
+71,Handelskund 071 AB,Göteborg,Större företag
+72,Handelskund 072 AB,Malmö,Småföretag
+73,Handelskund 073 AB,Uppsala,Mellanstora företag
+74,Handelskund 074 AB,Västerås,Större företag
+75,Handelskund 075 AB,Stockholm,Småföretag
+76,Handelskund 076 AB,Göteborg,Mellanstora företag
+77,Handelskund 077 AB,Malmö,Större företag
+78,Handelskund 078 AB,Uppsala,Småföretag
+79,Handelskund 079 AB,Västerås,Mellanstora företag
+80,Handelskund 080 AB,Stockholm,Större företag
+81,Handelskund 081 AB,Göteborg,Småföretag
+82,Handelskund 082 AB,Malmö,Mellanstora företag
+83,Handelskund 083 AB,Uppsala,Större företag
+84,Handelskund 084 AB,Västerås,Småföretag
+85,Handelskund 085 AB,Stockholm,Mellanstora företag
+86,Handelskund 086 AB,Göteborg,Större företag
+87,Handelskund 087 AB,Malmö,Småföretag
+88,Handelskund 088 AB,Uppsala,Mellanstora företag
+89,Handelskund 089 AB,Västerås,Större företag
+90,Handelskund 090 AB,Stockholm,Småföretag
+91,Handelskund 091 AB,Göteborg,Mellanstora företag
+92,Handelskund 092 AB,Malmö,Större företag
+93,Handelskund 093 AB,Uppsala,Småföretag
+94,Handelskund 094 AB,Västerås,Mellanstora företag
+95,Handelskund 095 AB,Stockholm,Större företag
+96,Handelskund 096 AB,Göteborg,Småföretag
+97,Handelskund 097 AB,Malmö,Mellanstora företag
+98,Handelskund 098 AB,Uppsala,Större företag
+99,Handelskund 099 AB,Västerås,Småföretag
+100,Handelskund 100 AB,Stockholm,Mellanstora företag

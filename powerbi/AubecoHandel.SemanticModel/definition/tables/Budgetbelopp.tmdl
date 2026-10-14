@@ -1,0 +1,19 @@
+/// Fristående tabell för lokal budgetsimulering.
+table Budgetbelopp
+
+	column Belopp
+		dataType: int64
+		formatString: #,##0 " kr"
+		summarizeBy: none
+		sourceColumn: Belopp
+
+	partition Budgetbelopp = m
+		mode: import
+		source =
+				let
+					Source = Csv.Document(File.Contents(DataFolder & "/Budgetbelopp.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+					Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+					Typed = Table.TransformColumnTypes(Headers, {{"Belopp", Int64.Type}}, "en-US")
+				in
+					Typed
+

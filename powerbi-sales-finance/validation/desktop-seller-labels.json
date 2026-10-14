@@ -1,0 +1,85 @@
+﻿{
+    "status":  "passed",
+    "rows":  [
+                 {
+                     "[Period]":  "Helår 2025",
+                     "[Första]":  "+45,0 % ▲ mot föreg. år",
+                     "[Andra]":  "+7,0 % ▲ mot föreg. år",
+                     "[Tredje]":  "+1,7 % ▲ mot föreg. år"
+                 },
+                 {
+                     "[Period]":  "01",
+                     "[Första]":  "+147,1 % ▲ mot föreg. år",
+                     "[Andra]":  "+160,5 % ▲ mot föreg. år",
+                     "[Tredje]":  "+54,4 % ▲ mot föreg. år"
+                 },
+                 {
+                     "[Period]":  "02",
+                     "[Första]":  "+79,1 % ▲ mot föreg. år",
+                     "[Andra]":  "+114,5 % ▲ mot föreg. år",
+                     "[Tredje]":  "+243,4 % ▲ mot föreg. år"
+                 },
+                 {
+                     "[Period]":  "03",
+                     "[Första]":  "+8,5 % ▲ mot föreg. år",
+                     "[Andra]":  "+250,7 % ▲ mot föreg. år",
+                     "[Tredje]":  "+27,0 % ▲ mot föreg. år"
+                 },
+                 {
+                     "[Period]":  "04",
+                     "[Första]":  "+204,9 % ▲ mot föreg. år",
+                     "[Andra]":  "+71,3 % ▲ mot föreg. år",
+                     "[Tredje]":  "+33,4 % ▲ mot föreg. år"
+                 },
+                 {
+                     "[Period]":  "05",
+                     "[Första]":  "+153,3 % ▲ mot föreg. år",
+                     "[Andra]":  "+184,0 % ▲ mot föreg. år",
+                     "[Tredje]":  "+70,1 % ▲ mot föreg. år"
+                 },
+                 {
+                     "[Period]":  "06",
+                     "[Första]":  "+21,9 % ▲ mot föreg. år",
+                     "[Andra]":  "+14,3 % ▲ mot föreg. år",
+                     "[Tredje]":  "+28,0 % ▲ mot föreg. år"
+                 },
+                 {
+                     "[Period]":  "07",
+                     "[Första]":  "+62,9 % ▲ mot föreg. år",
+                     "[Andra]":  "+37,2 % ▲ mot föreg. år",
+                     "[Tredje]":  "+328,4 % ▲ mot föreg. år"
+                 },
+                 {
+                     "[Period]":  "08",
+                     "[Första]":  "+72,6 % ▲ mot föreg. år",
+                     "[Andra]":  "+163,1 % ▲ mot föreg. år",
+                     "[Tredje]":  "+746,3 % ▲ mot föreg. år"
+                 },
+                 {
+                     "[Period]":  "09",
+                     "[Första]":  "+235,2 % ▲ mot föreg. år",
+                     "[Andra]":  "+16,5 % ▲ mot föreg. år",
+                     "[Tredje]":  "+65,8 % ▲ mot föreg. år"
+                 },
+                 {
+                     "[Period]":  "10",
+                     "[Första]":  "+95,3 % ▲ mot föreg. år",
+                     "[Andra]":  "+76,8 % ▲ mot föreg. år",
+                     "[Tredje]":  "+81,7 % ▲ mot föreg. år"
+                 },
+                 {
+                     "[Period]":  "11",
+                     "[Första]":  "+70,1 % ▲ mot föreg. år",
+                     "[Andra]":  "+135,7 % ▲ mot föreg. år",
+                     "[Tredje]":  "+42,8 % ▲ mot föreg. år"
+                 },
+                 {
+                     "[Period]":  "12",
+                     "[Första]":  "+160,8 % ▲ mot föreg. år",
+                     "[Andra]":  "+72,2 % ▲ mot föreg. år",
+                     "[Tredje]":  "+143,4 % ▲ mot föreg. år"
+                 }
+             ],
+    "desktopProcessId":  9624,
+    "source":  "Actual Desktop engine, DAX query"
+}

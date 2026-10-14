@@ -1,0 +1,40 @@
+table Finansaxel
+	lineageTag: 96f5c60a-d875-491a-8da4-abc20794caea
+
+	column Typ
+		dataType: string
+		lineageTag: 2c15e1d0-4676-46d7-bb0a-e0fc5f9dd4ab
+		summarizeBy: none
+		sourceColumn: Type
+
+	column Namn
+		dataType: string
+		lineageTag: 463d39a6-597c-4a89-b29e-6d0c595a7c80
+		summarizeBy: none
+		sourceColumn: Name
+
+	column Val = IF('Finansaxel'[Typ] = "Säljteam", "Team", 'Finansaxel'[Typ])
+		dataType: string
+		lineageTag: d687cbad-c57d-48b0-bdc6-1971b5200e30
+		summarizeBy: none
+
+	column 'Kategori grupp' = IF('Finansaxel'[Typ] = "Kategori" && NOT('Finansaxel'[Namn] IN {"Elektronik", "Hem och kök"}), "Övrigt", 'Finansaxel'[Namn])
+		dataType: string
+		lineageTag: 196464fd-b2d3-417f-9cb1-32952540c09f
+		summarizeBy: none
+
+	column Panel = SWITCH('Finansaxel'[Namn], "Nord", 1, "Syd", 2, "Väst", 3, "Elektronik", 1, "Hem och kök", 2, 3)
+		dataType: int64
+		lineageTag: 69792caf-9c91-416f-bf1d-009ed0a73b46
+		summarizeBy: none
+
+	partition Finansaxel = m
+		mode: import
+		source =
+				let
+					Source = Csv.Document(File.Contents(DataFolder & "/Finansaxel.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+					Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+					Typed = Table.TransformColumnTypes(Headers, {{"Type", type text}, {"Name", type text}}, "en-US")
+				in
+					Typed
+

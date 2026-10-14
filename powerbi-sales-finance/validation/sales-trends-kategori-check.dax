@@ -1,0 +1,6 @@
+EVALUATE
+CALCULATETABLE(UNION(SELECTCOLUMNS(SUMMARIZECOLUMNS('Datum'[Månadsnummer], "Group", [Säljanalys trend 1 namn], "Value", [Säljanalys trend 1 värde], "Max", [Säljanalys trend 1 max], "Min", [Säljanalys trend 1 min]), "Month", 'Datum'[Månadsnummer], "Group", [Group], "Value", [Value], "Max", [Max], "Min", [Min], "Rank", 1),
+SELECTCOLUMNS(SUMMARIZECOLUMNS('Datum'[Månadsnummer], "Group", [Säljanalys trend 2 namn], "Value", [Säljanalys trend 2 värde], "Max", [Säljanalys trend 2 max], "Min", [Säljanalys trend 2 min]), "Month", 'Datum'[Månadsnummer], "Group", [Group], "Value", [Value], "Max", [Max], "Min", [Min], "Rank", 2),
+SELECTCOLUMNS(SUMMARIZECOLUMNS('Datum'[Månadsnummer], "Group", [Säljanalys trend 3 namn], "Value", [Säljanalys trend 3 värde], "Max", [Säljanalys trend 3 max], "Min", [Säljanalys trend 3 min]), "Month", 'Datum'[Månadsnummer], "Group", [Group], "Value", [Value], "Max", [Max], "Min", [Min], "Rank", 3),
+SELECTCOLUMNS(SUMMARIZECOLUMNS('Datum'[Månadsnummer], "Group", [Säljanalys trend 4 namn], "Value", [Säljanalys trend 4 värde], "Max", [Säljanalys trend 4 max], "Min", [Säljanalys trend 4 min]), "Month", 'Datum'[Månadsnummer], "Group", [Group], "Value", [Value], "Max", [Max], "Min", [Min], "Rank", 4)), TREATAS({2025}, 'Datum'[År]), TREATAS({"Kategori"}, 'Analysaxel'[Typ]))
+ORDER BY [Rank], [Month]

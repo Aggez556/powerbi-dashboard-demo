@@ -1,0 +1,7 @@
+EVALUATE
+CALCULATETABLE(
+ UNION(
+ ROW("Period", "Helår", "Omsättning", [Omsättning], "Bruttovinst", [Bruttovinst], "Aktiva", [Aktiva säljare], "Leveranser", [Leveranser], "Ordervärde", [Genomsnittlig order], "Omsättning per säljare", [Omsättning per säljare], "Topp 5", [Topp 5 säljare andel], "Aktiva ändring", [Säljanalys KPI 0 förändring], "Andel ändring", [Säljanalys KPI 4 förändring]),
+ CALCULATETABLE(ROW("Period", "Oktober", "Omsättning", [Omsättning], "Bruttovinst", [Bruttovinst], "Aktiva", [Aktiva säljare], "Leveranser", [Leveranser], "Ordervärde", [Genomsnittlig order], "Omsättning per säljare", [Omsättning per säljare], "Topp 5", [Topp 5 säljare andel], "Aktiva ändring", [Säljanalys KPI 0 förändring], "Andel ändring", [Säljanalys KPI 4 förändring]), TREATAS({10}, 'Datum'[Månadsnummer])),
+ CALCULATETABLE(ROW("Period", "September–oktober", "Omsättning", [Omsättning], "Bruttovinst", [Bruttovinst], "Aktiva", [Aktiva säljare], "Leveranser", [Leveranser], "Ordervärde", [Genomsnittlig order], "Omsättning per säljare", [Omsättning per säljare], "Topp 5", [Topp 5 säljare andel], "Aktiva ändring", [Säljanalys KPI 0 förändring], "Andel ändring", [Säljanalys KPI 4 förändring]), TREATAS({9,10}, 'Datum'[Månadsnummer]))
+ ), TREATAS({2025}, 'Datum'[År]))

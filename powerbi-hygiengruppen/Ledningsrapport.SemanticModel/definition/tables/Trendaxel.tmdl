@@ -1,0 +1,48 @@
+/// Reproducerbar lokal demodata; Trendaxel.csv.
+table Trendaxel
+	lineageTag: b8ddedf6-83d2-45ae-9c9f-66708477df02
+
+	/// Källfält i lokal demodata: Trendaxel.Månad.
+	column Månad
+		dataType: string
+		lineageTag: 7e3d2f8c-079c-4f3b-8434-338a96201e30
+		summarizeBy: none
+		sourceColumn: Månad
+		sortByColumn: Ordning
+
+	/// Källfält i lokal demodata: Trendaxel.Månadsstart.
+	column Månadsstart
+		dataType: dateTime
+		isHidden
+		formatString: yyyy-MM-dd
+		lineageTag: 1269e844-2f3b-4b46-bf3c-c2366af7b52f
+		summarizeBy: none
+		sourceColumn: Månadsstart
+
+		variation Variation
+			isDefault
+			relationship: 84a20d81-7280-438a-8a4d-b703c7131cc1
+			defaultHierarchy: LocalDateTable_a84b8e1e-8feb-4225-a053-b38fd3843c95.Datumhierarki
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	/// Källfält i lokal demodata: Trendaxel.Ordning.
+	column Ordning
+		dataType: int64
+		isHidden
+		lineageTag: 48c1a01e-e620-4fd3-9971-c1c7e138ba83
+		summarizeBy: sum
+		sourceColumn: Ordning
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Trendaxel = m
+		mode: import
+		source =
+				let
+					Source = Csv.Document(File.Contents(DataFolder & "/Trendaxel.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+					Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+					Typed = Table.TransformColumnTypes(Headers, {{"Månad", type text}, {"Månadsstart", type date}, {"Ordning", Int64.Type}}, "en-US")
+				in
+					Typed
+

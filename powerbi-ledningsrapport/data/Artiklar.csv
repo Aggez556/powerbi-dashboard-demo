@@ -1,0 +1,17 @@
+﻿Artikelnyckel,Kategori,Artikel,Kategoriordning,Område,Områdesordning
+11,Maskiner,Maskiner – standard,1,Produktförsäljning,1
+12,Maskiner,Maskiner – utökad,1,Produktförsäljning,1
+21,Rengöringsprodukter,Rengöringsprodukter – standard,2,Produktförsäljning,1
+22,Rengöringsprodukter,Rengöringsprodukter – utökad,2,Produktförsäljning,1
+31,Förbrukningsmaterial,Förbrukningsmaterial – standard,3,Produktförsäljning,1
+32,Förbrukningsmaterial,Förbrukningsmaterial – utökad,3,Produktförsäljning,1
+41,Service,Service – standard,4,Teknisk service,2
+42,Service,Service – utökad,4,Teknisk service,2
+51,Reparationer,Reparationer – standard,5,Teknisk service,2
+52,Reparationer,Reparationer – utökad,5,Teknisk service,2
+61,Installationer,Installationer – standard,6,Teknisk service,2
+62,Installationer,Installationer – utökad,6,Teknisk service,2
+71,Diskpersonal,Diskpersonal – standard,7,Bemanning,3
+72,Diskpersonal,Diskpersonal – utökad,7,Bemanning,3
+81,Städpersonal,Städpersonal – standard,8,Bemanning,3
+82,Städpersonal,Städpersonal – utökad,8,Bemanning,3

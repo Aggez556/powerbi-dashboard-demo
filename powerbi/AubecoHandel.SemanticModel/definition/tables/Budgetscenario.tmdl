@@ -1,0 +1,24 @@
+/// Fristående tabell för lokal budgetsimulering.
+table Budgetscenario
+
+	column Scenario
+		dataType: string
+		summarizeBy: none
+		sourceColumn: Scenario
+
+	column Faktor
+		dataType: decimal
+		isHidden
+		summarizeBy: none
+		sourceColumn: Faktor
+
+	partition Budgetscenario = m
+		mode: import
+		source =
+				let
+					Source = Csv.Document(File.Contents(DataFolder & "/Budgetscenario.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+					Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+					Typed = Table.TransformColumnTypes(Headers, {{"Scenario", type text}, {"Faktor", type number}}, "en-US")
+				in
+					Typed
+

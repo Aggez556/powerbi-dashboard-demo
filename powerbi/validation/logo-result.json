@@ -1,0 +1,44 @@
+{
+  "status": "files-updated",
+  "source": "https://www.aubeco.se/",
+  "asset": "assets/aubeco/aubeco-header-wordmark.png",
+  "resource": "AubecoHeaderWordmark202610070001.png",
+  "localEmbeddedResource": true,
+  "preserveAspectRatio": true,
+  "pages": [
+    {
+      "page": "Försäljningsöversikt",
+      "visual": "5d9bdf00328a0e423445",
+      "box": [
+        32,
+        24,
+        208,
+        88
+      ],
+      "dataVisualsUnchanged": true
+    },
+    {
+      "page": "Produktanalys",
+      "visual": "67f61d30edac2a003a6a",
+      "box": [
+        32,
+        24,
+        208,
+        88
+      ],
+      "dataVisualsUnchanged": true
+    },
+    {
+      "page": "Budgetplanering",
+      "visual": "f2b02a91306434fd691c",
+      "box": [
+        28,
+        28,
+        272,
+        104
+      ],
+      "dataVisualsUnchanged": true
+    }
+  ],
+  "desktopRendering": "pending"
+}

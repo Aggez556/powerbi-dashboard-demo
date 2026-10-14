@@ -1,0 +1,30 @@
+/// Reproducerbar lokal demodata; Periodtyp.csv.
+table Periodtyp
+	lineageTag: ddcb8ec6-b9fa-48eb-9178-d48bd2b897f7
+
+	/// Källfält i lokal demodata: Periodtyp.Periodtyp.
+	column Periodtyp
+		dataType: string
+		lineageTag: 61dadef0-9013-46cc-b155-16ab775b4c3a
+		summarizeBy: none
+		sourceColumn: Periodtyp
+		sortByColumn: Ordning
+
+	/// Källfält i lokal demodata: Periodtyp.Ordning.
+	column Ordning
+		dataType: int64
+		isHidden
+		lineageTag: 58a97c79-8a52-447d-9c17-51af131e2e7b
+		summarizeBy: none
+		sourceColumn: Ordning
+
+	partition Periodtyp = m
+		mode: import
+		source =
+				let
+					Source = Csv.Document(File.Contents(DataFolder & "/Periodtyp.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+					Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+					Typed = Table.TransformColumnTypes(Headers, {{"Periodtyp", type text}, {"Ordning", Int64.Type}}, "en-US")
+				in
+					Typed
+

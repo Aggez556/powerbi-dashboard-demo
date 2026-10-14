@@ -1,0 +1,72 @@
+/// Lokal testdata från DimDate.csv.
+table Datum
+	lineageTag: 58511944-925f-4131-9bf5-8c886a308136
+	dataCategory: Time
+
+	column Datumnyckel
+		dataType: int64
+		isHidden
+		lineageTag: aeac320d-2549-4e26-895e-625f5690d263
+		summarizeBy: none
+		sourceColumn: DateKey
+
+	column Datum
+		dataType: dateTime
+		isKey
+		formatString: yyyy-MM-dd
+		lineageTag: cc8d3b05-1edc-4a8f-9e82-ff9de31c7791
+		summarizeBy: none
+		sourceColumn: Date
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column År
+		dataType: int64
+		lineageTag: ca8c6f11-7127-4a0f-99de-ff743463f053
+		summarizeBy: none
+		sourceColumn: Year
+
+	column Månadsnummer
+		dataType: int64
+		isHidden
+		lineageTag: e04b0401-58c2-46f7-89fb-9a8f41162ee9
+		summarizeBy: none
+		sourceColumn: MonthNumber
+
+	column Månad
+		dataType: string
+		lineageTag: ba3e8e10-842d-474e-96c7-448368091968
+		summarizeBy: none
+		sourceColumn: Month
+		sortByColumn: Månadsnummer
+
+	column År–månad
+		dataType: string
+		lineageTag: 25942147-6493-4780-8b08-8f46071081bb
+		summarizeBy: none
+		sourceColumn: YearMonth
+		sortByColumn: Årsmånadsnummer
+
+	column Årsmånadsnummer
+		dataType: int64
+		isHidden
+		lineageTag: cd0c3794-b0e0-4590-8fac-2ebcb3ff28aa
+		summarizeBy: none
+		sourceColumn: YearMonthSort
+
+	column Kvartal
+		dataType: string
+		lineageTag: b027c4fa-6880-4e74-9be1-c5e815ee7a4f
+		summarizeBy: none
+		sourceColumn: Quarter
+
+	partition Datum = m
+		mode: import
+		source =
+				let
+					Source = Csv.Document(File.Contents(DataFolder & "/DimDate.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+					Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+					Typed = Table.TransformColumnTypes(Headers, {{"DateKey", Int64.Type}, {"Date", type date}, {"Year", Int64.Type}, {"MonthNumber", Int64.Type}, {"Month", type text}, {"YearMonth", type text}, {"YearMonthSort", Int64.Type}, {"Quarter", type text}}, "en-US")
+				in
+					Typed
+

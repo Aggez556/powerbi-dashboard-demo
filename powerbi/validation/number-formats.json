@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "cards": [
+    "Antal order",
+    "Bruttovinst",
+    "Bruttomarginal",
+    "Omsättning",
+    "Tillväxt mot föregående år"
+  ],
+  "orderDisplayUnits": "None (1)",
+  "orderFormat": "#,##0",
+  "currencyCardDecimals": 0,
+  "currencyModelDecimals": 2,
+  "unitSpacing": "nonbreaking space",
+  "themeAndPageFilesUnchanged": true,
+  "desktopRendering": "not yet verified"
+}

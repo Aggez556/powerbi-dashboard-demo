@@ -1,0 +1,60 @@
+/// Lokal testdata från DimProduct.csv.
+table Produkter
+	lineageTag: f2819a5a-4d60-4dfb-a7be-5f07d87bef8c
+
+	column Produktnyckel
+		dataType: int64
+		isHidden
+		isKey
+		lineageTag: 8acb0720-9635-468c-bb8e-362d8c3aa2b4
+		summarizeBy: none
+		sourceColumn: ProductKey
+
+	column Produkt
+		dataType: string
+		lineageTag: 120a16fb-14d9-4158-89e2-b0aaaf32588c
+		summarizeBy: none
+		sourceColumn: ProductName
+
+	column Kategori
+		dataType: string
+		lineageTag: 251bdf38-7648-4cd2-b674-947d806db72d
+		summarizeBy: none
+		sourceColumn: Category
+
+	column Listpris
+		dataType: decimal
+		isHidden
+		lineageTag: 26c78ce2-a5ad-4396-880b-0bb624baadee
+		summarizeBy: none
+		sourceColumn: ListPrice
+
+	column Standardkostnad
+		dataType: decimal
+		isHidden
+		lineageTag: cfb09cbd-e395-4cd5-a453-cb62cad0f7c2
+		summarizeBy: none
+		sourceColumn: StandardUnitCost
+
+	column Standardmarginal
+		dataType: decimal
+		isHidden
+		lineageTag: c591b237-a4f6-49e5-a23f-2697638d63fe
+		summarizeBy: none
+		sourceColumn: StandardMargin
+
+	column Finansgrupp = IF('Produkter'[Kategori] IN {"Elektronik", "Hem och kök"}, 'Produkter'[Kategori], "Övrigt")
+		dataType: string
+		lineageTag: 0f4b01e0-e5d9-4b73-af89-559c2f423590
+		summarizeBy: none
+
+	partition Produkter = m
+		mode: import
+		source =
+				let
+					Source = Csv.Document(File.Contents(DataFolder & "/DimProduct.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+					Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+					Typed = Table.TransformColumnTypes(Headers, {{"ProductKey", Int64.Type}, {"ProductName", type text}, {"Category", type text}, {"ListPrice", Currency.Type}, {"StandardUnitCost", Currency.Type}, {"StandardMargin", Currency.Type}}, "en-US")
+				in
+					Typed
+

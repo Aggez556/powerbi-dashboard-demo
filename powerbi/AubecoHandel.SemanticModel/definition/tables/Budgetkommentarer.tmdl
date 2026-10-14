@@ -1,0 +1,23 @@
+/// Fristående tabell för lokal budgetsimulering.
+table Budgetkommentarer
+
+	column Kommentar
+		dataType: string
+		summarizeBy: none
+		sourceColumn: Kommentar
+
+	column Status
+		dataType: string
+		summarizeBy: none
+		sourceColumn: Status
+
+	partition Budgetkommentarer = m
+		mode: import
+		source =
+				let
+					Source = Csv.Document(File.Contents(DataFolder & "/Budgetkommentarer.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+					Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+					Typed = Table.TransformColumnTypes(Headers, {{"Kommentar", type text}, {"Status", type text}}, "en-US")
+				in
+					Typed
+

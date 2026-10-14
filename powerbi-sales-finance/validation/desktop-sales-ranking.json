@@ -1,0 +1,154 @@
+﻿{
+    "status":  "passed",
+    "rows":  [
+                 {
+                     "[Rank]":  1,
+                     "[Namn]":  "Leo Palm",
+                     "[Belopp]":  949993.08,
+                     "[Tillväxt]":  0.45049548065067685,
+                     "[Period]":  "Full"
+                 },
+                 {
+                     "[Rank]":  2,
+                     "[Namn]":  "Alice Sjö",
+                     "[Belopp]":  864208.11,
+                     "[Tillväxt]":  0.070451443733991925,
+                     "[Period]":  "Full"
+                 },
+                 {
+                     "[Rank]":  3,
+                     "[Namn]":  "Ebba Dal",
+                     "[Belopp]":  824070.04,
+                     "[Tillväxt]":  0.01699130799327337,
+                     "[Period]":  "Full"
+                 },
+                 {
+                     "[Rank]":  4,
+                     "[Namn]":  "Arvid Bro",
+                     "[Belopp]":  823023.65,
+                     "[Tillväxt]":  0.40779143815087959,
+                     "[Period]":  "Full"
+                 },
+                 {
+                     "[Rank]":  5,
+                     "[Namn]":  "Clara Ås",
+                     "[Belopp]":  796770.55,
+                     "[Tillväxt]":  0.41042128139562378,
+                     "[Period]":  "Full"
+                 },
+                 {
+                     "[Rank]":  6,
+                     "[Namn]":  "Hugo Vik",
+                     "[Belopp]":  790041.51,
+                     "[Tillväxt]":  0.20223685566876176,
+                     "[Period]":  "Full"
+                 },
+                 {
+                     "[Rank]":  7,
+                     "[Namn]":  "William Dahl",
+                     "[Belopp]":  753781.47,
+                     "[Tillväxt]":  0.32884943455520088,
+                     "[Period]":  "Full"
+                 },
+                 {
+                     "[Rank]":  1,
+                     "[Namn]":  "Hugo Vik",
+                     "[Belopp]":  113769.06,
+                     "[Tillväxt]":  0.95299587441876987,
+                     "[Period]":  "October"
+                 },
+                 {
+                     "[Rank]":  2,
+                     "[Namn]":  "Vera Björk",
+                     "[Belopp]":  101456.83,
+                     "[Tillväxt]":  0.76786921889487125,
+                     "[Period]":  "October"
+                 },
+                 {
+                     "[Rank]":  3,
+                     "[Namn]":  "Maja Holm",
+                     "[Belopp]":  98365.4,
+                     "[Tillväxt]":  0.81731281560128022,
+                     "[Period]":  "October"
+                 },
+                 {
+                     "[Rank]":  4,
+                     "[Namn]":  "Alice Sjö",
+                     "[Belopp]":  95148.11,
+                     "[Tillväxt]":  -0.020565748519316134,
+                     "[Period]":  "October"
+                 },
+                 {
+                     "[Rank]":  5,
+                     "[Namn]":  "Signe Falk",
+                     "[Belopp]":  89099.85,
+                     "[Tillväxt]":  1.0572457888731215,
+                     "[Period]":  "October"
+                 },
+                 {
+                     "[Rank]":  6,
+                     "[Namn]":  "Clara Ås",
+                     "[Belopp]":  70677.84,
+                     "[Tillväxt]":  0.78414020519249139,
+                     "[Period]":  "October"
+                 },
+                 {
+                     "[Rank]":  7,
+                     "[Namn]":  "Leo Palm",
+                     "[Belopp]":  65701.09,
+                     "[Tillväxt]":  -0.24668803346530024,
+                     "[Period]":  "October"
+                 },
+                 {
+                     "[Rank]":  1,
+                     "[Namn]":  "Alice Sjö",
+                     "[Belopp]":  195201.71,
+                     "[Tillväxt]":  0.066524541132109163,
+                     "[Period]":  "SepOct"
+                 },
+                 {
+                     "[Rank]":  2,
+                     "[Namn]":  "Hugo Vik",
+                     "[Belopp]":  177082.14,
+                     "[Tillväxt]":  0.6611965480024935,
+                     "[Period]":  "SepOct"
+                 },
+                 {
+                     "[Rank]":  3,
+                     "[Namn]":  "Selma Wall",
+                     "[Belopp]":  164202.4,
+                     "[Tillväxt]":  1.0890366997163048,
+                     "[Period]":  "SepOct"
+                 },
+                 {
+                     "[Rank]":  4,
+                     "[Namn]":  "Clara Ås",
+                     "[Belopp]":  153767.33,
+                     "[Tillväxt]":  0.38130104342725274,
+                     "[Period]":  "SepOct"
+                 },
+                 {
+                     "[Rank]":  5,
+                     "[Namn]":  "Lucas Strand",
+                     "[Belopp]":  148383.62,
+                     "[Tillväxt]":  0.89939494264832531,
+                     "[Period]":  "SepOct"
+                 },
+                 {
+                     "[Rank]":  6,
+                     "[Namn]":  "Vera Björk",
+                     "[Belopp]":  141396.33,
+                     "[Tillväxt]":  0.52463305960391726,
+                     "[Period]":  "SepOct"
+                 },
+                 {
+                     "[Rank]":  7,
+                     "[Namn]":  "Astrid Nord",
+                     "[Belopp]":  140037.25,
+                     "[Tillväxt]":  2.0231039709997378,
+                     "[Period]":  "SepOct"
+                 }
+             ],
+    "desktopProcessId":  3136,
+    "source":  "Actual Desktop engine, DAX query"
+}

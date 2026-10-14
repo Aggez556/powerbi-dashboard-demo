@@ -1,0 +1,479 @@
+/// Reproducerbar lokal demodata; Försäljning.csv.
+table Försäljning
+	lineageTag: bc26d269-d290-4afb-a444-f71de3be5a31
+
+	/// Vald periodtyp; räknas från modellen och aktuellt periodval.
+	measure 'Vald periodtyp' = SELECTEDVALUE('Periodtyp'[Periodtyp], "R12")
+		formatString: General
+		displayFolder: Period
+		lineageTag: f603b908-e224-474e-a5d1-866abc19a07c
+
+	/// Senaste utfall; räknas från modellen och aktuellt periodval.
+	measure 'Senaste utfall' = EOMONTH(MAXX(ALL('Försäljning'), RELATED('Datum'[Datum])),0)
+		formatString: yyyy-MM-dd
+		displayFolder: Period
+		lineageTag: 4002b709-349a-4c89-8ccf-fc2bd014bf27
+
+	/// Periodslut; räknas från modellen och aktuellt periodval.
+	measure Periodslut = SWITCH([Vald periodtyp], "Helår", MAX('Helårsval'[Slutdatum]), "Månad", MAX('Månadsval'[Slutdatum]), MAX('R12val'[Slutdatum]))
+		formatString: yyyy-MM-dd
+		displayFolder: Period
+		lineageTag: c83864e6-0ee9-4198-a328-32f72b81d779
+
+	/// Periodstart; räknas från modellen och aktuellt periodval.
+	measure Periodstart = VAR e=[Periodslut] RETURN SWITCH([Vald periodtyp], "Helår", DATE(YEAR(e),1,1), "Månad", DATE(YEAR(e),MONTH(e),1), EOMONTH(e,-12)+1)
+		formatString: yyyy-MM-dd
+		displayFolder: Period
+		lineageTag: 2cc90088-ae86-46a6-80d7-ac4b700b697e
+
+	/// Jämförelsestart; räknas från modellen och aktuellt periodval.
+	measure Jämförelsestart = EDATE([Periodstart],-12)
+		formatString: yyyy-MM-dd
+		displayFolder: Period
+		lineageTag: 404ed76f-fbb4-4d47-afa3-85dab035af4f
+
+	/// Jämförelseslut; räknas från modellen och aktuellt periodval.
+	measure Jämförelseslut = EOMONTH([Periodslut],-12)
+		formatString: yyyy-MM-dd
+		displayFolder: Period
+		lineageTag: a5343d8a-39aa-47c9-a534-dc1ba59faecd
+
+	/// Periodtext; räknas från modellen och aktuellt periodval.
+	measure Periodtext = "Vald period: " & FORMAT([Periodstart],"d MMM yyyy","sv-SE") & " – " & FORMAT([Periodslut],"d MMM yyyy","sv-SE") & "    |    Jämför med: " & FORMAT([Jämförelsestart],"d MMM yyyy","sv-SE") & " – " & FORMAT([Jämförelseslut],"d MMM yyyy","sv-SE")
+		formatString: General
+		displayFolder: Period
+		lineageTag: 9f5cb1d7-ce7b-41a6-9083-b8980e65c435
+
+	/// Nettoomsättning bas; räknas från modellen och aktuellt periodval.
+	measure 'Nettoomsättning bas' = SUM('Försäljning'[Nettointäkt])
+		formatString: #,##0
+		isHidden
+		displayFolder: Bas
+		lineageTag: b71523f5-7811-4f02-9a40-d8e1df25de5e
+
+	/// Direkta kostnader bas; räknas från modellen och aktuellt periodval.
+	measure 'Direkta kostnader bas' = SUM('Direkta kostnader'[Belopp])
+		formatString: #,##0
+		isHidden
+		displayFolder: Bas
+		lineageTag: 495a28c4-0ed0-45a9-8725-9dc319afe2e6
+
+	/// Bruttovinst bas; räknas från modellen och aktuellt periodval.
+	measure 'Bruttovinst bas' = [Nettoomsättning bas]-[Direkta kostnader bas]
+		formatString: #,##0
+		isHidden
+		displayFolder: Bas
+		lineageTag: c83c0f70-436f-4722-a54d-dd12cc97c91e
+
+	/// Gemensamma kostnader bas; räknas från modellen och aktuellt periodval.
+	measure 'Gemensamma kostnader bas' = SUM('Gemensamma kostnader'[Belopp])
+		formatString: #,##0
+		isHidden
+		displayFolder: Bas
+		lineageTag: eb7b83fc-09c0-4148-9802-6dae1211ef01
+
+	/// Rörelseresultat bas; räknas från modellen och aktuellt periodval.
+	measure 'Rörelseresultat bas' = [Bruttovinst bas]-[Gemensamma kostnader bas]
+		formatString: #,##0
+		isHidden
+		displayFolder: Bas
+		lineageTag: c25a1f9b-b0c1-4b9f-81cc-88db1760c0ad
+
+	/// Budget bas; räknas från modellen och aktuellt periodval.
+	measure 'Budget bas' = SUM('Budget'[Rörelseresultat])
+		formatString: #,##0
+		isHidden
+		displayFolder: Bas
+		lineageTag: 25cf7b20-973f-4853-9d4c-5f540a53975f
+
+	/// Uppdrag bas; räknas från modellen och aktuellt periodval.
+	measure 'Uppdrag bas' = CALCULATE(DISTINCTCOUNT('Uppdrag'[Uppdragsnyckel]), 'Uppdrag'[Status]="Avslutat")
+		formatString: #,##0
+		isHidden
+		displayFolder: Bas
+		lineageTag: a8cd2fe1-a6af-48b7-969b-2c7cad1ca44f
+
+	/// Kunder bas; räknas från modellen och aktuellt periodval.
+	measure 'Kunder bas' = CALCULATE(DISTINCTCOUNT('Försäljning'[Kundnyckel]), 'Försäljning'[Nettointäkt]>0)
+		formatString: #,##0
+		isHidden
+		displayFolder: Bas
+		lineageTag: 5a6f7f2f-7df6-4233-ad77-3886fbf40aa9
+
+	/// Nettoomsättning; räknas från modellen och aktuellt periodval.
+	measure Nettoomsättning = VAR s=[Periodstart] VAR e=[Periodslut] RETURN CALCULATE([Nettoomsättning bas], REMOVEFILTERS('Datum'), DATESBETWEEN('Datum'[Datum],s,e))
+		formatString: #,##0
+		displayFolder: Nyckeltal
+		lineageTag: 257ca3bb-c343-469b-868c-311646a8db00
+
+	/// Nettoomsättning föregående år; räknas från modellen och aktuellt periodval.
+	measure 'Nettoomsättning föregående år' = VAR s=[Jämförelsestart] VAR e=[Jämförelseslut] RETURN CALCULATE([Nettoomsättning bas], REMOVEFILTERS('Datum'), DATESBETWEEN('Datum'[Datum],s,e))
+		formatString: #,##0
+		displayFolder: Nyckeltal
+		lineageTag: 34f0d05a-2978-4256-8c0a-e74c9fedfc5b
+
+	/// Bruttovinst; räknas från modellen och aktuellt periodval.
+	measure Bruttovinst = VAR s=[Periodstart] VAR e=[Periodslut] RETURN CALCULATE([Bruttovinst bas], REMOVEFILTERS('Datum'), DATESBETWEEN('Datum'[Datum],s,e))
+		formatString: #,##0
+		displayFolder: Nyckeltal
+		lineageTag: 879bebbf-b9e0-4031-8369-9fec67c7f639
+
+	/// Bruttovinst föregående år; räknas från modellen och aktuellt periodval.
+	measure 'Bruttovinst föregående år' = VAR s=[Jämförelsestart] VAR e=[Jämförelseslut] RETURN CALCULATE([Bruttovinst bas], REMOVEFILTERS('Datum'), DATESBETWEEN('Datum'[Datum],s,e))
+		formatString: #,##0
+		displayFolder: Nyckeltal
+		lineageTag: 4ea803ec-7f71-445d-9037-4ac4b4bd65b6
+
+	/// Rörelseresultat; räknas från modellen och aktuellt periodval.
+	measure Rörelseresultat = VAR s=[Periodstart] VAR e=[Periodslut] RETURN CALCULATE([Rörelseresultat bas], REMOVEFILTERS('Datum'), DATESBETWEEN('Datum'[Datum],s,e))
+		formatString: #,##0
+		displayFolder: Nyckeltal
+		lineageTag: d800aca5-8003-44fa-95ee-59b7a7f5c5a7
+
+	/// Rörelseresultat föregående år; räknas från modellen och aktuellt periodval.
+	measure 'Rörelseresultat föregående år' = VAR s=[Jämförelsestart] VAR e=[Jämförelseslut] RETURN CALCULATE([Rörelseresultat bas], REMOVEFILTERS('Datum'), DATESBETWEEN('Datum'[Datum],s,e))
+		formatString: #,##0
+		displayFolder: Nyckeltal
+		lineageTag: 44a00b7b-6922-451b-80ab-0d7176a2ec74
+
+	/// Gemensamma kostnader; räknas från modellen och aktuellt periodval.
+	measure 'Gemensamma kostnader' = VAR s=[Periodstart] VAR e=[Periodslut] RETURN CALCULATE([Gemensamma kostnader bas], REMOVEFILTERS('Datum'), DATESBETWEEN('Datum'[Datum],s,e))
+		formatString: #,##0
+		displayFolder: Nyckeltal
+		lineageTag: b65aa321-3410-4ece-b465-169d4daf57ab
+
+	/// Gemensamma kostnader föregående år; räknas från modellen och aktuellt periodval.
+	measure 'Gemensamma kostnader föregående år' = VAR s=[Jämförelsestart] VAR e=[Jämförelseslut] RETURN CALCULATE([Gemensamma kostnader bas], REMOVEFILTERS('Datum'), DATESBETWEEN('Datum'[Datum],s,e))
+		formatString: #,##0
+		displayFolder: Nyckeltal
+		lineageTag: 28c62cfc-f675-4e28-a060-6e862936411a
+
+	/// Budgetresultat; räknas från modellen och aktuellt periodval.
+	measure Budgetresultat = VAR s=[Periodstart] VAR e=[Periodslut] RETURN CALCULATE([Budget bas], REMOVEFILTERS('Datum'), DATESBETWEEN('Datum'[Datum],s,e))
+		formatString: #,##0
+		displayFolder: Nyckeltal
+		lineageTag: 817588b2-bccf-4794-a62e-83bf65d4db58
+
+	/// Budgetresultat föregående år; räknas från modellen och aktuellt periodval.
+	measure 'Budgetresultat föregående år' = VAR s=[Jämförelsestart] VAR e=[Jämförelseslut] RETURN CALCULATE([Budget bas], REMOVEFILTERS('Datum'), DATESBETWEEN('Datum'[Datum],s,e))
+		formatString: #,##0
+		displayFolder: Nyckeltal
+		lineageTag: 9ae94b56-4664-45bb-a842-911e222a409e
+
+	/// Utförda uppdrag; räknas från modellen och aktuellt periodval.
+	measure 'Utförda uppdrag' = IF(SELECTEDVALUE('Områden'[Områdesnyckel])=1, BLANK(), VAR s=[Periodstart] VAR e=[Periodslut] RETURN CALCULATE([Uppdrag bas], REMOVEFILTERS('Datum'), DATESBETWEEN('Datum'[Datum],s,e)))
+		formatString: #,##0
+		displayFolder: Nyckeltal
+		lineageTag: c4109a71-28d1-4db9-a5df-79a218e968f8
+
+	/// Utförda uppdrag föregående år; räknas från modellen och aktuellt periodval.
+	measure 'Utförda uppdrag föregående år' = IF(SELECTEDVALUE('Områden'[Områdesnyckel])=1, BLANK(), VAR s=[Jämförelsestart] VAR e=[Jämförelseslut] RETURN CALCULATE([Uppdrag bas], REMOVEFILTERS('Datum'), DATESBETWEEN('Datum'[Datum],s,e)))
+		formatString: #,##0
+		displayFolder: Nyckeltal
+		lineageTag: dfcc7c5c-b297-4881-99ab-d78797d35c00
+
+	/// Aktiva kunder; räknas från modellen och aktuellt periodval.
+	measure 'Aktiva kunder' = VAR s=[Periodstart] VAR e=[Periodslut] RETURN CALCULATE([Kunder bas], REMOVEFILTERS('Datum'), DATESBETWEEN('Datum'[Datum],s,e))
+		formatString: #,##0
+		displayFolder: Nyckeltal
+		lineageTag: dec3fb23-fb7e-4a67-9e28-65e8a536a724
+
+	/// Aktiva kunder föregående år; räknas från modellen och aktuellt periodval.
+	measure 'Aktiva kunder föregående år' = VAR s=[Jämförelsestart] VAR e=[Jämförelseslut] RETURN CALCULATE([Kunder bas], REMOVEFILTERS('Datum'), DATESBETWEEN('Datum'[Datum],s,e))
+		formatString: #,##0
+		displayFolder: Nyckeltal
+		lineageTag: 494cc78c-84c3-481a-868f-cb6735acbbc0
+
+	/// Bruttomarginal; räknas från modellen och aktuellt periodval.
+	measure Bruttomarginal = DIVIDE([Bruttovinst],[Nettoomsättning])
+		formatString: 0.0 %
+		displayFolder: Nyckeltal
+		lineageTag: bf6b041d-d259-452c-aafb-879413a03c4d
+
+	/// Rörelsemarginal; räknas från modellen och aktuellt periodval.
+	measure Rörelsemarginal = DIVIDE([Rörelseresultat],[Nettoomsättning])
+		formatString: 0.0 %
+		displayFolder: Nyckeltal
+		lineageTag: 35ea60b8-430b-4fb4-81b1-f734ba8d2716
+
+	/// Resultat mot budget; räknas från modellen och aktuellt periodval.
+	measure 'Resultat mot budget' = [Rörelseresultat]-[Budgetresultat]
+		formatString: #,##0
+		displayFolder: Nyckeltal
+		lineageTag: 3963e64a-72f4-4641-bc05-0a631e75e450
+
+	/// Nettoomsättning Mkr; räknas från modellen och aktuellt periodval.
+	measure 'Nettoomsättning Mkr' = [Nettoomsättning]/1000000
+		formatString: 0.0 "Mkr"
+		displayFolder: Visning
+		lineageTag: 84bf1910-9cf5-469a-8231-d7785913a4aa
+
+	/// Bruttovinst Mkr; räknas från modellen och aktuellt periodval.
+	measure 'Bruttovinst Mkr' = [Bruttovinst]/1000000
+		formatString: 0.00 "Mkr"
+		displayFolder: Visning
+		lineageTag: e7d383ce-6221-4190-9713-cb8d420124fc
+
+	/// Rörelseresultat Mkr; räknas från modellen och aktuellt periodval.
+	measure 'Rörelseresultat Mkr' = [Rörelseresultat]/1000000
+		formatString: 0.00 "Mkr"
+		displayFolder: Visning
+		lineageTag: c8686668-c93f-4124-8a74-620884ae59ef
+
+	/// Budgetresultat Mkr; räknas från modellen och aktuellt periodval.
+	measure 'Budgetresultat Mkr' = [Budgetresultat]/1000000
+		formatString: 0.00 "Mkr"
+		displayFolder: Visning
+		lineageTag: bdec166c-66ee-4abe-b864-ab428f4830f3
+
+	/// Resultat mot budget Mkr; räknas från modellen och aktuellt periodval.
+	measure 'Resultat mot budget Mkr' = [Resultat mot budget]/1000000
+		formatString: 0.00 "Mkr"
+		displayFolder: Visning
+		lineageTag: 44a3c786-72e6-41e2-ba6f-94dc7e232030
+
+	/// Nettoomsättning förändring; räknas från modellen och aktuellt periodval.
+	measure 'Nettoomsättning förändring' = DIVIDE([Nettoomsättning]-[Nettoomsättning föregående år],[Nettoomsättning föregående år])
+		formatString: +0.0 %;-0.0 %;0.0 %
+		displayFolder: Nyckeltal
+		lineageTag: bd746653-3b2a-433a-ac5b-8c1dfbf536ff
+
+	/// Nettoomsättning jämförelsetext; räknas från modellen och aktuellt periodval.
+	measure 'Nettoomsättning jämförelsetext' = FORMAT([Nettoomsättning förändring],"+0.0 %;−0.0 %;0.0 %","sv-SE") & " mot föregående år"
+		formatString: General
+		displayFolder: Visning
+		lineageTag: f2d53dd4-5ec0-4695-8307-f337929b8c14
+
+	/// Rörelseresultat förändring; räknas från modellen och aktuellt periodval.
+	measure 'Rörelseresultat förändring' = DIVIDE([Rörelseresultat]-[Rörelseresultat föregående år],[Rörelseresultat föregående år])
+		formatString: +0.0 %;-0.0 %;0.0 %
+		displayFolder: Nyckeltal
+		lineageTag: 4ff30219-47e3-4192-89a3-8c3f1210acb3
+
+	/// Rörelseresultat jämförelsetext; räknas från modellen och aktuellt periodval.
+	measure 'Rörelseresultat jämförelsetext' = FORMAT([Rörelseresultat förändring],"+0.0 %;−0.0 %;0.0 %","sv-SE") & " mot föregående år"
+		formatString: General
+		displayFolder: Visning
+		lineageTag: 055a6a75-05bd-44d1-b22c-c0ebc5815a68
+
+	/// Utförda uppdrag förändring; räknas från modellen och aktuellt periodval.
+	measure 'Utförda uppdrag förändring' = DIVIDE([Utförda uppdrag]-[Utförda uppdrag föregående år],[Utförda uppdrag föregående år])
+		formatString: +0.0 %;-0.0 %;0.0 %
+		displayFolder: Nyckeltal
+		lineageTag: fabb8d63-b2ef-4487-bcbb-837d2e68891e
+
+	/// Utförda uppdrag jämförelsetext; räknas från modellen och aktuellt periodval.
+	measure 'Utförda uppdrag jämförelsetext' = FORMAT([Utförda uppdrag förändring],"+0.0 %;−0.0 %;0.0 %","sv-SE") & " mot föregående år"
+		formatString: General
+		displayFolder: Visning
+		lineageTag: 61c6904f-a1f7-43d4-8bb9-bb16d0c256f1
+
+	/// Bruttovinst undertext; räknas från modellen och aktuellt periodval.
+	measure 'Bruttovinst undertext' = FORMAT([Bruttomarginal],"0.0 %","sv-SE") & " bruttomarginal"
+		formatString: General
+		displayFolder: Visning
+		lineageTag: 146fec3d-e499-46c6-855e-ab08ccb23093
+
+	/// Rörelseresultat undertext; räknas från modellen och aktuellt periodval.
+	measure 'Rörelseresultat undertext' = FORMAT([Rörelsemarginal],"0.0 %","sv-SE") & " marginal · " & FORMAT([Rörelseresultat förändring],"+0.0 %;−0.0 %;0.0 %","sv-SE") & " mot föregående år"
+		formatString: General
+		displayFolder: Visning
+		lineageTag: 361e391f-d23e-45cd-97a2-ef220c173a51
+
+	/// Budget undertext; räknas från modellen och aktuellt periodval.
+	measure 'Budget undertext' = "Budget: " & FORMAT([Budgetresultat Mkr],"0.00","sv-SE") & " Mkr"
+		formatString: General
+		displayFolder: Visning
+		lineageTag: 9929031f-2682-4626-9d90-d8228f95fdb8
+
+	/// Kunder undertext; räknas från modellen och aktuellt periodval.
+	measure 'Kunder undertext' = FORMAT([Aktiva kunder]-[Aktiva kunder föregående år],"+0;−0;0","sv-SE") & " kunder mot föregående år"
+		formatString: General
+		displayFolder: Visning
+		lineageTag: 2896e7c7-fd93-480d-a113-423758553064
+
+	/// Budgetfärg; räknas från modellen och aktuellt periodval.
+	measure Budgetfärg = IF([Resultat mot budget]<0,"#B42318","#007956")
+		formatString: General
+		displayFolder: Visning
+		lineageTag: 7a0e3e50-1efa-4c66-8133-1a01e2a8b880
+
+	/// Nettoomsättning statusfärg; räknas från modellen och aktuellt periodval.
+	measure 'Nettoomsättning statusfärg' = IF([Nettoomsättning förändring]<0,"#B42318","#007956")
+		formatString: General
+		displayFolder: Visning
+		lineageTag: 1b976487-b897-42de-a13e-15a6122dc05b
+
+	/// Rörelseresultat statusfärg; räknas från modellen och aktuellt periodval.
+	measure 'Rörelseresultat statusfärg' = IF([Rörelseresultat förändring]<0,"#B42318","#007956")
+		formatString: General
+		displayFolder: Visning
+		lineageTag: 7c583a58-17a3-4500-b2c7-bdc0264d90a0
+
+	/// Utförda uppdrag statusfärg; räknas från modellen och aktuellt periodval.
+	measure 'Utförda uppdrag statusfärg' = IF([Utförda uppdrag förändring]<0,"#B42318","#007956")
+		formatString: General
+		displayFolder: Visning
+		lineageTag: 11a74bc6-bc8b-42d4-80f4-ed65b807d65f
+
+	/// Trendstart; räknas från modellen och aktuellt periodval.
+	measure Trendstart = IF([Vald periodtyp]="Helår",[Periodstart],EOMONTH([Periodslut],-12)+1)
+		formatString: yyyy-MM-dd
+		displayFolder: Trend
+		lineageTag: e4fd40fb-0b93-4aeb-afe6-9a15d16672ba
+
+	/// Trendrubrik; räknas från modellen och aktuellt periodval.
+	measure Trendrubrik = IF([Vald periodtyp]="Månad","Omsättning och rörelsemarginal · historisk kontext","Omsättning och rörelsemarginal")
+		formatString: General
+		displayFolder: Trend
+		lineageTag: 53817526-860b-4499-a82e-2a83f5e1ec74
+
+	/// Uppdragsrubrik; räknas från modellen och aktuellt periodval.
+	measure Uppdragsrubrik = IF([Vald periodtyp]="Månad","Utförda uppdrag per månad · historisk kontext","Utförda uppdrag per månad")
+		formatString: General
+		displayFolder: Trend
+		lineageTag: 5cd37439-b840-43c5-9c45-4d8032b05440
+
+	/// Trendomsättning; räknas från modellen och aktuellt periodval.
+	measure Trendomsättning = VAR m=SELECTEDVALUE('Trendaxel'[Månadsstart]) RETURN IF(m>=[Trendstart] && m<=[Periodslut], CALCULATE([Nettoomsättning bas], REMOVEFILTERS('Datum'), DATESBETWEEN('Datum'[Datum],m,EOMONTH(m,0))))
+		formatString: #,##0
+		displayFolder: Trend
+		lineageTag: bbc671fe-eb81-42ce-af89-08d1625ecfa4
+
+	/// Trendresultat; räknas från modellen och aktuellt periodval.
+	measure Trendresultat = VAR m=SELECTEDVALUE('Trendaxel'[Månadsstart]) RETURN IF(m>=[Trendstart] && m<=[Periodslut], CALCULATE([Rörelseresultat bas], REMOVEFILTERS('Datum'), DATESBETWEEN('Datum'[Datum],m,EOMONTH(m,0))))
+		formatString: #,##0
+		displayFolder: Trend
+		lineageTag: 61064e00-9482-4f3c-a4a5-a0281299b54a
+
+	/// Trenduppdrag; räknas från modellen och aktuellt periodval.
+	measure Trenduppdrag = VAR m=SELECTEDVALUE('Trendaxel'[Månadsstart]) RETURN IF(m>=[Trendstart] && m<=[Periodslut], CALCULATE([Uppdrag bas], REMOVEFILTERS('Datum'), DATESBETWEEN('Datum'[Datum],m,EOMONTH(m,0))))
+		formatString: #,##0
+		displayFolder: Trend
+		lineageTag: 87dd3e41-c0f6-4af9-9015-4e50ed23dced
+
+	/// Omsättning; räknas från modellen och aktuellt periodval.
+	measure Omsättning = [Trendomsättning]/1000000
+		formatString: 0.0
+		displayFolder: Trend
+		lineageTag: 2efc61a6-d3fe-48fd-8e2c-2819f4406153
+
+	/// Rörelsemarginal trend; räknas från modellen och aktuellt periodval.
+	measure 'Rörelsemarginal trend' = DIVIDE([Trendresultat],[Trendomsättning])*100
+		formatString: 0.0
+		displayFolder: Trend
+		lineageTag: bf96a294-3e76-449f-bb2d-13b374c034bb
+
+	/// Teknisk service; räknas från modellen och aktuellt periodval.
+	measure 'Teknisk service' = CALCULATE([Trenduppdrag],'Områden'[Områdesnyckel]=2)
+		formatString: #,##0
+		displayFolder: Trend
+		lineageTag: 6e8a13d2-741f-4766-9dad-f5a30c9cc365
+
+	/// Bemanning; räknas från modellen och aktuellt periodval.
+	measure Bemanning = CALCULATE([Trenduppdrag],'Områden'[Områdesnyckel]=3)
+		formatString: #,##0
+		displayFolder: Trend
+		lineageTag: 1776cd60-e7fc-4cc3-9af4-eaf56e959de7
+
+	/// Vald månadsmarkering; räknas från modellen och aktuellt periodval.
+	measure 'Vald månadsmarkering' = IF([Vald periodtyp]="Månad" && EOMONTH(SELECTEDVALUE('Trendaxel'[Månadsstart]),0)=[Periodslut], [Rörelsemarginal trend])
+		formatString: 0.0
+		displayFolder: Trend
+		lineageTag: fc54bfdd-55e3-4b78-b482-54dd8890e11b
+
+	/// Trendfärg; räknas från modellen och aktuellt periodval.
+	measure Trendfärg = IF([Vald periodtyp]="Månad" && EOMONTH(SELECTEDVALUE('Trendaxel'[Månadsstart]),0)=[Periodslut],"#9B570B","#0F3163")
+		formatString: General
+		displayFolder: Trend
+		lineageTag: 8a6593a3-c673-4904-b4fd-776b2b879e3a
+
+	/// Trendomsättning föregående år; räknas från modellen och aktuellt periodval.
+	measure 'Trendomsättning föregående år' = VAR m=SELECTEDVALUE('Trendaxel'[Månadsstart]) RETURN IF(NOT ISBLANK([Trendomsättning]), CALCULATE([Nettoomsättning bas], REMOVEFILTERS('Datum'), DATESBETWEEN('Datum'[Datum],EDATE(m,-12),EOMONTH(m,-12))))
+		formatString: #,##0
+		displayFolder: Trend
+		lineageTag: 105be584-7e07-4d04-a39a-68d7ca728092
+
+	/// Trendomsättning förändring; räknas från modellen och aktuellt periodval.
+	measure 'Trendomsättning förändring' = DIVIDE([Trendomsättning]-[Trendomsättning föregående år],[Trendomsättning föregående år])
+		formatString: +0.0 %;-0.0 %;0.0 %
+		displayFolder: Trend
+		lineageTag: 42867112-27f5-415b-ab0c-a1be2126c471
+
+	/// Bryggsteg; räknas från modellen och aktuellt periodval.
+	measure Bryggsteg = VAR t=[Vald periodtyp] VAR e=[Periodslut] VAR step=SELECTEDVALUE('Bryggaxel'[Ordning]) VAR valid=CALCULATE(COUNTROWS('Bryggaxel'),'Bryggaxel'[Periodtyp]=t,'Bryggaxel'[Slutdatum]=e) RETURN IF(valid>0, SWITCH(step,0,[Rörelseresultat föregående år],1,CALCULATE([Bruttovinst]-[Bruttovinst föregående år],'Områden'[Områdesnyckel]=1),2,CALCULATE([Bruttovinst]-[Bruttovinst föregående år],'Områden'[Områdesnyckel]=2),3,CALCULATE([Bruttovinst]-[Bruttovinst föregående år],'Områden'[Områdesnyckel]=3),4,-([Gemensamma kostnader]-[Gemensamma kostnader föregående år])))/1000000)
+		formatString: 0.00
+		displayFolder: Brygga
+		lineageTag: 6a523fed-921c-4bc8-a521-37f90a534d5e
+
+	/// Bryggans slutetikett; räknas från modellen och aktuellt periodval.
+	measure 'Bryggans slutetikett' = IF([Vald periodtyp]="Helår",FORMAT([Periodslut],"yyyy"),IF([Vald periodtyp]="R12","R12 ","") & FORMAT([Periodslut],"MMM yyyy","sv-SE"))
+		formatString: General
+		displayFolder: Brygga
+		lineageTag: 5ed75460-ff11-4289-898a-1dae9011741e
+
+	/// Bryggkontroll; räknas från modellen och aktuellt periodval.
+	measure Bryggkontroll = [Rörelseresultat föregående år]+SUMX(ALL('Områden'),[Bruttovinst]-[Bruttovinst föregående år])-([Gemensamma kostnader]-[Gemensamma kostnader föregående år])-[Rörelseresultat]
+		formatString: 0
+		isHidden
+		displayFolder: Kontroller
+		lineageTag: 3377f129-b39d-478e-ab00-47ecdaed9d6a
+
+	/// Källfält i lokal demodata: Försäljning.Fakturarad.
+	column Fakturarad
+		dataType: int64
+		isHidden
+		lineageTag: 89d01cd9-64ed-4f03-a9d1-c6e61b471509
+		summarizeBy: none
+		sourceColumn: Fakturarad
+
+	/// Källfält i lokal demodata: Försäljning.Datumnyckel.
+	column Datumnyckel
+		dataType: int64
+		isHidden
+		lineageTag: 96033880-fdb4-4381-9ed8-b1db5604d9e4
+		summarizeBy: none
+		sourceColumn: Datumnyckel
+
+	/// Källfält i lokal demodata: Försäljning.Kundnyckel.
+	column Kundnyckel
+		dataType: int64
+		isHidden
+		lineageTag: 9cec9fec-52c3-460b-9eda-75d45c29db8b
+		summarizeBy: none
+		sourceColumn: Kundnyckel
+
+	/// Källfält i lokal demodata: Försäljning.Områdesnyckel.
+	column Områdesnyckel
+		dataType: int64
+		isHidden
+		lineageTag: 7ad86028-c030-49a8-a815-f5b0b4652017
+		summarizeBy: none
+		sourceColumn: Områdesnyckel
+
+	/// Källfält i lokal demodata: Försäljning.Nettointäkt.
+	column Nettointäkt
+		dataType: decimal
+		isHidden
+		lineageTag: 89136969-0207-496c-819c-aa0a8af23182
+		summarizeBy: none
+		sourceColumn: Nettointäkt
+
+	/// Källfält i lokal demodata: Försäljning.Typ.
+	column Typ
+		dataType: string
+		isHidden
+		lineageTag: 957e4562-ab6a-4271-9fec-c0512584a5cd
+		summarizeBy: none
+		sourceColumn: Typ
+
+	partition Försäljning = m
+		mode: import
+		source =
+				let
+					Source = Csv.Document(File.Contents(DataFolder & "/Försäljning.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+					Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+					Typed = Table.TransformColumnTypes(Headers, {{"Fakturarad", Int64.Type}, {"Datumnyckel", Int64.Type}, {"Kundnyckel", Int64.Type}, {"Områdesnyckel", Int64.Type}, {"Nettointäkt", Currency.Type}, {"Typ", type text}}, "en-US")
+				in
+					Typed
+

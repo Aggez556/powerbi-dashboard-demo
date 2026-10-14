@@ -1,0 +1,30 @@
+/// Reproducerbar lokal demodata; Budget.csv.
+table Budget
+	lineageTag: 9e9cf87e-04a0-44ab-ad34-c4075d0df8f5
+
+	/// Källfält i lokal demodata: Budget.Datumnyckel.
+	column Datumnyckel
+		dataType: int64
+		isHidden
+		lineageTag: d15c3cb3-1123-417f-922e-e4e48e519bf3
+		summarizeBy: none
+		sourceColumn: Datumnyckel
+
+	/// Källfält i lokal demodata: Budget.Rörelseresultat.
+	column Rörelseresultat
+		dataType: decimal
+		isHidden
+		lineageTag: b1a99d2e-8eb9-45d6-b7ee-02e4e7ed7919
+		summarizeBy: none
+		sourceColumn: Rörelseresultat
+
+	partition Budget = m
+		mode: import
+		source =
+				let
+					Source = Csv.Document(File.Contents(DataFolder & "/Budget.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+					Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+					Typed = Table.TransformColumnTypes(Headers, {{"Datumnyckel", Int64.Type}, {"Rörelseresultat", Currency.Type}}, "en-US")
+				in
+					Typed
+

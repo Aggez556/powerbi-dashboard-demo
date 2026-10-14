@@ -1,0 +1,12 @@
+﻿Serie,Typ,Nyckel,Ordning
+Produktförsäljning,Område,1,0
+Teknisk service,Område,2,1
+Bemanning,Område,3,2
+Maskiner,Kategori,1,3
+Rengöringsprodukter,Kategori,2,4
+Förbrukningsmaterial,Kategori,3,5
+Service,Kategori,4,6
+Reparationer,Kategori,5,7
+Installationer,Kategori,6,8
+Diskpersonal,Kategori,7,9
+Städpersonal,Kategori,8,10

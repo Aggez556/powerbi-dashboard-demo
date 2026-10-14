@@ -1,0 +1,21 @@
+EVALUATE
+CALCULATETABLE(
+    ROW("Aktiva",[Kunder aktiva],"Tidigare",[Kunder föregående],"Fortsatta",[Kunder fortsatta],"Helt nya",[Kunder helt nya],"Återaktiverade",[Kunder återaktiverade],"Förlorade",[Kunder förlorade],"Logo churn",[Kunder logo churn],"Revenue churn",[Kunder revenue churn],"Andel nya",[Kunder nyförsäljningsandel],"Intäkt",[Kundintäkt aktuell],"Tidigare intäkt",[Kundintäkt föregående],"Fortsatta intäkt",[Kundintäkt fortsatta A],"Nya intäkt",[Kundintäkt helt nya A],"Återaktiverade intäkt",[Kundintäkt återaktiverade A],"Förlorad intäkt",[Kundintäkt förlorade B],"Minskning",[Kunder minskade köp],"Ökning",[Kunder ökade köp],"Ledning intäkt",[Nettoomsättning],"Ledning bryggfel",[Bryggkontroll]),
+    TREATAS({"R12"},'Periodtyp'[Periodtyp]),TREATAS({"September 2026"},'R12val'[Period])
+)
+
+EVALUATE
+CALCULATETABLE(SUMMARIZECOLUMNS('Kunder'[Kundbransch],"Aktiva",[Kunder aktiva],"Nya",[Kunder nya],"Förlorade",[Kunder förlorade],"Intäkt",[Kundintäkt aktuell],"Churn",[Kunder revenue churn]),TREATAS({"R12"},'Periodtyp'[Periodtyp]),TREATAS({"September 2026"},'R12val'[Period]))
+
+EVALUATE
+CALCULATETABLE(FILTER(SUMMARIZECOLUMNS('Trendaxel'[Månad],'Kundgrupper'[Kundgrupp],"Mkr",[Kundgrupp månadsintäkt]),NOT ISBLANK([Mkr])),TREATAS({"R12"},'Periodtyp'[Periodtyp]),TREATAS({"September 2026"},'R12val'[Period]))
+
+EVALUATE
+UNION(
+CALCULATETABLE(ROW("Period","Helår 2024","Aktiva",[Kunder aktiva],"Intäkt",[Kundintäkt aktuell],"Ledning",[Nettoomsättning],"Churn",[Kunder revenue churn]),TREATAS({"Helår"},'Periodtyp'[Periodtyp]),TREATAS({"2024"},'Helårsval'[Period])),
+CALCULATETABLE(ROW("Period","Helår 2025","Aktiva",[Kunder aktiva],"Intäkt",[Kundintäkt aktuell],"Ledning",[Nettoomsättning],"Churn",[Kunder revenue churn]),TREATAS({"Helår"},'Periodtyp'[Periodtyp]),TREATAS({"2025"},'Helårsval'[Period])),
+CALCULATETABLE(ROW("Period","Månad september, kundanalys R12","Aktiva",[Kunder aktiva],"Intäkt",[Kundintäkt aktuell],"Ledning",[Nettoomsättning],"Churn",[Kunder revenue churn]),TREATAS({"Månad"},'Periodtyp'[Periodtyp]),TREATAS({"September 2026"},'Månadsval'[Period]))
+)
+
+EVALUATE
+CALCULATETABLE(FILTER(SUMMARIZECOLUMNS('Kunder'[Kund],"Synlig",[Kund tabell synlig],"Status",[Kundstatus text],"Intäkt",[Kund omsättning Mkr],"Marginal",[Kund marginal],"Senaste köp",[Kund senaste köp text]),[Synlig]=1),TREATAS({"R12"},'Periodtyp'[Periodtyp]),TREATAS({"September 2026"},'R12val'[Period]),TREATAS({"Förlorade"},'Kundstatusval'[Status]))

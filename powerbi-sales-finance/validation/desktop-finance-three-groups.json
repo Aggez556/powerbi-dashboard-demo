@@ -1,0 +1,259 @@
+﻿{
+    "status":  "passed",
+    "rows":  [
+                 {
+                     "Finansaxel[Kategori grupp]":  "Elektronik",
+                     "Datum[Månadsnummer]":  1,
+                     "Datum[Månad bokstav]":  "J​",
+                     "[Vinst]":  0.0637,
+                     "[Medel]":  0.0864
+                 },
+                 {
+                     "Finansaxel[Kategori grupp]":  "Elektronik",
+                     "Datum[Månadsnummer]":  2,
+                     "Datum[Månad bokstav]":  "F​​",
+                     "[Vinst]":  0.0653,
+                     "[Medel]":  0.0864
+                 },
+                 {
+                     "Finansaxel[Kategori grupp]":  "Elektronik",
+                     "Datum[Månadsnummer]":  3,
+                     "Datum[Månad bokstav]":  "M​​​",
+                     "[Vinst]":  0.1003,
+                     "[Medel]":  0.0864
+                 },
+                 {
+                     "Finansaxel[Kategori grupp]":  "Elektronik",
+                     "Datum[Månadsnummer]":  4,
+                     "Datum[Månad bokstav]":  "A​​​​",
+                     "[Vinst]":  0.0768,
+                     "[Medel]":  0.0864
+                 },
+                 {
+                     "Finansaxel[Kategori grupp]":  "Elektronik",
+                     "Datum[Månadsnummer]":  5,
+                     "Datum[Månad bokstav]":  "M​​​​​",
+                     "[Vinst]":  0.0696,
+                     "[Medel]":  0.0864
+                 },
+                 {
+                     "Finansaxel[Kategori grupp]":  "Elektronik",
+                     "Datum[Månadsnummer]":  6,
+                     "Datum[Månad bokstav]":  "J​​​​​​",
+                     "[Vinst]":  0.0667,
+                     "[Medel]":  0.0864
+                 },
+                 {
+                     "Finansaxel[Kategori grupp]":  "Elektronik",
+                     "Datum[Månadsnummer]":  7,
+                     "Datum[Månad bokstav]":  "J​​​​​​​",
+                     "[Vinst]":  0.0451,
+                     "[Medel]":  0.0864
+                 },
+                 {
+                     "Finansaxel[Kategori grupp]":  "Elektronik",
+                     "Datum[Månadsnummer]":  8,
+                     "Datum[Månad bokstav]":  "A​​​​​​​​",
+                     "[Vinst]":  0.0566,
+                     "[Medel]":  0.0864
+                 },
+                 {
+                     "Finansaxel[Kategori grupp]":  "Elektronik",
+                     "Datum[Månadsnummer]":  9,
+                     "Datum[Månad bokstav]":  "S​​​​​​​​​",
+                     "[Vinst]":  0.0822,
+                     "[Medel]":  0.0864
+                 },
+                 {
+                     "Finansaxel[Kategori grupp]":  "Elektronik",
+                     "Datum[Månadsnummer]":  10,
+                     "Datum[Månad bokstav]":  "O​​​​​​​​​​",
+                     "[Vinst]":  0.0999,
+                     "[Medel]":  0.0864
+                 },
+                 {
+                     "Finansaxel[Kategori grupp]":  "Elektronik",
+                     "Datum[Månadsnummer]":  11,
+                     "Datum[Månad bokstav]":  "N​​​​​​​​​​​",
+                     "[Vinst]":  0.1398,
+                     "[Medel]":  0.0864
+                 },
+                 {
+                     "Finansaxel[Kategori grupp]":  "Elektronik",
+                     "Datum[Månadsnummer]":  12,
+                     "Datum[Månad bokstav]":  "D​​​​​​​​​​​​",
+                     "[Vinst]":  0.1705,
+                     "[Medel]":  0.0864
+                 },
+                 {
+                     "Finansaxel[Kategori grupp]":  "Hem och kök",
+                     "Datum[Månadsnummer]":  1,
+                     "Datum[Månad bokstav]":  "J​",
+                     "[Vinst]":  0.0382,
+                     "[Medel]":  0.0527
+                 },
+                 {
+                     "Finansaxel[Kategori grupp]":  "Hem och kök",
+                     "Datum[Månadsnummer]":  2,
+                     "Datum[Månad bokstav]":  "F​​",
+                     "[Vinst]":  0.0332,
+                     "[Medel]":  0.0527
+                 },
+                 {
+                     "Finansaxel[Kategori grupp]":  "Hem och kök",
+                     "Datum[Månadsnummer]":  3,
+                     "Datum[Månad bokstav]":  "M​​​",
+                     "[Vinst]":  0.0556,
+                     "[Medel]":  0.0527
+                 },
+                 {
+                     "Finansaxel[Kategori grupp]":  "Hem och kök",
+                     "Datum[Månadsnummer]":  4,
+                     "Datum[Månad bokstav]":  "A​​​​",
+                     "[Vinst]":  0.0601,
+                     "[Medel]":  0.0527
+                 },
+                 {
+                     "Finansaxel[Kategori grupp]":  "Hem och kök",
+                     "Datum[Månadsnummer]":  5,
+                     "Datum[Månad bokstav]":  "M​​​​​",
+                     "[Vinst]":  0.0329,
+                     "[Medel]":  0.0527
+                 },
+                 {
+                     "Finansaxel[Kategori grupp]":  "Hem och kök",
+                     "Datum[Månadsnummer]":  6,
+                     "Datum[Månad bokstav]":  "J​​​​​​",
+                     "[Vinst]":  0.0393,
+                     "[Medel]":  0.0527
+                 },
+                 {
+                     "Finansaxel[Kategori grupp]":  "Hem och kök",
+                     "Datum[Månadsnummer]":  7,
+                     "Datum[Månad bokstav]":  "J​​​​​​​",
+                     "[Vinst]":  0.0359,
+                     "[Medel]":  0.0527
+                 },
+                 {
+                     "Finansaxel[Kategori grupp]":  "Hem och kök",
+                     "Datum[Månadsnummer]":  8,
+                     "Datum[Månad bokstav]":  "A​​​​​​​​",
+                     "[Vinst]":  0.0379,
+                     "[Medel]":  0.0527
+                 },
+                 {
+                     "Finansaxel[Kategori grupp]":  "Hem och kök",
+                     "Datum[Månadsnummer]":  9,
+                     "Datum[Månad bokstav]":  "S​​​​​​​​​",
+                     "[Vinst]":  0.0558,
+                     "[Medel]":  0.0527
+                 },
+                 {
+                     "Finansaxel[Kategori grupp]":  "Hem och kök",
+                     "Datum[Månadsnummer]":  10,
+                     "Datum[Månad bokstav]":  "O​​​​​​​​​​",
+                     "[Vinst]":  0.0674,
+                     "[Medel]":  0.0527
+                 },
+                 {
+                     "Finansaxel[Kategori grupp]":  "Hem och kök",
+                     "Datum[Månadsnummer]":  11,
+                     "Datum[Månad bokstav]":  "N​​​​​​​​​​​",
+                     "[Vinst]":  0.0836,
+                     "[Medel]":  0.0527
+                 },
+                 {
+                     "Finansaxel[Kategori grupp]":  "Hem och kök",
+                     "Datum[Månadsnummer]":  12,
+                     "Datum[Månad bokstav]":  "D​​​​​​​​​​​​",
+                     "[Vinst]":  0.0919,
+                     "[Medel]":  0.0527
+                 },
+                 {
+                     "Finansaxel[Kategori grupp]":  "Övrigt",
+                     "Datum[Månadsnummer]":  1,
+                     "Datum[Månad bokstav]":  "J​",
+                     "[Vinst]":  0.1627,
+                     "[Medel]":  0.2024
+                 },
+                 {
+                     "Finansaxel[Kategori grupp]":  "Övrigt",
+                     "Datum[Månadsnummer]":  2,
+                     "Datum[Månad bokstav]":  "F​​",
+                     "[Vinst]":  0.1274,
+                     "[Medel]":  0.2024
+                 },
+                 {
+                     "Finansaxel[Kategori grupp]":  "Övrigt",
+                     "Datum[Månadsnummer]":  3,
+                     "Datum[Månad bokstav]":  "M​​​",
+                     "[Vinst]":  0.1401,
+                     "[Medel]":  0.2024
+                 },
+                 {
+                     "Finansaxel[Kategori grupp]":  "Övrigt",
+                     "Datum[Månadsnummer]":  4,
+                     "Datum[Månad bokstav]":  "A​​​​",
+                     "[Vinst]":  0.2385,
+                     "[Medel]":  0.2024
+                 },
+                 {
+                     "Finansaxel[Kategori grupp]":  "Övrigt",
+                     "Datum[Månadsnummer]":  5,
+                     "Datum[Månad bokstav]":  "M​​​​​",
+                     "[Vinst]":  0.2248,
+                     "[Medel]":  0.2024
+                 },
+                 {
+                     "Finansaxel[Kategori grupp]":  "Övrigt",
+                     "Datum[Månadsnummer]":  6,
+                     "Datum[Månad bokstav]":  "J​​​​​​",
+                     "[Vinst]":  0.2309,
+                     "[Medel]":  0.2024
+                 },
+                 {
+                     "Finansaxel[Kategori grupp]":  "Övrigt",
+                     "Datum[Månadsnummer]":  7,
+                     "Datum[Månad bokstav]":  "J​​​​​​​",
+                     "[Vinst]":  0.2024,
+                     "[Medel]":  0.2024
+                 },
+                 {
+                     "Finansaxel[Kategori grupp]":  "Övrigt",
+                     "Datum[Månadsnummer]":  8,
+                     "Datum[Månad bokstav]":  "A​​​​​​​​",
+                     "[Vinst]":  0.2359,
+                     "[Medel]":  0.2024
+                 },
+                 {
+                     "Finansaxel[Kategori grupp]":  "Övrigt",
+                     "Datum[Månadsnummer]":  9,
+                     "Datum[Månad bokstav]":  "S​​​​​​​​​",
+                     "[Vinst]":  0.1545,
+                     "[Medel]":  0.2024
+                 },
+                 {
+                     "Finansaxel[Kategori grupp]":  "Övrigt",
+                     "Datum[Månadsnummer]":  10,
+                     "Datum[Månad bokstav]":  "O​​​​​​​​​​",
+                     "[Vinst]":  0.2184,
+                     "[Medel]":  0.2024
+                 },
+                 {
+                     "Finansaxel[Kategori grupp]":  "Övrigt",
+                     "Datum[Månadsnummer]":  11,
+                     "Datum[Månad bokstav]":  "N​​​​​​​​​​​",
+                     "[Vinst]":  0.2385,
+                     "[Medel]":  0.2024
+                 },
+                 {
+                     "Finansaxel[Kategori grupp]":  "Övrigt",
+                     "Datum[Månadsnummer]":  12,
+                     "Datum[Månad bokstav]":  "D​​​​​​​​​​​​",
+                     "[Vinst]":  0.2544,
+                     "[Medel]":  0.2024
+                 }
+             ],
+    "desktopProcessId":  22340,
+    "source":  "Actual Desktop engine, DAX query"
+}

@@ -1,0 +1,10 @@
+EVALUATE
+SUMMARIZECOLUMNS(
+    'Datum'[År],
+    'Analysaxel'[Typ],
+    'Analysaxel'[Namn],
+    "Omsättning", [Analysvärde],
+    "Föregående år", [Analys föregående år],
+    "Årsförändring", [Analys årsförändring]
+)
+ORDER BY 'Datum'[År], 'Analysaxel'[Typ], 'Analysaxel'[Namn]

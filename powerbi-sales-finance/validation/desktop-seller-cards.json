@@ -1,0 +1,21 @@
+﻿{
+    "status":  "passed",
+    "rows":  [
+                 {
+                     "[Namn 1]":  "Leo Palm",
+                     "[Belopp 1]":  949993.08,
+                     "[Förändring 1]":  0.45049548065067685,
+                     "[Namn 2]":  "Alice Sjö",
+                     "[Belopp 2]":  864208.11,
+                     "[Förändring 2]":  0.070451443733991925,
+                     "[Namn 3]":  "Ebba Dal",
+                     "[Belopp 3]":  824070.04,
+                     "[Förändring 3]":  0.01699130799327337,
+                     "[Initialer]":  "LP",
+                     "[Segment]":  "▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰",
+                     "[Andel]":  "Topp 3 står för 17,2 % av omsättningen"
+                 }
+             ],
+    "desktopProcessId":  33908,
+    "source":  "Actual Desktop engine, DAX query"
+}

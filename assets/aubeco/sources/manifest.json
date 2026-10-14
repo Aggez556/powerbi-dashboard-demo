@@ -1,0 +1,47 @@
+{
+  "retrieved_date": "2026-10-06",
+  "entries": [
+    {
+      "url": "https://www.aubeco.se/",
+      "resolved_url": "https://www.aubeco.se/",
+      "file": "assets/aubeco/sources/home.html",
+      "content_type": "text/html; charset=utf-8",
+      "sha256": "b0b41e36eeb59b21623d6cd5fc010dbd729edc2822f3faa8d27e1d3f7cd320bc"
+    },
+    {
+      "url": "https://www.aubeco.se/_next/static/chunks/04e247_t1fs-p.css",
+      "resolved_url": "https://www.aubeco.se/_next/static/chunks/04e247_t1fs-p.css",
+      "file": "assets/aubeco/sources/04e247_t1fs-p.css",
+      "content_type": "text/css; charset=utf-8",
+      "sha256": "b147ec055d4928d470ed38a79c3fd4de86ff97279daad25f889805d5149ee2b5"
+    },
+    {
+      "url": "https://www.aubeco.se/aubeco-google-bild.png",
+      "resolved_url": "https://www.aubeco.se/aubeco-google-bild.png",
+      "file": "assets/aubeco/aubeco-original.png",
+      "content_type": "image/png",
+      "sha256": "f4167b371e58ab7f8c913f8e6916ad9206d623b91ff3866744fafa31f4d198bf"
+    },
+    {
+      "url": "https://www.aubeco.se/favicon.png",
+      "resolved_url": "https://www.aubeco.se/favicon.png",
+      "file": "assets/aubeco/favicon-original.png",
+      "content_type": "image/png",
+      "sha256": "4a089c1d91142180c90997ae49712ee28807fb83819ee3f551b116b5ac26c8e2"
+    },
+    {
+      "url": "https://api.github.com/repos/microsoft/powerbi-desktop-samples/contents/Report%20Theme%20JSON%20Schema",
+      "resolved_url": "https://api.github.com/repos/microsoft/powerbi-desktop-samples/contents/Report%20Theme%20JSON%20Schema",
+      "file": "themes/schema/catalog.json",
+      "content_type": "application/json; charset=utf-8",
+      "sha256": "48ce5a8bf89cf9043b6cd7bc4482aa2c5b3eafc770b8c6414e6d51d3a19007de"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/microsoft/powerbi-desktop-samples/main/Report%20Theme%20JSON%20Schema/reportThemeSchema-2.157.json",
+      "resolved_url": "https://raw.githubusercontent.com/microsoft/powerbi-desktop-samples/main/Report%20Theme%20JSON%20Schema/reportThemeSchema-2.157.json",
+      "file": "themes/schema/reportThemeSchema-2.157.json",
+      "content_type": "text/plain; charset=utf-8",
+      "sha256": "c74fc80a1262a6127ddddea1722046eeaeb3fbb42789d6cae1f7c83e8f838c09"
+    }
+  ]
+}

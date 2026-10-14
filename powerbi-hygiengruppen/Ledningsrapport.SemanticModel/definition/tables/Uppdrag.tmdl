@@ -1,0 +1,61 @@
+/// Reproducerbar lokal demodata; Uppdrag.csv.
+table Uppdrag
+	lineageTag: 502593bb-5b9b-4da4-91bd-291b6d96250d
+
+	/// Källfält i lokal demodata: Uppdrag.Uppdragsnyckel.
+	column Uppdragsnyckel
+		dataType: int64
+		isHidden
+		lineageTag: e3fd6a83-facf-4bd2-b6fa-77213dd3e8bf
+		summarizeBy: none
+		sourceColumn: Uppdragsnyckel
+
+	/// Källfält i lokal demodata: Uppdrag.Datumnyckel.
+	column Datumnyckel
+		dataType: int64
+		isHidden
+		lineageTag: b6a6c14b-6f59-49ed-bd0e-0b785ac2bd47
+		summarizeBy: none
+		sourceColumn: Datumnyckel
+
+	/// Källfält i lokal demodata: Uppdrag.Kundnyckel.
+	column Kundnyckel
+		dataType: int64
+		isHidden
+		lineageTag: 75fa2caa-e4c2-4b84-91fe-5dd9c4fad0a9
+		summarizeBy: none
+		sourceColumn: Kundnyckel
+
+	/// Källfält i lokal demodata: Uppdrag.Områdesnyckel.
+	column Områdesnyckel
+		dataType: int64
+		isHidden
+		lineageTag: a7e5ebdc-8639-4b20-9afb-821a59c2a1e4
+		summarizeBy: none
+		sourceColumn: Områdesnyckel
+
+	/// Källfält i lokal demodata: Uppdrag.Status.
+	column Status
+		dataType: string
+		lineageTag: 8522c803-f12c-448e-9068-6c16e5c2434a
+		summarizeBy: none
+		sourceColumn: Status
+
+	/// Källfält i lokal demodata: Uppdrag.Timmar.
+	column Timmar
+		dataType: int64
+		isHidden
+		lineageTag: 0790ad28-c3f2-4f49-9ca9-817b5b582b67
+		summarizeBy: none
+		sourceColumn: Timmar
+
+	partition Uppdrag = m
+		mode: import
+		source =
+				let
+					Source = Csv.Document(File.Contents(DataFolder & "/Uppdrag.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+					Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+					Typed = Table.TransformColumnTypes(Headers, {{"Uppdragsnyckel", Int64.Type}, {"Datumnyckel", Int64.Type}, {"Kundnyckel", Int64.Type}, {"Områdesnyckel", Int64.Type}, {"Status", type text}, {"Timmar", Int64.Type}}, "en-US")
+				in
+					Typed
+

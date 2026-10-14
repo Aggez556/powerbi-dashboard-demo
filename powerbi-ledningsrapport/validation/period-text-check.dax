@@ -1,0 +1,7 @@
+EVALUATE
+UNION(
+    CALCULATETABLE(ROW("Fall","R12 februari 2025","Text",[Periodtext],"Start",FORMAT([Periodstart],"yyyy-MM-dd"),"Slut",FORMAT([Periodslut],"yyyy-MM-dd")),TREATAS({"R12"},'Periodtyp'[Periodtyp]),TREATAS({"Februari 2025"},'R12val'[Period])),
+    CALCULATETABLE(ROW("Fall","R12 oktober 2026","Text",[Periodtext],"Start",FORMAT([Periodstart],"yyyy-MM-dd"),"Slut",FORMAT([Periodslut],"yyyy-MM-dd")),TREATAS({"R12"},'Periodtyp'[Periodtyp]),TREATAS({"Oktober 2026"},'R12val'[Period])),
+    CALCULATETABLE(ROW("Fall","Helår 2025","Text",[Periodtext],"Start",FORMAT([Periodstart],"yyyy-MM-dd"),"Slut",FORMAT([Periodslut],"yyyy-MM-dd")),TREATAS({"Helår"},'Periodtyp'[Periodtyp]),TREATAS({"2025"},'Helårsval'[Period])),
+    CALCULATETABLE(ROW("Fall","Månad februari 2025","Text",[Periodtext],"Start",FORMAT([Periodstart],"yyyy-MM-dd"),"Slut",FORMAT([Periodslut],"yyyy-MM-dd")),TREATAS({"Månad"},'Periodtyp'[Periodtyp]),TREATAS({"Februari 2025"},'Månadsval'[Period]))
+)

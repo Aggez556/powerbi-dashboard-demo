@@ -1,0 +1,7486 @@
+{
+  "pages": [
+    {
+      "name": "Hem",
+      "id": "beecc161391d400da9f5",
+      "status": "built"
+    },
+    {
+      "name": "Ledningsöversikt",
+      "id": "9ae7ca224ccdd9598334",
+      "status": "built"
+    },
+    {
+      "name": "Ekonomi och lönsamhet",
+      "id": "6ed311aec406fe11b4dd",
+      "status": "built"
+    },
+    {
+      "name": "Försäljningsanalys",
+      "id": "64292d897630eb848ace",
+      "status": "built"
+    },
+    {
+      "name": "Transaktioner",
+      "id": "c29a05a83c27e1d92518",
+      "status": "built"
+    }
+  ],
+  "placements": [
+    {
+      "page": "beecc161391d400da9f5",
+      "key": "icon3",
+      "type": "image",
+      "box": [
+        1458,
+        416,
+        64,
+        64
+      ],
+      "fields": []
+    },
+    {
+      "page": "beecc161391d400da9f5",
+      "key": "097ab0249d2439be71f3",
+      "type": "image",
+      "box": [
+        88,
+        950,
+        56,
+        56
+      ],
+      "fields": []
+    },
+    {
+      "page": "beecc161391d400da9f5",
+      "key": "icon2",
+      "type": "image",
+      "box": [
+        1004,
+        416,
+        64,
+        64
+      ],
+      "fields": []
+    },
+    {
+      "page": "beecc161391d400da9f5",
+      "key": "tag2",
+      "type": "textbox",
+      "box": [
+        1004,
+        504,
+        352,
+        36
+      ],
+      "fields": []
+    },
+    {
+      "page": "beecc161391d400da9f5",
+      "key": "description1",
+      "type": "textbox",
+      "box": [
+        550,
+        612,
+        368,
+        72
+      ],
+      "fields": []
+    },
+    {
+      "page": "beecc161391d400da9f5",
+      "key": "portal-grid",
+      "type": "image",
+      "box": [
+        0,
+        0,
+        1920,
+        1080
+      ],
+      "fields": []
+    },
+    {
+      "page": "beecc161391d400da9f5",
+      "key": "panel2",
+      "type": "textbox",
+      "box": [
+        972,
+        384,
+        430,
+        384
+      ],
+      "fields": []
+    },
+    {
+      "page": "beecc161391d400da9f5",
+      "key": "description3",
+      "type": "textbox",
+      "box": [
+        1458,
+        612,
+        368,
+        72
+      ],
+      "fields": []
+    },
+    {
+      "page": "beecc161391d400da9f5",
+      "key": "area3",
+      "type": "textbox",
+      "box": [
+        1458,
+        548,
+        368,
+        56
+      ],
+      "fields": []
+    },
+    {
+      "page": "beecc161391d400da9f5",
+      "key": "benefit3",
+      "type": "textbox",
+      "box": [
+        1504,
+        946,
+        336,
+        40
+      ],
+      "fields": []
+    },
+    {
+      "page": "beecc161391d400da9f5",
+      "key": "benefit0",
+      "type": "textbox",
+      "box": [
+        160,
+        946,
+        336,
+        40
+      ],
+      "fields": []
+    },
+    {
+      "page": "beecc161391d400da9f5",
+      "key": "523d2e25c43372b8a5c1",
+      "type": "image",
+      "box": [
+        984,
+        950,
+        56,
+        56
+      ],
+      "fields": []
+    },
+    {
+      "page": "beecc161391d400da9f5",
+      "key": "benefitdesc0",
+      "type": "textbox",
+      "box": [
+        160,
+        986,
+        336,
+        32
+      ],
+      "fields": []
+    },
+    {
+      "page": "beecc161391d400da9f5",
+      "key": "area1",
+      "type": "textbox",
+      "box": [
+        550,
+        548,
+        368,
+        56
+      ],
+      "fields": []
+    },
+    {
+      "page": "beecc161391d400da9f5",
+      "key": "footer-panel",
+      "type": "textbox",
+      "box": [
+        64,
+        928,
+        1792,
+        104
+      ],
+      "fields": []
+    },
+    {
+      "page": "beecc161391d400da9f5",
+      "key": "logo",
+      "type": "image",
+      "box": [
+        64,
+        40,
+        224,
+        76
+      ],
+      "fields": []
+    },
+    {
+      "page": "beecc161391d400da9f5",
+      "key": "icon1",
+      "type": "image",
+      "box": [
+        550,
+        416,
+        64,
+        64
+      ],
+      "fields": []
+    },
+    {
+      "page": "beecc161391d400da9f5",
+      "key": "74c5fa320624f80ba79e",
+      "type": "cardVisual",
+      "box": [
+        1480,
+        30,
+        400,
+        48
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Rapportstatus"
+              }
+            },
+            "Property": "Senast uppdaterad"
+          }
+        }
+      ]
+    },
+    {
+      "page": "beecc161391d400da9f5",
+      "key": "open3",
+      "type": "actionButton",
+      "box": [
+        1458,
+        696,
+        366,
+        48
+      ],
+      "fields": []
+    },
+    {
+      "page": "beecc161391d400da9f5",
+      "key": "title",
+      "type": "textbox",
+      "box": [
+        64,
+        192,
+        1200,
+        80
+      ],
+      "fields": []
+    },
+    {
+      "page": "beecc161391d400da9f5",
+      "key": "benefit1",
+      "type": "textbox",
+      "box": [
+        608,
+        946,
+        336,
+        40
+      ],
+      "fields": []
+    },
+    {
+      "page": "beecc161391d400da9f5",
+      "key": "description2",
+      "type": "textbox",
+      "box": [
+        1004,
+        612,
+        368,
+        72
+      ],
+      "fields": []
+    },
+    {
+      "page": "beecc161391d400da9f5",
+      "key": "benefit2",
+      "type": "textbox",
+      "box": [
+        1056,
+        946,
+        336,
+        40
+      ],
+      "fields": []
+    },
+    {
+      "page": "beecc161391d400da9f5",
+      "key": "tag3",
+      "type": "textbox",
+      "box": [
+        1458,
+        504,
+        352,
+        36
+      ],
+      "fields": []
+    },
+    {
+      "page": "beecc161391d400da9f5",
+      "key": "intro",
+      "type": "textbox",
+      "box": [
+        64,
+        280,
+        1200,
+        64
+      ],
+      "fields": []
+    },
+    {
+      "page": "beecc161391d400da9f5",
+      "key": "icon0",
+      "type": "image",
+      "box": [
+        96,
+        416,
+        64,
+        64
+      ],
+      "fields": []
+    },
+    {
+      "page": "beecc161391d400da9f5",
+      "key": "bc4accfd01fce23b707c",
+      "type": "image",
+      "box": [
+        536,
+        950,
+        56,
+        56
+      ],
+      "fields": []
+    },
+    {
+      "page": "beecc161391d400da9f5",
+      "key": "c05539627bb66cf01ea2",
+      "type": "image",
+      "box": [
+        1432,
+        950,
+        56,
+        56
+      ],
+      "fields": []
+    },
+    {
+      "page": "beecc161391d400da9f5",
+      "key": "open2",
+      "type": "actionButton",
+      "box": [
+        1004,
+        696,
+        366,
+        48
+      ],
+      "fields": []
+    },
+    {
+      "page": "beecc161391d400da9f5",
+      "key": "description0",
+      "type": "textbox",
+      "box": [
+        96,
+        612,
+        368,
+        72
+      ],
+      "fields": []
+    },
+    {
+      "page": "beecc161391d400da9f5",
+      "key": "area2",
+      "type": "textbox",
+      "box": [
+        1004,
+        548,
+        368,
+        56
+      ],
+      "fields": []
+    },
+    {
+      "page": "beecc161391d400da9f5",
+      "key": "area0",
+      "type": "textbox",
+      "box": [
+        96,
+        548,
+        368,
+        56
+      ],
+      "fields": []
+    },
+    {
+      "page": "beecc161391d400da9f5",
+      "key": "benefitdesc2",
+      "type": "textbox",
+      "box": [
+        1056,
+        986,
+        336,
+        32
+      ],
+      "fields": []
+    },
+    {
+      "page": "beecc161391d400da9f5",
+      "key": "benefitdesc1",
+      "type": "textbox",
+      "box": [
+        608,
+        986,
+        336,
+        32
+      ],
+      "fields": []
+    },
+    {
+      "page": "beecc161391d400da9f5",
+      "key": "panel1",
+      "type": "textbox",
+      "box": [
+        518,
+        384,
+        430,
+        384
+      ],
+      "fields": []
+    },
+    {
+      "page": "beecc161391d400da9f5",
+      "key": "panel0",
+      "type": "textbox",
+      "box": [
+        64,
+        384,
+        430,
+        384
+      ],
+      "fields": []
+    },
+    {
+      "page": "beecc161391d400da9f5",
+      "key": "tag1",
+      "type": "textbox",
+      "box": [
+        550,
+        504,
+        352,
+        36
+      ],
+      "fields": []
+    },
+    {
+      "page": "beecc161391d400da9f5",
+      "key": "tag0",
+      "type": "textbox",
+      "box": [
+        96,
+        504,
+        352,
+        36
+      ],
+      "fields": []
+    },
+    {
+      "page": "beecc161391d400da9f5",
+      "key": "benefitdesc3",
+      "type": "textbox",
+      "box": [
+        1504,
+        986,
+        336,
+        32
+      ],
+      "fields": []
+    },
+    {
+      "page": "beecc161391d400da9f5",
+      "key": "panel3",
+      "type": "textbox",
+      "box": [
+        1426,
+        384,
+        430,
+        384
+      ],
+      "fields": []
+    },
+    {
+      "page": "beecc161391d400da9f5",
+      "key": "open1",
+      "type": "actionButton",
+      "box": [
+        550,
+        696,
+        366,
+        48
+      ],
+      "fields": []
+    },
+    {
+      "page": "beecc161391d400da9f5",
+      "key": "open0",
+      "type": "actionButton",
+      "box": [
+        96,
+        696,
+        366,
+        48
+      ],
+      "fields": []
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "seller-separator-1",
+      "type": "textbox",
+      "box": [
+        1676,
+        594,
+        10,
+        24
+      ],
+      "fields": []
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "kpi-label0",
+      "type": "textbox",
+      "box": [
+        352,
+        292,
+        232,
+        32
+      ],
+      "fields": []
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "seller-growth-1",
+      "type": "cardVisual",
+      "box": [
+        1690,
+        594,
+        144,
+        24
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Säljartopp 1 förändring etikett"
+          }
+        }
+      ]
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "trend-choice",
+      "type": "advancedSlicerVisual",
+      "box": [
+        1048,
+        504,
+        200,
+        40
+      ],
+      "fields": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Trendval"
+              }
+            },
+            "Property": "Mått"
+          }
+        }
+      ]
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "country",
+      "type": "clusteredBarChart",
+      "box": [
+        336,
+        868,
+        512,
+        180
+      ],
+      "fields": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Analysaxel"
+              }
+            },
+            "Property": "Namn"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Analys årsförändring"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Marknadsbelopp etikett"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Analysvärde"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Analys föregående år"
+          }
+        }
+      ]
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "trend-heading",
+      "type": "textbox",
+      "box": [
+        344,
+        504,
+        904,
+        32
+      ],
+      "fields": []
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "suite-title",
+      "type": "textbox",
+      "box": [
+        320,
+        24,
+        1256,
+        56
+      ],
+      "fields": []
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "seller-badge-1",
+      "type": "textbox",
+      "box": [
+        1332,
+        574,
+        44,
+        44
+      ],
+      "fields": []
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "seller-name-3",
+      "type": "cardVisual",
+      "box": [
+        1392,
+        707,
+        424,
+        26
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Säljartopp 3 namn"
+          }
+        }
+      ]
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "kpi-value4",
+      "type": "cardVisual",
+      "box": [
+        1600,
+        326,
+        232,
+        48
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Leveranser"
+          }
+        }
+      ]
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "market-heading",
+      "type": "textbox",
+      "box": [
+        344,
+        800,
+        904,
+        32
+      ],
+      "fields": []
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "seller-growth-2",
+      "type": "cardVisual",
+      "box": [
+        1690,
+        662,
+        144,
+        24
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Säljartopp 2 förändring etikett"
+          }
+        }
+      ]
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "kpi-panel2",
+      "type": "textbox",
+      "box": [
+        944,
+        276,
+        296,
+        200
+      ],
+      "fields": []
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "trend-legend",
+      "type": "textbox",
+      "box": [
+        1076,
+        736,
+        80,
+        24
+      ],
+      "fields": []
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "kpi-panel0",
+      "type": "textbox",
+      "box": [
+        320,
+        276,
+        296,
+        200
+      ],
+      "fields": []
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "seller-badge-3",
+      "type": "textbox",
+      "box": [
+        1332,
+        710,
+        44,
+        44
+      ],
+      "fields": []
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "trend-panel",
+      "type": "textbox",
+      "box": [
+        320,
+        488,
+        952,
+        272
+      ],
+      "fields": []
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "kpi-panel4",
+      "type": "textbox",
+      "box": [
+        1568,
+        276,
+        296,
+        200
+      ],
+      "fields": []
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "kpi-label3",
+      "type": "textbox",
+      "box": [
+        1288,
+        292,
+        232,
+        32
+      ],
+      "fields": []
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "seller-separator-2",
+      "type": "textbox",
+      "box": [
+        1676,
+        662,
+        10,
+        24
+      ],
+      "fields": []
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "sparkline3",
+      "type": "lineChart",
+      "box": [
+        1288,
+        412,
+        232,
+        56
+      ],
+      "fields": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Datum"
+              }
+            },
+            "Property": "Månadsnummer"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Bruttomarginal"
+          }
+        }
+      ]
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "products",
+      "type": "clusteredBarChart",
+      "box": [
+        1312,
+        856,
+        536,
+        184
+      ],
+      "fields": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Produkter"
+              }
+            },
+            "Property": "Produkt"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Produktvärde etikett"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Produktaxel max"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Produktvärde"
+          }
+        }
+      ]
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "sparkline1",
+      "type": "lineChart",
+      "box": [
+        664,
+        412,
+        232,
+        56
+      ],
+      "fields": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Datum"
+              }
+            },
+            "Property": "Månadsnummer"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Sålda enheter"
+          }
+        }
+      ]
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "products-heading",
+      "type": "textbox",
+      "box": [
+        1320,
+        784,
+        208,
+        32
+      ],
+      "fields": []
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "trend-legend-prior",
+      "type": "textbox",
+      "box": [
+        1156,
+        736,
+        100,
+        24
+      ],
+      "fields": []
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "seller-segments-2",
+      "type": "cardVisual",
+      "box": [
+        1392,
+        662,
+        192,
+        24
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Säljartopp 2 segment"
+          }
+        }
+      ]
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "seller-separator-3",
+      "type": "textbox",
+      "box": [
+        1676,
+        730,
+        10,
+        24
+      ],
+      "fields": []
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "month",
+      "type": "slicer",
+      "box": [
+        1400,
+        136,
+        248,
+        80
+      ],
+      "fields": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Datum"
+              }
+            },
+            "Property": "Månad"
+          }
+        }
+      ]
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "logo",
+      "type": "image",
+      "box": [
+        24,
+        12,
+        240,
+        72
+      ],
+      "fields": []
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "team-heading",
+      "type": "textbox",
+      "box": [
+        880,
+        800,
+        368,
+        32
+      ],
+      "fields": []
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "year",
+      "type": "slicer",
+      "box": [
+        1672,
+        136,
+        208,
+        80
+      ],
+      "fields": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Datum"
+              }
+            },
+            "Property": "År"
+          }
+        }
+      ]
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "kpi-value3",
+      "type": "cardVisual",
+      "box": [
+        1288,
+        326,
+        232,
+        48
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Bruttomarginal"
+          }
+        }
+      ]
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "sparkline0",
+      "type": "lineChart",
+      "box": [
+        352,
+        412,
+        232,
+        56
+      ],
+      "fields": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Datum"
+              }
+            },
+            "Property": "Månadsnummer"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Omsättning"
+          }
+        }
+      ]
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "yoy-label0",
+      "type": "textbox",
+      "box": [
+        352,
+        378,
+        112,
+        28
+      ],
+      "fields": []
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "seller-initials-3",
+      "type": "cardVisual",
+      "box": [
+        1332,
+        710,
+        44,
+        44
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Säljartopp 3 initialer"
+          }
+        }
+      ]
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "team-subtitle",
+      "type": "textbox",
+      "box": [
+        880,
+        836,
+        368,
+        28
+      ],
+      "fields": []
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "yoy4",
+      "type": "cardVisual",
+      "box": [
+        1714,
+        378,
+        118,
+        28
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "KPI förändring 4 etikett"
+          }
+        }
+      ]
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "84d947e8d180beca068b",
+      "type": "cardVisual",
+      "box": [
+        1480,
+        30,
+        400,
+        48
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Rapportstatus"
+              }
+            },
+            "Property": "Senast uppdaterad"
+          }
+        }
+      ]
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "team",
+      "type": "clusteredBarChart",
+      "box": [
+        872,
+        868,
+        384,
+        180
+      ],
+      "fields": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Säljare"
+              }
+            },
+            "Property": "Team"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Tillväxt mot föregående år"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Omsättning etikett"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Omsättning"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Omsättning föregående år"
+          }
+        }
+      ]
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "sparkline2",
+      "type": "lineChart",
+      "box": [
+        976,
+        412,
+        232,
+        56
+      ],
+      "fields": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Datum"
+              }
+            },
+            "Property": "Månadsnummer"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Bruttovinst"
+          }
+        }
+      ]
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "seller-share",
+      "type": "cardVisual",
+      "box": [
+        1320,
+        536,
+        512,
+        24
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Säljartopp andel etikett"
+          }
+        }
+      ]
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "kpi-label4",
+      "type": "textbox",
+      "box": [
+        1600,
+        292,
+        232,
+        32
+      ],
+      "fields": []
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "market-panel",
+      "type": "textbox",
+      "box": [
+        320,
+        784,
+        952,
+        280
+      ],
+      "fields": []
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "seller-amount-2",
+      "type": "cardVisual",
+      "box": [
+        1588,
+        662,
+        88,
+        24
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Säljartopp 2 etikett"
+          }
+        }
+      ]
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "seller-row-1",
+      "type": "textbox",
+      "box": [
+        1320,
+        568,
+        520,
+        56
+      ],
+      "fields": []
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "seller-segments-1",
+      "type": "cardVisual",
+      "box": [
+        1392,
+        594,
+        192,
+        24
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Säljartopp 1 segment"
+          }
+        }
+      ]
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "kpi-label2",
+      "type": "textbox",
+      "box": [
+        976,
+        292,
+        232,
+        32
+      ],
+      "fields": []
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "kpi-panel3",
+      "type": "textbox",
+      "box": [
+        1256,
+        276,
+        296,
+        200
+      ],
+      "fields": []
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "trend",
+      "type": "clusteredColumnChart",
+      "box": [
+        336,
+        568,
+        920,
+        160
+      ],
+      "fields": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Datum"
+              }
+            },
+            "Property": "Månad"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Trendvärde"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Trend föregående år"
+          }
+        }
+      ]
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "seller-growth-3",
+      "type": "cardVisual",
+      "box": [
+        1690,
+        730,
+        144,
+        24
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Säljartopp 3 förändring etikett"
+          }
+        }
+      ]
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "nav4",
+      "type": "actionButton",
+      "box": [
+        12,
+        480,
+        264,
+        56
+      ],
+      "fields": []
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "header-panel",
+      "type": "textbox",
+      "box": [
+        0,
+        0,
+        1920,
+        96
+      ],
+      "fields": []
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "seller-name-1",
+      "type": "cardVisual",
+      "box": [
+        1392,
+        571,
+        424,
+        26
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Säljartopp 1 namn"
+          }
+        }
+      ]
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "yoy1",
+      "type": "cardVisual",
+      "box": [
+        778,
+        378,
+        118,
+        28
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "KPI förändring 1 etikett"
+          }
+        }
+      ]
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "yoy-label4",
+      "type": "textbox",
+      "box": [
+        1600,
+        378,
+        112,
+        28
+      ],
+      "fields": []
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "seller-badge-2",
+      "type": "textbox",
+      "box": [
+        1332,
+        642,
+        44,
+        44
+      ],
+      "fields": []
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "nav0",
+      "type": "actionButton",
+      "box": [
+        12,
+        192,
+        264,
+        56
+      ],
+      "fields": []
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "page-title",
+      "type": "textbox",
+      "box": [
+        320,
+        156,
+        1056,
+        64
+      ],
+      "fields": []
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "nav3",
+      "type": "actionButton",
+      "box": [
+        12,
+        408,
+        264,
+        56
+      ],
+      "fields": []
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "yoy2",
+      "type": "cardVisual",
+      "box": [
+        1090,
+        378,
+        118,
+        28
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "KPI förändring 2 etikett"
+          }
+        }
+      ]
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "yoy0",
+      "type": "cardVisual",
+      "box": [
+        466,
+        378,
+        118,
+        28
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "KPI förändring 0 etikett"
+          }
+        }
+      ]
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "right-panel",
+      "type": "textbox",
+      "box": [
+        1296,
+        488,
+        568,
+        576
+      ],
+      "fields": []
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "country-choice",
+      "type": "advancedSlicerVisual",
+      "box": [
+        672,
+        800,
+        176,
+        40
+      ],
+      "fields": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Analysaxel"
+              }
+            },
+            "Property": "Typ"
+          }
+        }
+      ]
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "kpi-value2",
+      "type": "cardVisual",
+      "box": [
+        976,
+        326,
+        232,
+        48
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Bruttovinst miljoner"
+          }
+        }
+      ]
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "market-subtitle",
+      "type": "textbox",
+      "box": [
+        344,
+        836,
+        904,
+        28
+      ],
+      "fields": []
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "products-subtitle",
+      "type": "textbox",
+      "box": [
+        1320,
+        820,
+        160,
+        24
+      ],
+      "fields": []
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "seller-segments-3",
+      "type": "cardVisual",
+      "box": [
+        1392,
+        730,
+        192,
+        24
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Säljartopp 3 segment"
+          }
+        }
+      ]
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "sparkline4",
+      "type": "lineChart",
+      "box": [
+        1600,
+        412,
+        232,
+        56
+      ],
+      "fields": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Datum"
+              }
+            },
+            "Property": "Månadsnummer"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Leveranser"
+          }
+        }
+      ]
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "seller-row-2",
+      "type": "textbox",
+      "box": [
+        1320,
+        636,
+        520,
+        56
+      ],
+      "fields": []
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "products-choice",
+      "type": "advancedSlicerVisual",
+      "box": [
+        1616,
+        788,
+        224,
+        40
+      ],
+      "fields": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Produktval"
+              }
+            },
+            "Property": "Mått"
+          }
+        }
+      ]
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "trend-subtitle",
+      "type": "textbox",
+      "box": [
+        344,
+        540,
+        904,
+        28
+      ],
+      "fields": []
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "nav1",
+      "type": "actionButton",
+      "box": [
+        12,
+        264,
+        264,
+        56
+      ],
+      "fields": []
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "kpi-value1",
+      "type": "cardVisual",
+      "box": [
+        664,
+        326,
+        232,
+        48
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Sålda enheter"
+          }
+        }
+      ]
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "seller-name-2",
+      "type": "cardVisual",
+      "box": [
+        1392,
+        639,
+        424,
+        26
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Säljartopp 2 namn"
+          }
+        }
+      ]
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "seller-initials-1",
+      "type": "cardVisual",
+      "box": [
+        1332,
+        574,
+        44,
+        44
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Säljartopp 1 initialer"
+          }
+        }
+      ]
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "side-panel",
+      "type": "textbox",
+      "box": [
+        0,
+        96,
+        288,
+        984
+      ],
+      "fields": []
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "seller-initials-2",
+      "type": "cardVisual",
+      "box": [
+        1332,
+        642,
+        44,
+        44
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Säljartopp 2 initialer"
+          }
+        }
+      ]
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "seller-amount-1",
+      "type": "cardVisual",
+      "box": [
+        1588,
+        594,
+        88,
+        24
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Säljartopp 1 etikett"
+          }
+        }
+      ]
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "yoy-label1",
+      "type": "textbox",
+      "box": [
+        664,
+        378,
+        112,
+        28
+      ],
+      "fields": []
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "yoy-label2",
+      "type": "textbox",
+      "box": [
+        976,
+        378,
+        112,
+        28
+      ],
+      "fields": []
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "seller-amount-3",
+      "type": "cardVisual",
+      "box": [
+        1588,
+        730,
+        88,
+        24
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Säljartopp 3 etikett"
+          }
+        }
+      ]
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "kpi-panel1",
+      "type": "textbox",
+      "box": [
+        632,
+        276,
+        296,
+        200
+      ],
+      "fields": []
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "kpi-value0",
+      "type": "cardVisual",
+      "box": [
+        352,
+        326,
+        232,
+        48
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Omsättning miljoner"
+          }
+        }
+      ]
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "breadcrumbs",
+      "type": "textbox",
+      "box": [
+        320,
+        116,
+        1056,
+        32
+      ],
+      "fields": []
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "seller-row-3",
+      "type": "textbox",
+      "box": [
+        1320,
+        704,
+        520,
+        56
+      ],
+      "fields": []
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "yoy3",
+      "type": "cardVisual",
+      "box": [
+        1402,
+        378,
+        118,
+        28
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "KPI förändring 3 etikett"
+          }
+        }
+      ]
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "nav2",
+      "type": "actionButton",
+      "box": [
+        12,
+        336,
+        264,
+        56
+      ],
+      "fields": []
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "subtitle",
+      "type": "textbox",
+      "box": [
+        320,
+        220,
+        1280,
+        36
+      ],
+      "fields": []
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "kpi-label1",
+      "type": "textbox",
+      "box": [
+        664,
+        292,
+        232,
+        32
+      ],
+      "fields": []
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "right-heading",
+      "type": "textbox",
+      "box": [
+        1320,
+        504,
+        520,
+        32
+      ],
+      "fields": []
+    },
+    {
+      "page": "9ae7ca224ccdd9598334",
+      "key": "yoy-label3",
+      "type": "textbox",
+      "box": [
+        1288,
+        378,
+        112,
+        28
+      ],
+      "fields": []
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "monthly-calendar-2-3",
+      "type": "textbox",
+      "box": [
+        745,
+        742,
+        19,
+        20
+      ],
+      "fields": []
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "scatter-heading",
+      "type": "textbox",
+      "box": [
+        1320,
+        776,
+        512,
+        32
+      ],
+      "fields": []
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "yoy-label1",
+      "type": "textbox",
+      "box": [
+        664,
+        378,
+        112,
+        28
+      ],
+      "fields": []
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "monthly-calendar-2-4",
+      "type": "textbox",
+      "box": [
+        764,
+        742,
+        19,
+        20
+      ],
+      "fields": []
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "finance-monthly-panel",
+      "type": "textbox",
+      "box": [
+        320,
+        488,
+        952,
+        296
+      ],
+      "fields": []
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "monthly-group-2",
+      "type": "cardVisual",
+      "box": [
+        682,
+        568,
+        264,
+        24
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Finans gruppnamn"
+          }
+        }
+      ]
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "monthly-calendar-1-1",
+      "type": "textbox",
+      "box": [
+        423,
+        742,
+        19,
+        20
+      ],
+      "fields": []
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "sparkline4",
+      "type": "lineChart",
+      "box": [
+        1600,
+        412,
+        232,
+        56
+      ],
+      "fields": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Datum"
+              }
+            },
+            "Property": "Månadsnummer"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Bruttovinst per enhet"
+          }
+        }
+      ]
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "product-amount-1",
+      "type": "cardVisual",
+      "box": [
+        1780,
+        586,
+        68,
+        24
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Finans produkt 1 belopp"
+          }
+        }
+      ]
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "monthly-calendar-1-2",
+      "type": "textbox",
+      "box": [
+        442,
+        742,
+        19,
+        20
+      ],
+      "fields": []
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "share-caption4",
+      "type": "cardVisual",
+      "box": [
+        344,
+        1010,
+        348,
+        18
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Finans marknad 4 etikett"
+          }
+        }
+      ]
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "monthly-calendar-2-6",
+      "type": "textbox",
+      "box": [
+        802,
+        742,
+        19,
+        20
+      ],
+      "fields": []
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "nav1",
+      "type": "actionButton",
+      "box": [
+        12,
+        264,
+        264,
+        56
+      ],
+      "fields": []
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "market-subtitle",
+      "type": "textbox",
+      "box": [
+        344,
+        860,
+        904,
+        24
+      ],
+      "fields": []
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "kpi-value2",
+      "type": "cardVisual",
+      "box": [
+        976,
+        326,
+        232,
+        48
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Kostnad miljoner"
+          }
+        }
+      ]
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "monthly-calendar-2-5",
+      "type": "textbox",
+      "box": [
+        783,
+        742,
+        19,
+        20
+      ],
+      "fields": []
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "monthly-calendar-3-0",
+      "type": "textbox",
+      "box": [
+        972,
+        742,
+        19,
+        20
+      ],
+      "fields": []
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "monthly-group-1",
+      "type": "cardVisual",
+      "box": [
+        398,
+        568,
+        264,
+        24
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Finans gruppnamn"
+          }
+        }
+      ]
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "monthly-calendar-1-6",
+      "type": "textbox",
+      "box": [
+        518,
+        742,
+        19,
+        20
+      ],
+      "fields": []
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "monthly-calendar-2-8",
+      "type": "textbox",
+      "box": [
+        840,
+        742,
+        19,
+        20
+      ],
+      "fields": []
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "monthly-calendar-3-8",
+      "type": "textbox",
+      "box": [
+        1124,
+        742,
+        19,
+        20
+      ],
+      "fields": []
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "kpi-label0",
+      "type": "textbox",
+      "box": [
+        352,
+        292,
+        232,
+        32
+      ],
+      "fields": []
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "sparkline0",
+      "type": "lineChart",
+      "box": [
+        352,
+        412,
+        232,
+        56
+      ],
+      "fields": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Datum"
+              }
+            },
+            "Property": "Månadsnummer"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Bruttovinst"
+          }
+        }
+      ]
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "market-panel",
+      "type": "textbox",
+      "box": [
+        320,
+        808,
+        952,
+        256
+      ],
+      "fields": []
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "kpi-panel2",
+      "type": "textbox",
+      "box": [
+        944,
+        276,
+        296,
+        200
+      ],
+      "fields": []
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "monthly-calendar-2-11",
+      "type": "textbox",
+      "box": [
+        897,
+        742,
+        19,
+        20
+      ],
+      "fields": []
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "monthly-panel-3",
+      "type": "columnChart",
+      "box": [
+        966,
+        592,
+        272,
+        136
+      ],
+      "fields": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Datum"
+              }
+            },
+            "Property": "Månadsnummer"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Finans gruppvinst miljoner"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Finans månadsmedel"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Finans månadsaxel max"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Finans vinst över medel"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Finans vinst under medel"
+          }
+        }
+      ]
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "monthly-calendar-1-4",
+      "type": "textbox",
+      "box": [
+        480,
+        742,
+        19,
+        20
+      ],
+      "fields": []
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "subtitle",
+      "type": "textbox",
+      "box": [
+        320,
+        220,
+        1040,
+        36
+      ],
+      "fields": []
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "kpi-label4",
+      "type": "textbox",
+      "box": [
+        1600,
+        292,
+        232,
+        32
+      ],
+      "fields": []
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "yoy2",
+      "type": "cardVisual",
+      "box": [
+        1090,
+        378,
+        118,
+        28
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Finans KPI 2 förändring etikett"
+          }
+        }
+      ]
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "4443e0781f4f5692f9e6",
+      "type": "cardVisual",
+      "box": [
+        1480,
+        30,
+        400,
+        48
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Rapportstatus"
+              }
+            },
+            "Property": "Senast uppdaterad"
+          }
+        }
+      ]
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "kpi-value4",
+      "type": "cardVisual",
+      "box": [
+        1600,
+        326,
+        232,
+        48
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Bruttovinst per enhet"
+          }
+        }
+      ]
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "breadcrumbs",
+      "type": "textbox",
+      "box": [
+        320,
+        116,
+        1056,
+        32
+      ],
+      "fields": []
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "share-caption3",
+      "type": "cardVisual",
+      "box": [
+        344,
+        968,
+        348,
+        18
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Finans marknad 3 etikett"
+          }
+        }
+      ]
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "sparkline2",
+      "type": "lineChart",
+      "box": [
+        976,
+        412,
+        232,
+        56
+      ],
+      "fields": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Datum"
+              }
+            },
+            "Property": "Månadsnummer"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Kostnad"
+          }
+        }
+      ]
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "monthly-calendar-1-7",
+      "type": "textbox",
+      "box": [
+        537,
+        742,
+        19,
+        20
+      ],
+      "fields": []
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "sparkline3",
+      "type": "lineChart",
+      "box": [
+        1288,
+        412,
+        232,
+        56
+      ],
+      "fields": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Datum"
+              }
+            },
+            "Property": "Månadsnummer"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Omsättning per enhet"
+          }
+        }
+      ]
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "logo",
+      "type": "image",
+      "box": [
+        24,
+        12,
+        240,
+        72
+      ],
+      "fields": []
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "monthly-calendar-1-8",
+      "type": "textbox",
+      "box": [
+        556,
+        742,
+        19,
+        20
+      ],
+      "fields": []
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "monthly-calendar-1-10",
+      "type": "textbox",
+      "box": [
+        594,
+        742,
+        19,
+        20
+      ],
+      "fields": []
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "finance-choice",
+      "type": "advancedSlicerVisual",
+      "box": [
+        1060,
+        504,
+        188,
+        40
+      ],
+      "fields": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Finansaxel"
+              }
+            },
+            "Property": "Val"
+          }
+        }
+      ]
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "year",
+      "type": "slicer",
+      "box": [
+        1672,
+        136,
+        208,
+        80
+      ],
+      "fields": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Datum"
+              }
+            },
+            "Property": "År"
+          }
+        }
+      ]
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "monthly-calendar-3-3",
+      "type": "textbox",
+      "box": [
+        1029,
+        742,
+        19,
+        20
+      ],
+      "fields": []
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "nav4",
+      "type": "actionButton",
+      "box": [
+        12,
+        480,
+        264,
+        56
+      ],
+      "fields": []
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "yoy-label2",
+      "type": "textbox",
+      "box": [
+        976,
+        378,
+        112,
+        28
+      ],
+      "fields": []
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "profit-cost",
+      "type": "scatterChart",
+      "box": [
+        1312,
+        842,
+        536,
+        206
+      ],
+      "fields": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Produkter"
+              }
+            },
+            "Property": "Produkt"
+          }
+        },
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Produkter"
+              }
+            },
+            "Property": "Finansgrupp"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Bruttomarginal"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Sålda enheter"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Omsättning"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Finans medelkostnad produkt"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Finans medelvinst produkt"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Kostnad miljoner"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Bruttovinst miljoner"
+          }
+        }
+      ]
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "share-bars",
+      "type": "barChart",
+      "box": [
+        344,
+        898,
+        340,
+        154
+      ],
+      "fields": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Kunder"
+              }
+            },
+            "Property": "Land"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Bruttovinst"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Finans andelsaxel max"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Bruttovinst andel land"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Finans andel återstående"
+          }
+        }
+      ]
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "header-panel",
+      "type": "textbox",
+      "box": [
+        0,
+        0,
+        1920,
+        96
+      ],
+      "fields": []
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "yoy3",
+      "type": "cardVisual",
+      "box": [
+        1402,
+        378,
+        118,
+        28
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Finans KPI 3 förändring etikett"
+          }
+        }
+      ]
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "kpi-value0",
+      "type": "cardVisual",
+      "box": [
+        352,
+        326,
+        232,
+        48
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Bruttovinst miljoner"
+          }
+        }
+      ]
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "summary-heading",
+      "type": "cardVisual",
+      "box": [
+        724,
+        824,
+        392,
+        32
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Finans sammanställningsrubrik"
+          }
+        }
+      ]
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "monthly-calendar-3-11",
+      "type": "textbox",
+      "box": [
+        1181,
+        742,
+        19,
+        20
+      ],
+      "fields": []
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "share-caption2",
+      "type": "cardVisual",
+      "box": [
+        344,
+        926,
+        348,
+        18
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Finans marknad 2 etikett"
+          }
+        }
+      ]
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "kpi-label3",
+      "type": "textbox",
+      "box": [
+        1288,
+        292,
+        232,
+        32
+      ],
+      "fields": []
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "monthly-group-3",
+      "type": "cardVisual",
+      "box": [
+        966,
+        568,
+        264,
+        24
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Finans gruppnamn"
+          }
+        }
+      ]
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "market-heading",
+      "type": "textbox",
+      "box": [
+        344,
+        824,
+        904,
+        32
+      ],
+      "fields": []
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "yoy-label0",
+      "type": "textbox",
+      "box": [
+        352,
+        378,
+        112,
+        28
+      ],
+      "fields": []
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "monthly-calendar-2-9",
+      "type": "textbox",
+      "box": [
+        859,
+        742,
+        19,
+        20
+      ],
+      "fields": []
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "monthly-calendar-1-0",
+      "type": "textbox",
+      "box": [
+        404,
+        742,
+        19,
+        20
+      ],
+      "fields": []
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "summary-choice",
+      "type": "slicer",
+      "box": [
+        1120,
+        816,
+        128,
+        48
+      ],
+      "fields": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Analysaxel"
+              }
+            },
+            "Property": "Typ"
+          }
+        }
+      ]
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "kpi-label1",
+      "type": "textbox",
+      "box": [
+        664,
+        292,
+        232,
+        32
+      ],
+      "fields": []
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "share-caption1",
+      "type": "cardVisual",
+      "box": [
+        344,
+        884,
+        348,
+        18
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Finans marknad 1 etikett"
+          }
+        }
+      ]
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "product-amount-5",
+      "type": "cardVisual",
+      "box": [
+        1780,
+        728,
+        68,
+        24
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Finans produkt 5 belopp"
+          }
+        }
+      ]
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "yoy1",
+      "type": "cardVisual",
+      "box": [
+        778,
+        378,
+        118,
+        28
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Finans KPI 1 förändring etikett"
+          }
+        }
+      ]
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "finance-monthly-subtitle",
+      "type": "textbox",
+      "box": [
+        344,
+        540,
+        904,
+        24
+      ],
+      "fields": []
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "sparkline1",
+      "type": "lineChart",
+      "box": [
+        664,
+        412,
+        232,
+        56
+      ],
+      "fields": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Datum"
+              }
+            },
+            "Property": "Månadsnummer"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Bruttomarginal"
+          }
+        }
+      ]
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "finance-products",
+      "type": "barChart",
+      "box": [
+        1312,
+        572,
+        536,
+        188
+      ],
+      "fields": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Produkter"
+              }
+            },
+            "Property": "Produkt"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Finans produktbelopp etikett"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Finans produktaxel max"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Bruttomarginal"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Kostnad"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Sålda enheter"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Bruttovinst"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Finans produktspår återstående"
+          }
+        }
+      ]
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "suite-title",
+      "type": "textbox",
+      "box": [
+        320,
+        24,
+        1256,
+        56
+      ],
+      "fields": []
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "product-amount-3",
+      "type": "cardVisual",
+      "box": [
+        1780,
+        657,
+        68,
+        24
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Finans produkt 3 belopp"
+          }
+        }
+      ]
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "kpi-panel0",
+      "type": "textbox",
+      "box": [
+        320,
+        276,
+        296,
+        200
+      ],
+      "fields": []
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "monthly-calendar-2-2",
+      "type": "textbox",
+      "box": [
+        726,
+        742,
+        19,
+        20
+      ],
+      "fields": []
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "finance-monthly-heading",
+      "type": "textbox",
+      "box": [
+        344,
+        504,
+        904,
+        32
+      ],
+      "fields": []
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "kpi-value3",
+      "type": "cardVisual",
+      "box": [
+        1288,
+        326,
+        232,
+        48
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Omsättning per enhet"
+          }
+        }
+      ]
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "product-amount-4",
+      "type": "cardVisual",
+      "box": [
+        1780,
+        692.5,
+        68,
+        24
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Finans produkt 4 belopp"
+          }
+        }
+      ]
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "kpi-panel3",
+      "type": "textbox",
+      "box": [
+        1256,
+        276,
+        296,
+        200
+      ],
+      "fields": []
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "product-share",
+      "type": "cardVisual",
+      "box": [
+        1320,
+        540,
+        512,
+        24
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Finans topprodukter andel etikett"
+          }
+        }
+      ]
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "monthly-calendar-2-10",
+      "type": "textbox",
+      "box": [
+        878,
+        742,
+        19,
+        20
+      ],
+      "fields": []
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "monthly-calendar-3-7",
+      "type": "textbox",
+      "box": [
+        1105,
+        742,
+        19,
+        20
+      ],
+      "fields": []
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "monthly-calendar-1-9",
+      "type": "textbox",
+      "box": [
+        575,
+        742,
+        19,
+        20
+      ],
+      "fields": []
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "monthly-calendar-3-1",
+      "type": "textbox",
+      "box": [
+        991,
+        742,
+        19,
+        20
+      ],
+      "fields": []
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "kpi-panel1",
+      "type": "textbox",
+      "box": [
+        632,
+        276,
+        296,
+        200
+      ],
+      "fields": []
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "monthly-calendar-2-0",
+      "type": "textbox",
+      "box": [
+        688,
+        742,
+        19,
+        20
+      ],
+      "fields": []
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "monthly-calendar-1-3",
+      "type": "textbox",
+      "box": [
+        461,
+        742,
+        19,
+        20
+      ],
+      "fields": []
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "kpi-panel4",
+      "type": "textbox",
+      "box": [
+        1568,
+        276,
+        296,
+        200
+      ],
+      "fields": []
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "kpi-value1",
+      "type": "cardVisual",
+      "box": [
+        664,
+        326,
+        232,
+        48
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Bruttomarginal"
+          }
+        }
+      ]
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "monthly-panel-2",
+      "type": "columnChart",
+      "box": [
+        682,
+        592,
+        272,
+        136
+      ],
+      "fields": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Datum"
+              }
+            },
+            "Property": "Månadsnummer"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Finans gruppvinst miljoner"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Finans månadsmedel"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Finans månadsaxel max"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Finans vinst över medel"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Finans vinst under medel"
+          }
+        }
+      ]
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "profit-country-table",
+      "type": "tableEx",
+      "box": [
+        724,
+        872,
+        524,
+        176
+      ],
+      "fields": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Analysaxel"
+              }
+            },
+            "Property": "Område"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Finans sammanställning vinst miljoner"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Finans sammanställning tillväxt etikett"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Finans sammanställning marginalbild"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Finans sammanställning trend"
+          }
+        }
+      ]
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "monthly-calendar-2-7",
+      "type": "textbox",
+      "box": [
+        821,
+        742,
+        19,
+        20
+      ],
+      "fields": []
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "monthly-calendar-1-11",
+      "type": "textbox",
+      "box": [
+        613,
+        742,
+        19,
+        20
+      ],
+      "fields": []
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "yoy4",
+      "type": "cardVisual",
+      "box": [
+        1714,
+        378,
+        118,
+        28
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Finans KPI 4 förändring etikett"
+          }
+        }
+      ]
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "yoy-label3",
+      "type": "textbox",
+      "box": [
+        1288,
+        378,
+        112,
+        28
+      ],
+      "fields": []
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "monthly-calendar-3-4",
+      "type": "textbox",
+      "box": [
+        1048,
+        742,
+        19,
+        20
+      ],
+      "fields": []
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "monthly-calendar-2-1",
+      "type": "textbox",
+      "box": [
+        707,
+        742,
+        19,
+        20
+      ],
+      "fields": []
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "right-panel",
+      "type": "textbox",
+      "box": [
+        1296,
+        488,
+        568,
+        576
+      ],
+      "fields": []
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "yoy0",
+      "type": "cardVisual",
+      "box": [
+        466,
+        378,
+        118,
+        28
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Finans KPI 0 förändring etikett"
+          }
+        }
+      ]
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "monthly-calendar-3-6",
+      "type": "textbox",
+      "box": [
+        1086,
+        742,
+        19,
+        20
+      ],
+      "fields": []
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "yoy-label4",
+      "type": "textbox",
+      "box": [
+        1600,
+        378,
+        112,
+        28
+      ],
+      "fields": []
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "monthly-calendar-3-9",
+      "type": "textbox",
+      "box": [
+        1143,
+        742,
+        19,
+        20
+      ],
+      "fields": []
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "product-amount-2",
+      "type": "cardVisual",
+      "box": [
+        1780,
+        621.5,
+        68,
+        24
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Finans produkt 2 belopp"
+          }
+        }
+      ]
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "kpi-label2",
+      "type": "textbox",
+      "box": [
+        976,
+        292,
+        232,
+        32
+      ],
+      "fields": []
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "nav3",
+      "type": "actionButton",
+      "box": [
+        12,
+        408,
+        264,
+        56
+      ],
+      "fields": []
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "monthly-calendar-3-5",
+      "type": "textbox",
+      "box": [
+        1067,
+        742,
+        19,
+        20
+      ],
+      "fields": []
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "page-title",
+      "type": "textbox",
+      "box": [
+        320,
+        156,
+        1056,
+        64
+      ],
+      "fields": []
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "nav0",
+      "type": "actionButton",
+      "box": [
+        12,
+        192,
+        264,
+        56
+      ],
+      "fields": []
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "month",
+      "type": "slicer",
+      "box": [
+        1400,
+        136,
+        248,
+        80
+      ],
+      "fields": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Datum"
+              }
+            },
+            "Property": "Månad"
+          }
+        }
+      ]
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "monthly-panel-1",
+      "type": "columnChart",
+      "box": [
+        344,
+        592,
+        326,
+        144
+      ],
+      "fields": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Datum"
+              }
+            },
+            "Property": "Månadsnummer"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Finans gruppvinst miljoner"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Finans månadsmedel"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Finans månadsaxel max"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Finans vinst över medel"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Finans vinst under medel"
+          }
+        }
+      ]
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "side-panel",
+      "type": "textbox",
+      "box": [
+        0,
+        96,
+        288,
+        984
+      ],
+      "fields": []
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "monthly-calendar-3-2",
+      "type": "textbox",
+      "box": [
+        1010,
+        742,
+        19,
+        20
+      ],
+      "fields": []
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "right-heading",
+      "type": "textbox",
+      "box": [
+        1320,
+        504,
+        520,
+        32
+      ],
+      "fields": []
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "nav2",
+      "type": "actionButton",
+      "box": [
+        12,
+        336,
+        264,
+        56
+      ],
+      "fields": []
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "monthly-calendar-1-5",
+      "type": "textbox",
+      "box": [
+        499,
+        742,
+        19,
+        20
+      ],
+      "fields": []
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "monthly-calendar-3-10",
+      "type": "textbox",
+      "box": [
+        1162,
+        742,
+        19,
+        20
+      ],
+      "fields": []
+    },
+    {
+      "page": "6ed311aec406fe11b4dd",
+      "key": "scatter-subtitle",
+      "type": "textbox",
+      "box": [
+        1320,
+        812,
+        512,
+        24
+      ],
+      "fields": []
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "kpi-panel3",
+      "type": "textbox",
+      "box": [
+        1256,
+        276,
+        296,
+        200
+      ],
+      "fields": []
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "breadcrumbs",
+      "type": "textbox",
+      "box": [
+        320,
+        116,
+        1056,
+        32
+      ],
+      "fields": []
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "sales-seller-divider-2",
+      "type": "textbox",
+      "box": [
+        1676,
+        682,
+        10,
+        24
+      ],
+      "fields": []
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "kpi-panel4",
+      "type": "textbox",
+      "box": [
+        1568,
+        276,
+        296,
+        200
+      ],
+      "fields": []
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "kpi-change2",
+      "type": "cardVisual",
+      "box": [
+        984,
+        420,
+        180,
+        28
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Säljanalys KPI 2 förändring"
+          }
+        }
+      ]
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "sales-seller-segments-4",
+      "type": "cardVisual",
+      "box": [
+        1392,
+        818,
+        192,
+        24
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Säljanalys säljare 4 segment"
+          }
+        }
+      ]
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "kpi-label1",
+      "type": "textbox",
+      "box": [
+        664,
+        294,
+        252,
+        36
+      ],
+      "fields": []
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "sales-quarter-4",
+      "type": "cardVisual",
+      "box": [
+        1048,
+        744,
+        64,
+        24
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Säljanalys kvartal 4"
+          }
+        }
+      ]
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "sales-trend-heading",
+      "type": "textbox",
+      "box": [
+        344,
+        516,
+        904,
+        32
+      ],
+      "fields": []
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "sales-seller-initials-1",
+      "type": "cardVisual",
+      "box": [
+        1332,
+        591,
+        44,
+        44
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Säljanalys säljare 1 initialer"
+          }
+        }
+      ]
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "sales-market-trend-heading",
+      "type": "cardVisual",
+      "box": [
+        824,
+        824,
+        300,
+        32
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Säljanalys trendrubrik"
+          }
+        }
+      ]
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "kpi-value0",
+      "type": "cardVisual",
+      "box": [
+        352,
+        336,
+        244,
+        56
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Aktiva säljare"
+          }
+        }
+      ]
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "sales-market-choice",
+      "type": "slicer",
+      "box": [
+        1128,
+        816,
+        120,
+        48
+      ],
+      "fields": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Analysaxel"
+              }
+            },
+            "Property": "Typ"
+          }
+        }
+      ]
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "sales-seller-row-3",
+      "type": "textbox",
+      "box": [
+        1320,
+        720,
+        520,
+        58
+      ],
+      "fields": []
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "sales-seller-row-4",
+      "type": "textbox",
+      "box": [
+        1320,
+        788,
+        520,
+        58
+      ],
+      "fields": []
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "kpi-change-panel1",
+      "type": "textbox",
+      "box": [
+        664,
+        412,
+        196,
+        40
+      ],
+      "fields": []
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "sales-seller-segments-1",
+      "type": "cardVisual",
+      "box": [
+        1392,
+        614,
+        192,
+        24
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Säljanalys säljare 1 segment"
+          }
+        }
+      ]
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "sales-seller-initials-5",
+      "type": "cardVisual",
+      "box": [
+        1332,
+        863,
+        44,
+        44
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Säljanalys säljare 5 initialer"
+          }
+        }
+      ]
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "sales-markets-panel",
+      "type": "textbox",
+      "box": [
+        320,
+        808,
+        952,
+        256
+      ],
+      "fields": []
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "sales-market-name-1",
+      "type": "cardVisual",
+      "box": [
+        816,
+        888,
+        92,
+        24
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Säljanalys trend 1 namn etikett"
+          }
+        }
+      ]
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "kpi-change-panel4",
+      "type": "textbox",
+      "box": [
+        1600,
+        412,
+        196,
+        40
+      ],
+      "fields": []
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "2039d68568aff885a4b5",
+      "type": "cardVisual",
+      "box": [
+        1480,
+        30,
+        400,
+        48
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Rapportstatus"
+              }
+            },
+            "Property": "Senast uppdaterad"
+          }
+        }
+      ]
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "nav1",
+      "type": "actionButton",
+      "box": [
+        12,
+        264,
+        264,
+        56
+      ],
+      "fields": []
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "sales-seller-name-6",
+      "type": "cardVisual",
+      "box": [
+        1392,
+        928,
+        424,
+        28
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Säljanalys säljare 6 namn"
+          }
+        }
+      ]
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "sales-seller-segments-3",
+      "type": "cardVisual",
+      "box": [
+        1392,
+        750,
+        192,
+        24
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Säljanalys säljare 3 segment"
+          }
+        }
+      ]
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "sales-seller-amount-5",
+      "type": "cardVisual",
+      "box": [
+        1588,
+        886,
+        88,
+        24
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Säljanalys säljare 5 belopp etikett"
+          }
+        }
+      ]
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "nav4",
+      "type": "actionButton",
+      "box": [
+        12,
+        480,
+        264,
+        56
+      ],
+      "fields": []
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "sales-market-line-3",
+      "type": "tableEx",
+      "box": [
+        920,
+        964,
+        328,
+        42
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Säljanalys trend 3 bild"
+          }
+        }
+      ]
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "sales-seller-growth-2",
+      "type": "cardVisual",
+      "box": [
+        1690,
+        682,
+        144,
+        24
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Säljanalys säljare 2 tillväxt etikett"
+          }
+        }
+      ]
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "sales-leaderboard-panel",
+      "type": "textbox",
+      "box": [
+        1296,
+        500,
+        568,
+        564
+      ],
+      "fields": []
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "sales-seller-divider-4",
+      "type": "textbox",
+      "box": [
+        1676,
+        818,
+        10,
+        24
+      ],
+      "fields": []
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "kpi-value4",
+      "type": "cardVisual",
+      "box": [
+        1600,
+        336,
+        244,
+        56
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Topp 5 säljare andel"
+          }
+        }
+      ]
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "sales-seller-amount-6",
+      "type": "cardVisual",
+      "box": [
+        1588,
+        954,
+        88,
+        24
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Säljanalys säljare 6 belopp etikett"
+          }
+        }
+      ]
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "sales-seller-name-2",
+      "type": "cardVisual",
+      "box": [
+        1392,
+        656,
+        424,
+        28
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Säljanalys säljare 2 namn"
+          }
+        }
+      ]
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "suite-title",
+      "type": "textbox",
+      "box": [
+        320,
+        24,
+        1256,
+        56
+      ],
+      "fields": []
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "sales-seller-amount-3",
+      "type": "cardVisual",
+      "box": [
+        1588,
+        750,
+        88,
+        24
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Säljanalys säljare 3 belopp etikett"
+          }
+        }
+      ]
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "header-panel",
+      "type": "textbox",
+      "box": [
+        0,
+        0,
+        1920,
+        96
+      ],
+      "fields": []
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "sales-seller-initials-2",
+      "type": "cardVisual",
+      "box": [
+        1332,
+        659,
+        44,
+        44
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Säljanalys säljare 2 initialer"
+          }
+        }
+      ]
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "sales-legend",
+      "type": "textbox",
+      "box": [
+        980,
+        760,
+        264,
+        24
+      ],
+      "fields": []
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "sales-market-name-4",
+      "type": "cardVisual",
+      "box": [
+        816,
+        1014,
+        92,
+        24
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Säljanalys trend 4 namn etikett"
+          }
+        }
+      ]
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "sales-seller-name-1",
+      "type": "cardVisual",
+      "box": [
+        1392,
+        588,
+        424,
+        28
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Säljanalys säljare 1 namn"
+          }
+        }
+      ]
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "sales-seller-initials-7",
+      "type": "cardVisual",
+      "box": [
+        1332,
+        999,
+        44,
+        44
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Säljanalys säljare 7 initialer"
+          }
+        }
+      ]
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "sales-seller-segments-2",
+      "type": "cardVisual",
+      "box": [
+        1392,
+        682,
+        192,
+        24
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Säljanalys säljare 2 segment"
+          }
+        }
+      ]
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "sales-seller-name-3",
+      "type": "cardVisual",
+      "box": [
+        1392,
+        724,
+        424,
+        28
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Säljanalys säljare 3 namn"
+          }
+        }
+      ]
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "kpi-label4",
+      "type": "textbox",
+      "box": [
+        1600,
+        294,
+        252,
+        36
+      ],
+      "fields": []
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "month",
+      "type": "slicer",
+      "box": [
+        1400,
+        136,
+        248,
+        80
+      ],
+      "fields": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Datum"
+              }
+            },
+            "Property": "Månad"
+          }
+        }
+      ]
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "sales-market-name-2",
+      "type": "cardVisual",
+      "box": [
+        816,
+        930,
+        92,
+        24
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Säljanalys trend 2 namn etikett"
+          }
+        }
+      ]
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "year",
+      "type": "slicer",
+      "box": [
+        1672,
+        136,
+        208,
+        80
+      ],
+      "fields": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Datum"
+              }
+            },
+            "Property": "År"
+          }
+        }
+      ]
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "side-panel",
+      "type": "textbox",
+      "box": [
+        0,
+        96,
+        288,
+        984
+      ],
+      "fields": []
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "sales-seller-row-2",
+      "type": "textbox",
+      "box": [
+        1320,
+        652,
+        520,
+        58
+      ],
+      "fields": []
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "kpi-change1",
+      "type": "cardVisual",
+      "box": [
+        672,
+        420,
+        180,
+        28
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Säljanalys KPI 1 förändring"
+          }
+        }
+      ]
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "kpi-change-panel3",
+      "type": "textbox",
+      "box": [
+        1288,
+        412,
+        196,
+        40
+      ],
+      "fields": []
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "sales-seller-name-7",
+      "type": "cardVisual",
+      "box": [
+        1392,
+        996,
+        424,
+        28
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Säljanalys säljare 7 namn"
+          }
+        }
+      ]
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "sales-seller-badge-1",
+      "type": "textbox",
+      "box": [
+        1332,
+        591,
+        44,
+        44
+      ],
+      "fields": []
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "sales-seller-segments-7",
+      "type": "cardVisual",
+      "box": [
+        1392,
+        1022,
+        192,
+        24
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Säljanalys säljare 7 segment"
+          }
+        }
+      ]
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "sales-quarter-3",
+      "type": "cardVisual",
+      "box": [
+        856,
+        744,
+        64,
+        24
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Säljanalys kvartal 3"
+          }
+        }
+      ]
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "sales-seller-divider-1",
+      "type": "textbox",
+      "box": [
+        1676,
+        614,
+        10,
+        24
+      ],
+      "fields": []
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "sales-seller-amount-2",
+      "type": "cardVisual",
+      "box": [
+        1588,
+        682,
+        88,
+        24
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Säljanalys säljare 2 belopp etikett"
+          }
+        }
+      ]
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "sales-seller-divider-6",
+      "type": "textbox",
+      "box": [
+        1676,
+        954,
+        10,
+        24
+      ],
+      "fields": []
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "sales-country-table",
+      "type": "tableEx",
+      "box": [
+        344,
+        884,
+        464,
+        172
+      ],
+      "fields": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Kunder"
+              }
+            },
+            "Property": "Land"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Omsättning miljoner"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Säljanalys marknad tillväxt etikett"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Säljanalys marknad andelsbild"
+          }
+        }
+      ]
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "sales-seller-initials-3",
+      "type": "cardVisual",
+      "box": [
+        1332,
+        727,
+        44,
+        44
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Säljanalys säljare 3 initialer"
+          }
+        }
+      ]
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "sales-markets-heading",
+      "type": "textbox",
+      "box": [
+        344,
+        824,
+        904,
+        32
+      ],
+      "fields": []
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "sales-seller-initials-4",
+      "type": "cardVisual",
+      "box": [
+        1332,
+        795,
+        44,
+        44
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Säljanalys säljare 4 initialer"
+          }
+        }
+      ]
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "sales-seller-segments-6",
+      "type": "cardVisual",
+      "box": [
+        1392,
+        954,
+        192,
+        24
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Säljanalys säljare 6 segment"
+          }
+        }
+      ]
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "sales-market-line-4",
+      "type": "tableEx",
+      "box": [
+        920,
+        1006,
+        328,
+        42
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Säljanalys trend 4 bild"
+          }
+        }
+      ]
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "sales-seller-growth-3",
+      "type": "cardVisual",
+      "box": [
+        1690,
+        750,
+        144,
+        24
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Säljanalys säljare 3 tillväxt etikett"
+          }
+        }
+      ]
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "sales-seller-name-4",
+      "type": "cardVisual",
+      "box": [
+        1392,
+        792,
+        424,
+        28
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Säljanalys säljare 4 namn"
+          }
+        }
+      ]
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "kpi-value2",
+      "type": "cardVisual",
+      "box": [
+        976,
+        336,
+        244,
+        56
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Leveranser"
+          }
+        }
+      ]
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "sales-seller-amount-7",
+      "type": "cardVisual",
+      "box": [
+        1588,
+        1022,
+        88,
+        24
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Säljanalys säljare 7 belopp etikett"
+          }
+        }
+      ]
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "sales-seller-badge-4",
+      "type": "textbox",
+      "box": [
+        1332,
+        795,
+        44,
+        44
+      ],
+      "fields": []
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "sales-seller-badge-3",
+      "type": "textbox",
+      "box": [
+        1332,
+        727,
+        44,
+        44
+      ],
+      "fields": []
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "nav3",
+      "type": "actionButton",
+      "box": [
+        12,
+        408,
+        264,
+        56
+      ],
+      "fields": []
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "sales-leaderboard-heading",
+      "type": "textbox",
+      "box": [
+        1320,
+        516,
+        520,
+        32
+      ],
+      "fields": []
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "kpi-value1",
+      "type": "cardVisual",
+      "box": [
+        664,
+        336,
+        244,
+        56
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Omsättning per säljare miljoner"
+          }
+        }
+      ]
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "sales-seller-badge-7",
+      "type": "textbox",
+      "box": [
+        1332,
+        999,
+        44,
+        44
+      ],
+      "fields": []
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "kpi-label3",
+      "type": "textbox",
+      "box": [
+        1288,
+        294,
+        252,
+        36
+      ],
+      "fields": []
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "sales-seller-growth-7",
+      "type": "cardVisual",
+      "box": [
+        1690,
+        1022,
+        144,
+        24
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Säljanalys säljare 7 tillväxt etikett"
+          }
+        }
+      ]
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "sales-seller-growth-4",
+      "type": "cardVisual",
+      "box": [
+        1690,
+        818,
+        144,
+        24
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Säljanalys säljare 4 tillväxt etikett"
+          }
+        }
+      ]
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "sales-trend",
+      "type": "lineStackedColumnComboChart",
+      "box": [
+        336,
+        578,
+        920,
+        166
+      ],
+      "fields": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Datum"
+              }
+            },
+            "Property": "Månad kort"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Omsättning"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Bruttovinst"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Bruttomarginal"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Säljanalys omsättning övriga månader"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Säljanalys omsättning toppmånad"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Bruttovinst miljoner"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Säljanalys bruttovinst max punkt"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Säljanalys bruttovinst min punkt"
+          }
+        }
+      ]
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "sales-quarter-1",
+      "type": "cardVisual",
+      "box": [
+        472,
+        744,
+        64,
+        24
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Säljanalys kvartal 1"
+          }
+        }
+      ]
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "nav2",
+      "type": "actionButton",
+      "box": [
+        12,
+        336,
+        264,
+        56
+      ],
+      "fields": []
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "sales-seller-growth-6",
+      "type": "cardVisual",
+      "box": [
+        1690,
+        954,
+        144,
+        24
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Säljanalys säljare 6 tillväxt etikett"
+          }
+        }
+      ]
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "sales-seller-row-6",
+      "type": "textbox",
+      "box": [
+        1320,
+        924,
+        520,
+        58
+      ],
+      "fields": []
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "sales-seller-divider-3",
+      "type": "textbox",
+      "box": [
+        1676,
+        750,
+        10,
+        24
+      ],
+      "fields": []
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "sales-seller-row-5",
+      "type": "textbox",
+      "box": [
+        1320,
+        856,
+        520,
+        58
+      ],
+      "fields": []
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "kpi-label0",
+      "type": "textbox",
+      "box": [
+        352,
+        294,
+        252,
+        36
+      ],
+      "fields": []
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "subtitle",
+      "type": "textbox",
+      "box": [
+        320,
+        220,
+        1280,
+        36
+      ],
+      "fields": []
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "sales-seller-amount-4",
+      "type": "cardVisual",
+      "box": [
+        1588,
+        818,
+        88,
+        24
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Säljanalys säljare 4 belopp etikett"
+          }
+        }
+      ]
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "sales-seller-name-5",
+      "type": "cardVisual",
+      "box": [
+        1392,
+        860,
+        424,
+        28
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Säljanalys säljare 5 namn"
+          }
+        }
+      ]
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "sales-markets-subtitle",
+      "type": "textbox",
+      "box": [
+        344,
+        860,
+        904,
+        24
+      ],
+      "fields": []
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "page-title",
+      "type": "textbox",
+      "box": [
+        320,
+        156,
+        1056,
+        64
+      ],
+      "fields": []
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "sales-market-line-2",
+      "type": "tableEx",
+      "box": [
+        920,
+        922,
+        328,
+        42
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Säljanalys trend 2 bild"
+          }
+        }
+      ]
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "sales-seller-divider-7",
+      "type": "textbox",
+      "box": [
+        1676,
+        1022,
+        10,
+        24
+      ],
+      "fields": []
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "sales-seller-row-7",
+      "type": "textbox",
+      "box": [
+        1320,
+        992,
+        520,
+        58
+      ],
+      "fields": []
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "kpi-change-panel0",
+      "type": "textbox",
+      "box": [
+        352,
+        412,
+        196,
+        40
+      ],
+      "fields": []
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "kpi-label2",
+      "type": "textbox",
+      "box": [
+        976,
+        294,
+        252,
+        36
+      ],
+      "fields": []
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "sales-seller-growth-1",
+      "type": "cardVisual",
+      "box": [
+        1690,
+        614,
+        144,
+        24
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Säljanalys säljare 1 tillväxt etikett"
+          }
+        }
+      ]
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "kpi-panel0",
+      "type": "textbox",
+      "box": [
+        320,
+        276,
+        296,
+        200
+      ],
+      "fields": []
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "kpi-value3",
+      "type": "cardVisual",
+      "box": [
+        1288,
+        336,
+        244,
+        56
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Genomsnittlig order"
+          }
+        }
+      ]
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "sales-seller-badge-2",
+      "type": "textbox",
+      "box": [
+        1332,
+        659,
+        44,
+        44
+      ],
+      "fields": []
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "kpi-change4",
+      "type": "cardVisual",
+      "box": [
+        1608,
+        420,
+        180,
+        28
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Säljanalys KPI 4 förändring"
+          }
+        }
+      ]
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "sales-seller-initials-6",
+      "type": "cardVisual",
+      "box": [
+        1332,
+        931,
+        44,
+        44
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Säljanalys säljare 6 initialer"
+          }
+        }
+      ]
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "sales-quarter-2",
+      "type": "cardVisual",
+      "box": [
+        664,
+        744,
+        64,
+        24
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Säljanalys kvartal 2"
+          }
+        }
+      ]
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "sales-leaderboard-subtitle",
+      "type": "textbox",
+      "box": [
+        1320,
+        552,
+        520,
+        24
+      ],
+      "fields": []
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "sales-seller-divider-5",
+      "type": "textbox",
+      "box": [
+        1676,
+        886,
+        10,
+        24
+      ],
+      "fields": []
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "sales-seller-badge-5",
+      "type": "textbox",
+      "box": [
+        1332,
+        863,
+        44,
+        44
+      ],
+      "fields": []
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "sales-seller-segments-5",
+      "type": "cardVisual",
+      "box": [
+        1392,
+        886,
+        192,
+        24
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Säljanalys säljare 5 segment"
+          }
+        }
+      ]
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "sales-seller-growth-5",
+      "type": "cardVisual",
+      "box": [
+        1690,
+        886,
+        144,
+        24
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Säljanalys säljare 5 tillväxt etikett"
+          }
+        }
+      ]
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "sales-trend-subtitle",
+      "type": "textbox",
+      "box": [
+        344,
+        552,
+        904,
+        24
+      ],
+      "fields": []
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "sales-market-line-1",
+      "type": "tableEx",
+      "box": [
+        920,
+        880,
+        328,
+        42
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Säljanalys trend 1 bild"
+          }
+        }
+      ]
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "sales-trend-panel",
+      "type": "textbox",
+      "box": [
+        320,
+        500,
+        952,
+        284
+      ],
+      "fields": []
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "kpi-change3",
+      "type": "cardVisual",
+      "box": [
+        1296,
+        420,
+        180,
+        28
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Säljanalys KPI 3 förändring"
+          }
+        }
+      ]
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "sales-seller-amount-1",
+      "type": "cardVisual",
+      "box": [
+        1588,
+        614,
+        88,
+        24
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Säljanalys säljare 1 belopp etikett"
+          }
+        }
+      ]
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "nav0",
+      "type": "actionButton",
+      "box": [
+        12,
+        192,
+        264,
+        56
+      ],
+      "fields": []
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "sales-seller-row-1",
+      "type": "textbox",
+      "box": [
+        1320,
+        584,
+        520,
+        58
+      ],
+      "fields": []
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "kpi-panel1",
+      "type": "textbox",
+      "box": [
+        632,
+        276,
+        296,
+        200
+      ],
+      "fields": []
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "sales-market-name-3",
+      "type": "cardVisual",
+      "box": [
+        816,
+        972,
+        92,
+        24
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Säljanalys trend 3 namn etikett"
+          }
+        }
+      ]
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "kpi-change0",
+      "type": "cardVisual",
+      "box": [
+        360,
+        420,
+        180,
+        28
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Säljanalys KPI 0 förändring"
+          }
+        }
+      ]
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "logo",
+      "type": "image",
+      "box": [
+        24,
+        12,
+        240,
+        72
+      ],
+      "fields": []
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "sales-seller-badge-6",
+      "type": "textbox",
+      "box": [
+        1332,
+        931,
+        44,
+        44
+      ],
+      "fields": []
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "kpi-panel2",
+      "type": "textbox",
+      "box": [
+        944,
+        276,
+        296,
+        200
+      ],
+      "fields": []
+    },
+    {
+      "page": "64292d897630eb848ace",
+      "key": "kpi-change-panel2",
+      "type": "textbox",
+      "box": [
+        976,
+        412,
+        196,
+        40
+      ],
+      "fields": []
+    },
+    {
+      "page": "c29a05a83c27e1d92518",
+      "key": "kpi-label2",
+      "type": "textbox",
+      "box": [
+        964,
+        294,
+        200,
+        32
+      ],
+      "fields": []
+    },
+    {
+      "page": "c29a05a83c27e1d92518",
+      "key": "kpi-icon3",
+      "type": "image",
+      "box": [
+        1476,
+        318,
+        48,
+        48
+      ],
+      "fields": []
+    },
+    {
+      "page": "c29a05a83c27e1d92518",
+      "key": "1c63b34faa2fb64d1667",
+      "type": "cardVisual",
+      "box": [
+        1480,
+        30,
+        400,
+        48
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Rapportstatus"
+              }
+            },
+            "Property": "Senast uppdaterad"
+          }
+        }
+      ]
+    },
+    {
+      "page": "c29a05a83c27e1d92518",
+      "key": "date-range",
+      "type": "slicer",
+      "box": [
+        1536,
+        164,
+        328,
+        96
+      ],
+      "fields": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Datum"
+              }
+            },
+            "Property": "Datum"
+          }
+        }
+      ]
+    },
+    {
+      "page": "c29a05a83c27e1d92518",
+      "key": "kpi-icon2",
+      "type": "image",
+      "box": [
+        1172,
+        318,
+        48,
+        48
+      ],
+      "fields": []
+    },
+    {
+      "page": "c29a05a83c27e1d92518",
+      "key": "nav2",
+      "type": "actionButton",
+      "box": [
+        12,
+        336,
+        264,
+        56
+      ],
+      "fields": []
+    },
+    {
+      "page": "c29a05a83c27e1d92518",
+      "key": "logo",
+      "type": "image",
+      "box": [
+        24,
+        12,
+        240,
+        72
+      ],
+      "fields": []
+    },
+    {
+      "page": "c29a05a83c27e1d92518",
+      "key": "header-panel",
+      "type": "textbox",
+      "box": [
+        0,
+        0,
+        1920,
+        96
+      ],
+      "fields": []
+    },
+    {
+      "page": "c29a05a83c27e1d92518",
+      "key": "suite-title",
+      "type": "textbox",
+      "box": [
+        320,
+        24,
+        1256,
+        56
+      ],
+      "fields": []
+    },
+    {
+      "page": "c29a05a83c27e1d92518",
+      "key": "nav1",
+      "type": "actionButton",
+      "box": [
+        12,
+        264,
+        264,
+        56
+      ],
+      "fields": []
+    },
+    {
+      "page": "c29a05a83c27e1d92518",
+      "key": "kpi-icon4",
+      "type": "image",
+      "box": [
+        1780,
+        318,
+        48,
+        48
+      ],
+      "fields": []
+    },
+    {
+      "page": "c29a05a83c27e1d92518",
+      "key": "nav4",
+      "type": "actionButton",
+      "box": [
+        12,
+        480,
+        264,
+        56
+      ],
+      "fields": []
+    },
+    {
+      "page": "c29a05a83c27e1d92518",
+      "key": "kpi-label4",
+      "type": "textbox",
+      "box": [
+        1572,
+        294,
+        200,
+        32
+      ],
+      "fields": []
+    },
+    {
+      "page": "c29a05a83c27e1d92518",
+      "key": "records-heading",
+      "type": "textbox",
+      "box": [
+        344,
+        452,
+        800,
+        36
+      ],
+      "fields": []
+    },
+    {
+      "page": "c29a05a83c27e1d92518",
+      "key": "kpi-accent1",
+      "type": "textbox",
+      "box": [
+        636,
+        292,
+        5,
+        100
+      ],
+      "fields": []
+    },
+    {
+      "page": "c29a05a83c27e1d92518",
+      "key": "transaction-kpi-panel",
+      "type": "textbox",
+      "box": [
+        320,
+        276,
+        1544,
+        132
+      ],
+      "fields": []
+    },
+    {
+      "page": "c29a05a83c27e1d92518",
+      "key": "kpi-accent3",
+      "type": "textbox",
+      "box": [
+        1244,
+        292,
+        5,
+        100
+      ],
+      "fields": []
+    },
+    {
+      "page": "c29a05a83c27e1d92518",
+      "key": "kpi-accent2",
+      "type": "textbox",
+      "box": [
+        940,
+        292,
+        5,
+        100
+      ],
+      "fields": []
+    },
+    {
+      "page": "c29a05a83c27e1d92518",
+      "key": "records",
+      "type": "tableEx",
+      "box": [
+        344,
+        512,
+        1496,
+        528
+      ],
+      "fields": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Datum"
+              }
+            },
+            "Property": "Datum"
+          }
+        },
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Säljare"
+              }
+            },
+            "Property": "Säljare"
+          }
+        },
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Säljare"
+              }
+            },
+            "Property": "Team"
+          }
+        },
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Kunder"
+              }
+            },
+            "Property": "Land"
+          }
+        },
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Produkter"
+              }
+            },
+            "Property": "Kategori"
+          }
+        },
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Produkter"
+              }
+            },
+            "Property": "Produkt"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Omsättning per enhet"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Sålda enheter"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Kostnad"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Omsättning"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Bruttovinst"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Transaktion marginalspår"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Bruttomarginal"
+          }
+        },
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Radnyckel"
+          }
+        }
+      ]
+    },
+    {
+      "page": "c29a05a83c27e1d92518",
+      "key": "kpi-value0",
+      "type": "cardVisual",
+      "box": [
+        356,
+        338,
+        200,
+        56
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Omsättning miljoner"
+          }
+        }
+      ]
+    },
+    {
+      "page": "c29a05a83c27e1d92518",
+      "key": "kpi-value2",
+      "type": "cardVisual",
+      "box": [
+        964,
+        338,
+        200,
+        56
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Bruttovinst miljoner"
+          }
+        }
+      ]
+    },
+    {
+      "page": "c29a05a83c27e1d92518",
+      "key": "kpi-icon0",
+      "type": "image",
+      "box": [
+        564,
+        318,
+        48,
+        48
+      ],
+      "fields": []
+    },
+    {
+      "page": "c29a05a83c27e1d92518",
+      "key": "kpi-icon1",
+      "type": "image",
+      "box": [
+        868,
+        318,
+        48,
+        48
+      ],
+      "fields": []
+    },
+    {
+      "page": "c29a05a83c27e1d92518",
+      "key": "side-panel",
+      "type": "textbox",
+      "box": [
+        0,
+        96,
+        288,
+        984
+      ],
+      "fields": []
+    },
+    {
+      "page": "c29a05a83c27e1d92518",
+      "key": "kpi-accent4",
+      "type": "textbox",
+      "box": [
+        1548,
+        292,
+        5,
+        100
+      ],
+      "fields": []
+    },
+    {
+      "page": "c29a05a83c27e1d92518",
+      "key": "kpi-label1",
+      "type": "textbox",
+      "box": [
+        660,
+        294,
+        200,
+        32
+      ],
+      "fields": []
+    },
+    {
+      "page": "c29a05a83c27e1d92518",
+      "key": "subtitle",
+      "type": "textbox",
+      "box": [
+        320,
+        220,
+        1040,
+        36
+      ],
+      "fields": []
+    },
+    {
+      "page": "c29a05a83c27e1d92518",
+      "key": "kpi-value1",
+      "type": "cardVisual",
+      "box": [
+        660,
+        338,
+        200,
+        56
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Sålda enheter"
+          }
+        }
+      ]
+    },
+    {
+      "page": "c29a05a83c27e1d92518",
+      "key": "kpi-label3",
+      "type": "textbox",
+      "box": [
+        1268,
+        294,
+        200,
+        32
+      ],
+      "fields": []
+    },
+    {
+      "page": "c29a05a83c27e1d92518",
+      "key": "product-search",
+      "type": "textSlicer",
+      "box": [
+        1496,
+        448,
+        344,
+        56
+      ],
+      "fields": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Produkter"
+              }
+            },
+            "Property": "Produkt"
+          }
+        }
+      ]
+    },
+    {
+      "page": "c29a05a83c27e1d92518",
+      "key": "page-title",
+      "type": "textbox",
+      "box": [
+        320,
+        156,
+        1280,
+        64
+      ],
+      "fields": []
+    },
+    {
+      "page": "c29a05a83c27e1d92518",
+      "key": "records-panel",
+      "type": "textbox",
+      "box": [
+        320,
+        432,
+        1544,
+        632
+      ],
+      "fields": []
+    },
+    {
+      "page": "c29a05a83c27e1d92518",
+      "key": "nav0",
+      "type": "actionButton",
+      "box": [
+        12,
+        192,
+        264,
+        56
+      ],
+      "fields": []
+    },
+    {
+      "page": "c29a05a83c27e1d92518",
+      "key": "kpi-value4",
+      "type": "cardVisual",
+      "box": [
+        1572,
+        338,
+        200,
+        56
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Leveranser"
+          }
+        }
+      ]
+    },
+    {
+      "page": "c29a05a83c27e1d92518",
+      "key": "nav3",
+      "type": "actionButton",
+      "box": [
+        12,
+        408,
+        264,
+        56
+      ],
+      "fields": []
+    },
+    {
+      "page": "c29a05a83c27e1d92518",
+      "key": "breadcrumbs",
+      "type": "textbox",
+      "box": [
+        320,
+        116,
+        1280,
+        32
+      ],
+      "fields": []
+    },
+    {
+      "page": "c29a05a83c27e1d92518",
+      "key": "kpi-value3",
+      "type": "cardVisual",
+      "box": [
+        1268,
+        338,
+        200,
+        56
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Bruttomarginal"
+          }
+        }
+      ]
+    },
+    {
+      "page": "c29a05a83c27e1d92518",
+      "key": "kpi-label0",
+      "type": "textbox",
+      "box": [
+        356,
+        294,
+        200,
+        32
+      ],
+      "fields": []
+    }
+  ],
+  "canvas": {
+    "width": 1920,
+    "height": 1080
+  },
+  "intentionalOverlays": "Background panels, card labels/value/sparklines, chart metric selectors, header logo"
+}

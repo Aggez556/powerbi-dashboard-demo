@@ -1,0 +1,586 @@
+{
+  "canvas": {
+    "width": 1920,
+    "height": 1080
+  },
+  "placements": [
+    {
+      "page": "596862aaacf4478e8cd6",
+      "key": "page_title",
+      "type": "textbox",
+      "box": [
+        32,
+        24,
+        1184,
+        88
+      ],
+      "fields": []
+    },
+    {
+      "page": "596862aaacf4478e8cd6",
+      "key": "year",
+      "type": "slicer",
+      "box": [
+        1240,
+        32,
+        304,
+        80
+      ],
+      "fields": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Datum"
+              }
+            },
+            "Property": "År"
+          }
+        }
+      ]
+    },
+    {
+      "page": "596862aaacf4478e8cd6",
+      "key": "category",
+      "type": "slicer",
+      "box": [
+        1568,
+        32,
+        320,
+        80
+      ],
+      "fields": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Produkter"
+              }
+            },
+            "Property": "Kategori"
+          }
+        }
+      ]
+    },
+    {
+      "page": "596862aaacf4478e8cd6",
+      "key": "context",
+      "type": "textbox",
+      "box": [
+        32,
+        128,
+        1856,
+        32
+      ],
+      "fields": []
+    },
+    {
+      "page": "596862aaacf4478e8cd6",
+      "key": "footer",
+      "type": "textbox",
+      "box": [
+        32,
+        1032,
+        1856,
+        24
+      ],
+      "fields": []
+    },
+    {
+      "page": "596862aaacf4478e8cd6",
+      "key": "kpi0",
+      "type": "cardVisual",
+      "box": [
+        32,
+        184,
+        352,
+        152
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Omsättning"
+          }
+        }
+      ]
+    },
+    {
+      "page": "596862aaacf4478e8cd6",
+      "key": "kpi1",
+      "type": "cardVisual",
+      "box": [
+        408,
+        184,
+        352,
+        152
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Bruttovinst"
+          }
+        }
+      ]
+    },
+    {
+      "page": "596862aaacf4478e8cd6",
+      "key": "kpi2",
+      "type": "cardVisual",
+      "box": [
+        784,
+        184,
+        352,
+        152
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Bruttomarginal"
+          }
+        }
+      ]
+    },
+    {
+      "page": "596862aaacf4478e8cd6",
+      "key": "kpi3",
+      "type": "cardVisual",
+      "box": [
+        1160,
+        184,
+        352,
+        152
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Antal order"
+          }
+        }
+      ]
+    },
+    {
+      "page": "596862aaacf4478e8cd6",
+      "key": "kpi4",
+      "type": "cardVisual",
+      "box": [
+        1536,
+        184,
+        352,
+        152
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Tillväxt mot föregående år"
+          }
+        }
+      ]
+    },
+    {
+      "page": "596862aaacf4478e8cd6",
+      "key": "monthly",
+      "type": "lineChart",
+      "box": [
+        32,
+        368,
+        1088,
+        640
+      ],
+      "fields": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Datum"
+              }
+            },
+            "Property": "År–månad"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Omsättning"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Bruttovinst"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Bruttomarginal"
+          }
+        }
+      ]
+    },
+    {
+      "page": "596862aaacf4478e8cd6",
+      "key": "customers",
+      "type": "clusteredBarChart",
+      "box": [
+        1144,
+        368,
+        744,
+        640
+      ],
+      "fields": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Kunder"
+              }
+            },
+            "Property": "Kund"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Omsättning"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Bruttomarginal"
+          }
+        }
+      ]
+    },
+    {
+      "page": "d457f8a793b3036234cd",
+      "key": "page_title",
+      "type": "textbox",
+      "box": [
+        32,
+        24,
+        1184,
+        88
+      ],
+      "fields": []
+    },
+    {
+      "page": "d457f8a793b3036234cd",
+      "key": "year",
+      "type": "slicer",
+      "box": [
+        1240,
+        32,
+        304,
+        80
+      ],
+      "fields": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Datum"
+              }
+            },
+            "Property": "År"
+          }
+        }
+      ]
+    },
+    {
+      "page": "d457f8a793b3036234cd",
+      "key": "category",
+      "type": "slicer",
+      "box": [
+        1568,
+        32,
+        320,
+        80
+      ],
+      "fields": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Produkter"
+              }
+            },
+            "Property": "Kategori"
+          }
+        }
+      ]
+    },
+    {
+      "page": "d457f8a793b3036234cd",
+      "key": "context",
+      "type": "textbox",
+      "box": [
+        32,
+        128,
+        1856,
+        32
+      ],
+      "fields": []
+    },
+    {
+      "page": "d457f8a793b3036234cd",
+      "key": "footer",
+      "type": "textbox",
+      "box": [
+        32,
+        1032,
+        1856,
+        24
+      ],
+      "fields": []
+    },
+    {
+      "page": "d457f8a793b3036234cd",
+      "key": "category-revenue",
+      "type": "clusteredBarChart",
+      "box": [
+        32,
+        184,
+        904,
+        320
+      ],
+      "fields": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Produkter"
+              }
+            },
+            "Property": "Kategori"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Omsättning"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Bruttomarginal"
+          }
+        }
+      ]
+    },
+    {
+      "page": "d457f8a793b3036234cd",
+      "key": "category-margin",
+      "type": "clusteredBarChart",
+      "box": [
+        960,
+        184,
+        928,
+        320
+      ],
+      "fields": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Produkter"
+              }
+            },
+            "Property": "Kategori"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Bruttomarginal"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Omsättning"
+          }
+        }
+      ]
+    },
+    {
+      "page": "d457f8a793b3036234cd",
+      "key": "product-revenue",
+      "type": "clusteredBarChart",
+      "box": [
+        32,
+        528,
+        904,
+        480
+      ],
+      "fields": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Produkter"
+              }
+            },
+            "Property": "Produkt"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Omsättning"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Bruttomarginal"
+          }
+        }
+      ]
+    },
+    {
+      "page": "d457f8a793b3036234cd",
+      "key": "product-table",
+      "type": "tableEx",
+      "box": [
+        960,
+        528,
+        928,
+        480
+      ],
+      "fields": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Produkter"
+              }
+            },
+            "Property": "Kategori"
+          }
+        },
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Produkter"
+              }
+            },
+            "Property": "Produkt"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Omsättning"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Kostnad"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Bruttovinst"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Bruttomarginal"
+          }
+        }
+      ]
+    }
+  ],
+  "themeFile": "AubecoHandel-541a68b3.json"
+}

@@ -1,0 +1,60 @@
+﻿{
+    "status":  "passed",
+    "scenarios":  [
+                      {
+                          "mode":  "R12",
+                          "period":  "Oktober 2026",
+                          "[Start]":  "\/Date(1761951600000)\/",
+                          "[Slut]":  "\/Date(1793401200000)\/",
+                          "[Omsättning]":  147175181,
+                          "[Bruttovinst]":  37928138,
+                          "[Resultat]":  7888017,
+                          "[Budget]":  10286437,
+                          "[Uppdrag]":  1019,
+                          "[Kunder]":  270,
+                          "[Bryggfel]":  0
+                      },
+                      {
+                          "mode":  "Helår",
+                          "period":  "2025",
+                          "[Start]":  "\/Date(1735686000000)\/",
+                          "[Slut]":  "\/Date(1767135600000)\/",
+                          "[Omsättning]":  123557846,
+                          "[Bruttovinst]":  33575633,
+                          "[Resultat]":  9415252,
+                          "[Budget]":  9545614,
+                          "[Uppdrag]":  860,
+                          "[Kunder]":  270,
+                          "[Bryggfel]":  0
+                      },
+                      {
+                          "mode":  "Helår",
+                          "period":  "2024",
+                          "[Start]":  "\/Date(1704063600000)\/",
+                          "[Slut]":  "\/Date(1735599600000)\/",
+                          "[Omsättning]":  99619207,
+                          "[Bruttovinst]":  27695006,
+                          "[Resultat]":  6929433,
+                          "[Budget]":  7554896,
+                          "[Uppdrag]":  748,
+                          "[Kunder]":  240,
+                          "[Bryggfel]":  0
+                      },
+                      {
+                          "mode":  "Månad",
+                          "period":  "Oktober 2026",
+                          "[Start]":  "\/Date(1790805600000)\/",
+                          "[Slut]":  "\/Date(1793401200000)\/",
+                          "[Omsättning]":  16451833,
+                          "[Bruttovinst]":  4181321,
+                          "[Resultat]":  700122,
+                          "[Budget]":  1149859,
+                          "[Uppdrag]":  109,
+                          "[Kunder]":  165,
+                          "[Bryggfel]":  0
+                      }
+                  ],
+    "desktopProcessId":  11132,
+    "source":  "Refreshed live Desktop model; DAX compared with independent CSV calculations",
+    "lastMonth":  "2026-10"
+}

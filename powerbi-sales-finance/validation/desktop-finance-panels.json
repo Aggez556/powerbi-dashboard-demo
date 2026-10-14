@@ -1,0 +1,583 @@
+﻿{
+    "status":  "passed",
+    "rows":  [
+                 {
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Panel]":  1,
+                     "Datum[Månadsnummer]":  1,
+                     "[Vinst]":  0.0637,
+                     "[Medel]":  0.0864,
+                     "[Axelmax]":  0.2926
+                 },
+                 {
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Panel]":  1,
+                     "Datum[Månadsnummer]":  2,
+                     "[Vinst]":  0.0653,
+                     "[Medel]":  0.0864,
+                     "[Axelmax]":  0.2926
+                 },
+                 {
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Panel]":  1,
+                     "Datum[Månadsnummer]":  3,
+                     "[Vinst]":  0.1003,
+                     "[Medel]":  0.0864,
+                     "[Axelmax]":  0.2926
+                 },
+                 {
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Panel]":  1,
+                     "Datum[Månadsnummer]":  4,
+                     "[Vinst]":  0.0768,
+                     "[Medel]":  0.0864,
+                     "[Axelmax]":  0.2926
+                 },
+                 {
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Panel]":  1,
+                     "Datum[Månadsnummer]":  5,
+                     "[Vinst]":  0.0696,
+                     "[Medel]":  0.0864,
+                     "[Axelmax]":  0.2926
+                 },
+                 {
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Panel]":  1,
+                     "Datum[Månadsnummer]":  6,
+                     "[Vinst]":  0.0667,
+                     "[Medel]":  0.0864,
+                     "[Axelmax]":  0.2926
+                 },
+                 {
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Panel]":  1,
+                     "Datum[Månadsnummer]":  7,
+                     "[Vinst]":  0.0451,
+                     "[Medel]":  0.0864,
+                     "[Axelmax]":  0.2926
+                 },
+                 {
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Panel]":  1,
+                     "Datum[Månadsnummer]":  8,
+                     "[Vinst]":  0.0566,
+                     "[Medel]":  0.0864,
+                     "[Axelmax]":  0.2926
+                 },
+                 {
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Panel]":  1,
+                     "Datum[Månadsnummer]":  9,
+                     "[Vinst]":  0.0822,
+                     "[Medel]":  0.0864,
+                     "[Axelmax]":  0.2926
+                 },
+                 {
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Panel]":  1,
+                     "Datum[Månadsnummer]":  10,
+                     "[Vinst]":  0.0999,
+                     "[Medel]":  0.0864,
+                     "[Axelmax]":  0.2926
+                 },
+                 {
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Panel]":  1,
+                     "Datum[Månadsnummer]":  11,
+                     "[Vinst]":  0.1398,
+                     "[Medel]":  0.0864,
+                     "[Axelmax]":  0.2926
+                 },
+                 {
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Panel]":  1,
+                     "Datum[Månadsnummer]":  12,
+                     "[Vinst]":  0.1705,
+                     "[Medel]":  0.0864,
+                     "[Axelmax]":  0.2926
+                 },
+                 {
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Panel]":  2,
+                     "Datum[Månadsnummer]":  1,
+                     "[Vinst]":  0.0382,
+                     "[Medel]":  0.0527,
+                     "[Axelmax]":  0.2926
+                 },
+                 {
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Panel]":  2,
+                     "Datum[Månadsnummer]":  2,
+                     "[Vinst]":  0.0332,
+                     "[Medel]":  0.0527,
+                     "[Axelmax]":  0.2926
+                 },
+                 {
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Panel]":  2,
+                     "Datum[Månadsnummer]":  3,
+                     "[Vinst]":  0.0556,
+                     "[Medel]":  0.0527,
+                     "[Axelmax]":  0.2926
+                 },
+                 {
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Panel]":  2,
+                     "Datum[Månadsnummer]":  4,
+                     "[Vinst]":  0.0601,
+                     "[Medel]":  0.0527,
+                     "[Axelmax]":  0.2926
+                 },
+                 {
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Panel]":  2,
+                     "Datum[Månadsnummer]":  5,
+                     "[Vinst]":  0.0329,
+                     "[Medel]":  0.0527,
+                     "[Axelmax]":  0.2926
+                 },
+                 {
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Panel]":  2,
+                     "Datum[Månadsnummer]":  6,
+                     "[Vinst]":  0.0393,
+                     "[Medel]":  0.0527,
+                     "[Axelmax]":  0.2926
+                 },
+                 {
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Panel]":  2,
+                     "Datum[Månadsnummer]":  7,
+                     "[Vinst]":  0.0359,
+                     "[Medel]":  0.0527,
+                     "[Axelmax]":  0.2926
+                 },
+                 {
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Panel]":  2,
+                     "Datum[Månadsnummer]":  8,
+                     "[Vinst]":  0.0379,
+                     "[Medel]":  0.0527,
+                     "[Axelmax]":  0.2926
+                 },
+                 {
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Panel]":  2,
+                     "Datum[Månadsnummer]":  9,
+                     "[Vinst]":  0.0558,
+                     "[Medel]":  0.0527,
+                     "[Axelmax]":  0.2926
+                 },
+                 {
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Panel]":  2,
+                     "Datum[Månadsnummer]":  10,
+                     "[Vinst]":  0.0674,
+                     "[Medel]":  0.0527,
+                     "[Axelmax]":  0.2926
+                 },
+                 {
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Panel]":  2,
+                     "Datum[Månadsnummer]":  11,
+                     "[Vinst]":  0.0836,
+                     "[Medel]":  0.0527,
+                     "[Axelmax]":  0.2926
+                 },
+                 {
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Panel]":  2,
+                     "Datum[Månadsnummer]":  12,
+                     "[Vinst]":  0.0919,
+                     "[Medel]":  0.0527,
+                     "[Axelmax]":  0.2926
+                 },
+                 {
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Panel]":  3,
+                     "Datum[Månadsnummer]":  1,
+                     "[Vinst]":  0.1627,
+                     "[Medel]":  0.2024,
+                     "[Axelmax]":  0.2926
+                 },
+                 {
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Panel]":  3,
+                     "Datum[Månadsnummer]":  2,
+                     "[Vinst]":  0.1274,
+                     "[Medel]":  0.2024,
+                     "[Axelmax]":  0.2926
+                 },
+                 {
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Panel]":  3,
+                     "Datum[Månadsnummer]":  3,
+                     "[Vinst]":  0.1401,
+                     "[Medel]":  0.2024,
+                     "[Axelmax]":  0.2926
+                 },
+                 {
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Panel]":  3,
+                     "Datum[Månadsnummer]":  4,
+                     "[Vinst]":  0.2385,
+                     "[Medel]":  0.2024,
+                     "[Axelmax]":  0.2926
+                 },
+                 {
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Panel]":  3,
+                     "Datum[Månadsnummer]":  5,
+                     "[Vinst]":  0.2248,
+                     "[Medel]":  0.2024,
+                     "[Axelmax]":  0.2926
+                 },
+                 {
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Panel]":  3,
+                     "Datum[Månadsnummer]":  6,
+                     "[Vinst]":  0.2309,
+                     "[Medel]":  0.2024,
+                     "[Axelmax]":  0.2926
+                 },
+                 {
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Panel]":  3,
+                     "Datum[Månadsnummer]":  7,
+                     "[Vinst]":  0.2024,
+                     "[Medel]":  0.2024,
+                     "[Axelmax]":  0.2926
+                 },
+                 {
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Panel]":  3,
+                     "Datum[Månadsnummer]":  8,
+                     "[Vinst]":  0.2359,
+                     "[Medel]":  0.2024,
+                     "[Axelmax]":  0.2926
+                 },
+                 {
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Panel]":  3,
+                     "Datum[Månadsnummer]":  9,
+                     "[Vinst]":  0.1545,
+                     "[Medel]":  0.2024,
+                     "[Axelmax]":  0.2926
+                 },
+                 {
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Panel]":  3,
+                     "Datum[Månadsnummer]":  10,
+                     "[Vinst]":  0.2184,
+                     "[Medel]":  0.2024,
+                     "[Axelmax]":  0.2926
+                 },
+                 {
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Panel]":  3,
+                     "Datum[Månadsnummer]":  11,
+                     "[Vinst]":  0.2385,
+                     "[Medel]":  0.2024,
+                     "[Axelmax]":  0.2926
+                 },
+                 {
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Panel]":  3,
+                     "Datum[Månadsnummer]":  12,
+                     "[Vinst]":  0.2544,
+                     "[Medel]":  0.2024,
+                     "[Axelmax]":  0.2926
+                 },
+                 {
+                     "Finansaxel[Val]":  "Team",
+                     "Finansaxel[Panel]":  1,
+                     "Datum[Månadsnummer]":  1,
+                     "[Vinst]":  0.096,
+                     "[Medel]":  0.1113,
+                     "[Axelmax]":  0.2093
+                 },
+                 {
+                     "Finansaxel[Val]":  "Team",
+                     "Finansaxel[Panel]":  1,
+                     "Datum[Månadsnummer]":  2,
+                     "[Vinst]":  0.074,
+                     "[Medel]":  0.1113,
+                     "[Axelmax]":  0.2093
+                 },
+                 {
+                     "Finansaxel[Val]":  "Team",
+                     "Finansaxel[Panel]":  1,
+                     "Datum[Månadsnummer]":  3,
+                     "[Vinst]":  0.0941,
+                     "[Medel]":  0.1113,
+                     "[Axelmax]":  0.2093
+                 },
+                 {
+                     "Finansaxel[Val]":  "Team",
+                     "Finansaxel[Panel]":  1,
+                     "Datum[Månadsnummer]":  4,
+                     "[Vinst]":  0.1452,
+                     "[Medel]":  0.1113,
+                     "[Axelmax]":  0.2093
+                 },
+                 {
+                     "Finansaxel[Val]":  "Team",
+                     "Finansaxel[Panel]":  1,
+                     "Datum[Månadsnummer]":  5,
+                     "[Vinst]":  0.0817,
+                     "[Medel]":  0.1113,
+                     "[Axelmax]":  0.2093
+                 },
+                 {
+                     "Finansaxel[Val]":  "Team",
+                     "Finansaxel[Panel]":  1,
+                     "Datum[Månadsnummer]":  6,
+                     "[Vinst]":  0.075,
+                     "[Medel]":  0.1113,
+                     "[Axelmax]":  0.2093
+                 },
+                 {
+                     "Finansaxel[Val]":  "Team",
+                     "Finansaxel[Panel]":  1,
+                     "Datum[Månadsnummer]":  7,
+                     "[Vinst]":  0.0799,
+                     "[Medel]":  0.1113,
+                     "[Axelmax]":  0.2093
+                 },
+                 {
+                     "Finansaxel[Val]":  "Team",
+                     "Finansaxel[Panel]":  1,
+                     "Datum[Månadsnummer]":  8,
+                     "[Vinst]":  0.1029,
+                     "[Medel]":  0.1113,
+                     "[Axelmax]":  0.2093
+                 },
+                 {
+                     "Finansaxel[Val]":  "Team",
+                     "Finansaxel[Panel]":  1,
+                     "Datum[Månadsnummer]":  9,
+                     "[Vinst]":  0.1,
+                     "[Medel]":  0.1113,
+                     "[Axelmax]":  0.2093
+                 },
+                 {
+                     "Finansaxel[Val]":  "Team",
+                     "Finansaxel[Panel]":  1,
+                     "Datum[Månadsnummer]":  10,
+                     "[Vinst]":  0.1362,
+                     "[Medel]":  0.1113,
+                     "[Axelmax]":  0.2093
+                 },
+                 {
+                     "Finansaxel[Val]":  "Team",
+                     "Finansaxel[Panel]":  1,
+                     "Datum[Månadsnummer]":  11,
+                     "[Vinst]":  0.1688,
+                     "[Medel]":  0.1113,
+                     "[Axelmax]":  0.2093
+                 },
+                 {
+                     "Finansaxel[Val]":  "Team",
+                     "Finansaxel[Panel]":  1,
+                     "Datum[Månadsnummer]":  12,
+                     "[Vinst]":  0.182,
+                     "[Medel]":  0.1113,
+                     "[Axelmax]":  0.2093
+                 },
+                 {
+                     "Finansaxel[Val]":  "Team",
+                     "Finansaxel[Panel]":  2,
+                     "Datum[Månadsnummer]":  1,
+                     "[Vinst]":  0.0863,
+                     "[Medel]":  0.1146,
+                     "[Axelmax]":  0.2093
+                 },
+                 {
+                     "Finansaxel[Val]":  "Team",
+                     "Finansaxel[Panel]":  2,
+                     "Datum[Månadsnummer]":  2,
+                     "[Vinst]":  0.0744,
+                     "[Medel]":  0.1146,
+                     "[Axelmax]":  0.2093
+                 },
+                 {
+                     "Finansaxel[Val]":  "Team",
+                     "Finansaxel[Panel]":  2,
+                     "Datum[Månadsnummer]":  3,
+                     "[Vinst]":  0.1047,
+                     "[Medel]":  0.1146,
+                     "[Axelmax]":  0.2093
+                 },
+                 {
+                     "Finansaxel[Val]":  "Team",
+                     "Finansaxel[Panel]":  2,
+                     "Datum[Månadsnummer]":  4,
+                     "[Vinst]":  0.1163,
+                     "[Medel]":  0.1146,
+                     "[Axelmax]":  0.2093
+                 },
+                 {
+                     "Finansaxel[Val]":  "Team",
+                     "Finansaxel[Panel]":  2,
+                     "Datum[Månadsnummer]":  5,
+                     "[Vinst]":  0.1196,
+                     "[Medel]":  0.1146,
+                     "[Axelmax]":  0.2093
+                 },
+                 {
+                     "Finansaxel[Val]":  "Team",
+                     "Finansaxel[Panel]":  2,
+                     "Datum[Månadsnummer]":  6,
+                     "[Vinst]":  0.1426,
+                     "[Medel]":  0.1146,
+                     "[Axelmax]":  0.2093
+                 },
+                 {
+                     "Finansaxel[Val]":  "Team",
+                     "Finansaxel[Panel]":  2,
+                     "Datum[Månadsnummer]":  7,
+                     "[Vinst]":  0.0954,
+                     "[Medel]":  0.1146,
+                     "[Axelmax]":  0.2093
+                 },
+                 {
+                     "Finansaxel[Val]":  "Team",
+                     "Finansaxel[Panel]":  2,
+                     "Datum[Månadsnummer]":  8,
+                     "[Vinst]":  0.1081,
+                     "[Medel]":  0.1146,
+                     "[Axelmax]":  0.2093
+                 },
+                 {
+                     "Finansaxel[Val]":  "Team",
+                     "Finansaxel[Panel]":  2,
+                     "Datum[Månadsnummer]":  9,
+                     "[Vinst]":  0.0848,
+                     "[Medel]":  0.1146,
+                     "[Axelmax]":  0.2093
+                 },
+                 {
+                     "Finansaxel[Val]":  "Team",
+                     "Finansaxel[Panel]":  2,
+                     "Datum[Månadsnummer]":  10,
+                     "[Vinst]":  0.1317,
+                     "[Medel]":  0.1146,
+                     "[Axelmax]":  0.2093
+                 },
+                 {
+                     "Finansaxel[Val]":  "Team",
+                     "Finansaxel[Panel]":  2,
+                     "Datum[Månadsnummer]":  11,
+                     "[Vinst]":  0.1305,
+                     "[Medel]":  0.1146,
+                     "[Axelmax]":  0.2093
+                 },
+                 {
+                     "Finansaxel[Val]":  "Team",
+                     "Finansaxel[Panel]":  2,
+                     "Datum[Månadsnummer]":  12,
+                     "[Vinst]":  0.1808,
+                     "[Medel]":  0.1146,
+                     "[Axelmax]":  0.2093
+                 },
+                 {
+                     "Finansaxel[Val]":  "Team",
+                     "Finansaxel[Panel]":  3,
+                     "Datum[Månadsnummer]":  1,
+                     "[Vinst]":  0.0824,
+                     "[Medel]":  0.1155,
+                     "[Axelmax]":  0.2093
+                 },
+                 {
+                     "Finansaxel[Val]":  "Team",
+                     "Finansaxel[Panel]":  3,
+                     "Datum[Månadsnummer]":  2,
+                     "[Vinst]":  0.0776,
+                     "[Medel]":  0.1155,
+                     "[Axelmax]":  0.2093
+                 },
+                 {
+                     "Finansaxel[Val]":  "Team",
+                     "Finansaxel[Panel]":  3,
+                     "Datum[Månadsnummer]":  3,
+                     "[Vinst]":  0.0973,
+                     "[Medel]":  0.1155,
+                     "[Axelmax]":  0.2093
+                 },
+                 {
+                     "Finansaxel[Val]":  "Team",
+                     "Finansaxel[Panel]":  3,
+                     "Datum[Månadsnummer]":  4,
+                     "[Vinst]":  0.1139,
+                     "[Medel]":  0.1155,
+                     "[Axelmax]":  0.2093
+                 },
+                 {
+                     "Finansaxel[Val]":  "Team",
+                     "Finansaxel[Panel]":  3,
+                     "Datum[Månadsnummer]":  5,
+                     "[Vinst]":  0.1261,
+                     "[Medel]":  0.1155,
+                     "[Axelmax]":  0.2093
+                 },
+                 {
+                     "Finansaxel[Val]":  "Team",
+                     "Finansaxel[Panel]":  3,
+                     "Datum[Månadsnummer]":  6,
+                     "[Vinst]":  0.1194,
+                     "[Medel]":  0.1155,
+                     "[Axelmax]":  0.2093
+                 },
+                 {
+                     "Finansaxel[Val]":  "Team",
+                     "Finansaxel[Panel]":  3,
+                     "Datum[Månadsnummer]":  7,
+                     "[Vinst]":  0.1082,
+                     "[Medel]":  0.1155,
+                     "[Axelmax]":  0.2093
+                 },
+                 {
+                     "Finansaxel[Val]":  "Team",
+                     "Finansaxel[Panel]":  3,
+                     "Datum[Månadsnummer]":  8,
+                     "[Vinst]":  0.1194,
+                     "[Medel]":  0.1155,
+                     "[Axelmax]":  0.2093
+                 },
+                 {
+                     "Finansaxel[Val]":  "Team",
+                     "Finansaxel[Panel]":  3,
+                     "Datum[Månadsnummer]":  9,
+                     "[Vinst]":  0.1077,
+                     "[Medel]":  0.1155,
+                     "[Axelmax]":  0.2093
+                 },
+                 {
+                     "Finansaxel[Val]":  "Team",
+                     "Finansaxel[Panel]":  3,
+                     "Datum[Månadsnummer]":  10,
+                     "[Vinst]":  0.1177,
+                     "[Medel]":  0.1155,
+                     "[Axelmax]":  0.2093
+                 },
+                 {
+                     "Finansaxel[Val]":  "Team",
+                     "Finansaxel[Panel]":  3,
+                     "Datum[Månadsnummer]":  11,
+                     "[Vinst]":  0.1625,
+                     "[Medel]":  0.1155,
+                     "[Axelmax]":  0.2093
+                 },
+                 {
+                     "Finansaxel[Val]":  "Team",
+                     "Finansaxel[Panel]":  3,
+                     "Datum[Månadsnummer]":  12,
+                     "[Vinst]":  0.1538,
+                     "[Medel]":  0.1155,
+                     "[Axelmax]":  0.2093
+                 }
+             ],
+    "desktopProcessId":  22340,
+    "source":  "Actual Desktop engine, DAX query"
+}

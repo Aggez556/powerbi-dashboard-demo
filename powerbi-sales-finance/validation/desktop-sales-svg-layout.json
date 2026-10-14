@@ -1,0 +1,37 @@
+﻿{
+    "status":  "passed",
+    "rows":  [
+                 {
+                     "[Period]":  "Full",
+                     "[Group]":  "Land",
+                     "[SVG]":  "data:image/svg+xml;utf8,\u003csvg xmlns=\u0027http://www.w3.org/2000/svg\u0027 viewBox=\u00270 0 324 28\u0027\u003e\u003cpolygon points=\u00278,26 8.0,16.5 36.0,22.0 64.0,16.3 92.0,16.4 120.0,17.3 148.0,18.6 176.0,19.6 204.0,20.1 232.0,18.6 260.0,13.9 288.0,4.0 316.0,7.4 316,26\u0027 fill=\u0027rgb(231,237,245)\u0027/\u003e\u003cpolyline points=\u00278.0,16.5 36.0,22.0 64.0,16.3 92.0,16.4 120.0,17.3 148.0,18.6 176.0,19.6 204.0,20.1 232.0,18.6 260.0,13.9 288.0,4.0 316.0,7.4\u0027 fill=\u0027none\u0027 stroke=\u0027rgb(15,49,99)\u0027 stroke-width=\u00271.5\u0027/\u003e\u003ccircle cx=\u002736.0\u0027 cy=\u002722.0\u0027 r=\u00272.2\u0027 fill=\u0027rgb(184,50,50)\u0027/\u003e\u003ccircle cx=\u0027288.0\u0027 cy=\u00274.0\u0027 r=\u00272.2\u0027 fill=\u0027rgb(24,116,71)\u0027/\u003e\u003c/svg\u003e"
+                 },
+                 {
+                     "[Period]":  "Q1",
+                     "[Group]":  "Land",
+                     "[SVG]":  "data:image/svg+xml;utf8,\u003csvg xmlns=\u0027http://www.w3.org/2000/svg\u0027 viewBox=\u00270 0 324 28\u0027\u003e\u003cpolygon points=\u00278,26 8.0,4.7 162.0,22.0 316.0,4.0 316,26\u0027 fill=\u0027rgb(231,237,245)\u0027/\u003e\u003cpolyline points=\u00278.0,4.7 162.0,22.0 316.0,4.0\u0027 fill=\u0027none\u0027 stroke=\u0027rgb(15,49,99)\u0027 stroke-width=\u00271.5\u0027/\u003e\u003ccircle cx=\u0027162.0\u0027 cy=\u002722.0\u0027 r=\u00272.2\u0027 fill=\u0027rgb(184,50,50)\u0027/\u003e\u003ccircle cx=\u0027316.0\u0027 cy=\u00274.0\u0027 r=\u00272.2\u0027 fill=\u0027rgb(24,116,71)\u0027/\u003e\u003c/svg\u003e"
+                 },
+                 {
+                     "[Period]":  "October",
+                     "[Group]":  "Land",
+                     "[SVG]":  "data:image/svg+xml;utf8,\u003csvg xmlns=\u0027http://www.w3.org/2000/svg\u0027 viewBox=\u00270 0 324 28\u0027\u003e\u003cpolyline points=\u0027162.0,13.0\u0027 fill=\u0027none\u0027 stroke=\u0027rgb(15,49,99)\u0027 stroke-width=\u00271.5\u0027/\u003e\u003ccircle cx=\u0027162.0\u0027 cy=\u002713.0\u0027 r=\u00272.2\u0027 fill=\u0027rgb(24,116,71)\u0027/\u003e\u003c/svg\u003e"
+                 },
+                 {
+                     "[Period]":  "Full",
+                     "[Group]":  "Kategori",
+                     "[SVG]":  "data:image/svg+xml;utf8,\u003csvg xmlns=\u0027http://www.w3.org/2000/svg\u0027 viewBox=\u00270 0 324 28\u0027\u003e\u003cpolygon points=\u00278,26 8.0,18.3 36.0,18.7 64.0,13.9 92.0,17.8 120.0,17.6 148.0,18.8 176.0,22.0 204.0,20.1 232.0,15.7 260.0,14.0 288.0,8.3 316.0,4.0 316,26\u0027 fill=\u0027rgb(231,237,245)\u0027/\u003e\u003cpolyline points=\u00278.0,18.3 36.0,18.7 64.0,13.9 92.0,17.8 120.0,17.6 148.0,18.8 176.0,22.0 204.0,20.1 232.0,15.7 260.0,14.0 288.0,8.3 316.0,4.0\u0027 fill=\u0027none\u0027 stroke=\u0027rgb(15,49,99)\u0027 stroke-width=\u00271.5\u0027/\u003e\u003ccircle cx=\u0027176.0\u0027 cy=\u002722.0\u0027 r=\u00272.2\u0027 fill=\u0027rgb(184,50,50)\u0027/\u003e\u003ccircle cx=\u0027316.0\u0027 cy=\u00274.0\u0027 r=\u00272.2\u0027 fill=\u0027rgb(24,116,71)\u0027/\u003e\u003c/svg\u003e"
+                 },
+                 {
+                     "[Period]":  "Q1",
+                     "[Group]":  "Kategori",
+                     "[SVG]":  "data:image/svg+xml;utf8,\u003csvg xmlns=\u0027http://www.w3.org/2000/svg\u0027 viewBox=\u00270 0 324 28\u0027\u003e\u003cpolygon points=\u00278,26 8.0,20.3 162.0,22.0 316.0,4.0 316,26\u0027 fill=\u0027rgb(231,237,245)\u0027/\u003e\u003cpolyline points=\u00278.0,20.3 162.0,22.0 316.0,4.0\u0027 fill=\u0027none\u0027 stroke=\u0027rgb(15,49,99)\u0027 stroke-width=\u00271.5\u0027/\u003e\u003ccircle cx=\u0027162.0\u0027 cy=\u002722.0\u0027 r=\u00272.2\u0027 fill=\u0027rgb(184,50,50)\u0027/\u003e\u003ccircle cx=\u0027316.0\u0027 cy=\u00274.0\u0027 r=\u00272.2\u0027 fill=\u0027rgb(24,116,71)\u0027/\u003e\u003c/svg\u003e"
+                 },
+                 {
+                     "[Period]":  "October",
+                     "[Group]":  "Kategori",
+                     "[SVG]":  "data:image/svg+xml;utf8,\u003csvg xmlns=\u0027http://www.w3.org/2000/svg\u0027 viewBox=\u00270 0 324 28\u0027\u003e\u003cpolyline points=\u0027162.0,13.0\u0027 fill=\u0027none\u0027 stroke=\u0027rgb(15,49,99)\u0027 stroke-width=\u00271.5\u0027/\u003e\u003ccircle cx=\u0027162.0\u0027 cy=\u002713.0\u0027 r=\u00272.2\u0027 fill=\u0027rgb(24,116,71)\u0027/\u003e\u003c/svg\u003e"
+                 }
+             ],
+    "desktopProcessId":  3136,
+    "source":  "Actual Desktop engine, DAX query"
+}

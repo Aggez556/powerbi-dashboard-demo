@@ -1,0 +1,156 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/report/3.3.0/schema.json",
+  "themeCollection": {
+    "baseTheme": {
+      "name": "Fluent2-CY26SU10",
+      "reportVersionAtImport": {
+        "visual": "2.11.0",
+        "report": "3.4.0",
+        "page": "2.3.1"
+      },
+      "type": "SharedResources"
+    },
+    "customTheme": {
+      "name": "AubecoSalesFinanceTheme.json",
+      "reportVersionAtImport": {
+        "visual": "2.11.0",
+        "report": "3.4.0",
+        "page": "2.3.1"
+      },
+      "type": "RegisteredResources"
+    }
+  },
+  "objects": {
+    "outspacePane": [
+      {
+        "properties": {
+          "expanded": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "resourcePackages": [
+    {
+      "name": "SharedResources",
+      "type": "SharedResources",
+      "items": [
+        {
+          "name": "Fluent2-CY26SU10",
+          "path": "BaseThemes/Fluent2-CY26SU10.json",
+          "type": "BaseTheme"
+        }
+      ]
+    },
+    {
+      "name": "RegisteredResources",
+      "type": "RegisteredResources",
+      "items": [
+        {
+          "name": "AubecoLogo-blue.svg",
+          "path": "AubecoLogo-blue.svg",
+          "type": "Image"
+        },
+        {
+          "name": "AubecoLogo-orange.svg",
+          "path": "AubecoLogo-orange.svg",
+          "type": "Image"
+        },
+        {
+          "name": "AubecoSalesFinanceTheme.json",
+          "path": "AubecoSalesFinanceTheme.json",
+          "type": "CustomTheme"
+        },
+        {
+          "name": "HomeArea0.svg",
+          "path": "HomeArea0.svg",
+          "type": "Image"
+        },
+        {
+          "name": "HomeArea1.svg",
+          "path": "HomeArea1.svg",
+          "type": "Image"
+        },
+        {
+          "name": "HomeArea2.svg",
+          "path": "HomeArea2.svg",
+          "type": "Image"
+        },
+        {
+          "name": "HomeArea3.svg",
+          "path": "HomeArea3.svg",
+          "type": "Image"
+        },
+        {
+          "name": "NavArtwork0.svg",
+          "path": "NavArtwork0.svg",
+          "type": "Image"
+        },
+        {
+          "name": "NavArtwork1.svg",
+          "path": "NavArtwork1.svg",
+          "type": "Image"
+        },
+        {
+          "name": "NavArtwork2.svg",
+          "path": "NavArtwork2.svg",
+          "type": "Image"
+        },
+        {
+          "name": "NavArtwork3.svg",
+          "path": "NavArtwork3.svg",
+          "type": "Image"
+        },
+        {
+          "name": "NavArtwork4.svg",
+          "path": "NavArtwork4.svg",
+          "type": "Image"
+        },
+        {
+          "name": "PortalGrid202610070001.svg",
+          "path": "PortalGrid202610070001.svg",
+          "type": "Image"
+        },
+        {
+          "name": "TransactionKpi0.svg",
+          "path": "TransactionKpi0.svg",
+          "type": "Image"
+        },
+        {
+          "name": "TransactionKpi1.svg",
+          "path": "TransactionKpi1.svg",
+          "type": "Image"
+        },
+        {
+          "name": "TransactionKpi2.svg",
+          "path": "TransactionKpi2.svg",
+          "type": "Image"
+        },
+        {
+          "name": "TransactionKpi3.svg",
+          "path": "TransactionKpi3.svg",
+          "type": "Image"
+        },
+        {
+          "name": "TransactionKpi4.svg",
+          "path": "TransactionKpi4.svg",
+          "type": "Image"
+        }
+      ]
+    }
+  ],
+  "settings": {
+    "useStylableVisualContainerHeader": true,
+    "exportDataMode": "AllowSummarized",
+    "defaultDrillFilterOtherVisuals": true,
+    "allowChangeFilterTypes": true,
+    "useEnhancedTooltips": true,
+    "useDefaultAggregateDisplayName": true,
+    "locale": "sv-SE"
+  }
+}

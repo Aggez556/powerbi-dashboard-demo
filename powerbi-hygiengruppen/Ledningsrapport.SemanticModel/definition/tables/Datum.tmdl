@@ -1,0 +1,71 @@
+/// Reproducerbar lokal demodata; Datum.csv.
+table Datum
+	lineageTag: cd64e879-2ea5-4330-a956-01a4df420c33
+	dataCategory: Time
+
+	/// Källfält i lokal demodata: Datum.Datumnyckel.
+	column Datumnyckel
+		dataType: int64
+		isHidden
+		lineageTag: d65579e4-e9e8-4078-8fc3-2aa7cc730869
+		summarizeBy: none
+		sourceColumn: Datumnyckel
+
+	/// Källfält i lokal demodata: Datum.Datum.
+	column Datum
+		dataType: dateTime
+		isKey
+		formatString: yyyy-MM-dd
+		lineageTag: ed23fbd2-36fb-41d4-8933-aafb39c8300c
+		summarizeBy: none
+		sourceColumn: Datum
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	/// Källfält i lokal demodata: Datum.År.
+	column År
+		dataType: int64
+		lineageTag: 25b4456f-e66b-40ba-a15b-87edcb433fcc
+		summarizeBy: none
+		sourceColumn: År
+
+	/// Källfält i lokal demodata: Datum.Månadsnummer.
+	column Månadsnummer
+		dataType: int64
+		isHidden
+		lineageTag: 9504dbf8-1d39-4cd7-b1b3-018d84058dfe
+		summarizeBy: none
+		sourceColumn: Månadsnummer
+
+	/// Källfält i lokal demodata: Datum.Månad.
+	column Månad
+		dataType: string
+		lineageTag: c4ca421b-34fe-40ca-9c65-7a3e002d7413
+		summarizeBy: none
+		sourceColumn: Månad
+		sortByColumn: Månadsnummer
+
+	/// Källfält i lokal demodata: Datum.Årmånad.
+	column Årmånad
+		dataType: string
+		lineageTag: 8ba036e7-9e49-45b9-8d1a-e5d669ebe1f3
+		summarizeBy: none
+		sourceColumn: Årmånad
+
+	/// Källfält i lokal demodata: Datum.Kvartal.
+	column Kvartal
+		dataType: string
+		lineageTag: 298be124-0860-41ae-8ada-de1133a5c4e6
+		summarizeBy: none
+		sourceColumn: Kvartal
+
+	partition Datum = m
+		mode: import
+		source =
+				let
+					Source = Csv.Document(File.Contents(DataFolder & "/Datum.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+					Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+					Typed = Table.TransformColumnTypes(Headers, {{"Datumnyckel", Int64.Type}, {"Datum", type date}, {"År", Int64.Type}, {"Månadsnummer", Int64.Type}, {"Månad", type text}, {"Årmånad", type text}, {"Kvartal", type text}}, "en-US")
+				in
+					Typed
+

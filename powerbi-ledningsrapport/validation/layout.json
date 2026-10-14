@@ -1,0 +1,1174 @@
+{
+  "canvas": {
+    "width": 1920,
+    "height": 1200
+  },
+  "pages": [
+    {
+      "name": "Start",
+      "id": "6ff94a05bddfe7036ec7"
+    },
+    {
+      "name": "Ledningsöversikt",
+      "id": "e2f0addc480f40543797"
+    }
+  ],
+  "placements": [
+    {
+      "page": "6ff94a05bddfe7036ec7",
+      "key": "brand",
+      "type": "textbox",
+      "box": [
+        64,
+        56,
+        700,
+        64
+      ]
+    },
+    {
+      "page": "6ff94a05bddfe7036ec7",
+      "key": "eyebrow",
+      "type": "textbox",
+      "box": [
+        64,
+        148,
+        1200,
+        32
+      ]
+    },
+    {
+      "page": "6ff94a05bddfe7036ec7",
+      "key": "page-title",
+      "type": "textbox",
+      "box": [
+        64,
+        196,
+        1700,
+        80
+      ]
+    },
+    {
+      "page": "6ff94a05bddfe7036ec7",
+      "key": "intro",
+      "type": "textbox",
+      "box": [
+        64,
+        292,
+        1500,
+        48
+      ]
+    },
+    {
+      "page": "6ff94a05bddfe7036ec7",
+      "key": "panel0",
+      "type": "textbox",
+      "box": [
+        64,
+        408,
+        338,
+        436
+      ]
+    },
+    {
+      "page": "6ff94a05bddfe7036ec7",
+      "key": "icon0",
+      "type": "textbox",
+      "box": [
+        88,
+        432,
+        100,
+        64
+      ]
+    },
+    {
+      "page": "6ff94a05bddfe7036ec7",
+      "key": "status0",
+      "type": "textbox",
+      "box": [
+        88,
+        524,
+        290,
+        32
+      ]
+    },
+    {
+      "page": "6ff94a05bddfe7036ec7",
+      "key": "area0",
+      "type": "textbox",
+      "box": [
+        88,
+        572,
+        290,
+        80
+      ]
+    },
+    {
+      "page": "6ff94a05bddfe7036ec7",
+      "key": "description0",
+      "type": "textbox",
+      "box": [
+        88,
+        668,
+        290,
+        64
+      ]
+    },
+    {
+      "page": "6ff94a05bddfe7036ec7",
+      "key": "open0",
+      "type": "actionButton",
+      "box": [
+        88,
+        760,
+        290,
+        56
+      ]
+    },
+    {
+      "page": "6ff94a05bddfe7036ec7",
+      "key": "panel1",
+      "type": "textbox",
+      "box": [
+        426,
+        408,
+        338,
+        436
+      ]
+    },
+    {
+      "page": "6ff94a05bddfe7036ec7",
+      "key": "icon1",
+      "type": "textbox",
+      "box": [
+        450,
+        432,
+        100,
+        64
+      ]
+    },
+    {
+      "page": "6ff94a05bddfe7036ec7",
+      "key": "status1",
+      "type": "textbox",
+      "box": [
+        450,
+        524,
+        290,
+        32
+      ]
+    },
+    {
+      "page": "6ff94a05bddfe7036ec7",
+      "key": "area1",
+      "type": "textbox",
+      "box": [
+        450,
+        572,
+        290,
+        80
+      ]
+    },
+    {
+      "page": "6ff94a05bddfe7036ec7",
+      "key": "description1",
+      "type": "textbox",
+      "box": [
+        450,
+        668,
+        290,
+        64
+      ]
+    },
+    {
+      "page": "6ff94a05bddfe7036ec7",
+      "key": "open1",
+      "type": "actionButton",
+      "box": [
+        450,
+        760,
+        290,
+        56
+      ]
+    },
+    {
+      "page": "6ff94a05bddfe7036ec7",
+      "key": "panel2",
+      "type": "textbox",
+      "box": [
+        788,
+        408,
+        338,
+        436
+      ]
+    },
+    {
+      "page": "6ff94a05bddfe7036ec7",
+      "key": "icon2",
+      "type": "textbox",
+      "box": [
+        812,
+        432,
+        100,
+        64
+      ]
+    },
+    {
+      "page": "6ff94a05bddfe7036ec7",
+      "key": "status2",
+      "type": "textbox",
+      "box": [
+        812,
+        524,
+        290,
+        32
+      ]
+    },
+    {
+      "page": "6ff94a05bddfe7036ec7",
+      "key": "area2",
+      "type": "textbox",
+      "box": [
+        812,
+        572,
+        290,
+        80
+      ]
+    },
+    {
+      "page": "6ff94a05bddfe7036ec7",
+      "key": "description2",
+      "type": "textbox",
+      "box": [
+        812,
+        668,
+        290,
+        64
+      ]
+    },
+    {
+      "page": "6ff94a05bddfe7036ec7",
+      "key": "open2",
+      "type": "actionButton",
+      "box": [
+        812,
+        760,
+        290,
+        56
+      ]
+    },
+    {
+      "page": "6ff94a05bddfe7036ec7",
+      "key": "panel3",
+      "type": "textbox",
+      "box": [
+        1150,
+        408,
+        338,
+        436
+      ]
+    },
+    {
+      "page": "6ff94a05bddfe7036ec7",
+      "key": "icon3",
+      "type": "textbox",
+      "box": [
+        1174,
+        432,
+        100,
+        64
+      ]
+    },
+    {
+      "page": "6ff94a05bddfe7036ec7",
+      "key": "status3",
+      "type": "textbox",
+      "box": [
+        1174,
+        524,
+        290,
+        32
+      ]
+    },
+    {
+      "page": "6ff94a05bddfe7036ec7",
+      "key": "area3",
+      "type": "textbox",
+      "box": [
+        1174,
+        572,
+        290,
+        80
+      ]
+    },
+    {
+      "page": "6ff94a05bddfe7036ec7",
+      "key": "description3",
+      "type": "textbox",
+      "box": [
+        1174,
+        668,
+        290,
+        64
+      ]
+    },
+    {
+      "page": "6ff94a05bddfe7036ec7",
+      "key": "open3",
+      "type": "actionButton",
+      "box": [
+        1174,
+        760,
+        290,
+        56
+      ]
+    },
+    {
+      "page": "6ff94a05bddfe7036ec7",
+      "key": "panel4",
+      "type": "textbox",
+      "box": [
+        1512,
+        408,
+        338,
+        436
+      ]
+    },
+    {
+      "page": "6ff94a05bddfe7036ec7",
+      "key": "icon4",
+      "type": "textbox",
+      "box": [
+        1536,
+        432,
+        100,
+        64
+      ]
+    },
+    {
+      "page": "6ff94a05bddfe7036ec7",
+      "key": "status4",
+      "type": "textbox",
+      "box": [
+        1536,
+        524,
+        290,
+        32
+      ]
+    },
+    {
+      "page": "6ff94a05bddfe7036ec7",
+      "key": "area4",
+      "type": "textbox",
+      "box": [
+        1536,
+        572,
+        290,
+        80
+      ]
+    },
+    {
+      "page": "6ff94a05bddfe7036ec7",
+      "key": "description4",
+      "type": "textbox",
+      "box": [
+        1536,
+        668,
+        290,
+        64
+      ]
+    },
+    {
+      "page": "6ff94a05bddfe7036ec7",
+      "key": "open4",
+      "type": "actionButton",
+      "box": [
+        1536,
+        760,
+        290,
+        56
+      ]
+    },
+    {
+      "page": "6ff94a05bddfe7036ec7",
+      "key": "footer-panel",
+      "type": "textbox",
+      "box": [
+        64,
+        972,
+        1792,
+        136
+      ]
+    },
+    {
+      "page": "6ff94a05bddfe7036ec7",
+      "key": "benefit0",
+      "type": "textbox",
+      "box": [
+        88,
+        992,
+        552,
+        40
+      ]
+    },
+    {
+      "page": "6ff94a05bddfe7036ec7",
+      "key": "benefit-desc0",
+      "type": "textbox",
+      "box": [
+        88,
+        1044,
+        552,
+        40
+      ]
+    },
+    {
+      "page": "6ff94a05bddfe7036ec7",
+      "key": "benefit1",
+      "type": "textbox",
+      "box": [
+        684,
+        992,
+        552,
+        40
+      ]
+    },
+    {
+      "page": "6ff94a05bddfe7036ec7",
+      "key": "benefit-desc1",
+      "type": "textbox",
+      "box": [
+        684,
+        1044,
+        552,
+        40
+      ]
+    },
+    {
+      "page": "6ff94a05bddfe7036ec7",
+      "key": "benefit2",
+      "type": "textbox",
+      "box": [
+        1280,
+        992,
+        552,
+        40
+      ]
+    },
+    {
+      "page": "6ff94a05bddfe7036ec7",
+      "key": "benefit-desc2",
+      "type": "textbox",
+      "box": [
+        1280,
+        1044,
+        552,
+        40
+      ]
+    },
+    {
+      "page": "e2f0addc480f40543797",
+      "key": "side-panel",
+      "type": "textbox",
+      "box": [
+        0,
+        0,
+        272,
+        1200
+      ]
+    },
+    {
+      "page": "e2f0addc480f40543797",
+      "key": "home",
+      "type": "actionButton",
+      "box": [
+        16,
+        16,
+        240,
+        48
+      ]
+    },
+    {
+      "page": "e2f0addc480f40543797",
+      "key": "nav0",
+      "type": "actionButton",
+      "box": [
+        16,
+        104,
+        240,
+        56
+      ]
+    },
+    {
+      "page": "e2f0addc480f40543797",
+      "key": "nav1",
+      "type": "actionButton",
+      "box": [
+        16,
+        176,
+        240,
+        56
+      ]
+    },
+    {
+      "page": "e2f0addc480f40543797",
+      "key": "nav2",
+      "type": "actionButton",
+      "box": [
+        16,
+        248,
+        240,
+        56
+      ]
+    },
+    {
+      "page": "e2f0addc480f40543797",
+      "key": "nav3",
+      "type": "actionButton",
+      "box": [
+        16,
+        320,
+        240,
+        56
+      ]
+    },
+    {
+      "page": "e2f0addc480f40543797",
+      "key": "nav4",
+      "type": "actionButton",
+      "box": [
+        16,
+        392,
+        240,
+        56
+      ]
+    },
+    {
+      "page": "e2f0addc480f40543797",
+      "key": "page-title",
+      "type": "textbox",
+      "box": [
+        304,
+        16,
+        780,
+        64
+      ]
+    },
+    {
+      "page": "e2f0addc480f40543797",
+      "key": "organisation",
+      "type": "textbox",
+      "box": [
+        304,
+        80,
+        440,
+        36
+      ]
+    },
+    {
+      "page": "e2f0addc480f40543797",
+      "key": "period-heading",
+      "type": "textbox",
+      "box": [
+        1080,
+        8,
+        340,
+        28
+      ]
+    },
+    {
+      "page": "e2f0addc480f40543797",
+      "key": "mode-0-0",
+      "type": "actionButton",
+      "box": [
+        1080,
+        40,
+        124,
+        56
+      ]
+    },
+    {
+      "page": "e2f0addc480f40543797",
+      "key": "mode-0-1",
+      "type": "actionButton",
+      "box": [
+        1204,
+        40,
+        124,
+        56
+      ]
+    },
+    {
+      "page": "e2f0addc480f40543797",
+      "key": "mode-0-2",
+      "type": "actionButton",
+      "box": [
+        1328,
+        40,
+        124,
+        56
+      ]
+    },
+    {
+      "page": "e2f0addc480f40543797",
+      "key": "mode-1-0",
+      "type": "actionButton",
+      "box": [
+        1080,
+        40,
+        124,
+        56
+      ]
+    },
+    {
+      "page": "e2f0addc480f40543797",
+      "key": "mode-1-1",
+      "type": "actionButton",
+      "box": [
+        1204,
+        40,
+        124,
+        56
+      ]
+    },
+    {
+      "page": "e2f0addc480f40543797",
+      "key": "mode-1-2",
+      "type": "actionButton",
+      "box": [
+        1328,
+        40,
+        124,
+        56
+      ]
+    },
+    {
+      "page": "e2f0addc480f40543797",
+      "key": "mode-2-0",
+      "type": "actionButton",
+      "box": [
+        1080,
+        40,
+        124,
+        56
+      ]
+    },
+    {
+      "page": "e2f0addc480f40543797",
+      "key": "mode-2-1",
+      "type": "actionButton",
+      "box": [
+        1204,
+        40,
+        124,
+        56
+      ]
+    },
+    {
+      "page": "e2f0addc480f40543797",
+      "key": "mode-2-2",
+      "type": "actionButton",
+      "box": [
+        1328,
+        40,
+        124,
+        56
+      ]
+    },
+    {
+      "page": "e2f0addc480f40543797",
+      "key": "periodtyp-state",
+      "type": "slicer",
+      "box": [
+        288,
+        16,
+        200,
+        80
+      ]
+    },
+    {
+      "page": "e2f0addc480f40543797",
+      "key": "r12-end",
+      "type": "slicer",
+      "box": [
+        1496,
+        8,
+        368,
+        96
+      ]
+    },
+    {
+      "page": "e2f0addc480f40543797",
+      "key": "year",
+      "type": "slicer",
+      "box": [
+        1496,
+        8,
+        368,
+        96
+      ]
+    },
+    {
+      "page": "e2f0addc480f40543797",
+      "key": "month",
+      "type": "slicer",
+      "box": [
+        1496,
+        8,
+        368,
+        96
+      ]
+    },
+    {
+      "page": "e2f0addc480f40543797",
+      "key": "period-label",
+      "type": "cardVisual",
+      "box": [
+        840,
+        108,
+        1032,
+        40
+      ]
+    },
+    {
+      "page": "e2f0addc480f40543797",
+      "key": "kpi-panel0",
+      "type": "textbox",
+      "box": [
+        288,
+        160,
+        254,
+        184
+      ]
+    },
+    {
+      "page": "e2f0addc480f40543797",
+      "key": "kpi-heading0",
+      "type": "textbox",
+      "box": [
+        304,
+        176,
+        222,
+        32
+      ]
+    },
+    {
+      "page": "e2f0addc480f40543797",
+      "key": "kpi-value0",
+      "type": "cardVisual",
+      "box": [
+        304,
+        216,
+        222,
+        64
+      ]
+    },
+    {
+      "page": "e2f0addc480f40543797",
+      "key": "kpi-context0",
+      "type": "cardVisual",
+      "box": [
+        304,
+        280,
+        222,
+        56
+      ]
+    },
+    {
+      "page": "e2f0addc480f40543797",
+      "key": "kpi-panel1",
+      "type": "textbox",
+      "box": [
+        558,
+        160,
+        254,
+        184
+      ]
+    },
+    {
+      "page": "e2f0addc480f40543797",
+      "key": "kpi-heading1",
+      "type": "textbox",
+      "box": [
+        574,
+        176,
+        222,
+        32
+      ]
+    },
+    {
+      "page": "e2f0addc480f40543797",
+      "key": "kpi-value1",
+      "type": "cardVisual",
+      "box": [
+        574,
+        216,
+        222,
+        64
+      ]
+    },
+    {
+      "page": "e2f0addc480f40543797",
+      "key": "kpi-context1",
+      "type": "cardVisual",
+      "box": [
+        574,
+        280,
+        222,
+        56
+      ]
+    },
+    {
+      "page": "e2f0addc480f40543797",
+      "key": "kpi-panel2",
+      "type": "textbox",
+      "box": [
+        828,
+        160,
+        254,
+        184
+      ]
+    },
+    {
+      "page": "e2f0addc480f40543797",
+      "key": "kpi-heading2",
+      "type": "textbox",
+      "box": [
+        844,
+        176,
+        222,
+        32
+      ]
+    },
+    {
+      "page": "e2f0addc480f40543797",
+      "key": "kpi-value2",
+      "type": "cardVisual",
+      "box": [
+        844,
+        216,
+        222,
+        64
+      ]
+    },
+    {
+      "page": "e2f0addc480f40543797",
+      "key": "kpi-context2",
+      "type": "cardVisual",
+      "box": [
+        844,
+        280,
+        222,
+        56
+      ]
+    },
+    {
+      "page": "e2f0addc480f40543797",
+      "key": "kpi-panel3",
+      "type": "textbox",
+      "box": [
+        1098,
+        160,
+        254,
+        184
+      ]
+    },
+    {
+      "page": "e2f0addc480f40543797",
+      "key": "kpi-heading3",
+      "type": "textbox",
+      "box": [
+        1114,
+        176,
+        222,
+        32
+      ]
+    },
+    {
+      "page": "e2f0addc480f40543797",
+      "key": "kpi-value3",
+      "type": "cardVisual",
+      "box": [
+        1114,
+        216,
+        222,
+        64
+      ]
+    },
+    {
+      "page": "e2f0addc480f40543797",
+      "key": "kpi-context3",
+      "type": "cardVisual",
+      "box": [
+        1114,
+        280,
+        222,
+        56
+      ]
+    },
+    {
+      "page": "e2f0addc480f40543797",
+      "key": "kpi-panel4",
+      "type": "textbox",
+      "box": [
+        1368,
+        160,
+        254,
+        184
+      ]
+    },
+    {
+      "page": "e2f0addc480f40543797",
+      "key": "kpi-heading4",
+      "type": "textbox",
+      "box": [
+        1384,
+        176,
+        222,
+        32
+      ]
+    },
+    {
+      "page": "e2f0addc480f40543797",
+      "key": "kpi-value4",
+      "type": "cardVisual",
+      "box": [
+        1384,
+        216,
+        222,
+        64
+      ]
+    },
+    {
+      "page": "e2f0addc480f40543797",
+      "key": "kpi-context4",
+      "type": "cardVisual",
+      "box": [
+        1384,
+        280,
+        222,
+        56
+      ]
+    },
+    {
+      "page": "e2f0addc480f40543797",
+      "key": "kpi-panel5",
+      "type": "textbox",
+      "box": [
+        1638,
+        160,
+        254,
+        184
+      ]
+    },
+    {
+      "page": "e2f0addc480f40543797",
+      "key": "kpi-heading5",
+      "type": "textbox",
+      "box": [
+        1654,
+        176,
+        222,
+        32
+      ]
+    },
+    {
+      "page": "e2f0addc480f40543797",
+      "key": "kpi-value5",
+      "type": "cardVisual",
+      "box": [
+        1654,
+        216,
+        222,
+        64
+      ]
+    },
+    {
+      "page": "e2f0addc480f40543797",
+      "key": "kpi-context5",
+      "type": "cardVisual",
+      "box": [
+        1654,
+        280,
+        222,
+        56
+      ]
+    },
+    {
+      "page": "e2f0addc480f40543797",
+      "key": "trend-panel",
+      "type": "textbox",
+      "box": [
+        288,
+        360,
+        798,
+        416
+      ]
+    },
+    {
+      "page": "e2f0addc480f40543797",
+      "key": "jobs-panel",
+      "type": "textbox",
+      "box": [
+        1102,
+        360,
+        798,
+        416
+      ]
+    },
+    {
+      "page": "e2f0addc480f40543797",
+      "key": "trend-heading",
+      "type": "cardVisual",
+      "box": [
+        312,
+        376,
+        750,
+        48
+      ]
+    },
+    {
+      "page": "e2f0addc480f40543797",
+      "key": "jobs-heading",
+      "type": "cardVisual",
+      "box": [
+        1126,
+        376,
+        750,
+        48
+      ]
+    },
+    {
+      "page": "e2f0addc480f40543797",
+      "key": "revenue-margin",
+      "type": "lineStackedColumnComboChart",
+      "box": [
+        312,
+        432,
+        750,
+        320
+      ]
+    },
+    {
+      "page": "e2f0addc480f40543797",
+      "key": "jobs",
+      "type": "columnChart",
+      "box": [
+        1126,
+        432,
+        750,
+        320
+      ]
+    },
+    {
+      "page": "e2f0addc480f40543797",
+      "key": "areas-panel",
+      "type": "textbox",
+      "box": [
+        288,
+        792,
+        798,
+        384
+      ]
+    },
+    {
+      "page": "e2f0addc480f40543797",
+      "key": "areas-heading",
+      "type": "textbox",
+      "box": [
+        312,
+        808,
+        750,
+        48
+      ]
+    },
+    {
+      "page": "e2f0addc480f40543797",
+      "key": "areas",
+      "type": "pivotTable",
+      "box": [
+        312,
+        872,
+        750,
+        220
+      ]
+    },
+    {
+      "page": "e2f0addc480f40543797",
+      "key": "customer-note",
+      "type": "textbox",
+      "box": [
+        312,
+        1128,
+        750,
+        32
+      ]
+    },
+    {
+      "page": "e2f0addc480f40543797",
+      "key": "bridge-panel",
+      "type": "textbox",
+      "box": [
+        1102,
+        792,
+        798,
+        384
+      ]
+    },
+    {
+      "page": "e2f0addc480f40543797",
+      "key": "bridge-heading",
+      "type": "textbox",
+      "box": [
+        1126,
+        808,
+        750,
+        48
+      ]
+    },
+    {
+      "page": "e2f0addc480f40543797",
+      "key": "bridge-subtitle",
+      "type": "textbox",
+      "box": [
+        1126,
+        856,
+        750,
+        32
+      ]
+    },
+    {
+      "page": "e2f0addc480f40543797",
+      "key": "bridge",
+      "type": "waterfallChart",
+      "box": [
+        1126,
+        904,
+        750,
+        244
+      ]
+    },
+    {
+      "page": "e2f0addc480f40543797",
+      "key": "bridge-end-mask",
+      "type": "textbox",
+      "box": [
+        1760,
+        1100,
+        114,
+        64
+      ]
+    },
+    {
+      "page": "e2f0addc480f40543797",
+      "key": "bridge-end-label",
+      "type": "cardVisual",
+      "box": [
+        1760,
+        1100,
+        114,
+        64
+      ]
+    }
+  ],
+  "intentionalOverlays": "KPI labels/values/context within panels; mode variants and relevant period dropdown selected by bookmarks; native waterfall total endpoint label."
+}

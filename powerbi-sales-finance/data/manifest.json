@@ -1,0 +1,46 @@
+{
+  "seed": 20261007,
+  "generator": "scripts/generate-sales-finance.py",
+  "rows": {
+    "Analysaxel": 9,
+    "DimCustomer": 100,
+    "DimDate": 1035,
+    "DimProduct": 30,
+    "DimSeller": 24,
+    "FactSales": 14125,
+    "Produktval": 2,
+    "Trendval": 2,
+    "Finansaxel": 8
+  },
+  "sha256": {
+    "Analysaxel": "e9e66ddbde4a6026b3c327fa4fbe34071c0b329c92a4f9a4327de5b93b8465e5",
+    "DimCustomer": "d46817d4c982e68973a5a08a0f8fc87097081b467f8153867814153383b4ce2a",
+    "DimDate": "70cc6d8776cd5e733698ff00f41012eee1ddaf8a2f348f315ac39e71341a76c4",
+    "DimProduct": "cb849e08464361fc0ecaf5af3a5c82c9bd816f8ba7e443bcd979f760fe8b82fd",
+    "DimSeller": "800a172f41ba82dece5b519393d9965c8dc376f9cdc8c12abc059712e70fa4b2",
+    "FactSales": "fc21c65f0bf8c67b34bf90b3756c9e0d204f38fe05244f48278d0cdf9fc39b41",
+    "Produktval": "5a0eac9753c94698886c8597c367c59115a73f86576350a989d7cd2aee33accb",
+    "Trendval": "ef25c33cee1102152ea5e5ab12dc972b080354ef8f47acb6df4c32cc484cdc19",
+    "Finansaxel": "a4b23c022dafd3933e92b78dc79600c63288bedf6e483f6b7563368ecc750240"
+  },
+  "assumptions": [
+    "All data is fictional.",
+    "One order is treated as one shipment.",
+    "Currency SEK, excluding VAT.",
+    "Full years 2024-2025; 2026 through October 31. Historical rows preserved; 2026 is fictional."
+  ],
+  "extensions": [
+    "scripts/extend-sales-finance-model.py"
+  ],
+  "coverage": {
+    "start": "2024-01-01",
+    "end": "2026-10-31",
+    "partialYear": 2026
+  },
+  "extension": {
+    "generator": "scripts/extend-sales-finance-2026.py",
+    "seed": 20261031,
+    "addedRows": 4125,
+    "addedOrders": 1648
+  }
+}

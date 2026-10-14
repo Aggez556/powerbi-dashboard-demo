@@ -1,0 +1,13 @@
+﻿{
+    "status":  "passed",
+    "rows":  [
+                 {
+                     "[Kvartal]":  "​",
+                     "[Antal]":  1,
+                     "[Valda]":  12,
+                     "[Bild]":  "data:image/svg+xml;utf8,\u003csvg xmlns=\u0027http://www.w3.org/2000/svg\u0027 viewBox=\u00270 0 324 42\u0027\u003e\u003cpolyline points=\u0027260.0,20.0\u0027 fill=\u0027none\u0027 stroke=\u0027rgb(15,49,99)\u0027 stroke-width=\u00271.5\u0027/\u003e\u003ccircle cx=\u0027260.0\u0027 cy=\u002720.0\u0027 r=\u00272.8\u0027 fill=\u0027rgb(24,116,71)\u0027/\u003e\u003c/svg\u003e"
+                 }
+             ],
+    "desktopProcessId":  3136,
+    "source":  "Actual Desktop engine, DAX query"
+}

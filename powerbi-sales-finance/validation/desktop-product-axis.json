@@ -1,0 +1,17 @@
+﻿{
+    "status":  "passed",
+    "rows":  [
+                 {
+                     "[Val]":  "Omsättning",
+                     "[Maxvärde]":  1745770.44,
+                     "[Skalgräns]":  2234586.1632
+                 },
+                 {
+                     "[Val]":  "Sålda enheter",
+                     "[Maxvärde]":  1151,
+                     "[Skalgräns]":  1473.28
+                 }
+             ],
+    "desktopProcessId":  33908,
+    "source":  "Actual Desktop engine, DAX query"
+}

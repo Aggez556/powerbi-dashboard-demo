@@ -1,0 +1,21 @@
+{
+  "seed": 20261006,
+  "generator": "scripts/generate-sales-project.py",
+  "rows": {
+    "FactSales": 10000,
+    "DimDate": 731,
+    "DimCustomer": 100,
+    "DimProduct": 30
+  },
+  "orders": 4000,
+  "sha256": {
+    "FactSales": "d028e285f4c6c993b56a88b429ed8496d9d7203992b83ca77e96130e16ca1e1f",
+    "DimDate": "19012624e95b5acad11ec4d55807e9b3082f93d33df9c25f92104331238e477f",
+    "DimCustomer": "527df2a5cf5a5f3fbc70c7bafd4d4d46ed8ba46f7ae23eb309573ed9c00356b1",
+    "DimProduct": "f9664e4ab7b337e9de9df2400121b3fbf3e4a95119b3a643ea1921670a9eea53"
+  },
+  "encoding": "UTF-8 BOM",
+  "separator": ",",
+  "decimal_separator": ".",
+  "assumptions": "Exklusive moms; inga returer; orderrader inom samma order delar kund och datum."
+}

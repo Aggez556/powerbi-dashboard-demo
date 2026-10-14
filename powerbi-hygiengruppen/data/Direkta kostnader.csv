@@ -1,0 +1,676 @@
+﻿Datumnyckel,Områdesnyckel,Kostnadstyp,Belopp
+20230115,1,Varukostnad,2765263
+20230115,1,Direkt leveranspersonal,162663
+20230115,1,Underleverantörer,130130
+20230115,1,Övrigt direkt,162662
+20230115,1,Ej uppdragsfördelad personal,32532
+20230115,2,Varukostnad,89180
+20230115,2,Direkt leveranspersonal,668850
+20230115,2,Underleverantörer,189508
+20230115,2,Övrigt direkt,78032
+20230115,2,Ej uppdragsfördelad personal,89180
+20230115,3,Varukostnad,0
+20230115,3,Direkt leveranspersonal,785749
+20230115,3,Underleverantörer,47911
+20230115,3,Övrigt direkt,28747
+20230115,3,Ej uppdragsfördelad personal,95823
+20230215,1,Varukostnad,2704488
+20230215,1,Direkt leveranspersonal,159088
+20230215,1,Underleverantörer,127270
+20230215,1,Övrigt direkt,159087
+20230215,1,Ej uppdragsfördelad personal,31817
+20230215,2,Varukostnad,87220
+20230215,2,Direkt leveranspersonal,654150
+20230215,2,Underleverantörer,185343
+20230215,2,Övrigt direkt,76317
+20230215,2,Ej uppdragsfördelad personal,87220
+20230215,3,Varukostnad,0
+20230215,3,Direkt leveranspersonal,768479
+20230215,3,Underleverantörer,46859
+20230215,3,Övrigt direkt,28115
+20230215,3,Ej uppdragsfördelad personal,93717
+20230315,1,Varukostnad,3129913
+20230315,1,Direkt leveranspersonal,184113
+20230315,1,Underleverantörer,147290
+20230315,1,Övrigt direkt,184112
+20230315,1,Ej uppdragsfördelad personal,36822
+20230315,2,Varukostnad,100940
+20230315,2,Direkt leveranspersonal,757050
+20230315,2,Underleverantörer,214498
+20230315,2,Övrigt direkt,88322
+20230315,2,Ej uppdragsfördelad personal,100940
+20230315,3,Varukostnad,0
+20230315,3,Direkt leveranspersonal,889364
+20230315,3,Underleverantörer,54229
+20230315,3,Övrigt direkt,32538
+20230315,3,Ej uppdragsfördelad personal,108459
+20230415,1,Varukostnad,3160300
+20230415,1,Direkt leveranspersonal,185900
+20230415,1,Underleverantörer,148720
+20230415,1,Övrigt direkt,185900
+20230415,1,Ej uppdragsfördelad personal,37180
+20230415,2,Varukostnad,101920
+20230415,2,Direkt leveranspersonal,764400
+20230415,2,Underleverantörer,216580
+20230415,2,Övrigt direkt,89180
+20230415,2,Ej uppdragsfördelad personal,101920
+20230415,3,Varukostnad,0
+20230415,3,Direkt leveranspersonal,897998
+20230415,3,Underleverantörer,54756
+20230415,3,Övrigt direkt,32854
+20230415,3,Ej uppdragsfördelad personal,109512
+20230515,1,Varukostnad,3281850
+20230515,1,Direkt leveranspersonal,193050
+20230515,1,Underleverantörer,154440
+20230515,1,Övrigt direkt,193050
+20230515,1,Ej uppdragsfördelad personal,38610
+20230515,2,Varukostnad,105840
+20230515,2,Direkt leveranspersonal,793800
+20230515,2,Underleverantörer,224910
+20230515,2,Övrigt direkt,92610
+20230515,2,Ej uppdragsfördelad personal,105840
+20230515,3,Varukostnad,0
+20230515,3,Direkt leveranspersonal,932537
+20230515,3,Underleverantörer,56862
+20230515,3,Övrigt direkt,34117
+20230515,3,Ej uppdragsfördelad personal,113724
+20230615,1,Varukostnad,3312238
+20230615,1,Direkt leveranspersonal,194838
+20230615,1,Underleverantörer,155870
+20230615,1,Övrigt direkt,194837
+20230615,1,Ej uppdragsfördelad personal,38967
+20230615,2,Varukostnad,106820
+20230615,2,Direkt leveranspersonal,801150
+20230615,2,Underleverantörer,226993
+20230615,2,Övrigt direkt,93467
+20230615,2,Ej uppdragsfördelad personal,106820
+20230615,3,Varukostnad,0
+20230615,3,Direkt leveranspersonal,941171
+20230615,3,Underleverantörer,57389
+20230615,3,Övrigt direkt,34433
+20230615,3,Ej uppdragsfördelad personal,114777
+20230715,1,Varukostnad,2461388
+20230715,1,Direkt leveranspersonal,144788
+20230715,1,Underleverantörer,115830
+20230715,1,Övrigt direkt,144787
+20230715,1,Ej uppdragsfördelad personal,28957
+20230715,2,Varukostnad,79380
+20230715,2,Direkt leveranspersonal,595350
+20230715,2,Underleverantörer,168683
+20230715,2,Övrigt direkt,69457
+20230715,2,Ej uppdragsfördelad personal,79380
+20230715,3,Varukostnad,0
+20230715,3,Direkt leveranspersonal,699403
+20230715,3,Underleverantörer,42646
+20230715,3,Övrigt direkt,25588
+20230715,3,Ej uppdragsfördelad personal,85293
+20230815,1,Varukostnad,3129913
+20230815,1,Direkt leveranspersonal,184113
+20230815,1,Underleverantörer,147290
+20230815,1,Övrigt direkt,184112
+20230815,1,Ej uppdragsfördelad personal,36822
+20230815,2,Varukostnad,100940
+20230815,2,Direkt leveranspersonal,757050
+20230815,2,Underleverantörer,214498
+20230815,2,Övrigt direkt,88322
+20230815,2,Ej uppdragsfördelad personal,100940
+20230815,3,Varukostnad,0
+20230815,3,Direkt leveranspersonal,889364
+20230815,3,Underleverantörer,54229
+20230815,3,Övrigt direkt,32538
+20230815,3,Ej uppdragsfördelad personal,108459
+20230915,1,Varukostnad,3433788
+20230915,1,Direkt leveranspersonal,201988
+20230915,1,Underleverantörer,161590
+20230915,1,Övrigt direkt,201987
+20230915,1,Ej uppdragsfördelad personal,40397
+20230915,2,Varukostnad,110740
+20230915,2,Direkt leveranspersonal,830550
+20230915,2,Underleverantörer,235323
+20230915,2,Övrigt direkt,96897
+20230915,2,Ej uppdragsfördelad personal,110740
+20230915,3,Varukostnad,0
+20230915,3,Direkt leveranspersonal,975710
+20230915,3,Underleverantörer,59494
+20230915,3,Övrigt direkt,35697
+20230915,3,Ej uppdragsfördelad personal,118989
+20231015,1,Varukostnad,3312238
+20231015,1,Direkt leveranspersonal,194838
+20231015,1,Underleverantörer,155870
+20231015,1,Övrigt direkt,194837
+20231015,1,Ej uppdragsfördelad personal,38967
+20231015,2,Varukostnad,106820
+20231015,2,Direkt leveranspersonal,801150
+20231015,2,Underleverantörer,226993
+20231015,2,Övrigt direkt,93467
+20231015,2,Ej uppdragsfördelad personal,106820
+20231015,3,Varukostnad,0
+20231015,3,Direkt leveranspersonal,941171
+20231015,3,Underleverantörer,57389
+20231015,3,Övrigt direkt,34433
+20231015,3,Ej uppdragsfördelad personal,114777
+20231115,1,Varukostnad,3129913
+20231115,1,Direkt leveranspersonal,184113
+20231115,1,Underleverantörer,147290
+20231115,1,Övrigt direkt,184112
+20231115,1,Ej uppdragsfördelad personal,36822
+20231115,2,Varukostnad,100940
+20231115,2,Direkt leveranspersonal,757050
+20231115,2,Underleverantörer,214498
+20231115,2,Övrigt direkt,88322
+20231115,2,Ej uppdragsfördelad personal,100940
+20231115,3,Varukostnad,0
+20231115,3,Direkt leveranspersonal,889364
+20231115,3,Underleverantörer,54229
+20231115,3,Övrigt direkt,32538
+20231115,3,Ej uppdragsfördelad personal,108459
+20231215,1,Varukostnad,3281850
+20231215,1,Direkt leveranspersonal,193050
+20231215,1,Underleverantörer,154440
+20231215,1,Övrigt direkt,193050
+20231215,1,Ej uppdragsfördelad personal,38610
+20231215,2,Varukostnad,105840
+20231215,2,Direkt leveranspersonal,793800
+20231215,2,Underleverantörer,224910
+20231215,2,Övrigt direkt,92610
+20231215,2,Ej uppdragsfördelad personal,105840
+20231215,3,Varukostnad,0
+20231215,3,Direkt leveranspersonal,932537
+20231215,3,Underleverantörer,56862
+20231215,3,Övrigt direkt,34117
+20231215,3,Ej uppdragsfördelad personal,113724
+20240115,1,Varukostnad,2945004
+20240115,1,Direkt leveranspersonal,173236
+20240115,1,Underleverantörer,138588
+20240115,1,Övrigt direkt,173236
+20240115,1,Ej uppdragsfördelad personal,34647
+20240115,2,Varukostnad,94977
+20240115,2,Direkt leveranspersonal,712325
+20240115,2,Underleverantörer,201825
+20240115,2,Övrigt direkt,83104
+20240115,2,Ej uppdragsfördelad personal,94977
+20240115,3,Varukostnad,0
+20240115,3,Direkt leveranspersonal,836822
+20240115,3,Underleverantörer,51026
+20240115,3,Övrigt direkt,30615
+20240115,3,Ej uppdragsfördelad personal,102052
+20240215,1,Varukostnad,2880279
+20240215,1,Direkt leveranspersonal,169428
+20240215,1,Underleverantörer,135543
+20240215,1,Övrigt direkt,169428
+20240215,1,Ej uppdragsfördelad personal,33886
+20240215,2,Varukostnad,92890
+20240215,2,Direkt leveranspersonal,696670
+20240215,2,Underleverantörer,197390
+20240215,2,Övrigt direkt,81278
+20240215,2,Ej uppdragsfördelad personal,92889
+20240215,3,Varukostnad,0
+20240215,3,Direkt leveranspersonal,818430
+20240215,3,Underleverantörer,49904
+20240215,3,Övrigt direkt,29943
+20240215,3,Ej uppdragsfördelad personal,99809
+20240315,1,Varukostnad,3333356
+20240315,1,Direkt leveranspersonal,196080
+20240315,1,Underleverantörer,156864
+20240315,1,Övrigt direkt,196080
+20240315,1,Ej uppdragsfördelad personal,39216
+20240315,2,Varukostnad,107501
+20240315,2,Direkt leveranspersonal,806258
+20240315,2,Underleverantörer,228440
+20240315,2,Övrigt direkt,94063
+20240315,2,Ej uppdragsfördelad personal,107501
+20240315,3,Varukostnad,0
+20240315,3,Direkt leveranspersonal,947172
+20240315,3,Underleverantörer,57754
+20240315,3,Övrigt direkt,34653
+20240315,3,Ej uppdragsfördelad personal,115509
+20240415,1,Varukostnad,3365720
+20240415,1,Direkt leveranspersonal,197983
+20240415,1,Underleverantörer,158387
+20240415,1,Övrigt direkt,197983
+20240415,1,Ej uppdragsfördelad personal,39597
+20240415,2,Varukostnad,108545
+20240415,2,Direkt leveranspersonal,814086
+20240415,2,Underleverantörer,230658
+20240415,2,Övrigt direkt,94976
+20240415,2,Ej uppdragsfördelad personal,108545
+20240415,3,Varukostnad,0
+20240415,3,Direkt leveranspersonal,956369
+20240415,3,Underleverantörer,58315
+20240415,3,Övrigt direkt,34989
+20240415,3,Ej uppdragsfördelad personal,116630
+20240515,1,Varukostnad,3495170
+20240515,1,Direkt leveranspersonal,205598
+20240515,1,Underleverantörer,164479
+20240515,1,Övrigt direkt,205598
+20240515,1,Ej uppdragsfördelad personal,41120
+20240515,2,Varukostnad,112720
+20240515,2,Direkt leveranspersonal,845397
+20240515,2,Underleverantörer,239529
+20240515,2,Övrigt direkt,98630
+20240515,2,Ej uppdragsfördelad personal,112719
+20240515,3,Varukostnad,0
+20240515,3,Direkt leveranspersonal,993152
+20240515,3,Underleverantörer,60558
+20240515,3,Övrigt direkt,36335
+20240515,3,Ej uppdragsfördelad personal,121116
+20240615,1,Varukostnad,3527533
+20240615,1,Direkt leveranspersonal,207502
+20240615,1,Underleverantörer,166002
+20240615,1,Övrigt direkt,207502
+20240615,1,Ej uppdragsfördelad personal,41500
+20240615,2,Varukostnad,113764
+20240615,2,Direkt leveranspersonal,853225
+20240615,2,Underleverantörer,241747
+20240615,2,Övrigt direkt,99543
+20240615,2,Ej uppdragsfördelad personal,113763
+20240615,3,Varukostnad,0
+20240615,3,Direkt leveranspersonal,1002348
+20240615,3,Underleverantörer,61119
+20240615,3,Övrigt direkt,36671
+20240615,3,Ej uppdragsfördelad personal,122237
+20240715,1,Varukostnad,2621378
+20240715,1,Direkt leveranspersonal,154199
+20240715,1,Underleverantörer,123359
+20240715,1,Övrigt direkt,154198
+20240715,1,Ej uppdragsfördelad personal,30840
+20240715,2,Varukostnad,84540
+20240715,2,Direkt leveranspersonal,634048
+20240715,2,Underleverantörer,179647
+20240715,2,Övrigt direkt,73972
+20240715,2,Ej uppdragsfördelad personal,84540
+20240715,3,Varukostnad,0
+20240715,3,Direkt leveranspersonal,744864
+20240715,3,Underleverantörer,45419
+20240715,3,Övrigt direkt,27251
+20240715,3,Ej uppdragsfördelad personal,90837
+20240815,1,Varukostnad,3333356
+20240815,1,Direkt leveranspersonal,196080
+20240815,1,Underleverantörer,156864
+20240815,1,Övrigt direkt,196080
+20240815,1,Ej uppdragsfördelad personal,39216
+20240815,2,Varukostnad,107501
+20240815,2,Direkt leveranspersonal,806258
+20240815,2,Underleverantörer,228440
+20240815,2,Övrigt direkt,94063
+20240815,2,Ej uppdragsfördelad personal,107501
+20240815,3,Varukostnad,0
+20240815,3,Direkt leveranspersonal,947172
+20240815,3,Underleverantörer,57754
+20240815,3,Övrigt direkt,34653
+20240815,3,Ej uppdragsfördelad personal,115509
+20240915,1,Varukostnad,3656984
+20240915,1,Direkt leveranspersonal,215117
+20240915,1,Underleverantörer,172093
+20240915,1,Övrigt direkt,215117
+20240915,1,Ej uppdragsfördelad personal,43023
+20240915,2,Varukostnad,117938
+20240915,2,Direkt leveranspersonal,884536
+20240915,2,Underleverantörer,250618
+20240915,2,Övrigt direkt,103196
+20240915,2,Ej uppdragsfördelad personal,117938
+20240915,3,Varukostnad,0
+20240915,3,Direkt leveranspersonal,1039130
+20240915,3,Underleverantörer,63362
+20240915,3,Övrigt direkt,38017
+20240915,3,Ej uppdragsfördelad personal,126723
+20241015,1,Varukostnad,2806942
+20241015,1,Direkt leveranspersonal,165114
+20241015,1,Underleverantörer,132091
+20241015,1,Övrigt direkt,165114
+20241015,1,Ej uppdragsfördelad personal,33023
+20241015,2,Varukostnad,90776
+20241015,2,Direkt leveranspersonal,680819
+20241015,2,Underleverantörer,192899
+20241015,2,Övrigt direkt,79429
+20241015,2,Ej uppdragsfördelad personal,90776
+20241015,3,Varukostnad,0
+20241015,3,Direkt leveranspersonal,828330
+20241015,3,Underleverantörer,50508
+20241015,3,Övrigt direkt,30305
+20241015,3,Ej uppdragsfördelad personal,101016
+20241115,1,Varukostnad,2497171
+20241115,1,Direkt leveranspersonal,146892
+20241115,1,Underleverantörer,117514
+20241115,1,Övrigt direkt,146892
+20241115,1,Ej uppdragsfördelad personal,29379
+20241115,2,Varukostnad,81626
+20241115,2,Direkt leveranspersonal,612191
+20241115,2,Underleverantörer,173454
+20241115,2,Övrigt direkt,71422
+20241115,2,Ej uppdragsfördelad personal,81626
+20241115,3,Varukostnad,0
+20241115,3,Direkt leveranspersonal,752689
+20241115,3,Underleverantörer,45896
+20241115,3,Övrigt direkt,27537
+20241115,3,Ej uppdragsfördelad personal,91791
+20241215,1,Varukostnad,2772031
+20241215,1,Direkt leveranspersonal,163061
+20241215,1,Underleverantörer,130448
+20241215,1,Övrigt direkt,163061
+20241215,1,Ej uppdragsfördelad personal,32612
+20241215,2,Varukostnad,91611
+20241215,2,Direkt leveranspersonal,687080
+20241215,2,Underleverantörer,194672
+20241215,2,Övrigt direkt,80159
+20241215,2,Ej uppdragsfördelad personal,91611
+20241215,3,Varukostnad,0
+20241215,3,Direkt leveranspersonal,845661
+20241215,3,Underleverantörer,51565
+20241215,3,Övrigt direkt,30939
+20241215,3,Ej uppdragsfördelad personal,103129
+20250115,1,Varukostnad,2988291
+20250115,1,Direkt leveranspersonal,175782
+20250115,1,Underleverantörer,140625
+20250115,1,Övrigt direkt,175782
+20250115,1,Ej uppdragsfördelad personal,35156
+20250115,2,Varukostnad,98860
+20250115,2,Direkt leveranspersonal,741446
+20250115,2,Underleverantörer,210076
+20250115,2,Övrigt direkt,86502
+20250115,2,Ej uppdragsfördelad personal,98859
+20250115,3,Varukostnad,0
+20250115,3,Direkt leveranspersonal,904282
+20250115,3,Underleverantörer,55139
+20250115,3,Övrigt direkt,33084
+20250115,3,Ej uppdragsfördelad personal,110278
+20250215,1,Varukostnad,3245641
+20250215,1,Direkt leveranspersonal,190920
+20250215,1,Underleverantörer,152736
+20250215,1,Övrigt direkt,190920
+20250215,1,Ej uppdragsfördelad personal,38184
+20250215,2,Varukostnad,106344
+20250215,2,Direkt leveranspersonal,797577
+20250215,2,Underleverantörer,225980
+20250215,2,Övrigt direkt,93051
+20250215,2,Ej uppdragsfördelad personal,106343
+20250215,3,Varukostnad,0
+20250215,3,Direkt leveranspersonal,962129
+20250215,3,Underleverantörer,58666
+20250215,3,Övrigt direkt,35200
+20250215,3,Ej uppdragsfördelad personal,117333
+20250315,1,Varukostnad,3696884
+20250315,1,Direkt leveranspersonal,217464
+20250315,1,Underleverantörer,173971
+20250315,1,Övrigt direkt,217464
+20250315,1,Ej uppdragsfördelad personal,43492
+20250315,2,Varukostnad,119745
+20250315,2,Direkt leveranspersonal,898090
+20250315,2,Underleverantörer,254459
+20250315,2,Övrigt direkt,104777
+20250315,2,Ej uppdragsfördelad personal,119745
+20250315,3,Varukostnad,0
+20250315,3,Direkt leveranspersonal,1080242
+20250315,3,Underleverantörer,65868
+20250315,3,Övrigt direkt,39521
+20250315,3,Ej uppdragsfördelad personal,131737
+20250415,1,Varukostnad,3850814
+20250415,1,Direkt leveranspersonal,226518
+20250415,1,Underleverantörer,181215
+20250415,1,Övrigt direkt,226518
+20250415,1,Ej uppdragsfördelad personal,45304
+20250415,2,Varukostnad,124361
+20250415,2,Direkt leveranspersonal,932706
+20250415,2,Underleverantörer,264267
+20250415,2,Övrigt direkt,108816
+20250415,2,Ej uppdragsfördelad personal,124361
+20250415,3,Varukostnad,0
+20250415,3,Direkt leveranspersonal,1130914
+20250415,3,Underleverantörer,68958
+20250415,3,Övrigt direkt,41375
+20250415,3,Ej uppdragsfördelad personal,137916
+20250515,1,Varukostnad,4033490
+20250515,1,Direkt leveranspersonal,237264
+20250515,1,Underleverantörer,189811
+20250515,1,Övrigt direkt,237264
+20250515,1,Ej uppdragsfördelad personal,47453
+20250515,2,Varukostnad,131370
+20250515,2,Direkt leveranspersonal,985271
+20250515,2,Underleverantörer,279160
+20250515,2,Övrigt direkt,114948
+20250515,2,Ej uppdragsfördelad personal,131369
+20250515,3,Varukostnad,0
+20250515,3,Direkt leveranspersonal,1208579
+20250515,3,Underleverantörer,73694
+20250515,3,Övrigt direkt,44216
+20250515,3,Ej uppdragsfördelad personal,147388
+20250615,1,Varukostnad,4338032
+20250615,1,Direkt leveranspersonal,255178
+20250615,1,Underleverantörer,204143
+20250615,1,Övrigt direkt,255178
+20250615,1,Ej uppdragsfördelad personal,51036
+20250615,2,Varukostnad,143017
+20250615,2,Direkt leveranspersonal,1072629
+20250615,2,Underleverantörer,303912
+20250615,2,Övrigt direkt,125140
+20250615,2,Ej uppdragsfördelad personal,143017
+20250615,3,Varukostnad,0
+20250615,3,Direkt leveranspersonal,1321402
+20250615,3,Underleverantörer,80573
+20250615,3,Övrigt direkt,48344
+20250615,3,Ej uppdragsfördelad personal,161147
+20250715,1,Varukostnad,4403764
+20250715,1,Direkt leveranspersonal,259045
+20250715,1,Underleverantörer,207236
+20250715,1,Övrigt direkt,259045
+20250715,1,Ej uppdragsfördelad personal,51809
+20250715,2,Varukostnad,145829
+20250715,2,Direkt leveranspersonal,1093721
+20250715,2,Underleverantörer,309888
+20250715,2,Övrigt direkt,127601
+20250715,2,Ej uppdragsfördelad personal,145829
+20250715,3,Varukostnad,0
+20250715,3,Direkt leveranspersonal,1338257
+20250715,3,Underleverantörer,81601
+20250715,3,Övrigt direkt,48961
+20250715,3,Ej uppdragsfördelad personal,163202
+20250815,1,Varukostnad,4838727
+20250815,1,Direkt leveranspersonal,284631
+20250815,1,Underleverantörer,227705
+20250815,1,Övrigt direkt,284631
+20250815,1,Ej uppdragsfördelad personal,56926
+20250815,2,Varukostnad,159083
+20250815,2,Direkt leveranspersonal,1193122
+20250815,2,Underleverantörer,338051
+20250815,2,Övrigt direkt,139198
+20250815,2,Ej uppdragsfördelad personal,159083
+20250815,3,Varukostnad,0
+20250815,3,Direkt leveranspersonal,1443101
+20250815,3,Underleverantörer,87994
+20250815,3,Övrigt direkt,52796
+20250815,3,Ej uppdragsfördelad personal,175988
+20250915,1,Varukostnad,5153215
+20250915,1,Direkt leveranspersonal,303131
+20250915,1,Underleverantörer,242504
+20250915,1,Övrigt direkt,303130
+20250915,1,Ej uppdragsfördelad personal,60626
+20250915,2,Varukostnad,167380
+20250915,2,Direkt leveranspersonal,1255347
+20250915,2,Underleverantörer,355682
+20250915,2,Övrigt direkt,146457
+20250915,2,Ej uppdragsfördelad personal,167380
+20250915,3,Varukostnad,0
+20250915,3,Direkt leveranspersonal,1509414
+20250915,3,Underleverantörer,92037
+20250915,3,Övrigt direkt,55223
+20250915,3,Ej uppdragsfördelad personal,184075
+20251015,1,Varukostnad,3272095
+20251015,1,Direkt leveranspersonal,192476
+20251015,1,Underleverantörer,153981
+20251015,1,Övrigt direkt,192476
+20251015,1,Ej uppdragsfördelad personal,38495
+20251015,2,Varukostnad,102699
+20251015,2,Direkt leveranspersonal,770244
+20251015,2,Underleverantörer,218236
+20251015,2,Övrigt direkt,89862
+20251015,2,Ej uppdragsfördelad personal,102699
+20251015,3,Varukostnad,0
+20251015,3,Direkt leveranspersonal,1107169
+20251015,3,Underleverantörer,67510
+20251015,3,Övrigt direkt,40506
+20251015,3,Ej uppdragsfördelad personal,135021
+20251115,1,Varukostnad,2911128
+20251115,1,Direkt leveranspersonal,171243
+20251115,1,Underleverantörer,136994
+20251115,1,Övrigt direkt,171243
+20251115,1,Ej uppdragsfördelad personal,34249
+20251115,2,Varukostnad,92329
+20251115,2,Direkt leveranspersonal,692469
+20251115,2,Underleverantörer,196199
+20251115,2,Övrigt direkt,80788
+20251115,2,Ej uppdragsfördelad personal,92329
+20251115,3,Varukostnad,0
+20251115,3,Direkt leveranspersonal,1000129
+20251115,3,Underleverantörer,60983
+20251115,3,Övrigt direkt,36590
+20251115,3,Ej uppdragsfördelad personal,121967
+20251215,1,Varukostnad,3231563
+20251215,1,Direkt leveranspersonal,190092
+20251215,1,Underleverantörer,152074
+20251215,1,Övrigt direkt,190092
+20251215,1,Ej uppdragsfördelad personal,38018
+20251215,2,Varukostnad,103849
+20251215,2,Direkt leveranspersonal,778869
+20251215,2,Underleverantörer,220680
+20251215,2,Övrigt direkt,90868
+20251215,2,Ej uppdragsfördelad personal,103849
+20251215,3,Varukostnad,0
+20251215,3,Direkt leveranspersonal,1116030
+20251215,3,Underleverantörer,68051
+20251215,3,Övrigt direkt,40830
+20251215,3,Ej uppdragsfördelad personal,136101
+20260115,1,Varukostnad,3483524
+20260115,1,Direkt leveranspersonal,204913
+20260115,1,Underleverantörer,163931
+20260115,1,Övrigt direkt,204913
+20260115,1,Ej uppdragsfördelad personal,40983
+20260115,2,Varukostnad,112345
+20260115,2,Direkt leveranspersonal,842589
+20260115,2,Underleverantörer,238734
+20260115,2,Övrigt direkt,98302
+20260115,2,Ej uppdragsfördelad personal,112345
+20260115,3,Varukostnad,0
+20260115,3,Direkt leveranspersonal,1191578
+20260115,3,Underleverantörer,72657
+20260115,3,Övrigt direkt,43594
+20260115,3,Ej uppdragsfördelad personal,145315
+20260215,1,Varukostnad,3783336
+20260215,1,Direkt leveranspersonal,222549
+20260215,1,Underleverantörer,178039
+20260215,1,Övrigt direkt,222549
+20260215,1,Ej uppdragsfördelad personal,44510
+20260215,2,Varukostnad,120917
+20260215,2,Direkt leveranspersonal,906877
+20260215,2,Underleverantörer,256948
+20260215,2,Övrigt direkt,105802
+20260215,2,Ej uppdragsfördelad personal,120917
+20260215,3,Varukostnad,0
+20260215,3,Direkt leveranspersonal,1274329
+20260215,3,Underleverantörer,77703
+20260215,3,Övrigt direkt,46622
+20260215,3,Ej uppdragsfördelad personal,155406
+20260315,1,Varukostnad,4309288
+20260315,1,Direkt leveranspersonal,253488
+20260315,1,Underleverantörer,202790
+20260315,1,Övrigt direkt,253487
+20260315,1,Ej uppdragsfördelad personal,50697
+20260315,2,Varukostnad,135902
+20260315,2,Direkt leveranspersonal,1019262
+20260315,2,Underleverantörer,288791
+20260315,2,Övrigt direkt,118914
+20260315,2,Ej uppdragsfördelad personal,135901
+20260315,3,Varukostnad,0
+20260315,3,Direkt leveranspersonal,1441064
+20260315,3,Underleverantörer,87870
+20260315,3,Övrigt direkt,52722
+20260315,3,Ej uppdragsfördelad personal,175739
+20260415,1,Varukostnad,4488883
+20260415,1,Direkt leveranspersonal,264052
+20260415,1,Underleverantörer,211242
+20260415,1,Övrigt direkt,264052
+20260415,1,Ej uppdragsfördelad personal,52810
+20260415,2,Varukostnad,140770
+20260415,2,Direkt leveranspersonal,1055772
+20260415,2,Underleverantörer,299135
+20260415,2,Övrigt direkt,123173
+20260415,2,Ej uppdragsfördelad personal,140770
+20260415,3,Varukostnad,0
+20260415,3,Direkt leveranspersonal,1512548
+20260415,3,Underleverantörer,92229
+20260415,3,Övrigt direkt,55337
+20260415,3,Ej uppdragsfördelad personal,184457
+20260515,1,Varukostnad,4702075
+20260515,1,Direkt leveranspersonal,276593
+20260515,1,Underleverantörer,221274
+20260515,1,Övrigt direkt,276593
+20260515,1,Ej uppdragsfördelad personal,55318
+20260515,2,Varukostnad,148562
+20260515,2,Direkt leveranspersonal,1114213
+20260515,2,Underleverantörer,315694
+20260515,2,Övrigt direkt,129991
+20260515,2,Ej uppdragsfördelad personal,148562
+20260515,3,Varukostnad,0
+20260515,3,Direkt leveranspersonal,1609229
+20260515,3,Underleverantörer,98124
+20260515,3,Övrigt direkt,58874
+20260515,3,Ej uppdragsfördelad personal,196247
+20260615,1,Varukostnad,5057192
+20260615,1,Direkt leveranspersonal,297482
+20260615,1,Underleverantörer,237986
+20260615,1,Övrigt direkt,297482
+20260615,1,Ej uppdragsfördelad personal,59496
+20260615,2,Varukostnad,162000
+20260615,2,Direkt leveranspersonal,1214999
+20260615,2,Underleverantörer,344250
+20260615,2,Övrigt direkt,141750
+20260615,2,Ej uppdragsfördelad personal,162000
+20260615,3,Varukostnad,0
+20260615,3,Direkt leveranspersonal,1746674
+20260615,3,Underleverantörer,106504
+20260615,3,Övrigt direkt,63903
+20260615,3,Ej uppdragsfördelad personal,213009
+20260715,1,Varukostnad,5133654
+20260715,1,Direkt leveranspersonal,301980
+20260715,1,Underleverantörer,241584
+20260715,1,Övrigt direkt,301979
+20260715,1,Ej uppdragsfördelad personal,60396
+20260715,2,Varukostnad,165626
+20260715,2,Direkt leveranspersonal,1242195
+20260715,2,Underleverantörer,351955
+20260715,2,Övrigt direkt,144923
+20260715,2,Ej uppdragsfördelad personal,165626
+20260715,3,Varukostnad,0
+20260715,3,Direkt leveranspersonal,1762888
+20260715,3,Underleverantörer,107493
+20260715,3,Övrigt direkt,64496
+20260715,3,Ej uppdragsfördelad personal,214986
+20260815,1,Varukostnad,5640409
+20260815,1,Direkt leveranspersonal,331789
+20260815,1,Underleverantörer,265431
+20260815,1,Övrigt direkt,331789
+20260815,1,Ej uppdragsfördelad personal,66358
+20260815,2,Varukostnad,180904
+20260815,2,Direkt leveranspersonal,1356777
+20260815,2,Underleverantörer,384420
+20260815,2,Övrigt direkt,158291
+20260815,2,Ej uppdragsfördelad personal,180904
+20260815,3,Varukostnad,0
+20260815,3,Direkt leveranspersonal,1907646
+20260815,3,Underleverantörer,116320
+20260815,3,Övrigt direkt,69792
+20260815,3,Ej uppdragsfördelad personal,232640
+20260915,1,Varukostnad,6006852
+20260915,1,Direkt leveranspersonal,353344
+20260915,1,Underleverantörer,282676
+20260915,1,Övrigt direkt,353344
+20260915,1,Ej uppdragsfördelad personal,70669
+20260915,2,Varukostnad,190098
+20260915,2,Direkt leveranspersonal,1425734
+20260915,2,Underleverantörer,403958
+20260915,2,Övrigt direkt,166335
+20260915,2,Ej uppdragsfördelad personal,190098
+20260915,3,Varukostnad,0
+20260915,3,Direkt leveranspersonal,2009917
+20260915,3,Underleverantörer,122556
+20260915,3,Övrigt direkt,73533
+20260915,3,Ej uppdragsfördelad personal,245112

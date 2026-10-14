@@ -1,0 +1,15 @@
+# Design Brief: Sales & Finance
+
+Användarens bygginstruktion omfattar startsidan och alla fyra undersidor: Ledningsöversikt, Ekonomi och lönsamhet, Försäljningsanalys och nu Transaktioner enligt bifogade referenser. Alla fem sidor är byggda i projektfilerna och behåller Aubecos identitet, svenska texter och navigationsstruktur.
+
+Stil: Aubecos marina färg #0F3163, mörk #09224A, varm accent #F7BA6B, vita kort och ljusa neutrala ytor. Segoe UI/Semibold. Sidans signatur är ett förankrat ordmärke, luftiga vita kort och sammanhängande navigation. Startsidan använder fyra jämnstora navigationskort och en diskret rutnätsyta; Ledningsöversikt använder KPI-rad, bred månadstrend och mindre jämförande diagram enligt referensens hierarki. Inga AI-bilder eller påhittade personporträtt används.
+
+Canvas 1920×1080. Sidhuvud 96 px, sidnavigation 288 px, analysyta x320–1864. Fem KPI-kort på y276, månadstrender på y532 och nedre jämförelser på y784. Samtliga diagram använder inbyggda visualer. Kortens minitrender visar faktiskt månatligt mått. År 2025 är initialt valt på varje analyssida. Filter har separata rubrikrader ovanför diagramytorna.
+
+Ekonomi och lönsamhet använder bruttovinst, bruttomarginal, varukostnad och omsättning/vinst per enhet som KPI:er. Månadsdiagrammet delas i små multiplar per säljteam eller kategori och visar månadsmedel som linje. Högerkolumnen har topp 5 produkter efter bruttovinst samt varukostnad mot bruttovinst per produkt i ett spridningsdiagram. Nederst till vänster visas vinst per land och en tabell med vinst, årsförändring, marginal och vinstens andel.
+
+Försäljningsanalys använder aktiva säljare, omsättning per säljare, leveranser, genomsnittlig order och topp 5-säljarnas omsättningsandel som KPI:er. Månadsdiagrammet jämför omsättning och bruttovinst. Säljarlistan rankar topp 10 och ger detaljer via verktygstips. Landstabellen visar omsättning, årsförändring och andel; små multiplar visar varje lands månadstrend. Referensens porträtt ersätts av en inbyggd stapelrankning med fiktiva namn.
+
+Transaktioner använder en kompakt KPI-rad för omsättning, enheter, bruttovinst, marginal och leveranser på y276–404. Datumintervallet täcker 2024–2025 från början. Detaljpanelen y432–1032 innehåller produktsök och tabell med automatisk rullning. Radnyckeln bevarar orderradens granularitet och ordernyckeln möjliggör spårning. Val av datum och produktsök filtrerar alla KPI:er och rader. Marginalkolumnen använder en stödd cellgradient som alternativ till referensens datastaplar. Tabellbelopp visas med ören, antal är heltal; båda använder svensk locale. Inga fiktiva förlustorder läggs till bara för att efterlikna referensbildens röda staplar.
+
+Validering: lokala CSV-nycklar och belopp, TOM-deserialisering, PBIR-scheman, faktisk Import/DAX om Desktop kan nås samt färska skärmbilder av startsida och Ledningsöversikt. Bakgrundspaneler med etiketter, siffror och minitrender är avsiktliga överlägg; diagramväljarna är avsiktligt placerade i diagrammens övre högra utrymme.

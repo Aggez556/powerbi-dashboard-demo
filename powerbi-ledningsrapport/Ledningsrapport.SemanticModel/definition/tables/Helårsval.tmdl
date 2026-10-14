@@ -1,0 +1,48 @@
+/// Reproducerbar lokal demodata; Helårsval.csv.
+table Helårsval
+	lineageTag: eddc5c68-89e7-49c7-82e0-edcf098ea372
+
+	/// Källfält i lokal demodata: Helårsval.Period.
+	column Period
+		dataType: string
+		lineageTag: 9a2bf04d-0173-4d8b-8ba9-09f67427687f
+		summarizeBy: none
+		sourceColumn: Period
+		sortByColumn: Ordning
+
+	/// Källfält i lokal demodata: Helårsval.Slutdatum.
+	column Slutdatum
+		dataType: dateTime
+		isHidden
+		formatString: yyyy-MM-dd
+		lineageTag: 71ec77a5-1634-491f-8e2e-85729f42f25f
+		summarizeBy: none
+		sourceColumn: Slutdatum
+
+		variation Variation
+			isDefault
+			relationship: a50346e5-841c-4b7c-951b-3af1bb13324f
+			defaultHierarchy: LocalDateTable_22d874ac-8916-43e9-82d3-d07586a720c3.Datumhierarki
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	/// Källfält i lokal demodata: Helårsval.Ordning.
+	column Ordning
+		dataType: int64
+		isHidden
+		lineageTag: 1e00dc7a-1d92-4ecb-b988-c1ced6e347cb
+		summarizeBy: sum
+		sourceColumn: Ordning
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Helårsval = m
+		mode: import
+		source =
+				let
+					Source = Csv.Document(File.Contents(DataFolder & "/Helårsval.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+					Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+					Typed = Table.TransformColumnTypes(Headers, {{"Period", type text}, {"Slutdatum", type date}, {"Ordning", Int64.Type}}, "en-US")
+				in
+					Typed
+

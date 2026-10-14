@@ -1,0 +1,331 @@
+﻿{
+    "status":  "queried",
+    "resultSets":  [
+                       [
+                           {
+                               "[Aktiva]":  270,
+                               "[Tidigare]":  240,
+                               "[Fortsatta]":  230,
+                               "[Helt nya]":  35,
+                               "[Återaktiverade]":  5,
+                               "[Förlorade]":  10,
+                               "[Logo churn]":  0.041666666666666664,
+                               "[Revenue churn]":  0.083333333333333329,
+                               "[Andel nya]":  0.21146953405017921,
+                               "[Intäkt]":  139500000,
+                               "[Tidigare intäkt]":  120000000,
+                               "[Fortsatta intäkt]":  110000000,
+                               "[Nya intäkt]":  27000000,
+                               "[Återaktiverade intäkt]":  2500000,
+                               "[Förlorad intäkt]":  4000000,
+                               "[Minskning]":  -18000000,
+                               "[Ökning]":  12000000,
+                               "[Ledning intäkt]":  139500000,
+                               "[Ledning bryggfel]":  0
+                           }
+                       ],
+                       [
+                           {
+                               "Kunder[Kundbransch]":  "Restaurang",
+                               "[Aktiva]":  54,
+                               "[Nya]":  8,
+                               "[Förlorade]":  2,
+                               "[Intäkt]":  52000000,
+                               "[Churn]":  0.088809244444444449
+                           },
+                           {
+                               "Kunder[Kundbransch]":  "Hotell",
+                               "[Aktiva]":  54,
+                               "[Nya]":  8,
+                               "[Förlorade]":  2,
+                               "[Intäkt]":  36000000,
+                               "[Churn]":  0.0842871935483871
+                           },
+                           {
+                               "Kunder[Kundbransch]":  "Catering",
+                               "[Aktiva]":  54,
+                               "[Nya]":  8,
+                               "[Förlorade]":  2,
+                               "[Intäkt]":  22000000,
+                               "[Churn]":  0.0362405
+                           },
+                           {
+                               "Kunder[Kundbransch]":  "Kontor",
+                               "[Aktiva]":  54,
+                               "[Nya]":  8,
+                               "[Förlorade]":  2,
+                               "[Intäkt]":  17500000,
+                               "[Churn]":  0.0800478
+                           },
+                           {
+                               "Kunder[Kundbransch]":  "Livsmedel",
+                               "[Aktiva]":  54,
+                               "[Nya]":  8,
+                               "[Förlorade]":  2,
+                               "[Intäkt]":  12000000,
+                               "[Churn]":  0.139785
+                           },
+                           {
+                               "Kunder[Kundbransch]":  "",
+                               "[Aktiva]":  0,
+                               "[Nya]":  0,
+                               "[Förlorade]":  0,
+                               "[Intäkt]":  null,
+                               "[Churn]":  null
+                           }
+                       ],
+                       [
+                           {
+                               "Trendaxel[Månad]":  "Okt 25",
+                               "Kundgrupper[Kundgrupp]":  "Fortsatta",
+                               "[Mkr]":  7.297725
+                           },
+                           {
+                               "Trendaxel[Månad]":  "Okt 25",
+                               "Kundgrupper[Kundgrupp]":  "Helt nya",
+                               "[Mkr]":  1.178213
+                           },
+                           {
+                               "Trendaxel[Månad]":  "Nov 25",
+                               "Kundgrupper[Kundgrupp]":  "Fortsatta",
+                               "[Mkr]":  6.034476
+                           },
+                           {
+                               "Trendaxel[Månad]":  "Nov 25",
+                               "Kundgrupper[Kundgrupp]":  "Helt nya",
+                               "[Mkr]":  1.484905
+                           },
+                           {
+                               "Trendaxel[Månad]":  "Dec 25",
+                               "Kundgrupper[Kundgrupp]":  "Fortsatta",
+                               "[Mkr]":  4.924802
+                           },
+                           {
+                               "Trendaxel[Månad]":  "Dec 25",
+                               "Kundgrupper[Kundgrupp]":  "Helt nya",
+                               "[Mkr]":  3.260097
+                           },
+                           {
+                               "Trendaxel[Månad]":  "Jan 26",
+                               "Kundgrupper[Kundgrupp]":  "Fortsatta",
+                               "[Mkr]":  4.909554
+                           },
+                           {
+                               "Trendaxel[Månad]":  "Jan 26",
+                               "Kundgrupper[Kundgrupp]":  "Helt nya",
+                               "[Mkr]":  3.699857
+                           },
+                           {
+                               "Trendaxel[Månad]":  "Feb 26",
+                               "Kundgrupper[Kundgrupp]":  "Fortsatta",
+                               "[Mkr]":  8.304994
+                           },
+                           {
+                               "Trendaxel[Månad]":  "Feb 26",
+                               "Kundgrupper[Kundgrupp]":  "Helt nya",
+                               "[Mkr]":  1.739397
+                           },
+                           {
+                               "Trendaxel[Månad]":  "Mar 26",
+                               "Kundgrupper[Kundgrupp]":  "Fortsatta",
+                               "[Mkr]":  11.314807
+                           },
+                           {
+                               "Trendaxel[Månad]":  "Mar 26",
+                               "Kundgrupper[Kundgrupp]":  "Helt nya",
+                               "[Mkr]":  0.09484
+                           },
+                           {
+                               "Trendaxel[Månad]":  "Apr 26",
+                               "Kundgrupper[Kundgrupp]":  "Fortsatta",
+                               "[Mkr]":  10.730403
+                           },
+                           {
+                               "Trendaxel[Månad]":  "Maj 26",
+                               "Kundgrupper[Kundgrupp]":  "Fortsatta",
+                               "[Mkr]":  10.951315
+                           },
+                           {
+                               "Trendaxel[Månad]":  "Jun 26",
+                               "Kundgrupper[Kundgrupp]":  "Fortsatta",
+                               "[Mkr]":  11.856851
+                           },
+                           {
+                               "Trendaxel[Månad]":  "Jun 26",
+                               "Kundgrupper[Kundgrupp]":  "Helt nya",
+                               "[Mkr]":  1.893236
+                           },
+                           {
+                               "Trendaxel[Månad]":  "Jul 26",
+                               "Kundgrupper[Kundgrupp]":  "Fortsatta",
+                               "[Mkr]":  11.914574
+                           },
+                           {
+                               "Trendaxel[Månad]":  "Jul 26",
+                               "Kundgrupper[Kundgrupp]":  "Helt nya",
+                               "[Mkr]":  1.933032
+                           },
+                           {
+                               "Trendaxel[Månad]":  "Aug 26",
+                               "Kundgrupper[Kundgrupp]":  "Fortsatta",
+                               "[Mkr]":  11.52189
+                           },
+                           {
+                               "Trendaxel[Månad]":  "Aug 26",
+                               "Kundgrupper[Kundgrupp]":  "Helt nya",
+                               "[Mkr]":  3.495936
+                           },
+                           {
+                               "Trendaxel[Månad]":  "Sep 26",
+                               "Kundgrupper[Kundgrupp]":  "Fortsatta",
+                               "[Mkr]":  10.238609
+                           },
+                           {
+                               "Trendaxel[Månad]":  "Sep 26",
+                               "Kundgrupper[Kundgrupp]":  "Helt nya",
+                               "[Mkr]":  5.181303
+                           },
+                           {
+                               "Trendaxel[Månad]":  "Apr 26",
+                               "Kundgrupper[Kundgrupp]":  "Helt nya",
+                               "[Mkr]":  1.264354
+                           },
+                           {
+                               "Trendaxel[Månad]":  "Maj 26",
+                               "Kundgrupper[Kundgrupp]":  "Helt nya",
+                               "[Mkr]":  1.77483
+                           },
+                           {
+                               "Trendaxel[Månad]":  "Sep 26",
+                               "Kundgrupper[Kundgrupp]":  "Återaktiverade",
+                               "[Mkr]":  0.475579
+                           },
+                           {
+                               "Trendaxel[Månad]":  "Jan 26",
+                               "Kundgrupper[Kundgrupp]":  "Återaktiverade",
+                               "[Mkr]":  0.75235
+                           },
+                           {
+                               "Trendaxel[Månad]":  "Dec 25",
+                               "Kundgrupper[Kundgrupp]":  "Återaktiverade",
+                               "[Mkr]":  0.591752
+                           },
+                           {
+                               "Trendaxel[Månad]":  "Nov 25",
+                               "Kundgrupper[Kundgrupp]":  "Återaktiverade",
+                               "[Mkr]":  0.379605
+                           },
+                           {
+                               "Trendaxel[Månad]":  "Okt 25",
+                               "Kundgrupper[Kundgrupp]":  "Återaktiverade",
+                               "[Mkr]":  0.300714
+                           }
+                       ],
+                       [
+                           {
+                               "[Period]":  "Helår 2024",
+                               "[Aktiva]":  240,
+                               "[Intäkt]":  99619207,
+                               "[Ledning]":  99619207,
+                               "[Churn]":  0.0004653239097683542
+                           },
+                           {
+                               "[Period]":  "Helår 2025",
+                               "[Aktiva]":  280,
+                               "[Intäkt]":  123557846,
+                               "[Ledning]":  123557846,
+                               "[Churn]":  -0.168073542283869
+                           },
+                           {
+                               "[Period]":  "Månad september, kundanalys R12",
+                               "[Aktiva]":  270,
+                               "[Intäkt]":  139500000,
+                               "[Ledning]":  15895491,
+                               "[Churn]":  0.083333333333333329
+                           }
+                       ],
+                       [
+                           {
+                               "Kunder[Kund]":  "Restaurang Kajen",
+                               "[Synlig]":  1,
+                               "[Status]":  "Förlorad",
+                               "[Intäkt]":  0,
+                               "[Marginal]":  null,
+                               "[Senaste köp]":  "2025-09-15"
+                           },
+                           {
+                               "Kunder[Kund]":  "Kundföretag 002",
+                               "[Synlig]":  1,
+                               "[Status]":  "Förlorad",
+                               "[Intäkt]":  0,
+                               "[Marginal]":  null,
+                               "[Senaste köp]":  "2025-09-15"
+                           },
+                           {
+                               "Kunder[Kund]":  "Kundföretag 003",
+                               "[Synlig]":  1,
+                               "[Status]":  "Förlorad",
+                               "[Intäkt]":  0,
+                               "[Marginal]":  null,
+                               "[Senaste köp]":  "2025-09-15"
+                           },
+                           {
+                               "Kunder[Kund]":  "Kundföretag 004",
+                               "[Synlig]":  1,
+                               "[Status]":  "Förlorad",
+                               "[Intäkt]":  0,
+                               "[Marginal]":  null,
+                               "[Senaste köp]":  "2025-09-15"
+                           },
+                           {
+                               "Kunder[Kund]":  "Kundföretag 005",
+                               "[Synlig]":  1,
+                               "[Status]":  "Förlorad",
+                               "[Intäkt]":  0,
+                               "[Marginal]":  null,
+                               "[Senaste köp]":  "2025-09-15"
+                           },
+                           {
+                               "Kunder[Kund]":  "Kundföretag 006",
+                               "[Synlig]":  1,
+                               "[Status]":  "Förlorad",
+                               "[Intäkt]":  0,
+                               "[Marginal]":  null,
+                               "[Senaste köp]":  "2025-09-15"
+                           },
+                           {
+                               "Kunder[Kund]":  "Kundföretag 007",
+                               "[Synlig]":  1,
+                               "[Status]":  "Förlorad",
+                               "[Intäkt]":  0,
+                               "[Marginal]":  null,
+                               "[Senaste köp]":  "2025-09-15"
+                           },
+                           {
+                               "Kunder[Kund]":  "Kundföretag 008",
+                               "[Synlig]":  1,
+                               "[Status]":  "Förlorad",
+                               "[Intäkt]":  0,
+                               "[Marginal]":  null,
+                               "[Senaste köp]":  "2025-09-15"
+                           },
+                           {
+                               "Kunder[Kund]":  "Kundföretag 009",
+                               "[Synlig]":  1,
+                               "[Status]":  "Förlorad",
+                               "[Intäkt]":  0,
+                               "[Marginal]":  null,
+                               "[Senaste köp]":  "2025-09-15"
+                           },
+                           {
+                               "Kunder[Kund]":  "Kundföretag 010",
+                               "[Synlig]":  1,
+                               "[Status]":  "Förlorad",
+                               "[Intäkt]":  0,
+                               "[Marginal]":  null,
+                               "[Senaste köp]":  "2025-09-15"
+                           }
+                       ]
+                   ],
+    "source":  "Actual refreshed Desktop model"
+}

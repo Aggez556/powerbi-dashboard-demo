@@ -1,0 +1,116 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/report/3.3.0/schema.json",
+  "themeCollection": {
+    "baseTheme": {
+      "name": "Fluent2-CY26SU10",
+      "reportVersionAtImport": {
+        "visual": "2.11.0",
+        "report": "3.4.0",
+        "page": "2.3.1"
+      },
+      "type": "SharedResources"
+    },
+    "customTheme": {
+      "name": "LedningsrapportTheme.json",
+      "reportVersionAtImport": {
+        "visual": "2.11.0",
+        "report": "3.4.0",
+        "page": "2.3.1"
+      },
+      "type": "RegisteredResources"
+    }
+  },
+  "objects": {
+    "outspacePane": [
+      {
+        "properties": {
+          "expanded": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "resourcePackages": [
+    {
+      "name": "SharedResources",
+      "type": "SharedResources",
+      "items": [
+        {
+          "name": "Fluent2-CY26SU10",
+          "path": "BaseThemes/Fluent2-CY26SU10.json",
+          "type": "BaseTheme"
+        }
+      ]
+    },
+    {
+      "name": "RegisteredResources",
+      "type": "RegisteredResources",
+      "items": [
+        {
+          "name": "AubecoLogoBlue202610140002.svg",
+          "path": "AubecoLogoBlue202610140002.svg",
+          "type": "Image"
+        },
+        {
+          "name": "LedningsrapportTheme.json",
+          "path": "LedningsrapportTheme.json",
+          "type": "CustomTheme"
+        },
+        {
+          "name": "navigation-budget-0F3163.png",
+          "path": "navigation-budget-0F3163.png",
+          "type": "Image"
+        },
+        {
+          "name": "navigation-customers-0F3163.png",
+          "path": "navigation-customers-0F3163.png",
+          "type": "Image"
+        },
+        {
+          "name": "navigation-customers-FFFFFF.png",
+          "path": "navigation-customers-FFFFFF.png",
+          "type": "Image"
+        },
+        {
+          "name": "navigation-overview-0F3163.png",
+          "path": "navigation-overview-0F3163.png",
+          "type": "Image"
+        },
+        {
+          "name": "navigation-overview-FFFFFF.png",
+          "path": "navigation-overview-FFFFFF.png",
+          "type": "Image"
+        },
+        {
+          "name": "navigation-projects-0F3163.png",
+          "path": "navigation-projects-0F3163.png",
+          "type": "Image"
+        },
+        {
+          "name": "navigation-sales-0F3163.png",
+          "path": "navigation-sales-0F3163.png",
+          "type": "Image"
+        },
+        {
+          "name": "navigation-sales-FFFFFF.png",
+          "path": "navigation-sales-FFFFFF.png",
+          "type": "Image"
+        }
+      ]
+    }
+  ],
+  "settings": {
+    "useStylableVisualContainerHeader": true,
+    "exportDataMode": "AllowSummarized",
+    "defaultDrillFilterOtherVisuals": true,
+    "allowChangeFilterTypes": true,
+    "useEnhancedTooltips": true,
+    "useDefaultAggregateDisplayName": true,
+    "locale": "sv-SE"
+  }
+}

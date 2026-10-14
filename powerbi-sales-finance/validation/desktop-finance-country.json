@@ -1,0 +1,47 @@
+﻿{
+    "status":  "passed",
+    "rows":  [
+                 {
+                     "Kunder[Land]":  "Norge",
+                     "[Vinst]":  1.0835,
+                     "[Förändring]":  "+42,1 % ▲",
+                     "[Marginal]":  0.26892365802953089,
+                     "[Trend]":  "data:image/svg+xml;utf8,\u003csvg xmlns=\u0027http://www.w3.org/2000/svg\u0027 viewBox=\u00270 0 96 28\u0027\u003e\u003cpolyline fill=\u0027none\u0027 stroke=\u0027%230F3163\u0027 stroke-width=\u00271.5\u0027 points=\u00274,17 12,23 20,17 28,15 36,16 44,16 52,20 60,19 68,20 76,14 84,5 92,7\u0027/\u003e\u003c/svg\u003e",
+                     "[Andel]":  0.26446779038803347,
+                     "[Axel]":  0.39670168558205021,
+                     "[Rest]":  0.13223389519401674
+                 },
+                 {
+                     "Kunder[Land]":  "Finland",
+                     "[Vinst]":  1.045,
+                     "[Förändring]":  "+6,7 % ▲",
+                     "[Marginal]":  0.27235247095733173,
+                     "[Trend]":  "data:image/svg+xml;utf8,\u003csvg xmlns=\u0027http://www.w3.org/2000/svg\u0027 viewBox=\u00270 0 96 28\u0027\u003e\u003cpolyline fill=\u0027none\u0027 stroke=\u0027%230F3163\u0027 stroke-width=\u00271.5\u0027 points=\u00274,22 12,23 20,16 28,17 36,14 44,19 52,19 60,14 68,16 76,9 84,12 92,5\u0027/\u003e\u003c/svg\u003e",
+                     "[Andel]":  0.25508977747177691,
+                     "[Axel]":  0.39670168558205021,
+                     "[Rest]":  0.1416119081102733
+                 },
+                 {
+                     "Kunder[Land]":  "Danmark",
+                     "[Vinst]":  1.0435,
+                     "[Förändring]":  "+34,9 % ▲",
+                     "[Marginal]":  0.26616771627614594,
+                     "[Trend]":  "data:image/svg+xml;utf8,\u003csvg xmlns=\u0027http://www.w3.org/2000/svg\u0027 viewBox=\u00270 0 96 28\u0027\u003e\u003cpolyline fill=\u0027none\u0027 stroke=\u0027%230F3163\u0027 stroke-width=\u00271.5\u0027 points=\u00274,20 12,23 20,22 28,10 36,16 44,17 52,20 60,18 68,19 76,16 84,9 92,5\u0027/\u003e\u003c/svg\u003e",
+                     "[Andel]":  0.25470115258762649,
+                     "[Axel]":  0.39670168558205021,
+                     "[Rest]":  0.14200053299442372
+                 },
+                 {
+                     "Kunder[Land]":  "Sverige",
+                     "[Vinst]":  0.9248,
+                     "[Förändring]":  "+14,9 % ▲",
+                     "[Marginal]":  0.25774656634628396,
+                     "[Trend]":  "data:image/svg+xml;utf8,\u003csvg xmlns=\u0027http://www.w3.org/2000/svg\u0027 viewBox=\u00270 0 96 28\u0027\u003e\u003cpolyline fill=\u0027none\u0027 stroke=\u0027%230F3163\u0027 stroke-width=\u00271.5\u0027 points=\u00274,23 12,22 20,20 28,14 36,22 44,12 52,19 60,15 68,21 76,13 84,9 92,5\u0027/\u003e\u003c/svg\u003e",
+                     "[Andel]":  0.22574127955256315,
+                     "[Axel]":  0.39670168558205021,
+                     "[Rest]":  0.17096040602948706
+                 }
+             ],
+    "desktopProcessId":  9624,
+    "source":  "Actual Desktop engine, DAX query"
+}

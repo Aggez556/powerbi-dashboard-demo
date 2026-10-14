@@ -1,0 +1,217 @@
+﻿{
+    "status":  "passed",
+    "rows":  [
+                 {
+                     "Produkter[Produktnyckel]":  1,
+                     "Produkter[Produkt]":  "Anteckningsbok A5",
+                     "Produkter[Kategori]":  "Kontor",
+                     "[Omsättning]":  146073.65,
+                     "[Bruttovinst]":  43885.96
+                 },
+                 {
+                     "Produkter[Produktnyckel]":  2,
+                     "Produkter[Produkt]":  "Kulspetspennor 10-pack",
+                     "Produkter[Kategori]":  "Kontor",
+                     "[Omsättning]":  119045.52,
+                     "[Bruttovinst]":  31757.36
+                 },
+                 {
+                     "Produkter[Produktnyckel]":  3,
+                     "Produkter[Produkt]":  "Skrivbordsorganisatör",
+                     "Produkter[Kategori]":  "Kontor",
+                     "[Omsättning]":  228788.87,
+                     "[Bruttovinst]":  60563.66
+                 },
+                 {
+                     "Produkter[Produktnyckel]":  4,
+                     "Produkter[Produkt]":  "Dokumentmapp A4",
+                     "Produkter[Kategori]":  "Kontor",
+                     "[Omsättning]":  124313.68,
+                     "[Bruttovinst]":  37341.89
+                 },
+                 {
+                     "Produkter[Produktnyckel]":  5,
+                     "Produkter[Produkt]":  "Häftapparat",
+                     "Produkter[Kategori]":  "Kontor",
+                     "[Omsättning]":  124076.54,
+                     "[Bruttovinst]":  32480.81
+                 },
+                 {
+                     "Produkter[Produktnyckel]":  6,
+                     "Produkter[Produkt]":  "Musmatta med handledsstöd",
+                     "Produkter[Kategori]":  "Kontor",
+                     "[Omsättning]":  208511.61,
+                     "[Bruttovinst]":  61888.83
+                 },
+                 {
+                     "Produkter[Produktnyckel]":  7,
+                     "Produkter[Produkt]":  "Stekpanna 28 cm",
+                     "Produkter[Kategori]":  "Hem och kök",
+                     "[Omsättning]":  510415.9,
+                     "[Bruttovinst]":  225442.26
+                 },
+                 {
+                     "Produkter[Produktnyckel]":  8,
+                     "Produkter[Produkt]":  "Vattenkokare 1,7 l",
+                     "Produkter[Kategori]":  "Hem och kök",
+                     "[Omsättning]":  534843.81,
+                     "[Bruttovinst]":  230149.01
+                 },
+                 {
+                     "Produkter[Produktnyckel]":  9,
+                     "Produkter[Produkt]":  "Skärbräda i bambu",
+                     "Produkter[Kategori]":  "Hem och kök",
+                     "[Omsättning]":  315291.15,
+                     "[Bruttovinst]":  139081.79
+                 },
+                 {
+                     "Produkter[Produktnyckel]":  10,
+                     "Produkter[Produkt]":  "Matlådor 3-pack",
+                     "Produkter[Kategori]":  "Hem och kök",
+                     "[Omsättning]":  285486.57,
+                     "[Bruttovinst]":  94610.03
+                 },
+                 {
+                     "Produkter[Produktnyckel]":  11,
+                     "Produkter[Produkt]":  "Kockkniv 20 cm",
+                     "Produkter[Kategori]":  "Hem och kök",
+                     "[Omsättning]":  558379.27,
+                     "[Bruttovinst]":  245627.75
+                 },
+                 {
+                     "Produkter[Produktnyckel]":  12,
+                     "Produkter[Produkt]":  "Termoskanna 1 l",
+                     "Produkter[Kategori]":  "Hem och kök",
+                     "[Omsättning]":  505922.27,
+                     "[Bruttovinst]":  217422.57
+                 },
+                 {
+                     "Produkter[Produktnyckel]":  13,
+                     "Produkter[Produkt]":  "Webbkamera Full HD",
+                     "Produkter[Kategori]":  "Elektronik",
+                     "[Omsättning]":  1295663.21,
+                     "[Bruttovinst]":  169992.19
+                 },
+                 {
+                     "Produkter[Produktnyckel]":  14,
+                     "Produkter[Produkt]":  "Bildskärm 24 tum",
+                     "Produkter[Kategori]":  "Elektronik",
+                     "[Omsättning]":  2586332.79,
+                     "[Bruttovinst]":  444497.38
+                 },
+                 {
+                     "Produkter[Produktnyckel]":  15,
+                     "Produkter[Produkt]":  "Bluetoothhögtalare",
+                     "Produkter[Kategori]":  "Elektronik",
+                     "[Omsättning]":  1505844.33,
+                     "[Bruttovinst]":  146366.58
+                 },
+                 {
+                     "Produkter[Produktnyckel]":  16,
+                     "Produkter[Produkt]":  "Trådlösa hörlurar",
+                     "Produkter[Kategori]":  "Elektronik",
+                     "[Omsättning]":  2369237.87,
+                     "[Bruttovinst]":  208023.11
+                 },
+                 {
+                     "Produkter[Produktnyckel]":  17,
+                     "Produkter[Produkt]":  "Robotdammsugare",
+                     "Produkter[Kategori]":  "Elektronik",
+                     "[Omsättning]":  3135132.04,
+                     "[Bruttovinst]":  484206.64
+                 },
+                 {
+                     "Produkter[Produktnyckel]":  18,
+                     "Produkter[Produkt]":  "Surfplatta 10 tum",
+                     "Produkter[Kategori]":  "Elektronik",
+                     "[Omsättning]":  3205423.31,
+                     "[Bruttovinst]":  475003.79
+                 },
+                 {
+                     "Produkter[Produktnyckel]":  19,
+                     "Produkter[Produkt]":  "Vandringsryggsäck 30 l",
+                     "Produkter[Kategori]":  "Sport och fritid",
+                     "[Omsättning]":  908764.82,
+                     "[Bruttovinst]":  274491.34
+                 },
+                 {
+                     "Produkter[Produktnyckel]":  20,
+                     "Produkter[Produkt]":  "Tält för två personer",
+                     "Produkter[Kategori]":  "Sport och fritid",
+                     "[Omsättning]":  1120749.88,
+                     "[Bruttovinst]":  384714.14
+                 },
+                 {
+                     "Produkter[Produktnyckel]":  21,
+                     "Produkter[Produkt]":  "Träningsmatta",
+                     "Produkter[Kategori]":  "Sport och fritid",
+                     "[Omsättning]":  494224.51,
+                     "[Bruttovinst]":  160273.22
+                 },
+                 {
+                     "Produkter[Produktnyckel]":  22,
+                     "Produkter[Produkt]":  "Sovsäck",
+                     "Produkter[Kategori]":  "Sport och fritid",
+                     "[Omsättning]":  939598.61,
+                     "[Bruttovinst]":  292626.68
+                 },
+                 {
+                     "Produkter[Produktnyckel]":  23,
+                     "Produkter[Produkt]":  "Hantelset 10 kg",
+                     "Produkter[Kategori]":  "Sport och fritid",
+                     "[Omsättning]":  1053484.14,
+                     "[Bruttovinst]":  335857.42
+                 },
+                 {
+                     "Produkter[Produktnyckel]":  24,
+                     "Produkter[Produkt]":  "Vandringsstavar",
+                     "Produkter[Kategori]":  "Sport och fritid",
+                     "[Omsättning]":  623594.14,
+                     "[Bruttovinst]":  207616.18
+                 },
+                 {
+                     "Produkter[Produktnyckel]":  25,
+                     "Produkter[Produkt]":  "Vattenslang 25 m",
+                     "Produkter[Kategori]":  "Trädgård",
+                     "[Omsättning]":  963693.94,
+                     "[Bruttovinst]":  430222.16
+                 },
+                 {
+                     "Produkter[Produktnyckel]":  26,
+                     "Produkter[Produkt]":  "Sekatör",
+                     "Produkter[Kategori]":  "Trädgård",
+                     "[Omsättning]":  660814.31,
+                     "[Bruttovinst]":  251981.76
+                 },
+                 {
+                     "Produkter[Produktnyckel]":  27,
+                     "Produkter[Produkt]":  "Planteringslåda",
+                     "Produkter[Kategori]":  "Trädgård",
+                     "[Omsättning]":  923470.33,
+                     "[Bruttovinst]":  384211.53
+                 },
+                 {
+                     "Produkter[Produktnyckel]":  28,
+                     "Produkter[Produkt]":  "Trädgårdsvagn",
+                     "Produkter[Kategori]":  "Trädgård",
+                     "[Omsättning]":  1186109.51,
+                     "[Bruttovinst]":  478486.65
+                 },
+                 {
+                     "Produkter[Produktnyckel]":  29,
+                     "Produkter[Produkt]":  "Bevattningsspridare",
+                     "Produkter[Kategori]":  "Trädgård",
+                     "[Omsättning]":  856401.29,
+                     "[Bruttovinst]":  418645.29
+                 },
+                 {
+                     "Produkter[Produktnyckel]":  30,
+                     "Produkter[Produkt]":  "Trädgårdsbänk",
+                     "Produkter[Kategori]":  "Trädgård",
+                     "[Omsättning]":  1090435.46,
+                     "[Bruttovinst]":  449390.22
+                 }
+             ],
+    "desktopProcessId":  34324,
+    "source":  "Actual Desktop engine, DAX query"
+}

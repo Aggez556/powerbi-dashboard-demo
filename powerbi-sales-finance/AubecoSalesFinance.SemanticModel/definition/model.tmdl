@@ -1,0 +1,30 @@
+model Model
+	culture: sv-SE
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	discourageImplicitMeasures
+	sourceQueryCulture: en-US
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation PBI_TimeIntelligenceEnabled = 0
+
+annotation PBI_ProTooling = ["DevMode"]
+
+annotation PBI_QueryOrder = ["Försäljning","Datum","Kunder","Produkter","Säljare","Trendval","Produktval","Analysaxel","DataFolder","Finansaxel","Rapportstatus"]
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+ref table Försäljning
+ref table Datum
+ref table Kunder
+ref table Produkter
+ref table Säljare
+ref table Trendval
+ref table Produktval
+ref table Analysaxel
+ref table Finansaxel
+ref table Rapportstatus
+
+ref cultureInfo sv-SE
+

@@ -1,0 +1,5 @@
+EVALUATE
+UNION(
+ CALCULATETABLE(ROW("Case", "Empty", "KPI", [Finans KPI 0 förändring etikett], "Product", [Finans produktbelopp etikett], "Top5", [Finans topprodukter andel etikett], "Trend", [Finans marknadstrend]), TREATAS({1900}, 'Datum'[År])),
+ CALCULATETABLE(ROW("Case", "Positive profit / negative unit revenue", "KPI", [Finans KPI 0 förändring etikett], "Product", [Finans KPI 3 förändring etikett], "Top5", [Finans topprodukter andel etikett], "Trend", BLANK()), TREATAS({2025}, 'Datum'[År]), TREATAS({10}, 'Datum'[Månadsnummer]))
+)

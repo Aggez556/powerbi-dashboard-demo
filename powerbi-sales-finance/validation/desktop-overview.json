@@ -1,0 +1,151 @@
+﻿{
+    "status":  "passed",
+    "rows":  [
+                 {
+                     "Datum[År]":  2024,
+                     "Analysaxel[Typ]":  "Kategori",
+                     "Analysaxel[Namn]":  "Elektronik",
+                     "[Omsättning]":  6725731.19,
+                     "[Föregående år]":  null,
+                     "[Årsförändring]":  null
+                 },
+                 {
+                     "Datum[År]":  2024,
+                     "Analysaxel[Typ]":  "Kategori",
+                     "Analysaxel[Namn]":  "Hem och kök",
+                     "[Omsättning]":  1236775.66,
+                     "[Föregående år]":  null,
+                     "[Årsförändring]":  null
+                 },
+                 {
+                     "Datum[År]":  2024,
+                     "Analysaxel[Typ]":  "Kategori",
+                     "Analysaxel[Namn]":  "Kontor",
+                     "[Omsättning]":  414306.39,
+                     "[Föregående år]":  null,
+                     "[Årsförändring]":  null
+                 },
+                 {
+                     "Datum[År]":  2024,
+                     "Analysaxel[Typ]":  "Kategori",
+                     "Analysaxel[Namn]":  "Sport och fritid",
+                     "[Omsättning]":  2334008.63,
+                     "[Föregående år]":  null,
+                     "[Årsförändring]":  null
+                 },
+                 {
+                     "Datum[År]":  2024,
+                     "Analysaxel[Typ]":  "Kategori",
+                     "Analysaxel[Namn]":  "Trädgård",
+                     "[Omsättning]":  2494938.86,
+                     "[Föregående år]":  null,
+                     "[Årsförändring]":  null
+                 },
+                 {
+                     "Datum[År]":  2024,
+                     "Analysaxel[Typ]":  "Land",
+                     "Analysaxel[Namn]":  "Danmark",
+                     "[Omsättning]":  3168641.64,
+                     "[Föregående år]":  null,
+                     "[Årsförändring]":  null
+                 },
+                 {
+                     "Datum[År]":  2024,
+                     "Analysaxel[Typ]":  "Land",
+                     "Analysaxel[Namn]":  "Finland",
+                     "[Omsättning]":  3912872.29,
+                     "[Föregående år]":  null,
+                     "[Årsförändring]":  null
+                 },
+                 {
+                     "Datum[År]":  2024,
+                     "Analysaxel[Typ]":  "Land",
+                     "Analysaxel[Namn]":  "Norge",
+                     "[Omsättning]":  2923992.11,
+                     "[Föregående år]":  null,
+                     "[Årsförändring]":  null
+                 },
+                 {
+                     "Datum[År]":  2024,
+                     "Analysaxel[Typ]":  "Land",
+                     "Analysaxel[Namn]":  "Sverige",
+                     "[Omsättning]":  3200254.69,
+                     "[Föregående år]":  null,
+                     "[Årsförändring]":  null
+                 },
+                 {
+                     "Datum[År]":  2025,
+                     "Analysaxel[Typ]":  "Kategori",
+                     "Analysaxel[Namn]":  "Elektronik",
+                     "[Omsättning]":  7371902.36,
+                     "[Föregående år]":  6725731.19,
+                     "[Årsförändring]":  0.096074486438105774
+                 },
+                 {
+                     "Datum[År]":  2025,
+                     "Analysaxel[Typ]":  "Kategori",
+                     "Analysaxel[Namn]":  "Hem och kök",
+                     "[Omsättning]":  1473563.31,
+                     "[Föregående år]":  1236775.66,
+                     "[Årsförändring]":  0.19145561936430736
+                 },
+                 {
+                     "Datum[År]":  2025,
+                     "Analysaxel[Typ]":  "Kategori",
+                     "Analysaxel[Namn]":  "Kontor",
+                     "[Omsättning]":  536503.48,
+                     "[Föregående år]":  414306.39,
+                     "[Årsförändring]":  0.29494377337506189
+                 },
+                 {
+                     "Datum[År]":  2025,
+                     "Analysaxel[Typ]":  "Kategori",
+                     "Analysaxel[Namn]":  "Sport och fritid",
+                     "[Omsättning]":  2806407.47,
+                     "[Föregående år]":  2334008.63,
+                     "[Årsförändring]":  0.20239806911082414
+                 },
+                 {
+                     "Datum[År]":  2025,
+                     "Analysaxel[Typ]":  "Kategori",
+                     "Analysaxel[Namn]":  "Trädgård",
+                     "[Omsättning]":  3185985.98,
+                     "[Föregående år]":  2494938.86,
+                     "[Årsförändring]":  0.27697958097458147
+                 },
+                 {
+                     "Datum[År]":  2025,
+                     "Analysaxel[Typ]":  "Land",
+                     "Analysaxel[Namn]":  "Danmark",
+                     "[Omsättning]":  3920288.21,
+                     "[Föregående år]":  3168641.64,
+                     "[Årsförändring]":  0.23721413002702318
+                 },
+                 {
+                     "Datum[År]":  2025,
+                     "Analysaxel[Typ]":  "Land",
+                     "Analysaxel[Namn]":  "Finland",
+                     "[Omsättning]":  3837109.56,
+                     "[Föregående år]":  3912872.29,
+                     "[Årsförändring]":  -0.019362433625453184
+                 },
+                 {
+                     "Datum[År]":  2025,
+                     "Analysaxel[Typ]":  "Land",
+                     "Analysaxel[Namn]":  "Norge",
+                     "[Omsättning]":  4028897.71,
+                     "[Föregående år]":  2923992.11,
+                     "[Årsförändring]":  0.37787571184656854
+                 },
+                 {
+                     "Datum[År]":  2025,
+                     "Analysaxel[Typ]":  "Land",
+                     "Analysaxel[Namn]":  "Sverige",
+                     "[Omsättning]":  3588067.12,
+                     "[Föregående år]":  3200254.69,
+                     "[Årsförändring]":  0.12118173944461902
+                 }
+             ],
+    "desktopProcessId":  7404,
+    "source":  "Actual Desktop engine, DAX query"
+}

@@ -1,0 +1,63 @@
+﻿{
+    "status":  "passed",
+    "rows":  [
+                 {
+                     "Analysaxel[Typ]":  "Land",
+                     "Analysaxel[Område]":  "Finland",
+                     "[Vinst]":  1045046.27,
+                     "[Marginal]":  0.27235247095733173,
+                     "[Tillväxt]":  0.067400442529736537,
+                     "[Rubrik]":  "Lönsamhet per marknad"
+                 },
+                 {
+                     "Analysaxel[Typ]":  "Land",
+                     "Analysaxel[Område]":  "Norge",
+                     "[Vinst]":  1083465.91,
+                     "[Marginal]":  0.26892365802953089,
+                     "[Tillväxt]":  0.42053993622643554,
+                     "[Rubrik]":  "Lönsamhet per marknad"
+                 },
+                 {
+                     "Analysaxel[Typ]":  "Land",
+                     "Analysaxel[Område]":  "Sverige",
+                     "[Vinst]":  924811.98,
+                     "[Marginal]":  0.25774656634628396,
+                     "[Tillväxt]":  0.1488341441010162,
+                     "[Rubrik]":  "Lönsamhet per marknad"
+                 },
+                 {
+                     "Analysaxel[Typ]":  "Land",
+                     "Analysaxel[Område]":  "Danmark",
+                     "[Vinst]":  1043454.16,
+                     "[Marginal]":  0.26616771627614594,
+                     "[Tillväxt]":  0.34933849702019737,
+                     "[Rubrik]":  "Lönsamhet per marknad"
+                 },
+                 {
+                     "Analysaxel[Typ]":  "Kategori",
+                     "Analysaxel[Område]":  "Övrigt",
+                     "[Vinst]":  2428372.6,
+                     "[Marginal]":  0.37194224783082919,
+                     "[Tillväxt]":  0.27269028137181039,
+                     "[Rubrik]":  "Lönsamhet per kategori"
+                 },
+                 {
+                     "Analysaxel[Typ]":  "Kategori",
+                     "Analysaxel[Område]":  "Hem och kök",
+                     "[Vinst]":  631701.81,
+                     "[Marginal]":  0.428689969214828,
+                     "[Tillväxt]":  0.21333743476193148,
+                     "[Rubrik]":  "Lönsamhet per kategori"
+                 },
+                 {
+                     "Analysaxel[Typ]":  "Kategori",
+                     "Analysaxel[Område]":  "Elektronik",
+                     "[Vinst]":  1036703.91,
+                     "[Marginal]":  0.14062908858168871,
+                     "[Tillväxt]":  0.1630249587333556,
+                     "[Rubrik]":  "Lönsamhet per kategori"
+                 }
+             ],
+    "desktopProcessId":  22340,
+    "source":  "Actual Desktop engine, DAX query"
+}

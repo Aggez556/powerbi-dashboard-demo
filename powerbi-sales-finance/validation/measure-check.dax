@@ -1,0 +1,24 @@
+EVALUATE
+SUMMARIZECOLUMNS(
+ 'Datum'[År],
+ "Omsättning",[Omsättning],
+ "Kostnad",[Kostnad],
+ "Bruttovinst",[Bruttovinst],
+ "Bruttomarginal",[Bruttomarginal],
+ "Sålda enheter",[Sålda enheter],
+ "Leveranser",[Leveranser],
+ "Omsättning PY",[Omsättning föregående år],
+ "Omsättning YoY",[Tillväxt mot föregående år],
+ "Enheter YoY",[Enheter YoY],
+ "Vinst YoY",[Bruttovinst YoY],
+ "Leveranser YoY",[Leveranser YoY],
+ "Marginal pp",[Marginal förändring],
+ "Aktiva säljare",[Aktiva säljare],
+ "Kostnad miljoner",[Kostnad miljoner],
+ "Omsättning per enhet",[Omsättning per enhet],
+ "Bruttovinst per enhet",[Bruttovinst per enhet],
+ "Omsättning per säljare",[Omsättning per säljare],
+ "Genomsnittlig order",[Genomsnittlig order],
+ "Topp 5 säljare andel",[Topp 5 säljare andel]
+)
+ORDER BY 'Datum'[År]

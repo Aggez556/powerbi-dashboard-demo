@@ -1,0 +1,11 @@
+EVALUATE
+CALCULATETABLE(
+    ROW(
+        "Omsättning", [KPI förändring 0 etikett],
+        "Enheter", [KPI förändring 1 etikett],
+        "Bruttovinst", [KPI förändring 2 etikett],
+        "Marginal", [KPI förändring 3 etikett],
+        "Leveranser", [KPI förändring 4 etikett]
+    ),
+    TREATAS({2025}, 'Datum'[År])
+)

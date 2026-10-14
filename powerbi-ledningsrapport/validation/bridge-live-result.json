@@ -1,0 +1,22 @@
+﻿[
+    {
+        "Mkr":  9,
+        "step":  "R12 sep 2025"
+    },
+    {
+        "Mkr":  3.3,
+        "step":  "Produkter"
+    },
+    {
+        "Mkr":  2.55,
+        "step":  "Teknisk service"
+    },
+    {
+        "Mkr":  -2.81,
+        "step":  "Bemanning"
+    },
+    {
+        "Mkr":  -4.04,
+        "step":  "Gemensamma kostnader"
+    }
+]

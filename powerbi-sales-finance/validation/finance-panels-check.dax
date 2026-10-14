@@ -1,0 +1,6 @@
+EVALUATE
+CALCULATETABLE(
+    SUMMARIZECOLUMNS('Finansaxel'[Val], 'Finansaxel'[Panel], 'Datum'[Månadsnummer],
+        "Vinst", [Finans gruppvinst miljoner], "Medel", [Finans månadsmedel], "Axelmax", [Finans månadsaxel max]),
+    TREATAS({2025}, 'Datum'[År]))
+ORDER BY 'Finansaxel'[Val], 'Finansaxel'[Panel], 'Datum'[Månadsnummer]

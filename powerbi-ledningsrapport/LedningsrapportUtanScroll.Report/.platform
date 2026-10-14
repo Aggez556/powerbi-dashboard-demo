@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Ledningsrapport utan scroll"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "46192b3e-5dfd-4c2a-bf26-343f51744c2f"
+  }
+}

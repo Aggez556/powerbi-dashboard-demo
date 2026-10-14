@@ -1,0 +1,6 @@
+EVALUATE
+SUMMARIZECOLUMNS('Kunder'[Land], TREATAS({2025}, 'Datum'[År]),
+ "Vinst", [Bruttovinst miljoner], "Förändring", [Finans marknadstillväxt etikett],
+ "Marginal", [Bruttomarginal], "Trend", [Finans marknadstrend],
+ "Andel", [Bruttovinst andel land], "Axel", [Finans andelsaxel max], "Rest", [Finans andel återstående])
+ORDER BY [Vinst] DESC

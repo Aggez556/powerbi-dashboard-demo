@@ -1,0 +1,45 @@
+/// Reproducerbar lokal demodata; Direkta kostnader.csv.
+table 'Direkta kostnader'
+	lineageTag: 22c45edd-5d5f-459f-b179-a33637b9f1d2
+
+	/// Källfält i lokal demodata: Direkta kostnader.Datumnyckel.
+	column Datumnyckel
+		dataType: int64
+		isHidden
+		lineageTag: 00b4d9db-a8b8-46da-86b0-7f2ef0652774
+		summarizeBy: none
+		sourceColumn: Datumnyckel
+
+	/// Källfält i lokal demodata: Direkta kostnader.Områdesnyckel.
+	column Områdesnyckel
+		dataType: int64
+		isHidden
+		lineageTag: bc437cbe-520a-4801-846d-15ee56833755
+		summarizeBy: none
+		sourceColumn: Områdesnyckel
+
+	/// Källfält i lokal demodata: Direkta kostnader.Kostnadstyp.
+	column Kostnadstyp
+		dataType: string
+		lineageTag: 62aeeaed-d4db-4c98-973c-0084d957d87b
+		summarizeBy: none
+		sourceColumn: Kostnadstyp
+
+	/// Källfält i lokal demodata: Direkta kostnader.Belopp.
+	column Belopp
+		dataType: decimal
+		isHidden
+		lineageTag: 15cf3817-1008-42ea-808a-bb48a738cc9b
+		summarizeBy: none
+		sourceColumn: Belopp
+
+	partition 'Direkta kostnader' = m
+		mode: import
+		source =
+				let
+					Source = Csv.Document(File.Contents(DataFolder & "/Direkta kostnader.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+					Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+					Typed = Table.TransformColumnTypes(Headers, {{"Datumnyckel", Int64.Type}, {"Områdesnyckel", Int64.Type}, {"Kostnadstyp", type text}, {"Belopp", Currency.Type}}, "en-US")
+				in
+					Typed
+

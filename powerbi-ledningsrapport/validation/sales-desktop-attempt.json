@@ -1,0 +1,9 @@
+{
+  "status": "incomplete",
+  "operation": "Targeted local model metadata and imported-table processing",
+  "result": "The SaveChanges batch did not complete. The agent cancelled only its own batch and stopped its client process.",
+  "liveDaxVerified": false,
+  "screenshotsVerified": false,
+  "persistedModel": "Validated separately with Microsoft TOM TMDL deserialization",
+  "nextStep": "Load the updated PBIP and refresh imported data in Desktop; then run sales-live-check.dax and review rendered pages."
+}

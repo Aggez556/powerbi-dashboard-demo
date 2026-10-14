@@ -1,0 +1,21 @@
+﻿{
+    "status":  "passed",
+    "rows":  [
+                 {
+                     "[Case]":  "Empty",
+                     "[KPI]":  null,
+                     "[Product]":  null,
+                     "[Top5]":  null,
+                     "[Trend]":  null
+                 },
+                 {
+                     "[Case]":  "Positive profit / negative unit revenue",
+                     "[KPI]":  "+33,3 % ▲",
+                     "[Product]":  "-1,3 % ▼",
+                     "[Top5]":  "Topp 5 står för 31,5 % av bruttovinsten",
+                     "[Trend]":  null
+                 }
+             ],
+    "desktopProcessId":  9624,
+    "source":  "Actual Desktop engine, DAX query"
+}

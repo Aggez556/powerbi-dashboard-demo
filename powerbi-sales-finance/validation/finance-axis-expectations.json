@@ -1,0 +1,102 @@
+{
+  "status": "passed",
+  "source": "Independent CSV product/category and seller/team joins",
+  "rows": [
+    {
+      "year": 2024,
+      "type": "Kategori",
+      "name": "Elektronik",
+      "profit": 891385.78
+    },
+    {
+      "year": 2024,
+      "type": "Kategori",
+      "name": "Hem och kök",
+      "profit": 520631.6
+    },
+    {
+      "year": 2024,
+      "type": "Kategori",
+      "name": "Kontor",
+      "profit": 114519.84
+    },
+    {
+      "year": 2024,
+      "type": "Kategori",
+      "name": "Sport och fritid",
+      "profit": 745143.06
+    },
+    {
+      "year": 2024,
+      "type": "Kategori",
+      "name": "Trädgård",
+      "profit": 1048399.6
+    },
+    {
+      "year": 2024,
+      "type": "Säljteam",
+      "name": "Nord",
+      "profit": 1058505.68
+    },
+    {
+      "year": 2024,
+      "type": "Säljteam",
+      "name": "Syd",
+      "profit": 1149103.03
+    },
+    {
+      "year": 2024,
+      "type": "Säljteam",
+      "name": "Väst",
+      "profit": 1112471.17
+    },
+    {
+      "year": 2025,
+      "type": "Kategori",
+      "name": "Elektronik",
+      "profit": 1036703.91
+    },
+    {
+      "year": 2025,
+      "type": "Kategori",
+      "name": "Hem och kök",
+      "profit": 631701.81
+    },
+    {
+      "year": 2025,
+      "type": "Kategori",
+      "name": "Kontor",
+      "profit": 153398.67
+    },
+    {
+      "year": 2025,
+      "type": "Kategori",
+      "name": "Sport och fritid",
+      "profit": 910435.92
+    },
+    {
+      "year": 2025,
+      "type": "Kategori",
+      "name": "Trädgård",
+      "profit": 1364538.01
+    },
+    {
+      "year": 2025,
+      "type": "Säljteam",
+      "name": "Nord",
+      "profit": 1335649.99
+    },
+    {
+      "year": 2025,
+      "type": "Säljteam",
+      "name": "Syd",
+      "profit": 1375078.82
+    },
+    {
+      "year": 2025,
+      "type": "Säljteam",
+      "name": "Väst",
+      "profit": 1386049.51
+    }
+  ]
+}

@@ -1,0 +1,295 @@
+﻿{
+    "status":  "passed",
+    "rows":  [
+                 {
+                     "[Month]":  1,
+                     "[Group]":  "Elektronik",
+                     "[Value]":  494795.63,
+                     "[Max]":  null,
+                     "[Min]":  null,
+                     "[Rank]":  1
+                 },
+                 {
+                     "[Month]":  2,
+                     "[Group]":  "Elektronik",
+                     "[Value]":  473380.22,
+                     "[Max]":  null,
+                     "[Min]":  null,
+                     "[Rank]":  1
+                 },
+                 {
+                     "[Month]":  3,
+                     "[Group]":  "Elektronik",
+                     "[Value]":  705101.66,
+                     "[Max]":  null,
+                     "[Min]":  null,
+                     "[Rank]":  1
+                 },
+                 {
+                     "[Month]":  4,
+                     "[Group]":  "Elektronik",
+                     "[Value]":  518856.45,
+                     "[Max]":  null,
+                     "[Min]":  null,
+                     "[Rank]":  1
+                 },
+                 {
+                     "[Month]":  5,
+                     "[Group]":  "Elektronik",
+                     "[Value]":  524139.57,
+                     "[Max]":  null,
+                     "[Min]":  null,
+                     "[Rank]":  1
+                 },
+                 {
+                     "[Month]":  6,
+                     "[Group]":  "Elektronik",
+                     "[Value]":  468129.82,
+                     "[Max]":  null,
+                     "[Min]":  null,
+                     "[Rank]":  1
+                 },
+                 {
+                     "[Month]":  7,
+                     "[Group]":  "Elektronik",
+                     "[Value]":  314589.29,
+                     "[Max]":  null,
+                     "[Min]":  314589.29,
+                     "[Rank]":  1
+                 },
+                 {
+                     "[Month]":  8,
+                     "[Group]":  "Elektronik",
+                     "[Value]":  405008.92,
+                     "[Max]":  null,
+                     "[Min]":  null,
+                     "[Rank]":  1
+                 },
+                 {
+                     "[Month]":  9,
+                     "[Group]":  "Elektronik",
+                     "[Value]":  615388.62,
+                     "[Max]":  null,
+                     "[Min]":  null,
+                     "[Rank]":  1
+                 },
+                 {
+                     "[Month]":  10,
+                     "[Group]":  "Elektronik",
+                     "[Value]":  697895.52,
+                     "[Max]":  null,
+                     "[Min]":  null,
+                     "[Rank]":  1
+                 },
+                 {
+                     "[Month]":  11,
+                     "[Group]":  "Elektronik",
+                     "[Value]":  974692,
+                     "[Max]":  null,
+                     "[Min]":  null,
+                     "[Rank]":  1
+                 },
+                 {
+                     "[Month]":  12,
+                     "[Group]":  "Elektronik",
+                     "[Value]":  1179924.66,
+                     "[Max]":  1179924.66,
+                     "[Min]":  null,
+                     "[Rank]":  1
+                 },
+                 {
+                     "[Month]":  1,
+                     "[Group]":  "Övrigt",
+                     "[Value]":  439517.93,
+                     "[Max]":  null,
+                     "[Min]":  null,
+                     "[Rank]":  2
+                 },
+                 {
+                     "[Month]":  2,
+                     "[Group]":  "Övrigt",
+                     "[Value]":  348674.58,
+                     "[Max]":  null,
+                     "[Min]":  348674.58,
+                     "[Rank]":  2
+                 },
+                 {
+                     "[Month]":  3,
+                     "[Group]":  "Övrigt",
+                     "[Value]":  392312.01,
+                     "[Max]":  null,
+                     "[Min]":  null,
+                     "[Rank]":  2
+                 },
+                 {
+                     "[Month]":  4,
+                     "[Group]":  "Övrigt",
+                     "[Value]":  624303.85,
+                     "[Max]":  null,
+                     "[Min]":  null,
+                     "[Rank]":  2
+                 },
+                 {
+                     "[Month]":  5,
+                     "[Group]":  "Övrigt",
+                     "[Value]":  593954.5,
+                     "[Max]":  null,
+                     "[Min]":  null,
+                     "[Rank]":  2
+                 },
+                 {
+                     "[Month]":  6,
+                     "[Group]":  "Övrigt",
+                     "[Value]":  596936.83,
+                     "[Max]":  null,
+                     "[Min]":  null,
+                     "[Rank]":  2
+                 },
+                 {
+                     "[Month]":  7,
+                     "[Group]":  "Övrigt",
+                     "[Value]":  524609.71,
+                     "[Max]":  null,
+                     "[Min]":  null,
+                     "[Rank]":  2
+                 },
+                 {
+                     "[Month]":  8,
+                     "[Group]":  "Övrigt",
+                     "[Value]":  616383.12,
+                     "[Max]":  null,
+                     "[Min]":  null,
+                     "[Rank]":  2
+                 },
+                 {
+                     "[Month]":  9,
+                     "[Group]":  "Övrigt",
+                     "[Value]":  432551.74,
+                     "[Max]":  null,
+                     "[Min]":  null,
+                     "[Rank]":  2
+                 },
+                 {
+                     "[Month]":  10,
+                     "[Group]":  "Övrigt",
+                     "[Value]":  604886.51,
+                     "[Max]":  null,
+                     "[Min]":  null,
+                     "[Rank]":  2
+                 },
+                 {
+                     "[Month]":  11,
+                     "[Group]":  "Övrigt",
+                     "[Value]":  646814.26,
+                     "[Max]":  null,
+                     "[Min]":  null,
+                     "[Rank]":  2
+                 },
+                 {
+                     "[Month]":  12,
+                     "[Group]":  "Övrigt",
+                     "[Value]":  707951.89,
+                     "[Max]":  707951.89,
+                     "[Min]":  null,
+                     "[Rank]":  2
+                 },
+                 {
+                     "[Month]":  1,
+                     "[Group]":  "Hem och kök",
+                     "[Value]":  88994.22,
+                     "[Max]":  null,
+                     "[Min]":  null,
+                     "[Rank]":  3
+                 },
+                 {
+                     "[Month]":  2,
+                     "[Group]":  "Hem och kök",
+                     "[Value]":  80235.11,
+                     "[Max]":  null,
+                     "[Min]":  null,
+                     "[Rank]":  3
+                 },
+                 {
+                     "[Month]":  3,
+                     "[Group]":  "Hem och kök",
+                     "[Value]":  128526.57,
+                     "[Max]":  null,
+                     "[Min]":  null,
+                     "[Rank]":  3
+                 },
+                 {
+                     "[Month]":  4,
+                     "[Group]":  "Hem och kök",
+                     "[Value]":  137858.18,
+                     "[Max]":  null,
+                     "[Min]":  null,
+                     "[Rank]":  3
+                 },
+                 {
+                     "[Month]":  5,
+                     "[Group]":  "Hem och kök",
+                     "[Value]":  77992.12,
+                     "[Max]":  null,
+                     "[Min]":  77992.12,
+                     "[Rank]":  3
+                 },
+                 {
+                     "[Month]":  6,
+                     "[Group]":  "Hem och kök",
+                     "[Value]":  90651.25,
+                     "[Max]":  null,
+                     "[Min]":  null,
+                     "[Rank]":  3
+                 },
+                 {
+                     "[Month]":  7,
+                     "[Group]":  "Hem och kök",
+                     "[Value]":  83736.13,
+                     "[Max]":  null,
+                     "[Min]":  null,
+                     "[Rank]":  3
+                 },
+                 {
+                     "[Month]":  8,
+                     "[Group]":  "Hem och kök",
+                     "[Value]":  87639.29,
+                     "[Max]":  null,
+                     "[Min]":  null,
+                     "[Rank]":  3
+                 },
+                 {
+                     "[Month]":  9,
+                     "[Group]":  "Hem och kök",
+                     "[Value]":  129072.09,
+                     "[Max]":  null,
+                     "[Min]":  null,
+                     "[Rank]":  3
+                 },
+                 {
+                     "[Month]":  10,
+                     "[Group]":  "Hem och kök",
+                     "[Value]":  159150.26,
+                     "[Max]":  null,
+                     "[Min]":  null,
+                     "[Rank]":  3
+                 },
+                 {
+                     "[Month]":  11,
+                     "[Group]":  "Hem och kök",
+                     "[Value]":  193879.21,
+                     "[Max]":  null,
+                     "[Min]":  null,
+                     "[Rank]":  3
+                 },
+                 {
+                     "[Month]":  12,
+                     "[Group]":  "Hem och kök",
+                     "[Value]":  215828.88,
+                     "[Max]":  215828.88,
+                     "[Min]":  null,
+                     "[Rank]":  3
+                 }
+             ],
+    "desktopProcessId":  3136,
+    "source":  "Actual Desktop engine, DAX query"
+}

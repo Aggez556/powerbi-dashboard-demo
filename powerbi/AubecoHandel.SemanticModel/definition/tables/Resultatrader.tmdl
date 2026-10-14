@@ -1,0 +1,31 @@
+/// Fristående tabell för lokal budgetsimulering.
+table Resultatrader
+
+	column Rad
+		dataType: string
+		summarizeBy: none
+		sourceColumn: Rad
+		sortByColumn: Ordning
+
+	column Ordning
+		dataType: int64
+		isHidden
+		summarizeBy: none
+		sourceColumn: Ordning
+
+	column Beräkning
+		dataType: int64
+		isHidden
+		summarizeBy: none
+		sourceColumn: Beräkning
+
+	partition Resultatrader = m
+		mode: import
+		source =
+				let
+					Source = Csv.Document(File.Contents(DataFolder & "/Resultatrader.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+					Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+					Typed = Table.TransformColumnTypes(Headers, {{"Rad", type text}, {"Ordning", Int64.Type}, {"Beräkning", Int64.Type}}, "en-US")
+				in
+					Typed
+

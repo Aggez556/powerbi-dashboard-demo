@@ -1,0 +1,15 @@
+﻿{
+    "status":  "passed",
+    "rows":  [
+                 {
+                     "[Aktiva]":  null,
+                     "[Ordervärde]":  null,
+                     "[Säljare]":  null,
+                     "[Omsättning]":  null,
+                     "[Andel]":  null,
+                     "[Trend]":  null
+                 }
+             ],
+    "desktopProcessId":  16972,
+    "source":  "Actual Desktop engine, DAX query"
+}

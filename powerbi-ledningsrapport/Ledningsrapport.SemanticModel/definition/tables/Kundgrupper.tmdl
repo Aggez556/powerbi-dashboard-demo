@@ -1,0 +1,28 @@
+/// Frikopplad presentationsaxel för kundanalys.
+table Kundgrupper
+	lineageTag: 23bce2cf-9158-4e37-b944-5830d9c5573b
+
+	column Kundgrupp
+		dataType: string
+		lineageTag: 8bc1db58-d2be-430b-a61e-8caf27821d13
+		summarizeBy: none
+		sourceColumn: Kundgrupp
+		sortByColumn: Ordning
+
+	column Ordning
+		dataType: int64
+		isHidden
+		lineageTag: 32d47c51-11b7-40be-903e-edda77a67cf4
+		summarizeBy: none
+		sourceColumn: Ordning
+
+	partition Kundgrupper = m
+		mode: import
+		source =
+				let
+					Source = Csv.Document(File.Contents(DataFolder & "/Kundgrupper.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+					Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+					Typed = Table.TransformColumnTypes(Headers, {{"Kundgrupp", type text}, {"Ordning", Int64.Type}}, "en-US")
+				in
+					Typed
+

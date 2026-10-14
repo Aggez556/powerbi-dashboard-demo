@@ -1,0 +1,15 @@
+.skill-sources/
+.tools/powerbi/node_modules/
+.tools/tom/
+**/.pbi/cache.abf
+**/.pbi/localSettings.json
+
+# Local tools, caches and machine-specific state
+.tools/
+**/.pbi/
+**/__pycache__/
+*.pyc
+.env
+.env.*
+*.pbix
+*.pbit

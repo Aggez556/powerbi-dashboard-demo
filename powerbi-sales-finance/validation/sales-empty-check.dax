@@ -1,0 +1,4 @@
+EVALUATE
+CALCULATETABLE(
+ ROW("Aktiva", [Aktiva säljare], "Ordervärde", [Genomsnittlig order], "Säljare", [Säljanalys säljare 1 namn], "Omsättning", [Omsättning], "Andel", [Topp 5 säljare andel], "Trend", [Säljanalys trend 1 bild]),
+ TREATAS({1900}, 'Datum'[År]))

@@ -1,0 +1,39 @@
+{
+  "generator": "scripts/generate-Ledningsrapport.py",
+  "period": "2023-01-01–2026-09-30",
+  "currency": "SEK, redan skalat 5× jämfört med referensbilden",
+  "rows": {
+    "Datum": 1369,
+    "Kunder": 301,
+    "Områden": 3,
+    "Försäljning": 9810,
+    "Direkta kostnader": 675,
+    "Gemensamma kostnader": 135,
+    "Uppdrag": 3333,
+    "Budget": 45,
+    "Periodtyp": 3,
+    "R12val": 22,
+    "Månadsval": 33,
+    "Helårsval": 2,
+    "Trendaxel": 45,
+    "Bryggaxel": 285
+  },
+  "sha256": {
+    "Datum": "e7ef5669935b36c17603b1451c4af01def36a0b41c5edc6742cdb4a89ea31bc1",
+    "Kunder": "b937c13c22fb680ff93cadafa26f6295999bd96979bc114b898784b1f79a5495",
+    "Områden": "9b6ba81d0bcc4b05a9fe3c6b97f33c6168021300bccf7700ad4c7953ad8b8076",
+    "Försäljning": "864821ac666ed4a47a20b166f855769ab803f8765372569e1b9d75b076c453e7",
+    "Direkta kostnader": "fd8a1237239008cf90695f51199588e35cc596ea7529ba7a8cc1cda8cf21908d",
+    "Gemensamma kostnader": "9b661388937dacbf6ddb24fa089b481e9ec9c68490b9df7be6bb761e49465a9f",
+    "Uppdrag": "629ffd0238bb44f16e6e8177284276c4484e069c5f2785725f0ede9b8e80459f",
+    "Budget": "88d2392ef55fd34d31bf894451ba5e11946ea2a180490afbdc085975d32ad62a",
+    "Periodtyp": "13af70eae6d14dff12d43124f9e4779a18d352750e3ecb2a9706daba8eceba49",
+    "Trendaxel": "b16e67b6eda17d05b3cbd9c44f7003f9c87005e47fda23076874e802ba1064bb",
+    "Bryggaxel": "f70ff6c86433fd8b7a786739d611b4011b1300060f2fc6dd5b784434fc41ecac",
+    "R12val": "d472b4285d4ee4525c5dc66d1002b20adf1e68d934ea86463984c526cb991ad3",
+    "Månadsval": "f4a80e63667a8a292d7d03f70ca096a3fdee5a9904a1592073315ea72046faa3",
+    "Helårsval": "18da1e39383880c3efafc20890eb90b4bcfe35918c472a118ad2f2b978ef7fb7"
+  },
+  "measures": 68,
+  "assumptions": "Nettointäkter exkl moms inklusive kreditnotor. Alla direkta personalkostnader inkluderade, också ej uppdragsfördelade. Gemensamma kostnader inkluderar avskrivningar. Uppdrag har en rad per unik identitet; avbokade exkluderas. Kund 301 har endast kreditnotor."
+}

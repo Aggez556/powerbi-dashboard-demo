@@ -1,0 +1,10 @@
+EVALUATE
+CALCULATETABLE(
+    ROW(
+        "Namn 1", [Säljartopp 1 namn], "Belopp 1", [Säljartopp 1 belopp], "Förändring 1", [Säljartopp 1 förändring],
+        "Namn 2", [Säljartopp 2 namn], "Belopp 2", [Säljartopp 2 belopp], "Förändring 2", [Säljartopp 2 förändring],
+        "Namn 3", [Säljartopp 3 namn], "Belopp 3", [Säljartopp 3 belopp], "Förändring 3", [Säljartopp 3 förändring],
+        "Initialer", [Säljartopp 1 initialer], "Segment", [Säljartopp 3 segment], "Andel", [Säljartopp andel etikett]
+    ),
+    TREATAS({2025}, 'Datum'[År])
+)

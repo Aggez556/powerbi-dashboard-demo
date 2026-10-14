@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "twoSuccessiveRunsIdentical": true,
+  "sha256": {
+    "powerbi\\data\\DimCustomer.csv": "527df2a5cf5a5f3fbc70c7bafd4d4d46ed8ba46f7ae23eb309573ed9c00356b1",
+    "powerbi\\data\\DimDate.csv": "19012624e95b5acad11ec4d55807e9b3082f93d33df9c25f92104331238e477f",
+    "powerbi\\data\\DimProduct.csv": "f9664e4ab7b337e9de9df2400121b3fbf3e4a95119b3a643ea1921670a9eea53",
+    "powerbi\\data\\FactSales.csv": "d028e285f4c6c993b56a88b429ed8496d9d7203992b83ca77e96130e16ca1e1f",
+    "powerbi\\AubecoHandel.SemanticModel\\definition\\database.tmdl": "f1a3a5d68cd9d24707f1b8654cda4332cd02351964dcd0f66fb31d36db40e319",
+    "powerbi\\AubecoHandel.SemanticModel\\definition\\expressions.tmdl": "3d0e333dbdf90ae9f4336f0d7402ce1c80f93f7880212a860651342499f4efec",
+    "powerbi\\AubecoHandel.SemanticModel\\definition\\model.tmdl": "1dab86d999ee40abdcd160be28e326d5aa4d1b420cc7c5473244f5a1803391a3",
+    "powerbi\\AubecoHandel.SemanticModel\\definition\\relationships.tmdl": "38f97e1ba760801cfc6a31e6c4614e442adb389c8b921c9bc8b3fed272ae94f9",
+    "powerbi\\AubecoHandel.SemanticModel\\definition\\tables\\Datum.tmdl": "3393aeaaf0d97e374f06cdc6da46803dc949a080db5f0954686f64dd8bf587ea",
+    "powerbi\\AubecoHandel.SemanticModel\\definition\\tables\\F\u00f6rs\u00e4ljning.tmdl": "1b29c32cffb254014797dd41cb17f6aa13e5159170b909f563d9f708666bb7e2",
+    "powerbi\\AubecoHandel.SemanticModel\\definition\\tables\\Kunder.tmdl": "5ee60c48418de17b51e3e3b9019b29ec9c82e14df823dd596103bf9e8a33b0b9",
+    "powerbi\\AubecoHandel.SemanticModel\\definition\\tables\\Produkter.tmdl": "439ba86522eae5c5f6695c6895f6988e421384c0344c6d265aa172871a115f91"
+  }
+}

@@ -1,0 +1,301 @@
+{
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "rootFontSize": "14.5px",
+  "elements": {
+    "logo": {
+      "selector": "header nav a span",
+      "text": "aubeco",
+      "classes": "font-heading inline-flex items-baseline text-5xl font-bold lowercase tracking-tight text-orange laptop:text-[3.5rem]",
+      "rect": {
+        "x": 53,
+        "y": 25.375,
+        "width": 165.71875,
+        "height": 50.75
+      },
+      "fontFamily": "echotun, \"echotun Fallback\", \"Open Sans\", \"Open Sans Fallback\", ui-sans-serif, system-ui, sans-serif, \"Open Sans\", \"Open Sans Fallback\", ui-sans-serif, sans-serif",
+      "fontSize": "50.75px",
+      "fontWeight": "400",
+      "lineHeight": "50.75px",
+      "letterSpacing": "-0.5075px",
+      "color": "rgb(247, 186, 107)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "borderRadius": "0px",
+      "paddingTop": "0px",
+      "paddingRight": "0px",
+      "paddingBottom": "0px",
+      "paddingLeft": "0px",
+      "gap": "normal",
+      "boxShadow": "none"
+    },
+    "heroTitle": {
+      "selector": "h1",
+      "text": "Förvandla er data till beslut som räknas",
+      "classes": "font-heading text-4xl font-bold leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl xl:text-7xl",
+      "rect": {
+        "x": 53,
+        "y": 554.6875,
+        "width": 696,
+        "height": 137
+      },
+      "fontFamily": "echotun, \"echotun Fallback\", \"Open Sans\", \"Open Sans Fallback\", ui-sans-serif, system-ui, sans-serif, \"Open Sans\", \"Open Sans Fallback\", ui-sans-serif, sans-serif",
+      "fontSize": "65.25px",
+      "fontWeight": "400",
+      "lineHeight": "68.5125px",
+      "letterSpacing": "-0.6525px",
+      "color": "rgb(255, 255, 255)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "borderRadius": "0px",
+      "paddingTop": "0px",
+      "paddingRight": "0px",
+      "paddingBottom": "0px",
+      "paddingLeft": "0px",
+      "gap": "normal",
+      "boxShadow": "none"
+    },
+    "heroBody": {
+      "selector": "#top p",
+      "text": "Aubeco samlar data från era system, strukturerar den och bygger den rapportering och analys ni behöv",
+      "classes": "mt-6 max-w-2xl text-lg leading-relaxed text-white/70 sm:text-xl",
+      "rect": {
+        "x": 53,
+        "y": 713.4375,
+        "width": 609,
+        "height": 117.8125
+      },
+      "fontFamily": "\"Open Sans\", \"Open Sans Fallback\", ui-sans-serif, system-ui, sans-serif",
+      "fontSize": "18.125px",
+      "fontWeight": "400",
+      "lineHeight": "29.4531px",
+      "letterSpacing": "normal",
+      "color": "oklab(0.999994 0.0000455677 0.0000200868 / 0.7)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "borderRadius": "0px",
+      "paddingTop": "0px",
+      "paddingRight": "0px",
+      "paddingBottom": "0px",
+      "paddingLeft": "0px",
+      "gap": "normal",
+      "boxShadow": "none"
+    },
+    "heroButton": {
+      "selector": "#top a",
+      "text": "Se våra tjänster→",
+      "classes": "inline-flex items-center justify-center gap-2 rounded-full bg-orange px-7 py-3.5 text-base font-bold text-navy-deep shadow-soft transition-transform hover:-translate-y-0.5 hover:bg-orange-bright",
+      "rect": {
+        "x": 53,
+        "y": 863.875,
+        "width": 187.359375,
+        "height": 49.125
+      },
+      "fontFamily": "\"Open Sans\", \"Open Sans Fallback\", ui-sans-serif, system-ui, sans-serif",
+      "fontSize": "14.5px",
+      "fontWeight": "700",
+      "lineHeight": "21.75px",
+      "letterSpacing": "normal",
+      "color": "rgb(9, 34, 74)",
+      "backgroundColor": "rgb(247, 186, 107)",
+      "borderRadius": "3.35544e+07px",
+      "paddingTop": "12.6875px",
+      "paddingRight": "25.375px",
+      "paddingBottom": "12.6875px",
+      "paddingLeft": "25.375px",
+      "gap": "7.25px",
+      "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(8, 31, 63, 0.35) 0px 10px 30px -18px"
+    },
+    "sectionTitle": {
+      "selector": "main section:nth-child(2) h2",
+      "text": "Vi löser affärsproblem med data",
+      "classes": "font-heading mt-3 text-3xl font-bold leading-tight text-navy sm:text-4xl",
+      "rect": {
+        "x": 53,
+        "y": 1134.125,
+        "width": 638,
+        "height": 40.78125
+      },
+      "fontFamily": "echotun, \"echotun Fallback\", \"Open Sans\", \"Open Sans Fallback\", ui-sans-serif, system-ui, sans-serif, \"Open Sans\", \"Open Sans Fallback\", ui-sans-serif, sans-serif",
+      "fontSize": "32.625px",
+      "fontWeight": "400",
+      "lineHeight": "40.7812px",
+      "letterSpacing": "-0.32625px",
+      "color": "rgb(15, 49, 99)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "borderRadius": "0px",
+      "paddingTop": "0px",
+      "paddingRight": "0px",
+      "paddingBottom": "0px",
+      "paddingLeft": "0px",
+      "gap": "normal",
+      "boxShadow": "none"
+    },
+    "body": {
+      "selector": "body",
+      "text": "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"ProfessionalService\",\"@id\":\"https://www.aubeco.",
+      "classes": "min-h-full flex flex-col bg-white text-ink",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 5580.03125
+      },
+      "fontFamily": "\"Open Sans\", \"Open Sans Fallback\", ui-sans-serif, system-ui, sans-serif",
+      "fontSize": "14.5px",
+      "fontWeight": "400",
+      "lineHeight": "21.75px",
+      "letterSpacing": "normal",
+      "color": "rgb(11, 27, 48)",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "borderRadius": "0px",
+      "paddingTop": "0px",
+      "paddingRight": "0px",
+      "paddingBottom": "0px",
+      "paddingLeft": "0px",
+      "gap": "normal",
+      "boxShadow": "none"
+    },
+    "section": {
+      "selector": "main section:nth-child(2)",
+      "text": "Vad vi görVi löser affärsproblem med dataAubeco är ett svenskt bolag inom business intelligence och ",
+      "classes": "bg-white pb-12 pt-20 sm:pb-16 sm:pt-28",
+      "rect": {
+        "x": 0,
+        "y": 1000,
+        "width": 1440,
+        "height": 814.78125
+      },
+      "fontFamily": "\"Open Sans\", \"Open Sans Fallback\", ui-sans-serif, system-ui, sans-serif",
+      "fontSize": "14.5px",
+      "fontWeight": "400",
+      "lineHeight": "21.75px",
+      "letterSpacing": "normal",
+      "color": "rgb(11, 27, 48)",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "borderRadius": "0px",
+      "paddingTop": "101.5px",
+      "paddingRight": "0px",
+      "paddingBottom": "58px",
+      "paddingLeft": "0px",
+      "gap": "normal",
+      "boxShadow": "none"
+    },
+    "serviceCard": {
+      "selector": "#tjanster a",
+      "text": "DataplattformarVi samlar in data från era system, strukturerar den och automatiserar flödena så att ",
+      "classes": "group relative cursor-pointer overflow-hidden rounded-2xl border border-black/5 bg-white shadow-soft transition-all hover:-translate-y-1 hover:shadow-card flex h-full flex-col p-8 sm:p-10 sm:row-span-2",
+      "rect": {
+        "x": 53,
+        "y": 2131.0625,
+        "width": 656.125,
+        "height": 471.625
+      },
+      "fontFamily": "\"Open Sans\", \"Open Sans Fallback\", ui-sans-serif, system-ui, sans-serif",
+      "fontSize": "14.5px",
+      "fontWeight": "400",
+      "lineHeight": "21.75px",
+      "letterSpacing": "normal",
+      "color": "rgb(11, 27, 48)",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "borderRadius": "14.5px",
+      "paddingTop": "36.25px",
+      "paddingRight": "36.25px",
+      "paddingBottom": "36.25px",
+      "paddingLeft": "36.25px",
+      "gap": "normal",
+      "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(8, 31, 63, 0.35) 0px 10px 30px -18px"
+    },
+    "footer": {
+      "selector": "footer",
+      "text": "aubecoAubeco samlar, strukturerar och analyserar företags data så att verksamheten går att följa och",
+      "classes": "bg-navy-deep text-white",
+      "rect": {
+        "x": 0,
+        "y": 5161.953125,
+        "width": 1440,
+        "height": 418.078125
+      },
+      "fontFamily": "\"Open Sans\", \"Open Sans Fallback\", ui-sans-serif, system-ui, sans-serif",
+      "fontSize": "14.5px",
+      "fontWeight": "400",
+      "lineHeight": "21.75px",
+      "letterSpacing": "normal",
+      "color": "rgb(255, 255, 255)",
+      "backgroundColor": "rgb(9, 34, 74)",
+      "borderRadius": "0px",
+      "paddingTop": "0px",
+      "paddingRight": "0px",
+      "paddingBottom": "0px",
+      "paddingLeft": "0px",
+      "gap": "normal",
+      "boxShadow": "none"
+    }
+  },
+  "fonts": [
+    {
+      "family": "Open Sans",
+      "weight": "300 800",
+      "status": "unloaded"
+    },
+    {
+      "family": "Open Sans",
+      "weight": "300 800",
+      "status": "unloaded"
+    },
+    {
+      "family": "Open Sans",
+      "weight": "300 800",
+      "status": "unloaded"
+    },
+    {
+      "family": "Open Sans",
+      "weight": "300 800",
+      "status": "unloaded"
+    },
+    {
+      "family": "Open Sans",
+      "weight": "300 800",
+      "status": "unloaded"
+    },
+    {
+      "family": "Open Sans",
+      "weight": "300 800",
+      "status": "loaded"
+    },
+    {
+      "family": "Open Sans",
+      "weight": "300 800",
+      "status": "loaded"
+    },
+    {
+      "family": "Open Sans",
+      "weight": "300 800",
+      "status": "unloaded"
+    },
+    {
+      "family": "Open Sans",
+      "weight": "300 800",
+      "status": "loaded"
+    },
+    {
+      "family": "Open Sans",
+      "weight": "300 800",
+      "status": "loaded"
+    },
+    {
+      "family": "Open Sans Fallback",
+      "weight": "normal",
+      "status": "loaded"
+    },
+    {
+      "family": "echotun",
+      "weight": "400",
+      "status": "loaded"
+    },
+    {
+      "family": "echotun Fallback",
+      "weight": "normal",
+      "status": "loaded"
+    }
+  ]
+}

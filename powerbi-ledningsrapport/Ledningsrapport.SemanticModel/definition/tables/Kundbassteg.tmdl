@@ -1,0 +1,28 @@
+/// Frikopplad presentationsaxel för kundanalys.
+table Kundbassteg
+	lineageTag: b85326c5-168c-4150-a122-25b5f680193f
+
+	column Steg
+		dataType: string
+		lineageTag: 8836d39c-da01-40e7-9ed4-0662e7728dec
+		summarizeBy: none
+		sourceColumn: Steg
+		sortByColumn: Ordning
+
+	column Ordning
+		dataType: int64
+		isHidden
+		lineageTag: f45cfc56-8f13-409f-96fb-aff8506c9b28
+		summarizeBy: none
+		sourceColumn: Ordning
+
+	partition Kundbassteg = m
+		mode: import
+		source =
+				let
+					Source = Csv.Document(File.Contents(DataFolder & "/Kundbassteg.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+					Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+					Typed = Table.TransformColumnTypes(Headers, {{"Steg", type text}, {"Ordning", Int64.Type}}, "en-US")
+				in
+					Typed
+

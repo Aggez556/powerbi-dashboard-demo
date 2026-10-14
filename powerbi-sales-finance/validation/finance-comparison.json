@@ -1,0 +1,26 @@
+{
+  "status": "passed",
+  "source": "Independent CSV Decimal sums versus live Desktop DAX",
+  "checks": [
+    {
+      "period": "Helår",
+      "fields": 7,
+      "passed": true
+    },
+    {
+      "period": "Oktober",
+      "fields": 7,
+      "passed": true
+    },
+    {
+      "period": "September–oktober",
+      "fields": 7,
+      "passed": true
+    },
+    {
+      "monthlyGroups": 96,
+      "passed": true,
+      "toleranceMillions": "0.0001 (existing currency-typed million measures)"
+    }
+  ]
+}

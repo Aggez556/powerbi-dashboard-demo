@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "AubecoHandel"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "8a22f6c6-23f3-4035-8483-0cb9618021a9"
+  }
+}

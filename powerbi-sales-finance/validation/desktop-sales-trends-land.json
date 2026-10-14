@@ -1,0 +1,391 @@
+﻿{
+    "status":  "passed",
+    "rows":  [
+                 {
+                     "[Month]":  1,
+                     "[Group]":  "Norge",
+                     "[Value]":  322381.16,
+                     "[Max]":  null,
+                     "[Min]":  null,
+                     "[Rank]":  1
+                 },
+                 {
+                     "[Month]":  2,
+                     "[Group]":  "Norge",
+                     "[Value]":  208559.98,
+                     "[Max]":  null,
+                     "[Min]":  208559.98,
+                     "[Rank]":  1
+                 },
+                 {
+                     "[Month]":  3,
+                     "[Group]":  "Norge",
+                     "[Value]":  326775.82,
+                     "[Max]":  null,
+                     "[Min]":  null,
+                     "[Rank]":  1
+                 },
+                 {
+                     "[Month]":  4,
+                     "[Group]":  "Norge",
+                     "[Value]":  325904.82,
+                     "[Max]":  null,
+                     "[Min]":  null,
+                     "[Rank]":  1
+                 },
+                 {
+                     "[Month]":  5,
+                     "[Group]":  "Norge",
+                     "[Value]":  305699.32,
+                     "[Max]":  null,
+                     "[Min]":  null,
+                     "[Rank]":  1
+                 },
+                 {
+                     "[Month]":  6,
+                     "[Group]":  "Norge",
+                     "[Value]":  278698.18,
+                     "[Max]":  null,
+                     "[Min]":  null,
+                     "[Rank]":  1
+                 },
+                 {
+                     "[Month]":  7,
+                     "[Group]":  "Norge",
+                     "[Value]":  257830.65,
+                     "[Max]":  null,
+                     "[Min]":  null,
+                     "[Rank]":  1
+                 },
+                 {
+                     "[Month]":  8,
+                     "[Group]":  "Norge",
+                     "[Value]":  248764.1,
+                     "[Max]":  null,
+                     "[Min]":  null,
+                     "[Rank]":  1
+                 },
+                 {
+                     "[Month]":  9,
+                     "[Group]":  "Norge",
+                     "[Value]":  279209.14,
+                     "[Max]":  null,
+                     "[Min]":  null,
+                     "[Rank]":  1
+                 },
+                 {
+                     "[Month]":  10,
+                     "[Group]":  "Norge",
+                     "[Value]":  377389,
+                     "[Max]":  null,
+                     "[Min]":  null,
+                     "[Rank]":  1
+                 },
+                 {
+                     "[Month]":  11,
+                     "[Group]":  "Norge",
+                     "[Value]":  583910.57,
+                     "[Max]":  583910.57,
+                     "[Min]":  null,
+                     "[Rank]":  1
+                 },
+                 {
+                     "[Month]":  12,
+                     "[Group]":  "Norge",
+                     "[Value]":  513774.97,
+                     "[Max]":  null,
+                     "[Min]":  null,
+                     "[Rank]":  1
+                 },
+                 {
+                     "[Month]":  1,
+                     "[Group]":  "Danmark",
+                     "[Value]":  289546.32,
+                     "[Max]":  null,
+                     "[Min]":  null,
+                     "[Rank]":  2
+                 },
+                 {
+                     "[Month]":  2,
+                     "[Group]":  "Danmark",
+                     "[Value]":  226972.42,
+                     "[Max]":  null,
+                     "[Min]":  null,
+                     "[Rank]":  2
+                 },
+                 {
+                     "[Month]":  3,
+                     "[Group]":  "Danmark",
+                     "[Value]":  249752.42,
+                     "[Max]":  null,
+                     "[Min]":  null,
+                     "[Rank]":  2
+                 },
+                 {
+                     "[Month]":  4,
+                     "[Group]":  "Danmark",
+                     "[Value]":  372868.9,
+                     "[Max]":  null,
+                     "[Min]":  null,
+                     "[Rank]":  2
+                 },
+                 {
+                     "[Month]":  5,
+                     "[Group]":  "Danmark",
+                     "[Value]":  340701.7,
+                     "[Max]":  null,
+                     "[Min]":  null,
+                     "[Rank]":  2
+                 },
+                 {
+                     "[Month]":  6,
+                     "[Group]":  "Danmark",
+                     "[Value]":  285222.02,
+                     "[Max]":  null,
+                     "[Min]":  null,
+                     "[Rank]":  2
+                 },
+                 {
+                     "[Month]":  7,
+                     "[Group]":  "Danmark",
+                     "[Value]":  209215.23,
+                     "[Max]":  null,
+                     "[Min]":  209215.23,
+                     "[Rank]":  2
+                 },
+                 {
+                     "[Month]":  8,
+                     "[Group]":  "Danmark",
+                     "[Value]":  292010.17,
+                     "[Max]":  null,
+                     "[Min]":  null,
+                     "[Rank]":  2
+                 },
+                 {
+                     "[Month]":  9,
+                     "[Group]":  "Danmark",
+                     "[Value]":  291902.58,
+                     "[Max]":  null,
+                     "[Min]":  null,
+                     "[Rank]":  2
+                 },
+                 {
+                     "[Month]":  10,
+                     "[Group]":  "Danmark",
+                     "[Value]":  328881.3,
+                     "[Max]":  null,
+                     "[Min]":  null,
+                     "[Rank]":  2
+                 },
+                 {
+                     "[Month]":  11,
+                     "[Group]":  "Danmark",
+                     "[Value]":  475483.99,
+                     "[Max]":  null,
+                     "[Min]":  null,
+                     "[Rank]":  2
+                 },
+                 {
+                     "[Month]":  12,
+                     "[Group]":  "Danmark",
+                     "[Value]":  557731.16,
+                     "[Max]":  557731.16,
+                     "[Min]":  null,
+                     "[Rank]":  2
+                 },
+                 {
+                     "[Month]":  1,
+                     "[Group]":  "Finland",
+                     "[Value]":  206946.74,
+                     "[Max]":  null,
+                     "[Min]":  206946.74,
+                     "[Rank]":  3
+                 },
+                 {
+                     "[Month]":  2,
+                     "[Group]":  "Finland",
+                     "[Value]":  209101.14,
+                     "[Max]":  null,
+                     "[Min]":  null,
+                     "[Rank]":  3
+                 },
+                 {
+                     "[Month]":  3,
+                     "[Group]":  "Finland",
+                     "[Value]":  369199.03,
+                     "[Max]":  null,
+                     "[Min]":  null,
+                     "[Rank]":  3
+                 },
+                 {
+                     "[Month]":  4,
+                     "[Group]":  "Finland",
+                     "[Value]":  284780,
+                     "[Max]":  null,
+                     "[Min]":  null,
+                     "[Rank]":  3
+                 },
+                 {
+                     "[Month]":  5,
+                     "[Group]":  "Finland",
+                     "[Value]":  319036.27,
+                     "[Max]":  null,
+                     "[Min]":  null,
+                     "[Rank]":  3
+                 },
+                 {
+                     "[Month]":  6,
+                     "[Group]":  "Finland",
+                     "[Value]":  240986.76,
+                     "[Max]":  null,
+                     "[Min]":  null,
+                     "[Rank]":  3
+                 },
+                 {
+                     "[Month]":  7,
+                     "[Group]":  "Finland",
+                     "[Value]":  228543.72,
+                     "[Max]":  null,
+                     "[Min]":  null,
+                     "[Rank]":  3
+                 },
+                 {
+                     "[Month]":  8,
+                     "[Group]":  "Finland",
+                     "[Value]":  297930.8,
+                     "[Max]":  null,
+                     "[Min]":  null,
+                     "[Rank]":  3
+                 },
+                 {
+                     "[Month]":  9,
+                     "[Group]":  "Finland",
+                     "[Value]":  337870.79,
+                     "[Max]":  null,
+                     "[Min]":  null,
+                     "[Rank]":  3
+                 },
+                 {
+                     "[Month]":  10,
+                     "[Group]":  "Finland",
+                     "[Value]":  429333.93,
+                     "[Max]":  null,
+                     "[Min]":  null,
+                     "[Rank]":  3
+                 },
+                 {
+                     "[Month]":  11,
+                     "[Group]":  "Finland",
+                     "[Value]":  354140.4,
+                     "[Max]":  null,
+                     "[Min]":  null,
+                     "[Rank]":  3
+                 },
+                 {
+                     "[Month]":  12,
+                     "[Group]":  "Finland",
+                     "[Value]":  559239.98,
+                     "[Max]":  559239.98,
+                     "[Min]":  null,
+                     "[Rank]":  3
+                 },
+                 {
+                     "[Month]":  1,
+                     "[Group]":  "Sverige",
+                     "[Value]":  204433.56,
+                     "[Max]":  null,
+                     "[Min]":  204433.56,
+                     "[Rank]":  4
+                 },
+                 {
+                     "[Month]":  2,
+                     "[Group]":  "Sverige",
+                     "[Value]":  257656.37,
+                     "[Max]":  null,
+                     "[Min]":  null,
+                     "[Rank]":  4
+                 },
+                 {
+                     "[Month]":  3,
+                     "[Group]":  "Sverige",
+                     "[Value]":  280212.97,
+                     "[Max]":  null,
+                     "[Min]":  null,
+                     "[Rank]":  4
+                 },
+                 {
+                     "[Month]":  4,
+                     "[Group]":  "Sverige",
+                     "[Value]":  297464.76,
+                     "[Max]":  null,
+                     "[Min]":  null,
+                     "[Rank]":  4
+                 },
+                 {
+                     "[Month]":  5,
+                     "[Group]":  "Sverige",
+                     "[Value]":  230648.9,
+                     "[Max]":  null,
+                     "[Min]":  null,
+                     "[Rank]":  4
+                 },
+                 {
+                     "[Month]":  6,
+                     "[Group]":  "Sverige",
+                     "[Value]":  350810.94,
+                     "[Max]":  null,
+                     "[Min]":  null,
+                     "[Rank]":  4
+                 },
+                 {
+                     "[Month]":  7,
+                     "[Group]":  "Sverige",
+                     "[Value]":  227345.53,
+                     "[Max]":  null,
+                     "[Min]":  null,
+                     "[Rank]":  4
+                 },
+                 {
+                     "[Month]":  8,
+                     "[Group]":  "Sverige",
+                     "[Value]":  270326.26,
+                     "[Max]":  null,
+                     "[Min]":  null,
+                     "[Rank]":  4
+                 },
+                 {
+                     "[Month]":  9,
+                     "[Group]":  "Sverige",
+                     "[Value]":  268029.94,
+                     "[Max]":  null,
+                     "[Min]":  null,
+                     "[Rank]":  4
+                 },
+                 {
+                     "[Month]":  10,
+                     "[Group]":  "Sverige",
+                     "[Value]":  326328.06,
+                     "[Max]":  null,
+                     "[Min]":  null,
+                     "[Rank]":  4
+                 },
+                 {
+                     "[Month]":  11,
+                     "[Group]":  "Sverige",
+                     "[Value]":  401850.51,
+                     "[Max]":  null,
+                     "[Min]":  null,
+                     "[Rank]":  4
+                 },
+                 {
+                     "[Month]":  12,
+                     "[Group]":  "Sverige",
+                     "[Value]":  472959.32,
+                     "[Max]":  472959.32,
+                     "[Min]":  null,
+                     "[Rank]":  4
+                 }
+             ],
+    "desktopProcessId":  3136,
+    "source":  "Actual Desktop engine, DAX query"
+}

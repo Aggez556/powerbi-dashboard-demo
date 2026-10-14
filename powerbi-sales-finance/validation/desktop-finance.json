@@ -1,0 +1,46 @@
+﻿{
+    "status":  "passed",
+    "rows":  [
+                 {
+                     "[Period]":  "Helår",
+                     "[Vinst]":  4096778.32,
+                     "[Kostnad]":  11277584.28,
+                     "[Omsättning]":  15374362.6,
+                     "[Enheter]":  24244,
+                     "[Marginal]":  0.2664681734513013,
+                     "[Omsättning per enhet]":  634.1512,
+                     "[Vinst per enhet]":  168.9811,
+                     "[Produktaxel]":  445529.664,
+                     "[Topp 5]":  "Topp 5 står för 31,4 % av bruttovinsten",
+                     "[Kostnadsförändring]":  "+14,1 % ▲"
+                 },
+                 {
+                     "[Period]":  "Oktober",
+                     "[Vinst]":  385622.41,
+                     "[Kostnad]":  1076309.88,
+                     "[Omsättning]":  1461932.29,
+                     "[Enheter]":  2362,
+                     "[Marginal]":  0.26377583465236959,
+                     "[Omsättning per enhet]":  618.9383,
+                     "[Vinst per enhet]":  163.261,
+                     "[Produktaxel]":  44481.6,
+                     "[Topp 5]":  "Topp 5 står för 31,5 % av bruttovinsten",
+                     "[Kostnadsförändring]":  "+18,8 % ▲"
+                 },
+                 {
+                     "[Period]":  "September–oktober",
+                     "[Vinst]":  678023.61,
+                     "[Kostnad]":  1960921.13,
+                     "[Omsättning]":  2638944.74,
+                     "[Enheter]":  4190,
+                     "[Marginal]":  0.2569298249117562,
+                     "[Omsättning per enhet]":  629.8197,
+                     "[Vinst per enhet]":  161.8195,
+                     "[Produktaxel]":  78709.92,
+                     "[Topp 5]":  "Topp 5 står för 28,5 % av bruttovinsten",
+                     "[Kostnadsförändring]":  "+22,8 % ▲"
+                 }
+             ],
+    "desktopProcessId":  34324,
+    "source":  "Actual Desktop engine, DAX query"
+}

@@ -1,0 +1,29 @@
+// Kör efter inläsning i Power BI Desktops DAX-frågevy.
+// Jämför med annual i data-and-measure-expectations.json.
+EVALUATE
+SUMMARIZECOLUMNS(
+    'Datum'[År],
+    "Omsättning", [Omsättning],
+    "Kostnad", [Kostnad],
+    "Bruttovinst", [Bruttovinst],
+    "Bruttomarginal", [Bruttomarginal],
+    "Antal order", [Antal order],
+    "Antal orderrader", [Antal orderrader],
+    "Omsättning föregående år", [Omsättning föregående år],
+    "Tillväxt mot föregående år", [Tillväxt mot föregående år]
+)
+ORDER BY 'Datum'[År]
+
+// Jämför med year2025ByCategory i samma JSON-fil.
+EVALUATE
+SUMMARIZECOLUMNS(
+    'Produkter'[Kategori],
+    TREATAS({2025}, 'Datum'[År]),
+    "Omsättning", [Omsättning],
+    "Kostnad", [Kostnad],
+    "Bruttovinst", [Bruttovinst],
+    "Bruttomarginal", [Bruttomarginal],
+    "Antal order", [Antal order],
+    "Tillväxt mot föregående år", [Tillväxt mot föregående år]
+)
+ORDER BY 'Produkter'[Kategori]

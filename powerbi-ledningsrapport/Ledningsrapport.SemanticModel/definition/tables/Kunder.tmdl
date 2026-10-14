@@ -1,0 +1,57 @@
+/// Reproducerbar lokal demodata; Kunder.csv.
+table Kunder
+	lineageTag: 8281f140-d94c-4bce-924b-e938d15f773d
+
+	/// Källfält i lokal demodata: Kunder.Kundnyckel.
+	column Kundnyckel
+		dataType: int64
+		isHidden
+		lineageTag: 2dc270a4-78ca-4b16-a126-05deb69382fc
+		summarizeBy: none
+		sourceColumn: Kundnyckel
+
+	/// Källfält i lokal demodata: Kunder.Kund.
+	column Kund
+		dataType: string
+		lineageTag: ef739426-a1cf-4b38-ad97-3d6ca2b34198
+		summarizeBy: none
+		sourceColumn: Kund
+
+	/// Källfält i lokal demodata: Kunder.Ort.
+	column Ort
+		dataType: string
+		lineageTag: 222de013-0109-454e-9270-a7df0550f285
+		summarizeBy: none
+		sourceColumn: Ort
+
+	/// Underlag för försäljningsanalys.
+	column Kundbransch
+		dataType: string
+		lineageTag: c1824939-d020-4cf3-a869-8f3478de29d9
+		summarizeBy: none
+		sourceColumn: Kundbransch
+
+	column 'Första köp'
+		dataType: int64
+		isHidden
+		lineageTag: 6a599f9c-638f-410c-8b2a-ac32cbd1c0aa
+		summarizeBy: none
+		sourceColumn: Första köp
+
+	column 'Historiskt köp före data'
+		dataType: string
+		isHidden
+		lineageTag: 27f8d134-d961-4273-ad6d-af7ade2681ce
+		summarizeBy: none
+		sourceColumn: Historiskt köp före data
+
+	partition Kunder = m
+		mode: import
+		source =
+				let
+					Source = Csv.Document(File.Contents(DataFolder & "/Kunder.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+					Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+					Typed = Table.TransformColumnTypes(Headers, {{"Kundnyckel", Int64.Type}, {"Kund", type text}, {"Ort", type text}, {"Kundbransch", type text}, {"Första köp", Int64.Type}, {"Historiskt köp före data", type text}}, "en-US")
+				in
+					Typed
+

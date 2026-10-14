@@ -1,0 +1,2015 @@
+/// Lokal testdata från FactSales.csv.
+table Försäljning
+	lineageTag: 9daaf37f-798b-4552-a222-34cffb041b61
+
+	/// Nettoomsättning exklusive moms efter rabatt.
+	measure Omsättning = SUM('Försäljning'[Radomsättning])
+		formatString: #,##0.00 " kr"
+		displayFolder: Nyckeltal
+		lineageTag: 23e934b6-2350-4722-ba90-5c35a17b2464
+
+	/// Varukostnad; exkluderar rörelsekostnader.
+	measure Kostnad = SUM('Försäljning'[Radkostnad])
+		formatString: #,##0.00 " kr"
+		displayFolder: Nyckeltal
+		lineageTag: 44901f4a-35d6-48ba-8e24-583df298b996
+
+	/// Omsättning minus varukostnad.
+	measure Bruttovinst = [Omsättning] - [Kostnad]
+		formatString: #,##0.00 " kr"
+		displayFolder: Nyckeltal
+		lineageTag: 3745bce8-db56-4e71-9f68-b3209070644b
+
+	/// Viktad marginal; inte medelvärdet av produktmarginalerna.
+	measure Bruttomarginal = DIVIDE([Bruttovinst], [Omsättning])
+		formatString: 0.0 %
+		displayFolder: Nyckeltal
+		lineageTag: 36d8949f-1fca-40e9-95c0-1fbb4ac23569
+
+	/// Unika order med minst en orderrad i aktuellt filter.
+	measure 'Antal order' = DISTINCTCOUNT('Försäljning'[Ordernyckel])
+		formatString: #,##0
+		displayFolder: Nyckeltal
+		lineageTag: 30469afa-6412-4aee-91e0-527fdbbee847
+
+	/// Omsättning för motsvarande kalenderdatum föregående år; 2023 saknas.
+	measure 'Omsättning föregående år' = CALCULATE([Omsättning], SAMEPERIODLASTYEAR('Datum'[Datum]))
+		formatString: #,##0.00 " kr"
+		displayFolder: Nyckeltal
+		lineageTag: eb7fb9b7-47bc-4036-80e5-991744266cbf
+
+	/// Visas endast vid ett valt år och tillgänglig jämförelse; annars blank.
+	measure 'Tillväxt mot föregående år' = IF(HASONEVALUE('Datum'[År]), DIVIDE([Omsättning] - [Omsättning föregående år], [Omsättning föregående år]), BLANK())
+		formatString: 0.0 %;-0.0 %;0.0 %
+		displayFolder: Nyckeltal
+		lineageTag: ec422f5f-6c7e-4e7e-983b-8748d8e110e2
+
+	/// Antal orderrader i aktuellt filter.
+	measure 'Antal orderrader' = COUNTROWS('Försäljning')
+		formatString: #,##0
+		displayFolder: Nyckeltal
+		lineageTag: ad76836e-6cd4-463f-820e-d9f7768fd2e0
+
+	/// Kundrankning inom aktuellt urval; lika belopp delar rankning.
+	measure Kundrankning = RANKX(ALLSELECTED('Kunder'[Kund]), [Omsättning], , DESC, DENSE)
+		formatString: 0
+		displayFolder: Nyckeltal
+		lineageTag: 031d8aea-22e9-4a2f-a9eb-7b5ec3f8e491
+
+	measure 'Omsättning miljoner' = [Omsättning] / 1000000
+		formatString: 0.0" mn kr"
+		displayFolder: Ledningsöversikt
+		lineageTag: 40cb6d6b-9246-45d9-9568-89e521246516
+
+	measure 'Bruttovinst miljoner' = [Bruttovinst] / 1000000
+		formatString: 0.0" mn kr"
+		displayFolder: Ledningsöversikt
+		lineageTag: 81d76912-2d02-4296-986f-2354693e90cf
+
+	measure 'Sålda enheter' = SUM('Försäljning'[Antal enheter])
+		formatString: #,##0
+		displayFolder: Ledningsöversikt
+		lineageTag: 9fa7a019-90a5-472e-beab-9f9ad32b47cf
+
+	measure Leveranser = [Antal order]
+		formatString: #,##0
+		displayFolder: Ledningsöversikt
+		lineageTag: 61bcfa9f-51c1-4a54-8a92-a48149fbb03e
+
+	measure 'Enheter föregående år' = CALCULATE([Sålda enheter], SAMEPERIODLASTYEAR('Datum'[Datum]))
+		formatString: #,##0
+		displayFolder: Ledningsöversikt
+		lineageTag: 1b8f0bd2-5830-4133-b0ee-62eef8c9587d
+
+	measure 'Bruttovinst föregående år' = CALCULATE([Bruttovinst], SAMEPERIODLASTYEAR('Datum'[Datum]))
+		formatString: #,##0
+		displayFolder: Ledningsöversikt
+		lineageTag: 278c9e44-6506-4cd5-85dc-934f1a100fda
+
+	measure 'Leveranser föregående år' = CALCULATE([Leveranser], SAMEPERIODLASTYEAR('Datum'[Datum]))
+		formatString: #,##0
+		displayFolder: Ledningsöversikt
+		lineageTag: 418ace31-459d-41c4-aa23-67463667511f
+
+	measure 'Enheter YoY' = DIVIDE([Sålda enheter] - [Enheter föregående år], [Enheter föregående år])
+		formatString: +0.0 %;-0.0 %;0.0 %
+		displayFolder: Ledningsöversikt
+		lineageTag: 99bac03d-eac2-4757-8772-8021b928f248
+
+	measure 'Bruttovinst YoY' = DIVIDE([Bruttovinst] - [Bruttovinst föregående år], [Bruttovinst föregående år])
+		formatString: +0.0 %;-0.0 %;0.0 %
+		displayFolder: Ledningsöversikt
+		lineageTag: e07a86b7-1fb8-4375-8797-26b555bd4138
+
+	measure 'Leveranser YoY' = DIVIDE([Leveranser] - [Leveranser föregående år], [Leveranser föregående år])
+		formatString: +0.0 %;-0.0 %;0.0 %
+		displayFolder: Ledningsöversikt
+		lineageTag: 1c4f3b50-a291-4ebe-bec6-1a03e04f93a4
+
+	measure 'Marginal föregående år' = CALCULATE([Bruttomarginal], SAMEPERIODLASTYEAR('Datum'[Datum]))
+		formatString: 0.0 %
+		displayFolder: Ledningsöversikt
+		lineageTag: 246a7997-ccb4-45a8-bc96-04d43fb9f4a6
+
+	measure 'Marginal förändring' = ([Bruttomarginal] - [Marginal föregående år]) * 100
+		formatString: +0.0" pp";-0.0" pp";0.0" pp"
+		displayFolder: Ledningsöversikt
+		lineageTag: 28115ce9-ad9d-4999-8b6a-fe8f2ddf3fe1
+
+	measure Trendvärde = IF(SELECTEDVALUE('Trendval'[Mått], "Omsättning") = "Bruttovinst", [Bruttovinst], [Omsättning])
+		formatString: #,##0" kr"
+		displayFolder: Ledningsöversikt
+		lineageTag: 1b3b7bff-7051-488a-9bab-a5da65b61bf6
+
+	measure 'Trend föregående år' = CALCULATE([Trendvärde], SAMEPERIODLASTYEAR('Datum'[Datum]))
+		formatString: #,##0" kr"
+		displayFolder: Ledningsöversikt
+		lineageTag: 4567fbf3-bb06-4de8-9cb9-e74f6df872e8
+
+	measure Produktvärde = IF(SELECTEDVALUE('Produktval'[Mått], "Omsättning") = "Sålda enheter", [Sålda enheter], [Omsättning])
+		formatString: #,##0
+		displayFolder: Ledningsöversikt
+		lineageTag: 2328e12b-c25a-4795-a047-2ff15fc46623
+
+	measure Analysvärde =
+			VAR AxisName = SELECTEDVALUE('Analysaxel'[Namn])
+			RETURN IF(SELECTEDVALUE('Analysaxel'[Typ], "Land") = "Land", CALCULATE([Omsättning], TREATAS({AxisName}, 'Kunder'[Land])), CALCULATE([Omsättning], TREATAS({AxisName}, 'Produkter'[Kategori])))
+		formatString: #,##0" kr"
+		displayFolder: Ledningsöversikt
+		lineageTag: 1e7b38b5-8b48-4575-8708-470ad555c716
+
+	measure 'Analys föregående år' = CALCULATE([Analysvärde], SAMEPERIODLASTYEAR('Datum'[Datum]))
+		formatString: #,##0" kr"
+		displayFolder: Ledningsöversikt
+		lineageTag: 0ae7f6fb-a8c2-423c-97d0-27622a09154e
+
+	measure 'Kostnad miljoner' = [Kostnad] / 1000000
+		formatString: 0.0" mn kr"
+		displayFolder: Ekonomi och lönsamhet
+		lineageTag: 2db410e6-2d4b-408d-babe-03ad69e01dc7
+
+	measure 'Omsättning per enhet' = DIVIDE([Omsättning], [Sålda enheter])
+		formatString: #,##0.0" kr"
+		displayFolder: Ekonomi och lönsamhet
+		lineageTag: 3b32c57e-313b-4d87-9e8a-bcaf5d9d6ab2
+
+	measure 'Bruttovinst per enhet' = DIVIDE([Bruttovinst], [Sålda enheter])
+		formatString: #,##0.0" kr"
+		displayFolder: Ekonomi och lönsamhet
+		lineageTag: 03ebcef5-5294-45b9-8b76-4cd97cc4cdb7
+
+	measure 'Aktiva säljare' = DISTINCTCOUNT('Försäljning'[Säljarnyckel])
+		formatString: #,##0
+		displayFolder: Försäljningsanalys
+		lineageTag: 533b5543-1881-4a4b-9e7c-326711640d35
+
+	measure 'Omsättning per säljare' = DIVIDE([Omsättning], [Aktiva säljare])
+		formatString: #,##0" kr"
+		displayFolder: Försäljningsanalys
+		lineageTag: d63d5960-a64c-4d10-8751-88d73850f717
+
+	measure 'Omsättning per säljare miljoner' = [Omsättning per säljare] / 1000000
+		formatString: 0.0" mn kr"
+		displayFolder: Försäljningsanalys
+		lineageTag: 59715dc9-ad39-41b6-8936-7527eadcfc1e
+
+	measure 'Genomsnittlig order' = DIVIDE([Omsättning], [Antal order])
+		formatString: #,##0" kr"
+		displayFolder: Försäljningsanalys
+		lineageTag: 2377be3e-2ea1-4cf9-a6e1-52fcaa3bc79d
+
+	measure 'Topp 5 säljare andel' =
+			VAR SellerRevenue = ADDCOLUMNS(ALLSELECTED('Säljare'[Säljarnyckel]), "@Revenue", CALCULATE([Omsättning]))
+			VAR BestSellers = TOPN(5, SellerRevenue, [@Revenue], DESC, 'Säljare'[Säljarnyckel], ASC)
+			RETURN DIVIDE(SUMX(BestSellers, [@Revenue]), [Omsättning])
+		formatString: 0.0 %
+		displayFolder: Försäljningsanalys
+		lineageTag: 90915574-6745-40c0-b5c9-f38fed8ceb59
+
+	measure 'Kostnad föregående år' = CALCULATE([Kostnad], SAMEPERIODLASTYEAR('Datum'[Datum]))
+		formatString: #,##0" kr"
+		displayFolder: Ekonomi och lönsamhet
+		lineageTag: 2edc8b00-b1b8-44d3-83e0-7ed524e14008
+
+	measure 'Kostnad årsförändring' = DIVIDE([Kostnad] - [Kostnad föregående år], [Kostnad föregående år])
+		formatString: +0.0 %;-0.0 %;0.0 %
+		displayFolder: Ekonomi och lönsamhet
+		lineageTag: 25d1de0b-280f-4170-8c66-53ab797e6fb3
+
+	measure 'Omsättning per enhet föregående år' = CALCULATE([Omsättning per enhet], SAMEPERIODLASTYEAR('Datum'[Datum]))
+		formatString: #,##0" kr"
+		displayFolder: Ekonomi och lönsamhet
+		lineageTag: 8a47030b-9e14-44fe-95fd-81f19807739c
+
+	measure 'Omsättning per enhet årsförändring' = DIVIDE([Omsättning per enhet] - [Omsättning per enhet föregående år], [Omsättning per enhet föregående år])
+		formatString: +0.0 %;-0.0 %;0.0 %
+		displayFolder: Ekonomi och lönsamhet
+		lineageTag: bc9b2cde-b9f7-4452-953a-6d8a239435c9
+
+	measure 'Bruttovinst per enhet föregående år' = CALCULATE([Bruttovinst per enhet], SAMEPERIODLASTYEAR('Datum'[Datum]))
+		formatString: #,##0" kr"
+		displayFolder: Ekonomi och lönsamhet
+		lineageTag: 098c4636-6909-4fc8-ad1f-0ca8f04a15f4
+
+	measure 'Bruttovinst per enhet årsförändring' = DIVIDE([Bruttovinst per enhet] - [Bruttovinst per enhet föregående år], [Bruttovinst per enhet föregående år])
+		formatString: +0.0 %;-0.0 %;0.0 %
+		displayFolder: Ekonomi och lönsamhet
+		lineageTag: 6291ca1e-ad50-43de-a4e8-11e80bbfa3eb
+
+	measure 'Aktiva säljare föregående år' = CALCULATE([Aktiva säljare], SAMEPERIODLASTYEAR('Datum'[Datum]))
+		formatString: #,##0
+		displayFolder: Försäljningsanalys
+		lineageTag: 58ea8d88-7a23-462e-884c-437f3912725c
+
+	measure 'Aktiva säljare årsförändring' = DIVIDE([Aktiva säljare] - [Aktiva säljare föregående år], [Aktiva säljare föregående år])
+		formatString: +0.0 %;-0.0 %;0.0 %
+		displayFolder: Försäljningsanalys
+		lineageTag: 9dfaf9df-e9ba-40bd-bc35-4a0afce05005
+
+	measure 'Omsättning per säljare föregående år' = CALCULATE([Omsättning per säljare], SAMEPERIODLASTYEAR('Datum'[Datum]))
+		formatString: #,##0" kr"
+		displayFolder: Försäljningsanalys
+		lineageTag: afe7bb2e-4f6a-4ae5-aa29-72dc1944d15a
+
+	measure 'Omsättning per säljare årsförändring' = DIVIDE([Omsättning per säljare] - [Omsättning per säljare föregående år], [Omsättning per säljare föregående år])
+		formatString: +0.0 %;-0.0 %;0.0 %
+		displayFolder: Försäljningsanalys
+		lineageTag: 6c50671c-9b5c-42a7-a489-c186c9140c86
+
+	measure 'Genomsnittlig order föregående år' = CALCULATE([Genomsnittlig order], SAMEPERIODLASTYEAR('Datum'[Datum]))
+		formatString: #,##0" kr"
+		displayFolder: Försäljningsanalys
+		lineageTag: f4e939f7-cea0-4d54-8793-5d97508c89f7
+
+	measure 'Genomsnittlig order årsförändring' = DIVIDE([Genomsnittlig order] - [Genomsnittlig order föregående år], [Genomsnittlig order föregående år])
+		formatString: +0.0 %;-0.0 %;0.0 %
+		displayFolder: Försäljningsanalys
+		lineageTag: 6ea269c0-5a9e-4fb3-a461-4ccaa09241b8
+
+	measure 'Topp 5 säljare andel föregående år' = CALCULATE([Topp 5 säljare andel], SAMEPERIODLASTYEAR('Datum'[Datum]))
+		formatString: 0.0 %
+		displayFolder: Försäljningsanalys
+		lineageTag: 9971327f-a5f5-46ef-a44c-6a2e8aab91ce
+
+	measure 'Topp 5 andel förändring' = IF(ISBLANK([Topp 5 säljare andel föregående år]), BLANK(), ([Topp 5 säljare andel] - [Topp 5 säljare andel föregående år]) * 100)
+		formatString: +0.0" pp";-0.0" pp";0.0" pp"
+		displayFolder: Försäljningsanalys
+		lineageTag: 72e7e083-3ea9-4a80-886c-616302a9059c
+
+	measure 'Bruttovinst analys' =
+			VAR AxisName = SELECTEDVALUE('Finansaxel'[Namn])
+			RETURN IF(SELECTEDVALUE('Finansaxel'[Typ], "Säljteam") = "Kategori", CALCULATE([Bruttovinst], TREATAS({AxisName}, 'Produkter'[Kategori])), CALCULATE([Bruttovinst], TREATAS({AxisName}, 'Säljare'[Team])))
+		formatString: #,##0" kr"
+		displayFolder: Ekonomi och lönsamhet
+		lineageTag: 1111d8e6-999e-4e76-8517-0f4a73436334
+
+	measure 'Bruttovinst analys miljoner' = [Bruttovinst analys] / 1000000
+		formatString: 0.0" mn kr"
+		displayFolder: Ekonomi och lönsamhet
+		lineageTag: 47bf6b77-836a-441c-acc9-b0e63525e7d6
+
+	measure 'Månadsmedel bruttovinst' = AVERAGEX(ALLSELECTED('Datum'[Månad]), [Bruttovinst analys miljoner])
+		formatString: 0.0" mn kr"
+		displayFolder: Ekonomi och lönsamhet
+		lineageTag: 0be792ac-3b08-4058-8867-bfad8aa1d092
+
+	measure 'Bruttovinst andel land' = DIVIDE([Bruttovinst], CALCULATE([Bruttovinst], ALLSELECTED('Kunder'[Land])))
+		formatString: 0.0 %
+		displayFolder: Ekonomi och lönsamhet
+		lineageTag: 0572d944-fa82-4a3c-9332-f3a27308e4b3
+
+	measure 'Omsättning andel land' = DIVIDE([Omsättning], CALCULATE([Omsättning], ALLSELECTED('Kunder'[Land])))
+		formatString: 0.0 %
+		displayFolder: Försäljningsanalys
+		lineageTag: e72020ee-1b88-481f-8aca-8b54935b6fb0
+
+	measure 'Analys årsförändring' = DIVIDE([Analysvärde] - [Analys föregående år], [Analys föregående år])
+		formatString: +0.0 %;-0.0 %;0.0 %
+		displayFolder: Ledningsöversikt
+		lineageTag: 13e80e22-e1e7-4e98-a04f-939647fac92f
+
+	measure 'Marknadsbelopp etikett' = FORMAT([Analysvärde] / 1000000, "0.00", "sv-SE") & " mn kr"
+		formatString: @
+		displayFolder: Ledningsöversikt
+		lineageTag: 21d16359-003c-4d13-bb07-9b1d11f82dc5
+
+	measure 'Omsättning etikett' = FORMAT([Omsättning] / 1000000, "0.00", "sv-SE") & " mn kr"
+		formatString: @
+		displayFolder: Ledningsöversikt
+		lineageTag: a7cec915-d403-4951-91da-3c5f72a25d64
+
+	measure 'Produktvärde etikett' = IF(SELECTEDVALUE('Produktval'[Mått], "Omsättning") = "Sålda enheter", FORMAT([Produktvärde], "#,##0", "sv-SE") & " st", FORMAT([Produktvärde] / 1000000, "0.00", "sv-SE") & " mn kr")
+		formatString: @
+		displayFolder: Ledningsöversikt
+		lineageTag: a0e09c8d-439d-4fce-b376-f1b859f3e69d
+
+	measure 'Säljartopp 1 namn' =
+			VAR _pool = FILTER(ADDCOLUMNS(ALLSELECTED('Säljare'), "__sales", CALCULATE([Omsättning])), [__sales] > 0)
+			VAR _seller = TOPN(1, TOPN(1, _pool, [__sales], DESC, 'Säljare'[Säljarnyckel], ASC), [__sales], ASC, 'Säljare'[Säljarnyckel], DESC)
+			VAR _enough = COUNTROWS(_pool) >= 1
+			RETURN IF(_enough, MAXX(_seller, 'Säljare'[Säljare]))
+		formatString: @
+		isHidden
+		displayFolder: Ledningsöversikt\Säljartopp
+		lineageTag: b788d9b9-90e4-43e8-be09-b588591efc16
+
+	measure 'Säljartopp 1 belopp' =
+			VAR _pool = FILTER(ADDCOLUMNS(ALLSELECTED('Säljare'), "__sales", CALCULATE([Omsättning])), [__sales] > 0)
+			VAR _seller = TOPN(1, TOPN(1, _pool, [__sales], DESC, 'Säljare'[Säljarnyckel], ASC), [__sales], ASC, 'Säljare'[Säljarnyckel], DESC)
+			VAR _enough = COUNTROWS(_pool) >= 1
+			RETURN IF(_enough, SUMX(_seller, [__sales]))
+		formatString: #,##0" kr"
+		isHidden
+		displayFolder: Ledningsöversikt\Säljartopp
+		lineageTag: 8f630f3c-7fb6-4fd9-a8e4-88a56e680027
+
+	measure 'Säljartopp 1 förändring' =
+			VAR _pool = FILTER(ADDCOLUMNS(ALLSELECTED('Säljare'), "__sales", CALCULATE([Omsättning])), [__sales] > 0)
+			VAR _seller = TOPN(1, TOPN(1, _pool, [__sales], DESC, 'Säljare'[Säljarnyckel], ASC), [__sales], ASC, 'Säljare'[Säljarnyckel], DESC)
+			VAR _enough = COUNTROWS(_pool) >= 1
+			VAR _sales = SUMX(_seller, [__sales])
+			VAR _prior = SUMX(_seller, CALCULATE([Omsättning föregående år]))
+			RETURN IF(_enough, DIVIDE(_sales - _prior, _prior))
+		formatString: +0.0 %;-0.0 %;0.0 %
+		isHidden
+		displayFolder: Ledningsöversikt\Säljartopp
+		lineageTag: 5e919919-1fdb-4f29-92ed-4619a19f42d7
+
+	measure 'Säljartopp 1 initialer' =
+			VAR _name = [Säljartopp 1 namn]
+			RETURN IF(NOT ISBLANK(_name), LEFT(_name, 1) & MID(_name, SEARCH(" ", _name, 1, LEN(_name)) + 1, 1))
+		formatString: @
+		isHidden
+		displayFolder: Ledningsöversikt\Säljartopp
+		lineageTag: be8abcf6-c81b-404e-87c1-91491880eac5
+
+	measure 'Säljartopp 1 etikett' =
+			VAR _value = [Säljartopp 1 belopp]
+			RETURN IF(NOT ISBLANK(_value), FORMAT(_value / 1000000, "0.00", "sv-SE") & " mn kr")
+		formatString: @
+		isHidden
+		displayFolder: Ledningsöversikt\Säljartopp
+		lineageTag: 880a8dd0-9107-4928-8f23-93b8e077a4fc
+
+	measure 'Säljartopp 1 segment' =
+			VAR _value = [Säljartopp 1 belopp]
+			RETURN IF(NOT ISBLANK(_value), REPT(UNICHAR(9648), MAX(1, ROUNDUP(18 * DIVIDE(_value, [Säljartopp 1 belopp]), 0))))
+		formatString: @
+		isHidden
+		displayFolder: Ledningsöversikt\Säljartopp
+		lineageTag: 3c3e84a4-dc4a-4953-b11c-effcbd66fb1f
+
+	measure 'Säljartopp 2 namn' =
+			VAR _pool = FILTER(ADDCOLUMNS(ALLSELECTED('Säljare'), "__sales", CALCULATE([Omsättning])), [__sales] > 0)
+			VAR _seller = TOPN(1, TOPN(2, _pool, [__sales], DESC, 'Säljare'[Säljarnyckel], ASC), [__sales], ASC, 'Säljare'[Säljarnyckel], DESC)
+			VAR _enough = COUNTROWS(_pool) >= 2
+			RETURN IF(_enough, MAXX(_seller, 'Säljare'[Säljare]))
+		formatString: @
+		isHidden
+		displayFolder: Ledningsöversikt\Säljartopp
+		lineageTag: 9b4b4446-f15e-4c0c-9a5c-3192d193a835
+
+	measure 'Säljartopp 2 belopp' =
+			VAR _pool = FILTER(ADDCOLUMNS(ALLSELECTED('Säljare'), "__sales", CALCULATE([Omsättning])), [__sales] > 0)
+			VAR _seller = TOPN(1, TOPN(2, _pool, [__sales], DESC, 'Säljare'[Säljarnyckel], ASC), [__sales], ASC, 'Säljare'[Säljarnyckel], DESC)
+			VAR _enough = COUNTROWS(_pool) >= 2
+			RETURN IF(_enough, SUMX(_seller, [__sales]))
+		formatString: #,##0" kr"
+		isHidden
+		displayFolder: Ledningsöversikt\Säljartopp
+		lineageTag: 33fe3b70-a732-491e-ab69-003e72bedb51
+
+	measure 'Säljartopp 2 förändring' =
+			VAR _pool = FILTER(ADDCOLUMNS(ALLSELECTED('Säljare'), "__sales", CALCULATE([Omsättning])), [__sales] > 0)
+			VAR _seller = TOPN(1, TOPN(2, _pool, [__sales], DESC, 'Säljare'[Säljarnyckel], ASC), [__sales], ASC, 'Säljare'[Säljarnyckel], DESC)
+			VAR _enough = COUNTROWS(_pool) >= 2
+			VAR _sales = SUMX(_seller, [__sales])
+			VAR _prior = SUMX(_seller, CALCULATE([Omsättning föregående år]))
+			RETURN IF(_enough, DIVIDE(_sales - _prior, _prior))
+		formatString: +0.0 %;-0.0 %;0.0 %
+		isHidden
+		displayFolder: Ledningsöversikt\Säljartopp
+		lineageTag: bd0f1801-9578-4d63-8e7b-fefe9998b2f4
+
+	measure 'Säljartopp 2 initialer' =
+			VAR _name = [Säljartopp 2 namn]
+			RETURN IF(NOT ISBLANK(_name), LEFT(_name, 1) & MID(_name, SEARCH(" ", _name, 1, LEN(_name)) + 1, 1))
+		formatString: @
+		isHidden
+		displayFolder: Ledningsöversikt\Säljartopp
+		lineageTag: bc0142de-6dd9-4622-aae5-b6062a27979b
+
+	measure 'Säljartopp 2 etikett' =
+			VAR _value = [Säljartopp 2 belopp]
+			RETURN IF(NOT ISBLANK(_value), FORMAT(_value / 1000000, "0.00", "sv-SE") & " mn kr")
+		formatString: @
+		isHidden
+		displayFolder: Ledningsöversikt\Säljartopp
+		lineageTag: bf519f74-4f82-491d-a1f3-3390eb4d5df3
+
+	measure 'Säljartopp 2 segment' =
+			VAR _value = [Säljartopp 2 belopp]
+			RETURN IF(NOT ISBLANK(_value), REPT(UNICHAR(9648), MAX(1, ROUNDUP(18 * DIVIDE(_value, [Säljartopp 1 belopp]), 0))))
+		formatString: @
+		isHidden
+		displayFolder: Ledningsöversikt\Säljartopp
+		lineageTag: d15c9923-a2d5-4e8b-968a-fdb3b771ad10
+
+	measure 'Säljartopp 3 namn' =
+			VAR _pool = FILTER(ADDCOLUMNS(ALLSELECTED('Säljare'), "__sales", CALCULATE([Omsättning])), [__sales] > 0)
+			VAR _seller = TOPN(1, TOPN(3, _pool, [__sales], DESC, 'Säljare'[Säljarnyckel], ASC), [__sales], ASC, 'Säljare'[Säljarnyckel], DESC)
+			VAR _enough = COUNTROWS(_pool) >= 3
+			RETURN IF(_enough, MAXX(_seller, 'Säljare'[Säljare]))
+		formatString: @
+		isHidden
+		displayFolder: Ledningsöversikt\Säljartopp
+		lineageTag: b33cf9fd-1190-4208-997f-0030d9f2e842
+
+	measure 'Säljartopp 3 belopp' =
+			VAR _pool = FILTER(ADDCOLUMNS(ALLSELECTED('Säljare'), "__sales", CALCULATE([Omsättning])), [__sales] > 0)
+			VAR _seller = TOPN(1, TOPN(3, _pool, [__sales], DESC, 'Säljare'[Säljarnyckel], ASC), [__sales], ASC, 'Säljare'[Säljarnyckel], DESC)
+			VAR _enough = COUNTROWS(_pool) >= 3
+			RETURN IF(_enough, SUMX(_seller, [__sales]))
+		formatString: #,##0" kr"
+		isHidden
+		displayFolder: Ledningsöversikt\Säljartopp
+		lineageTag: 473a4faa-b63d-4e6e-ba1e-8aedbfc1aa45
+
+	measure 'Säljartopp 3 förändring' =
+			VAR _pool = FILTER(ADDCOLUMNS(ALLSELECTED('Säljare'), "__sales", CALCULATE([Omsättning])), [__sales] > 0)
+			VAR _seller = TOPN(1, TOPN(3, _pool, [__sales], DESC, 'Säljare'[Säljarnyckel], ASC), [__sales], ASC, 'Säljare'[Säljarnyckel], DESC)
+			VAR _enough = COUNTROWS(_pool) >= 3
+			VAR _sales = SUMX(_seller, [__sales])
+			VAR _prior = SUMX(_seller, CALCULATE([Omsättning föregående år]))
+			RETURN IF(_enough, DIVIDE(_sales - _prior, _prior))
+		formatString: +0.0 %;-0.0 %;0.0 %
+		isHidden
+		displayFolder: Ledningsöversikt\Säljartopp
+		lineageTag: fecda77a-a162-4ea3-af51-259d796200b2
+
+	measure 'Säljartopp 3 initialer' =
+			VAR _name = [Säljartopp 3 namn]
+			RETURN IF(NOT ISBLANK(_name), LEFT(_name, 1) & MID(_name, SEARCH(" ", _name, 1, LEN(_name)) + 1, 1))
+		formatString: @
+		isHidden
+		displayFolder: Ledningsöversikt\Säljartopp
+		lineageTag: 04c9974a-5e08-4603-960a-cec68f30c0ef
+
+	measure 'Säljartopp 3 etikett' =
+			VAR _value = [Säljartopp 3 belopp]
+			RETURN IF(NOT ISBLANK(_value), FORMAT(_value / 1000000, "0.00", "sv-SE") & " mn kr")
+		formatString: @
+		isHidden
+		displayFolder: Ledningsöversikt\Säljartopp
+		lineageTag: 0826e49a-b00d-44d0-ac11-9c158ed825ac
+
+	measure 'Säljartopp 3 segment' =
+			VAR _value = [Säljartopp 3 belopp]
+			RETURN IF(NOT ISBLANK(_value), REPT(UNICHAR(9648), MAX(1, ROUNDUP(18 * DIVIDE(_value, [Säljartopp 1 belopp]), 0))))
+		formatString: @
+		isHidden
+		displayFolder: Ledningsöversikt\Säljartopp
+		lineageTag: 5abd9a04-bd8d-4d5b-9fdb-a6871736de9b
+
+	measure 'Säljartopp andel etikett' =
+			VAR _pool = FILTER(ADDCOLUMNS(ALLSELECTED('Säljare'), "__sales", CALCULATE([Omsättning])), [__sales] > 0)
+			VAR _top = TOPN(3, _pool, [__sales], DESC, 'Säljare'[Säljarnyckel], ASC)
+			VAR _share = DIVIDE(SUMX(_top, [__sales]), [Omsättning])
+			RETURN IF(NOT ISBLANK(_share), "Topp 3 står för " & FORMAT(_share, "0.0 %", "sv-SE") & " av omsättningen")
+		formatString: @
+		isHidden
+		displayFolder: Ledningsöversikt\Säljartopp
+		lineageTag: 687f13df-aad2-4c32-a894-78460db2c19f
+
+	measure 'Produktaxel max' =
+			VAR _max = MAXX(ALLSELECTED('Produkter'[Produkt]), CALCULATE([Produktvärde]))
+			RETURN IF(_max > 0, _max * 1.28)
+		formatString: #,##0
+		isHidden
+		displayFolder: Ledningsöversikt\Säljartopp
+		lineageTag: 999154ae-4f3b-4773-bd28-09ba034d9451
+
+	measure 'KPI förändring 0 etikett' =
+			VAR _value = [Tillväxt mot föregående år]
+			RETURN IF(NOT ISBLANK(_value), FORMAT(_value, "+0.0 %;-0.0 %;0.0 %", "sv-SE") & IF(_value > 0, " ▲", IF(_value < 0, " ▼", " –")))
+		formatString: @
+		isHidden
+		displayFolder: Ledningsöversikt\Säljartopp
+		lineageTag: 3c81676d-3c91-48d3-983d-fb6944a8eed2
+
+	measure 'KPI förändring 1 etikett' =
+			VAR _value = [Enheter YoY]
+			RETURN IF(NOT ISBLANK(_value), FORMAT(_value, "+0.0 %;-0.0 %;0.0 %", "sv-SE") & IF(_value > 0, " ▲", IF(_value < 0, " ▼", " –")))
+		formatString: @
+		isHidden
+		displayFolder: Ledningsöversikt\Säljartopp
+		lineageTag: 4f9c8386-28bb-40aa-adf8-181a88940c3c
+
+	measure 'KPI förändring 2 etikett' =
+			VAR _value = [Bruttovinst YoY]
+			RETURN IF(NOT ISBLANK(_value), FORMAT(_value, "+0.0 %;-0.0 %;0.0 %", "sv-SE") & IF(_value > 0, " ▲", IF(_value < 0, " ▼", " –")))
+		formatString: @
+		isHidden
+		displayFolder: Ledningsöversikt\Säljartopp
+		lineageTag: 314f78c9-1447-42c3-ae4f-994e30e7dca8
+
+	measure 'KPI förändring 3 etikett' =
+			VAR _value = [Marginal förändring]
+			RETURN IF(NOT ISBLANK(_value), FORMAT(_value, "+0.0"" pp"";-0.0"" pp"";0.0"" pp""", "sv-SE") & IF(_value > 0, " ▲", IF(_value < 0, " ▼", " –")))
+		formatString: @
+		isHidden
+		displayFolder: Ledningsöversikt\Säljartopp
+		lineageTag: 3a9169f5-ea84-478d-8622-755b1ef9c63f
+
+	measure 'KPI förändring 4 etikett' =
+			VAR _value = [Leveranser YoY]
+			RETURN IF(NOT ISBLANK(_value), FORMAT(_value, "+0.0 %;-0.0 %;0.0 %", "sv-SE") & IF(_value > 0, " ▲", IF(_value < 0, " ▼", " –")))
+		formatString: @
+		isHidden
+		displayFolder: Ledningsöversikt\Säljartopp
+		lineageTag: 54595c3f-d118-4933-8a1f-bd3bd82ebcaf
+
+	measure 'Säljartopp 1 förändring etikett' =
+			VAR _value = [Säljartopp 1 förändring]
+			RETURN IF(NOT ISBLANK(_value), FORMAT(_value, "+0.0 %;-0.0 %;0.0 %", "sv-SE") & IF(_value > 0, " ▲", IF(_value < 0, " ▼", " –")) & " mot föreg. år")
+		formatString: @
+		isHidden
+		displayFolder: Ledningsöversikt\Säljartopp
+		lineageTag: fed42af9-2ff4-462c-be38-73d219f4d760
+
+	measure 'Säljartopp 2 förändring etikett' =
+			VAR _value = [Säljartopp 2 förändring]
+			RETURN IF(NOT ISBLANK(_value), FORMAT(_value, "+0.0 %;-0.0 %;0.0 %", "sv-SE") & IF(_value > 0, " ▲", IF(_value < 0, " ▼", " –")) & " mot föreg. år")
+		formatString: @
+		isHidden
+		displayFolder: Ledningsöversikt\Säljartopp
+		lineageTag: 29efd0bc-58d7-49dc-8372-f207440104ba
+
+	measure 'Säljartopp 3 förändring etikett' =
+			VAR _value = [Säljartopp 3 förändring]
+			RETURN IF(NOT ISBLANK(_value), FORMAT(_value, "+0.0 %;-0.0 %;0.0 %", "sv-SE") & IF(_value > 0, " ▲", IF(_value < 0, " ▼", " –")) & " mot föreg. år")
+		formatString: @
+		isHidden
+		displayFolder: Ledningsöversikt\Säljartopp
+		lineageTag: 48be481c-867a-45b8-8aa5-c8731f9b52d9
+
+	measure 'Finans genomsnittsband' = [Månadsmedel bruttovinst] * 0.12
+		formatString: 0.00" mn kr"
+		isHidden
+		displayFolder: Ekonomi och lönsamhet\Presentation
+		lineageTag: bac26b6f-9107-4615-87b7-55d2e0f6c08a
+
+	measure 'Finans KPI 0 förändring etikett' =
+			VAR _value = [Bruttovinst YoY]
+			RETURN IF(NOT ISBLANK(_value), FORMAT(_value, "+0.0 %;-0.0 %;0.0 %", "sv-SE") & IF(_value > 0, " ▲", IF(_value < 0, " ▼", " –")))
+		formatString: @
+		isHidden
+		displayFolder: Ekonomi och lönsamhet\Presentation
+		lineageTag: 5af580cb-df75-4185-8381-fc4381b04e11
+
+	measure 'Finans KPI 1 förändring etikett' =
+			VAR _value = [Marginal förändring]
+			RETURN IF(NOT ISBLANK(_value), FORMAT(_value, "+0.0;-0.0;0.0", "sv-SE") & " pp" & IF(_value > 0, " ▲", IF(_value < 0, " ▼", " –")))
+		formatString: @
+		isHidden
+		displayFolder: Ekonomi och lönsamhet\Presentation
+		lineageTag: 91a8c448-90d1-46dd-99eb-87d3edd6ae45
+
+	measure 'Finans KPI 2 förändring etikett' =
+			VAR _value = [Kostnad årsförändring]
+			RETURN IF(NOT ISBLANK(_value), FORMAT(_value, "+0.0 %;-0.0 %;0.0 %", "sv-SE") & IF(_value > 0, " ▲", IF(_value < 0, " ▼", " –")))
+		formatString: @
+		isHidden
+		displayFolder: Ekonomi och lönsamhet\Presentation
+		lineageTag: 4f3e184c-634e-47fb-ad0b-8b55b9b4c471
+
+	measure 'Finans KPI 3 förändring etikett' =
+			VAR _value = [Omsättning per enhet årsförändring]
+			RETURN IF(NOT ISBLANK(_value), FORMAT(_value, "+0.0 %;-0.0 %;0.0 %", "sv-SE") & IF(_value > 0, " ▲", IF(_value < 0, " ▼", " –")))
+		formatString: @
+		isHidden
+		displayFolder: Ekonomi och lönsamhet\Presentation
+		lineageTag: 51a799e8-4e1e-49f8-96da-d58029e8e38e
+
+	measure 'Finans KPI 4 förändring etikett' =
+			VAR _value = [Bruttovinst per enhet årsförändring]
+			RETURN IF(NOT ISBLANK(_value), FORMAT(_value, "+0.0 %;-0.0 %;0.0 %", "sv-SE") & IF(_value > 0, " ▲", IF(_value < 0, " ▼", " –")))
+		formatString: @
+		isHidden
+		displayFolder: Ekonomi och lönsamhet\Presentation
+		lineageTag: 2b069b04-4ec4-49f6-895f-49facad0fe1f
+
+	measure 'Finans sammanställningsrubrik' = IF(SELECTEDVALUE('Analysaxel'[Typ], "Land") = "Kategori", "Lönsamhet per kategori", "Lönsamhet per marknad")
+		formatString: @
+		isHidden
+		displayFolder: Ekonomi och lönsamhet\Presentation
+		lineageTag: a80d9c60-b2fe-4d2a-933a-d4d7fc237519
+
+	measure 'Finans sammanställning vinst miljoner' = [Finans sammanställning vinst] / 1000000
+		formatString: 0.00" mn kr"
+		isHidden
+		displayFolder: Ekonomi och lönsamhet\Presentation
+		lineageTag: e79f638a-9e47-4ef8-8be0-a4afd5fff950
+
+	measure 'Finans sammanställning tillväxt etikett' =
+			VAR _value = [Finans sammanställning tillväxt]
+			RETURN IF(NOT ISBLANK(_value), FORMAT(_value, "+0.0 %;-0.0 %;0.0 %", "sv-SE") & IF(_value > 0, " ▲", IF(_value < 0, " ▼", " –")))
+		formatString: @
+		isHidden
+		displayFolder: Ekonomi och lönsamhet\Presentation
+		lineageTag: 13c91850-7f53-4deb-8412-51ce29eaa156
+
+	measure 'Finans sammanställning marginalbild' =
+			VAR _margin = [Finans sammanställning marginal]
+			VAR _portion = MIN(1, MAX(0, ABS(_margin)))
+			VAR _angle = _portion * 2 * PI()
+			VAR _x = FORMAT(12 + 7 * SIN(_angle), "0.00", "en-US")
+			VAR _y = FORMAT(14 - 7 * COS(_angle), "0.00", "en-US")
+			VAR _ink = IF(_margin < 0, "rgb(184,50,50)", "rgb(15,49,99)")
+			RETURN IF(NOT ISBLANK(_margin), "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 96 28'><circle cx='12' cy='14' r='7' fill='rgb(231,237,245)'/><path d='M12,14 L12,7 A7,7 0 " & IF(_portion > 0.5, "1", "0") & " 1 " & _x & "," & _y & " Z' fill='" & _ink & "'/><text x='25' y='18' font-family='Segoe UI,Arial' font-size='12' fill='rgb(15,49,99)'>" & FORMAT(_margin, "0.0 %", "sv-SE") & "</text></svg>")
+		formatString: @
+		isHidden
+		displayFolder: Ekonomi och lönsamhet\Presentation
+		lineageTag: ea0461da-f0a9-41c0-b263-89dffaadea91
+		dataCategory: ImageUrl
+
+	measure 'Finans sammanställning trend' =
+			VAR _months = ADDCOLUMNS(ALLSELECTED('Datum'[Månadsnummer]), "__value", CALCULATE([Finans sammanställning vinst]))
+			VAR _low = MINX(_months, [__value])
+			VAR _high = MAXX(_months, [__value])
+			VAR _points = CONCATENATEX(_months, FORMAT(4 + ('Datum'[Månadsnummer] - 1) * 8, "0", "en-US") & "," & FORMAT(23 - 18 * DIVIDE([__value] - _low, _high - _low, 0.5), "0", "en-US"), " ", 'Datum'[Månadsnummer], ASC)
+			VAR _last = TOPN(1, _months, 'Datum'[Månadsnummer], DESC)
+			VAR _lastX = FORMAT(MAXX(_last, 4 + ('Datum'[Månadsnummer] - 1) * 8), "0", "en-US")
+			VAR _lastY = FORMAT(MAXX(_last, 23 - 18 * DIVIDE([__value] - _low, _high - _low, 0.5)), "0", "en-US")
+			RETURN IF(NOT ISBLANK([Finans sammanställning vinst]), "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 96 28'><polyline fill='none' stroke='rgb(15,49,99)' stroke-width='1.3' points='" & _points & "'/><circle cx='" & _lastX & "' cy='" & _lastY & "' r='1.8' fill='rgb(15,49,99)'/></svg>")
+		formatString: @
+		isHidden
+		displayFolder: Ekonomi och lönsamhet\Presentation
+		lineageTag: dadc78f6-864a-46ca-98bb-de4505d236dc
+		dataCategory: ImageUrl
+
+	measure 'Finans gruppvinst miljoner' = SUMX(VALUES('Finansaxel'[Namn]), CALCULATE([Bruttovinst analys miljoner]))
+		formatString: 0.00" mn kr"
+		isHidden
+		displayFolder: Ekonomi och lönsamhet\Presentation
+		lineageTag: dcacb386-42d8-4b7d-8fdc-9071dde04b2a
+
+	measure 'Finans gruppnamn' = SELECTEDVALUE('Finansaxel'[Kategori grupp])
+		formatString: @
+		isHidden
+		displayFolder: Ekonomi och lönsamhet\Presentation
+		lineageTag: fac7496b-edf1-40d5-8210-8fda6fc918ec
+
+	measure 'Finans månadsaxel max' =
+			VAR _groups = CALCULATETABLE(VALUES('Finansaxel'[Kategori grupp]), REMOVEFILTERS('Finansaxel'[Panel]), REMOVEFILTERS('Finansaxel'[Kategori grupp]), REMOVEFILTERS('Finansaxel'[Namn]))
+			VAR _months = SUMMARIZE(ALLSELECTED('Datum'), 'Datum'[År], 'Datum'[Månadsnummer])
+			RETURN MAXX(CROSSJOIN(_groups, _months), CALCULATE([Finans gruppvinst miljoner], REMOVEFILTERS('Finansaxel'[Panel]), REMOVEFILTERS('Finansaxel'[Namn]))) * 1.15
+		formatString: 0.00" mn kr"
+		isHidden
+		displayFolder: Ekonomi och lönsamhet\Presentation
+		lineageTag: 350b733d-9e1d-47ec-a66c-6cbe8bcfd50f
+
+	measure 'Finans medel sista månad' = IF(MAX('Datum'[Månadsnummer]) = MAXX(ALLSELECTED('Datum'), 'Datum'[Månadsnummer]), [Finans månadsmedel])
+		formatString: 0.00" mn kr"
+		isHidden
+		displayFolder: Ekonomi och lönsamhet\Presentation
+		lineageTag: 4866b64a-6ea1-4008-858a-537110beddf8
+
+	measure 'Finans medeletikett' = IF(NOT ISBLANK([Finans medel sista månad]), "Medel")
+		formatString: @
+		isHidden
+		displayFolder: Ekonomi och lönsamhet\Presentation
+		lineageTag: ec8f0a2b-535c-4ae3-b561-a86a90782973
+
+	measure 'Finans månadsmedel' =
+			VAR _dates = ALLSELECTED('Datum')
+			VAR _months = SUMMARIZE(_dates, 'Datum'[År], 'Datum'[Månadsnummer])
+			RETURN AVERAGEX(_months, VAR _year = 'Datum'[År] VAR _month = 'Datum'[Månadsnummer]
+			RETURN CALCULATE([Finans gruppvinst miljoner], REMOVEFILTERS('Datum'), _dates, TREATAS({_year}, 'Datum'[År]), TREATAS({_month}, 'Datum'[Månadsnummer])))
+		formatString: 0.00" mn kr"
+		isHidden
+		displayFolder: Ekonomi och lönsamhet\Presentation
+		lineageTag: 925e53ac-9520-4fc4-8182-0b0ef406eb74
+
+	measure 'Finans över månadsmedel' = [Finans gruppvinst miljoner] - [Finans månadsmedel]
+		formatString: 0.00" mn kr"
+		isHidden
+		displayFolder: Ekonomi och lönsamhet\Presentation
+		lineageTag: 77afe268-a81b-4d24-a898-ef49c1d3c51e
+
+	measure 'Finans vinst över medel' = IF([Finans gruppvinst miljoner] >= [Finans månadsmedel], [Finans gruppvinst miljoner])
+		formatString: 0.00" mn kr"
+		isHidden
+		displayFolder: Ekonomi och lönsamhet\Presentation
+		lineageTag: 661ce78a-e48d-4a78-8ba5-df5658e445dd
+
+	measure 'Finans vinst under medel' = IF([Finans gruppvinst miljoner] < [Finans månadsmedel], [Finans gruppvinst miljoner])
+		formatString: 0.00" mn kr"
+		isHidden
+		displayFolder: Ekonomi och lönsamhet\Presentation
+		lineageTag: 74b86f5b-431c-493b-a8ce-df61a96d11cb
+
+	measure 'Finans antal grupper' = COUNTROWS(ALLSELECTED('Finansaxel'[Namn]))
+		formatString: 0
+		isHidden
+		displayFolder: Ekonomi och lönsamhet\Presentation
+		lineageTag: dd51a24f-f58d-415f-af19-0bc7585e8583
+
+	measure 'Finans andelsaxel max' = MAXX(ALLSELECTED('Kunder'[Land]), CALCULATE([Bruttovinst andel land])) * 1.5
+		formatString: 0.0 %
+		isHidden
+		displayFolder: Ekonomi och lönsamhet\Presentation
+		lineageTag: 2b0c2358-c84d-4d10-bbf0-8840cb8527c1
+
+	measure 'Finans andel återstående' = [Finans andelsaxel max] - [Bruttovinst andel land]
+		formatString: 0.0 %
+		isHidden
+		displayFolder: Ekonomi och lönsamhet\Presentation
+		lineageTag: 231b0318-3163-41b9-b9de-b8e9460ce883
+
+	measure 'Finans produktbelopp etikett' = IF(NOT ISBLANK([Bruttovinst]), FORMAT([Bruttovinst] / 1000000, "0.00", "sv-SE") & " mn kr")
+		formatString: @
+		isHidden
+		displayFolder: Ekonomi och lönsamhet\Presentation
+		lineageTag: ca47833d-4a1d-46d0-b12e-2115f5d07d55
+
+	measure 'Finans produktaxel max' = MAXX(ALLSELECTED('Produkter'[Produkt]), CALCULATE([Bruttovinst])) * 1.6
+		formatString: #,##0
+		isHidden
+		displayFolder: Ekonomi och lönsamhet\Presentation
+		lineageTag: 13e913f0-9cb8-4c23-b0fc-8ebe62a40d82
+
+	measure 'Finans produktspår återstående' = IF(NOT ISBLANK([Bruttovinst]), MAX(0, [Finans produktaxel max] * 0.8 - [Bruttovinst]))
+		formatString: #,##0
+		isHidden
+		displayFolder: Ekonomi och lönsamhet\Presentation
+		lineageTag: 5e4b64db-2edd-4cbb-a2f3-f524a89e7458
+
+	measure 'Finans topprodukter andel etikett' =
+			VAR _top = TOPN(5, ALLSELECTED('Produkter'[Produkt]), [Bruttovinst], DESC, 'Produkter'[Produkt], ASC)
+			VAR _share = DIVIDE(SUMX(_top, [Bruttovinst]), [Bruttovinst])
+			RETURN IF(NOT ISBLANK(_share), "Topp 5 står för " & FORMAT(_share, "0.0 %", "sv-SE") & " av bruttovinsten")
+		formatString: @
+		isHidden
+		displayFolder: Ekonomi och lönsamhet\Presentation
+		lineageTag: 2f100b79-53fb-4982-bade-e0869adb46dc
+
+	measure 'Finans medelkostnad produkt' = AVERAGEX(ALLSELECTED('Produkter'[Produkt]), CALCULATE([Kostnad miljoner]))
+		formatString: 0.00" mn kr"
+		isHidden
+		displayFolder: Ekonomi och lönsamhet\Presentation
+		lineageTag: 997a1e97-7564-415b-8bb0-86ab3db31515
+
+	measure 'Finans medelvinst produkt' = AVERAGEX(ALLSELECTED('Produkter'[Produkt]), CALCULATE([Bruttovinst miljoner]))
+		formatString: 0.00" mn kr"
+		isHidden
+		displayFolder: Ekonomi och lönsamhet\Presentation
+		lineageTag: fbb46484-b314-4402-8626-a03fb829e888
+
+	measure 'Finans marknadstillväxt etikett' =
+			VAR _value = [Bruttovinst YoY]
+			RETURN IF(NOT ISBLANK(_value), FORMAT(_value, "+0.0 %;-0.0 %;0.0 %", "sv-SE") & IF(_value > 0, " ▲", IF(_value < 0, " ▼", " –")))
+		formatString: @
+		isHidden
+		displayFolder: Ekonomi och lönsamhet\Presentation
+		lineageTag: 7ad8f9d0-b9a7-4f67-af32-55cb9335ce78
+
+	measure 'Finans marknadstrend' =
+			VAR _months = ADDCOLUMNS(ALLSELECTED('Datum'[Månadsnummer]), "__value", CALCULATE([Bruttovinst]))
+			VAR _low = MINX(_months, [__value])
+			VAR _high = MAXX(_months, [__value])
+			VAR _points = CONCATENATEX(_months, FORMAT(4 + ('Datum'[Månadsnummer] - 1) * 8, "0", "en-US") & "," & FORMAT(23 - 18 * DIVIDE([__value] - _low, _high - _low, 0.5), "0", "en-US"), " ", 'Datum'[Månadsnummer], ASC)
+			RETURN IF(NOT ISBLANK([Bruttovinst]), "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 96 28'><polyline fill='none' stroke='rgb(15,49,99)' stroke-width='1.5' points='" & _points & "'/></svg>")
+		formatString: @
+		isHidden
+		displayFolder: Ekonomi och lönsamhet\Presentation
+		lineageTag: 3b3af416-7c05-4db5-8a49-4f8dc535aa2c
+		dataCategory: ImageUrl
+
+	measure 'Finans sammanställning vinst' =
+			VAR _names = VALUES('Analysaxel'[Namn])
+			RETURN IF(SELECTEDVALUE('Analysaxel'[Typ], "Land") = "Land", CALCULATE([Bruttovinst], KEEPFILTERS(TREATAS(_names, 'Kunder'[Land]))), CALCULATE([Bruttovinst], KEEPFILTERS(TREATAS(_names, 'Produkter'[Kategori]))))
+		formatString: #,##0" kr"
+		isHidden
+		displayFolder: Ekonomi och lönsamhet\Presentation
+		lineageTag: dddcbebd-5874-475b-8b46-638ec0cd8e25
+
+	measure 'Finans sammanställning marginal' =
+			VAR _names = VALUES('Analysaxel'[Namn])
+			RETURN IF(SELECTEDVALUE('Analysaxel'[Typ], "Land") = "Land", CALCULATE([Bruttomarginal], KEEPFILTERS(TREATAS(_names, 'Kunder'[Land]))), CALCULATE([Bruttomarginal], KEEPFILTERS(TREATAS(_names, 'Produkter'[Kategori]))))
+		formatString: 0.0 %
+		isHidden
+		displayFolder: Ekonomi och lönsamhet\Presentation
+		lineageTag: d09d5988-ac3d-4e66-bfa6-67ab1c390904
+
+	measure 'Finans sammanställning tillväxt' =
+			VAR _names = VALUES('Analysaxel'[Namn])
+			RETURN IF(SELECTEDVALUE('Analysaxel'[Typ], "Land") = "Land", CALCULATE([Bruttovinst YoY], KEEPFILTERS(TREATAS(_names, 'Kunder'[Land]))), CALCULATE([Bruttovinst YoY], KEEPFILTERS(TREATAS(_names, 'Produkter'[Kategori]))))
+		formatString: +0.0 %;-0.0 %;0.0 %
+		isHidden
+		displayFolder: Ekonomi och lönsamhet\Presentation
+		lineageTag: 07529929-87fd-4508-8f69-e1c30d111ea9
+
+	measure 'Finans marknad 1 etikett' =
+			VAR _pool = FILTER(ADDCOLUMNS(ALLSELECTED('Kunder'[Land]), "__profit", CALCULATE([Bruttovinst])), NOT ISBLANK([__profit]))
+			VAR _row = TOPN(1, TOPN(1, _pool, [__profit], DESC, 'Kunder'[Land], ASC), [__profit], ASC, 'Kunder'[Land], DESC)
+			VAR _enough = COUNTROWS(_pool) >= 1
+			VAR _profit = SUMX(_row, [__profit])
+			VAR _share = DIVIDE(_profit, [Bruttovinst])
+			RETURN IF(_enough, MAXX(_row, 'Kunder'[Land]) & " | " & FORMAT(_profit / 1000000, "0.00", "sv-SE") & " mn kr (" & FORMAT(_share, "0.0 %", "sv-SE") & ")")
+		formatString: @
+		isHidden
+		displayFolder: Ekonomi och lönsamhet\Presentation
+		lineageTag: 8ae3430b-c2ec-4218-beea-30d03e231f11
+
+	measure 'Finans marknad 1 andel' =
+			VAR _pool = FILTER(ADDCOLUMNS(ALLSELECTED('Kunder'[Land]), "__profit", CALCULATE([Bruttovinst])), NOT ISBLANK([__profit]))
+			VAR _row = TOPN(1, TOPN(1, _pool, [__profit], DESC, 'Kunder'[Land], ASC), [__profit], ASC, 'Kunder'[Land], DESC)
+			VAR _enough = COUNTROWS(_pool) >= 1
+			RETURN IF(_enough, DIVIDE(SUMX(_row, [__profit]), [Bruttovinst]))
+		formatString: 0.0 %
+		isHidden
+		displayFolder: Ekonomi och lönsamhet\Presentation
+		lineageTag: 7eb3bf30-5589-49c3-ab22-08d6396e4724
+
+	measure 'Finans marknad 2 etikett' =
+			VAR _pool = FILTER(ADDCOLUMNS(ALLSELECTED('Kunder'[Land]), "__profit", CALCULATE([Bruttovinst])), NOT ISBLANK([__profit]))
+			VAR _row = TOPN(1, TOPN(2, _pool, [__profit], DESC, 'Kunder'[Land], ASC), [__profit], ASC, 'Kunder'[Land], DESC)
+			VAR _enough = COUNTROWS(_pool) >= 2
+			VAR _profit = SUMX(_row, [__profit])
+			VAR _share = DIVIDE(_profit, [Bruttovinst])
+			RETURN IF(_enough, MAXX(_row, 'Kunder'[Land]) & " | " & FORMAT(_profit / 1000000, "0.00", "sv-SE") & " mn kr (" & FORMAT(_share, "0.0 %", "sv-SE") & ")")
+		formatString: @
+		isHidden
+		displayFolder: Ekonomi och lönsamhet\Presentation
+		lineageTag: c27e8138-e188-4cbf-922c-3078f8fc56ed
+
+	measure 'Finans marknad 2 andel' =
+			VAR _pool = FILTER(ADDCOLUMNS(ALLSELECTED('Kunder'[Land]), "__profit", CALCULATE([Bruttovinst])), NOT ISBLANK([__profit]))
+			VAR _row = TOPN(1, TOPN(2, _pool, [__profit], DESC, 'Kunder'[Land], ASC), [__profit], ASC, 'Kunder'[Land], DESC)
+			VAR _enough = COUNTROWS(_pool) >= 2
+			RETURN IF(_enough, DIVIDE(SUMX(_row, [__profit]), [Bruttovinst]))
+		formatString: 0.0 %
+		isHidden
+		displayFolder: Ekonomi och lönsamhet\Presentation
+		lineageTag: 348d769f-cc7f-4fa7-84cf-aeba4b9df9ee
+
+	measure 'Finans marknad 3 etikett' =
+			VAR _pool = FILTER(ADDCOLUMNS(ALLSELECTED('Kunder'[Land]), "__profit", CALCULATE([Bruttovinst])), NOT ISBLANK([__profit]))
+			VAR _row = TOPN(1, TOPN(3, _pool, [__profit], DESC, 'Kunder'[Land], ASC), [__profit], ASC, 'Kunder'[Land], DESC)
+			VAR _enough = COUNTROWS(_pool) >= 3
+			VAR _profit = SUMX(_row, [__profit])
+			VAR _share = DIVIDE(_profit, [Bruttovinst])
+			RETURN IF(_enough, MAXX(_row, 'Kunder'[Land]) & " | " & FORMAT(_profit / 1000000, "0.00", "sv-SE") & " mn kr (" & FORMAT(_share, "0.0 %", "sv-SE") & ")")
+		formatString: @
+		isHidden
+		displayFolder: Ekonomi och lönsamhet\Presentation
+		lineageTag: 66d439a1-fa55-4118-b564-1d31c82e4e0e
+
+	measure 'Finans marknad 3 andel' =
+			VAR _pool = FILTER(ADDCOLUMNS(ALLSELECTED('Kunder'[Land]), "__profit", CALCULATE([Bruttovinst])), NOT ISBLANK([__profit]))
+			VAR _row = TOPN(1, TOPN(3, _pool, [__profit], DESC, 'Kunder'[Land], ASC), [__profit], ASC, 'Kunder'[Land], DESC)
+			VAR _enough = COUNTROWS(_pool) >= 3
+			RETURN IF(_enough, DIVIDE(SUMX(_row, [__profit]), [Bruttovinst]))
+		formatString: 0.0 %
+		isHidden
+		displayFolder: Ekonomi och lönsamhet\Presentation
+		lineageTag: f49da489-f47f-4430-a6fa-bc80a7585c42
+
+	measure 'Finans marknad 4 etikett' =
+			VAR _pool = FILTER(ADDCOLUMNS(ALLSELECTED('Kunder'[Land]), "__profit", CALCULATE([Bruttovinst])), NOT ISBLANK([__profit]))
+			VAR _row = TOPN(1, TOPN(4, _pool, [__profit], DESC, 'Kunder'[Land], ASC), [__profit], ASC, 'Kunder'[Land], DESC)
+			VAR _enough = COUNTROWS(_pool) >= 4
+			VAR _profit = SUMX(_row, [__profit])
+			VAR _share = DIVIDE(_profit, [Bruttovinst])
+			RETURN IF(_enough, MAXX(_row, 'Kunder'[Land]) & " | " & FORMAT(_profit / 1000000, "0.00", "sv-SE") & " mn kr (" & FORMAT(_share, "0.0 %", "sv-SE") & ")")
+		formatString: @
+		isHidden
+		displayFolder: Ekonomi och lönsamhet\Presentation
+		lineageTag: 48a6915d-e67d-4e58-a75c-3c2e9036fc32
+
+	measure 'Finans marknad 4 andel' =
+			VAR _pool = FILTER(ADDCOLUMNS(ALLSELECTED('Kunder'[Land]), "__profit", CALCULATE([Bruttovinst])), NOT ISBLANK([__profit]))
+			VAR _row = TOPN(1, TOPN(4, _pool, [__profit], DESC, 'Kunder'[Land], ASC), [__profit], ASC, 'Kunder'[Land], DESC)
+			VAR _enough = COUNTROWS(_pool) >= 4
+			RETURN IF(_enough, DIVIDE(SUMX(_row, [__profit]), [Bruttovinst]))
+		formatString: 0.0 %
+		isHidden
+		displayFolder: Ekonomi och lönsamhet\Presentation
+		lineageTag: 5daaae8f-10c5-4262-ac48-b65a172e638f
+
+	measure 'Finans produkt 1 belopp' =
+			VAR _pool = FILTER(ADDCOLUMNS(ALLSELECTED('Produkter'[Produkt]), "__profit", CALCULATE([Bruttovinst])), NOT ISBLANK([__profit]))
+			VAR _row = TOPN(1, TOPN(1, _pool, [__profit], DESC, 'Produkter'[Produkt], ASC), [__profit], ASC, 'Produkter'[Produkt], DESC)
+			RETURN IF(COUNTROWS(_pool) >= 1, FORMAT(SUMX(_row, [__profit]) / 1000000, "0.00", "sv-SE") & " mn kr")
+		formatString: @
+		isHidden
+		displayFolder: Ekonomi och lönsamhet\Presentation
+		lineageTag: f8fbcf27-9478-4cf4-b737-bad49699dbe2
+
+	measure 'Finans produkt 2 belopp' =
+			VAR _pool = FILTER(ADDCOLUMNS(ALLSELECTED('Produkter'[Produkt]), "__profit", CALCULATE([Bruttovinst])), NOT ISBLANK([__profit]))
+			VAR _row = TOPN(1, TOPN(2, _pool, [__profit], DESC, 'Produkter'[Produkt], ASC), [__profit], ASC, 'Produkter'[Produkt], DESC)
+			RETURN IF(COUNTROWS(_pool) >= 2, FORMAT(SUMX(_row, [__profit]) / 1000000, "0.00", "sv-SE") & " mn kr")
+		formatString: @
+		isHidden
+		displayFolder: Ekonomi och lönsamhet\Presentation
+		lineageTag: 1e549842-b53c-4907-b07a-e86003b07c44
+
+	measure 'Finans produkt 3 belopp' =
+			VAR _pool = FILTER(ADDCOLUMNS(ALLSELECTED('Produkter'[Produkt]), "__profit", CALCULATE([Bruttovinst])), NOT ISBLANK([__profit]))
+			VAR _row = TOPN(1, TOPN(3, _pool, [__profit], DESC, 'Produkter'[Produkt], ASC), [__profit], ASC, 'Produkter'[Produkt], DESC)
+			RETURN IF(COUNTROWS(_pool) >= 3, FORMAT(SUMX(_row, [__profit]) / 1000000, "0.00", "sv-SE") & " mn kr")
+		formatString: @
+		isHidden
+		displayFolder: Ekonomi och lönsamhet\Presentation
+		lineageTag: 4505574d-997f-4767-a380-f050d3edcba7
+
+	measure 'Finans produkt 4 belopp' =
+			VAR _pool = FILTER(ADDCOLUMNS(ALLSELECTED('Produkter'[Produkt]), "__profit", CALCULATE([Bruttovinst])), NOT ISBLANK([__profit]))
+			VAR _row = TOPN(1, TOPN(4, _pool, [__profit], DESC, 'Produkter'[Produkt], ASC), [__profit], ASC, 'Produkter'[Produkt], DESC)
+			RETURN IF(COUNTROWS(_pool) >= 4, FORMAT(SUMX(_row, [__profit]) / 1000000, "0.00", "sv-SE") & " mn kr")
+		formatString: @
+		isHidden
+		displayFolder: Ekonomi och lönsamhet\Presentation
+		lineageTag: af9d3425-44f7-4381-9b39-f311fdf85fd7
+
+	measure 'Finans produkt 5 belopp' =
+			VAR _pool = FILTER(ADDCOLUMNS(ALLSELECTED('Produkter'[Produkt]), "__profit", CALCULATE([Bruttovinst])), NOT ISBLANK([__profit]))
+			VAR _row = TOPN(1, TOPN(5, _pool, [__profit], DESC, 'Produkter'[Produkt], ASC), [__profit], ASC, 'Produkter'[Produkt], DESC)
+			RETURN IF(COUNTROWS(_pool) >= 5, FORMAT(SUMX(_row, [__profit]) / 1000000, "0.00", "sv-SE") & " mn kr")
+		formatString: @
+		isHidden
+		displayFolder: Ekonomi och lönsamhet\Presentation
+		lineageTag: 715da782-1fd5-4124-b9c9-aa1ae758b472
+
+	measure 'Säljanalys KPI 0 förändring' =
+			VAR _value = [Aktiva säljare årsförändring]
+			RETURN IF(NOT ISBLANK(_value), IF(_value = 0, "Oförändrat mot föreg. år", FORMAT(_value, "+0.0 %;-0.0 %;0.0 %", "sv-SE") & IF(_value > 0, " ▲", " ▼") & " mot föreg. år"))
+		formatString: @
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: 959a0653-7d43-40c0-b166-4a8fa1bc56de
+
+	measure 'Säljanalys KPI 0 färg' =
+			VAR _value = [Aktiva säljare årsförändring]
+			RETURN IF(ISBLANK(_value) || _value = 0, "#5B6B80", IF(_value > 0, "#078A36", "#D92D20"))
+		formatString: @
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: 57300411-3e70-4b97-bb73-85ac7fa69864
+
+	measure 'Säljanalys KPI 1 förändring' =
+			VAR _value = [Omsättning per säljare årsförändring]
+			RETURN IF(NOT ISBLANK(_value), IF(_value = 0, "Oförändrat mot föreg. år", FORMAT(_value, "+0.0 %;-0.0 %;0.0 %", "sv-SE") & IF(_value > 0, " ▲", " ▼") & " mot föreg. år"))
+		formatString: @
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: 6e254059-8d08-4679-b474-5605cd518441
+
+	measure 'Säljanalys KPI 1 färg' =
+			VAR _value = [Omsättning per säljare årsförändring]
+			RETURN IF(ISBLANK(_value) || _value = 0, "#5B6B80", IF(_value > 0, "#078A36", "#D92D20"))
+		formatString: @
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: ccc3f0ba-74ef-4f86-b5b1-593b92237ddf
+
+	measure 'Säljanalys KPI 2 förändring' =
+			VAR _value = [Leveranser YoY]
+			RETURN IF(NOT ISBLANK(_value), IF(_value = 0, "Oförändrat mot föreg. år", FORMAT(_value, "+0.0 %;-0.0 %;0.0 %", "sv-SE") & IF(_value > 0, " ▲", " ▼") & " mot föreg. år"))
+		formatString: @
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: 3161da23-abb1-4944-b9af-412c647e1f83
+
+	measure 'Säljanalys KPI 2 färg' =
+			VAR _value = [Leveranser YoY]
+			RETURN IF(ISBLANK(_value) || _value = 0, "#5B6B80", IF(_value > 0, "#078A36", "#D92D20"))
+		formatString: @
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: 12ef35ce-36b5-441f-b4fe-6f8f456ea07f
+
+	measure 'Säljanalys KPI 3 förändring' =
+			VAR _value = [Genomsnittlig order årsförändring]
+			RETURN IF(NOT ISBLANK(_value), IF(_value = 0, "Oförändrat mot föreg. år", FORMAT(_value, "+0.0 %;-0.0 %;0.0 %", "sv-SE") & IF(_value > 0, " ▲", " ▼") & " mot föreg. år"))
+		formatString: @
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: 45ca3316-68ff-4a79-975b-e1db4102bee6
+
+	measure 'Säljanalys KPI 3 färg' =
+			VAR _value = [Genomsnittlig order årsförändring]
+			RETURN IF(ISBLANK(_value) || _value = 0, "#5B6B80", IF(_value > 0, "#078A36", "#D92D20"))
+		formatString: @
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: 1411d1ee-b065-479f-a227-64d3f2d49259
+
+	measure 'Säljanalys KPI 4 förändring' =
+			VAR _value = [Topp 5 andel förändring]
+			RETURN IF(NOT ISBLANK(_value), IF(_value = 0, "Oförändrat mot föreg. år", FORMAT(_value, "+0.0"" pp"";-0.0"" pp"";0.0"" pp""", "sv-SE") & IF(_value > 0, " ▲", " ▼") & " mot föreg. år"))
+		formatString: @
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: e960af40-4fe6-4fd1-92cd-a240c8304d3d
+
+	measure 'Säljanalys KPI 4 färg' =
+			VAR _value = [Topp 5 andel förändring]
+			RETURN IF(ISBLANK(_value) || _value = 0, "#5B6B80", IF(_value > 0, "#078A36", "#D92D20"))
+		formatString: @
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: f440fe8c-721a-44db-b6ec-fd99c95f1b12
+
+	measure 'Säljanalys marknad tillväxt etikett' =
+			VAR _value = [Tillväxt mot föregående år]
+			RETURN IF(NOT ISBLANK(_value), FORMAT(_value, "+0.0 %;-0.0 %;0.0 %", "sv-SE") & IF(_value > 0, " ▲", IF(_value < 0, " ▼", " –")))
+		formatString: @
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: dc5d9b26-7632-4d4e-99b3-0b1e0101b1d2
+
+	measure 'Säljanalys marknad tillväxt färg' = IF([Tillväxt mot föregående år] < 0, "#D92D20", "#078A36")
+		formatString: @
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: af8332c8-b165-4444-9ded-d199b8fe2919
+
+	measure 'Säljanalys marknad andelsbild' =
+			VAR _share = [Omsättning andel land]
+			VAR _bounded = MIN(1, MAX(0, _share))
+			VAR _offset = FORMAT(31.416 * (1 - _bounded), "0.00", "en-US")
+			RETURN IF(NOT ISBLANK(_share), "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 96 28'><circle cx='9' cy='14' r='5' fill='rgb(231,237,245)'/><circle cx='9' cy='14' r='2.5' fill='none' stroke='rgb(15,49,99)' stroke-width='5' stroke-dasharray='15.708' stroke-dashoffset='" & FORMAT(15.708 * (1 - _bounded), "0.00", "en-US") & "' transform='rotate(-90 9 14)'/><text x='21' y='18' font-family='Segoe UI' font-size='16' fill='rgb(15,49,99)'>" & FORMAT(_share, "0.0 %", "sv-SE") & "</text></svg>")
+		formatString: @
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: 5c0a991b-b55a-4c2e-9ae0-30fcc7170e3f
+		dataCategory: ImageUrl
+
+	measure 'Säljanalys gruppomsättning' =
+			VAR _names = VALUES('Analysaxel'[Namn])
+			RETURN IF(SELECTEDVALUE('Analysaxel'[Typ], "Land") = "Land",
+			 CALCULATE([Omsättning], KEEPFILTERS(TREATAS(_names, 'Kunder'[Land]))),
+			 CALCULATE([Omsättning], KEEPFILTERS(TREATAS(_names, 'Produkter'[Kategori]))))
+		formatString: #,##0" kr"
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: 222167d4-e5a3-403d-8076-215783a413a9
+
+	measure 'Säljanalys trendrubrik' = IF(SELECTEDVALUE('Analysaxel'[Typ], "Land") = "Land", "Omsättningstrend per marknad", "Omsättningstrend per kategori")
+		formatString: @
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: a8fbea95-e5f0-4d8d-a7f1-9650a3ac769d
+
+	measure 'Säljanalys kvartal 1' = IF(COUNTROWS(VALUES('Datum'[Månadsnummer])) = 12, "K1", UNICHAR(8203))
+		formatString: @
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: cc241594-474c-4b0f-bbd4-258b29202bd6
+
+	measure 'Säljanalys kvartal 2' = IF(COUNTROWS(VALUES('Datum'[Månadsnummer])) = 12, "K2", UNICHAR(8203))
+		formatString: @
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: 3ab07546-f801-4c61-8e75-2f525f177c03
+
+	measure 'Säljanalys kvartal 3' = IF(COUNTROWS(VALUES('Datum'[Månadsnummer])) = 12, "K3", UNICHAR(8203))
+		formatString: @
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: 5cafb364-cb43-4cae-a23f-119cafda05ff
+
+	measure 'Säljanalys kvartal 4' = IF(COUNTROWS(VALUES('Datum'[Månadsnummer])) = 12, "K4", UNICHAR(8203))
+		formatString: @
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: 65daadd0-7860-422f-86fc-4b988018fcaf
+
+	measure 'Säljanalys trend 1 namn' =
+			VAR _dates = ALLSELECTED('Datum')
+			VAR _pool = FILTER(ADDCOLUMNS(ALLSELECTED('Analysaxel'[Område]), "__value", CALCULATE([Säljanalys gruppomsättning], REMOVEFILTERS('Datum'), _dates)), [__value] > 0)
+			VAR _chosen = TOPN(1, TOPN(1, _pool, [__value], DESC, 'Analysaxel'[Område], ASC), [__value], ASC, 'Analysaxel'[Område], DESC)
+			VAR _name = MAXX(_chosen, 'Analysaxel'[Område])
+			VAR _enough = COUNTROWS(_pool) >= 1
+			RETURN IF(_enough, _name)
+		formatString: @
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: 13feab78-12d4-471a-aab3-c890439f1255
+
+	measure 'Säljanalys trend 1 värde' =
+			VAR _dates = ALLSELECTED('Datum')
+			VAR _pool = FILTER(ADDCOLUMNS(ALLSELECTED('Analysaxel'[Område]), "__value", CALCULATE([Säljanalys gruppomsättning], REMOVEFILTERS('Datum'), _dates)), [__value] > 0)
+			VAR _chosen = TOPN(1, TOPN(1, _pool, [__value], DESC, 'Analysaxel'[Område], ASC), [__value], ASC, 'Analysaxel'[Område], DESC)
+			VAR _name = MAXX(_chosen, 'Analysaxel'[Område])
+			VAR _enough = COUNTROWS(_pool) >= 1
+			RETURN IF(_enough, CALCULATE([Säljanalys gruppomsättning], KEEPFILTERS(TREATAS({_name}, 'Analysaxel'[Område]))))
+		formatString: #,##0" kr"
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: c14581f5-50e7-4d53-a0a6-669d95580e98
+
+	measure 'Säljanalys trend 1 max' =
+			VAR _name = [Säljanalys trend 1 namn]
+			VAR _dates = ALLSELECTED('Datum')
+			VAR _months = SUMMARIZE(_dates, 'Datum'[År], 'Datum'[Månadsnummer])
+			VAR _limit = MAXX(_months, VAR _year = 'Datum'[År] VAR _month = 'Datum'[Månadsnummer]
+			 RETURN CALCULATE([Säljanalys gruppomsättning], REMOVEFILTERS('Datum'), _dates, TREATAS({_year}, 'Datum'[År]), TREATAS({_month}, 'Datum'[Månadsnummer]), KEEPFILTERS(TREATAS({_name}, 'Analysaxel'[Område]))))
+			VAR _value = [Säljanalys trend 1 värde]
+			RETURN IF(NOT ISBLANK(_value) && ABS(_value - _limit) < 0.01, _value)
+		formatString: #,##0" kr"
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: a01893f3-ed7e-49ed-b7ac-14b6e8b5446d
+
+	measure 'Säljanalys trend 1 min' =
+			VAR _name = [Säljanalys trend 1 namn]
+			VAR _dates = ALLSELECTED('Datum')
+			VAR _months = SUMMARIZE(_dates, 'Datum'[År], 'Datum'[Månadsnummer])
+			VAR _limit = MINX(_months, VAR _year = 'Datum'[År] VAR _month = 'Datum'[Månadsnummer]
+			 RETURN CALCULATE([Säljanalys gruppomsättning], REMOVEFILTERS('Datum'), _dates, TREATAS({_year}, 'Datum'[År]), TREATAS({_month}, 'Datum'[Månadsnummer]), KEEPFILTERS(TREATAS({_name}, 'Analysaxel'[Område]))))
+			VAR _value = [Säljanalys trend 1 värde]
+			RETURN IF(NOT ISBLANK(_value) && ABS(_value - _limit) < 0.01, _value)
+		formatString: #,##0" kr"
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: 8fcfb4a3-e189-4b01-b387-2294424097bf
+
+	measure 'Säljanalys trend 2 namn' =
+			VAR _dates = ALLSELECTED('Datum')
+			VAR _pool = FILTER(ADDCOLUMNS(ALLSELECTED('Analysaxel'[Område]), "__value", CALCULATE([Säljanalys gruppomsättning], REMOVEFILTERS('Datum'), _dates)), [__value] > 0)
+			VAR _chosen = TOPN(1, TOPN(2, _pool, [__value], DESC, 'Analysaxel'[Område], ASC), [__value], ASC, 'Analysaxel'[Område], DESC)
+			VAR _name = MAXX(_chosen, 'Analysaxel'[Område])
+			VAR _enough = COUNTROWS(_pool) >= 2
+			RETURN IF(_enough, _name)
+		formatString: @
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: ba6afea0-6aa6-4ce4-88e6-992780b531ee
+
+	measure 'Säljanalys trend 2 värde' =
+			VAR _dates = ALLSELECTED('Datum')
+			VAR _pool = FILTER(ADDCOLUMNS(ALLSELECTED('Analysaxel'[Område]), "__value", CALCULATE([Säljanalys gruppomsättning], REMOVEFILTERS('Datum'), _dates)), [__value] > 0)
+			VAR _chosen = TOPN(1, TOPN(2, _pool, [__value], DESC, 'Analysaxel'[Område], ASC), [__value], ASC, 'Analysaxel'[Område], DESC)
+			VAR _name = MAXX(_chosen, 'Analysaxel'[Område])
+			VAR _enough = COUNTROWS(_pool) >= 2
+			RETURN IF(_enough, CALCULATE([Säljanalys gruppomsättning], KEEPFILTERS(TREATAS({_name}, 'Analysaxel'[Område]))))
+		formatString: #,##0" kr"
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: 60849ac6-8b4b-4eae-91f6-df3a7e68cb87
+
+	measure 'Säljanalys trend 2 max' =
+			VAR _name = [Säljanalys trend 2 namn]
+			VAR _dates = ALLSELECTED('Datum')
+			VAR _months = SUMMARIZE(_dates, 'Datum'[År], 'Datum'[Månadsnummer])
+			VAR _limit = MAXX(_months, VAR _year = 'Datum'[År] VAR _month = 'Datum'[Månadsnummer]
+			 RETURN CALCULATE([Säljanalys gruppomsättning], REMOVEFILTERS('Datum'), _dates, TREATAS({_year}, 'Datum'[År]), TREATAS({_month}, 'Datum'[Månadsnummer]), KEEPFILTERS(TREATAS({_name}, 'Analysaxel'[Område]))))
+			VAR _value = [Säljanalys trend 2 värde]
+			RETURN IF(NOT ISBLANK(_value) && ABS(_value - _limit) < 0.01, _value)
+		formatString: #,##0" kr"
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: a7da02f9-9696-430f-bc5e-b3407ef017fd
+
+	measure 'Säljanalys trend 2 min' =
+			VAR _name = [Säljanalys trend 2 namn]
+			VAR _dates = ALLSELECTED('Datum')
+			VAR _months = SUMMARIZE(_dates, 'Datum'[År], 'Datum'[Månadsnummer])
+			VAR _limit = MINX(_months, VAR _year = 'Datum'[År] VAR _month = 'Datum'[Månadsnummer]
+			 RETURN CALCULATE([Säljanalys gruppomsättning], REMOVEFILTERS('Datum'), _dates, TREATAS({_year}, 'Datum'[År]), TREATAS({_month}, 'Datum'[Månadsnummer]), KEEPFILTERS(TREATAS({_name}, 'Analysaxel'[Område]))))
+			VAR _value = [Säljanalys trend 2 värde]
+			RETURN IF(NOT ISBLANK(_value) && ABS(_value - _limit) < 0.01, _value)
+		formatString: #,##0" kr"
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: 62725e6f-acfe-438e-bc44-b7a9abb08c0e
+
+	measure 'Säljanalys trend 3 namn' =
+			VAR _dates = ALLSELECTED('Datum')
+			VAR _pool = FILTER(ADDCOLUMNS(ALLSELECTED('Analysaxel'[Område]), "__value", CALCULATE([Säljanalys gruppomsättning], REMOVEFILTERS('Datum'), _dates)), [__value] > 0)
+			VAR _chosen = TOPN(1, TOPN(3, _pool, [__value], DESC, 'Analysaxel'[Område], ASC), [__value], ASC, 'Analysaxel'[Område], DESC)
+			VAR _name = MAXX(_chosen, 'Analysaxel'[Område])
+			VAR _enough = COUNTROWS(_pool) >= 3
+			RETURN IF(_enough, _name)
+		formatString: @
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: be3665b3-9ec8-4819-96c1-7e883e49ff18
+
+	measure 'Säljanalys trend 3 värde' =
+			VAR _dates = ALLSELECTED('Datum')
+			VAR _pool = FILTER(ADDCOLUMNS(ALLSELECTED('Analysaxel'[Område]), "__value", CALCULATE([Säljanalys gruppomsättning], REMOVEFILTERS('Datum'), _dates)), [__value] > 0)
+			VAR _chosen = TOPN(1, TOPN(3, _pool, [__value], DESC, 'Analysaxel'[Område], ASC), [__value], ASC, 'Analysaxel'[Område], DESC)
+			VAR _name = MAXX(_chosen, 'Analysaxel'[Område])
+			VAR _enough = COUNTROWS(_pool) >= 3
+			RETURN IF(_enough, CALCULATE([Säljanalys gruppomsättning], KEEPFILTERS(TREATAS({_name}, 'Analysaxel'[Område]))))
+		formatString: #,##0" kr"
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: 34895547-400d-473a-b83c-a5eed8dbff58
+
+	measure 'Säljanalys trend 3 max' =
+			VAR _name = [Säljanalys trend 3 namn]
+			VAR _dates = ALLSELECTED('Datum')
+			VAR _months = SUMMARIZE(_dates, 'Datum'[År], 'Datum'[Månadsnummer])
+			VAR _limit = MAXX(_months, VAR _year = 'Datum'[År] VAR _month = 'Datum'[Månadsnummer]
+			 RETURN CALCULATE([Säljanalys gruppomsättning], REMOVEFILTERS('Datum'), _dates, TREATAS({_year}, 'Datum'[År]), TREATAS({_month}, 'Datum'[Månadsnummer]), KEEPFILTERS(TREATAS({_name}, 'Analysaxel'[Område]))))
+			VAR _value = [Säljanalys trend 3 värde]
+			RETURN IF(NOT ISBLANK(_value) && ABS(_value - _limit) < 0.01, _value)
+		formatString: #,##0" kr"
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: 5f6262f0-d14b-4f6a-9b9f-f2f5c794ce85
+
+	measure 'Säljanalys trend 3 min' =
+			VAR _name = [Säljanalys trend 3 namn]
+			VAR _dates = ALLSELECTED('Datum')
+			VAR _months = SUMMARIZE(_dates, 'Datum'[År], 'Datum'[Månadsnummer])
+			VAR _limit = MINX(_months, VAR _year = 'Datum'[År] VAR _month = 'Datum'[Månadsnummer]
+			 RETURN CALCULATE([Säljanalys gruppomsättning], REMOVEFILTERS('Datum'), _dates, TREATAS({_year}, 'Datum'[År]), TREATAS({_month}, 'Datum'[Månadsnummer]), KEEPFILTERS(TREATAS({_name}, 'Analysaxel'[Område]))))
+			VAR _value = [Säljanalys trend 3 värde]
+			RETURN IF(NOT ISBLANK(_value) && ABS(_value - _limit) < 0.01, _value)
+		formatString: #,##0" kr"
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: 00bea174-a907-4704-83f0-2642d5afb79b
+
+	measure 'Säljanalys trend 4 namn' =
+			VAR _dates = ALLSELECTED('Datum')
+			VAR _pool = FILTER(ADDCOLUMNS(ALLSELECTED('Analysaxel'[Område]), "__value", CALCULATE([Säljanalys gruppomsättning], REMOVEFILTERS('Datum'), _dates)), [__value] > 0)
+			VAR _chosen = TOPN(1, TOPN(4, _pool, [__value], DESC, 'Analysaxel'[Område], ASC), [__value], ASC, 'Analysaxel'[Område], DESC)
+			VAR _name = MAXX(_chosen, 'Analysaxel'[Område])
+			VAR _enough = COUNTROWS(_pool) >= 4
+			RETURN IF(_enough, _name)
+		formatString: @
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: ebe80604-5521-4392-8e48-c46e176f1e1f
+
+	measure 'Säljanalys trend 4 värde' =
+			VAR _dates = ALLSELECTED('Datum')
+			VAR _pool = FILTER(ADDCOLUMNS(ALLSELECTED('Analysaxel'[Område]), "__value", CALCULATE([Säljanalys gruppomsättning], REMOVEFILTERS('Datum'), _dates)), [__value] > 0)
+			VAR _chosen = TOPN(1, TOPN(4, _pool, [__value], DESC, 'Analysaxel'[Område], ASC), [__value], ASC, 'Analysaxel'[Område], DESC)
+			VAR _name = MAXX(_chosen, 'Analysaxel'[Område])
+			VAR _enough = COUNTROWS(_pool) >= 4
+			RETURN IF(_enough, CALCULATE([Säljanalys gruppomsättning], KEEPFILTERS(TREATAS({_name}, 'Analysaxel'[Område]))))
+		formatString: #,##0" kr"
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: b7ebf46e-0ae4-47fe-bd93-947f02454adc
+
+	measure 'Säljanalys trend 4 max' =
+			VAR _name = [Säljanalys trend 4 namn]
+			VAR _dates = ALLSELECTED('Datum')
+			VAR _months = SUMMARIZE(_dates, 'Datum'[År], 'Datum'[Månadsnummer])
+			VAR _limit = MAXX(_months, VAR _year = 'Datum'[År] VAR _month = 'Datum'[Månadsnummer]
+			 RETURN CALCULATE([Säljanalys gruppomsättning], REMOVEFILTERS('Datum'), _dates, TREATAS({_year}, 'Datum'[År]), TREATAS({_month}, 'Datum'[Månadsnummer]), KEEPFILTERS(TREATAS({_name}, 'Analysaxel'[Område]))))
+			VAR _value = [Säljanalys trend 4 värde]
+			RETURN IF(NOT ISBLANK(_value) && ABS(_value - _limit) < 0.01, _value)
+		formatString: #,##0" kr"
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: 948a4809-648f-489f-afad-7a9491f5e404
+
+	measure 'Säljanalys trend 4 min' =
+			VAR _name = [Säljanalys trend 4 namn]
+			VAR _dates = ALLSELECTED('Datum')
+			VAR _months = SUMMARIZE(_dates, 'Datum'[År], 'Datum'[Månadsnummer])
+			VAR _limit = MINX(_months, VAR _year = 'Datum'[År] VAR _month = 'Datum'[Månadsnummer]
+			 RETURN CALCULATE([Säljanalys gruppomsättning], REMOVEFILTERS('Datum'), _dates, TREATAS({_year}, 'Datum'[År]), TREATAS({_month}, 'Datum'[Månadsnummer]), KEEPFILTERS(TREATAS({_name}, 'Analysaxel'[Område]))))
+			VAR _value = [Säljanalys trend 4 värde]
+			RETURN IF(NOT ISBLANK(_value) && ABS(_value - _limit) < 0.01, _value)
+		formatString: #,##0" kr"
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: 6c7679bd-1165-465d-a5fd-ace56012a7ba
+
+	measure 'Säljanalys stapelfärg' =
+			VAR _dates = ALLSELECTED('Datum')
+			VAR _months = SUMMARIZE(_dates, 'Datum'[År], 'Datum'[Månadsnummer])
+			VAR _max = MAXX(_months, CALCULATE([Omsättning], REMOVEFILTERS('Datum'), _dates, 'Datum'[År] = EARLIER('Datum'[År]), 'Datum'[Månadsnummer] = EARLIER('Datum'[Månadsnummer])))
+			RETURN IF([Omsättning] = _max, "#0F3163", "#E4E7EC")
+		formatString: @
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: a4adef5e-da72-4bf5-b5b9-78974b2a1059
+
+	measure 'Säljanalys omsättning max vald period' =
+			VAR _dates = ALLSELECTED('Datum')
+			VAR _months = SUMMARIZE(_dates, 'Datum'[År], 'Datum'[Månadsnummer])
+			RETURN MAXX(_months, VAR _year = 'Datum'[År] VAR _month = 'Datum'[Månadsnummer]
+			 RETURN CALCULATE([Omsättning], REMOVEFILTERS('Datum'), _dates, TREATAS({_year}, 'Datum'[År]), TREATAS({_month}, 'Datum'[Månadsnummer])))
+		formatString: #,##0" kr"
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: 6590fa0f-8eab-45a2-a462-253e3d93d4af
+
+	measure 'Säljanalys omsättning min vald period' =
+			VAR _dates = ALLSELECTED('Datum')
+			VAR _months = SUMMARIZE(_dates, 'Datum'[År], 'Datum'[Månadsnummer])
+			RETURN MINX(_months, VAR _year = 'Datum'[År] VAR _month = 'Datum'[Månadsnummer]
+			 RETURN CALCULATE([Omsättning], REMOVEFILTERS('Datum'), _dates, TREATAS({_year}, 'Datum'[År]), TREATAS({_month}, 'Datum'[Månadsnummer])))
+		formatString: #,##0" kr"
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: cc93b14a-6b9b-48e0-b477-49bc54f7e0ab
+
+	measure 'Säljanalys bruttovinst max vald period' =
+			VAR _dates = ALLSELECTED('Datum')
+			VAR _months = SUMMARIZE(_dates, 'Datum'[År], 'Datum'[Månadsnummer])
+			RETURN MAXX(_months, VAR _year = 'Datum'[År] VAR _month = 'Datum'[Månadsnummer]
+			 RETURN CALCULATE([Bruttovinst], REMOVEFILTERS('Datum'), _dates, TREATAS({_year}, 'Datum'[År]), TREATAS({_month}, 'Datum'[Månadsnummer])))
+		formatString: #,##0" kr"
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: 6310c66a-41c8-4ddf-8167-27ae2bfc2d62
+
+	measure 'Säljanalys bruttovinst min vald period' =
+			VAR _dates = ALLSELECTED('Datum')
+			VAR _months = SUMMARIZE(_dates, 'Datum'[År], 'Datum'[Månadsnummer])
+			RETURN MINX(_months, VAR _year = 'Datum'[År] VAR _month = 'Datum'[Månadsnummer]
+			 RETURN CALCULATE([Bruttovinst], REMOVEFILTERS('Datum'), _dates, TREATAS({_year}, 'Datum'[År]), TREATAS({_month}, 'Datum'[Månadsnummer])))
+		formatString: #,##0" kr"
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: fe90042e-f77b-494b-9de0-e86efb97c574
+
+	measure 'Säljanalys omsättning övriga månader' = VAR _value = [Omsättning] RETURN IF(NOT ISBLANK(_value) && ABS(_value - [Säljanalys omsättning max vald period]) >= 0.01, _value / 1000000)
+		formatString: 0.0" mn kr"
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: b00f2af1-0f76-45d3-a967-2f2f0967ce31
+
+	measure 'Säljanalys omsättning toppmånad' = VAR _value = [Omsättning] RETURN IF(NOT ISBLANK(_value) && ABS(_value - [Säljanalys omsättning max vald period]) < 0.01, _value / 1000000)
+		formatString: 0.0" mn kr"
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: 9b9b7394-fe3e-4b33-83b9-9c4820a99b55
+
+	measure 'Säljanalys bruttovinst max punkt' = VAR _value = [Bruttovinst] RETURN IF(NOT ISBLANK(_value) && ABS(_value - [Säljanalys bruttovinst max vald period]) < 0.01, _value / 1000000)
+		formatString: 0.0" mn kr"
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: 3516d1d1-94b8-4d8f-9dfa-1173574d3c9a
+
+	measure 'Säljanalys bruttovinst min punkt' = VAR _value = [Bruttovinst] RETURN IF(NOT ISBLANK(_value) && ABS(_value - [Säljanalys bruttovinst min vald period]) < 0.01, _value / 1000000)
+		formatString: 0.0" mn kr"
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: d95293c6-fe6f-4eae-ae1b-486c3ab2f8b3
+
+	measure 'Säljanalys säljare 1 namn' =
+			VAR _pool = FILTER(ADDCOLUMNS(ALLSELECTED('Säljare'), "__sales", CALCULATE([Omsättning])), [__sales] > 0)
+			VAR _seller = TOPN(1, TOPN(1, _pool, [__sales], DESC, 'Säljare'[Säljarnyckel], ASC), [__sales], ASC, 'Säljare'[Säljarnyckel], DESC)
+			VAR _enough = COUNTROWS(_pool) >= 1
+			RETURN IF(_enough, MAXX(_seller, 'Säljare'[Säljare]))
+		formatString: @
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: 5a0ebed8-d9da-4397-a96a-1c5112f80691
+
+	measure 'Säljanalys säljare 1 belopp' =
+			VAR _pool = FILTER(ADDCOLUMNS(ALLSELECTED('Säljare'), "__sales", CALCULATE([Omsättning])), [__sales] > 0)
+			VAR _seller = TOPN(1, TOPN(1, _pool, [__sales], DESC, 'Säljare'[Säljarnyckel], ASC), [__sales], ASC, 'Säljare'[Säljarnyckel], DESC)
+			VAR _enough = COUNTROWS(_pool) >= 1
+			RETURN IF(_enough, SUMX(_seller, [__sales]))
+		formatString: #,##0" kr"
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: fec5256f-8bba-45d5-bc36-d5cb56d277b8
+
+	measure 'Säljanalys säljare 1 tillväxt' =
+			VAR _pool = FILTER(ADDCOLUMNS(ALLSELECTED('Säljare'), "__sales", CALCULATE([Omsättning])), [__sales] > 0)
+			VAR _seller = TOPN(1, TOPN(1, _pool, [__sales], DESC, 'Säljare'[Säljarnyckel], ASC), [__sales], ASC, 'Säljare'[Säljarnyckel], DESC)
+			VAR _enough = COUNTROWS(_pool) >= 1
+			VAR _current = SUMX(_seller, [__sales])
+			VAR _prior = SUMX(_seller, CALCULATE([Omsättning föregående år]))
+			RETURN IF(_enough, DIVIDE(_current - _prior, _prior))
+		formatString: +0.0 %;-0.0 %;0.0 %
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: db5a6de9-7118-42fd-84cd-e595a3596045
+
+	measure 'Säljanalys säljare 1 initialer' =
+			VAR _name = [Säljanalys säljare 1 namn]
+			RETURN IF(NOT ISBLANK(_name), LEFT(_name, 1) & MID(_name, SEARCH(" ", _name, 1, LEN(_name)) + 1, 1))
+		formatString: @
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: 1dea6b73-e4ed-4573-b267-97b5914aa513
+
+	measure 'Säljanalys säljare 1 belopp etikett' =
+			VAR _value = [Säljanalys säljare 1 belopp]
+			RETURN IF(NOT ISBLANK(_value), FORMAT(_value / 1000000, "0.00", "sv-SE") & " mn kr")
+		formatString: @
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: 4765174b-f174-46f1-ac6b-69ea37621c37
+
+	measure 'Säljanalys säljare 1 tillväxt etikett' =
+			VAR _value = [Säljanalys säljare 1 tillväxt]
+			RETURN IF(NOT ISBLANK(_value), FORMAT(_value, "+0.0 %;-0.0 %;0.0 %", "sv-SE") & IF(_value > 0, " ▲", IF(_value < 0, " ▼", " –")) & " mot föreg. år")
+		formatString: @
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: b85c6747-1c72-4609-bd89-073036364684
+
+	measure 'Säljanalys säljare 1 segment' =
+			VAR _value = [Säljanalys säljare 1 belopp]
+			RETURN IF(NOT ISBLANK(_value), REPT(UNICHAR(9648), MAX(1, ROUNDUP(18 * DIVIDE(_value, [Säljanalys säljare 1 belopp]), 0))))
+		formatString: @
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: 29908243-eaee-41b8-acc1-facbe3e88a59
+
+	measure 'Säljanalys säljare 2 namn' =
+			VAR _pool = FILTER(ADDCOLUMNS(ALLSELECTED('Säljare'), "__sales", CALCULATE([Omsättning])), [__sales] > 0)
+			VAR _seller = TOPN(1, TOPN(2, _pool, [__sales], DESC, 'Säljare'[Säljarnyckel], ASC), [__sales], ASC, 'Säljare'[Säljarnyckel], DESC)
+			VAR _enough = COUNTROWS(_pool) >= 2
+			RETURN IF(_enough, MAXX(_seller, 'Säljare'[Säljare]))
+		formatString: @
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: 0827182e-ae6c-4435-bd4b-5959d603e7de
+
+	measure 'Säljanalys säljare 2 belopp' =
+			VAR _pool = FILTER(ADDCOLUMNS(ALLSELECTED('Säljare'), "__sales", CALCULATE([Omsättning])), [__sales] > 0)
+			VAR _seller = TOPN(1, TOPN(2, _pool, [__sales], DESC, 'Säljare'[Säljarnyckel], ASC), [__sales], ASC, 'Säljare'[Säljarnyckel], DESC)
+			VAR _enough = COUNTROWS(_pool) >= 2
+			RETURN IF(_enough, SUMX(_seller, [__sales]))
+		formatString: #,##0" kr"
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: d5600b2c-6fb3-4a53-87a1-c07169d42837
+
+	measure 'Säljanalys säljare 2 tillväxt' =
+			VAR _pool = FILTER(ADDCOLUMNS(ALLSELECTED('Säljare'), "__sales", CALCULATE([Omsättning])), [__sales] > 0)
+			VAR _seller = TOPN(1, TOPN(2, _pool, [__sales], DESC, 'Säljare'[Säljarnyckel], ASC), [__sales], ASC, 'Säljare'[Säljarnyckel], DESC)
+			VAR _enough = COUNTROWS(_pool) >= 2
+			VAR _current = SUMX(_seller, [__sales])
+			VAR _prior = SUMX(_seller, CALCULATE([Omsättning föregående år]))
+			RETURN IF(_enough, DIVIDE(_current - _prior, _prior))
+		formatString: +0.0 %;-0.0 %;0.0 %
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: a002b835-3887-48df-a4ff-635016af0054
+
+	measure 'Säljanalys säljare 2 initialer' =
+			VAR _name = [Säljanalys säljare 2 namn]
+			RETURN IF(NOT ISBLANK(_name), LEFT(_name, 1) & MID(_name, SEARCH(" ", _name, 1, LEN(_name)) + 1, 1))
+		formatString: @
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: 9dd54ca4-2255-467e-a8da-86e74a060abe
+
+	measure 'Säljanalys säljare 2 belopp etikett' =
+			VAR _value = [Säljanalys säljare 2 belopp]
+			RETURN IF(NOT ISBLANK(_value), FORMAT(_value / 1000000, "0.00", "sv-SE") & " mn kr")
+		formatString: @
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: 5ea3e304-892f-45eb-8108-315b4c84672e
+
+	measure 'Säljanalys säljare 2 tillväxt etikett' =
+			VAR _value = [Säljanalys säljare 2 tillväxt]
+			RETURN IF(NOT ISBLANK(_value), FORMAT(_value, "+0.0 %;-0.0 %;0.0 %", "sv-SE") & IF(_value > 0, " ▲", IF(_value < 0, " ▼", " –")) & " mot föreg. år")
+		formatString: @
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: e170ff83-f7f2-4b3a-bf5e-dc839478dc4e
+
+	measure 'Säljanalys säljare 2 segment' =
+			VAR _value = [Säljanalys säljare 2 belopp]
+			RETURN IF(NOT ISBLANK(_value), REPT(UNICHAR(9648), MAX(1, ROUNDUP(18 * DIVIDE(_value, [Säljanalys säljare 1 belopp]), 0))))
+		formatString: @
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: 9eee6aac-382b-4070-9e35-c74cd23d7e57
+
+	measure 'Säljanalys säljare 3 namn' =
+			VAR _pool = FILTER(ADDCOLUMNS(ALLSELECTED('Säljare'), "__sales", CALCULATE([Omsättning])), [__sales] > 0)
+			VAR _seller = TOPN(1, TOPN(3, _pool, [__sales], DESC, 'Säljare'[Säljarnyckel], ASC), [__sales], ASC, 'Säljare'[Säljarnyckel], DESC)
+			VAR _enough = COUNTROWS(_pool) >= 3
+			RETURN IF(_enough, MAXX(_seller, 'Säljare'[Säljare]))
+		formatString: @
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: f69af937-7e41-4048-bbe4-3a701b725034
+
+	measure 'Säljanalys säljare 3 belopp' =
+			VAR _pool = FILTER(ADDCOLUMNS(ALLSELECTED('Säljare'), "__sales", CALCULATE([Omsättning])), [__sales] > 0)
+			VAR _seller = TOPN(1, TOPN(3, _pool, [__sales], DESC, 'Säljare'[Säljarnyckel], ASC), [__sales], ASC, 'Säljare'[Säljarnyckel], DESC)
+			VAR _enough = COUNTROWS(_pool) >= 3
+			RETURN IF(_enough, SUMX(_seller, [__sales]))
+		formatString: #,##0" kr"
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: 2090584e-f17b-413a-9936-0afce1cfb32c
+
+	measure 'Säljanalys säljare 3 tillväxt' =
+			VAR _pool = FILTER(ADDCOLUMNS(ALLSELECTED('Säljare'), "__sales", CALCULATE([Omsättning])), [__sales] > 0)
+			VAR _seller = TOPN(1, TOPN(3, _pool, [__sales], DESC, 'Säljare'[Säljarnyckel], ASC), [__sales], ASC, 'Säljare'[Säljarnyckel], DESC)
+			VAR _enough = COUNTROWS(_pool) >= 3
+			VAR _current = SUMX(_seller, [__sales])
+			VAR _prior = SUMX(_seller, CALCULATE([Omsättning föregående år]))
+			RETURN IF(_enough, DIVIDE(_current - _prior, _prior))
+		formatString: +0.0 %;-0.0 %;0.0 %
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: f42ead46-880c-4b79-acd5-fa2414a2f4de
+
+	measure 'Säljanalys säljare 3 initialer' =
+			VAR _name = [Säljanalys säljare 3 namn]
+			RETURN IF(NOT ISBLANK(_name), LEFT(_name, 1) & MID(_name, SEARCH(" ", _name, 1, LEN(_name)) + 1, 1))
+		formatString: @
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: d7c786ea-7c81-40e1-acfd-098355568959
+
+	measure 'Säljanalys säljare 3 belopp etikett' =
+			VAR _value = [Säljanalys säljare 3 belopp]
+			RETURN IF(NOT ISBLANK(_value), FORMAT(_value / 1000000, "0.00", "sv-SE") & " mn kr")
+		formatString: @
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: ca4ec5d6-53ef-4aa5-8e35-c2d7ab1a972c
+
+	measure 'Säljanalys säljare 3 tillväxt etikett' =
+			VAR _value = [Säljanalys säljare 3 tillväxt]
+			RETURN IF(NOT ISBLANK(_value), FORMAT(_value, "+0.0 %;-0.0 %;0.0 %", "sv-SE") & IF(_value > 0, " ▲", IF(_value < 0, " ▼", " –")) & " mot föreg. år")
+		formatString: @
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: 8ec8f4dd-0bb8-42a8-813b-a1011d2c666e
+
+	measure 'Säljanalys säljare 3 segment' =
+			VAR _value = [Säljanalys säljare 3 belopp]
+			RETURN IF(NOT ISBLANK(_value), REPT(UNICHAR(9648), MAX(1, ROUNDUP(18 * DIVIDE(_value, [Säljanalys säljare 1 belopp]), 0))))
+		formatString: @
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: 03561f64-3ce2-4a78-8203-3afae5988230
+
+	measure 'Säljanalys säljare 4 namn' =
+			VAR _pool = FILTER(ADDCOLUMNS(ALLSELECTED('Säljare'), "__sales", CALCULATE([Omsättning])), [__sales] > 0)
+			VAR _seller = TOPN(1, TOPN(4, _pool, [__sales], DESC, 'Säljare'[Säljarnyckel], ASC), [__sales], ASC, 'Säljare'[Säljarnyckel], DESC)
+			VAR _enough = COUNTROWS(_pool) >= 4
+			RETURN IF(_enough, MAXX(_seller, 'Säljare'[Säljare]))
+		formatString: @
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: bebd3736-c391-4f8d-b736-8ba4d3a5ec90
+
+	measure 'Säljanalys säljare 4 belopp' =
+			VAR _pool = FILTER(ADDCOLUMNS(ALLSELECTED('Säljare'), "__sales", CALCULATE([Omsättning])), [__sales] > 0)
+			VAR _seller = TOPN(1, TOPN(4, _pool, [__sales], DESC, 'Säljare'[Säljarnyckel], ASC), [__sales], ASC, 'Säljare'[Säljarnyckel], DESC)
+			VAR _enough = COUNTROWS(_pool) >= 4
+			RETURN IF(_enough, SUMX(_seller, [__sales]))
+		formatString: #,##0" kr"
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: 3f58d56b-82cb-464b-8e9e-13a2d69bcb5e
+
+	measure 'Säljanalys säljare 4 tillväxt' =
+			VAR _pool = FILTER(ADDCOLUMNS(ALLSELECTED('Säljare'), "__sales", CALCULATE([Omsättning])), [__sales] > 0)
+			VAR _seller = TOPN(1, TOPN(4, _pool, [__sales], DESC, 'Säljare'[Säljarnyckel], ASC), [__sales], ASC, 'Säljare'[Säljarnyckel], DESC)
+			VAR _enough = COUNTROWS(_pool) >= 4
+			VAR _current = SUMX(_seller, [__sales])
+			VAR _prior = SUMX(_seller, CALCULATE([Omsättning föregående år]))
+			RETURN IF(_enough, DIVIDE(_current - _prior, _prior))
+		formatString: +0.0 %;-0.0 %;0.0 %
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: 9c425d50-dbc0-4d26-b42c-77dc4ae36591
+
+	measure 'Säljanalys säljare 4 initialer' =
+			VAR _name = [Säljanalys säljare 4 namn]
+			RETURN IF(NOT ISBLANK(_name), LEFT(_name, 1) & MID(_name, SEARCH(" ", _name, 1, LEN(_name)) + 1, 1))
+		formatString: @
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: a17e7c09-b6b8-492e-8e2e-6e30ec699f77
+
+	measure 'Säljanalys säljare 4 belopp etikett' =
+			VAR _value = [Säljanalys säljare 4 belopp]
+			RETURN IF(NOT ISBLANK(_value), FORMAT(_value / 1000000, "0.00", "sv-SE") & " mn kr")
+		formatString: @
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: 89302a63-a3b5-4f41-8434-9fb147786c54
+
+	measure 'Säljanalys säljare 4 tillväxt etikett' =
+			VAR _value = [Säljanalys säljare 4 tillväxt]
+			RETURN IF(NOT ISBLANK(_value), FORMAT(_value, "+0.0 %;-0.0 %;0.0 %", "sv-SE") & IF(_value > 0, " ▲", IF(_value < 0, " ▼", " –")) & " mot föreg. år")
+		formatString: @
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: 270c4a40-e717-4b02-a116-5f84ab3f5bee
+
+	measure 'Säljanalys säljare 4 segment' =
+			VAR _value = [Säljanalys säljare 4 belopp]
+			RETURN IF(NOT ISBLANK(_value), REPT(UNICHAR(9648), MAX(1, ROUNDUP(18 * DIVIDE(_value, [Säljanalys säljare 1 belopp]), 0))))
+		formatString: @
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: 81c8d4eb-cb18-4603-8663-31e089845928
+
+	measure 'Säljanalys säljare 5 namn' =
+			VAR _pool = FILTER(ADDCOLUMNS(ALLSELECTED('Säljare'), "__sales", CALCULATE([Omsättning])), [__sales] > 0)
+			VAR _seller = TOPN(1, TOPN(5, _pool, [__sales], DESC, 'Säljare'[Säljarnyckel], ASC), [__sales], ASC, 'Säljare'[Säljarnyckel], DESC)
+			VAR _enough = COUNTROWS(_pool) >= 5
+			RETURN IF(_enough, MAXX(_seller, 'Säljare'[Säljare]))
+		formatString: @
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: 5615cc62-e74d-4b96-b2d2-5ea1ed954993
+
+	measure 'Säljanalys säljare 5 belopp' =
+			VAR _pool = FILTER(ADDCOLUMNS(ALLSELECTED('Säljare'), "__sales", CALCULATE([Omsättning])), [__sales] > 0)
+			VAR _seller = TOPN(1, TOPN(5, _pool, [__sales], DESC, 'Säljare'[Säljarnyckel], ASC), [__sales], ASC, 'Säljare'[Säljarnyckel], DESC)
+			VAR _enough = COUNTROWS(_pool) >= 5
+			RETURN IF(_enough, SUMX(_seller, [__sales]))
+		formatString: #,##0" kr"
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: 2bcb7842-8cb3-40f3-a7bf-8b9b304c39ca
+
+	measure 'Säljanalys säljare 5 tillväxt' =
+			VAR _pool = FILTER(ADDCOLUMNS(ALLSELECTED('Säljare'), "__sales", CALCULATE([Omsättning])), [__sales] > 0)
+			VAR _seller = TOPN(1, TOPN(5, _pool, [__sales], DESC, 'Säljare'[Säljarnyckel], ASC), [__sales], ASC, 'Säljare'[Säljarnyckel], DESC)
+			VAR _enough = COUNTROWS(_pool) >= 5
+			VAR _current = SUMX(_seller, [__sales])
+			VAR _prior = SUMX(_seller, CALCULATE([Omsättning föregående år]))
+			RETURN IF(_enough, DIVIDE(_current - _prior, _prior))
+		formatString: +0.0 %;-0.0 %;0.0 %
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: b63c3406-189b-4171-aaed-a2a8c47f3d95
+
+	measure 'Säljanalys säljare 5 initialer' =
+			VAR _name = [Säljanalys säljare 5 namn]
+			RETURN IF(NOT ISBLANK(_name), LEFT(_name, 1) & MID(_name, SEARCH(" ", _name, 1, LEN(_name)) + 1, 1))
+		formatString: @
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: 6edf36c9-aac4-4386-950e-18f771efb576
+
+	measure 'Säljanalys säljare 5 belopp etikett' =
+			VAR _value = [Säljanalys säljare 5 belopp]
+			RETURN IF(NOT ISBLANK(_value), FORMAT(_value / 1000000, "0.00", "sv-SE") & " mn kr")
+		formatString: @
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: 13e40a14-4fd4-491e-8bf8-3e86c8ac4d28
+
+	measure 'Säljanalys säljare 5 tillväxt etikett' =
+			VAR _value = [Säljanalys säljare 5 tillväxt]
+			RETURN IF(NOT ISBLANK(_value), FORMAT(_value, "+0.0 %;-0.0 %;0.0 %", "sv-SE") & IF(_value > 0, " ▲", IF(_value < 0, " ▼", " –")) & " mot föreg. år")
+		formatString: @
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: d41169c2-536c-4d05-8e52-345dc82db82e
+
+	measure 'Säljanalys säljare 5 segment' =
+			VAR _value = [Säljanalys säljare 5 belopp]
+			RETURN IF(NOT ISBLANK(_value), REPT(UNICHAR(9648), MAX(1, ROUNDUP(18 * DIVIDE(_value, [Säljanalys säljare 1 belopp]), 0))))
+		formatString: @
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: 6250e550-cfaa-4834-b1e6-998a51715a01
+
+	measure 'Säljanalys säljare 6 namn' =
+			VAR _pool = FILTER(ADDCOLUMNS(ALLSELECTED('Säljare'), "__sales", CALCULATE([Omsättning])), [__sales] > 0)
+			VAR _seller = TOPN(1, TOPN(6, _pool, [__sales], DESC, 'Säljare'[Säljarnyckel], ASC), [__sales], ASC, 'Säljare'[Säljarnyckel], DESC)
+			VAR _enough = COUNTROWS(_pool) >= 6
+			RETURN IF(_enough, MAXX(_seller, 'Säljare'[Säljare]))
+		formatString: @
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: 2a6ec690-f946-4eb0-aa06-0632619b0112
+
+	measure 'Säljanalys säljare 6 belopp' =
+			VAR _pool = FILTER(ADDCOLUMNS(ALLSELECTED('Säljare'), "__sales", CALCULATE([Omsättning])), [__sales] > 0)
+			VAR _seller = TOPN(1, TOPN(6, _pool, [__sales], DESC, 'Säljare'[Säljarnyckel], ASC), [__sales], ASC, 'Säljare'[Säljarnyckel], DESC)
+			VAR _enough = COUNTROWS(_pool) >= 6
+			RETURN IF(_enough, SUMX(_seller, [__sales]))
+		formatString: #,##0" kr"
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: 73f62652-b968-4300-9082-56f39546fc25
+
+	measure 'Säljanalys säljare 6 tillväxt' =
+			VAR _pool = FILTER(ADDCOLUMNS(ALLSELECTED('Säljare'), "__sales", CALCULATE([Omsättning])), [__sales] > 0)
+			VAR _seller = TOPN(1, TOPN(6, _pool, [__sales], DESC, 'Säljare'[Säljarnyckel], ASC), [__sales], ASC, 'Säljare'[Säljarnyckel], DESC)
+			VAR _enough = COUNTROWS(_pool) >= 6
+			VAR _current = SUMX(_seller, [__sales])
+			VAR _prior = SUMX(_seller, CALCULATE([Omsättning föregående år]))
+			RETURN IF(_enough, DIVIDE(_current - _prior, _prior))
+		formatString: +0.0 %;-0.0 %;0.0 %
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: 8bfd9ae8-dfbe-41bc-bc22-c33e04aa3c1c
+
+	measure 'Säljanalys säljare 6 initialer' =
+			VAR _name = [Säljanalys säljare 6 namn]
+			RETURN IF(NOT ISBLANK(_name), LEFT(_name, 1) & MID(_name, SEARCH(" ", _name, 1, LEN(_name)) + 1, 1))
+		formatString: @
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: dae70ad9-24a6-4b71-a2f2-692379cd407a
+
+	measure 'Säljanalys säljare 6 belopp etikett' =
+			VAR _value = [Säljanalys säljare 6 belopp]
+			RETURN IF(NOT ISBLANK(_value), FORMAT(_value / 1000000, "0.00", "sv-SE") & " mn kr")
+		formatString: @
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: e92918bd-6c68-4955-8ba2-7cdc60c1401c
+
+	measure 'Säljanalys säljare 6 tillväxt etikett' =
+			VAR _value = [Säljanalys säljare 6 tillväxt]
+			RETURN IF(NOT ISBLANK(_value), FORMAT(_value, "+0.0 %;-0.0 %;0.0 %", "sv-SE") & IF(_value > 0, " ▲", IF(_value < 0, " ▼", " –")) & " mot föreg. år")
+		formatString: @
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: 707638df-e710-411d-a13e-5e214a4c027c
+
+	measure 'Säljanalys säljare 6 segment' =
+			VAR _value = [Säljanalys säljare 6 belopp]
+			RETURN IF(NOT ISBLANK(_value), REPT(UNICHAR(9648), MAX(1, ROUNDUP(18 * DIVIDE(_value, [Säljanalys säljare 1 belopp]), 0))))
+		formatString: @
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: 9dbc098f-9c2b-4b98-9bf1-ac39f570424d
+
+	measure 'Säljanalys säljare 7 namn' =
+			VAR _pool = FILTER(ADDCOLUMNS(ALLSELECTED('Säljare'), "__sales", CALCULATE([Omsättning])), [__sales] > 0)
+			VAR _seller = TOPN(1, TOPN(7, _pool, [__sales], DESC, 'Säljare'[Säljarnyckel], ASC), [__sales], ASC, 'Säljare'[Säljarnyckel], DESC)
+			VAR _enough = COUNTROWS(_pool) >= 7
+			RETURN IF(_enough, MAXX(_seller, 'Säljare'[Säljare]))
+		formatString: @
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: 8796a908-e6e8-4b52-9df0-6a63ca7b8a6c
+
+	measure 'Säljanalys säljare 7 belopp' =
+			VAR _pool = FILTER(ADDCOLUMNS(ALLSELECTED('Säljare'), "__sales", CALCULATE([Omsättning])), [__sales] > 0)
+			VAR _seller = TOPN(1, TOPN(7, _pool, [__sales], DESC, 'Säljare'[Säljarnyckel], ASC), [__sales], ASC, 'Säljare'[Säljarnyckel], DESC)
+			VAR _enough = COUNTROWS(_pool) >= 7
+			RETURN IF(_enough, SUMX(_seller, [__sales]))
+		formatString: #,##0" kr"
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: a6169179-c474-4dea-bf26-1287b519c100
+
+	measure 'Säljanalys säljare 7 tillväxt' =
+			VAR _pool = FILTER(ADDCOLUMNS(ALLSELECTED('Säljare'), "__sales", CALCULATE([Omsättning])), [__sales] > 0)
+			VAR _seller = TOPN(1, TOPN(7, _pool, [__sales], DESC, 'Säljare'[Säljarnyckel], ASC), [__sales], ASC, 'Säljare'[Säljarnyckel], DESC)
+			VAR _enough = COUNTROWS(_pool) >= 7
+			VAR _current = SUMX(_seller, [__sales])
+			VAR _prior = SUMX(_seller, CALCULATE([Omsättning föregående år]))
+			RETURN IF(_enough, DIVIDE(_current - _prior, _prior))
+		formatString: +0.0 %;-0.0 %;0.0 %
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: 5a2ba104-1064-4310-b29f-2d86dbe9b6a3
+
+	measure 'Säljanalys säljare 7 initialer' =
+			VAR _name = [Säljanalys säljare 7 namn]
+			RETURN IF(NOT ISBLANK(_name), LEFT(_name, 1) & MID(_name, SEARCH(" ", _name, 1, LEN(_name)) + 1, 1))
+		formatString: @
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: 735af78b-5c31-4cfa-ae03-50aa5433478f
+
+	measure 'Säljanalys säljare 7 belopp etikett' =
+			VAR _value = [Säljanalys säljare 7 belopp]
+			RETURN IF(NOT ISBLANK(_value), FORMAT(_value / 1000000, "0.00", "sv-SE") & " mn kr")
+		formatString: @
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: 2fb0512d-4486-428b-a51c-5d80026a4878
+
+	measure 'Säljanalys säljare 7 tillväxt etikett' =
+			VAR _value = [Säljanalys säljare 7 tillväxt]
+			RETURN IF(NOT ISBLANK(_value), FORMAT(_value, "+0.0 %;-0.0 %;0.0 %", "sv-SE") & IF(_value > 0, " ▲", IF(_value < 0, " ▼", " –")) & " mot föreg. år")
+		formatString: @
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: 8e12d0aa-9ff4-4efb-b4ed-73b495645757
+
+	measure 'Säljanalys säljare 7 segment' =
+			VAR _value = [Säljanalys säljare 7 belopp]
+			RETURN IF(NOT ISBLANK(_value), REPT(UNICHAR(9648), MAX(1, ROUNDUP(18 * DIVIDE(_value, [Säljanalys säljare 1 belopp]), 0))))
+		formatString: @
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: 47a8368b-302a-477b-996c-f89bd88c2d4d
+
+	measure 'Säljanalys trend 1 bild' =
+			VAR _name = [Säljanalys trend 1 namn]
+			VAR _dates = ALLSELECTED('Datum')
+			VAR _months = SUMMARIZE(_dates, 'Datum'[År], 'Datum'[Månadsnummer])
+			VAR _values = ADDCOLUMNS(_months, "__v", VAR _year = 'Datum'[År] VAR _month = 'Datum'[Månadsnummer] RETURN CALCULATE([Säljanalys gruppomsättning], REMOVEFILTERS('Datum'), TREATAS({_year}, 'Datum'[År]), TREATAS({_month}, 'Datum'[Månadsnummer]), TREATAS({_name}, 'Analysaxel'[Område])))
+			VAR _min = MINX(_values, [__v])
+			VAR _max = MAXX(_values, [__v])
+			VAR _first = MINX(_months, 'Datum'[Månadsnummer])
+			VAR _last = MAXX(_months, 'Datum'[Månadsnummer])
+			VAR _scaled = ADDCOLUMNS(_values, "__x", 8 + 308*DIVIDE('Datum'[Månadsnummer]-_first, _last-_first, 0.5))
+			VAR _points = CONCATENATEX(_scaled, FORMAT([__x], "0.0", "en-US") & "," & FORMAT(22 - 18*DIVIDE([__v]-_min, _max-_min, 0.5), "0.0", "en-US"), " ", 'Datum'[Månadsnummer], ASC)
+			VAR _markers = CONCATENATEX(FILTER(_scaled, ABS([__v]-_max)<0.01 || ABS([__v]-_min)<0.01), "<circle cx='" & FORMAT([__x], "0.0", "en-US") & "' cy='" & FORMAT(22 - 18*DIVIDE([__v]-_min,_max-_min,0.5), "0.0", "en-US") & "' r='2.2' fill='" & IF(ABS([__v]-_max)<0.01,"rgb(24,116,71)","rgb(184,50,50)") & "'/>", "")
+			VAR _area = IF(COUNTROWS(_months) > 1, "<polygon points='8,26 " & _points & " 316,26' fill='rgb(231,237,245)'/>")
+			RETURN IF(NOT ISBLANK(_name), "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 324 28'>" & _area & "<polyline points='" & _points & "' fill='none' stroke='rgb(15,49,99)' stroke-width='1.5'/>" & _markers & "</svg>")
+		formatString: @
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: 7aab4193-408a-49e8-ad3c-5117765599b7
+		dataCategory: ImageUrl
+
+	measure 'Säljanalys trend 2 bild' =
+			VAR _name = [Säljanalys trend 2 namn]
+			VAR _dates = ALLSELECTED('Datum')
+			VAR _months = SUMMARIZE(_dates, 'Datum'[År], 'Datum'[Månadsnummer])
+			VAR _values = ADDCOLUMNS(_months, "__v", VAR _year = 'Datum'[År] VAR _month = 'Datum'[Månadsnummer] RETURN CALCULATE([Säljanalys gruppomsättning], REMOVEFILTERS('Datum'), TREATAS({_year}, 'Datum'[År]), TREATAS({_month}, 'Datum'[Månadsnummer]), TREATAS({_name}, 'Analysaxel'[Område])))
+			VAR _min = MINX(_values, [__v])
+			VAR _max = MAXX(_values, [__v])
+			VAR _first = MINX(_months, 'Datum'[Månadsnummer])
+			VAR _last = MAXX(_months, 'Datum'[Månadsnummer])
+			VAR _scaled = ADDCOLUMNS(_values, "__x", 8 + 308*DIVIDE('Datum'[Månadsnummer]-_first, _last-_first, 0.5))
+			VAR _points = CONCATENATEX(_scaled, FORMAT([__x], "0.0", "en-US") & "," & FORMAT(22 - 18*DIVIDE([__v]-_min, _max-_min, 0.5), "0.0", "en-US"), " ", 'Datum'[Månadsnummer], ASC)
+			VAR _markers = CONCATENATEX(FILTER(_scaled, ABS([__v]-_max)<0.01 || ABS([__v]-_min)<0.01), "<circle cx='" & FORMAT([__x], "0.0", "en-US") & "' cy='" & FORMAT(22 - 18*DIVIDE([__v]-_min,_max-_min,0.5), "0.0", "en-US") & "' r='2.2' fill='" & IF(ABS([__v]-_max)<0.01,"rgb(24,116,71)","rgb(184,50,50)") & "'/>", "")
+			VAR _area = IF(COUNTROWS(_months) > 1, "<polygon points='8,26 " & _points & " 316,26' fill='rgb(231,237,245)'/>")
+			RETURN IF(NOT ISBLANK(_name), "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 324 28'>" & _area & "<polyline points='" & _points & "' fill='none' stroke='rgb(15,49,99)' stroke-width='1.5'/>" & _markers & "</svg>")
+		formatString: @
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: cc2815f4-9cbb-46c1-95ff-2a97ee17ce37
+		dataCategory: ImageUrl
+
+	measure 'Säljanalys trend 3 bild' =
+			VAR _name = [Säljanalys trend 3 namn]
+			VAR _dates = ALLSELECTED('Datum')
+			VAR _months = SUMMARIZE(_dates, 'Datum'[År], 'Datum'[Månadsnummer])
+			VAR _values = ADDCOLUMNS(_months, "__v", VAR _year = 'Datum'[År] VAR _month = 'Datum'[Månadsnummer] RETURN CALCULATE([Säljanalys gruppomsättning], REMOVEFILTERS('Datum'), TREATAS({_year}, 'Datum'[År]), TREATAS({_month}, 'Datum'[Månadsnummer]), TREATAS({_name}, 'Analysaxel'[Område])))
+			VAR _min = MINX(_values, [__v])
+			VAR _max = MAXX(_values, [__v])
+			VAR _first = MINX(_months, 'Datum'[Månadsnummer])
+			VAR _last = MAXX(_months, 'Datum'[Månadsnummer])
+			VAR _scaled = ADDCOLUMNS(_values, "__x", 8 + 308*DIVIDE('Datum'[Månadsnummer]-_first, _last-_first, 0.5))
+			VAR _points = CONCATENATEX(_scaled, FORMAT([__x], "0.0", "en-US") & "," & FORMAT(22 - 18*DIVIDE([__v]-_min, _max-_min, 0.5), "0.0", "en-US"), " ", 'Datum'[Månadsnummer], ASC)
+			VAR _markers = CONCATENATEX(FILTER(_scaled, ABS([__v]-_max)<0.01 || ABS([__v]-_min)<0.01), "<circle cx='" & FORMAT([__x], "0.0", "en-US") & "' cy='" & FORMAT(22 - 18*DIVIDE([__v]-_min,_max-_min,0.5), "0.0", "en-US") & "' r='2.2' fill='" & IF(ABS([__v]-_max)<0.01,"rgb(24,116,71)","rgb(184,50,50)") & "'/>", "")
+			VAR _area = IF(COUNTROWS(_months) > 1, "<polygon points='8,26 " & _points & " 316,26' fill='rgb(231,237,245)'/>")
+			RETURN IF(NOT ISBLANK(_name), "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 324 28'>" & _area & "<polyline points='" & _points & "' fill='none' stroke='rgb(15,49,99)' stroke-width='1.5'/>" & _markers & "</svg>")
+		formatString: @
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: e3f35a4b-e61b-4419-a7b1-b0d24306a71f
+		dataCategory: ImageUrl
+
+	measure 'Säljanalys trend 4 bild' =
+			VAR _name = [Säljanalys trend 4 namn]
+			VAR _dates = ALLSELECTED('Datum')
+			VAR _months = SUMMARIZE(_dates, 'Datum'[År], 'Datum'[Månadsnummer])
+			VAR _values = ADDCOLUMNS(_months, "__v", VAR _year = 'Datum'[År] VAR _month = 'Datum'[Månadsnummer] RETURN CALCULATE([Säljanalys gruppomsättning], REMOVEFILTERS('Datum'), TREATAS({_year}, 'Datum'[År]), TREATAS({_month}, 'Datum'[Månadsnummer]), TREATAS({_name}, 'Analysaxel'[Område])))
+			VAR _min = MINX(_values, [__v])
+			VAR _max = MAXX(_values, [__v])
+			VAR _first = MINX(_months, 'Datum'[Månadsnummer])
+			VAR _last = MAXX(_months, 'Datum'[Månadsnummer])
+			VAR _scaled = ADDCOLUMNS(_values, "__x", 8 + 308*DIVIDE('Datum'[Månadsnummer]-_first, _last-_first, 0.5))
+			VAR _points = CONCATENATEX(_scaled, FORMAT([__x], "0.0", "en-US") & "," & FORMAT(22 - 18*DIVIDE([__v]-_min, _max-_min, 0.5), "0.0", "en-US"), " ", 'Datum'[Månadsnummer], ASC)
+			VAR _markers = CONCATENATEX(FILTER(_scaled, ABS([__v]-_max)<0.01 || ABS([__v]-_min)<0.01), "<circle cx='" & FORMAT([__x], "0.0", "en-US") & "' cy='" & FORMAT(22 - 18*DIVIDE([__v]-_min,_max-_min,0.5), "0.0", "en-US") & "' r='2.2' fill='" & IF(ABS([__v]-_max)<0.01,"rgb(24,116,71)","rgb(184,50,50)") & "'/>", "")
+			VAR _area = IF(COUNTROWS(_months) > 1, "<polygon points='8,26 " & _points & " 316,26' fill='rgb(231,237,245)'/>")
+			RETURN IF(NOT ISBLANK(_name), "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 324 28'>" & _area & "<polyline points='" & _points & "' fill='none' stroke='rgb(15,49,99)' stroke-width='1.5'/>" & _markers & "</svg>")
+		formatString: @
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: bc3091fd-3ff1-427f-b4b6-1babe73e6a6d
+		dataCategory: ImageUrl
+
+	measure 'Säljanalys trend 1 namn etikett' = COALESCE([Säljanalys trend 1 namn], UNICHAR(8203))
+		formatString: @
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: ca18347e-a2eb-411b-927c-0eaa7d039d57
+
+	measure 'Säljanalys trend 2 namn etikett' = COALESCE([Säljanalys trend 2 namn], UNICHAR(8203))
+		formatString: @
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: 46c11eec-0cb3-49f2-92f3-02560ed5cbbe
+
+	measure 'Säljanalys trend 3 namn etikett' = COALESCE([Säljanalys trend 3 namn], UNICHAR(8203))
+		formatString: @
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: 4e85769f-bda0-429a-ad92-8967fb42d1d7
+
+	measure 'Säljanalys trend 4 namn etikett' = COALESCE([Säljanalys trend 4 namn], UNICHAR(8203))
+		formatString: @
+		isHidden
+		displayFolder: Försäljningsanalys\Presentation
+		lineageTag: 84213a10-c1d1-4de1-b8f7-8e1ea4cca6a1
+
+	measure 'Transaktion marginalspår' =
+			VAR _margin = [Bruttomarginal]
+			VAR _length = MIN(1, ABS(_margin)) * 60
+			VAR _left = IF(_margin < 0, 60 - _length, 60)
+			VAR _color = IF(_margin < 0, "rgb(184,50,50)", "rgb(24,116,71)")
+			RETURN IF(NOT ISBLANK(_margin), "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 22'><rect x='0' y='6' width='120' height='10' rx='5' fill='rgb(232,232,232)'/><rect x='" & FORMAT(_left, "0.00", "en-US") & "' y='6' width='" & FORMAT(_length, "0.00", "en-US") & "' height='10' rx='5' fill='" & _color & "'/><path d='M60 4v14' stroke='rgb(189,195,203)' stroke-width='0.7'/></svg>")
+		formatString: @
+		isHidden
+		displayFolder: Transaktioner\Presentation
+		lineageTag: 1a7ee464-5c88-45f5-978a-d4e697b8dcbd
+		dataCategory: ImageUrl
+
+	column Radnyckel
+		dataType: int64
+		isHidden
+		lineageTag: d2eebff5-e810-48f3-bcf3-8dd8356a4dc0
+		summarizeBy: none
+		sourceColumn: SalesLineKey
+
+	column Ordernyckel
+		dataType: int64
+		isHidden
+		lineageTag: f7747cfe-bf1b-4b0e-b0bd-371613a20666
+		summarizeBy: none
+		sourceColumn: OrderKey
+
+	column Datumnyckel
+		dataType: int64
+		isHidden
+		lineageTag: 7d2c35df-d1a5-4799-b567-dff1c42b7955
+		summarizeBy: none
+		sourceColumn: DateKey
+
+	column Kundnyckel
+		dataType: int64
+		isHidden
+		lineageTag: 7d325a9e-290e-418a-bffd-0c6f806f7e35
+		summarizeBy: none
+		sourceColumn: CustomerKey
+
+	column Produktnyckel
+		dataType: int64
+		isHidden
+		lineageTag: 6aa907a3-0185-4f98-ab16-3816da5076e1
+		summarizeBy: none
+		sourceColumn: ProductKey
+
+	column 'Antal enheter'
+		dataType: int64
+		isHidden
+		lineageTag: b9cf38bc-3d46-4583-bd23-d17ce29ce5d1
+		summarizeBy: none
+		sourceColumn: Quantity
+
+	column Enhetspris
+		dataType: decimal
+		isHidden
+		lineageTag: 57213793-329f-4d8a-ba84-e1fedaf794bd
+		summarizeBy: none
+		sourceColumn: UnitPrice
+
+	column Enhetskostnad
+		dataType: decimal
+		isHidden
+		lineageTag: 8b826238-830b-42a3-a0db-3724c7524dcd
+		summarizeBy: none
+		sourceColumn: UnitCost
+
+	column Radomsättning
+		dataType: decimal
+		isHidden
+		lineageTag: bf76860a-2688-4af2-a25b-77c8facde768
+		summarizeBy: none
+		sourceColumn: Revenue
+
+	column Radkostnad
+		dataType: decimal
+		isHidden
+		lineageTag: 2acbd5ef-0c3d-4b85-839e-601148d68eae
+		summarizeBy: none
+		sourceColumn: Cost
+
+	column Säljarnyckel
+		dataType: int64
+		isHidden
+		lineageTag: cd6127ec-9e4d-4686-8e44-5cd071871baf
+		summarizeBy: none
+		sourceColumn: SellerKey
+
+	partition Försäljning = m
+		mode: import
+		source =
+				let
+					Source = Csv.Document(File.Contents(DataFolder & "/FactSales.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+					Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+					Typed = Table.TransformColumnTypes(Headers, {{"SellerKey", Int64.Type}, {"SalesLineKey", Int64.Type}, {"OrderKey", Int64.Type}, {"DateKey", Int64.Type}, {"CustomerKey", Int64.Type}, {"ProductKey", Int64.Type}, {"Quantity", Int64.Type}, {"UnitPrice", Currency.Type}, {"UnitCost", Currency.Type}, {"Revenue", Currency.Type}, {"Cost", Currency.Type}}, "en-US")
+				in
+					Typed
+

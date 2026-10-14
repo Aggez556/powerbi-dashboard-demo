@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "AubecoSalesFinance"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "97471ee6-019e-4c45-a5fe-63cc1820eac0"
+  }
+}

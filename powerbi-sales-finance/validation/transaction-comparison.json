@@ -1,0 +1,6 @@
+{
+  "status": "passed",
+  "source": "Actual read-only Desktop DAX versus CSV joins and Decimal arithmetic",
+  "rowsChecked": 5,
+  "scope": "Current Desktop model; latest transaction PBIR visual review still pending"
+}

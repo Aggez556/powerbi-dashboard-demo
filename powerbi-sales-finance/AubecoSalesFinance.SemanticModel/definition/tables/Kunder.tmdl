@@ -1,0 +1,46 @@
+/// Lokal testdata från DimCustomer.csv.
+table Kunder
+	lineageTag: 08889a38-31b2-4b14-b8d6-e477bc4bb359
+
+	column Kundnyckel
+		dataType: int64
+		isHidden
+		isKey
+		lineageTag: 5c649a35-eddb-46d3-b61c-94518b87304c
+		summarizeBy: none
+		sourceColumn: CustomerKey
+
+	column Kund
+		dataType: string
+		lineageTag: 3a4c09c7-53b1-4e94-a874-99ed343b4795
+		summarizeBy: none
+		sourceColumn: CustomerName
+
+	column Ort
+		dataType: string
+		lineageTag: c4ba3cd0-d624-413e-95b0-fcd5ea103b07
+		summarizeBy: none
+		sourceColumn: City
+
+	column Segment
+		dataType: string
+		lineageTag: 5601f558-66b3-44ed-a08a-7227873587c0
+		summarizeBy: none
+		sourceColumn: Segment
+
+	column Land
+		dataType: string
+		lineageTag: dfa2dcc4-70cb-4e01-97e8-f8dedab2037a
+		summarizeBy: none
+		sourceColumn: Country
+
+	partition Kunder = m
+		mode: import
+		source =
+				let
+					Source = Csv.Document(File.Contents(DataFolder & "/DimCustomer.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+					Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+					Typed = Table.TransformColumnTypes(Headers, {{"Country", type text}, {"CustomerKey", Int64.Type}, {"CustomerName", type text}, {"City", type text}, {"Segment", type text}}, "en-US")
+				in
+					Typed
+

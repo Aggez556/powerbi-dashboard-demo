@@ -1,0 +1,25 @@
+table Rapportstatus
+	lineageTag: f75bb51f-6954-4115-b1b1-bf748cb08ab5
+
+	measure 'Senast uppdaterad' = IF(ISBLANK(MAX('Rapportstatus'[Uppdaterad UTC])), BLANK(), "Senast uppdaterad: " & FORMAT(MAX('Rapportstatus'[Uppdaterad UTC]), "yyyy-MM-dd HH:mm") & " UTC")
+		formatString: @
+		displayFolder: Rapportstatus
+		lineageTag: 3faaa58d-a56e-461e-aebf-bfcbb295e705
+
+	column 'Uppdaterad UTC'
+		dataType: dateTime
+		isHidden
+		formatString: yyyy-MM-dd HH:mm
+		lineageTag: 9f2c711d-88b9-470a-ade0-bea33bf1f5e7
+		summarizeBy: none
+		sourceColumn: Uppdaterad UTC
+
+	partition Rapportstatus = m
+		mode: import
+		source =
+				let
+					Timestamp = DateTimeZone.RemoveZone(DateTimeZone.FixedUtcNow()),
+					Result = #table(type table [#"Uppdaterad UTC" = datetime], {{Timestamp}})
+				in
+					Result
+

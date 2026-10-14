@@ -1,0 +1,871 @@
+﻿{
+    "status":  "passed",
+    "rows":  [
+                 {
+                     "Finansaxel[Typ]":  "Kategori",
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Namn]":  "Elektronik",
+                     "Datum[Månad kort]":  "jan",
+                     "Datum[Månadsnummer]":  1,
+                     "[Vinst]":  0.0637,
+                     "[Medel]":  0.0864
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Kategori",
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Namn]":  "Elektronik",
+                     "Datum[Månad kort]":  "feb",
+                     "Datum[Månadsnummer]":  2,
+                     "[Vinst]":  0.0653,
+                     "[Medel]":  0.0864
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Kategori",
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Namn]":  "Elektronik",
+                     "Datum[Månad kort]":  "mar",
+                     "Datum[Månadsnummer]":  3,
+                     "[Vinst]":  0.1003,
+                     "[Medel]":  0.0864
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Kategori",
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Namn]":  "Elektronik",
+                     "Datum[Månad kort]":  "apr",
+                     "Datum[Månadsnummer]":  4,
+                     "[Vinst]":  0.0768,
+                     "[Medel]":  0.0864
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Kategori",
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Namn]":  "Elektronik",
+                     "Datum[Månad kort]":  "maj",
+                     "Datum[Månadsnummer]":  5,
+                     "[Vinst]":  0.0696,
+                     "[Medel]":  0.0864
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Kategori",
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Namn]":  "Elektronik",
+                     "Datum[Månad kort]":  "jun",
+                     "Datum[Månadsnummer]":  6,
+                     "[Vinst]":  0.0667,
+                     "[Medel]":  0.0864
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Kategori",
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Namn]":  "Elektronik",
+                     "Datum[Månad kort]":  "jul",
+                     "Datum[Månadsnummer]":  7,
+                     "[Vinst]":  0.0451,
+                     "[Medel]":  0.0864
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Kategori",
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Namn]":  "Elektronik",
+                     "Datum[Månad kort]":  "aug",
+                     "Datum[Månadsnummer]":  8,
+                     "[Vinst]":  0.0566,
+                     "[Medel]":  0.0864
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Kategori",
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Namn]":  "Elektronik",
+                     "Datum[Månad kort]":  "sep",
+                     "Datum[Månadsnummer]":  9,
+                     "[Vinst]":  0.0822,
+                     "[Medel]":  0.0864
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Kategori",
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Namn]":  "Elektronik",
+                     "Datum[Månad kort]":  "okt",
+                     "Datum[Månadsnummer]":  10,
+                     "[Vinst]":  0.0999,
+                     "[Medel]":  0.0864
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Kategori",
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Namn]":  "Elektronik",
+                     "Datum[Månad kort]":  "nov",
+                     "Datum[Månadsnummer]":  11,
+                     "[Vinst]":  0.1398,
+                     "[Medel]":  0.0864
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Kategori",
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Namn]":  "Elektronik",
+                     "Datum[Månad kort]":  "dec",
+                     "Datum[Månadsnummer]":  12,
+                     "[Vinst]":  0.1705,
+                     "[Medel]":  0.0864
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Kategori",
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Namn]":  "Hem och kök",
+                     "Datum[Månad kort]":  "jan",
+                     "Datum[Månadsnummer]":  1,
+                     "[Vinst]":  0.0382,
+                     "[Medel]":  0.0527
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Kategori",
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Namn]":  "Hem och kök",
+                     "Datum[Månad kort]":  "feb",
+                     "Datum[Månadsnummer]":  2,
+                     "[Vinst]":  0.0332,
+                     "[Medel]":  0.0527
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Kategori",
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Namn]":  "Hem och kök",
+                     "Datum[Månad kort]":  "mar",
+                     "Datum[Månadsnummer]":  3,
+                     "[Vinst]":  0.0556,
+                     "[Medel]":  0.0527
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Kategori",
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Namn]":  "Hem och kök",
+                     "Datum[Månad kort]":  "apr",
+                     "Datum[Månadsnummer]":  4,
+                     "[Vinst]":  0.0601,
+                     "[Medel]":  0.0527
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Kategori",
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Namn]":  "Hem och kök",
+                     "Datum[Månad kort]":  "maj",
+                     "Datum[Månadsnummer]":  5,
+                     "[Vinst]":  0.0329,
+                     "[Medel]":  0.0527
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Kategori",
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Namn]":  "Hem och kök",
+                     "Datum[Månad kort]":  "jun",
+                     "Datum[Månadsnummer]":  6,
+                     "[Vinst]":  0.0393,
+                     "[Medel]":  0.0527
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Kategori",
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Namn]":  "Hem och kök",
+                     "Datum[Månad kort]":  "jul",
+                     "Datum[Månadsnummer]":  7,
+                     "[Vinst]":  0.0359,
+                     "[Medel]":  0.0527
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Kategori",
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Namn]":  "Hem och kök",
+                     "Datum[Månad kort]":  "aug",
+                     "Datum[Månadsnummer]":  8,
+                     "[Vinst]":  0.0379,
+                     "[Medel]":  0.0527
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Kategori",
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Namn]":  "Hem och kök",
+                     "Datum[Månad kort]":  "sep",
+                     "Datum[Månadsnummer]":  9,
+                     "[Vinst]":  0.0558,
+                     "[Medel]":  0.0527
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Kategori",
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Namn]":  "Hem och kök",
+                     "Datum[Månad kort]":  "okt",
+                     "Datum[Månadsnummer]":  10,
+                     "[Vinst]":  0.0674,
+                     "[Medel]":  0.0527
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Kategori",
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Namn]":  "Hem och kök",
+                     "Datum[Månad kort]":  "nov",
+                     "Datum[Månadsnummer]":  11,
+                     "[Vinst]":  0.0836,
+                     "[Medel]":  0.0527
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Kategori",
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Namn]":  "Hem och kök",
+                     "Datum[Månad kort]":  "dec",
+                     "Datum[Månadsnummer]":  12,
+                     "[Vinst]":  0.0919,
+                     "[Medel]":  0.0527
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Kategori",
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Namn]":  "Kontor",
+                     "Datum[Månad kort]":  "jan",
+                     "Datum[Månadsnummer]":  1,
+                     "[Vinst]":  0.0103,
+                     "[Medel]":  0.0128
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Kategori",
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Namn]":  "Kontor",
+                     "Datum[Månad kort]":  "feb",
+                     "Datum[Månadsnummer]":  2,
+                     "[Vinst]":  0.0096,
+                     "[Medel]":  0.0128
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Kategori",
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Namn]":  "Kontor",
+                     "Datum[Månad kort]":  "mar",
+                     "Datum[Månadsnummer]":  3,
+                     "[Vinst]":  0.0119,
+                     "[Medel]":  0.0128
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Kategori",
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Namn]":  "Kontor",
+                     "Datum[Månad kort]":  "apr",
+                     "Datum[Månadsnummer]":  4,
+                     "[Vinst]":  0.0119,
+                     "[Medel]":  0.0128
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Kategori",
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Namn]":  "Kontor",
+                     "Datum[Månad kort]":  "maj",
+                     "Datum[Månadsnummer]":  5,
+                     "[Vinst]":  0.013,
+                     "[Medel]":  0.0128
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Kategori",
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Namn]":  "Kontor",
+                     "Datum[Månad kort]":  "jun",
+                     "Datum[Månadsnummer]":  6,
+                     "[Vinst]":  0.0099,
+                     "[Medel]":  0.0128
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Kategori",
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Namn]":  "Kontor",
+                     "Datum[Månad kort]":  "jul",
+                     "Datum[Månadsnummer]":  7,
+                     "[Vinst]":  0.0088,
+                     "[Medel]":  0.0128
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Kategori",
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Namn]":  "Kontor",
+                     "Datum[Månad kort]":  "aug",
+                     "Datum[Månadsnummer]":  8,
+                     "[Vinst]":  0.0096,
+                     "[Medel]":  0.0128
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Kategori",
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Namn]":  "Kontor",
+                     "Datum[Månad kort]":  "sep",
+                     "Datum[Månadsnummer]":  9,
+                     "[Vinst]":  0.0114,
+                     "[Medel]":  0.0128
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Kategori",
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Namn]":  "Kontor",
+                     "Datum[Månad kort]":  "okt",
+                     "Datum[Månadsnummer]":  10,
+                     "[Vinst]":  0.016,
+                     "[Medel]":  0.0128
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Kategori",
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Namn]":  "Kontor",
+                     "Datum[Månad kort]":  "nov",
+                     "Datum[Månadsnummer]":  11,
+                     "[Vinst]":  0.0189,
+                     "[Medel]":  0.0128
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Kategori",
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Namn]":  "Kontor",
+                     "Datum[Månad kort]":  "dec",
+                     "Datum[Månadsnummer]":  12,
+                     "[Vinst]":  0.0221,
+                     "[Medel]":  0.0128
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Kategori",
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Namn]":  "Sport och fritid",
+                     "Datum[Månad kort]":  "jan",
+                     "Datum[Månadsnummer]":  1,
+                     "[Vinst]":  0.0655,
+                     "[Medel]":  0.0759
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Kategori",
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Namn]":  "Sport och fritid",
+                     "Datum[Månad kort]":  "feb",
+                     "Datum[Månadsnummer]":  2,
+                     "[Vinst]":  0.055,
+                     "[Medel]":  0.0759
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Kategori",
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Namn]":  "Sport och fritid",
+                     "Datum[Månad kort]":  "mar",
+                     "Datum[Månadsnummer]":  3,
+                     "[Vinst]":  0.0649,
+                     "[Medel]":  0.0759
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Kategori",
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Namn]":  "Sport och fritid",
+                     "Datum[Månad kort]":  "apr",
+                     "Datum[Månadsnummer]":  4,
+                     "[Vinst]":  0.0678,
+                     "[Medel]":  0.0759
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Kategori",
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Namn]":  "Sport och fritid",
+                     "Datum[Månad kort]":  "maj",
+                     "Datum[Månadsnummer]":  5,
+                     "[Vinst]":  0.0755,
+                     "[Medel]":  0.0759
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Kategori",
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Namn]":  "Sport och fritid",
+                     "Datum[Månad kort]":  "jun",
+                     "Datum[Månadsnummer]":  6,
+                     "[Vinst]":  0.067,
+                     "[Medel]":  0.0759
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Kategori",
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Namn]":  "Sport och fritid",
+                     "Datum[Månad kort]":  "jul",
+                     "Datum[Månadsnummer]":  7,
+                     "[Vinst]":  0.058,
+                     "[Medel]":  0.0759
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Kategori",
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Namn]":  "Sport och fritid",
+                     "Datum[Månad kort]":  "aug",
+                     "Datum[Månadsnummer]":  8,
+                     "[Vinst]":  0.0767,
+                     "[Medel]":  0.0759
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Kategori",
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Namn]":  "Sport och fritid",
+                     "Datum[Månad kort]":  "sep",
+                     "Datum[Månadsnummer]":  9,
+                     "[Vinst]":  0.0699,
+                     "[Medel]":  0.0759
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Kategori",
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Namn]":  "Sport och fritid",
+                     "Datum[Månad kort]":  "okt",
+                     "Datum[Månadsnummer]":  10,
+                     "[Vinst]":  0.1007,
+                     "[Medel]":  0.0759
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Kategori",
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Namn]":  "Sport och fritid",
+                     "Datum[Månad kort]":  "nov",
+                     "Datum[Månadsnummer]":  11,
+                     "[Vinst]":  0.0902,
+                     "[Medel]":  0.0759
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Kategori",
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Namn]":  "Sport och fritid",
+                     "Datum[Månad kort]":  "dec",
+                     "Datum[Månadsnummer]":  12,
+                     "[Vinst]":  0.1192,
+                     "[Medel]":  0.0759
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Kategori",
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Namn]":  "Trädgård",
+                     "Datum[Månad kort]":  "jan",
+                     "Datum[Månadsnummer]":  1,
+                     "[Vinst]":  0.0869,
+                     "[Medel]":  0.1137
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Kategori",
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Namn]":  "Trädgård",
+                     "Datum[Månad kort]":  "feb",
+                     "Datum[Månadsnummer]":  2,
+                     "[Vinst]":  0.0628,
+                     "[Medel]":  0.1137
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Kategori",
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Namn]":  "Trädgård",
+                     "Datum[Månad kort]":  "mar",
+                     "Datum[Månadsnummer]":  3,
+                     "[Vinst]":  0.0633,
+                     "[Medel]":  0.1137
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Kategori",
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Namn]":  "Trädgård",
+                     "Datum[Månad kort]":  "apr",
+                     "Datum[Månadsnummer]":  4,
+                     "[Vinst]":  0.1588,
+                     "[Medel]":  0.1137
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Kategori",
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Namn]":  "Trädgård",
+                     "Datum[Månad kort]":  "maj",
+                     "Datum[Månadsnummer]":  5,
+                     "[Vinst]":  0.1363,
+                     "[Medel]":  0.1137
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Kategori",
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Namn]":  "Trädgård",
+                     "Datum[Månad kort]":  "jun",
+                     "Datum[Månadsnummer]":  6,
+                     "[Vinst]":  0.154,
+                     "[Medel]":  0.1137
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Kategori",
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Namn]":  "Trädgård",
+                     "Datum[Månad kort]":  "jul",
+                     "Datum[Månadsnummer]":  7,
+                     "[Vinst]":  0.1356,
+                     "[Medel]":  0.1137
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Kategori",
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Namn]":  "Trädgård",
+                     "Datum[Månad kort]":  "aug",
+                     "Datum[Månadsnummer]":  8,
+                     "[Vinst]":  0.1496,
+                     "[Medel]":  0.1137
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Kategori",
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Namn]":  "Trädgård",
+                     "Datum[Månad kort]":  "sep",
+                     "Datum[Månadsnummer]":  9,
+                     "[Vinst]":  0.0732,
+                     "[Medel]":  0.1137
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Kategori",
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Namn]":  "Trädgård",
+                     "Datum[Månad kort]":  "okt",
+                     "Datum[Månadsnummer]":  10,
+                     "[Vinst]":  0.1017,
+                     "[Medel]":  0.1137
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Kategori",
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Namn]":  "Trädgård",
+                     "Datum[Månad kort]":  "nov",
+                     "Datum[Månadsnummer]":  11,
+                     "[Vinst]":  0.1294,
+                     "[Medel]":  0.1137
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Kategori",
+                     "Finansaxel[Val]":  "Kategori",
+                     "Finansaxel[Namn]":  "Trädgård",
+                     "Datum[Månad kort]":  "dec",
+                     "Datum[Månadsnummer]":  12,
+                     "[Vinst]":  0.1131,
+                     "[Medel]":  0.1137
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Säljteam",
+                     "Finansaxel[Val]":  "Team",
+                     "Finansaxel[Namn]":  "Nord",
+                     "Datum[Månad kort]":  "jan",
+                     "Datum[Månadsnummer]":  1,
+                     "[Vinst]":  0.096,
+                     "[Medel]":  0.1113
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Säljteam",
+                     "Finansaxel[Val]":  "Team",
+                     "Finansaxel[Namn]":  "Nord",
+                     "Datum[Månad kort]":  "feb",
+                     "Datum[Månadsnummer]":  2,
+                     "[Vinst]":  0.074,
+                     "[Medel]":  0.1113
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Säljteam",
+                     "Finansaxel[Val]":  "Team",
+                     "Finansaxel[Namn]":  "Nord",
+                     "Datum[Månad kort]":  "mar",
+                     "Datum[Månadsnummer]":  3,
+                     "[Vinst]":  0.0941,
+                     "[Medel]":  0.1113
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Säljteam",
+                     "Finansaxel[Val]":  "Team",
+                     "Finansaxel[Namn]":  "Nord",
+                     "Datum[Månad kort]":  "apr",
+                     "Datum[Månadsnummer]":  4,
+                     "[Vinst]":  0.1452,
+                     "[Medel]":  0.1113
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Säljteam",
+                     "Finansaxel[Val]":  "Team",
+                     "Finansaxel[Namn]":  "Nord",
+                     "Datum[Månad kort]":  "maj",
+                     "Datum[Månadsnummer]":  5,
+                     "[Vinst]":  0.0817,
+                     "[Medel]":  0.1113
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Säljteam",
+                     "Finansaxel[Val]":  "Team",
+                     "Finansaxel[Namn]":  "Nord",
+                     "Datum[Månad kort]":  "jun",
+                     "Datum[Månadsnummer]":  6,
+                     "[Vinst]":  0.075,
+                     "[Medel]":  0.1113
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Säljteam",
+                     "Finansaxel[Val]":  "Team",
+                     "Finansaxel[Namn]":  "Nord",
+                     "Datum[Månad kort]":  "jul",
+                     "Datum[Månadsnummer]":  7,
+                     "[Vinst]":  0.0799,
+                     "[Medel]":  0.1113
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Säljteam",
+                     "Finansaxel[Val]":  "Team",
+                     "Finansaxel[Namn]":  "Nord",
+                     "Datum[Månad kort]":  "aug",
+                     "Datum[Månadsnummer]":  8,
+                     "[Vinst]":  0.1029,
+                     "[Medel]":  0.1113
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Säljteam",
+                     "Finansaxel[Val]":  "Team",
+                     "Finansaxel[Namn]":  "Nord",
+                     "Datum[Månad kort]":  "sep",
+                     "Datum[Månadsnummer]":  9,
+                     "[Vinst]":  0.1,
+                     "[Medel]":  0.1113
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Säljteam",
+                     "Finansaxel[Val]":  "Team",
+                     "Finansaxel[Namn]":  "Nord",
+                     "Datum[Månad kort]":  "okt",
+                     "Datum[Månadsnummer]":  10,
+                     "[Vinst]":  0.1362,
+                     "[Medel]":  0.1113
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Säljteam",
+                     "Finansaxel[Val]":  "Team",
+                     "Finansaxel[Namn]":  "Nord",
+                     "Datum[Månad kort]":  "nov",
+                     "Datum[Månadsnummer]":  11,
+                     "[Vinst]":  0.1688,
+                     "[Medel]":  0.1113
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Säljteam",
+                     "Finansaxel[Val]":  "Team",
+                     "Finansaxel[Namn]":  "Nord",
+                     "Datum[Månad kort]":  "dec",
+                     "Datum[Månadsnummer]":  12,
+                     "[Vinst]":  0.182,
+                     "[Medel]":  0.1113
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Säljteam",
+                     "Finansaxel[Val]":  "Team",
+                     "Finansaxel[Namn]":  "Syd",
+                     "Datum[Månad kort]":  "jan",
+                     "Datum[Månadsnummer]":  1,
+                     "[Vinst]":  0.0863,
+                     "[Medel]":  0.1146
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Säljteam",
+                     "Finansaxel[Val]":  "Team",
+                     "Finansaxel[Namn]":  "Syd",
+                     "Datum[Månad kort]":  "feb",
+                     "Datum[Månadsnummer]":  2,
+                     "[Vinst]":  0.0744,
+                     "[Medel]":  0.1146
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Säljteam",
+                     "Finansaxel[Val]":  "Team",
+                     "Finansaxel[Namn]":  "Syd",
+                     "Datum[Månad kort]":  "mar",
+                     "Datum[Månadsnummer]":  3,
+                     "[Vinst]":  0.1047,
+                     "[Medel]":  0.1146
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Säljteam",
+                     "Finansaxel[Val]":  "Team",
+                     "Finansaxel[Namn]":  "Syd",
+                     "Datum[Månad kort]":  "apr",
+                     "Datum[Månadsnummer]":  4,
+                     "[Vinst]":  0.1163,
+                     "[Medel]":  0.1146
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Säljteam",
+                     "Finansaxel[Val]":  "Team",
+                     "Finansaxel[Namn]":  "Syd",
+                     "Datum[Månad kort]":  "maj",
+                     "Datum[Månadsnummer]":  5,
+                     "[Vinst]":  0.1196,
+                     "[Medel]":  0.1146
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Säljteam",
+                     "Finansaxel[Val]":  "Team",
+                     "Finansaxel[Namn]":  "Syd",
+                     "Datum[Månad kort]":  "jun",
+                     "Datum[Månadsnummer]":  6,
+                     "[Vinst]":  0.1426,
+                     "[Medel]":  0.1146
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Säljteam",
+                     "Finansaxel[Val]":  "Team",
+                     "Finansaxel[Namn]":  "Syd",
+                     "Datum[Månad kort]":  "jul",
+                     "Datum[Månadsnummer]":  7,
+                     "[Vinst]":  0.0954,
+                     "[Medel]":  0.1146
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Säljteam",
+                     "Finansaxel[Val]":  "Team",
+                     "Finansaxel[Namn]":  "Syd",
+                     "Datum[Månad kort]":  "aug",
+                     "Datum[Månadsnummer]":  8,
+                     "[Vinst]":  0.1081,
+                     "[Medel]":  0.1146
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Säljteam",
+                     "Finansaxel[Val]":  "Team",
+                     "Finansaxel[Namn]":  "Syd",
+                     "Datum[Månad kort]":  "sep",
+                     "Datum[Månadsnummer]":  9,
+                     "[Vinst]":  0.0848,
+                     "[Medel]":  0.1146
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Säljteam",
+                     "Finansaxel[Val]":  "Team",
+                     "Finansaxel[Namn]":  "Syd",
+                     "Datum[Månad kort]":  "okt",
+                     "Datum[Månadsnummer]":  10,
+                     "[Vinst]":  0.1317,
+                     "[Medel]":  0.1146
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Säljteam",
+                     "Finansaxel[Val]":  "Team",
+                     "Finansaxel[Namn]":  "Syd",
+                     "Datum[Månad kort]":  "nov",
+                     "Datum[Månadsnummer]":  11,
+                     "[Vinst]":  0.1305,
+                     "[Medel]":  0.1146
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Säljteam",
+                     "Finansaxel[Val]":  "Team",
+                     "Finansaxel[Namn]":  "Syd",
+                     "Datum[Månad kort]":  "dec",
+                     "Datum[Månadsnummer]":  12,
+                     "[Vinst]":  0.1808,
+                     "[Medel]":  0.1146
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Säljteam",
+                     "Finansaxel[Val]":  "Team",
+                     "Finansaxel[Namn]":  "Väst",
+                     "Datum[Månad kort]":  "jan",
+                     "Datum[Månadsnummer]":  1,
+                     "[Vinst]":  0.0824,
+                     "[Medel]":  0.1155
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Säljteam",
+                     "Finansaxel[Val]":  "Team",
+                     "Finansaxel[Namn]":  "Väst",
+                     "Datum[Månad kort]":  "feb",
+                     "Datum[Månadsnummer]":  2,
+                     "[Vinst]":  0.0776,
+                     "[Medel]":  0.1155
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Säljteam",
+                     "Finansaxel[Val]":  "Team",
+                     "Finansaxel[Namn]":  "Väst",
+                     "Datum[Månad kort]":  "mar",
+                     "Datum[Månadsnummer]":  3,
+                     "[Vinst]":  0.0973,
+                     "[Medel]":  0.1155
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Säljteam",
+                     "Finansaxel[Val]":  "Team",
+                     "Finansaxel[Namn]":  "Väst",
+                     "Datum[Månad kort]":  "apr",
+                     "Datum[Månadsnummer]":  4,
+                     "[Vinst]":  0.1139,
+                     "[Medel]":  0.1155
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Säljteam",
+                     "Finansaxel[Val]":  "Team",
+                     "Finansaxel[Namn]":  "Väst",
+                     "Datum[Månad kort]":  "maj",
+                     "Datum[Månadsnummer]":  5,
+                     "[Vinst]":  0.1261,
+                     "[Medel]":  0.1155
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Säljteam",
+                     "Finansaxel[Val]":  "Team",
+                     "Finansaxel[Namn]":  "Väst",
+                     "Datum[Månad kort]":  "jun",
+                     "Datum[Månadsnummer]":  6,
+                     "[Vinst]":  0.1194,
+                     "[Medel]":  0.1155
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Säljteam",
+                     "Finansaxel[Val]":  "Team",
+                     "Finansaxel[Namn]":  "Väst",
+                     "Datum[Månad kort]":  "jul",
+                     "Datum[Månadsnummer]":  7,
+                     "[Vinst]":  0.1082,
+                     "[Medel]":  0.1155
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Säljteam",
+                     "Finansaxel[Val]":  "Team",
+                     "Finansaxel[Namn]":  "Väst",
+                     "Datum[Månad kort]":  "aug",
+                     "Datum[Månadsnummer]":  8,
+                     "[Vinst]":  0.1194,
+                     "[Medel]":  0.1155
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Säljteam",
+                     "Finansaxel[Val]":  "Team",
+                     "Finansaxel[Namn]":  "Väst",
+                     "Datum[Månad kort]":  "sep",
+                     "Datum[Månadsnummer]":  9,
+                     "[Vinst]":  0.1077,
+                     "[Medel]":  0.1155
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Säljteam",
+                     "Finansaxel[Val]":  "Team",
+                     "Finansaxel[Namn]":  "Väst",
+                     "Datum[Månad kort]":  "okt",
+                     "Datum[Månadsnummer]":  10,
+                     "[Vinst]":  0.1177,
+                     "[Medel]":  0.1155
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Säljteam",
+                     "Finansaxel[Val]":  "Team",
+                     "Finansaxel[Namn]":  "Väst",
+                     "Datum[Månad kort]":  "nov",
+                     "Datum[Månadsnummer]":  11,
+                     "[Vinst]":  0.1625,
+                     "[Medel]":  0.1155
+                 },
+                 {
+                     "Finansaxel[Typ]":  "Säljteam",
+                     "Finansaxel[Val]":  "Team",
+                     "Finansaxel[Namn]":  "Väst",
+                     "Datum[Månad kort]":  "dec",
+                     "Datum[Månadsnummer]":  12,
+                     "[Vinst]":  0.1538,
+                     "[Medel]":  0.1155
+                 }
+             ],
+    "desktopProcessId":  9624,
+    "source":  "Actual Desktop engine, DAX query"
+}

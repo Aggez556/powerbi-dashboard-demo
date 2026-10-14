@@ -1,0 +1,30 @@
+{
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "rootFontSize": "16px",
+  "elements": {
+    "h1": {
+      "fontSize": "36px",
+      "fontWeight": "400",
+      "lineHeight": "37.8px",
+      "borderRadius": "0px",
+      "padding": "0px"
+    },
+    "#top p": {
+      "fontSize": "18px",
+      "fontWeight": "400",
+      "lineHeight": "29.25px",
+      "borderRadius": "0px",
+      "padding": "0px"
+    },
+    "#tjanster a": {
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "24px",
+      "borderRadius": "16px",
+      "padding": "32px"
+    }
+  }
+}

@@ -1,0 +1,579 @@
+{
+  "status": "static-checks-passed",
+  "pageId": "f5af09c5006f6f5d2aab",
+  "displayName": "Budgetplanering",
+  "nativeVisuals": 34,
+  "placements": [
+    {
+      "key": "panel-distribution",
+      "type": "textbox",
+      "box": [
+        324,
+        24,
+        240,
+        308
+      ],
+      "fields": []
+    },
+    {
+      "key": "panel-py",
+      "type": "textbox",
+      "box": [
+        580,
+        24,
+        248,
+        308
+      ],
+      "fields": []
+    },
+    {
+      "key": "panel-month",
+      "type": "textbox",
+      "box": [
+        844,
+        24,
+        308,
+        308
+      ],
+      "fields": []
+    },
+    {
+      "key": "panel-comments",
+      "type": "textbox",
+      "box": [
+        1168,
+        24,
+        704,
+        308
+      ],
+      "fields": []
+    },
+    {
+      "key": "brand",
+      "type": "textbox",
+      "box": [
+        28,
+        28,
+        272,
+        300
+      ],
+      "fields": []
+    },
+    {
+      "key": "distribution-title",
+      "type": "textbox",
+      "box": [
+        324,
+        24,
+        240,
+        44
+      ],
+      "fields": []
+    },
+    {
+      "key": "distribution",
+      "type": "slicer",
+      "box": [
+        324,
+        72,
+        240,
+        56
+      ],
+      "fields": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Budgetfördelning"
+              }
+            },
+            "Property": "Fördelning"
+          }
+        }
+      ]
+    },
+    {
+      "key": "amount",
+      "type": "slicer",
+      "box": [
+        324,
+        138,
+        240,
+        104
+      ],
+      "fields": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Budgetbelopp"
+              }
+            },
+            "Property": "Belopp"
+          }
+        }
+      ]
+    },
+    {
+      "key": "distribution-action",
+      "type": "textbox",
+      "box": [
+        324,
+        280,
+        240,
+        44
+      ],
+      "fields": []
+    },
+    {
+      "key": "py-title",
+      "type": "textbox",
+      "box": [
+        580,
+        24,
+        248,
+        44
+      ],
+      "fields": []
+    },
+    {
+      "key": "percent",
+      "type": "slicer",
+      "box": [
+        580,
+        74,
+        248,
+        94
+      ],
+      "fields": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Budgetjustering"
+              }
+            },
+            "Property": "Procent"
+          }
+        }
+      ]
+    },
+    {
+      "key": "base-label",
+      "type": "textbox",
+      "box": [
+        580,
+        180,
+        120,
+        36
+      ],
+      "fields": []
+    },
+    {
+      "key": "adjusted-label",
+      "type": "textbox",
+      "box": [
+        708,
+        180,
+        120,
+        36
+      ],
+      "fields": []
+    },
+    {
+      "key": "base",
+      "type": "cardVisual",
+      "box": [
+        580,
+        216,
+        120,
+        56
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Planering bas"
+          }
+        }
+      ]
+    },
+    {
+      "key": "adjusted",
+      "type": "cardVisual",
+      "box": [
+        708,
+        216,
+        120,
+        56
+      ],
+      "fields": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Planering justerad"
+          }
+        }
+      ]
+    },
+    {
+      "key": "py-action",
+      "type": "textbox",
+      "box": [
+        580,
+        280,
+        248,
+        44
+      ],
+      "fields": []
+    },
+    {
+      "key": "month-title",
+      "type": "textbox",
+      "box": [
+        844,
+        24,
+        308,
+        44
+      ],
+      "fields": []
+    },
+    {
+      "key": "month-label",
+      "type": "textbox",
+      "box": [
+        844,
+        74,
+        308,
+        40
+      ],
+      "fields": []
+    },
+    {
+      "key": "month-input",
+      "type": "textbox",
+      "box": [
+        854,
+        118,
+        288,
+        104
+      ],
+      "fields": []
+    },
+    {
+      "key": "month-demo",
+      "type": "textbox",
+      "box": [
+        844,
+        228,
+        308,
+        44
+      ],
+      "fields": []
+    },
+    {
+      "key": "month-action",
+      "type": "textbox",
+      "box": [
+        844,
+        280,
+        308,
+        44
+      ],
+      "fields": []
+    },
+    {
+      "key": "comments-title",
+      "type": "textbox",
+      "box": [
+        1168,
+        24,
+        364,
+        44
+      ],
+      "fields": []
+    },
+    {
+      "key": "comments",
+      "type": "tableEx",
+      "box": [
+        1168,
+        72,
+        364,
+        156
+      ],
+      "fields": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Budgetkommentarer"
+              }
+            },
+            "Property": "Kommentar"
+          }
+        },
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Budgetkommentarer"
+              }
+            },
+            "Property": "Status"
+          }
+        }
+      ]
+    },
+    {
+      "key": "status",
+      "type": "slicer",
+      "box": [
+        1168,
+        236,
+        364,
+        88
+      ],
+      "fields": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Budgetkommentarer"
+              }
+            },
+            "Property": "Status"
+          }
+        }
+      ]
+    },
+    {
+      "key": "new-comment-title",
+      "type": "textbox",
+      "box": [
+        1548,
+        24,
+        324,
+        44
+      ],
+      "fields": []
+    },
+    {
+      "key": "new-comment",
+      "type": "textbox",
+      "box": [
+        1558,
+        72,
+        304,
+        196
+      ],
+      "fields": []
+    },
+    {
+      "key": "comment-action",
+      "type": "textbox",
+      "box": [
+        1548,
+        280,
+        324,
+        44
+      ],
+      "fields": []
+    },
+    {
+      "key": "scenario",
+      "type": "slicer",
+      "box": [
+        28,
+        352,
+        272,
+        128
+      ],
+      "fields": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Budgetscenario"
+              }
+            },
+            "Property": "Scenario"
+          }
+        }
+      ]
+    },
+    {
+      "key": "scenario-tools",
+      "type": "textbox",
+      "box": [
+        28,
+        482,
+        272,
+        40
+      ],
+      "fields": []
+    },
+    {
+      "key": "version",
+      "type": "slicer",
+      "box": [
+        28,
+        538,
+        272,
+        224
+      ],
+      "fields": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Budgetversion"
+              }
+            },
+            "Property": "Version"
+          }
+        }
+      ]
+    },
+    {
+      "key": "year",
+      "type": "advancedSlicerVisual",
+      "box": [
+        28,
+        778,
+        272,
+        72
+      ],
+      "fields": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Datum"
+              }
+            },
+            "Property": "År"
+          }
+        }
+      ]
+    },
+    {
+      "key": "month",
+      "type": "advancedSlicerVisual",
+      "box": [
+        28,
+        866,
+        272,
+        166
+      ],
+      "fields": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Datum"
+              }
+            },
+            "Property": "Månad"
+          }
+        }
+      ]
+    },
+    {
+      "key": "income-statement",
+      "type": "pivotTable",
+      "box": [
+        324,
+        352,
+        1548,
+        680
+      ],
+      "fields": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Resultatrader"
+              }
+            },
+            "Property": "Rad"
+          }
+        },
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Datum"
+              }
+            },
+            "Property": "Månad"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Resultat budget"
+          }
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Försäljning"
+              }
+            },
+            "Property": "Resultat utfall"
+          }
+        }
+      ]
+    },
+    {
+      "key": "disclaimer",
+      "type": "textbox",
+      "box": [
+        324,
+        1040,
+        1548,
+        28
+      ],
+      "fields": []
+    }
+  ],
+  "existingPagesAndThemeUnchanged": true,
+  "source": "User-supplied screenshot; geometry adapted to 1920x1080",
+  "limitations": [
+    "No writeback, comment entry or save/reset actions.",
+    "Budget and operating expenses are simulated; original sales data unchanged.",
+    "DAX and rendering require Desktop refresh."
+  ],
+  "checks": {
+    "bindings": "match TOM metadata",
+    "bounds": "passed",
+    "originalSalesCSV": "SHA-256 unchanged",
+    "budgetRowCounts": {
+      "Resultatrader": 18,
+      "Budgetscenario": 2,
+      "Budgetversion": 4,
+      "Budgetjustering": 26,
+      "Budgetbelopp": 81,
+      "Budgetfördelning": 2,
+      "Budgetkommentarer": 3
+    },
+    "budgetTablesDisconnected": true,
+    "TMDL": "Microsoft TOM passed",
+    "DAXExecution": "passed against actual Desktop engine",
+    "DesktopRendering": "not yet verified"
+  }
+}

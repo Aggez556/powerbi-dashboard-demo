@@ -1,0 +1,30 @@
+DEFINE
+MEASURE 'Försäljning'[Planering bas] = VAR PY = [Omsättning föregående år]
+RETURN COALESCE(PY, [Omsättning])
+MEASURE 'Försäljning'[Planering justerad] = [Planering bas] * (1 + DIVIDE(SELECTEDVALUE('Budgetjustering'[Procent], 3), 100))
+MEASURE 'Försäljning'[Planerad omsättning] = VAR Bas = [Planering bas]
+VAR AnnualBase = CALCULATE([Planering bas], ALLEXCEPT('Datum', 'Datum'[År]))
+VAR MonthCount = COUNTROWS(VALUES('Datum'[Månadsnummer]))
+VAR EvenSpread = SELECTEDVALUE('Budgetfördelning'[Fördelning], "Fördela över hela året") = "Fördela över hela året"
+VAR Vikt = IF(EvenSpread, DIVIDE(MonthCount, 12), DIVIDE(Bas, AnnualBase))
+VAR AnnualAmount = SELECTEDVALUE('Budgetbelopp'[Belopp], 0)
+RETURN (IF(EvenSpread, AnnualBase * DIVIDE(MonthCount, 12), Bas) * SELECTEDVALUE('Budgetscenario'[Faktor], 1.05) * (1 + DIVIDE(SELECTEDVALUE('Budgetjustering'[Procent], 3), 100))) + AnnualAmount * Vikt
+MEASURE 'Försäljning'[Resultat utfall] = VAR Kod = SELECTEDVALUE('Resultatrader'[Beräkning])
+VAR SelectedVersion = SELECTEDVALUE('Budgetversion'[Version], "Actuals")
+VAR RevenueValue = SWITCH(SelectedVersion, "Actuals PY", [Omsättning föregående år], "Max YTD PY", CALCULATE([Omsättning föregående år], DATESYTD('Datum'[Datum])), "Budget", [Planerad omsättning], [Omsättning])
+VAR Varukostnad = SWITCH(SelectedVersion, "Actuals PY", CALCULATE([Kostnad], SAMEPERIODLASTYEAR('Datum'[Datum])), "Max YTD PY", CALCULATE([Kostnad], SAMEPERIODLASTYEAR(DATESYTD('Datum'[Datum]))), "Budget", RevenueValue * 0.73, [Kostnad])
+RETURN SWITCH(Kod, 0, 0, 1, RevenueValue, 2, RevenueValue * 0.04, 3, RevenueValue * 1.04, 4, -Varukostnad, 5, -RevenueValue * 0.08, 6, -RevenueValue * 0.12, 7, -Varukostnad - RevenueValue * 0.20, 8, RevenueValue * 0.84 - Varukostnad, 9, -RevenueValue * 0.03, 10, RevenueValue * 0.81 - Varukostnad)
+MEASURE 'Försäljning'[Resultat budget] = VAR Kod = SELECTEDVALUE('Resultatrader'[Beräkning])
+VAR RevenueValue = [Planerad omsättning]
+RETURN SWITCH(Kod, 0, 0, 1, RevenueValue, 2, RevenueValue * 0.04, 3, RevenueValue * 1.04, 4, -RevenueValue * 0.73, 5, -RevenueValue * 0.08, 6, -RevenueValue * 0.12, 7, -RevenueValue * 0.93, 8, RevenueValue * 0.11, 9, -RevenueValue * 0.03, 10, RevenueValue * 0.08)
+MEASURE 'Försäljning'[Resultatrad bakgrund] = VAR Rad = SELECTEDVALUE('Resultatrader'[Rad])
+RETURN IF(LEFT(Rad, 5) = "Summa" || Rad IN {"Resultat före avskrivningar", "Rörelseresultat"}, "#E1E8F2", "#FFFFFF")
+EVALUATE
+SUMMARIZECOLUMNS(
+    'Resultatrader'[Rad],
+    'Datum'[År],
+    'Datum'[Månad],
+    TREATAS({2025}, 'Datum'[År]),
+    "Budget", [Resultat budget],
+    "Actuals", [Resultat utfall]
+)

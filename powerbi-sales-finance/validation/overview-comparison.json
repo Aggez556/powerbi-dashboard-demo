@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "scope": "Actual Desktop DAX compared with CSV joins and Decimal sums",
+  "groups": 18,
+  "years": [
+    2024,
+    2025
+  ]
+}

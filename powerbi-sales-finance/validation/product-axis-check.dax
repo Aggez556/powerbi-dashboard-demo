@@ -1,0 +1,11 @@
+EVALUATE
+UNION(
+    CALCULATETABLE(
+        ROW("Val", "Omsättning", "Maxvärde", MAXX(ALLSELECTED('Produkter'[Produkt]), CALCULATE([Produktvärde])), "Skalgräns", [Produktaxel max]),
+        TREATAS({2025}, 'Datum'[År]), TREATAS({"Omsättning"}, 'Produktval'[Mått])
+    ),
+    CALCULATETABLE(
+        ROW("Val", "Sålda enheter", "Maxvärde", MAXX(ALLSELECTED('Produkter'[Produkt]), CALCULATE([Produktvärde])), "Skalgräns", [Produktaxel max]),
+        TREATAS({2025}, 'Datum'[År]), TREATAS({"Sålda enheter"}, 'Produktval'[Mått])
+    )
+)

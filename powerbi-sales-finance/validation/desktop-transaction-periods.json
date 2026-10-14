@@ -1,0 +1,73 @@
+﻿{
+    "status":  "passed",
+    "rows":  [
+                 {
+                     "[Kontext]":  "Flera månader",
+                     "[Rader]":  1057,
+                     "[Omsättning]":  3151537.93,
+                     "[Kostnad]":  2364984.73,
+                     "[Bruttovinst]":  786553.2,
+                     "[Marginal]":  0.24957757687530038,
+                     "[Antal]":  4683,
+                     "[Leveranser]":  429,
+                     "[Negativa rader]":  null
+                 },
+                 {
+                     "[Kontext]":  "Helår",
+                     "[Rader]":  5416,
+                     "[Omsättning]":  15374362.6,
+                     "[Kostnad]":  11277584.28,
+                     "[Bruttovinst]":  4096778.32,
+                     "[Marginal]":  0.2664681734513013,
+                     "[Antal]":  24244,
+                     "[Leveranser]":  2166,
+                     "[Negativa rader]":  null
+                 },
+                 {
+                     "[Kontext]":  "Marknad",
+                     "[Rader]":  125,
+                     "[Omsättning]":  377389,
+                     "[Kostnad]":  281955.57,
+                     "[Bruttovinst]":  95433.43,
+                     "[Marginal]":  0.2528781443020332,
+                     "[Antal]":  613,
+                     "[Leveranser]":  50,
+                     "[Negativa rader]":  null
+                 },
+                 {
+                     "[Kontext]":  "Oktober",
+                     "[Rader]":  528,
+                     "[Omsättning]":  1461932.29,
+                     "[Kostnad]":  1076309.88,
+                     "[Bruttovinst]":  385622.41,
+                     "[Marginal]":  0.26377583465236959,
+                     "[Antal]":  2362,
+                     "[Leveranser]":  212,
+                     "[Negativa rader]":  null
+                 },
+                 {
+                     "[Kontext]":  "Produktsökning",
+                     "[Rader]":  179,
+                     "[Omsättning]":  596466.39,
+                     "[Kostnad]":  404993.49,
+                     "[Bruttovinst]":  191472.9,
+                     "[Marginal]":  0.321012052330392,
+                     "[Antal]":  809,
+                     "[Leveranser]":  179,
+                     "[Negativa rader]":  null
+                 },
+                 {
+                     "[Kontext]":  "Tomt",
+                     "[Rader]":  null,
+                     "[Omsättning]":  null,
+                     "[Kostnad]":  null,
+                     "[Bruttovinst]":  null,
+                     "[Marginal]":  null,
+                     "[Antal]":  null,
+                     "[Leveranser]":  null,
+                     "[Negativa rader]":  null
+                 }
+             ],
+    "desktopProcessId":  3136,
+    "source":  "Actual Desktop engine, DAX query"
+}

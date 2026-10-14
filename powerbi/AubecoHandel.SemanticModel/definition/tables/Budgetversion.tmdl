@@ -1,0 +1,25 @@
+/// Fristående tabell för lokal budgetsimulering.
+table Budgetversion
+
+	column Version
+		dataType: string
+		summarizeBy: none
+		sourceColumn: Version
+		sortByColumn: Ordning
+
+	column Ordning
+		dataType: int64
+		isHidden
+		summarizeBy: none
+		sourceColumn: Ordning
+
+	partition Budgetversion = m
+		mode: import
+		source =
+				let
+					Source = Csv.Document(File.Contents(DataFolder & "/Budgetversion.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+					Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+					Typed = Table.TransformColumnTypes(Headers, {{"Version", type text}, {"Ordning", Int64.Type}}, "en-US")
+				in
+					Typed
+

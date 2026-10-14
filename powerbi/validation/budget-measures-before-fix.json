@@ -1,0 +1,26 @@
+﻿[
+    {
+        "expression":  "VAR PY = [Omsättning föregående år]\nRETURN COALESCE(PY, [Omsättning])",
+        "name":  "Planering bas"
+    },
+    {
+        "expression":  "[Planering bas] * (1 + DIVIDE(SELECTEDVALUE(\u0027Budgetjustering\u0027[Procent], 3), 100))",
+        "name":  "Planering justerad"
+    },
+    {
+        "expression":  "VAR Bas = [Planering bas]\nVAR Helår = CALCULATE([Planering bas], ALLEXCEPT(\u0027Datum\u0027, \u0027Datum\u0027[År]))\nVAR Månader = COUNTROWS(VALUES(\u0027Datum\u0027[Månadsnummer]))\nVAR Jämnt = SELECTEDVALUE(\u0027Budgetfördelning\u0027[Fördelning], \"Fördela över hela året\") = \"Fördela över hela året\"\nVAR Vikt = IF(Jämnt, DIVIDE(Månader, 12), DIVIDE(Bas, Helår))\nVAR Årsbelopp = SELECTEDVALUE(\u0027Budgetbelopp\u0027[Belopp], 0)\nRETURN (IF(Jämnt, Helår * DIVIDE(Månader, 12), Bas) * SELECTEDVALUE(\u0027Budgetscenario\u0027[Faktor], 1.05) * (1 + DIVIDE(SELECTEDVALUE(\u0027Budgetjustering\u0027[Procent], 3), 100))) + Årsbelopp * Vikt",
+        "name":  "Planerad omsättning"
+    },
+    {
+        "expression":  "VAR Kod = SELECTEDVALUE(\u0027Resultatrader\u0027[Beräkning])\nVAR Version = SELECTEDVALUE(\u0027Budgetversion\u0027[Version], \"Actuals\")\nVAR Intäkt = SWITCH(Version, \"Actuals PY\", [Omsättning föregående år], \"Max YTD PY\", CALCULATE([Omsättning föregående år], DATESYTD(\u0027Datum\u0027[Datum])), \"Budget\", [Planerad omsättning], [Omsättning])\nVAR Varukostnad = SWITCH(Version, \"Actuals PY\", CALCULATE([Kostnad], SAMEPERIODLASTYEAR(\u0027Datum\u0027[Datum])), \"Max YTD PY\", CALCULATE([Kostnad], SAMEPERIODLASTYEAR(DATESYTD(\u0027Datum\u0027[Datum]))), \"Budget\", Intäkt * 0.73, [Kostnad])\nRETURN SWITCH(Kod, 0, 0, 1, Intäkt, 2, Intäkt * 0.04, 3, Intäkt * 1.04, 4, -Varukostnad, 5, -Intäkt * 0.08, 6, -Intäkt * 0.12, 7, -Varukostnad - Intäkt * 0.20, 8, Intäkt * 0.84 - Varukostnad, 9, -Intäkt * 0.03, 10, Intäkt * 0.81 - Varukostnad)",
+        "name":  "Resultat utfall"
+    },
+    {
+        "expression":  "VAR Kod = SELECTEDVALUE(\u0027Resultatrader\u0027[Beräkning])\nVAR Intäkt = [Planerad omsättning]\nRETURN SWITCH(Kod, 0, 0, 1, Intäkt, 2, Intäkt * 0.04, 3, Intäkt * 1.04, 4, -Intäkt * 0.73, 5, -Intäkt * 0.08, 6, -Intäkt * 0.12, 7, -Intäkt * 0.93, 8, Intäkt * 0.11, 9, -Intäkt * 0.03, 10, Intäkt * 0.08)",
+        "name":  "Resultat budget"
+    },
+    {
+        "expression":  "VAR Rad = SELECTEDVALUE(\u0027Resultatrader\u0027[Rad])\nRETURN IF(LEFT(Rad, 5) = \"Summa\" || Rad IN {\"Resultat före avskrivningar\", \"Rörelseresultat\"}, \"#E1E8F2\", \"#FFFFFF\")",
+        "name":  "Resultatrad bakgrund"
+    }
+]

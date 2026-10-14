@@ -1,0 +1,33 @@
+table Säljare
+	lineageTag: bb5f8aab-6d58-4b6f-b063-43dce6c664f8
+
+	column Säljarnyckel
+		dataType: int64
+		isHidden
+		isKey
+		lineageTag: 24ea8b0e-2d24-4886-a073-fac1550ee185
+		summarizeBy: none
+		sourceColumn: SellerKey
+
+	column Säljare
+		dataType: string
+		lineageTag: eb3f2c5e-4e9b-413f-9b8d-cf6129ac687b
+		summarizeBy: none
+		sourceColumn: Seller
+
+	column Team
+		dataType: string
+		lineageTag: 01109a7d-1aa3-4d0b-a38a-1a345f0a307a
+		summarizeBy: none
+		sourceColumn: Team
+
+	partition Säljare = m
+		mode: import
+		source =
+				let
+					Source = Csv.Document(File.Contents(DataFolder & "/DimSeller.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+					Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+					Typed = Table.TransformColumnTypes(Headers, {{"SellerKey", Int64.Type}, {"Seller", type text}, {"Team", type text}}, "en-US")
+				in
+					Typed
+

@@ -1,0 +1,14 @@
+﻿{
+    "status":  "passed",
+    "rows":  [
+                 {
+                     "[Omsättning]":  "+16,4 % ▲",
+                     "[Enheter]":  "+17,8 % ▲",
+                     "[Bruttovinst]":  "+23,4 % ▲",
+                     "[Marginal]":  "+1,5 pp ▲",
+                     "[Leveranser]":  "+18,1 % ▲"
+                 }
+             ],
+    "desktopProcessId":  33908,
+    "source":  "Actual Desktop engine, DAX query"
+}

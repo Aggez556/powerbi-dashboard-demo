@@ -1,0 +1,13 @@
+const fs=require('fs'),path=require('path'),crypto=require('crypto');
+const page='b4eda99cffce7ac04192',dir=path.resolve(__dirname,'../powerbi-ledningsrapport/LedningsrapportUtanScroll.Report/definition/pages',page,'visuals');
+const lit=v=>({expr:{Literal:{Value:typeof v==='boolean'?String(v):`${v}D`}}});
+const file=fs.readdirSync(dir).map(n=>path.join(dir,n,'visual.json')).find(p=>fs.existsSync(p)&&JSON.parse(fs.readFileSync(p,'utf8')).visual.visualType==='clusteredBarChart');
+const chart=JSON.parse(fs.readFileSync(file,'utf8'));
+chart.visual.objects.legend[0].properties.show=lit(false);
+chart.visual.objects.categoryAxis[0].properties.innerPadding=lit(40);
+fs.writeFileSync(file,JSON.stringify(chart,null,2)+'\n');
+const name=crypto.createHash('sha256').update('sales-overview:'+page+':industry-legend').digest('hex').slice(0,20);
+const runs=[['● ','#0F3163'],['Vald period  ','#5B6B80'],['● ','#BCC8D8'],['Föregående år','#5B6B80']].map(([value,color])=>({value,textStyle:{fontFamily:'Segoe UI',fontSize:'10.5pt',color}}));
+const legend={$schema:chart.$schema,name,position:{x:780,y:816,width:282,height:32,z:170,tabOrder:170},visual:{visualType:'textbox',objects:{general:[{properties:{paragraphs:[{horizontalTextAlignment:'right',textRuns:runs}]}}]},visualContainerObjects:{background:[{properties:{show:lit(false)}}],border:[{properties:{show:lit(false)}}],padding:[{properties:{top:lit(0),bottom:lit(0),left:lit(0),right:lit(0)}}]}}};
+fs.mkdirSync(path.join(dir,name),{recursive:true});fs.writeFileSync(path.join(dir,name,'visual.json'),JSON.stringify(legend,null,2)+'\n');
+console.log('Moved industry legend to heading level; category spacing increased to 40%.');

@@ -1,0 +1,5 @@
+EVALUATE
+UNION(
+CALCULATETABLE(SUMMARIZECOLUMNS('Analysaxel'[Typ], 'Analysaxel'[Område], "Vinst", [Finans sammanställning vinst], "Marginal", [Finans sammanställning marginal], "Tillväxt", [Finans sammanställning tillväxt], "Rubrik", [Finans sammanställningsrubrik]), TREATAS({2025}, 'Datum'[År]), TREATAS({"Land"}, 'Analysaxel'[Typ])),
+CALCULATETABLE(SUMMARIZECOLUMNS('Analysaxel'[Typ], 'Analysaxel'[Område], "Vinst", [Finans sammanställning vinst], "Marginal", [Finans sammanställning marginal], "Tillväxt", [Finans sammanställning tillväxt], "Rubrik", [Finans sammanställningsrubrik]), TREATAS({2025}, 'Datum'[År]), TREATAS({"Kategori"}, 'Analysaxel'[Typ]))
+)

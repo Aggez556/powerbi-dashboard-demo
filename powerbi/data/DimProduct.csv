@@ -1,0 +1,31 @@
+﻿ProductKey,ProductName,Category,ListPrice,StandardUnitCost,StandardMargin
+1,Kontor – produkt 01,Kontor,134.41,93.97,0.3009
+2,Kontor – produkt 02,Kontor,182.56,131.22,0.2812
+3,Kontor – produkt 03,Kontor,167.26,125.78,0.248
+4,Kontor – produkt 04,Kontor,149.29,103.74,0.3051
+5,Kontor – produkt 05,Kontor,175.98,121.23,0.3111
+6,Kontor – produkt 06,Kontor,90.28,67.87,0.2482
+7,Hem och kök – produkt 01,Hem och kök,232.43,146.22,0.3709
+8,Hem och kök – produkt 02,Hem och kök,382.95,235.82,0.3842
+9,Hem och kök – produkt 03,Hem och kök,274.19,178.14,0.3503
+10,Hem och kök – produkt 04,Hem och kök,359.59,228.16,0.3655
+11,Hem och kök – produkt 05,Hem och kök,258.49,147.93,0.4277
+12,Hem och kök – produkt 06,Hem och kök,347.17,227.92,0.3435
+13,Elektronik – produkt 01,Elektronik,1039.80,860.64,0.1723
+14,Elektronik – produkt 02,Elektronik,1152.90,976.74,0.1528
+15,Elektronik – produkt 03,Elektronik,1424.94,1214.90,0.1474
+16,Elektronik – produkt 04,Elektronik,2135.76,1821.38,0.1472
+17,Elektronik – produkt 05,Elektronik,1588.54,1303.40,0.1795
+18,Elektronik – produkt 06,Elektronik,1747.89,1486.93,0.1493
+19,Sport och fritid – produkt 01,Sport och fritid,466.94,326.06,0.3017
+20,Sport och fritid – produkt 02,Sport och fritid,847.26,506.15,0.4026
+21,Sport och fritid – produkt 03,Sport och fritid,616.72,380.15,0.3836
+22,Sport och fritid – produkt 04,Sport och fritid,846.00,596.51,0.2949
+23,Sport och fritid – produkt 05,Sport och fritid,730.09,465.29,0.3627
+24,Sport och fritid – produkt 06,Sport och fritid,541.04,376.51,0.3041
+25,Trädgård – produkt 01,Trädgård,551.82,314.70,0.4297
+26,Trädgård – produkt 02,Trädgård,288.14,165.62,0.4252
+27,Trädgård – produkt 03,Trädgård,346.81,190.85,0.4497
+28,Trädgård – produkt 04,Trädgård,334.50,168.19,0.4972
+29,Trädgård – produkt 05,Trädgård,324.72,193.73,0.4034
+30,Trädgård – produkt 06,Trädgård,286.44,171.06,0.4028

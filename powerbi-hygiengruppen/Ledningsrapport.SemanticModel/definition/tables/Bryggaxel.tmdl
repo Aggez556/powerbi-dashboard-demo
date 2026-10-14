@@ -1,0 +1,57 @@
+/// Reproducerbar lokal demodata; Bryggaxel.csv.
+table Bryggaxel
+	lineageTag: 8ea0bdfb-c476-46d0-8383-75507d6ba238
+
+	/// Källfält i lokal demodata: Bryggaxel.Periodtyp.
+	column Periodtyp
+		dataType: string
+		isHidden
+		lineageTag: dfdf0d3e-f4aa-45cf-ae51-02e48f4b1523
+		summarizeBy: none
+		sourceColumn: Periodtyp
+		sortByColumn: Ordning
+
+	/// Källfält i lokal demodata: Bryggaxel.Slutdatum.
+	column Slutdatum
+		dataType: dateTime
+		isHidden
+		formatString: yyyy-MM-dd
+		lineageTag: 73d7d604-985c-4759-bc77-4e3df2252e5f
+		summarizeBy: none
+		sourceColumn: Slutdatum
+
+		variation Variation
+			isDefault
+			relationship: 4b5c1076-55c9-42c7-9758-9776d75525c8
+			defaultHierarchy: LocalDateTable_aba4d5a3-5b81-4442-8ee8-6303c933eb8e.Datumhierarki
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	/// Källfält i lokal demodata: Bryggaxel.Steg.
+	column Steg
+		dataType: string
+		lineageTag: 1dbcda24-c031-4696-a67b-de81dd64fe5a
+		summarizeBy: none
+		sourceColumn: Steg
+		sortByColumn: Ordning
+
+	/// Källfält i lokal demodata: Bryggaxel.Ordning.
+	column Ordning
+		dataType: int64
+		isHidden
+		lineageTag: 854c8988-f51a-4d92-ae25-388f04844559
+		summarizeBy: sum
+		sourceColumn: Ordning
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Bryggaxel = m
+		mode: import
+		source =
+				let
+					Source = Csv.Document(File.Contents(DataFolder & "/Bryggaxel.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+					Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+					Typed = Table.TransformColumnTypes(Headers, {{"Periodtyp", type text}, {"Slutdatum", type date}, {"Steg", type text}, {"Ordning", Int64.Type}}, "en-US")
+				in
+					Typed
+

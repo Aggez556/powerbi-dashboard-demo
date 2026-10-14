@@ -1,0 +1,11 @@
+EVALUATE
+CALCULATETABLE(
+    UNION(
+        ROW("Period", "Helår 2025", "Första", [Säljartopp 1 förändring etikett], "Andra", [Säljartopp 2 förändring etikett], "Tredje", [Säljartopp 3 förändring etikett]),
+        SELECTCOLUMNS(
+            SUMMARIZECOLUMNS('Datum'[Månadsnummer], "etikett1", [Säljartopp 1 förändring etikett], "etikett2", [Säljartopp 2 förändring etikett], "etikett3", [Säljartopp 3 förändring etikett]),
+            "Period", FORMAT('Datum'[Månadsnummer], "00"), "Första", [etikett1], "Andra", [etikett2], "Tredje", [etikett3]
+        )
+    ),
+    TREATAS({2025}, 'Datum'[År])
+)

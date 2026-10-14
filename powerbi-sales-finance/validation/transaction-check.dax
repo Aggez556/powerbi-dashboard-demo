@@ -1,0 +1,14 @@
+EVALUATE
+TOPN(
+ 5,
+ SUMMARIZECOLUMNS(
+  'Försäljning'[Radnyckel], 'Försäljning'[Ordernyckel], 'Datum'[Datum],
+  'Säljare'[Säljare], 'Säljare'[Team], 'Kunder'[Land],
+  'Produkter'[Kategori], 'Produkter'[Produkt],
+  "Enhetspris", [Omsättning per enhet], "Antal", [Sålda enheter],
+  "Varukostnad", [Kostnad], "Omsättning", [Omsättning],
+  "Bruttovinst", [Bruttovinst], "Marginal", [Bruttomarginal]
+ ),
+ 'Försäljning'[Radnyckel], ASC
+)
+ORDER BY 'Försäljning'[Radnyckel]

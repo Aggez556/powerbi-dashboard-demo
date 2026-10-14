@@ -1,0 +1,5 @@
+expression DataFolder = "C:/dev/codex-labb/powerbi/data" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
+	lineageTag: 1023f8a5-a1a6-4665-9e94-7bbd0966c9c7
+
+	annotation PBI_ResultType = Text
+

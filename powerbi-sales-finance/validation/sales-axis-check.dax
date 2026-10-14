@@ -1,0 +1,2 @@
+EVALUATE
+CALCULATETABLE(ROW("Kvartal", [Säljanalys kvartal 1], "Antal", COUNTROWS(VALUES('Datum'[Månadsnummer])), "Valda", COUNTROWS(ALLSELECTED('Datum'[Månadsnummer])), "Bild", [Säljanalys trend 1 bild]), TREATAS({2025},'Datum'[År]), TREATAS({"oktober"},'Datum'[Månad]), TREATAS({"Kategori"},'Analysaxel'[Typ]))

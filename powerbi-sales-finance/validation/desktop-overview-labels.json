@@ -1,0 +1,12 @@
+﻿{
+    "status":  "passed",
+    "rows":  [
+                 {
+                     "[Marknad]":  "4,03 mn kr",
+                     "[Omsättning]":  "15,37 mn kr",
+                     "[Produkt]":  "15,37 mn kr"
+                 }
+             ],
+    "desktopProcessId":  7404,
+    "source":  "Actual Desktop engine, DAX query"
+}

@@ -1,0 +1,9 @@
+EVALUATE
+UNION(
+ CALCULATETABLE(ROW("Period", "Full", "Group", "Land", "SVG", [Säljanalys trend 1 bild]), TREATAS({2025},'Datum'[År]), TREATAS({"Land"},'Analysaxel'[Typ])),
+ CALCULATETABLE(ROW("Period", "Q1", "Group", "Land", "SVG", [Säljanalys trend 1 bild]), TREATAS({2025},'Datum'[År]), TREATAS({"januari","februari","mars"},'Datum'[Månad]), TREATAS({"Land"},'Analysaxel'[Typ])),
+ CALCULATETABLE(ROW("Period", "October", "Group", "Land", "SVG", [Säljanalys trend 1 bild]), TREATAS({2025},'Datum'[År]), TREATAS({"oktober"},'Datum'[Månad]), TREATAS({"Land"},'Analysaxel'[Typ])),
+ CALCULATETABLE(ROW("Period", "Full", "Group", "Kategori", "SVG", [Säljanalys trend 1 bild]), TREATAS({2025},'Datum'[År]), TREATAS({"Kategori"},'Analysaxel'[Typ])),
+ CALCULATETABLE(ROW("Period", "Q1", "Group", "Kategori", "SVG", [Säljanalys trend 1 bild]), TREATAS({2025},'Datum'[År]), TREATAS({"januari","februari","mars"},'Datum'[Månad]), TREATAS({"Kategori"},'Analysaxel'[Typ])),
+ CALCULATETABLE(ROW("Period", "October", "Group", "Kategori", "SVG", [Säljanalys trend 1 bild]), TREATAS({2025},'Datum'[År]), TREATAS({"oktober"},'Datum'[Månad]), TREATAS({"Kategori"},'Analysaxel'[Typ]))
+)

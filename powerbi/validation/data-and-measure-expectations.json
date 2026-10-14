@@ -1,0 +1,326 @@
+{
+  "status": "passed",
+  "rowCounts": {
+    "FactSales": 10000,
+    "DimDate": 731,
+    "DimCustomer": 100,
+    "DimProduct": 30
+  },
+  "uniqueOrders": 4000,
+  "allForeignKeysValid": true,
+  "dateContinuity": true,
+  "orderConsistency": true,
+  "allCustomersAndProductsRepresented": true,
+  "monetaryIdentities": true,
+  "novDecLines": 2498,
+  "junJulLines": 1435,
+  "visuals": 21,
+  "boundsAndOverlap": "passed",
+  "fieldBindings": "match TOM metadata",
+  "annual": {
+    "2024": {
+      "Omsättning": 11596424.01,
+      "Kostnad": 8851023.65,
+      "Bruttovinst": 2745400.36,
+      "Bruttomarginal": 0.23674542752425626,
+      "Antal order": 1829,
+      "Antal orderrader": 4560,
+      "Omsättning föregående år": null,
+      "Tillväxt mot föregående år": null
+    },
+    "2025": {
+      "Omsättning": 13818582.35,
+      "Kostnad": 10388591.37,
+      "Bruttovinst": 3429990.98,
+      "Bruttomarginal": 0.24821583669905184,
+      "Antal order": 2171,
+      "Antal orderrader": 5440,
+      "Omsättning föregående år": 11596424.01,
+      "Tillväxt mot föregående år": 0.19162444716438065
+    }
+  },
+  "year2025ByCategory": [
+    {
+      "Omsättning": 6664375.4,
+      "Kostnad": 5778462.35,
+      "Bruttovinst": 885913.05,
+      "Bruttomarginal": 0.13293264512080158,
+      "Antal order": 877,
+      "Antal orderrader": 1001,
+      "År": 2025,
+      "Kategori": "Elektronik",
+      "Omsättning föregående år": 5645909.42,
+      "Tillväxt mot föregående år": 0.1803900672568708
+    },
+    {
+      "Omsättning": 1359039.62,
+      "Kostnad": 878288.46,
+      "Bruttovinst": 480751.16,
+      "Bruttomarginal": 0.35374329999297593,
+      "Antal order": 868,
+      "Antal orderrader": 1003,
+      "År": 2025,
+      "Kategori": "Hem och kök",
+      "Omsättning föregående år": 1176704.45,
+      "Tillväxt mot föregående år": 0.15495409233813984
+    },
+    {
+      "Omsättning": 675403.88,
+      "Kostnad": 495626.28,
+      "Bruttovinst": 179777.6,
+      "Bruttomarginal": 0.2661779200913089,
+      "Antal order": 878,
+      "Antal orderrader": 999,
+      "År": 2025,
+      "Kategori": "Kontor",
+      "Omsättning föregående år": 537776.52,
+      "Tillväxt mot föregående år": 0.2559192431830233
+    },
+    {
+      "Omsättning": 2832666.1,
+      "Kostnad": 1905789.97,
+      "Bruttovinst": 926876.13,
+      "Bruttomarginal": 0.32720980774966735,
+      "Antal order": 875,
+      "Antal orderrader": 988,
+      "År": 2025,
+      "Kategori": "Sport och fritid",
+      "Omsättning föregående år": 2508349.35,
+      "Tillväxt mot föregående år": 0.12929488868845174
+    },
+    {
+      "Omsättning": 2287097.35,
+      "Kostnad": 1330424.31,
+      "Bruttovinst": 956673.04,
+      "Bruttomarginal": 0.41829135082509716,
+      "Antal order": 1174,
+      "Antal orderrader": 1449,
+      "År": 2025,
+      "Kategori": "Trädgård",
+      "Omsättning föregående år": 1727684.27,
+      "Tillväxt mot föregående år": 0.3237935829559877
+    }
+  ],
+  "monthly": [
+    {
+      "År–månad": "202401",
+      "Omsättning": 856594.88,
+      "Kostnad": 664887.27,
+      "Bruttovinst": 191707.61,
+      "Bruttomarginal": 0.22380195641608316,
+      "Antal order": 122,
+      "Antal orderrader": 313
+    },
+    {
+      "År–månad": "202402",
+      "Omsättning": 700167.5,
+      "Kostnad": 541155.64,
+      "Bruttovinst": 159011.86,
+      "Bruttomarginal": 0.22710545690852546,
+      "Antal order": 102,
+      "Antal orderrader": 254
+    },
+    {
+      "År–månad": "202403",
+      "Omsättning": 882323.7,
+      "Kostnad": 685220.11,
+      "Bruttovinst": 197103.59,
+      "Bruttomarginal": 0.2233914718600441,
+      "Antal order": 136,
+      "Antal orderrader": 338
+    },
+    {
+      "År–månad": "202404",
+      "Omsättning": 732451.81,
+      "Kostnad": 542202.39,
+      "Bruttovinst": 190249.42,
+      "Bruttomarginal": 0.25974325874080373,
+      "Antal order": 119,
+      "Antal orderrader": 295
+    },
+    {
+      "År–månad": "202405",
+      "Omsättning": 958418.19,
+      "Kostnad": 706742.03,
+      "Bruttovinst": 251676.16,
+      "Bruttomarginal": 0.2625953499484395,
+      "Antal order": 166,
+      "Antal orderrader": 403
+    },
+    {
+      "År–månad": "202406",
+      "Omsättning": 905069.69,
+      "Kostnad": 699055.95,
+      "Bruttovinst": 206013.74,
+      "Bruttomarginal": 0.22762196356393286,
+      "Antal order": 146,
+      "Antal orderrader": 365
+    },
+    {
+      "År–månad": "202407",
+      "Omsättning": 513006.91,
+      "Kostnad": 380819.73,
+      "Bruttovinst": 132187.18,
+      "Bruttomarginal": 0.2576713440370618,
+      "Antal order": 96,
+      "Antal orderrader": 235
+    },
+    {
+      "År–månad": "202408",
+      "Omsättning": 760701.06,
+      "Kostnad": 576538.91,
+      "Bruttovinst": 184162.15,
+      "Bruttomarginal": 0.24209529825027457,
+      "Antal order": 134,
+      "Antal orderrader": 335
+    },
+    {
+      "År–månad": "202409",
+      "Omsättning": 957134.01,
+      "Kostnad": 724747.72,
+      "Bruttovinst": 232386.29,
+      "Bruttomarginal": 0.24279389048143843,
+      "Antal order": 144,
+      "Antal orderrader": 372
+    },
+    {
+      "År–månad": "202410",
+      "Omsättning": 1099677.15,
+      "Kostnad": 833775.37,
+      "Bruttovinst": 265901.78,
+      "Bruttomarginal": 0.24179985916775665,
+      "Antal order": 178,
+      "Antal orderrader": 445
+    },
+    {
+      "År–månad": "202411",
+      "Omsättning": 1722280.88,
+      "Kostnad": 1338349.48,
+      "Bruttovinst": 383931.4,
+      "Bruttomarginal": 0.2229203171552366,
+      "Antal order": 242,
+      "Antal orderrader": 603
+    },
+    {
+      "År–månad": "202412",
+      "Omsättning": 1508598.23,
+      "Kostnad": 1157529.05,
+      "Bruttovinst": 351069.18,
+      "Bruttomarginal": 0.23271217811252504,
+      "Antal order": 244,
+      "Antal orderrader": 602
+    },
+    {
+      "År–månad": "202501",
+      "Omsättning": 972701.07,
+      "Kostnad": 750242.3,
+      "Bruttovinst": 222458.77,
+      "Bruttomarginal": 0.22870209241159775,
+      "Antal order": 146,
+      "Antal orderrader": 360
+    },
+    {
+      "År–månad": "202502",
+      "Omsättning": 831028.32,
+      "Kostnad": 622523.54,
+      "Bruttovinst": 208504.78,
+      "Bruttomarginal": 0.25089972866387994,
+      "Antal order": 130,
+      "Antal orderrader": 331
+    },
+    {
+      "År–månad": "202503",
+      "Omsättning": 932665.27,
+      "Kostnad": 715513.41,
+      "Bruttovinst": 217151.86,
+      "Bruttomarginal": 0.23282936224268327,
+      "Antal order": 151,
+      "Antal orderrader": 375
+    },
+    {
+      "År–månad": "202504",
+      "Omsättning": 1047820.07,
+      "Kostnad": 772030.02,
+      "Bruttovinst": 275790.05,
+      "Bruttomarginal": 0.26320363380709055,
+      "Antal order": 172,
+      "Antal orderrader": 433
+    },
+    {
+      "År–månad": "202505",
+      "Omsättning": 929898.01,
+      "Kostnad": 673944.38,
+      "Bruttovinst": 255953.63,
+      "Bruttomarginal": 0.2752491426452241,
+      "Antal order": 164,
+      "Antal orderrader": 415
+    },
+    {
+      "År–månad": "202506",
+      "Omsättning": 1240602.3,
+      "Kostnad": 928746.23,
+      "Bruttovinst": 311856.07,
+      "Bruttomarginal": 0.2513747314510057,
+      "Antal order": 197,
+      "Antal orderrader": 502
+    },
+    {
+      "År–månad": "202507",
+      "Omsättning": 794733.7,
+      "Kostnad": 576617.8,
+      "Bruttovinst": 218115.9,
+      "Bruttomarginal": 0.27445155528197684,
+      "Antal order": 136,
+      "Antal orderrader": 333
+    },
+    {
+      "År–månad": "202508",
+      "Omsättning": 1044181.62,
+      "Kostnad": 767955.65,
+      "Bruttovinst": 276225.97,
+      "Bruttomarginal": 0.2645382419200215,
+      "Antal order": 170,
+      "Antal orderrader": 413
+    },
+    {
+      "År–månad": "202509",
+      "Omsättning": 1202217.43,
+      "Kostnad": 924248.84,
+      "Bruttovinst": 277968.59,
+      "Bruttomarginal": 0.23121324235001317,
+      "Antal order": 176,
+      "Antal orderrader": 436
+    },
+    {
+      "År–månad": "202510",
+      "Omsättning": 1442629.29,
+      "Kostnad": 1094930.76,
+      "Bruttovinst": 347698.53,
+      "Bruttomarginal": 0.24101724012549336,
+      "Antal order": 213,
+      "Antal orderrader": 549
+    },
+    {
+      "År–månad": "202511",
+      "Omsättning": 1667513.17,
+      "Kostnad": 1269269.26,
+      "Bruttovinst": 398243.91,
+      "Bruttomarginal": 0.2388250462813436,
+      "Antal order": 249,
+      "Antal orderrader": 624
+    },
+    {
+      "År–månad": "202512",
+      "Omsättning": 1712592.1,
+      "Kostnad": 1292569.18,
+      "Bruttovinst": 420022.92,
+      "Bruttomarginal": 0.24525566829369352,
+      "Antal order": 267,
+      "Antal orderrader": 669
+    }
+  ],
+  "limitations": [
+    "Expected values computed with independent SQL on CSV; DAX and Power Query were not executed.",
+    "Order counts across categories are not additive because one order can contain multiple categories."
+  ]
+}

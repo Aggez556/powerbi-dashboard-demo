@@ -1,0 +1,65 @@
+relationship 'Försäljning till Datum'
+	fromColumn: Försäljning.Datumnyckel
+	toColumn: Datum.Datumnyckel
+
+relationship 'Försäljning till Områden'
+	fromColumn: Försäljning.Områdesnyckel
+	toColumn: Områden.Områdesnyckel
+
+relationship 'Försäljning till Kunder'
+	fromColumn: Försäljning.Kundnyckel
+	toColumn: Kunder.Kundnyckel
+
+relationship 'Direkta kostnader till Datum'
+	fromColumn: 'Direkta kostnader'.Datumnyckel
+	toColumn: Datum.Datumnyckel
+
+relationship 'Direkta kostnader till Områden'
+	fromColumn: 'Direkta kostnader'.Områdesnyckel
+	toColumn: Områden.Områdesnyckel
+
+relationship 'Gemensamma kostnader till Datum'
+	fromColumn: 'Gemensamma kostnader'.Datumnyckel
+	toColumn: Datum.Datumnyckel
+
+relationship 'Uppdrag till Datum'
+	fromColumn: Uppdrag.Datumnyckel
+	toColumn: Datum.Datumnyckel
+
+relationship 'Uppdrag till Områden'
+	fromColumn: Uppdrag.Områdesnyckel
+	toColumn: Områden.Områdesnyckel
+
+relationship 'Uppdrag till Kunder'
+	fromColumn: Uppdrag.Kundnyckel
+	toColumn: Kunder.Kundnyckel
+
+relationship 'Budget till Datum'
+	fromColumn: Budget.Datumnyckel
+	toColumn: Datum.Datumnyckel
+
+relationship 84a20d81-7280-438a-8a4d-b703c7131cc1
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Trendaxel.Månadsstart
+	toColumn: LocalDateTable_a84b8e1e-8feb-4225-a053-b38fd3843c95.Date
+
+relationship 4b5c1076-55c9-42c7-9758-9776d75525c8
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Bryggaxel.Slutdatum
+	toColumn: LocalDateTable_aba4d5a3-5b81-4442-8ee8-6303c933eb8e.Date
+
+relationship 8b5d92a6-194f-4d6a-b660-d4f9e25bef36
+	joinOnDateBehavior: datePartOnly
+	fromColumn: R12val.Slutdatum
+	toColumn: LocalDateTable_8db51f73-cf96-4378-a9e1-37134a6d9514.Date
+
+relationship 90d435a8-b5f8-4e02-9ac2-afb079a49d33
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Månadsval.Slutdatum
+	toColumn: LocalDateTable_896fa1d9-5251-40f4-981a-7881ce885858.Date
+
+relationship fca4a33a-d22f-45e2-abaf-31d2e2eb0ec5
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Helårsval.Slutdatum
+	toColumn: LocalDateTable_c2ba7986-50b1-4bb3-ad07-2f660a25f426.Date
+

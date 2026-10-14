@@ -1,0 +1,29 @@
+DEFINE
+    VAR Controls = CALCULATETABLE(
+        UNION(
+            CALCULATETABLE(ROW("Område","Alla områden","Omsättning",[Sälj omsättning],"Bruttovinst",[Sälj bruttovinst],"Marginal",[Sälj bruttomarginal],"Tillväxt",[Sälj tillväxt],"Kunder",[Sälj kunder],"Kort5",[Sälj kort 5 tal],"Kort6",[Sälj kort 6 tal]),TREATAS({0},'Områdesval'[Områdesval])),
+            CALCULATETABLE(ROW("Område","Produktförsäljning","Omsättning",[Sälj omsättning],"Bruttovinst",[Sälj bruttovinst],"Marginal",[Sälj bruttomarginal],"Tillväxt",[Sälj tillväxt],"Kunder",[Sälj kunder],"Kort5",[Sälj kort 5 tal],"Kort6",[Sälj kort 6 tal]),TREATAS({1},'Områdesval'[Områdesval])),
+            CALCULATETABLE(ROW("Område","Teknisk service","Omsättning",[Sälj omsättning],"Bruttovinst",[Sälj bruttovinst],"Marginal",[Sälj bruttomarginal],"Tillväxt",[Sälj tillväxt],"Kunder",[Sälj kunder],"Kort5",[Sälj kort 5 tal],"Kort6",[Sälj kort 6 tal]),TREATAS({2},'Områdesval'[Områdesval])),
+            CALCULATETABLE(ROW("Område","Bemanning","Omsättning",[Sälj omsättning],"Bruttovinst",[Sälj bruttovinst],"Marginal",[Sälj bruttomarginal],"Tillväxt",[Sälj tillväxt],"Kunder",[Sälj kunder],"Kort5",[Sälj kort 5 tal],"Kort6",[Sälj kort 6 tal]),TREATAS({3},'Områdesval'[Områdesval]))
+        ),TREATAS({"R12"},'Periodtyp'[Periodtyp]),TREATAS({"September 2026"},'R12val'[Period])
+    )
+EVALUATE Controls
+
+EVALUATE
+CALCULATETABLE(SUMMARIZECOLUMNS('Artiklar'[Kategori],"Omsättning",[Sälj omsättning],"Bruttovinst",[Sälj bruttovinst],"Tillväxt",[Sälj tillväxt]),TREATAS({"R12"},'Periodtyp'[Periodtyp]),TREATAS({"September 2026"},'R12val'[Period]))
+
+EVALUATE
+CALCULATETABLE(SUMMARIZECOLUMNS('Kunder'[Kundbransch],"Omsättning",[Sälj omsättning],"Föregående år",[Sälj omsättning föregående år]),TREATAS({"R12"},'Periodtyp'[Periodtyp]),TREATAS({"September 2026"},'R12val'[Period]))
+
+EVALUATE
+CALCULATETABLE(ROW("Resultat",[Rörelseresultat],"Budget",[Budgetresultat],"Uppdrag",[Utförda uppdrag],"Kunder",[Aktiva kunder],"Bryggfel",[Bryggkontroll]),TREATAS({"R12"},'Periodtyp'[Periodtyp]),TREATAS({"September 2026"},'R12val'[Period]))
+
+EVALUATE
+CALCULATETABLE(FILTER(SUMMARIZECOLUMNS('Trendaxel'[Månad],'Försäljningsserie'[Serie],"Mkr",[Sälj trend]),NOT ISBLANK([Mkr])),TREATAS({"R12"},'Periodtyp'[Periodtyp]),TREATAS({"September 2026"},'R12val'[Period]))
+
+EVALUATE
+UNION(
+    CALCULATETABLE(ROW("Fall","Helår 2024","Sälj",[Sälj omsättning],"Ledning",[Nettoomsättning],"Bryggfel",[Bryggkontroll]),TREATAS({"Helår"},'Periodtyp'[Periodtyp]),TREATAS({"2024"},'Helårsval'[Period])),
+    CALCULATETABLE(ROW("Fall","Helår 2025","Sälj",[Sälj omsättning],"Ledning",[Nettoomsättning],"Bryggfel",[Bryggkontroll]),TREATAS({"Helår"},'Periodtyp'[Periodtyp]),TREATAS({"2025"},'Helårsval'[Period])),
+    CALCULATETABLE(ROW("Fall","Månad september 2026","Sälj",[Sälj omsättning],"Ledning",[Nettoomsättning],"Bryggfel",[Bryggkontroll]),TREATAS({"Månad"},'Periodtyp'[Periodtyp]),TREATAS({"September 2026"},'Månadsval'[Period]))
+)

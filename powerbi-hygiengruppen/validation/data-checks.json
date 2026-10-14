@@ -1,0 +1,209 @@
+{
+  "status": "passed",
+  "source": "Independent Python calculations against persisted CSV; NOT live DAX or screenshots",
+  "standard": {
+    "revenue": 139500000,
+    "grossProfit": 36040000,
+    "operatingProfit": 8000000,
+    "centralCosts": 28040000,
+    "budget": 9750000,
+    "jobs": 960,
+    "customers": 270
+  },
+  "previous": {
+    "revenue": 120000000,
+    "grossProfit": 33000000,
+    "operatingProfit": 9000000,
+    "centralCosts": 24000000,
+    "budget": 9500000,
+    "jobs": 840,
+    "customers": 240
+  },
+  "areas": [
+    {
+      "revenue": 85000000,
+      "grossProfit": 23800000,
+      "operatingProfit": -4240000,
+      "centralCosts": 28040000,
+      "budget": 9750000,
+      "jobs": 0,
+      "customers": 230
+    },
+    {
+      "revenue": 30000000,
+      "grossProfit": 9300000,
+      "operatingProfit": -18740000,
+      "centralCosts": 28040000,
+      "budget": 9750000,
+      "jobs": 640,
+      "customers": 145
+    },
+    {
+      "revenue": 24500000,
+      "grossProfit": 2940000,
+      "operatingProfit": -25100000,
+      "centralCosts": 28040000,
+      "budget": 9750000,
+      "jobs": 320,
+      "customers": 80
+    }
+  ],
+  "bridge": [
+    9000000,
+    3300000,
+    2550000,
+    -2810000,
+    -4040000
+  ],
+  "scenarios": [
+    {
+      "mode": "R12",
+      "start": "2025-10-01",
+      "end": "2026-09-30",
+      "comparisonStart": "2024-10-01",
+      "comparisonEnd": "2025-09-30",
+      "actual": {
+        "revenue": 139500000,
+        "grossProfit": 36040000,
+        "operatingProfit": 8000000,
+        "centralCosts": 28040000,
+        "budget": 9750000,
+        "jobs": 960,
+        "customers": 270
+      },
+      "comparison": {
+        "revenue": 120000000,
+        "grossProfit": 33000000,
+        "operatingProfit": 9000000,
+        "centralCosts": 24000000,
+        "budget": 9500000,
+        "jobs": 840,
+        "customers": 240
+      },
+      "bridge": [
+        9000000,
+        3300000,
+        2550000,
+        -2810000,
+        -4040000
+      ],
+      "budgetVariance": -1750000,
+      "grossMargin": 0.25835125448028673
+    },
+    {
+      "mode": "Helår",
+      "start": "2025-01-01",
+      "end": "2025-12-31",
+      "comparisonStart": "2024-01-01",
+      "comparisonEnd": "2024-12-31",
+      "actual": {
+        "revenue": 123557846,
+        "grossProfit": 33575633,
+        "operatingProfit": 9415252,
+        "centralCosts": 24160381,
+        "budget": 9545614,
+        "jobs": 860,
+        "customers": 270
+      },
+      "comparison": {
+        "revenue": 99619207,
+        "grossProfit": 27695006,
+        "operatingProfit": 6929433,
+        "centralCosts": 20765573,
+        "budget": 7554896,
+        "jobs": 748,
+        "customers": 240
+      },
+      "bridge": [
+        6929433,
+        3622993,
+        927542,
+        1330092,
+        -3394808
+      ],
+      "budgetVariance": -130362,
+      "grossMargin": 0.27174019365795676
+    },
+    {
+      "mode": "Helår",
+      "start": "2024-01-01",
+      "end": "2024-12-31",
+      "comparisonStart": "2023-01-01",
+      "comparisonEnd": "2023-12-31",
+      "actual": {
+        "revenue": 99619207,
+        "grossProfit": 27695006,
+        "operatingProfit": 6929433,
+        "centralCosts": 20765573,
+        "budget": 7554896,
+        "jobs": 748,
+        "customers": 240
+      },
+      "comparison": {
+        "revenue": 98901000,
+        "grossProfit": 27435870,
+        "operatingProfit": 6584606,
+        "centralCosts": 20851264,
+        "budget": 7407686,
+        "jobs": 759,
+        "customers": 220
+      },
+      "bridge": [
+        6584606,
+        92326,
+        -111342,
+        278152,
+        85691
+      ],
+      "budgetVariance": -625463,
+      "grossMargin": 0.27800869766008074
+    },
+    {
+      "mode": "Månad",
+      "start": "2026-09-01",
+      "end": "2026-09-30",
+      "comparisonStart": "2025-09-01",
+      "comparisonEnd": "2025-09-30",
+      "actual": {
+        "revenue": 15895491,
+        "grossProfit": 4001265,
+        "operatingProfit": 588325,
+        "centralCosts": 3412940,
+        "budget": 1110975,
+        "jobs": 104,
+        "customers": 161
+      },
+      "comparison": {
+        "revenue": 13673541,
+        "grossProfit": 3677940,
+        "operatingProfit": 943232,
+        "centralCosts": 2734708,
+        "budget": 1082489,
+        "jobs": 96,
+        "customers": 186
+      },
+      "bridge": [
+        943232,
+        363075,
+        285754,
+        -325504,
+        -678232
+      ],
+      "budgetVariance": -522650,
+      "grossMargin": 0.251723271712714
+    }
+  ],
+  "checks": [
+    "exact monetary controls",
+    "unique customers and overlapping areas",
+    "credit-only customer exclusion",
+    "completed unique jobs and canceled exclusion",
+    "all foreign keys",
+    "contiguous dates",
+    "four period scenarios",
+    "budget matching period",
+    "waterfall reconciliation",
+    "PBIR field bindings",
+    "two pages and bounds"
+  ]
+}

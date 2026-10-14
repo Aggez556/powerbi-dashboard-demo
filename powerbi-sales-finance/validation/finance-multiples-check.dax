@@ -1,0 +1,8 @@
+EVALUATE
+SUMMARIZECOLUMNS(
+ 'Finansaxel'[Typ], 'Finansaxel'[Val], 'Finansaxel'[Namn], 'Datum'[Månad kort], 'Datum'[Månadsnummer],
+ TREATAS({2025}, 'Datum'[År]),
+ "Vinst", [Bruttovinst analys miljoner],
+ "Medel", [Finans månadsmedel]
+)
+ORDER BY 'Finansaxel'[Typ], 'Finansaxel'[Namn], 'Datum'[Månadsnummer]

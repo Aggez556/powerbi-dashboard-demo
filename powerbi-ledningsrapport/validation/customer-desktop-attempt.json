@@ -1,0 +1,11 @@
+{
+  "status": "data_verified",
+  "metadataApplied": true,
+  "importCompleted": true,
+  "liveDaxVerified": true,
+  "cacheSaved": true,
+  "screenshotsVerified": false,
+  "details": "Full refresh completed in the newly opened Desktop model. The reserved DAX variable name in the cohort trend was corrected. Actual KPI, bridge, industry, year, monthly-context, cohort-trend and lost-customer-table DAX results match independently checked CSV data. Desktop Save persisted the refreshed cache.",
+  "verification": "customer-live-verification.json",
+  "nextStep": "Review the rendered customer page."
+}

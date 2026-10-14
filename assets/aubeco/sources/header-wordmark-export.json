@@ -1,0 +1,24 @@
+{
+  "retrievedDate": "2026-10-07",
+  "source": "https://www.aubeco.se/",
+  "kind": "Transparent export of the actual header wordmark using the website font; not a downloaded standalone header image",
+  "css": {
+    "text": "aubeco",
+    "fontFamily": "echotun, \"echotun Fallback\", \"Open Sans\", \"Open Sans Fallback\", ui-sans-serif, system-ui, sans-serif, \"Open Sans\", \"Open Sans Fallback\", ui-sans-serif, sans-serif",
+    "fontWeight": "400",
+    "fontSize": "50.75px",
+    "lineHeight": "50.75px",
+    "letterSpacing": "-0.5075px",
+    "color": "rgb(247, 186, 107)"
+  },
+  "export": {
+    "fontSize": "50.75px",
+    "lineHeight": "50.75px",
+    "letterSpacing": "-0.5075px",
+    "scale": 4,
+    "background": "transparent"
+  },
+  "file": "assets/aubeco/aubeco-header-wordmark.png",
+  "sha256": "113f24a0e36ffd06effa67f7cb30f37f4a56065f87c8ec336363cd287f5512ef",
+  "officialLogoImageSource": "https://www.aubeco.se/aubeco-google-bild.png"
+}

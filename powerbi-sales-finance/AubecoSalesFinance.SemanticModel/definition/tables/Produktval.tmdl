@@ -1,0 +1,19 @@
+table Produktval
+	lineageTag: a82bac1e-9bcb-4e2d-9b2f-95e4ed7f9e16
+
+	column Mått
+		dataType: string
+		lineageTag: 88fc5127-31fb-4eef-be60-1b4a820fbf5d
+		summarizeBy: none
+		sourceColumn: Metric
+
+	partition Produktval = m
+		mode: import
+		source =
+				let
+					Source = Csv.Document(File.Contents(DataFolder & "/Produktval.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+					Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+					Typed = Table.TransformColumnTypes(Headers, {{"Metric", type text}}, "en-US")
+				in
+					Typed
+

@@ -1,0 +1,43 @@
+﻿{
+    "status":  "passed",
+    "rows":  [
+                 {
+                     "[Period]":  "Helår",
+                     "[Omsättning]":  15374362.6,
+                     "[Bruttovinst]":  4096778.32,
+                     "[Aktiva]":  24,
+                     "[Leveranser]":  2166,
+                     "[Ordervärde]":  7098.0437,
+                     "[Omsättning per säljare]":  640598.4417,
+                     "[Topp 5]":  0.27695882689796841,
+                     "[Aktiva ändring]":  "Oförändrat mot föreg. år",
+                     "[Andel ändring]":  "-1,2 pp ▼ mot föreg. år"
+                 },
+                 {
+                     "[Period]":  "Oktober",
+                     "[Omsättning]":  1461932.29,
+                     "[Bruttovinst]":  385622.41,
+                     "[Aktiva]":  24,
+                     "[Leveranser]":  212,
+                     "[Ordervärde]":  6895.907,
+                     "[Omsättning per säljare]":  60913.8454,
+                     "[Topp 5]":  0.34053509413900424,
+                     "[Aktiva ändring]":  "Oförändrat mot föreg. år",
+                     "[Andel ändring]":  "-3,1 pp ▼ mot föreg. år"
+                 },
+                 {
+                     "[Period]":  "September–oktober",
+                     "[Omsättning]":  2638944.74,
+                     "[Bruttovinst]":  678023.61,
+                     "[Aktiva]":  24,
+                     "[Leveranser]":  379,
+                     "[Ordervärde]":  6962.9149,
+                     "[Omsättning per säljare]":  109956.0308,
+                     "[Topp 5]":  0.31779263403598212,
+                     "[Aktiva ändring]":  "Oförändrat mot föreg. år",
+                     "[Andel ändring]":  "-1,9 pp ▼ mot föreg. år"
+                 }
+             ],
+    "desktopProcessId":  16972,
+    "source":  "Actual Desktop engine, DAX query"
+}

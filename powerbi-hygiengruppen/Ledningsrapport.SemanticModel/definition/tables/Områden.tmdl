@@ -1,0 +1,30 @@
+/// Reproducerbar lokal demodata; Områden.csv.
+table Områden
+	lineageTag: 697f0fcb-5ca5-41d2-8306-bc0c6b26edfe
+
+	/// Källfält i lokal demodata: Områden.Områdesnyckel.
+	column Områdesnyckel
+		dataType: int64
+		isHidden
+		lineageTag: cd60e220-e9ee-4d73-9f59-4b690f655fcf
+		summarizeBy: none
+		sourceColumn: Områdesnyckel
+
+	/// Källfält i lokal demodata: Områden.Område.
+	column Område
+		dataType: string
+		lineageTag: 9da4d504-bc28-4e01-938d-4fe3e46ff362
+		summarizeBy: none
+		sourceColumn: Område
+		sortByColumn: Områdesnyckel
+
+	partition Områden = m
+		mode: import
+		source =
+				let
+					Source = Csv.Document(File.Contents(DataFolder & "/Områden.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+					Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+					Typed = Table.TransformColumnTypes(Headers, {{"Områdesnyckel", Int64.Type}, {"Område", type text}}, "en-US")
+				in
+					Typed
+

@@ -1,0 +1,136 @@
+{
+  "date": "2026-10-06",
+  "theme": "themes/aubeco-powerbi.json",
+  "schema": "themes/schema/reportThemeSchema-2.157.json",
+  "schemaUrl": "https://raw.githubusercontent.com/microsoft/powerbi-desktop-samples/main/Report%20Theme%20JSON%20Schema/reportThemeSchema-2.157.json",
+  "schemaSha256": "c74fc80a1262a6127ddddea1722046eeaeb3fbb42789d6cae1f7c83e8f838c09",
+  "schemaDraft": "Draft-07 (Ajv default)",
+  "explorationVersion": "5.76",
+  "validator": "ajv 8.20.0",
+  "schemaNormalizations": [
+    {
+      "path": "/definitions/actionStates-advancedSlicerVisual/anyOf/0/enum",
+      "removed": 1
+    }
+  ],
+  "valid": true,
+  "errors": [],
+  "contrast": [
+    {
+      "name": "ink on white",
+      "foreground": "#0B1B30",
+      "background": "#FFFFFF",
+      "ratio": 17.3,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "name": "navy on sand-soft",
+      "foreground": "#0F3163",
+      "background": "#FDF6EC",
+      "ratio": 11.93,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "name": "muted on white",
+      "foreground": "#5B6B80",
+      "background": "#FFFFFF",
+      "ratio": 5.44,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "name": "muted on sand-soft",
+      "foreground": "#5B6B80",
+      "background": "#FDF6EC",
+      "ratio": 5.07,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "name": "brand orange on navy-deep",
+      "foreground": "#F7BA6B",
+      "background": "#09224A",
+      "ratio": 9.1,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "name": "brand orange on white",
+      "foreground": "#F7BA6B",
+      "background": "#FFFFFF",
+      "ratio": 1.72,
+      "threshold": 4.5,
+      "pass": false
+    },
+    {
+      "name": "adapted orange on white",
+      "foreground": "#9B570B",
+      "background": "#FFFFFF",
+      "ratio": 5.58,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "name": "series 1 on white",
+      "foreground": "#0F3163",
+      "background": "#FFFFFF",
+      "ratio": 12.81,
+      "threshold": 3,
+      "pass": true
+    },
+    {
+      "name": "series 2 on white",
+      "foreground": "#9B570B",
+      "background": "#FFFFFF",
+      "ratio": 5.58,
+      "threshold": 3,
+      "pass": true
+    },
+    {
+      "name": "series 3 on white",
+      "foreground": "#4A6BCE",
+      "background": "#FFFFFF",
+      "ratio": 4.9,
+      "threshold": 3,
+      "pass": true
+    },
+    {
+      "name": "series 4 on white",
+      "foreground": "#5B6B80",
+      "background": "#FFFFFF",
+      "ratio": 5.44,
+      "threshold": 3,
+      "pass": true
+    },
+    {
+      "name": "status #007956 on white",
+      "foreground": "#007956",
+      "background": "#FFFFFF",
+      "ratio": 5.43,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "name": "status #946200 on white",
+      "foreground": "#946200",
+      "background": "#FFFFFF",
+      "ratio": 5.24,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "name": "status #B42318 on white",
+      "foreground": "#B42318",
+      "background": "#FFFFFF",
+      "ratio": 6.57,
+      "threshold": 4.5,
+      "pass": true
+    }
+  ],
+  "limitations": [
+    "Schema validation only; no Power BI Desktop import or rendered report test.",
+    "Brand orange on white is intentionally recorded as failing; use dark background or the adapted orange."
+  ]
+}

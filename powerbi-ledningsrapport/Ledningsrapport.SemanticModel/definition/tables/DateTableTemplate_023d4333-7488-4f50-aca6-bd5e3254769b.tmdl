@@ -1,0 +1,118 @@
+table DateTableTemplate_023d4333-7488-4f50-aca6-bd5e3254769b
+	isHidden
+	isPrivate
+	lineageTag: 4171ee21-66f9-4eb1-ad36-ec2b0db972fb
+
+	column Date
+		dataType: dateTime
+		isHidden
+		formatString: General Date
+		lineageTag: ab1239fd-e160-4dfb-8124-719514c13cb1
+		dataCategory: PaddedDateTableDates
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Date]
+
+		annotation SummarizationSetBy = User
+
+	column År = YEAR([Date])
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 7daafe81-4525-484e-8a98-3e69840b0e7b
+		dataCategory: Years
+		summarizeBy: none
+
+		annotation SummarizationSetBy = User
+
+		annotation TemplateId = Year
+
+	column MonthNo = MONTH([Date])
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 9a86cc7d-0a04-4ff3-a304-345324d7f35b
+		dataCategory: MonthOfYear
+		summarizeBy: none
+
+		annotation SummarizationSetBy = User
+
+		annotation TemplateId = MonthNumber
+
+	column Månad = FORMAT([Date], "MMMM")
+		dataType: string
+		isHidden
+		lineageTag: f6732cc2-4080-4fe1-9bc6-b4c31feddd9c
+		dataCategory: Months
+		summarizeBy: none
+		sortByColumn: MonthNo
+
+		annotation SummarizationSetBy = User
+
+		annotation TemplateId = Month
+
+	column QuarterNo = INT(([MonthNo] + 2) / 3)
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 6e2c6194-2c7f-4a15-a268-e3baada50509
+		dataCategory: QuarterOfYear
+		summarizeBy: none
+
+		annotation SummarizationSetBy = User
+
+		annotation TemplateId = QuarterNumber
+
+	column Kvartal = "Kv " & [QuarterNo]
+		dataType: string
+		isHidden
+		lineageTag: d89e943c-c2eb-4a14-a3cc-8104214af03d
+		dataCategory: Quarters
+		summarizeBy: none
+		sortByColumn: QuarterNo
+
+		annotation SummarizationSetBy = User
+
+		annotation TemplateId = Quarter
+
+	column Dag = DAY([Date])
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: eb78048a-7f6b-4b38-ae99-0c49492ceed8
+		dataCategory: DayOfMonth
+		summarizeBy: none
+
+		annotation SummarizationSetBy = User
+
+		annotation TemplateId = Day
+
+	hierarchy Datumhierarki
+		lineageTag: d6766059-9421-4836-aba7-77894d9d1e79
+
+		level År
+			lineageTag: 1e0638db-ae60-4887-9147-705e238c5be9
+			column: År
+
+		level Kvartal
+			lineageTag: 2835ebb0-4dad-43c8-80b3-828f54cebb97
+			column: Kvartal
+
+		level Månad
+			lineageTag: 711c1be3-0cce-4757-9e04-8e8d7f73e77f
+			column: Månad
+
+		level Dag
+			lineageTag: 521a3e10-3a5d-4012-aa21-f29818925236
+			column: Dag
+
+		annotation TemplateId = DateHierarchy
+
+	partition DateTableTemplate_023d4333-7488-4f50-aca6-bd5e3254769b = calculated
+		mode: import
+		source = Calendar(Date(2015,1,1), Date(2015,1,1))
+
+	annotation __PBI_TemplateDateTable = true
+
+	annotation DefaultItem = DateHierarchy
+

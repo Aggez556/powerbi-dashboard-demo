@@ -1,0 +1,12 @@
+relationship SalesToDatum
+	fromColumn: Försäljning.Datumnyckel
+	toColumn: Datum.Datumnyckel
+
+relationship SalesToKunder
+	fromColumn: Försäljning.Kundnyckel
+	toColumn: Kunder.Kundnyckel
+
+relationship SalesToProdukter
+	fromColumn: Försäljning.Produktnyckel
+	toColumn: Produkter.Produktnyckel
+

@@ -1,0 +1,23 @@
+﻿{
+    "status":  "passed",
+    "rows":  [
+                 {
+                     "[Val]":  "Omsättning",
+                     "[Värde]":  1461932.29
+                 },
+                 {
+                     "[Val]":  "Bruttovinst",
+                     "[Värde]":  385622.41
+                 },
+                 {
+                     "[Val]":  "Produkt: omsättning",
+                     "[Värde]":  1461932.29
+                 },
+                 {
+                     "[Val]":  "Produkt: enheter",
+                     "[Värde]":  2362
+                 }
+             ],
+    "desktopProcessId":  7404,
+    "source":  "Actual Desktop engine, DAX query"
+}

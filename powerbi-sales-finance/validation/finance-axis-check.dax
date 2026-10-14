@@ -1,0 +1,6 @@
+EVALUATE
+SUMMARIZECOLUMNS(
+ 'Datum'[År], 'Finansaxel'[Typ], 'Finansaxel'[Namn],
+ "Bruttovinst analys", [Bruttovinst analys]
+)
+ORDER BY 'Datum'[År], 'Finansaxel'[Typ], 'Finansaxel'[Namn]

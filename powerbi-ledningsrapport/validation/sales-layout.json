@@ -1,0 +1,683 @@
+{
+  "page": "b4eda99cffce7ac04192",
+  "displayName": "Försäljningsöversikt",
+  "canvas": {
+    "width": 1920,
+    "height": 1200
+  },
+  "standard": "R12 september 2026, alla områden",
+  "placements": [
+    {
+      "page": "b4eda99cffce7ac04192",
+      "key": "sidebar",
+      "type": "textbox",
+      "box": [
+        0,
+        0,
+        272,
+        1200
+      ]
+    },
+    {
+      "page": "b4eda99cffce7ac04192",
+      "key": "start",
+      "type": "actionButton",
+      "box": [
+        16,
+        16,
+        240,
+        48
+      ]
+    },
+    {
+      "page": "b4eda99cffce7ac04192",
+      "key": "nav0",
+      "type": "actionButton",
+      "box": [
+        16,
+        104,
+        240,
+        56
+      ]
+    },
+    {
+      "page": "b4eda99cffce7ac04192",
+      "key": "nav1",
+      "type": "actionButton",
+      "box": [
+        16,
+        176,
+        240,
+        56
+      ]
+    },
+    {
+      "page": "b4eda99cffce7ac04192",
+      "key": "nav2",
+      "type": "actionButton",
+      "box": [
+        16,
+        248,
+        240,
+        56
+      ]
+    },
+    {
+      "page": "b4eda99cffce7ac04192",
+      "key": "nav3",
+      "type": "actionButton",
+      "box": [
+        16,
+        320,
+        240,
+        56
+      ]
+    },
+    {
+      "page": "b4eda99cffce7ac04192",
+      "key": "nav4",
+      "type": "actionButton",
+      "box": [
+        16,
+        392,
+        240,
+        56
+      ]
+    },
+    {
+      "page": "b4eda99cffce7ac04192",
+      "key": "page-title",
+      "type": "textbox",
+      "box": [
+        304,
+        24,
+        464,
+        64
+      ]
+    },
+    {
+      "page": "b4eda99cffce7ac04192",
+      "key": "period-label-heading",
+      "type": "textbox",
+      "box": [
+        784,
+        16,
+        288,
+        24
+      ]
+    },
+    {
+      "page": "b4eda99cffce7ac04192",
+      "key": "mode-0-0",
+      "type": "actionButton",
+      "box": [
+        784,
+        48,
+        92,
+        48
+      ]
+    },
+    {
+      "page": "b4eda99cffce7ac04192",
+      "key": "mode-0-1",
+      "type": "actionButton",
+      "box": [
+        880,
+        48,
+        92,
+        48
+      ]
+    },
+    {
+      "page": "b4eda99cffce7ac04192",
+      "key": "mode-0-2",
+      "type": "actionButton",
+      "box": [
+        976,
+        48,
+        92,
+        48
+      ]
+    },
+    {
+      "page": "b4eda99cffce7ac04192",
+      "key": "mode-1-0",
+      "type": "actionButton",
+      "box": [
+        784,
+        48,
+        92,
+        48
+      ]
+    },
+    {
+      "page": "b4eda99cffce7ac04192",
+      "key": "mode-1-1",
+      "type": "actionButton",
+      "box": [
+        880,
+        48,
+        92,
+        48
+      ]
+    },
+    {
+      "page": "b4eda99cffce7ac04192",
+      "key": "mode-1-2",
+      "type": "actionButton",
+      "box": [
+        976,
+        48,
+        92,
+        48
+      ]
+    },
+    {
+      "page": "b4eda99cffce7ac04192",
+      "key": "mode-2-0",
+      "type": "actionButton",
+      "box": [
+        784,
+        48,
+        92,
+        48
+      ]
+    },
+    {
+      "page": "b4eda99cffce7ac04192",
+      "key": "mode-2-1",
+      "type": "actionButton",
+      "box": [
+        880,
+        48,
+        92,
+        48
+      ]
+    },
+    {
+      "page": "b4eda99cffce7ac04192",
+      "key": "mode-2-2",
+      "type": "actionButton",
+      "box": [
+        976,
+        48,
+        92,
+        48
+      ]
+    },
+    {
+      "page": "b4eda99cffce7ac04192",
+      "key": "mode-state",
+      "type": "slicer",
+      "box": [
+        288,
+        16,
+        160,
+        80
+      ]
+    },
+    {
+      "page": "b4eda99cffce7ac04192",
+      "key": "r12-end",
+      "type": "slicer",
+      "box": [
+        1088,
+        16,
+        248,
+        88
+      ]
+    },
+    {
+      "page": "b4eda99cffce7ac04192",
+      "key": "year",
+      "type": "slicer",
+      "box": [
+        1088,
+        16,
+        248,
+        88
+      ]
+    },
+    {
+      "page": "b4eda99cffce7ac04192",
+      "key": "month",
+      "type": "slicer",
+      "box": [
+        1088,
+        16,
+        248,
+        88
+      ]
+    },
+    {
+      "page": "b4eda99cffce7ac04192",
+      "key": "area-heading",
+      "type": "textbox",
+      "box": [
+        1352,
+        16,
+        536,
+        24
+      ]
+    },
+    {
+      "page": "b4eda99cffce7ac04192",
+      "key": "area-selector",
+      "type": "advancedSlicerVisual",
+      "box": [
+        1352,
+        48,
+        536,
+        56
+      ]
+    },
+    {
+      "page": "b4eda99cffce7ac04192",
+      "key": "period-text",
+      "type": "cardVisual",
+      "box": [
+        784,
+        112,
+        1104,
+        32
+      ]
+    },
+    {
+      "page": "b4eda99cffce7ac04192",
+      "key": "kpi-panel0",
+      "type": "textbox",
+      "box": [
+        288,
+        160,
+        254,
+        184
+      ]
+    },
+    {
+      "page": "b4eda99cffce7ac04192",
+      "key": "kpi-title0",
+      "type": "textbox",
+      "box": [
+        304,
+        176,
+        222,
+        40
+      ]
+    },
+    {
+      "page": "b4eda99cffce7ac04192",
+      "key": "kpi-value0",
+      "type": "cardVisual",
+      "box": [
+        304,
+        220,
+        222,
+        60
+      ]
+    },
+    {
+      "page": "b4eda99cffce7ac04192",
+      "key": "kpi-context0",
+      "type": "cardVisual",
+      "box": [
+        304,
+        284,
+        230,
+        48
+      ]
+    },
+    {
+      "page": "b4eda99cffce7ac04192",
+      "key": "kpi-panel1",
+      "type": "textbox",
+      "box": [
+        558,
+        160,
+        254,
+        184
+      ]
+    },
+    {
+      "page": "b4eda99cffce7ac04192",
+      "key": "kpi-title1",
+      "type": "textbox",
+      "box": [
+        574,
+        176,
+        222,
+        40
+      ]
+    },
+    {
+      "page": "b4eda99cffce7ac04192",
+      "key": "kpi-value1",
+      "type": "cardVisual",
+      "box": [
+        574,
+        220,
+        222,
+        60
+      ]
+    },
+    {
+      "page": "b4eda99cffce7ac04192",
+      "key": "kpi-context1",
+      "type": "cardVisual",
+      "box": [
+        574,
+        284,
+        230,
+        48
+      ]
+    },
+    {
+      "page": "b4eda99cffce7ac04192",
+      "key": "kpi-panel2",
+      "type": "textbox",
+      "box": [
+        828,
+        160,
+        254,
+        184
+      ]
+    },
+    {
+      "page": "b4eda99cffce7ac04192",
+      "key": "kpi-title2",
+      "type": "textbox",
+      "box": [
+        844,
+        176,
+        222,
+        40
+      ]
+    },
+    {
+      "page": "b4eda99cffce7ac04192",
+      "key": "kpi-value2",
+      "type": "cardVisual",
+      "box": [
+        844,
+        220,
+        222,
+        60
+      ]
+    },
+    {
+      "page": "b4eda99cffce7ac04192",
+      "key": "kpi-context2",
+      "type": "cardVisual",
+      "box": [
+        844,
+        284,
+        230,
+        48
+      ]
+    },
+    {
+      "page": "b4eda99cffce7ac04192",
+      "key": "kpi-panel3",
+      "type": "textbox",
+      "box": [
+        1098,
+        160,
+        254,
+        184
+      ]
+    },
+    {
+      "page": "b4eda99cffce7ac04192",
+      "key": "kpi-title3",
+      "type": "textbox",
+      "box": [
+        1114,
+        176,
+        222,
+        40
+      ]
+    },
+    {
+      "page": "b4eda99cffce7ac04192",
+      "key": "kpi-value3",
+      "type": "cardVisual",
+      "box": [
+        1114,
+        220,
+        222,
+        60
+      ]
+    },
+    {
+      "page": "b4eda99cffce7ac04192",
+      "key": "kpi-context3",
+      "type": "cardVisual",
+      "box": [
+        1114,
+        284,
+        230,
+        48
+      ]
+    },
+    {
+      "page": "b4eda99cffce7ac04192",
+      "key": "kpi-panel4",
+      "type": "textbox",
+      "box": [
+        1368,
+        160,
+        254,
+        184
+      ]
+    },
+    {
+      "page": "b4eda99cffce7ac04192",
+      "key": "kpi-title4",
+      "type": "cardVisual",
+      "box": [
+        1376,
+        168,
+        238,
+        48
+      ]
+    },
+    {
+      "page": "b4eda99cffce7ac04192",
+      "key": "kpi-value4",
+      "type": "cardVisual",
+      "box": [
+        1384,
+        220,
+        222,
+        60
+      ]
+    },
+    {
+      "page": "b4eda99cffce7ac04192",
+      "key": "kpi-context4",
+      "type": "cardVisual",
+      "box": [
+        1384,
+        284,
+        230,
+        48
+      ]
+    },
+    {
+      "page": "b4eda99cffce7ac04192",
+      "key": "kpi-panel5",
+      "type": "textbox",
+      "box": [
+        1638,
+        160,
+        254,
+        184
+      ]
+    },
+    {
+      "page": "b4eda99cffce7ac04192",
+      "key": "kpi-title5",
+      "type": "cardVisual",
+      "box": [
+        1646,
+        168,
+        238,
+        48
+      ]
+    },
+    {
+      "page": "b4eda99cffce7ac04192",
+      "key": "kpi-value5",
+      "type": "cardVisual",
+      "box": [
+        1654,
+        220,
+        222,
+        60
+      ]
+    },
+    {
+      "page": "b4eda99cffce7ac04192",
+      "key": "kpi-context5",
+      "type": "cardVisual",
+      "box": [
+        1654,
+        284,
+        230,
+        48
+      ]
+    },
+    {
+      "page": "b4eda99cffce7ac04192",
+      "key": "trend-panel",
+      "type": "textbox",
+      "box": [
+        288,
+        360,
+        798,
+        416
+      ]
+    },
+    {
+      "page": "b4eda99cffce7ac04192",
+      "key": "scatter-panel",
+      "type": "textbox",
+      "box": [
+        1102,
+        360,
+        798,
+        416
+      ]
+    },
+    {
+      "page": "b4eda99cffce7ac04192",
+      "key": "industry-panel",
+      "type": "textbox",
+      "box": [
+        288,
+        792,
+        798,
+        384
+      ]
+    },
+    {
+      "page": "b4eda99cffce7ac04192",
+      "key": "detail-panel",
+      "type": "textbox",
+      "box": [
+        1102,
+        792,
+        798,
+        384
+      ]
+    },
+    {
+      "page": "b4eda99cffce7ac04192",
+      "key": "trend-title",
+      "type": "cardVisual",
+      "box": [
+        296,
+        364,
+        766,
+        48
+      ]
+    },
+    {
+      "page": "b4eda99cffce7ac04192",
+      "key": "scatter-title",
+      "type": "textbox",
+      "box": [
+        1126,
+        376,
+        750,
+        48
+      ]
+    },
+    {
+      "page": "b4eda99cffce7ac04192",
+      "key": "industry-title",
+      "type": "textbox",
+      "box": [
+        312,
+        808,
+        750,
+        48
+      ]
+    },
+    {
+      "page": "b4eda99cffce7ac04192",
+      "key": "detail-title",
+      "type": "textbox",
+      "box": [
+        1126,
+        808,
+        750,
+        48
+      ]
+    },
+    {
+      "page": "b4eda99cffce7ac04192",
+      "key": "trend",
+      "type": "columnChart",
+      "box": [
+        312,
+        432,
+        750,
+        320
+      ]
+    },
+    {
+      "page": "b4eda99cffce7ac04192",
+      "key": "scatter",
+      "type": "scatterChart",
+      "box": [
+        1126,
+        432,
+        750,
+        320
+      ]
+    },
+    {
+      "page": "b4eda99cffce7ac04192",
+      "key": "industry",
+      "type": "clusteredBarChart",
+      "box": [
+        312,
+        864,
+        750,
+        288
+      ]
+    },
+    {
+      "page": "b4eda99cffce7ac04192",
+      "key": "detail",
+      "type": "pivotTable",
+      "box": [
+        1126,
+        864,
+        750,
+        288
+      ]
+    }
+  ],
+  "overviewPreserved": "e2f0addc480f40543797"
+}

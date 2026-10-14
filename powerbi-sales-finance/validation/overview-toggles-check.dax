@@ -1,0 +1,17 @@
+EVALUATE
+CALCULATETABLE(
+    UNION(
+        ROW("Val", "Omsättning", "Värde", CALCULATE([Trendvärde], TREATAS({"Omsättning"}, 'Trendval'[Mått]))),
+        ROW("Val", "Bruttovinst", "Värde", CALCULATE([Trendvärde], TREATAS({"Bruttovinst"}, 'Trendval'[Mått]))),
+        ROW("Val", "Produkt: omsättning", "Värde", CALCULATE([Produktvärde], TREATAS({"Omsättning"}, 'Produktval'[Mått]))),
+        ROW("Val", "Produkt: enheter", "Värde", CALCULATE([Produktvärde], TREATAS({"Sålda enheter"}, 'Produktval'[Mått])))
+    ),
+    TREATAS({2025}, 'Datum'[År]),
+    TREATAS({"oktober"}, 'Datum'[Månad])
+)
+EVALUATE
+CALCULATETABLE(
+    ROW("Enhetsetikett", CALCULATE([Produktvärde etikett], TREATAS({"Sålda enheter"}, 'Produktval'[Mått]))),
+    TREATAS({2025}, 'Datum'[År]),
+    TREATAS({"oktober"}, 'Datum'[Månad])
+)

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "AubecoHandel"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "8a415aeb-95ad-4c6b-b7a8-bc030f6ab522"
+  }
+}

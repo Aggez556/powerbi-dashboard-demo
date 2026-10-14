@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "AubecoSalesFinance"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "076bc7a1-520f-4850-b9b4-f7c12516d678"
+  }
+}

@@ -1,0 +1,37 @@
+EVALUATE
+UNION(
+    CALCULATETABLE(
+        ROW("Fall", "R12 okt 2026", "Start", [Periodstart], "Slut", [Periodslut], "Jämförelsestart", [Jämförelsestart], "Jämförelseslut", [Jämförelseslut], "Omsättning", [Nettoomsättning], "Bruttovinst", [Bruttovinst], "Resultat", [Rörelseresultat], "Budget", [Budgetresultat], "Budgetavvikelse", [Resultat mot budget], "Uppdrag", [Utförda uppdrag], "Kunder", [Aktiva kunder], "Bryggfel", [Bryggkontroll]),
+        TREATAS({"R12"}, 'Periodtyp'[Periodtyp]), TREATAS({"Oktober 2026"}, 'R12val'[Period])
+    ),
+    CALCULATETABLE(
+        ROW("Fall", "Helår 2025", "Start", [Periodstart], "Slut", [Periodslut], "Jämförelsestart", [Jämförelsestart], "Jämförelseslut", [Jämförelseslut], "Omsättning", [Nettoomsättning], "Bruttovinst", [Bruttovinst], "Resultat", [Rörelseresultat], "Budget", [Budgetresultat], "Budgetavvikelse", [Resultat mot budget], "Uppdrag", [Utförda uppdrag], "Kunder", [Aktiva kunder], "Bryggfel", [Bryggkontroll]),
+        TREATAS({"Helår"}, 'Periodtyp'[Periodtyp]), TREATAS({"2025"}, 'Helårsval'[Period])
+    ),
+    CALCULATETABLE(
+        ROW("Fall", "Helår 2024", "Start", [Periodstart], "Slut", [Periodslut], "Jämförelsestart", [Jämförelsestart], "Jämförelseslut", [Jämförelseslut], "Omsättning", [Nettoomsättning], "Bruttovinst", [Bruttovinst], "Resultat", [Rörelseresultat], "Budget", [Budgetresultat], "Budgetavvikelse", [Resultat mot budget], "Uppdrag", [Utförda uppdrag], "Kunder", [Aktiva kunder], "Bryggfel", [Bryggkontroll]),
+        TREATAS({"Helår"}, 'Periodtyp'[Periodtyp]), TREATAS({"2024"}, 'Helårsval'[Period])
+    ),
+    CALCULATETABLE(
+        ROW("Fall", "Månad okt 2026", "Start", [Periodstart], "Slut", [Periodslut], "Jämförelsestart", [Jämförelsestart], "Jämförelseslut", [Jämförelseslut], "Omsättning", [Nettoomsättning], "Bruttovinst", [Bruttovinst], "Resultat", [Rörelseresultat], "Budget", [Budgetresultat], "Budgetavvikelse", [Resultat mot budget], "Uppdrag", [Utförda uppdrag], "Kunder", [Aktiva kunder], "Bryggfel", [Bryggkontroll]),
+        TREATAS({"Månad"}, 'Periodtyp'[Periodtyp]), TREATAS({"Oktober 2026"}, 'Månadsval'[Period])
+    )
+)
+
+EVALUATE
+CALCULATETABLE(
+    SUMMARIZECOLUMNS('Områden'[Område], "Omsättning", [Nettoomsättning], "Bruttovinst", [Bruttovinst], "Marginal", [Bruttomarginal], "Uppdrag", [Utförda uppdrag], "Kunder", [Aktiva kunder]),
+    TREATAS({"R12"}, 'Periodtyp'[Periodtyp]), TREATAS({"Oktober 2026"}, 'R12val'[Period])
+)
+
+EVALUATE
+CALCULATETABLE(
+    FILTER(SUMMARIZECOLUMNS('Trendaxel'[Månad], "Omsättning", [Trendomsättning], "Resultat", [Trendresultat], "Teknisk service", [Teknisk service], "Bemanning", [Bemanning], "Markering", [Trendfärg]), NOT ISBLANK([Omsättning])),
+    TREATAS({"Månad"}, 'Periodtyp'[Periodtyp]), TREATAS({"Oktober 2026"}, 'Månadsval'[Period])
+)
+
+EVALUATE
+CALCULATETABLE(
+    FILTER(SUMMARIZECOLUMNS('Bryggaxel'[Steg], "Mkr", [Bryggsteg]), NOT ISBLANK([Mkr])),
+    TREATAS({"R12"}, 'Periodtyp'[Periodtyp]), TREATAS({"Oktober 2026"}, 'R12val'[Period])
+)

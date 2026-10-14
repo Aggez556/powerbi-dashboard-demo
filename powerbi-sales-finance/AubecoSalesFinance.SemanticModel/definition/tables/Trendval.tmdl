@@ -1,0 +1,19 @@
+table Trendval
+	lineageTag: 8314e3b3-61f4-4f7e-953a-6fbc3a927e83
+
+	column Mått
+		dataType: string
+		lineageTag: e69cc440-3d2e-4f2c-92ff-a9b10fae0e8f
+		summarizeBy: none
+		sourceColumn: Metric
+
+	partition Trendval = m
+		mode: import
+		source =
+				let
+					Source = Csv.Document(File.Contents(DataFolder & "/Trendval.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+					Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+					Typed = Table.TransformColumnTypes(Headers, {{"Metric", type text}}, "en-US")
+				in
+					Typed
+

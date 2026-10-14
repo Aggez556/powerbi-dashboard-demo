@@ -1,0 +1,77 @@
+relationship 'Försäljning till Datum'
+	fromColumn: Försäljning.Datumnyckel
+	toColumn: Datum.Datumnyckel
+
+relationship 'Försäljning till Områden'
+	fromColumn: Försäljning.Områdesnyckel
+	toColumn: Områden.Områdesnyckel
+
+relationship 'Försäljning till Kunder'
+	fromColumn: Försäljning.Kundnyckel
+	toColumn: Kunder.Kundnyckel
+
+relationship 'Direkta kostnader till Datum'
+	fromColumn: 'Direkta kostnader'.Datumnyckel
+	toColumn: Datum.Datumnyckel
+
+relationship 'Direkta kostnader till Områden'
+	fromColumn: 'Direkta kostnader'.Områdesnyckel
+	toColumn: Områden.Områdesnyckel
+
+relationship 'Gemensamma kostnader till Datum'
+	fromColumn: 'Gemensamma kostnader'.Datumnyckel
+	toColumn: Datum.Datumnyckel
+
+relationship 'Uppdrag till Datum'
+	fromColumn: Uppdrag.Datumnyckel
+	toColumn: Datum.Datumnyckel
+
+relationship 'Uppdrag till Områden'
+	fromColumn: Uppdrag.Områdesnyckel
+	toColumn: Områden.Områdesnyckel
+
+relationship 'Uppdrag till Kunder'
+	fromColumn: Uppdrag.Kundnyckel
+	toColumn: Kunder.Kundnyckel
+
+relationship 'Budget till Datum'
+	fromColumn: Budget.Datumnyckel
+	toColumn: Datum.Datumnyckel
+
+relationship 2bd2cade-0c9c-4808-aca7-3a0a0b038b21
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Trendaxel.Månadsstart
+	toColumn: LocalDateTable_3d6a0f91-1dc2-404a-ba41-f7a4ef707410.Date
+
+relationship 59f17dd1-763c-4f3f-b88b-7f9d449e096f
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Bryggaxel.Slutdatum
+	toColumn: LocalDateTable_f0d2acef-e62f-4d6f-bb54-4aca544598b0.Date
+
+relationship 42bcd8ba-8bbf-45b0-bd86-f419c4ba5359
+	joinOnDateBehavior: datePartOnly
+	fromColumn: R12val.Slutdatum
+	toColumn: LocalDateTable_ab4a90d1-4f02-41f9-b507-ba553491aef3.Date
+
+relationship 01caad2c-323e-403e-9252-d1b4c9c5c0b1
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Månadsval.Slutdatum
+	toColumn: LocalDateTable_2522623d-48b9-4577-8ee7-3d6d096634f7.Date
+
+relationship a50346e5-841c-4b7c-951b-3af1bb13324f
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Helårsval.Slutdatum
+	toColumn: LocalDateTable_22d874ac-8916-43e9-82d3-d07586a720c3.Date
+
+relationship 'Sälj Försäljning artikel'
+	fromColumn: Försäljning.Artikelnyckel
+	toColumn: Artiklar.Artikelnyckel
+
+relationship 'Sälj Direkta kostnader artikel'
+	fromColumn: 'Direkta kostnader'.Artikelnyckel
+	toColumn: Artiklar.Artikelnyckel
+
+relationship 'Kundanalys direkta kostnader'
+	fromColumn: 'Direkta kostnader'.Kundnyckel
+	toColumn: Kunder.Kundnyckel
+

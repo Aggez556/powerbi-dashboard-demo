@@ -1,0 +1,48 @@
+/// Reproducerbar lokal demodata; R12val.csv.
+table R12val
+	lineageTag: 2085c3e1-9ba6-4023-8c6e-e781428fb8bb
+
+	/// Källfält i lokal demodata: R12val.Period.
+	column Period
+		dataType: string
+		lineageTag: 8faffac0-c6cc-4e72-9259-355cac7dab38
+		summarizeBy: none
+		sourceColumn: Period
+		sortByColumn: Ordning
+
+	/// Källfält i lokal demodata: R12val.Slutdatum.
+	column Slutdatum
+		dataType: dateTime
+		isHidden
+		formatString: yyyy-MM-dd
+		lineageTag: 0940d47a-dc50-4a46-9a0d-7a790b6b8ebe
+		summarizeBy: none
+		sourceColumn: Slutdatum
+
+		variation Variation
+			isDefault
+			relationship: 42bcd8ba-8bbf-45b0-bd86-f419c4ba5359
+			defaultHierarchy: LocalDateTable_ab4a90d1-4f02-41f9-b507-ba553491aef3.Datumhierarki
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	/// Källfält i lokal demodata: R12val.Ordning.
+	column Ordning
+		dataType: int64
+		isHidden
+		lineageTag: c8e29160-0f8d-4039-94bf-afed3ed4828a
+		summarizeBy: sum
+		sourceColumn: Ordning
+
+		annotation SummarizationSetBy = Automatic
+
+	partition R12val = m
+		mode: import
+		source =
+				let
+					Source = Csv.Document(File.Contents(DataFolder & "/R12val.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+					Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+					Typed = Table.TransformColumnTypes(Headers, {{"Period", type text}, {"Slutdatum", type date}, {"Ordning", Int64.Type}}, "en-US")
+				in
+					Typed
+
