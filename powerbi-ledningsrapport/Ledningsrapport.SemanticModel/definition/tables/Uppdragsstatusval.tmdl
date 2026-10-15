@@ -1,16 +1,29 @@
 /// Reproducerbar uppdragsanalys. Separata datumroller för utfall och plan.
-table 'Uppdragsstatusval'
+table Uppdragsstatusval
+	lineageTag: 0d195123-9f36-403a-8c68-be85d22ed670
 
-	column 'Urval'
+	column Urval
 		dataType: string
+		lineageTag: d82ec08a-4318-48fd-a4e9-4572bbcd68ac
 		summarizeBy: none
 		sourceColumn: Urval
+		sortByColumn: Visningsordning
 
-	partition 'Uppdragsstatusval' = m
+
+
+
+	column Visningsordning
+		dataType: int64
+		isHidden
+		summarizeBy: none
+		sourceColumn: Visningsordning
+
+	partition Uppdragsstatusval = m
 		mode: import
 		source =
-			let
-			 Source=Csv.Document(File.Contents(DataFolder & "/Uppdragsstatusval.csv"),[Delimiter=",",Encoding=65001,QuoteStyle=QuoteStyle.Csv]),
-			 Headers=Table.PromoteHeaders(Source,[PromoteAllScalars=true]),
-			 Typed=Table.TransformColumnTypes(Headers,{{"Urval", type text}},"en-US")
-			in Typed
+				let
+				 Source=Csv.Document(File.Contents(DataFolder & "/Uppdragsstatusval.csv"),[Delimiter=",",Encoding=65001,QuoteStyle=QuoteStyle.Csv]),
+				 Headers=Table.PromoteHeaders(Source,[PromoteAllScalars=true]),
+				 Typed=Table.TransformColumnTypes(Headers,{{"Urval", type text},{"Visningsordning", Int64.Type}},"en-US")
+				in Typed
+

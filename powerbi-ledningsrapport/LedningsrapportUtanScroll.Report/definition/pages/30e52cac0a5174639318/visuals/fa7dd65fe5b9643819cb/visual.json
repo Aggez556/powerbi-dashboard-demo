@@ -1,16 +1,152 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
   "name": "fa7dd65fe5b9643819cb",
   "position": {
     "x": 304,
-    "y": 472,
-    "width": 468,
-    "height": 332,
+    "y": 496,
     "z": 148,
+    "height": 308,
+    "width": 428,
     "tabOrder": 148
   },
   "visual": {
     "visualType": "lineChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Trendaxel"
+                    }
+                  },
+                  "Property": "Månad"
+                }
+              },
+              "queryRef": "Trendaxel.Månad",
+              "nativeQueryRef": "Månad",
+              "active": true
+            }
+          ]
+        },
+        "Tooltips": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Planinställning"
+                    }
+                  },
+                  "Property": "Trend timmar"
+                }
+              },
+              "queryRef": "Planinställning.Trend timmar",
+              "nativeQueryRef": "Trend timmar"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Planinställning"
+                    }
+                  },
+                  "Property": "Trend kapacitet"
+                }
+              },
+              "queryRef": "Planinställning.Trend kapacitet",
+              "nativeQueryRef": "Trend kapacitet"
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Planinställning"
+                    }
+                  },
+                  "Property": "Trend teknisk"
+                }
+              },
+              "queryRef": "Planinställning.Trend teknisk",
+              "nativeQueryRef": "Trend teknisk",
+              "displayName": "Teknisk service"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Planinställning"
+                    }
+                  },
+                  "Property": "Trend bemanning"
+                }
+              },
+              "queryRef": "Planinställning.Trend bemanning",
+              "nativeQueryRef": "Trend bemanning",
+              "displayName": "Bemanning"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Planinställning"
+                    }
+                  },
+                  "Property": "Trend mål"
+                }
+              },
+              "queryRef": "Planinställning.Trend mål",
+              "nativeQueryRef": "Trend mål",
+              "displayName": "Mål 82 %"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Planinställning"
+                    }
+                  },
+                  "Property": "Trend vald månad"
+                }
+              },
+              "queryRef": "Planinställning.Trend vald månad",
+              "nativeQueryRef": "Trend vald månad",
+              "displayName": "Vald månad"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Trendaxel"
+                  }
+                },
+                "Property": "Månad"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ]
+      }
+    },
     "objects": {
       "categoryAxis": [
         {
@@ -76,15 +212,25 @@
             },
             "start": {
               "expr": {
-                "Literal": {
-                  "Value": "0D"
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Planinställning"
+                    }
+                  },
+                  "Property": "Trend axel min"
                 }
               }
             },
             "end": {
               "expr": {
-                "Literal": {
-                  "Value": "1D"
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Planinställning"
+                    }
+                  },
+                  "Property": "Trend axel max"
                 }
               }
             },
@@ -103,6 +249,13 @@
                       "Value": "'#5B6B80'"
                     }
                   }
+                }
+              }
+            },
+            "labelPrecision": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
                 }
               }
             }
@@ -149,9 +302,6 @@
       ],
       "dataPoint": [
         {
-          "selector": {
-            "metadata": "Planinställning.Trend teknisk"
-          },
           "properties": {
             "fill": {
               "solid": {
@@ -164,12 +314,12 @@
                 }
               }
             }
+          },
+          "selector": {
+            "metadata": "Planinställning.Trend teknisk"
           }
         },
         {
-          "selector": {
-            "metadata": "Planinställning.Trend bemanning"
-          },
           "properties": {
             "fill": {
               "solid": {
@@ -182,12 +332,12 @@
                 }
               }
             }
+          },
+          "selector": {
+            "metadata": "Planinställning.Trend bemanning"
           }
         },
         {
-          "selector": {
-            "metadata": "Planinställning.Trend mål"
-          },
           "properties": {
             "fill": {
               "solid": {
@@ -200,12 +350,12 @@
                 }
               }
             }
+          },
+          "selector": {
+            "metadata": "Planinställning.Trend mål"
           }
         },
         {
-          "selector": {
-            "metadata": "Planinställning.Trend vald månad"
-          },
           "properties": {
             "fill": {
               "solid": {
@@ -218,6 +368,9 @@
                 }
               }
             }
+          },
+          "selector": {
+            "metadata": "Planinställning.Trend vald månad"
           }
         }
       ],
@@ -248,9 +401,6 @@
           }
         },
         {
-          "selector": {
-            "metadata": "Planinställning.Trend mål"
-          },
           "properties": {
             "lineStyle": {
               "expr": {
@@ -266,12 +416,12 @@
                 }
               }
             }
+          },
+          "selector": {
+            "metadata": "Planinställning.Trend mål"
           }
         },
         {
-          "selector": {
-            "metadata": "Planinställning.Trend vald månad"
-          },
           "properties": {
             "strokeWidth": {
               "expr": {
@@ -294,6 +444,9 @@
                 }
               }
             }
+          },
+          "selector": {
+            "metadata": "Planinställning.Trend vald månad"
           }
         }
       ],
@@ -486,142 +639,6 @@
           }
         }
       ]
-    },
-    "query": {
-      "queryState": {
-        "Category": {
-          "projections": [
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Trendaxel"
-                    }
-                  },
-                  "Property": "Månad"
-                }
-              },
-              "queryRef": "Trendaxel.Månad",
-              "nativeQueryRef": "Månad"
-            }
-          ]
-        },
-        "Y": {
-          "projections": [
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Planinställning"
-                    }
-                  },
-                  "Property": "Trend teknisk"
-                }
-              },
-              "queryRef": "Planinställning.Trend teknisk",
-              "nativeQueryRef": "Trend teknisk",
-              "displayName": "Teknisk service"
-            },
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Planinställning"
-                    }
-                  },
-                  "Property": "Trend bemanning"
-                }
-              },
-              "queryRef": "Planinställning.Trend bemanning",
-              "nativeQueryRef": "Trend bemanning",
-              "displayName": "Bemanning"
-            },
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Planinställning"
-                    }
-                  },
-                  "Property": "Trend mål"
-                }
-              },
-              "queryRef": "Planinställning.Trend mål",
-              "nativeQueryRef": "Trend mål",
-              "displayName": "Mål 82 %"
-            },
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Planinställning"
-                    }
-                  },
-                  "Property": "Trend vald månad"
-                }
-              },
-              "queryRef": "Planinställning.Trend vald månad",
-              "nativeQueryRef": "Trend vald månad",
-              "displayName": "Vald månad"
-            }
-          ]
-        },
-        "Tooltips": {
-          "projections": [
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Planinställning"
-                    }
-                  },
-                  "Property": "Trend timmar"
-                }
-              },
-              "queryRef": "Planinställning.Trend timmar",
-              "nativeQueryRef": "Trend timmar"
-            },
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Planinställning"
-                    }
-                  },
-                  "Property": "Trend kapacitet"
-                }
-              },
-              "queryRef": "Planinställning.Trend kapacitet",
-              "nativeQueryRef": "Trend kapacitet"
-            }
-          ]
-        }
-      },
-      "sortDefinition": {
-        "sort": [
-          {
-            "field": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "Trendaxel"
-                  }
-                },
-                "Property": "Månad"
-              }
-            },
-            "direction": "Ascending"
-          }
-        ],
-        "isDefaultSort": false
-      }
     }
   }
 }

@@ -100,11 +100,53 @@ for w in range(8):
    for dayindex in range(5):
     d=monday+timedelta(days=dayindex);cap=h/5;b=booked/n/5
     plan.append(dict(ResursID=pid,Datumnyckel=dk(d),VeckaID=41+w,Snapshot=20260930,UppdragID=contracts[0]['UppdragID'],Kapacitet=cap,Bokat=b,Ledigt=max(cap-b,0),Överbokat=max(b-cap,0)))
+# Complete previously missing time on ongoing contracts. The monthly demo
+# profiles describe performed work, independently of invoice dates. Existing
+# completed-task hours and explicit example hours remain untouched.
+seed_hours=defaultdict(float);daily_seed=defaultdict(float);monthly_capacity=defaultdict(list)
+for r in time:
+ pid=byid[r['UppdragID']]['ResursID'];seed_hours[(pid,r['Datumnyckel']//100)]+=r['Timmar'];daily_seed[(pid,r['Datumnyckel'])]+=r['Timmar']
+for r in capacity:monthly_capacity[(r['ResursID'],r['Datumnyckel']//100)].append(r)
+ongoing_by_person=defaultdict(list)
+for j in jobs:
+ if j['Status']=='Pågående' and j['Uppdrag'].endswith('Löpande kunduppdrag'):ongoing_by_person[j['ResursID']].append(j)
+technical=[.74,.75,.76,.77,.78,.79,.80,.81,.82,.80,.82,.83]
+staffing=[.79,.80,.81,.82,.81,.80,.79,.80,.79,.80,.79,.78]
+added=[];profiles=[]
+for (pid,month),days in sorted(monthly_capacity.items()):
+ year,m=divmod(month,100);a=resource[pid]['Områdesnyckel'];cap=sum(r['Tillgängligt'] for r in days)
+ rate=(technical if a==2 else staffing)[m-1]+(year-2025)*.02
+ target=round(cap*rate,2);missing=round(max(0,target-seed_hours[(pid,month)]),2)
+ contracts=sorted(ongoing_by_person[pid],key=lambda j:j['UppdragID'])
+ assert contracts or not missing,('No ongoing contract for resource',pid)
+ usable=[r for r in days if r['Tillgängligt']>daily_seed[(pid,r['Datumnyckel'])]]
+ profiles.append(dict(ResursID=pid,Månad=month,Kapacitet=cap,Profil=rate,BefintligaTimmar=seed_hours[(pid,month)],KompletteradeTimmar=missing))
+ # Integer hundredths preserve exact sums across all dates and contracts.
+ units=round(missing*100);weights=[r['Tillgängligt']-daily_seed[(pid,r['Datumnyckel'])] for r in usable]
+ assert missing<=sum(weights)+.011,('Insufficient remaining daily capacity',pid,month)
+ allocation=[math.floor(units*w/sum(weights)) for w in weights] if weights else []
+ if weights:
+  remainder=units-sum(allocation)
+  order=sorted(range(len(weights)),key=lambda i:units*weights[i]/sum(weights)-allocation[i],reverse=True)
+  for i in order[:remainder]:allocation[i]+=1
+ for i,(day,amount) in enumerate(zip(usable,allocation)):
+  if not amount:continue
+  j=contracts[(month+i)%len(contracts)]
+  r=dict(UppdragID=j['UppdragID'],Datumnyckel=day['Datumnyckel'],Timmar=amount/100,Godkänd='Ja',Debiterbar='Ja')
+  time.append(r);added.append(r)
+ assert math.isclose(seed_hours[(pid,month)]+missing,max(target,seed_hours[(pid,month)]),abs_tol=.011),(pid,month)
+# Generic multi-year contracts need a whole-contract time estimate; retaining
+# the old 240-hour placeholder would incorrectly flag every completed timesheet.
+whole_hours=defaultdict(float)
+for r in time:whole_hours[r['UppdragID']]+=r['Timmar']
+for contracts in ongoing_by_person.values():
+ for j in contracts:j['PlaneradeTimmar']=max(240,math.ceil(whole_hours[j['UppdragID']]*1.10/8)*8)
+write('Utförd tid komplettering',added);write('Tidrapporteringsprofiler',profiles)
 write('Resurser',people);write('Uppdragsregister',jobs);write('Utförd tid',time);write('Uppdragsekonomi',rows);write('Arbetskapacitet',capacity);write('Planbokningar',plan);write('Planveckor',weeks)
 write('Planinställning',[dict(Planläge='2026-09-30',Från='2026-10-05',Till='2026-11-29',SenasteUtfall='2026-09-30')])
 write('Uppdragsområden',[dict(Områdesnyckel=2,Område='Teknisk service'),dict(Områdesnyckel=3,Område='Bemanning')])
 write('Resursval',[dict(Resursgrupp='Alla')]+[dict(Resursgrupp=g) for _,g,_,_,_ in groups])
-write('Uppdragsstatusval',[dict(Urval=x) for x in ['Alla','Pågående','Avslutade','Behöver uppföljning']])
+write('Uppdragsstatusval',[dict(Urval=x,Visningsordning=i) for i,x in enumerate(['Alla','Pågående','Avslutade','Behöver uppföljning'])])
 write('Ej uppdragsfördelade kostnader',[dict(Datumnyckel=d,Områdesnyckel=a,Belopp=v) for (d,a),v in sorted(unassigned.items())])
 checks=dict(capacity=sum(r['Kapacitet'] for r in plan),booked=sum(r['Bokat'] for r in plan),free=sum(r['Ledigt'] for r in plan),over=sum(r['Överbokat'] for r in plan),jobsR12=sum(20251001<=j['Slutförd']<=20260930 for j in jobs),hoursR12=sum(r['Timmar'] for r in time if 20251001<=r['Datumnyckel']<=20260930),financeRows=len(rows),resources=len(people),registryRows=len(jobs))
 assert all(math.isclose(checks[k],v,abs_tol=1e-7) for k,v in zip(['capacity','booked','free','over'],[8000,6800,1280,80])),checks

@@ -1,95 +1,112 @@
 /// Reproducerbar uppdragsanalys. Separata datumroller för utfall och plan.
-table 'Uppdragsregister'
+table Uppdragsregister
+	lineageTag: fd62f09d-5e73-42c8-bcb9-78e974aa8a3d
 
-	column 'UppdragID'
+	column UppdragID
 		dataType: int64
+		isHidden
+		lineageTag: 2697823a-d93d-4e75-9357-2b3741160715
 		summarizeBy: none
 		sourceColumn: UppdragID
-		isHidden
 
-	column 'Uppdrag'
+	column Uppdrag
 		dataType: string
+		lineageTag: bc7a117c-cd1e-43ea-b6e8-1a7ab4b853ce
 		summarizeBy: none
 		sourceColumn: Uppdrag
 
-	column 'Kundnyckel'
+	column Kundnyckel
 		dataType: int64
+		isHidden
+		lineageTag: dcf688fb-160e-4326-82ae-d848666bc2ee
 		summarizeBy: none
 		sourceColumn: Kundnyckel
-		isHidden
 
-	column 'ResursID'
+	column ResursID
 		dataType: int64
+		isHidden
+		lineageTag: 9007883a-2c4d-40ff-b6cd-c8af04fe6659
 		summarizeBy: none
 		sourceColumn: ResursID
-		isHidden
 
-	column 'Typ'
+	column Typ
 		dataType: string
+		lineageTag: 2228be08-fce8-4474-9b64-4985bb5de8d4
 		summarizeBy: none
 		sourceColumn: Typ
 
-	column 'Status'
+	column Status
 		dataType: string
+		lineageTag: d912843e-71bb-43b0-a6ef-cf5a3ee10c5a
 		summarizeBy: none
 		sourceColumn: Status
 
-	column 'Startdatum'
+	column Startdatum
 		dataType: dateTime
+		lineageTag: 98f2a8ef-aa53-48ff-b783-7a4b0610bf1e
 		summarizeBy: none
 		sourceColumn: Startdatum
 
-	column 'Slutdatum'
+	column Slutdatum
 		dataType: dateTime
+		lineageTag: 72a5e060-5683-4449-b36e-63701e5eeb0a
 		summarizeBy: none
 		sourceColumn: Slutdatum
 
-	column 'Slutförd'
+	column Slutförd
 		dataType: int64
+		isHidden
+		lineageTag: 2ee2759d-2478-4828-a6fb-04689d1357d4
 		summarizeBy: none
 		sourceColumn: Slutförd
-		isHidden
 
-	column 'PlaneradeTimmar'
+	column PlaneradeTimmar
 		dataType: double
+		isHidden
+		lineageTag: 9e3c2622-cc63-4e72-85d8-be903a77ff86
 		summarizeBy: none
 		sourceColumn: PlaneradeTimmar
-		isHidden
 
-	column 'Kalkylmarginal'
+	column Kalkylmarginal
 		dataType: double
+		isHidden
+		lineageTag: 42827a2c-14a1-4816-84e8-2ce6ad5cb23c
 		summarizeBy: none
 		sourceColumn: Kalkylmarginal
-		isHidden
 
-	column 'Slutintäkt'
+	column Slutintäkt
 		dataType: double
+		isHidden
+		lineageTag: 9d420a86-6cd0-449f-9660-1f4fc00ca4d2
 		summarizeBy: none
 		sourceColumn: Slutintäkt
-		isHidden
 
-	column 'KostnadHittills'
+	column KostnadHittills
 		dataType: double
+		isHidden
+		lineageTag: fecb4d57-65bd-4515-a8a4-1afb967b57c7
 		summarizeBy: none
 		sourceColumn: KostnadHittills
-		isHidden
 
-	column 'ÅterståendeKostnad'
+	column ÅterståendeKostnad
 		dataType: double
+		isHidden
+		lineageTag: 9473ffac-be8f-4827-9c91-bafae4d753dc
 		summarizeBy: none
 		sourceColumn: ÅterståendeKostnad
-		isHidden
 
-	column 'Ansvarig'
+	column Ansvarig
 		dataType: string
+		lineageTag: 5df6bde0-413e-40b3-bb6a-880c6c5a18e7
 		summarizeBy: none
 		sourceColumn: Ansvarig
 
-	partition 'Uppdragsregister' = m
+	partition Uppdragsregister = m
 		mode: import
 		source =
-			let
-			 Source=Csv.Document(File.Contents(DataFolder & "/Uppdragsregister.csv"),[Delimiter=",",Encoding=65001,QuoteStyle=QuoteStyle.Csv]),
-			 Headers=Table.PromoteHeaders(Source,[PromoteAllScalars=true]),
-			 Typed=Table.TransformColumnTypes(Headers,{{"UppdragID", Int64.Type},{"Uppdrag", type text},{"Kundnyckel", Int64.Type},{"ResursID", Int64.Type},{"Typ", type text},{"Status", type text},{"Startdatum", type date},{"Slutdatum", type date},{"Slutförd", Int64.Type},{"PlaneradeTimmar", type number},{"Kalkylmarginal", type number},{"Slutintäkt", type number},{"KostnadHittills", type number},{"ÅterståendeKostnad", type number},{"Ansvarig", type text}},"en-US")
-			in Typed
+				let
+				 Source=Csv.Document(File.Contents(DataFolder & "/Uppdragsregister.csv"),[Delimiter=",",Encoding=65001,QuoteStyle=QuoteStyle.Csv]),
+				 Headers=Table.PromoteHeaders(Source,[PromoteAllScalars=true]),
+				 Typed=Table.TransformColumnTypes(Headers,{{"UppdragID", Int64.Type},{"Uppdrag", type text},{"Kundnyckel", Int64.Type},{"ResursID", Int64.Type},{"Typ", type text},{"Status", type text},{"Startdatum", type date},{"Slutdatum", type date},{"Slutförd", Int64.Type},{"PlaneradeTimmar", type number},{"Kalkylmarginal", type number},{"Slutintäkt", type number},{"KostnadHittills", type number},{"ÅterståendeKostnad", type number},{"Ansvarig", type text}},"en-US")
+				in Typed
+

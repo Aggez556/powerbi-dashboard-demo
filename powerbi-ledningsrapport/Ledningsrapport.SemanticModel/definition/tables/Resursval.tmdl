@@ -1,16 +1,19 @@
 /// Reproducerbar uppdragsanalys. Separata datumroller för utfall och plan.
-table 'Resursval'
+table Resursval
+	lineageTag: 17d16d84-b6a9-40cb-bb2c-23f8ba2d0e75
 
-	column 'Resursgrupp'
+	column Resursgrupp
 		dataType: string
+		lineageTag: 513baec5-9977-4acd-9824-7926c89f4597
 		summarizeBy: none
 		sourceColumn: Resursgrupp
 
-	partition 'Resursval' = m
+	partition Resursval = m
 		mode: import
 		source =
-			let
-			 Source=Csv.Document(File.Contents(DataFolder & "/Resursval.csv"),[Delimiter=",",Encoding=65001,QuoteStyle=QuoteStyle.Csv]),
-			 Headers=Table.PromoteHeaders(Source,[PromoteAllScalars=true]),
-			 Typed=Table.TransformColumnTypes(Headers,{{"Resursgrupp", type text}},"en-US")
-			in Typed
+				let
+				 Source=Csv.Document(File.Contents(DataFolder & "/Resursval.csv"),[Delimiter=",",Encoding=65001,QuoteStyle=QuoteStyle.Csv]),
+				 Headers=Table.PromoteHeaders(Source,[PromoteAllScalars=true]),
+				 Typed=Table.TransformColumnTypes(Headers,{{"Resursgrupp", type text}},"en-US")
+				in Typed
+

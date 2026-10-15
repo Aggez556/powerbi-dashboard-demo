@@ -1,0 +1,23 @@
+DEFINE
+MEASURE 'Planinställning'[Trend axel min] = 			VAR _points=GENERATE(ALLSELECTED('Trendaxel'),
+			VAR _technical=[Trend teknisk] VAR _staffing=[Trend bemanning]
+			VAR _target=[Trend mål] VAR _selected=[Trend vald månad]
+			RETURN UNION(ROW("Value",_technical),ROW("Value",_staffing),ROW("Value",_target),ROW("Value",_selected)))
+			VAR _valid=FILTER(_points,NOT ISBLANK([Value]))
+			VAR _low=MINX(_valid,[Value]) VAR _high=MAXX(_valid,[Value])
+			VAR _padding=MAX(.03,(_high-_low)*.15)
+			RETURN IF(COUNTROWS(_valid)>0,MAX(0,FLOOR(_low-_padding,.05)))
+MEASURE 'Planinställning'[Trend axel max] = 			VAR _points=GENERATE(ALLSELECTED('Trendaxel'),
+			VAR _technical=[Trend teknisk] VAR _staffing=[Trend bemanning]
+			VAR _target=[Trend mål] VAR _selected=[Trend vald månad]
+			RETURN UNION(ROW("Value",_technical),ROW("Value",_staffing),ROW("Value",_target),ROW("Value",_selected)))
+			VAR _valid=FILTER(_points,NOT ISBLANK([Value]))
+			VAR _low=MINX(_valid,[Value]) VAR _high=MAXX(_valid,[Value])
+			VAR _padding=MAX(.03,(_high-_low)*.15)
+			RETURN IF(COUNTROWS(_valid)>0,CEILING(_high+_padding,.05))
+EVALUATE
+UNION(
+ CALCULATETABLE(ROW("Case","Year 2025","Min",[Trend axel min],"Max",[Trend axel max]),TREATAS({"Helår"},'Periodtyp'[Periodtyp]),TREATAS({"2025"},'Helårsval'[Period])),
+ CALCULATETABLE(ROW("Case","R12 Sep 2026","Min",[Trend axel min],"Max",[Trend axel max]),TREATAS({"R12"},'Periodtyp'[Periodtyp]),TREATAS({"September 2026"},'R12val'[Period])),
+ CALCULATETABLE(ROW("Case","Staffing 2025","Min",[Trend axel min],"Max",[Trend axel max]),TREATAS({"Helår"},'Periodtyp'[Periodtyp]),TREATAS({"2025"},'Helårsval'[Period]),TREATAS({3},'Uppdragsområden'[Områdesnyckel])))
+ORDER BY [Case]

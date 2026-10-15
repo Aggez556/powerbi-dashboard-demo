@@ -1,16 +1,190 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
   "name": "ea44656301c23775a524",
   "position": {
     "x": 304,
     "y": 936,
-    "width": 1580,
-    "height": 182,
     "z": 155,
+    "height": 182,
+    "width": 1580,
     "tabOrder": 155
   },
   "visual": {
     "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Planinställning"
+                    }
+                  },
+                  "Property": "Uppdrag riskikon"
+                }
+              },
+              "queryRef": "Planinställning.Uppdrag riskikon",
+              "nativeQueryRef": "Uppdrag riskikon",
+              "displayName": "Risk"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Uppdragsregister"
+                    }
+                  },
+                  "Property": "Uppdrag"
+                }
+              },
+              "queryRef": "Uppdragsregister.Uppdrag",
+              "nativeQueryRef": "Uppdrag",
+              "displayName": "Uppdrag"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Planinställning"
+                    }
+                  },
+                  "Property": "Uppdrag kund"
+                }
+              },
+              "queryRef": "Planinställning.Uppdrag kund",
+              "nativeQueryRef": "Uppdrag kund",
+              "displayName": "Kund"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Uppdragsregister"
+                    }
+                  },
+                  "Property": "Typ"
+                }
+              },
+              "queryRef": "Uppdragsregister.Typ",
+              "nativeQueryRef": "Typ",
+              "displayName": "Typ"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Uppdragsregister"
+                    }
+                  },
+                  "Property": "Status"
+                }
+              },
+              "queryRef": "Uppdragsregister.Status",
+              "nativeQueryRef": "Status",
+              "displayName": "Status"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Planinställning"
+                    }
+                  },
+                  "Property": "Uppdrag planerade"
+                }
+              },
+              "queryRef": "Planinställning.Uppdrag planerade",
+              "nativeQueryRef": "Uppdrag planerade",
+              "displayName": "Planerade timmar, h"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Planinställning"
+                    }
+                  },
+                  "Property": "Uppdrag hela timmar"
+                }
+              },
+              "queryRef": "Planinställning.Uppdrag hela timmar",
+              "nativeQueryRef": "Uppdrag hela timmar",
+              "displayName": "Utfört hittills, h"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Planinställning"
+                    }
+                  },
+                  "Property": "Uppdrag kalkyl"
+                }
+              },
+              "queryRef": "Planinställning.Uppdrag kalkyl",
+              "nativeQueryRef": "Uppdrag kalkyl",
+              "displayName": "Kalkylmarginal"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Planinställning"
+                    }
+                  },
+                  "Property": "Uppdrag prognostext"
+                }
+              },
+              "queryRef": "Planinställning.Uppdrag prognostext",
+              "nativeQueryRef": "Prognos slutmarginal",
+              "displayName": "Prognos slutmarginal"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Planinställning"
+                  }
+                },
+                "Property": "Uppdrag riskikon"
+              }
+            },
+            "direction": "Descending"
+          },
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Uppdragsregister"
+                  }
+                },
+                "Property": "Uppdrag"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ],
+        "isDefaultSort": false
+      }
+    },
     "objects": {
       "columnHeaders": [
         {
@@ -25,7 +199,7 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "11D"
+                  "Value": "11.5D"
                 }
               }
             },
@@ -74,7 +248,7 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "11D"
+                  "Value": "11.5D"
                 }
               }
             },
@@ -121,16 +295,6 @@
           }
         },
         {
-          "selector": {
-            "data": [
-              {
-                "dataViewWildcard": {
-                  "matchingOption": 1
-                }
-              }
-            ],
-            "metadata": "Planinställning.Uppdrag prognos"
-          },
           "properties": {
             "fontColor": {
               "solid": {
@@ -148,9 +312,7 @@
                 }
               }
             }
-          }
-        },
-        {
+          },
           "selector": {
             "data": [
               {
@@ -159,8 +321,10 @@
                 }
               }
             ],
-            "metadata": "Planinställning.Uppdrag riskikon"
-          },
+            "metadata": "Planinställning.Uppdrag prognostext"
+          }
+        },
+        {
           "properties": {
             "fontColor": {
               "solid": {
@@ -178,6 +342,16 @@
                 }
               }
             }
+          },
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 1
+                }
+              }
+            ],
+            "metadata": "Planinställning.Uppdrag riskikon"
           }
         }
       ],
@@ -234,37 +408,34 @@
       ],
       "columnWidth": [
         {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "50D"
+                }
+              }
+            }
+          },
           "selector": {
             "metadata": "Planinställning.Uppdrag riskikon"
-          },
+          }
+        },
+        {
           "properties": {
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "32D"
+                  "Value": "310D"
                 }
               }
             }
-          }
-        },
-        {
+          },
           "selector": {
             "metadata": "Uppdragsregister.Uppdrag"
-          },
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
-                  "Value": "350D"
-                }
-              }
-            }
           }
         },
         {
-          "selector": {
-            "metadata": "Planinställning.Uppdrag kund"
-          },
           "properties": {
             "value": {
               "expr": {
@@ -273,12 +444,12 @@
                 }
               }
             }
+          },
+          "selector": {
+            "metadata": "Planinställning.Uppdrag kund"
           }
         },
         {
-          "selector": {
-            "metadata": "Uppdragsregister.Typ"
-          },
           "properties": {
             "value": {
               "expr": {
@@ -287,12 +458,12 @@
                 }
               }
             }
+          },
+          "selector": {
+            "metadata": "Uppdragsregister.Typ"
           }
         },
         {
-          "selector": {
-            "metadata": "Uppdragsregister.Status"
-          },
           "properties": {
             "value": {
               "expr": {
@@ -301,17 +472,92 @@
                 }
               }
             }
+          },
+          "selector": {
+            "metadata": "Uppdragsregister.Status"
           }
         },
         {
-          "selector": {
-            "metadata": "Planinställning.Uppdrag planerade"
-          },
           "properties": {
             "value": {
               "expr": {
                 "Literal": {
                   "Value": "170D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Planinställning.Uppdrag planerade"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "170D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Planinställning.Uppdrag hela timmar"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "170D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Planinställning.Uppdrag kalkyl"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "192D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Planinställning.Uppdrag prognostext"
+          }
+        }
+      ],
+      "columnFormatting": [
+        {
+          "selector": {
+            "metadata": "Planinställning.Uppdrag planerade"
+          },
+          "properties": {
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Right'"
+                }
+              }
+            },
+            "styleHeader": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "styleValues": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
                 }
               }
             }
@@ -322,10 +568,24 @@
             "metadata": "Planinställning.Uppdrag hela timmar"
           },
           "properties": {
-            "value": {
+            "alignment": {
               "expr": {
                 "Literal": {
-                  "Value": "170D"
+                  "Value": "'Right'"
+                }
+              }
+            },
+            "styleHeader": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "styleValues": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
                 }
               }
             }
@@ -336,10 +596,24 @@
             "metadata": "Planinställning.Uppdrag kalkyl"
           },
           "properties": {
-            "value": {
+            "alignment": {
               "expr": {
                 "Literal": {
-                  "Value": "170D"
+                  "Value": "'Right'"
+                }
+              }
+            },
+            "styleHeader": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "styleValues": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
                 }
               }
             }
@@ -347,13 +621,27 @@
         },
         {
           "selector": {
-            "metadata": "Planinställning.Uppdrag prognos"
+            "metadata": "Planinställning.Uppdrag prognostext"
           },
           "properties": {
-            "value": {
+            "alignment": {
               "expr": {
                 "Literal": {
-                  "Value": "170D"
+                  "Value": "'Right'"
+                }
+              }
+            },
+            "styleHeader": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "styleValues": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
                 }
               }
             }
@@ -536,180 +824,6 @@
           }
         }
       ]
-    },
-    "query": {
-      "queryState": {
-        "Values": {
-          "projections": [
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Planinställning"
-                    }
-                  },
-                  "Property": "Uppdrag riskikon"
-                }
-              },
-              "queryRef": "Planinställning.Uppdrag riskikon",
-              "nativeQueryRef": "Uppdrag riskikon",
-              "displayName": ""
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Uppdragsregister"
-                    }
-                  },
-                  "Property": "Uppdrag"
-                }
-              },
-              "queryRef": "Uppdragsregister.Uppdrag",
-              "nativeQueryRef": "Uppdrag",
-              "displayName": "Uppdrag"
-            },
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Planinställning"
-                    }
-                  },
-                  "Property": "Uppdrag kund"
-                }
-              },
-              "queryRef": "Planinställning.Uppdrag kund",
-              "nativeQueryRef": "Uppdrag kund",
-              "displayName": "Kund"
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Uppdragsregister"
-                    }
-                  },
-                  "Property": "Typ"
-                }
-              },
-              "queryRef": "Uppdragsregister.Typ",
-              "nativeQueryRef": "Typ",
-              "displayName": "Typ"
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Uppdragsregister"
-                    }
-                  },
-                  "Property": "Status"
-                }
-              },
-              "queryRef": "Uppdragsregister.Status",
-              "nativeQueryRef": "Status",
-              "displayName": "Status"
-            },
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Planinställning"
-                    }
-                  },
-                  "Property": "Uppdrag planerade"
-                }
-              },
-              "queryRef": "Planinställning.Uppdrag planerade",
-              "nativeQueryRef": "Uppdrag planerade",
-              "displayName": "Planerade timmar"
-            },
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Planinställning"
-                    }
-                  },
-                  "Property": "Uppdrag hela timmar"
-                }
-              },
-              "queryRef": "Planinställning.Uppdrag hela timmar",
-              "nativeQueryRef": "Uppdrag hela timmar",
-              "displayName": "Utfört hittills"
-            },
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Planinställning"
-                    }
-                  },
-                  "Property": "Uppdrag kalkyl"
-                }
-              },
-              "queryRef": "Planinställning.Uppdrag kalkyl",
-              "nativeQueryRef": "Uppdrag kalkyl",
-              "displayName": "Kalkylmarginal"
-            },
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Planinställning"
-                    }
-                  },
-                  "Property": "Uppdrag prognos"
-                }
-              },
-              "queryRef": "Planinställning.Uppdrag prognos",
-              "nativeQueryRef": "Uppdrag prognos",
-              "displayName": "Prognos slutmarginal"
-            }
-          ]
-        }
-      },
-      "sortDefinition": {
-        "sort": [
-          {
-            "field": {
-              "Measure": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "Planinställning"
-                  }
-                },
-                "Property": "Uppdrag riskikon"
-              }
-            },
-            "direction": "Descending"
-          },
-          {
-            "field": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "Uppdragsregister"
-                  }
-                },
-                "Property": "Uppdrag"
-              }
-            },
-            "direction": "Ascending"
-          }
-        ],
-        "isDefaultSort": false
-      }
     }
   },
   "filterConfig": {
@@ -727,7 +841,6 @@
           }
         },
         "type": "Advanced",
-        "howCreated": "User",
         "filter": {
           "Version": 2,
           "From": [
@@ -761,7 +874,8 @@
               }
             }
           ]
-        }
+        },
+        "howCreated": "User"
       }
     ]
   }

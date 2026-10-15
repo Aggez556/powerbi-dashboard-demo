@@ -1,7 +1,8 @@
 /// Disconnected financial statement presentation tree. Amounts are calculated from shared actuals and Excel budgets.
 table Budgetrapportnoder
+	lineageTag: fd8c3de2-1f7a-4f5b-b23c-ad64436483bb
 
-	measure 'Rapportvärde' = ```
+	measure Rapportvärde =
 			VAR _rad=SELECTEDVALUE('Budgetrapportnoder'[Rad])
 			VAR _sub=SELECTEDVALUE('Budgetrapportnoder'[Undergrupp])
 			VAR _post=SELECTEDVALUE('Budgetrapportnoder'[Post])
@@ -14,89 +15,101 @@ table Budgetrapportnoder
 			VAR _diff=IF(_mode=1,_b-_a,_a-_b)
 			VAR _value=SWITCH(_slot,1,_a,2,_b,3,IF(_margin,_diff*100,_diff))
 			RETURN IF(HASONEVALUE('Budgetrapportnoder'[NodID]) && [Budget kolumn synlig]=1 && NOT ISBLANK(_a) && NOT ISBLANK(_b),IF(_margin,_value,DIVIDE(_value,1000)))
-			```
 		formatString: #,##0
 		displayFolder: Budget\Resultaträkning
+		lineageTag: 89e95efc-99a8-47ee-8bde-349dd3ea1677
 
-	measure 'Rapporttext' = ```
+	measure Rapporttext =
 			VAR _v=[Rapportvärde] VAR _slot=SELECTEDVALUE('Budgetkolumner'[Position]) VAR _margin=SELECTEDVALUE('Budgetrapportnoder'[Typ])="marginal"
 			RETURN IF(ISBLANK(_v),BLANK(),IF(_margin,IF(_slot=3,FORMAT(_v,"+0.0;−0.0;0.0","sv-SE") & " pp",FORMAT(_v,"0.0 %","sv-SE")),FORMAT(_v,IF(_slot=3,"+#,##0;−#,##0;0","#,##0;−#,##0;0"),"sv-SE")))
-			```
 		formatString: @
 		displayFolder: Budget\Resultaträkning
+		lineageTag: edf3aa1c-16e3-4aca-8b62-105a3f2435b7
 
-	measure 'Rapportfärg' = ```
-			VAR _v=[Rapportvärde] RETURN IF(ISBLANK(_v),BLANK(),IF(SELECTEDVALUE('Budgetkolumner'[Position])=3,IF(_v<0,"#B42318",IF(_v>0,"#007956","#5B6B80")),IF(SELECTEDVALUE('Budgetrapportnoder'[Typ])="marginal","#5B6B80","#0F3163")))
-			```
+	measure Rapportfärg = VAR _v=[Rapportvärde] RETURN IF(ISBLANK(_v),BLANK(),IF(SELECTEDVALUE('Budgetkolumner'[Position])=3,IF(_v<0,"#B42318",IF(_v>0,"#007956","#5B6B80")),IF(SELECTEDVALUE('Budgetrapportnoder'[Typ])="marginal","#5B6B80","#0F3163")))
 		formatString: @
 		displayFolder: Budget\Resultaträkning
+		lineageTag: aace1b18-85f7-44d8-89f4-299cf15ced6b
 
-	column 'NodID'
+	column NodID
 		dataType: string
-		sourceColumn: NodID
+		lineageTag: 2a4ce89b-8324-418d-80b9-eff5c0e6b711
 		summarizeBy: none
+		sourceColumn: NodID
 		sortByColumn: Ordning
 
-	column 'Rad'
+	column Rad
 		dataType: string
+		lineageTag: 8e00a837-18b9-435a-aab7-9f2f86f52fb6
+		summarizeBy: none
 		sourceColumn: Rad
-		summarizeBy: none
 
-	column 'Undergrupp'
+	column Undergrupp
 		dataType: string
+		lineageTag: c4c86c91-3725-42e7-9156-585d757bbd8b
+		summarizeBy: none
 		sourceColumn: Undergrupp
-		summarizeBy: none
 
-	column 'Post'
+	column Post
 		dataType: string
+		lineageTag: d1c7d45c-66fd-4201-b877-e41dd44e710f
+		summarizeBy: none
 		sourceColumn: Post
-		summarizeBy: none
 
-	column 'Etikett'
+	column Etikett
 		dataType: string
+		lineageTag: 45ea5821-e5fb-432f-a224-4d4adca5d8ed
+		summarizeBy: none
 		sourceColumn: Etikett
-		summarizeBy: none
 
-	column 'Förälder'
+	column Förälder
 		dataType: string
+		lineageTag: 1e2351aa-7f71-457c-b944-1ea584f2d12f
+		summarizeBy: none
 		sourceColumn: Förälder
-		summarizeBy: none
 
-	column 'Överförälder'
+	column Överförälder
 		dataType: string
+		lineageTag: e16bacd6-6143-4542-ac7c-73f72e552ad5
+		summarizeBy: none
 		sourceColumn: Överförälder
-		summarizeBy: none
 
-	column 'Nivå'
+	column Nivå
 		dataType: int64
+		lineageTag: 4e28c525-b2c3-4ffb-a787-b4c85a0fb0a3
+		summarizeBy: none
 		sourceColumn: Nivå
-		summarizeBy: none
 
-	column 'Typ'
+	column Typ
 		dataType: string
+		lineageTag: 0897eda5-a23c-4681-aa0a-e7a751ac1de5
+		summarizeBy: none
 		sourceColumn: Typ
-		summarizeBy: none
 
-	column 'Ordning'
+	column Ordning
 		dataType: int64
+		lineageTag: 24dd07e6-ed35-421f-8a2f-118264d2fb5f
+		summarizeBy: none
 		sourceColumn: Ordning
-		summarizeBy: none
 
-	column 'HarBarn'
+	column HarBarn
 		dataType: int64
+		lineageTag: c94e0fa8-dcc2-4c92-a4b6-54bdba1024c6
+		summarizeBy: none
 		sourceColumn: HarBarn
-		summarizeBy: none
 
-	column 'Avsnitt'
+	column Avsnitt
 		dataType: string
-		sourceColumn: Avsnitt
+		lineageTag: ec2919d4-741e-4f15-9ce0-e4fe04f80f78
 		summarizeBy: none
+		sourceColumn: Avsnitt
 
 	partition Budgetrapportnoder = m
 		mode: import
 		source =
-			let
-			 Source=Csv.Document(File.Contents(DataFolder & "/Budgetrapportnoder.csv"),[Delimiter=",",Encoding=65001,QuoteStyle=QuoteStyle.Csv]),
-			 Headers=Table.PromoteHeaders(Source,[PromoteAllScalars=true]),
-			 Typed=Table.TransformColumnTypes(Headers,{{"NodID", type text}, {"Rad", type text}, {"Undergrupp", type text}, {"Post", type text}, {"Etikett", type text}, {"Förälder", type text}, {"Överförälder", type text}, {"Nivå", Int64.Type}, {"Typ", type text}, {"Ordning", Int64.Type}, {"HarBarn", Int64.Type}, {"Avsnitt", type text}},"sv-SE")
-			in Typed
+				let
+				 Source=Csv.Document(File.Contents(DataFolder & "/Budgetrapportnoder.csv"),[Delimiter=",",Encoding=65001,QuoteStyle=QuoteStyle.Csv]),
+				 Headers=Table.PromoteHeaders(Source,[PromoteAllScalars=true]),
+				 Typed=Table.TransformColumnTypes(Headers,{{"NodID", type text}, {"Rad", type text}, {"Undergrupp", type text}, {"Post", type text}, {"Etikett", type text}, {"Förälder", type text}, {"Överförälder", type text}, {"Nivå", Int64.Type}, {"Typ", type text}, {"Ordning", Int64.Type}, {"HarBarn", Int64.Type}, {"Avsnitt", type text}},"sv-SE")
+				in Typed
+

@@ -1,0 +1,13 @@
+EVALUATE
+SUMMARIZECOLUMNS('Uppdragsregister'[UppdragID],'Uppdragsregister'[Status],
+ "Risk",[Uppdrag risk],"Forecast",[Uppdrag prognos],"Text",[Uppdrag prognostext],
+ "Hours",[Uppdrag hela timmar],"Planned",[Uppdrag planerade])
+ORDER BY 'Uppdragsregister'[UppdragID]
+
+EVALUATE
+SELECTCOLUMNS('Uppdragsstatusval',"Status",'Uppdragsstatusval'[Urval],"Order",'Uppdragsstatusval'[Visningsordning])
+ORDER BY [Order]
+
+EVALUATE
+SUMMARIZECOLUMNS('Resurser'[Resursgrupp],'Planveckor'[Vecka],"Text",[Plan celltext],"Rate",[Plan beläggning])
+ORDER BY 'Resurser'[Resursgrupp],'Planveckor'[Vecka]

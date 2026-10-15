@@ -87,43 +87,35 @@ relationship 'Excelbudget till Budgetperioder'
 	fromColumn: Budgetscenarier.Månadsnyckel
 	toColumn: Budgetperioder.Månadsnyckel
 
-
 relationship 'Uppdragsanalys 0'
-	fromColumn: 'Resurser'.'Områdesnyckel'
-	toColumn: 'Uppdragsområden'.'Områdesnyckel'
-	crossFilteringBehavior: oneDirection
+	fromColumn: Resurser.Områdesnyckel
+	toColumn: Uppdragsområden.Områdesnyckel
 
 relationship 'Uppdragsanalys 1'
-	fromColumn: 'Uppdragsregister'.'ResursID'
-	toColumn: 'Resurser'.'ResursID'
-	crossFilteringBehavior: oneDirection
+	fromColumn: Uppdragsregister.ResursID
+	toColumn: Resurser.ResursID
 
 relationship 'Uppdragsanalys 2'
-	fromColumn: 'Uppdragsregister'.'Kundnyckel'
-	toColumn: 'Kunder'.'Kundnyckel'
-	crossFilteringBehavior: oneDirection
+	fromColumn: Uppdragsregister.Kundnyckel
+	toColumn: Kunder.Kundnyckel
 
 relationship 'Uppdragsanalys 3'
-	fromColumn: 'Utförd tid'.'UppdragID'
-	toColumn: 'Uppdragsregister'.'UppdragID'
-	crossFilteringBehavior: oneDirection
+	fromColumn: 'Utförd tid'.UppdragID
+	toColumn: Uppdragsregister.UppdragID
 
 relationship 'Uppdragsanalys 4'
-	fromColumn: 'Uppdragsekonomi'.'UppdragID'
-	toColumn: 'Uppdragsregister'.'UppdragID'
-	crossFilteringBehavior: oneDirection
+	fromColumn: Uppdragsekonomi.UppdragID
+	toColumn: Uppdragsregister.UppdragID
 
 relationship 'Uppdragsanalys 5'
-	fromColumn: 'Arbetskapacitet'.'ResursID'
-	toColumn: 'Resurser'.'ResursID'
-	crossFilteringBehavior: oneDirection
+	fromColumn: Arbetskapacitet.ResursID
+	toColumn: Resurser.ResursID
 
 relationship 'Uppdragsanalys 6'
-	fromColumn: 'Planbokningar'.'ResursID'
-	toColumn: 'Resurser'.'ResursID'
-	crossFilteringBehavior: oneDirection
+	fromColumn: Planbokningar.ResursID
+	toColumn: Resurser.ResursID
 
 relationship 'Uppdragsanalys 7'
-	fromColumn: 'Planbokningar'.'VeckaID'
-	toColumn: 'Planveckor'.'VeckaID'
-	crossFilteringBehavior: oneDirection
+	fromColumn: Planbokningar.VeckaID
+	toColumn: Planveckor.VeckaID
+

@@ -53,30 +53,18 @@ ref table Budgetjämförelse
 ref table Budgetvisning
 ref table Budgetkolumner
 ref table Budgetscenarier
+ref table Budgetrapportnoder
+ref table Resurser
+ref table Uppdragsregister
+ref table 'Utförd tid'
+ref table Uppdragsekonomi
+ref table Arbetskapacitet
+ref table Planbokningar
+ref table Planveckor
+ref table Planinställning
+ref table Uppdragsområden
+ref table Resursval
+ref table Uppdragsstatusval
 
 ref cultureInfo sv-SE
 
-
-ref table Budgetrapportnoder
-
-ref table 'Resurser'
-
-ref table 'Uppdragsregister'
-
-ref table 'Utförd tid'
-
-ref table 'Uppdragsekonomi'
-
-ref table 'Arbetskapacitet'
-
-ref table 'Planbokningar'
-
-ref table 'Planveckor'
-
-ref table 'Planinställning'
-
-ref table 'Uppdragsområden'
-
-ref table 'Resursval'
-
-ref table 'Uppdragsstatusval'

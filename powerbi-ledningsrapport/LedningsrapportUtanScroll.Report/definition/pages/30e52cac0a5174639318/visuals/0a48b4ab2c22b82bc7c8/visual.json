@@ -1,16 +1,155 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
   "name": "0a48b4ab2c22b82bc7c8",
   "position": {
-    "x": 820,
+    "x": 780,
     "y": 496,
-    "width": 468,
-    "height": 308,
     "z": 149,
+    "height": 308,
+    "width": 428,
     "tabOrder": 149
   },
   "visual": {
     "visualType": "lineStackedColumnComboChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Planveckor"
+                    }
+                  },
+                  "Property": "Vecka"
+                }
+              },
+              "queryRef": "Planveckor.Vecka",
+              "nativeQueryRef": "Vecka",
+              "active": true
+            }
+          ]
+        },
+        "Tooltips": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Planinställning"
+                    }
+                  },
+                  "Property": "Plan beläggning"
+                }
+              },
+              "queryRef": "Planinställning.Plan beläggning",
+              "nativeQueryRef": "Plan beläggning"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Planinställning"
+                    }
+                  },
+                  "Property": "Plan ledigt"
+                }
+              },
+              "queryRef": "Planinställning.Plan ledigt",
+              "nativeQueryRef": "Plan ledigt"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Planinställning"
+                    }
+                  },
+                  "Property": "Plan överbeläggning"
+                }
+              },
+              "queryRef": "Planinställning.Plan överbeläggning",
+              "nativeQueryRef": "Plan överbeläggning"
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Planinställning"
+                    }
+                  },
+                  "Property": "Plan bokat teknisk"
+                }
+              },
+              "queryRef": "Planinställning.Plan bokat teknisk",
+              "nativeQueryRef": "Plan bokat teknisk",
+              "displayName": "Teknisk service"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Planinställning"
+                    }
+                  },
+                  "Property": "Plan bokat bemanning"
+                }
+              },
+              "queryRef": "Planinställning.Plan bokat bemanning",
+              "nativeQueryRef": "Plan bokat bemanning",
+              "displayName": "Bemanning"
+            }
+          ]
+        },
+        "Y2": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Planinställning"
+                    }
+                  },
+                  "Property": "Plan kapacitet"
+                }
+              },
+              "queryRef": "Planinställning.Plan kapacitet",
+              "nativeQueryRef": "Plan kapacitet",
+              "displayName": "Kapacitet"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Planveckor"
+                  }
+                },
+                "Property": "Vecka"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ]
+      }
+    },
     "objects": {
       "categoryAxis": [
         {
@@ -156,9 +295,6 @@
       ],
       "dataPoint": [
         {
-          "selector": {
-            "metadata": "Planinställning.Plan bokat teknisk"
-          },
           "properties": {
             "fill": {
               "solid": {
@@ -171,12 +307,12 @@
                 }
               }
             }
+          },
+          "selector": {
+            "metadata": "Planinställning.Plan bokat teknisk"
           }
         },
         {
-          "selector": {
-            "metadata": "Planinställning.Plan bokat bemanning"
-          },
           "properties": {
             "fill": {
               "solid": {
@@ -189,12 +325,12 @@
                 }
               }
             }
+          },
+          "selector": {
+            "metadata": "Planinställning.Plan bokat bemanning"
           }
         },
         {
-          "selector": {
-            "metadata": "Planinställning.Plan kapacitet"
-          },
           "properties": {
             "fill": {
               "solid": {
@@ -207,6 +343,9 @@
                 }
               }
             }
+          },
+          "selector": {
+            "metadata": "Planinställning.Plan kapacitet"
           }
         }
       ],
@@ -453,145 +592,6 @@
           }
         }
       ]
-    },
-    "query": {
-      "queryState": {
-        "Category": {
-          "projections": [
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Planveckor"
-                    }
-                  },
-                  "Property": "Vecka"
-                }
-              },
-              "queryRef": "Planveckor.Vecka",
-              "nativeQueryRef": "Vecka"
-            }
-          ]
-        },
-        "Y": {
-          "projections": [
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Planinställning"
-                    }
-                  },
-                  "Property": "Plan bokat teknisk"
-                }
-              },
-              "queryRef": "Planinställning.Plan bokat teknisk",
-              "nativeQueryRef": "Plan bokat teknisk",
-              "displayName": "Teknisk service"
-            },
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Planinställning"
-                    }
-                  },
-                  "Property": "Plan bokat bemanning"
-                }
-              },
-              "queryRef": "Planinställning.Plan bokat bemanning",
-              "nativeQueryRef": "Plan bokat bemanning",
-              "displayName": "Bemanning"
-            }
-          ]
-        },
-        "Y2": {
-          "projections": [
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Planinställning"
-                    }
-                  },
-                  "Property": "Plan kapacitet"
-                }
-              },
-              "queryRef": "Planinställning.Plan kapacitet",
-              "nativeQueryRef": "Plan kapacitet",
-              "displayName": "Kapacitet"
-            }
-          ]
-        },
-        "Tooltips": {
-          "projections": [
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Planinställning"
-                    }
-                  },
-                  "Property": "Plan beläggning"
-                }
-              },
-              "queryRef": "Planinställning.Plan beläggning",
-              "nativeQueryRef": "Plan beläggning"
-            },
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Planinställning"
-                    }
-                  },
-                  "Property": "Plan ledigt"
-                }
-              },
-              "queryRef": "Planinställning.Plan ledigt",
-              "nativeQueryRef": "Plan ledigt"
-            },
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Planinställning"
-                    }
-                  },
-                  "Property": "Plan överbeläggning"
-                }
-              },
-              "queryRef": "Planinställning.Plan överbeläggning",
-              "nativeQueryRef": "Plan överbeläggning"
-            }
-          ]
-        }
-      },
-      "sortDefinition": {
-        "sort": [
-          {
-            "field": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "Planveckor"
-                  }
-                },
-                "Property": "Vecka"
-              }
-            },
-            "direction": "Ascending"
-          }
-        ],
-        "isDefaultSort": false
-      }
     }
   }
 }

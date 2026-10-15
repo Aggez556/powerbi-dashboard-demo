@@ -1,0 +1,29 @@
+{
+  "status": "passed",
+  "source": "Independent CSV validation, not UI",
+  "supplementaryRows": 25294,
+  "periods": {
+    "Helår 2025": {
+      "hours": 38461.6,
+      "capacity": 48400.0,
+      "rate": 0.7946611570247933
+    },
+    "Helår 2024": {
+      "hours": 37798.0,
+      "capacity": 48800.0,
+      "rate": 0.7745491803278689
+    },
+    "R12 september 2026": {
+      "hours": 39645.98,
+      "capacity": 48600.0,
+      "rate": 0.8157609053497943
+    },
+    "September 2026": {
+      "hours": 3894.38,
+      "capacity": 4400.0,
+      "rate": 0.8850863636363636
+    }
+  },
+  "originalCompletedHoursPreserved": true,
+  "supplementWithinDailyCapacity": true
+}

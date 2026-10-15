@@ -1,16 +1,56 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
   "name": "8e8a477f27fbd7bc21c7",
   "position": {
     "x": 1624,
     "y": 16,
-    "width": 264,
-    "height": 88,
     "z": 110,
+    "height": 88,
+    "width": 264,
     "tabOrder": 110
   },
   "visual": {
     "visualType": "slicer",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Resursval"
+                    }
+                  },
+                  "Property": "Resursgrupp"
+                }
+              },
+              "queryRef": "Resursval.Resursgrupp",
+              "nativeQueryRef": "Resursgrupp",
+              "active": true
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Resursval"
+                  }
+                },
+                "Property": "Resursgrupp"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ]
+      }
+    },
     "objects": {
       "data": [
         {
@@ -277,46 +317,6 @@
           }
         }
       ]
-    },
-    "query": {
-      "queryState": {
-        "Values": {
-          "projections": [
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Resursval"
-                    }
-                  },
-                  "Property": "Resursgrupp"
-                }
-              },
-              "queryRef": "Resursval.Resursgrupp",
-              "nativeQueryRef": "Resursgrupp"
-            }
-          ]
-        }
-      },
-      "sortDefinition": {
-        "sort": [
-          {
-            "field": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "Resursval"
-                  }
-                },
-                "Property": "Resursgrupp"
-              }
-            },
-            "direction": "Ascending"
-          }
-        ],
-        "isDefaultSort": false
-      }
     }
   },
   "filterConfig": {
@@ -334,7 +334,6 @@
           }
         },
         "type": "Advanced",
-        "howCreated": "User",
         "filter": {
           "Version": 2,
           "From": [
@@ -368,7 +367,8 @@
               }
             }
           ]
-        }
+        },
+        "howCreated": "User"
       }
     ]
   }

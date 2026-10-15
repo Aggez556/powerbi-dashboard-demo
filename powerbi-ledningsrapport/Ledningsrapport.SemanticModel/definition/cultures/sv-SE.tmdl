@@ -274,10 +274,764 @@ cultureInfo sv-SE
 			          "ConceptualProperty": "Rad"
 			        }
 			      },
+			      "State": "Generated"
+			    },
+			    "budgetrapportnoder.nodid": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Budgetrapportnoder",
+			          "ConceptualProperty": "NodID"
+			        }
+			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "Rad": {
+			          "Node": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "budgetrapportnoder.etikett": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Budgetrapportnoder",
+			          "ConceptualProperty": "Etikett"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Label": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "budgetrapportnoder.förälder": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Budgetrapportnoder",
+			          "ConceptualProperty": "Förälder"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Parent": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "budgetrapportnoder.överförälder": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Budgetrapportnoder",
+			          "ConceptualProperty": "Överförälder"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Ancestor": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "budgetrapportnoder.nivå": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Budgetrapportnoder",
+			          "ConceptualProperty": "Nivå"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Depth": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "budgetrapportnoder.typ": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Budgetrapportnoder",
+			          "ConceptualProperty": "Typ"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Kind": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "budgetrapportnoder.ordning": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Budgetrapportnoder",
+			          "ConceptualProperty": "Ordning"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Order": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "budgetrapportnoder.harbarn": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Budgetrapportnoder",
+			          "ConceptualProperty": "HarBarn"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Children": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "budgetrapportnoder.avsnitt": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Budgetrapportnoder",
+			          "ConceptualProperty": "Avsnitt"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Section": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "budgetrapportnoder.rapportvärde": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Budgetrapportnoder",
+			          "ConceptualProperty": "Rapportvärde"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Amount": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "budgetrapportnoder.rapporttext": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Budgetrapportnoder",
+			          "ConceptualProperty": "Rapporttext"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Text": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "budgetrapportnoder.rapportfärg": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Budgetrapportnoder",
+			          "ConceptualProperty": "Rapportfärg"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Color": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "budgetkolumner.grupp": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Budgetkolumner",
+			          "ConceptualProperty": "Grupp"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Group": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "budgetkolumner.månadid": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Budgetkolumner",
+			          "ConceptualProperty": "MånadID"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "GroupOrder": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "budgetkolumner.kolumn": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Budgetkolumner",
+			          "ConceptualProperty": "Kolumn"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Metric": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "budgetkolumner.position": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Budgetkolumner",
+			          "ConceptualProperty": "Position"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Slot": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "planinställning.plan_bokat_teknisk": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Planinställning",
+			          "ConceptualProperty": "Plan bokat teknisk"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Teknisk service": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "planinställning.plan_bokat_bemanning": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Planinställning",
+			          "ConceptualProperty": "Plan bokat bemanning"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Bemanning": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "planinställning.plan_kapacitet": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Planinställning",
+			          "ConceptualProperty": "Plan kapacitet"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Kapacitet": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Kapacitet, h": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "planinställning.uppdrag_kund": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Planinställning",
+			          "ConceptualProperty": "Uppdrag kund"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Kund": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "planinställning.uppdrag_planerade": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Planinställning",
+			          "ConceptualProperty": "Uppdrag planerade"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Planerade timmar": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "planinställning.uppdrag_hela_timmar": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Planinställning",
+			          "ConceptualProperty": "Uppdrag hela timmar"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Utfört hittills": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "planinställning.uppdrag_kalkyl": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Planinställning",
+			          "ConceptualProperty": "Uppdrag kalkyl"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Kalkylmarginal": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "planinställning.uppdrag_prognos": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Planinställning",
+			          "ConceptualProperty": "Uppdrag prognos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Prognos slutmarginal": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "planinställning.trend_teknisk": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Planinställning",
+			          "ConceptualProperty": "Trend teknisk"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Teknisk service": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "planinställning.trend_bemanning": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Planinställning",
+			          "ConceptualProperty": "Trend bemanning"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Bemanning": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "planinställning.trend_mål": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Planinställning",
+			          "ConceptualProperty": "Trend mål"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Mål 82 %": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "planinställning.trend_vald_månad": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Planinställning",
+			          "ConceptualProperty": "Trend vald månad"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Vald månad": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "planinställning.plan_bokat": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Planinställning",
+			          "ConceptualProperty": "Plan bokat"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Bokat, h": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "planinställning.plan_ledigt": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Planinställning",
+			          "ConceptualProperty": "Plan ledigt"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Ledigt, h": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "planinställning.plan_överbeläggning": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Planinställning",
+			          "ConceptualProperty": "Plan överbeläggning"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Överbokat, h": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "uppdragsregister.uppdrag": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Uppdragsregister",
+			          "ConceptualProperty": "Uppdrag"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Uppdrag": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "uppdragsregister.typ": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Uppdragsregister",
+			          "ConceptualProperty": "Typ"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Typ": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "uppdragsregister.status": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Uppdragsregister",
+			          "ConceptualProperty": "Status"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Status": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "planveckor.veckostart": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Planveckor",
+			          "ConceptualProperty": "Veckostart"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Från": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "planveckor.veckoslut": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Planveckor",
+			          "ConceptualProperty": "Veckoslut"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Till": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",

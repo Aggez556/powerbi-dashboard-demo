@@ -1,0 +1,23 @@
+﻿{
+    "status":  "queried",
+    "resultSets":  [
+                       [
+                           {
+                               "[Case]":  "R12 Sep 2026",
+                               "[Min]":  0.70000000000000007,
+                               "[Max]":  0.95000000000000007
+                           },
+                           {
+                               "[Case]":  "Staffing 2025",
+                               "[Min]":  0.75,
+                               "[Max]":  0.85000000000000009
+                           },
+                           {
+                               "[Case]":  "Year 2025",
+                               "[Min]":  0.70000000000000007,
+                               "[Max]":  0.9
+                           }
+                       ]
+                   ],
+    "source":  "Actual local Power BI Desktop DAX"
+}

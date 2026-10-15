@@ -1,39 +1,46 @@
 /// Reproducerbar uppdragsanalys. Separata datumroller för utfall och plan.
 table 'Utförd tid'
+	lineageTag: d0c55038-5ea1-42c9-a426-9b2cebc136cc
 
-	column 'UppdragID'
+	column UppdragID
 		dataType: int64
+		isHidden
+		lineageTag: 0a9b15af-e093-40a4-a923-d97ac9f47f13
 		summarizeBy: none
 		sourceColumn: UppdragID
-		isHidden
 
-	column 'Datumnyckel'
+	column Datumnyckel
 		dataType: int64
+		isHidden
+		lineageTag: cd222599-3097-4713-858c-661b8f3091ce
 		summarizeBy: none
 		sourceColumn: Datumnyckel
-		isHidden
 
-	column 'Timmar'
+	column Timmar
 		dataType: double
+		isHidden
+		lineageTag: c900c2cf-047f-4184-b9a6-aedf44e694b9
 		summarizeBy: none
 		sourceColumn: Timmar
-		isHidden
 
-	column 'Godkänd'
+	column Godkänd
 		dataType: string
+		lineageTag: 51c60f0f-c941-4528-a970-a1c4f43dafbf
 		summarizeBy: none
 		sourceColumn: Godkänd
 
-	column 'Debiterbar'
+	column Debiterbar
 		dataType: string
+		lineageTag: 296a5e7a-9be3-4ee9-8405-315ae153c117
 		summarizeBy: none
 		sourceColumn: Debiterbar
 
 	partition 'Utförd tid' = m
 		mode: import
 		source =
-			let
-			 Source=Csv.Document(File.Contents(DataFolder & "/Utförd tid.csv"),[Delimiter=",",Encoding=65001,QuoteStyle=QuoteStyle.Csv]),
-			 Headers=Table.PromoteHeaders(Source,[PromoteAllScalars=true]),
-			 Typed=Table.TransformColumnTypes(Headers,{{"UppdragID", Int64.Type},{"Datumnyckel", Int64.Type},{"Timmar", type number},{"Godkänd", type text},{"Debiterbar", type text}},"en-US")
-			in Typed
+				let
+				 Source=Csv.Document(File.Contents(DataFolder & "/Utförd tid.csv"),[Delimiter=",",Encoding=65001,QuoteStyle=QuoteStyle.Csv]),
+				 Headers=Table.PromoteHeaders(Source,[PromoteAllScalars=true]),
+				 Typed=Table.TransformColumnTypes(Headers,{{"UppdragID", Int64.Type},{"Datumnyckel", Int64.Type},{"Timmar", type number},{"Godkänd", type text},{"Debiterbar", type text}},"en-US")
+				in Typed
+

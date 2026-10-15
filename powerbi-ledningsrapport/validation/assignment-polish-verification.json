@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "source": "Actual Desktop DAX",
+  "assignmentsChecked": 3436,
+  "missingForecastsChecked": 1561,
+  "missingForecastsDoNotImplyMarginRisk": true,
+  "statusOrderVerified": true,
+  "overbookingPercentagesPreserved": true
+}

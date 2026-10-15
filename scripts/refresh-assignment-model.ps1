@@ -1,3 +1,4 @@
+param([string[]]$Tables,[switch]$TimeOnly)
 $ErrorActionPreference='Stop'
 $taskRoot=Split-Path -Parent $PSScriptRoot
 foreach($dll in @('Microsoft.AnalysisServices.Core.dll','Microsoft.AnalysisServices.Tabular.Json.dll','Microsoft.AnalysisServices.Tabular.dll')){[Reflection.Assembly]::LoadFrom((Join-Path $taskRoot ".tools/tom/lib/net45/$dll"))|Out-Null}
@@ -12,7 +13,8 @@ try{
  if(-not $db){throw 'The assignment model is not loaded.'}
  if($db.Model.Expressions['DataFolder'].Expression -notlike '*powerbi-ledningsrapport/data*'){throw 'Wrong project.'}
  $manifest=Get-Content (Join-Path $taskRoot 'powerbi-ledningsrapport/validation/assignment-model-manifest.json') -Encoding utf8 -Raw|ConvertFrom-Json
- foreach($name in $manifest.tables){$db.Model.Tables[$name].RequestRefresh([Microsoft.AnalysisServices.Tabular.RefreshType]::Full)}
+ $refreshTables=if($TimeOnly){@($manifest.tables|Where-Object {$_ -eq 'Uppdragsregister' -or $_ -like 'Utf*'})}elseif($Tables){$Tables}else{$manifest.tables}
+ foreach($name in $refreshTables){if($name -notin $manifest.tables){throw 'Unexpected refresh table.'};$db.Model.Tables[$name].RequestRefresh([Microsoft.AnalysisServices.Tabular.RefreshType]::Full)}
  $db.Model.SaveChanges()|Out-Null
- @{status='refreshed';tables=$manifest.tables.Count;scope='Only assignment tables; no report reload or other fact-table processing'}|ConvertTo-Json
+ @{status='refreshed';tables=$refreshTables.Count;scope='Only assignment tables; no report reload or other fact-table processing'}|ConvertTo-Json
 }finally{$server.Disconnect()}

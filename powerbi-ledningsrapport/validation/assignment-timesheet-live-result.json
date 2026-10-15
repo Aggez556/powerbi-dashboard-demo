@@ -1,0 +1,20 @@
+﻿{
+    "status":  "queried",
+    "resultSets":  [
+                       [
+                           {
+                               "[Period]":  "R12 Sep 2026",
+                               "[Hours]":  39645.98000000001,
+                               "[Capacity]":  48600,
+                               "[Rate]":  0.81576090534979451
+                           },
+                           {
+                               "[Period]":  "Year 2025",
+                               "[Hours]":  38461.60000000002,
+                               "[Capacity]":  48400,
+                               "[Rate]":  0.79466115702479379
+                           }
+                       ]
+                   ],
+    "source":  "Actual local Power BI Desktop DAX"
+}

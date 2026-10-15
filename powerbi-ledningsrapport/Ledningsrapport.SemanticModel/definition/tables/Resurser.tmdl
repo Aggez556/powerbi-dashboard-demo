@@ -1,56 +1,66 @@
 /// Reproducerbar uppdragsanalys. Separata datumroller för utfall och plan.
-table 'Resurser'
+table Resurser
+	lineageTag: 61afefb1-05bc-41f9-8151-8f561e1caea8
 
-	column 'ResursID'
+	column ResursID
 		dataType: int64
+		isHidden
+		lineageTag: dce56ae0-cd76-487f-9a3a-562fb42ad5c2
 		summarizeBy: none
 		sourceColumn: ResursID
-		isHidden
 
-	column 'Medarbetare'
+	column Medarbetare
 		dataType: string
+		lineageTag: df4b3ba8-ff66-429e-b4de-e0cef4d70258
 		summarizeBy: none
 		sourceColumn: Medarbetare
 
-	column 'Resursgrupp'
+	column Resursgrupp
 		dataType: string
+		lineageTag: a7c4a420-b4a3-4a8f-9c53-8fb7d3b13901
 		summarizeBy: none
 		sourceColumn: Resursgrupp
 
-	column 'GruppID'
+	column GruppID
 		dataType: int64
+		isHidden
+		lineageTag: 387ad2b9-b37d-4418-87ea-0ff98f555131
 		summarizeBy: none
 		sourceColumn: GruppID
-		isHidden
 
-	column 'Områdesnyckel'
+	column Områdesnyckel
 		dataType: int64
+		isHidden
+		lineageTag: 066a4c2a-86df-4666-9434-94bca86ad2f0
 		summarizeBy: none
 		sourceColumn: Områdesnyckel
-		isHidden
 
-	column 'Område'
+	column Område
 		dataType: string
+		lineageTag: 4fde670b-f73c-4e49-b13b-d383076e531f
 		summarizeBy: none
 		sourceColumn: Område
 
-	column 'Veckotimmar'
+	column Veckotimmar
 		dataType: double
+		isHidden
+		lineageTag: 82031094-4a58-4f54-a9d4-ed00a0ab26ac
 		summarizeBy: none
 		sourceColumn: Veckotimmar
-		isHidden
 
-	column 'Mål'
+	column Mål
 		dataType: double
+		isHidden
+		lineageTag: 66f47f55-f897-4498-a3b2-7f9968bbf7d6
 		summarizeBy: none
 		sourceColumn: Mål
-		isHidden
 
-	partition 'Resurser' = m
+	partition Resurser = m
 		mode: import
 		source =
-			let
-			 Source=Csv.Document(File.Contents(DataFolder & "/Resurser.csv"),[Delimiter=",",Encoding=65001,QuoteStyle=QuoteStyle.Csv]),
-			 Headers=Table.PromoteHeaders(Source,[PromoteAllScalars=true]),
-			 Typed=Table.TransformColumnTypes(Headers,{{"ResursID", Int64.Type},{"Medarbetare", type text},{"Resursgrupp", type text},{"GruppID", Int64.Type},{"Områdesnyckel", Int64.Type},{"Område", type text},{"Veckotimmar", type number},{"Mål", type number}},"en-US")
-			in Typed
+				let
+				 Source=Csv.Document(File.Contents(DataFolder & "/Resurser.csv"),[Delimiter=",",Encoding=65001,QuoteStyle=QuoteStyle.Csv]),
+				 Headers=Table.PromoteHeaders(Source,[PromoteAllScalars=true]),
+				 Typed=Table.TransformColumnTypes(Headers,{{"ResursID", Int64.Type},{"Medarbetare", type text},{"Resursgrupp", type text},{"GruppID", Int64.Type},{"Områdesnyckel", Int64.Type},{"Område", type text},{"Veckotimmar", type number},{"Mål", type number}},"en-US")
+				in Typed
+

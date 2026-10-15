@@ -1,41 +1,48 @@
 /// Reproducerbar uppdragsanalys. Separata datumroller för utfall och plan.
-table 'Uppdragsekonomi'
+table Uppdragsekonomi
+	lineageTag: d0b139a3-3893-48d6-a2cb-4f2d3e79977b
 
-	column 'UppdragID'
+	column UppdragID
 		dataType: int64
+		isHidden
+		lineageTag: 46e3bf66-5aaf-42c9-ae5e-cc7a31fba09f
 		summarizeBy: none
 		sourceColumn: UppdragID
-		isHidden
 
-	column 'Datumnyckel'
+	column Datumnyckel
 		dataType: int64
+		isHidden
+		lineageTag: 81257373-9e0a-41ef-96c1-2708b1fe20ab
 		summarizeBy: none
 		sourceColumn: Datumnyckel
-		isHidden
 
-	column 'Intäkt'
+	column Intäkt
 		dataType: double
+		isHidden
+		lineageTag: bb87d7b4-c748-43a3-b219-ff11dee8181a
 		summarizeBy: none
 		sourceColumn: Intäkt
-		isHidden
 
-	column 'DirektKostnad'
+	column DirektKostnad
 		dataType: double
+		isHidden
+		lineageTag: 8bc5480a-719b-4e58-8660-794231bd60d6
 		summarizeBy: none
 		sourceColumn: DirektKostnad
-		isHidden
 
-	column 'Kalkylkostnad'
+	column Kalkylkostnad
 		dataType: double
+		isHidden
+		lineageTag: 839100cb-b721-4046-9d66-9223fbdd6044
 		summarizeBy: none
 		sourceColumn: Kalkylkostnad
-		isHidden
 
-	partition 'Uppdragsekonomi' = m
+	partition Uppdragsekonomi = m
 		mode: import
 		source =
-			let
-			 Source=Csv.Document(File.Contents(DataFolder & "/Uppdragsekonomi.csv"),[Delimiter=",",Encoding=65001,QuoteStyle=QuoteStyle.Csv]),
-			 Headers=Table.PromoteHeaders(Source,[PromoteAllScalars=true]),
-			 Typed=Table.TransformColumnTypes(Headers,{{"UppdragID", Int64.Type},{"Datumnyckel", Int64.Type},{"Intäkt", type number},{"DirektKostnad", type number},{"Kalkylkostnad", type number}},"en-US")
-			in Typed
+				let
+				 Source=Csv.Document(File.Contents(DataFolder & "/Uppdragsekonomi.csv"),[Delimiter=",",Encoding=65001,QuoteStyle=QuoteStyle.Csv]),
+				 Headers=Table.PromoteHeaders(Source,[PromoteAllScalars=true]),
+				 Typed=Table.TransformColumnTypes(Headers,{{"UppdragID", Int64.Type},{"Datumnyckel", Int64.Type},{"Intäkt", type number},{"DirektKostnad", type number},{"Kalkylkostnad", type number}},"en-US")
+				in Typed
+

@@ -1,65 +1,76 @@
 /// Reproducerbar uppdragsanalys. Separata datumroller för utfall och plan.
-table 'Planbokningar'
+table Planbokningar
+	lineageTag: af0e29b4-53a4-46f8-b6b7-879ec2986b3a
 
-	column 'ResursID'
+	column ResursID
 		dataType: int64
+		isHidden
+		lineageTag: 462db4e1-99a6-46a9-b5a1-23c50fb36140
 		summarizeBy: none
 		sourceColumn: ResursID
-		isHidden
 
-	column 'Datumnyckel'
+	column Datumnyckel
 		dataType: int64
+		isHidden
+		lineageTag: 194c0cb1-307b-406e-97c9-696fe2471c78
 		summarizeBy: none
 		sourceColumn: Datumnyckel
-		isHidden
 
-	column 'VeckaID'
+	column VeckaID
 		dataType: int64
+		isHidden
+		lineageTag: 7f0a1f50-58bc-4ea0-ab75-0e4275be43f9
 		summarizeBy: none
 		sourceColumn: VeckaID
-		isHidden
 
-	column 'Snapshot'
+	column Snapshot
 		dataType: int64
+		isHidden
+		lineageTag: cfa4ed4b-04cf-44f7-86fe-2c3b6c8e50a6
 		summarizeBy: none
 		sourceColumn: Snapshot
-		isHidden
 
-	column 'UppdragID'
+	column UppdragID
 		dataType: int64
+		isHidden
+		lineageTag: d7ced9dd-b681-4b9d-8513-9e942b875ca9
 		summarizeBy: none
 		sourceColumn: UppdragID
-		isHidden
 
-	column 'Kapacitet'
+	column Kapacitet
 		dataType: double
+		isHidden
+		lineageTag: 1bcdddb8-2049-43be-8a85-19bfa16f0f2d
 		summarizeBy: none
 		sourceColumn: Kapacitet
-		isHidden
 
-	column 'Bokat'
+	column Bokat
 		dataType: double
+		isHidden
+		lineageTag: fad4e1aa-92b7-405b-b8e2-99c54decaafd
 		summarizeBy: none
 		sourceColumn: Bokat
-		isHidden
 
-	column 'Ledigt'
+	column Ledigt
 		dataType: double
+		isHidden
+		lineageTag: 4f663d41-38a8-4aeb-8b48-7cdb9b7760cd
 		summarizeBy: none
 		sourceColumn: Ledigt
-		isHidden
 
-	column 'Överbokat'
+	column Överbokat
 		dataType: double
+		isHidden
+		lineageTag: 97716b23-d042-4741-9acb-35685946b903
 		summarizeBy: none
 		sourceColumn: Överbokat
-		isHidden
 
-	partition 'Planbokningar' = m
+	partition Planbokningar = m
 		mode: import
 		source =
-			let
-			 Source=Csv.Document(File.Contents(DataFolder & "/Planbokningar.csv"),[Delimiter=",",Encoding=65001,QuoteStyle=QuoteStyle.Csv]),
-			 Headers=Table.PromoteHeaders(Source,[PromoteAllScalars=true]),
-			 Typed=Table.TransformColumnTypes(Headers,{{"ResursID", Int64.Type},{"Datumnyckel", Int64.Type},{"VeckaID", Int64.Type},{"Snapshot", Int64.Type},{"UppdragID", Int64.Type},{"Kapacitet", type number},{"Bokat", type number},{"Ledigt", type number},{"Överbokat", type number}},"en-US")
-			in Typed
+				let
+				 Source=Csv.Document(File.Contents(DataFolder & "/Planbokningar.csv"),[Delimiter=",",Encoding=65001,QuoteStyle=QuoteStyle.Csv]),
+				 Headers=Table.PromoteHeaders(Source,[PromoteAllScalars=true]),
+				 Typed=Table.TransformColumnTypes(Headers,{{"ResursID", Int64.Type},{"Datumnyckel", Int64.Type},{"VeckaID", Int64.Type},{"Snapshot", Int64.Type},{"UppdragID", Int64.Type},{"Kapacitet", type number},{"Bokat", type number},{"Ledigt", type number},{"Överbokat", type number}},"en-US")
+				in Typed
+

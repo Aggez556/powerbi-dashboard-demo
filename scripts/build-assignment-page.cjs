@@ -102,4 +102,5 @@ for(const v of [heat,booking]){v.visual.visualContainerObjects.visualTooltip=[{p
 const latestMeta=read(metaFile);if(!latestMeta.pageOrder.includes(tooltip))latestMeta.pageOrder.push(tooltip);write(metaFile,latestMeta);
 write(path.join(base,'validation/assignment-report-manifest.json'),{page:current,report,periodBookmarks:Object.values(bookmarkMap),visuals:placements.length});
 require('./polish-assignment-header.cjs')(report);
+require('./polish-assignment-page.cjs')(report);
 console.log('Built Uppdrag / beläggning in the original report:',current);

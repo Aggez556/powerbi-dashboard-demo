@@ -18,7 +18,12 @@ for r in live[1]:
  assert math.isclose(r['[Booked]'],booked,abs_tol=1e-7) and math.isclose(r['[Capacity]'],cap,abs_tol=1e-7)
  assert math.isclose(r['[Rate]'],booked/cap,abs_tol=1e-9)
 registry={int(r['UppdragID']):r for r in read('Uppdragsregister')};hours=defaultdict(float)
-for r in read('Utförd tid'):hours[int(r['UppdragID'])]+=float(r['Timmar'])
+timesheets=read('Utförd tid')
+for r in timesheets:hours[int(r['UppdragID'])]+=float(r['Timmar'])
+period_bounds={'Helår 2025':(20250101,20251231),'Helår 2024':(20240101,20241231),'R12 September 2026':(20251001,20260930),'Månad September 2026':(20260901,20260930)}
+for case,(start,end) in period_bounds.items():
+ expected_hours=sum(float(r['Timmar']) for r in timesheets if start<=int(r['Datumnyckel'])<=end)
+ assert math.isclose(cases[case]['[Hours]'],expected_hours,abs_tol=1e-7),(case,cases[case]['[Hours]'],expected_hours)
 visible=0
 for r in live[2]:
  jid=r['Uppdragsregister[UppdragID]'];j=registry[jid]

@@ -4,7 +4,7 @@ import csv,json
 BASE=Path(__file__).resolve().parents[1]/'powerbi-ledningsrapport';MODEL=BASE/'Ledningsrapport.SemanticModel/definition';DATA=BASE/'data'
 def q(s):return "'"+s.replace("'","''")+"'"
 names=['Resurser','Uppdragsregister','Utförd tid','Uppdragsekonomi','Arbetskapacitet','Planbokningar','Planveckor','Planinställning','Uppdragsområden','Resursval','Uppdragsstatusval']
-integer={'ResursID','GruppID','Områdesnyckel','UppdragID','Kundnyckel','Datumnyckel','Slutförd','VeckaID','Snapshot'}
+integer={'ResursID','GruppID','Områdesnyckel','UppdragID','Kundnyckel','Datumnyckel','Slutförd','VeckaID','Snapshot','Visningsordning'}
 dates={'Startdatum','Slutdatum','Veckostart','Veckoslut','Planläge','Från','Till','SenasteUtfall'}
 numeric={'Veckotimmar','Mål','PlaneradeTimmar','Kalkylmarginal','Slutintäkt','KostnadHittills','ÅterståendeKostnad','Timmar','Intäkt','DirektKostnad','Kalkylkostnad','Schematimmar','Frånvaro','Tillgängligt','Kapacitet','Bokat','Ledigt','Överbokat'}
 measures={}
@@ -93,3 +93,5 @@ for i,(ft,fc,tt,tc) in enumerate(rels):
 p.write_text(s,encoding='utf-8')
 (BASE/'validation/assignment-model-manifest.json').write_text(json.dumps(dict(tables=names,measures=list(measures),relationships=len(rels)),ensure_ascii=False,indent=2),encoding='utf-8')
 print('Added',len(names),'tables,',len(measures),'measures,',len(rels),'single-direction relationships.')
+import runpy
+runpy.run_path(str(Path(__file__).with_name('polish-assignment-model.py')))
