@@ -2,10 +2,10 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
   "name": "bbb1e17a9a71de803be9",
   "position": {
-    "x": 312,
-    "y": 864,
+    "x": 1126,
+    "y": 432,
     "z": 160,
-    "height": 248,
+    "height": 280,
     "width": 750,
     "tabOrder": 160
   },
@@ -27,26 +27,9 @@
                 }
               },
               "queryRef": "Kundintäktssteg.Steg",
-              "nativeQueryRef": "Steg",
-              "active": true
-            }
-          ]
-        },
-        "Tooltips": {
-          "projections": [
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Försäljning"
-                    }
-                  },
-                  "Property": "Kunder retention"
-                }
-              },
-              "queryRef": "Försäljning.Kunder retention",
-              "nativeQueryRef": "Kunder retention"
+              "nativeQueryRef": "Förändring",
+              "active": true,
+              "displayName": "Förändring"
             }
           ]
         },
@@ -64,7 +47,8 @@
                 }
               },
               "queryRef": "Försäljning.Kundintäkt bryggsteg",
-              "nativeQueryRef": "Kundintäkt bryggsteg"
+              "nativeQueryRef": "Försäljning",
+              "displayName": "Försäljning"
             }
           ]
         }
@@ -522,7 +506,82 @@
             }
           }
         }
+      ],
+      "visualTooltip": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "type": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Default'"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Segoe UI'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "11D"
+                }
+              }
+            },
+            "titleFontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#5B6B80'"
+                    }
+                  }
+                }
+              }
+            },
+            "valueFontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#0F3163'"
+                    }
+                  }
+                }
+              }
+            },
+            "background": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#FFFFFF'"
+                    }
+                  }
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          }
+        }
       ]
     }
-  }
+  },
+  "isHidden": true
 }

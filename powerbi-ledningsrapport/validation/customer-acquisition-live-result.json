@@ -1,0 +1,183 @@
+﻿{
+    "status":  "queried",
+    "resultSets":  [
+                       [
+                           {
+                               "Trendaxel[Månad]":  "Jan 25",
+                               "Kundgrupper[Kundgrupp]":  "Befintliga",
+                               "[Mkr]":  8.004143
+                           },
+                           {
+                               "Trendaxel[Månad]":  "Feb 25",
+                               "Kundgrupper[Kundgrupp]":  "Befintliga",
+                               "[Mkr]":  8.565745
+                           },
+                           {
+                               "Trendaxel[Månad]":  "Mar 25",
+                               "Kundgrupper[Kundgrupp]":  "Befintliga",
+                               "[Mkr]":  9.702378
+                           },
+                           {
+                               "Trendaxel[Månad]":  "Apr 25",
+                               "Kundgrupper[Kundgrupp]":  "Befintliga",
+                               "[Mkr]":  10.200883
+                           },
+                           {
+                               "Trendaxel[Månad]":  "Maj 25",
+                               "Kundgrupper[Kundgrupp]":  "Befintliga",
+                               "[Mkr]":  10.785364
+                           },
+                           {
+                               "Trendaxel[Månad]":  "Jun 25",
+                               "Kundgrupper[Kundgrupp]":  "Befintliga",
+                               "[Mkr]":  11.582957
+                           },
+                           {
+                               "Trendaxel[Månad]":  "Jul 25",
+                               "Kundgrupper[Kundgrupp]":  "Befintliga",
+                               "[Mkr]":  11.58461
+                           },
+                           {
+                               "Trendaxel[Månad]":  "Aug 25",
+                               "Kundgrupper[Kundgrupp]":  "Befintliga",
+                               "[Mkr]":  12.553808
+                           },
+                           {
+                               "Trendaxel[Månad]":  "Sep 25",
+                               "Kundgrupper[Kundgrupp]":  "Befintliga",
+                               "[Mkr]":  13.201542
+                           },
+                           {
+                               "Trendaxel[Månad]":  "Okt 25",
+                               "Kundgrupper[Kundgrupp]":  "Befintliga",
+                               "[Mkr]":  8.039253
+                           },
+                           {
+                               "Trendaxel[Månad]":  "Okt 25",
+                               "Kundgrupper[Kundgrupp]":  "Helt nya",
+                               "[Mkr]":  0.525675
+                           },
+                           {
+                               "Trendaxel[Månad]":  "Nov 25",
+                               "Kundgrupper[Kundgrupp]":  "Befintliga",
+                               "[Mkr]":  6.734767
+                           },
+                           {
+                               "Trendaxel[Månad]":  "Nov 25",
+                               "Kundgrupper[Kundgrupp]":  "Helt nya",
+                               "[Mkr]":  0.906035
+                           },
+                           {
+                               "Trendaxel[Månad]":  "Dec 25",
+                               "Kundgrupper[Kundgrupp]":  "Befintliga",
+                               "[Mkr]":  6.268197
+                           },
+                           {
+                               "Trendaxel[Månad]":  "Dec 25",
+                               "Kundgrupper[Kundgrupp]":  "Helt nya",
+                               "[Mkr]":  1.887039
+                           },
+                           {
+                               "Trendaxel[Månad]":  "Okt 25",
+                               "Kundgrupper[Kundgrupp]":  "Återaktiverade",
+                               "[Mkr]":  0.211724
+                           },
+                           {
+                               "Trendaxel[Månad]":  "Nov 25",
+                               "Kundgrupper[Kundgrupp]":  "Återaktiverade",
+                               "[Mkr]":  0.258184
+                           },
+                           {
+                               "Trendaxel[Månad]":  "Dec 25",
+                               "Kundgrupper[Kundgrupp]":  "Återaktiverade",
+                               "[Mkr]":  0.621415
+                           },
+                           {
+                               "Trendaxel[Månad]":  "Jan 25",
+                               "Kundgrupper[Kundgrupp]":  "Helt nya",
+                               "[Mkr]":  0.048985
+                           },
+                           {
+                               "Trendaxel[Månad]":  "Aug 25",
+                               "Kundgrupper[Kundgrupp]":  "Helt nya",
+                               "[Mkr]":  0.280168
+                           },
+                           {
+                               "Trendaxel[Månad]":  "Sep 25",
+                               "Kundgrupper[Kundgrupp]":  "Helt nya",
+                               "[Mkr]":  0.391763
+                           },
+                           {
+                               "Trendaxel[Månad]":  "Mar 25",
+                               "Kundgrupper[Kundgrupp]":  "Helt nya",
+                               "[Mkr]":  0.082928
+                           },
+                           {
+                               "Trendaxel[Månad]":  "Feb 25",
+                               "Kundgrupper[Kundgrupp]":  "Helt nya",
+                               "[Mkr]":  0.03947
+                           },
+                           {
+                               "Trendaxel[Månad]":  "Jun 25",
+                               "Kundgrupper[Kundgrupp]":  "Helt nya",
+                               "[Mkr]":  0.214484
+                           },
+                           {
+                               "Trendaxel[Månad]":  "Maj 25",
+                               "Kundgrupper[Kundgrupp]":  "Helt nya",
+                               "[Mkr]":  0.137009
+                           },
+                           {
+                               "Trendaxel[Månad]":  "Jul 25",
+                               "Kundgrupper[Kundgrupp]":  "Helt nya",
+                               "[Mkr]":  0.245203
+                           },
+                           {
+                               "Trendaxel[Månad]":  "Jul 25",
+                               "Kundgrupper[Kundgrupp]":  "Återaktiverade",
+                               "[Mkr]":  0.082106
+                           },
+                           {
+                               "Trendaxel[Månad]":  "Aug 25",
+                               "Kundgrupper[Kundgrupp]":  "Återaktiverade",
+                               "[Mkr]":  0.084585
+                           },
+                           {
+                               "Trendaxel[Månad]":  "Sep 25",
+                               "Kundgrupper[Kundgrupp]":  "Återaktiverade",
+                               "[Mkr]":  0.080236
+                           },
+                           {
+                               "Trendaxel[Månad]":  "Apr 25",
+                               "Kundgrupper[Kundgrupp]":  "Helt nya",
+                               "[Mkr]":  0.096807
+                           },
+                           {
+                               "Trendaxel[Månad]":  "Feb 25",
+                               "Kundgrupper[Kundgrupp]":  "Återaktiverade",
+                               "[Mkr]":  0.03512
+                           },
+                           {
+                               "Trendaxel[Månad]":  "Mar 25",
+                               "Kundgrupper[Kundgrupp]":  "Återaktiverade",
+                               "[Mkr]":  0.029444
+                           },
+                           {
+                               "Trendaxel[Månad]":  "Apr 25",
+                               "Kundgrupper[Kundgrupp]":  "Återaktiverade",
+                               "[Mkr]":  0.02038
+                           },
+                           {
+                               "Trendaxel[Månad]":  "Maj 25",
+                               "Kundgrupper[Kundgrupp]":  "Återaktiverade",
+                               "[Mkr]":  0.024848
+                           },
+                           {
+                               "Trendaxel[Månad]":  "Jun 25",
+                               "Kundgrupper[Kundgrupp]":  "Återaktiverade",
+                               "[Mkr]":  0.030591
+                           }
+                       ]
+                   ],
+    "source":  "Actual local Power BI Desktop DAX"
+}

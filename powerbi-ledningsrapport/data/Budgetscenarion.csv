@@ -1,4 +1,5 @@
-﻿ScenarioID,Scenario,Ordning
-1,Fastställd budget,1
-2,Försiktigt,2
-3,Offensivt,3
+ScenarioID,Scenario,Ordning
+1,Huvudscenario,1
+2,Försiktigt scenario,2
+3,Offensivt scenario,3
+4,Föregående års utfall,4

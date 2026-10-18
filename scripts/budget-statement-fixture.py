@@ -35,8 +35,14 @@ def make(months,scenario=1,comparison=0):
     margin=n['Typ']=='marginal';v=a if slot==1 else b if slot==2 else (a-b if comparison else b-a)*(100 if margin else 1)
     if not margin:v/=1000
     label=(f'{v:+.1f} pp' if slot==3 else f'{v*100:.1f} %').replace('.',',') if margin else (f'{v:+,.0f}' if slot==3 else f'{v:,.0f}').replace(',','\u00a0')
+    variance=None
+    if slot==3:
+     difference=a-b if comparison else b-a;reference=b if comparison else a
+     variance=difference*100 if margin else difference/abs(reference) if reference else None
+     rounded=round(variance if margin else variance*100,1) if variance is not None else 0
+     label='—' if variance is None else (format(rounded,'+.1f' if rounded else '.1f')+(' pp' if margin else ' %')).replace('.',',').replace('-','−')
     labels=['A · '+source['SCENARIOS'][scenario],'B · '+source['SCENARIOS'][comparison],'Avvikelse'] if comparison else ['Budget','Utfall','Avvikelse']
-    result.append(dict(Node=n['NodID'],Label=n['Etikett'],Parent=n['Förälder'] or None,Ancestor=n['Överförälder'] or None,Depth=int(n['Nivå']),Kind=n['Typ'],Order=int(n['Ordning']),Children=int(n['HarBarn']),Section=n['Avsnitt'] or None,Group='Vald period' if m==13 else source['MONTHS'][m-1],GroupOrder=m,Metric=labels[slot-1],Slot=slot,Amount=v,Text=label,Color=('#B42318' if v<0 else '#007956' if v>0 else '#5B6B80') if slot==3 else '#5B6B80' if margin else '#0F3163'))
+    result.append(dict(Node=n['NodID'],Label=n['Etikett'],Parent=n['Förälder'] or None,Ancestor=n['Överförälder'] or None,Depth=int(n['Nivå']),Kind=n['Typ'],Order=int(n['Ordning']),Children=int(n['HarBarn']),Section=n['Avsnitt'] or None,Group='Vald period' if m==13 else source['MONTHS'][m-1],GroupOrder=m,Metric=labels[slot-1],Slot=slot,Amount=v,Text=label,Color=('#B42318' if rounded<0 else '#007956' if rounded>0 else '#5B6B80') if slot==3 else '#5B6B80' if margin else '#0F3163'))
  return result
 standard=make([7,8,9]);wide=make(list(range(1,10)))
 live=json.loads((BASE/'validation/budget-live-result.json').read_text(encoding='utf-8-sig'))['resultSets'][1]

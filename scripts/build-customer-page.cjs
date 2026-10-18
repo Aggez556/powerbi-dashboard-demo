@@ -32,17 +32,17 @@ dates[2].filterConfig={filters:[{name:id('complete-month-comparison'),field:col(
 const industry=visual('industry','slicer',[1352,16,536,88],{Values:[col('Kunder','Kundbransch')]},{data:[{properties:{mode:lit('Dropdown')}}],header:[{properties:{show:lit(true),text:lit('Kundbransch'),textSize:lit(11),fontColor:color('#5B6B80')}}],selection:[{properties:{singleSelect:lit(false),selectAllCheckboxEnabled:lit(true)}}],items:[{properties:{textSize:lit(11),fontColor:color('#0F3163'),background:color('#FAEBD7')}}]});
 industry.filterConfig={filters:[{name:id('customer-industries'),field:col('Kunder','Kundbransch'),type:'Categorical',howCreated:'User',filter:{Version:2,From:[{Name:'k',Entity:'Kunder',Type:0}],Where:[{Condition:{In:{Expressions:[col('Kunder','Kundbransch','k')],Values:['Restaurang','Hotell','Catering','Kontor','Livsmedel'].map(n=>[{Literal:{Value:"'"+n+"'"}}])}}}]}}]};save(industry);
 const period=card('period-text','Kundperiod text',[784,112,1104,32],11,'#5B6B80');period.visual.objects.value[0].properties.horizontalAlignment=lit('right');save(period);
-const kpis=[['Aktiva kunder','Kunder aktiva','Kunder aktiva undertext'],['Nya kunder','Kunder nya','Kunder nya undertext'],['Förlorade kunder','Kunder förlorade','Kunder förlorade undertext'],['Logo churn','Kunder logo churn','Kunder logo undertext'],['Revenue churn netto','Kunder revenue churn','Kunder churn undertext'],['Försäljning nya och\nåteraktiverade','Kunder nyförsäljningsandel','Kunder andel undertext']];
+const kpis=[['Aktiva kunder','Kunder aktiva','Kunder aktiva undertext'],['Nya kunder','Kunder nya','Kunder nya undertext'],['Förlorade kunder','Kunder förlorade','Kunder förlorade undertext'],['Andel förlorade kunder','Kunder logo churn','Kunder logo undertext'],['Försäljning till\nbefintliga kunder','Kunder befintlig tillväxt','Kunder churn undertext'],['Försäljning nya och\nåteraktiverade','Kunder nyförsäljningsandel','Kunder andel undertext']];
 for(let i=0;i<6;i++){
  const x=288+i*270;text('kpi-panel'+i,'',[x,160,254,184],12,'#0F3163','#FFFFFF');text('kpi-title'+i,kpis[i][0],[x+16,176,230,48],13,'#0F3163',null,true);
  card('kpi-value'+i,kpis[i][1],[x+16,228,222,56],30,i===4?'Kunder churn färg':'#0F3163',i===4);
  card('kpi-context'+i,kpis[i][2],[x+16,288,230,44],10,i===4?'Kunder churn färg':i===0?'#007956':'#5B6B80',i===4);
 }
 for(const [key,box] of [['trend',[288,360,798,416]],['base',[1102,360,798,416]],['revenue',[288,792,798,384]],['detail',[1102,792,798,384]]])text(key+'-panel','',box,12,'#0F3163','#FFFFFF');
-text('trend-title','Försäljning per kundgrupp',[312,376,750,40],19,'#0F3163',null,true);
+text('trend-title','Omsättning per kundgrupp (Mkr)',[312,376,750,40],19,'#0F3163',null,true);
 text('base-title','Kundbasens förändring',[1126,376,750,40],19,'#0F3163',null,true);
 text('revenue-title','Vad driver försäljningsförändringen?',[312,808,750,40],19,'#0F3163',null,true);
-text('detail-title','Kunder att följa upp',[1126,808,750,40],19,'#0F3163',null,true);
+text('detail-title','Kundöversikt',[1126,808,750,40],19,'#0F3163',null,true);
 const axis={show:lit(true),showAxisTitle:lit(false),fontFamily:lit('Segoe UI'),fontSize:lit(10.5),labelColor:color('#5B6B80')};
 const valueAxis={...axis,start:lit(0),showAxisTitle:lit(true),titleFontSize:lit(11),labelDisplayUnits:lit(1),gridlineShow:lit(true),gridlineColor:color('#D5DDE7'),labelPrecision:lit(1)};
 const legend={show:lit(true),position:lit('TopRight'),fontSize:lit(10),labelColor:color('#5B6B80'),showTitle:lit(false)};
@@ -68,7 +68,7 @@ detail.visual.visualContainerObjects.stylePreset=[{properties:{name:lit('None')}
 detail.filterConfig={filters:[{name:id('visible-customers'),field:mea('Kund tabell synlig'),type:'Advanced',howCreated:'User',filter:{Version:2,From:[{Name:'f',Entity:'Försäljning',Type:0}],Where:[{Condition:{Comparison:{ComparisonKind:0,Left:mea('Kund tabell synlig','f'),Right:{Literal:{Value:'1L'}}}}}]}}]};
 detail.visual.query.sortDefinition={sort:[{field:mea('Kund omsättning Mkr'),direction:'Descending'}],isDefaultSort:false};save(detail);
 const detail1=card('detail-extra1','Kund detaljrad 1',[1126,1120,750,24],9.5,'#5B6B80'),detail2=card('detail-extra2','Kund detaljrad 2',[1126,1144,750,24],9.5,'#5B6B80');
-text('footer','Återaktiverad: köp historiskt, men inte under hela föregående jämförelseperiod. Negativ nettochurn betyder tillväxt i befintlig kundstock.',[304,1180,1584,20],10,'#5B6B80');
+text('footer','Återaktiverad: köp historiskt, men inte under hela föregående jämförelseperiod. Försäljningsförändringen avser föregående periods kundbas, inklusive förlorade kunder.',[304,1180,1584,20],10,'#5B6B80');
 // Status selectors and chart clicks must never silently redefine headline churn.
 const names=placements.map(p=>id(customers+':'+p.key)),onlyDetails=new Set([detail.name,detail1.name,detail2.name]);
 page.visualInteractions=[];
@@ -111,3 +111,5 @@ console.log('Built customer page with six dynamic KPIs, cohort trend, two bridge
 require('./polish-report-sidebar.cjs')();
 
 require('./polish-customer-followup.cjs')();
+require('./combine-customer-bridges.cjs');
+require('./build-industry-change-card.cjs');

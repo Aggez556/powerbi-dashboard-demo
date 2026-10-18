@@ -26,14 +26,12 @@ table Planinställning
 		displayFolder: Uppdrag
 		lineageTag: fa11db1c-0516-41f8-a8e1-ec49f3051649
 
-	measure 'Utfall periodtext' = "Historiskt utfall · " & FORMAT([Periodstart],"MMM yyyy","sv-SE") & "–" & FORMAT([Periodslut],"MMM yyyy","sv-SE")
+	measure 'Utfall periodtext' = VAR _s=[Periodstart] VAR _e=[Historiskt periodslut] RETURN IF(_e<_s,"Ingen historik i vald period", "Vald period: " & FORMAT(_s,"MMMM yyyy","sv-SE") & "–" & FORMAT(_e,"MMMM yyyy","sv-SE"))
 		formatString: @
 		displayFolder: Uppdrag
 		lineageTag: d91ceacb-d003-4e6b-9760-4cebccd134c6
 
-	measure 'Uppdrag trendrubrik' = ```
-			"Debiteringsgrad över tid"
-			```
+	measure 'Uppdrag trendrubrik' = "Debiteringsgrad över tid"
 		formatString: @
 		displayFolder: Uppdrag
 		lineageTag: e0c16e6d-a4dc-4a02-abe7-b710b77590a9
@@ -42,7 +40,7 @@ table Planinställning
 			VAR _g=SELECTEDVALUE('Resursval'[Resursgrupp],"Alla")
 			VAR _valid=CALCULATE(COUNTROWS('Resurser'),REMOVEFILTERS('Resurser'[ResursID],'Resurser'[Medarbetare],'Resurser'[Resursgrupp]),'Resurser'[Resursgrupp]=_g)>0
 			VAR _ids=CALCULATETABLE(VALUES('Resurser'[ResursID]),KEEPFILTERS(FILTER(VALUES('Resurser'[Resursgrupp]),_g="Alla" || NOT _valid || 'Resurser'[Resursgrupp]=_g)))
-			VAR _s=VALUE(FORMAT([Periodstart],"yyyyMMdd")) VAR _e=VALUE(FORMAT([Periodslut],"yyyyMMdd")) RETURN CALCULATE(DISTINCTCOUNT('Uppdragsregister'[UppdragID]),REMOVEFILTERS('Datum'),TREATAS(_ids,'Resurser'[ResursID]),FILTER(ALL('Uppdragsregister'[Slutförd]),'Uppdragsregister'[Slutförd]>=_s && 'Uppdragsregister'[Slutförd]<=_e),'Uppdragsregister'[Status]="Avslutat")
+			VAR _s=VALUE(FORMAT([Periodstart],"yyyyMMdd")) VAR _e=VALUE(FORMAT([Historiskt periodslut],"yyyyMMdd")) RETURN IF(_s<=_e,CALCULATE(DISTINCTCOUNT('Uppdragsregister'[UppdragID]),REMOVEFILTERS('Datum'),TREATAS(_ids,'Resurser'[ResursID]),FILTER(ALL('Uppdragsregister'[Slutförd]),'Uppdragsregister'[Slutförd]>=_s && 'Uppdragsregister'[Slutförd]<=_e),'Uppdragsregister'[Status]="Avslutat"))
 		formatString: #,##0
 		displayFolder: Uppdrag
 		lineageTag: 022fa33a-016c-4d7e-824f-97be4aa2c757
@@ -51,7 +49,7 @@ table Planinställning
 			VAR _g=SELECTEDVALUE('Resursval'[Resursgrupp],"Alla")
 			VAR _valid=CALCULATE(COUNTROWS('Resurser'),REMOVEFILTERS('Resurser'[ResursID],'Resurser'[Medarbetare],'Resurser'[Resursgrupp]),'Resurser'[Resursgrupp]=_g)>0
 			VAR _ids=CALCULATETABLE(VALUES('Resurser'[ResursID]),KEEPFILTERS(FILTER(VALUES('Resurser'[Resursgrupp]),_g="Alla" || NOT _valid || 'Resurser'[Resursgrupp]=_g)))
-			VAR _s=VALUE(FORMAT([Jämförelsestart],"yyyyMMdd")) VAR _e=VALUE(FORMAT([Jämförelseslut],"yyyyMMdd")) RETURN CALCULATE(DISTINCTCOUNT('Uppdragsregister'[UppdragID]),REMOVEFILTERS('Datum'),TREATAS(_ids,'Resurser'[ResursID]),FILTER(ALL('Uppdragsregister'[Slutförd]),'Uppdragsregister'[Slutförd]>=_s && 'Uppdragsregister'[Slutförd]<=_e),'Uppdragsregister'[Status]="Avslutat")
+			VAR _s=VALUE(FORMAT([Jämförelsestart],"yyyyMMdd")) VAR _e=VALUE(FORMAT([Historiskt jämförelseslut],"yyyyMMdd")) RETURN IF(_s<=_e,CALCULATE(DISTINCTCOUNT('Uppdragsregister'[UppdragID]),REMOVEFILTERS('Datum'),TREATAS(_ids,'Resurser'[ResursID]),FILTER(ALL('Uppdragsregister'[Slutförd]),'Uppdragsregister'[Slutförd]>=_s && 'Uppdragsregister'[Slutförd]<=_e),'Uppdragsregister'[Status]="Avslutat"))
 		formatString: #,##0
 		displayFolder: Uppdrag
 		lineageTag: e2d378a6-a024-49d6-9a7e-8a238aab50c6
@@ -60,7 +58,7 @@ table Planinställning
 			VAR _g=SELECTEDVALUE('Resursval'[Resursgrupp],"Alla")
 			VAR _valid=CALCULATE(COUNTROWS('Resurser'),REMOVEFILTERS('Resurser'[ResursID],'Resurser'[Medarbetare],'Resurser'[Resursgrupp]),'Resurser'[Resursgrupp]=_g)>0
 			VAR _ids=CALCULATETABLE(VALUES('Resurser'[ResursID]),KEEPFILTERS(FILTER(VALUES('Resurser'[Resursgrupp]),_g="Alla" || NOT _valid || 'Resurser'[Resursgrupp]=_g)))
-			VAR _s=VALUE(FORMAT([Periodstart],"yyyyMMdd")) VAR _e=VALUE(FORMAT([Periodslut],"yyyyMMdd")) RETURN CALCULATE(SUM('Utförd tid'[Timmar]),REMOVEFILTERS('Datum'),TREATAS(_ids,'Resurser'[ResursID]),FILTER(ALL('Utförd tid'[Datumnyckel]),'Utförd tid'[Datumnyckel]>=_s && 'Utförd tid'[Datumnyckel]<=_e))
+			VAR _s=VALUE(FORMAT([Periodstart],"yyyyMMdd")) VAR _e=VALUE(FORMAT([Historiskt periodslut],"yyyyMMdd")) RETURN IF(_s<=_e,CALCULATE(SUM('Utförd tid'[Timmar]),REMOVEFILTERS('Datum'),TREATAS(_ids,'Resurser'[ResursID]),FILTER(ALL('Utförd tid'[Datumnyckel]),'Utförd tid'[Datumnyckel]>=_s && 'Utförd tid'[Datumnyckel]<=_e),'Utförd tid'[Godkänd]="Ja",'Utförd tid'[Debiterbar]="Ja"))
 		formatString: #,##0" h"
 		displayFolder: Uppdrag
 		lineageTag: 073d1d0d-8564-461a-af55-c086365af694
@@ -69,8 +67,8 @@ table Planinställning
 			VAR _g=SELECTEDVALUE('Resursval'[Resursgrupp],"Alla")
 			VAR _valid=CALCULATE(COUNTROWS('Resurser'),REMOVEFILTERS('Resurser'[ResursID],'Resurser'[Medarbetare],'Resurser'[Resursgrupp]),'Resurser'[Resursgrupp]=_g)>0
 			VAR _ids=CALCULATETABLE(VALUES('Resurser'[ResursID]),KEEPFILTERS(FILTER(VALUES('Resurser'[Resursgrupp]),_g="Alla" || NOT _valid || 'Resurser'[Resursgrupp]=_g)))
-			VAR _s=VALUE(FORMAT([Jämförelsestart],"yyyyMMdd")) VAR _e=VALUE(FORMAT([Jämförelseslut],"yyyyMMdd")) RETURN CALCULATE(SUM('Utförd tid'[Timmar]),REMOVEFILTERS('Datum'),TREATAS(_ids,'Resurser'[ResursID]),FILTER(ALL('Utförd tid'[Datumnyckel]),'Utförd tid'[Datumnyckel]>=_s && 'Utförd tid'[Datumnyckel]<=_e))
-		formatString: #,##0
+			VAR _s=VALUE(FORMAT([Jämförelsestart],"yyyyMMdd")) VAR _e=VALUE(FORMAT([Historiskt jämförelseslut],"yyyyMMdd")) RETURN IF(_s<=_e,CALCULATE(SUM('Utförd tid'[Timmar]),REMOVEFILTERS('Datum'),TREATAS(_ids,'Resurser'[ResursID]),FILTER(ALL('Utförd tid'[Datumnyckel]),'Utförd tid'[Datumnyckel]>=_s && 'Utförd tid'[Datumnyckel]<=_e),'Utförd tid'[Godkänd]="Ja",'Utförd tid'[Debiterbar]="Ja"))
+		formatString: #,##0" h"
 		displayFolder: Uppdrag
 		lineageTag: 61f14f4b-0bdb-4ae1-8c54-a90f40bd56ff
 
@@ -78,7 +76,7 @@ table Planinställning
 			VAR _g=SELECTEDVALUE('Resursval'[Resursgrupp],"Alla")
 			VAR _valid=CALCULATE(COUNTROWS('Resurser'),REMOVEFILTERS('Resurser'[ResursID],'Resurser'[Medarbetare],'Resurser'[Resursgrupp]),'Resurser'[Resursgrupp]=_g)>0
 			VAR _ids=CALCULATETABLE(VALUES('Resurser'[ResursID]),KEEPFILTERS(FILTER(VALUES('Resurser'[Resursgrupp]),_g="Alla" || NOT _valid || 'Resurser'[Resursgrupp]=_g)))
-			VAR _s=VALUE(FORMAT([Periodstart],"yyyyMMdd")) VAR _e=VALUE(FORMAT([Periodslut],"yyyyMMdd")) RETURN CALCULATE(SUM('Arbetskapacitet'[Tillgängligt]),REMOVEFILTERS('Datum'),TREATAS(_ids,'Resurser'[ResursID]),FILTER(ALL('Arbetskapacitet'[Datumnyckel]),'Arbetskapacitet'[Datumnyckel]>=_s && 'Arbetskapacitet'[Datumnyckel]<=_e))
+			VAR _s=VALUE(FORMAT([Periodstart],"yyyyMMdd")) VAR _e=VALUE(FORMAT([Historiskt periodslut],"yyyyMMdd")) RETURN IF(_s<=_e,CALCULATE(SUM('Arbetskapacitet'[Tillgängligt]),REMOVEFILTERS('Datum'),TREATAS(_ids,'Resurser'[ResursID]),FILTER(ALL('Arbetskapacitet'[Datumnyckel]),'Arbetskapacitet'[Datumnyckel]>=_s && 'Arbetskapacitet'[Datumnyckel]<=_e)))
 		formatString: #,##0
 		displayFolder: Uppdrag
 		lineageTag: c8c9e6c1-2fcb-4412-a774-711b9c76cb56
@@ -87,7 +85,7 @@ table Planinställning
 			VAR _g=SELECTEDVALUE('Resursval'[Resursgrupp],"Alla")
 			VAR _valid=CALCULATE(COUNTROWS('Resurser'),REMOVEFILTERS('Resurser'[ResursID],'Resurser'[Medarbetare],'Resurser'[Resursgrupp]),'Resurser'[Resursgrupp]=_g)>0
 			VAR _ids=CALCULATETABLE(VALUES('Resurser'[ResursID]),KEEPFILTERS(FILTER(VALUES('Resurser'[Resursgrupp]),_g="Alla" || NOT _valid || 'Resurser'[Resursgrupp]=_g)))
-			VAR _s=VALUE(FORMAT([Jämförelsestart],"yyyyMMdd")) VAR _e=VALUE(FORMAT([Jämförelseslut],"yyyyMMdd")) RETURN CALCULATE(SUM('Arbetskapacitet'[Tillgängligt]),REMOVEFILTERS('Datum'),TREATAS(_ids,'Resurser'[ResursID]),FILTER(ALL('Arbetskapacitet'[Datumnyckel]),'Arbetskapacitet'[Datumnyckel]>=_s && 'Arbetskapacitet'[Datumnyckel]<=_e))
+			VAR _s=VALUE(FORMAT([Jämförelsestart],"yyyyMMdd")) VAR _e=VALUE(FORMAT([Historiskt jämförelseslut],"yyyyMMdd")) RETURN IF(_s<=_e,CALCULATE(SUM('Arbetskapacitet'[Tillgängligt]),REMOVEFILTERS('Datum'),TREATAS(_ids,'Resurser'[ResursID]),FILTER(ALL('Arbetskapacitet'[Datumnyckel]),'Arbetskapacitet'[Datumnyckel]>=_s && 'Arbetskapacitet'[Datumnyckel]<=_e)))
 		formatString: #,##0
 		displayFolder: Uppdrag
 		lineageTag: 779cc00e-b652-4144-97ed-c37ec18d91ae
@@ -96,7 +94,7 @@ table Planinställning
 			VAR _g=SELECTEDVALUE('Resursval'[Resursgrupp],"Alla")
 			VAR _valid=CALCULATE(COUNTROWS('Resurser'),REMOVEFILTERS('Resurser'[ResursID],'Resurser'[Medarbetare],'Resurser'[Resursgrupp]),'Resurser'[Resursgrupp]=_g)>0
 			VAR _ids=CALCULATETABLE(VALUES('Resurser'[ResursID]),KEEPFILTERS(FILTER(VALUES('Resurser'[Resursgrupp]),_g="Alla" || NOT _valid || 'Resurser'[Resursgrupp]=_g)))
-			VAR _s=VALUE(FORMAT([Periodstart],"yyyyMMdd")) VAR _e=VALUE(FORMAT([Periodslut],"yyyyMMdd")) RETURN CALCULATE(SUM('Uppdragsekonomi'[Intäkt]),REMOVEFILTERS('Datum'),TREATAS(_ids,'Resurser'[ResursID]),FILTER(ALL('Uppdragsekonomi'[Datumnyckel]),'Uppdragsekonomi'[Datumnyckel]>=_s && 'Uppdragsekonomi'[Datumnyckel]<=_e))
+			VAR _s=VALUE(FORMAT([Periodstart],"yyyyMMdd")) VAR _e=VALUE(FORMAT([Historiskt periodslut],"yyyyMMdd")) RETURN IF(_s<=_e,CALCULATE(SUM('Uppdragsekonomi'[Intäkt]),REMOVEFILTERS('Datum'),TREATAS(_ids,'Resurser'[ResursID]),FILTER(ALL('Uppdragsekonomi'[Datumnyckel]),'Uppdragsekonomi'[Datumnyckel]>=_s && 'Uppdragsekonomi'[Datumnyckel]<=_e)))
 		formatString: #,##0
 		displayFolder: Uppdrag
 		lineageTag: 0aca7fea-d682-4ae9-8861-b927c3caab56
@@ -105,7 +103,7 @@ table Planinställning
 			VAR _g=SELECTEDVALUE('Resursval'[Resursgrupp],"Alla")
 			VAR _valid=CALCULATE(COUNTROWS('Resurser'),REMOVEFILTERS('Resurser'[ResursID],'Resurser'[Medarbetare],'Resurser'[Resursgrupp]),'Resurser'[Resursgrupp]=_g)>0
 			VAR _ids=CALCULATETABLE(VALUES('Resurser'[ResursID]),KEEPFILTERS(FILTER(VALUES('Resurser'[Resursgrupp]),_g="Alla" || NOT _valid || 'Resurser'[Resursgrupp]=_g)))
-			VAR _s=VALUE(FORMAT([Jämförelsestart],"yyyyMMdd")) VAR _e=VALUE(FORMAT([Jämförelseslut],"yyyyMMdd")) RETURN CALCULATE(SUM('Uppdragsekonomi'[Intäkt]),REMOVEFILTERS('Datum'),TREATAS(_ids,'Resurser'[ResursID]),FILTER(ALL('Uppdragsekonomi'[Datumnyckel]),'Uppdragsekonomi'[Datumnyckel]>=_s && 'Uppdragsekonomi'[Datumnyckel]<=_e))
+			VAR _s=VALUE(FORMAT([Jämförelsestart],"yyyyMMdd")) VAR _e=VALUE(FORMAT([Historiskt jämförelseslut],"yyyyMMdd")) RETURN IF(_s<=_e,CALCULATE(SUM('Uppdragsekonomi'[Intäkt]),REMOVEFILTERS('Datum'),TREATAS(_ids,'Resurser'[ResursID]),FILTER(ALL('Uppdragsekonomi'[Datumnyckel]),'Uppdragsekonomi'[Datumnyckel]>=_s && 'Uppdragsekonomi'[Datumnyckel]<=_e)))
 		formatString: #,##0
 		displayFolder: Uppdrag
 		lineageTag: 695dd749-1231-4c80-a1fc-8f004817d247
@@ -114,7 +112,7 @@ table Planinställning
 			VAR _g=SELECTEDVALUE('Resursval'[Resursgrupp],"Alla")
 			VAR _valid=CALCULATE(COUNTROWS('Resurser'),REMOVEFILTERS('Resurser'[ResursID],'Resurser'[Medarbetare],'Resurser'[Resursgrupp]),'Resurser'[Resursgrupp]=_g)>0
 			VAR _ids=CALCULATETABLE(VALUES('Resurser'[ResursID]),KEEPFILTERS(FILTER(VALUES('Resurser'[Resursgrupp]),_g="Alla" || NOT _valid || 'Resurser'[Resursgrupp]=_g)))
-			VAR _s=VALUE(FORMAT([Periodstart],"yyyyMMdd")) VAR _e=VALUE(FORMAT([Periodslut],"yyyyMMdd")) RETURN CALCULATE(SUM('Uppdragsekonomi'[DirektKostnad]),REMOVEFILTERS('Datum'),TREATAS(_ids,'Resurser'[ResursID]),FILTER(ALL('Uppdragsekonomi'[Datumnyckel]),'Uppdragsekonomi'[Datumnyckel]>=_s && 'Uppdragsekonomi'[Datumnyckel]<=_e))
+			VAR _s=VALUE(FORMAT([Periodstart],"yyyyMMdd")) VAR _e=VALUE(FORMAT([Historiskt periodslut],"yyyyMMdd")) RETURN IF(_s<=_e,CALCULATE(SUM('Uppdragsekonomi'[DirektKostnad]),REMOVEFILTERS('Datum'),TREATAS(_ids,'Resurser'[ResursID]),FILTER(ALL('Uppdragsekonomi'[Datumnyckel]),'Uppdragsekonomi'[Datumnyckel]>=_s && 'Uppdragsekonomi'[Datumnyckel]<=_e)))
 		formatString: #,##0
 		displayFolder: Uppdrag
 		lineageTag: e534a478-ff32-4495-93f3-25e88af81261
@@ -123,7 +121,7 @@ table Planinställning
 			VAR _g=SELECTEDVALUE('Resursval'[Resursgrupp],"Alla")
 			VAR _valid=CALCULATE(COUNTROWS('Resurser'),REMOVEFILTERS('Resurser'[ResursID],'Resurser'[Medarbetare],'Resurser'[Resursgrupp]),'Resurser'[Resursgrupp]=_g)>0
 			VAR _ids=CALCULATETABLE(VALUES('Resurser'[ResursID]),KEEPFILTERS(FILTER(VALUES('Resurser'[Resursgrupp]),_g="Alla" || NOT _valid || 'Resurser'[Resursgrupp]=_g)))
-			VAR _s=VALUE(FORMAT([Jämförelsestart],"yyyyMMdd")) VAR _e=VALUE(FORMAT([Jämförelseslut],"yyyyMMdd")) RETURN CALCULATE(SUM('Uppdragsekonomi'[DirektKostnad]),REMOVEFILTERS('Datum'),TREATAS(_ids,'Resurser'[ResursID]),FILTER(ALL('Uppdragsekonomi'[Datumnyckel]),'Uppdragsekonomi'[Datumnyckel]>=_s && 'Uppdragsekonomi'[Datumnyckel]<=_e))
+			VAR _s=VALUE(FORMAT([Jämförelsestart],"yyyyMMdd")) VAR _e=VALUE(FORMAT([Historiskt jämförelseslut],"yyyyMMdd")) RETURN IF(_s<=_e,CALCULATE(SUM('Uppdragsekonomi'[DirektKostnad]),REMOVEFILTERS('Datum'),TREATAS(_ids,'Resurser'[ResursID]),FILTER(ALL('Uppdragsekonomi'[Datumnyckel]),'Uppdragsekonomi'[Datumnyckel]>=_s && 'Uppdragsekonomi'[Datumnyckel]<=_e)))
 		formatString: #,##0
 		displayFolder: Uppdrag
 		lineageTag: fb9f2933-836b-43ef-b1c3-dd7e5a30a06b
@@ -132,7 +130,7 @@ table Planinställning
 			VAR _g=SELECTEDVALUE('Resursval'[Resursgrupp],"Alla")
 			VAR _valid=CALCULATE(COUNTROWS('Resurser'),REMOVEFILTERS('Resurser'[ResursID],'Resurser'[Medarbetare],'Resurser'[Resursgrupp]),'Resurser'[Resursgrupp]=_g)>0
 			VAR _ids=CALCULATETABLE(VALUES('Resurser'[ResursID]),KEEPFILTERS(FILTER(VALUES('Resurser'[Resursgrupp]),_g="Alla" || NOT _valid || 'Resurser'[Resursgrupp]=_g)))
-			VAR _s=VALUE(FORMAT([Periodstart],"yyyyMMdd")) VAR _e=VALUE(FORMAT([Periodslut],"yyyyMMdd")) RETURN CALCULATE(SUM('Uppdragsekonomi'[Kalkylkostnad]),REMOVEFILTERS('Datum'),TREATAS(_ids,'Resurser'[ResursID]),FILTER(ALL('Uppdragsekonomi'[Datumnyckel]),'Uppdragsekonomi'[Datumnyckel]>=_s && 'Uppdragsekonomi'[Datumnyckel]<=_e))
+			VAR _s=VALUE(FORMAT([Periodstart],"yyyyMMdd")) VAR _e=VALUE(FORMAT([Historiskt periodslut],"yyyyMMdd")) RETURN IF(_s<=_e,CALCULATE(SUM('Uppdragsekonomi'[Kalkylkostnad]),REMOVEFILTERS('Datum'),TREATAS(_ids,'Resurser'[ResursID]),FILTER(ALL('Uppdragsekonomi'[Datumnyckel]),'Uppdragsekonomi'[Datumnyckel]>=_s && 'Uppdragsekonomi'[Datumnyckel]<=_e)))
 		formatString: #,##0
 		displayFolder: Uppdrag
 		lineageTag: fb69ab86-2be7-4278-b506-4750277d7992
@@ -141,7 +139,7 @@ table Planinställning
 			VAR _g=SELECTEDVALUE('Resursval'[Resursgrupp],"Alla")
 			VAR _valid=CALCULATE(COUNTROWS('Resurser'),REMOVEFILTERS('Resurser'[ResursID],'Resurser'[Medarbetare],'Resurser'[Resursgrupp]),'Resurser'[Resursgrupp]=_g)>0
 			VAR _ids=CALCULATETABLE(VALUES('Resurser'[ResursID]),KEEPFILTERS(FILTER(VALUES('Resurser'[Resursgrupp]),_g="Alla" || NOT _valid || 'Resurser'[Resursgrupp]=_g)))
-			VAR _s=VALUE(FORMAT([Jämförelsestart],"yyyyMMdd")) VAR _e=VALUE(FORMAT([Jämförelseslut],"yyyyMMdd")) RETURN CALCULATE(SUM('Uppdragsekonomi'[Kalkylkostnad]),REMOVEFILTERS('Datum'),TREATAS(_ids,'Resurser'[ResursID]),FILTER(ALL('Uppdragsekonomi'[Datumnyckel]),'Uppdragsekonomi'[Datumnyckel]>=_s && 'Uppdragsekonomi'[Datumnyckel]<=_e))
+			VAR _s=VALUE(FORMAT([Jämförelsestart],"yyyyMMdd")) VAR _e=VALUE(FORMAT([Historiskt jämförelseslut],"yyyyMMdd")) RETURN IF(_s<=_e,CALCULATE(SUM('Uppdragsekonomi'[Kalkylkostnad]),REMOVEFILTERS('Datum'),TREATAS(_ids,'Resurser'[ResursID]),FILTER(ALL('Uppdragsekonomi'[Datumnyckel]),'Uppdragsekonomi'[Datumnyckel]>=_s && 'Uppdragsekonomi'[Datumnyckel]<=_e)))
 		formatString: #,##0
 		displayFolder: Uppdrag
 		lineageTag: 4e54ec16-788b-48cd-893a-0e3f5331d3cc
@@ -240,7 +238,7 @@ table Planinställning
 			VAR _g=SELECTEDVALUE('Resursval'[Resursgrupp],"Alla")
 			VAR _valid=CALCULATE(COUNTROWS('Resurser'),REMOVEFILTERS('Resurser'[ResursID],'Resurser'[Medarbetare],'Resurser'[Resursgrupp]),'Resurser'[Resursgrupp]=_g)>0
 			VAR _ids=CALCULATETABLE(VALUES('Resurser'[ResursID]),KEEPFILTERS(FILTER(VALUES('Resurser'[Resursgrupp]),_g="Alla" || NOT _valid || 'Resurser'[Resursgrupp]=_g)))
-			VAR _m=SELECTEDVALUE('Trendaxel'[Månadsstart]) VAR _s=VALUE(FORMAT(_m,"yyyyMMdd")) VAR _e=VALUE(FORMAT(EOMONTH(_m,0),"yyyyMMdd")) RETURN IF(_m>=[Trendstart] && _m<=[Periodslut],CALCULATE(SUM('Utförd tid'[Timmar]),TREATAS(_ids,'Resurser'[ResursID]),FILTER(ALL('Utförd tid'[Datumnyckel]),'Utförd tid'[Datumnyckel]>=_s && 'Utförd tid'[Datumnyckel]<=_e)))
+			VAR _m=SELECTEDVALUE('Trendaxel'[Månadsstart]) VAR _s=VALUE(FORMAT(_m,"yyyyMMdd")) VAR _e=VALUE(FORMAT(MIN(EOMONTH(_m,0),[Historiskt periodslut]),"yyyyMMdd")) RETURN IF(_m>=[Trendstart] && _m<=[Historiskt periodslut],CALCULATE(SUM('Utförd tid'[Timmar]),REMOVEFILTERS('Datum'),TREATAS(_ids,'Resurser'[ResursID]),FILTER(ALL('Utförd tid'[Datumnyckel]),'Utförd tid'[Datumnyckel]>=_s && 'Utförd tid'[Datumnyckel]<=_e),'Utförd tid'[Godkänd]="Ja",'Utförd tid'[Debiterbar]="Ja"))
 		formatString: #,##0
 		displayFolder: Uppdrag
 		lineageTag: 477661bf-d08e-44f7-b237-120ddeccd49f
@@ -249,7 +247,7 @@ table Planinställning
 			VAR _g=SELECTEDVALUE('Resursval'[Resursgrupp],"Alla")
 			VAR _valid=CALCULATE(COUNTROWS('Resurser'),REMOVEFILTERS('Resurser'[ResursID],'Resurser'[Medarbetare],'Resurser'[Resursgrupp]),'Resurser'[Resursgrupp]=_g)>0
 			VAR _ids=CALCULATETABLE(VALUES('Resurser'[ResursID]),KEEPFILTERS(FILTER(VALUES('Resurser'[Resursgrupp]),_g="Alla" || NOT _valid || 'Resurser'[Resursgrupp]=_g)))
-			VAR _m=SELECTEDVALUE('Trendaxel'[Månadsstart]) VAR _s=VALUE(FORMAT(_m,"yyyyMMdd")) VAR _e=VALUE(FORMAT(EOMONTH(_m,0),"yyyyMMdd")) RETURN IF(_m>=[Trendstart] && _m<=[Periodslut],CALCULATE(SUM('Arbetskapacitet'[Tillgängligt]),TREATAS(_ids,'Resurser'[ResursID]),FILTER(ALL('Arbetskapacitet'[Datumnyckel]),'Arbetskapacitet'[Datumnyckel]>=_s && 'Arbetskapacitet'[Datumnyckel]<=_e)))
+			VAR _m=SELECTEDVALUE('Trendaxel'[Månadsstart]) VAR _s=VALUE(FORMAT(_m,"yyyyMMdd")) VAR _e=VALUE(FORMAT(MIN(EOMONTH(_m,0),[Historiskt periodslut]),"yyyyMMdd")) RETURN IF(_m>=[Trendstart] && _m<=[Historiskt periodslut],CALCULATE(SUM('Arbetskapacitet'[Tillgängligt]),REMOVEFILTERS('Datum'),TREATAS(_ids,'Resurser'[ResursID]),FILTER(ALL('Arbetskapacitet'[Datumnyckel]),'Arbetskapacitet'[Datumnyckel]>=_s && 'Arbetskapacitet'[Datumnyckel]<=_e)))
 		formatString: #,##0
 		displayFolder: Uppdrag
 		lineageTag: aa341215-5bc2-464b-9e2c-ae1c4a0e8bb9
@@ -295,7 +293,7 @@ table Planinställning
 		lineageTag: e23bf279-b2ee-4a03-98c7-b92381a156e8
 
 	measure 'Uppdrag planerade' = SELECTEDVALUE('Uppdragsregister'[PlaneradeTimmar])
-		formatString: #,##0
+		formatString: #,##0" h"
 		displayFolder: Uppdrag
 		lineageTag: 1819ed09-248d-40d4-a98f-9be84bf30297
 
@@ -309,15 +307,7 @@ table Planinställning
 		displayFolder: Uppdrag
 		lineageTag: d77edbb3-8a33-4a81-b41a-286856c5653f
 
-	measure 'Uppdrag risk' = ```
-			VAR _forecast=[Uppdrag prognos]
-			VAR _estimate=[Uppdrag kalkyl]
-			VAR _hours=[Uppdrag hela timmar]
-			VAR _planned=[Uppdrag planerade]
-			RETURN IF(SELECTEDVALUE('Uppdragsregister'[Status])="Pågående" &&
-			((NOT ISBLANK(_hours) && NOT ISBLANK(_planned) && _hours>_planned) ||
-			(NOT ISBLANK(_forecast) && NOT ISBLANK(_estimate) && _forecast<=_estimate-.02+0.0000001)),1,0)
-			```
+	measure 'Uppdrag risk' = VAR _h=[Uppdrag timmar periodslut] VAR _p=[Uppdrag planerade] VAR _m=[Uppdrag faktisk marginal] VAR _c=[Uppdrag kalkyl] RETURN IF(HASONEVALUE('Uppdragsregister'[UppdragID]) && ((NOT ISBLANK(_h) && NOT ISBLANK(_p) && _h>_p) || (NOT ISBLANK(_m) && NOT ISBLANK(_c) && _m<=_c-.02)),1,0)
 		formatString: #,##0
 		displayFolder: Uppdrag
 		lineageTag: af7f1d9a-1f3b-4ee5-84e4-d56434e2ae70
@@ -332,9 +322,7 @@ table Planinställning
 		displayFolder: Uppdrag
 		lineageTag: 271eb66a-9c88-4a64-8d3b-d6f3d5a8bb6f
 
-	measure 'Uppdrag marginalfärg' = ```
-			VAR _forecast=[Uppdrag prognos] RETURN IF(ISBLANK(_forecast),"#5B6B80",IF(_forecast<=[Uppdrag kalkyl]-.02+0.0000001,"#B42318",IF(_forecast>[Uppdrag kalkyl],"#007956","#0F3163")))
-			```
+	measure 'Uppdrag marginalfärg' = VAR _v=[Uppdrag faktisk marginal] RETURN IF(ISBLANK(_v),"#5B6B80",IF(_v<[Uppdrag kalkyl],"#B42318",IF(_v>[Uppdrag kalkyl],"#007956","#0F3163")))
 		formatString: @
 		displayFolder: Uppdrag
 		lineageTag: db06eaf3-ab1b-4928-a0da-57ee4a3e5b19
@@ -348,12 +336,15 @@ table Planinställning
 			VAR _g=SELECTEDVALUE('Resursval'[Resursgrupp],"Alla")
 			VAR _valid=CALCULATE(COUNTROWS('Resurser'),REMOVEFILTERS('Resurser'[ResursID],'Resurser'[Medarbetare],'Resurser'[Resursgrupp]),'Resurser'[Resursgrupp]=_g)>0
 			VAR _ids=CALCULATETABLE(VALUES('Resurser'[ResursID]),KEEPFILTERS(FILTER(VALUES('Resurser'[Resursgrupp]),_g="Alla" || NOT _valid || 'Resurser'[Resursgrupp]=_g)))
-			VAR _s=[Periodstart] VAR _e=[Periodslut] VAR _start=SELECTEDVALUE('Uppdragsregister'[Startdatum]) VAR _end=SELECTEDVALUE('Uppdragsregister'[Slutdatum]) VAR _status=SELECTEDVALUE('Uppdragsstatusval'[Urval],"Alla") VAR _pid=SELECTEDVALUE('Uppdragsregister'[ResursID]) RETURN IF(HASONEVALUE('Uppdragsregister'[UppdragID]) && _pid IN _ids && _start<=_e && (ISBLANK(_end) || _end>=_s) && SWITCH(_status,"Pågående",SELECTEDVALUE('Uppdragsregister'[Status])="Pågående","Avslutade",SELECTEDVALUE('Uppdragsregister'[Status])="Avslutat","Behöver uppföljning",[Uppdrag risk]=1,TRUE()),1,0)
+			VAR _s=[Periodstart] VAR _e=[Historiskt periodslut]
+			VAR _start=SELECTEDVALUE('Uppdragsregister'[Startdatum]) VAR _end=SELECTEDVALUE('Uppdragsregister'[Slutdatum])
+			VAR _status=SELECTEDVALUE('Uppdragsstatusval'[Urval],"Alla") VAR _pid=SELECTEDVALUE('Uppdragsregister'[ResursID])
+			RETURN IF(HASONEVALUE('Uppdragsregister'[UppdragID]) && _pid IN _ids && _start<=_e && _s<=_e && (ISBLANK(_end) || _end>=_s) && SWITCH(_status,"Pågående",[Uppdrag status historisk]="Pågående","Avslutade",[Uppdrag status historisk]="Avslutat","Behöver uppföljning",[Uppdrag risk]=1,TRUE()),1,0)
 		formatString: #,##0
 		displayFolder: Uppdrag
 		lineageTag: 48de4eaf-2b12-4e74-b451-b31f99d33eaf
 
-	measure 'Uppdrag detaljtext' = VAR _id=SELECTEDVALUE('Uppdragsregister'[UppdragID]) RETURN IF(ISBLANK(_id),"Klicka på ett uppdrag för intäkter, kostnader och ansvarig.",SELECTEDVALUE('Uppdragsregister'[Ansvarig]) & " · Intäkt " & FORMAT([Uppdrag hela intäkt]/1000,"#,##0","sv-SE") & " tkr · Direkt kostnad " & FORMAT([Uppdrag hela kostnad]/1000,"#,##0","sv-SE") & " tkr · Återstående kostnad " & FORMAT(SELECTEDVALUE('Uppdragsregister'[ÅterståendeKostnad])/1000,"#,##0","sv-SE") & " tkr · " & IF(SELECTEDVALUE('Uppdragsregister'[Status])="Avslutat","Faktiskt slututfall","Aktuell slutprognos"))
+	measure 'Uppdrag detaljtext' = IF(HASONEVALUE('Uppdragsregister'[UppdragID]),SELECTEDVALUE('Uppdragsregister'[Ansvarig]) & " · Intäkt " & FORMAT([Uppdrag intäkt periodslut]/1000,"#,##0","sv-SE") & " tkr · Direkt kostnad " & FORMAT([Uppdrag kostnad periodslut]/1000,"#,##0","sv-SE") & " tkr · Faktiskt utfall t.o.m. " & FORMAT([Historiskt periodslut],"d MMM yyyy","sv-SE"),"Klicka på ett uppdrag för historiska intäkter, kostnader och ansvarig.")
 		formatString: @
 		displayFolder: Uppdrag
 		lineageTag: fa7f3a60-0273-4936-967d-5ad969c820c2
@@ -391,8 +382,9 @@ table Planinställning
 	measure 'Uppdrag prognostext' = IF(HASONEVALUE('Uppdragsregister'[UppdragID]),IF(ISBLANK([Uppdrag prognos]),"—",FORMAT([Uppdrag prognos],"0.0 %","sv-SE")))
 		formatString: @
 		displayFolder: Uppdrag
+		lineageTag: cd49e52b-ab97-45d2-bb20-356fa3b8c5b3
 
-	measure 'Trend axel min' = ```
+	measure 'Trend axel min' =
 			VAR _points=GENERATE(ALLSELECTED('Trendaxel'),
 			VAR _technical=[Trend teknisk] VAR _staffing=[Trend bemanning]
 			VAR _target=[Trend mål] VAR _selected=[Trend vald månad]
@@ -401,11 +393,11 @@ table Planinställning
 			VAR _low=MINX(_valid,[Value]) VAR _high=MAXX(_valid,[Value])
 			VAR _padding=MAX(.03,(_high-_low)*.15)
 			RETURN IF(COUNTROWS(_valid)>0,MAX(0,FLOOR(_low-_padding,.05)))
-			```
 		formatString: 0 %
 		displayFolder: Uppdrag
+		lineageTag: 7bfda302-b600-429c-97e6-ae1418535f32
 
-	measure 'Trend axel max' = ```
+	measure 'Trend axel max' =
 			VAR _points=GENERATE(ALLSELECTED('Trendaxel'),
 			VAR _technical=[Trend teknisk] VAR _staffing=[Trend bemanning]
 			VAR _target=[Trend mål] VAR _selected=[Trend vald månad]
@@ -414,33 +406,281 @@ table Planinställning
 			VAR _low=MINX(_valid,[Value]) VAR _high=MAXX(_valid,[Value])
 			VAR _padding=MAX(.03,(_high-_low)*.15)
 			RETURN IF(COUNTROWS(_valid)>0,CEILING(_high+_padding,.05))
-			```
 		formatString: 0 %
 		displayFolder: Uppdrag
+		lineageTag: dcf2c893-7cf2-46ce-bd67-674400d42df9
+
+	measure 'Historiskt periodslut' = MIN([Periodslut],MAX('Planinställning'[SenasteUtfall]))
+		formatString: yyyy-MM-dd
+		displayFolder: Uppdrag\Historik
+		lineageTag: baf8f2d2-a2dd-41e6-a901-a09f3a3762e1
+
+	measure 'Historiskt jämförelseslut' = EOMONTH([Historiskt periodslut],-12)
+		formatString: yyyy-MM-dd
+		displayFolder: Uppdrag\Historik
+		lineageTag: 38a4a2f3-c9f4-4be5-9522-469b255d17e1
+
+	measure 'Historisk tabellrubrik' = "Uppdrag aktiva under vald period · Utfall t.o.m. " & FORMAT([Historiskt periodslut],"d MMMM yyyy","sv-SE")
+		formatString: @
+		displayFolder: Uppdrag\Historik
+		lineageTag: d5c030d2-df19-46a6-bc03-16070ac1fcd0
+
+	measure 'Historisk trendtext' = IF([Vald periodtyp]="Månad","12 månaders historik till " & FORMAT([Historiskt periodslut],"MMM yyyy","sv-SE"),FORMAT([Periodstart],"MMM yyyy","sv-SE") & "–" & FORMAT([Historiskt periodslut],"MMM yyyy","sv-SE"))
+		formatString: @
+		displayFolder: Uppdrag\Historik
+		lineageTag: 52d2f6ad-3792-4805-b210-341c20ca90bc
+
+	measure 'Historisk tidsrubrik' = "Tillgängliga timmar per månad · " & FORMAT([Periodstart],"MMM yyyy","sv-SE") & "–" & FORMAT([Historiskt periodslut],"MMM yyyy","sv-SE")
+		formatString: @
+		displayFolder: Uppdrag\Historik
+		lineageTag: bd0697f6-e802-4781-88ed-1db5bb07af5b
+
+	measure 'Historisk heatrubrik' = "Historiskt utfall · " & FORMAT([Periodstart],"MMM yyyy","sv-SE") & "–" & FORMAT([Historiskt periodslut],"MMM yyyy","sv-SE")
+		formatString: @
+		displayFolder: Uppdrag\Historik
+		lineageTag: 8881a33e-70d2-4595-9182-7d0f0f27fc77
+
+	measure 'Tid debiterbar' =
+			VAR _g=SELECTEDVALUE('Resursval'[Resursgrupp],"Alla")
+			VAR _valid=CALCULATE(COUNTROWS('Resurser'),REMOVEFILTERS('Resurser'[ResursID],'Resurser'[Medarbetare],'Resurser'[Resursgrupp]),'Resurser'[Resursgrupp]=_g)>0
+			VAR _ids=CALCULATETABLE(VALUES('Resurser'[ResursID]),KEEPFILTERS(FILTER(VALUES('Resurser'[Resursgrupp]),_g="Alla" || NOT _valid || 'Resurser'[Resursgrupp]=_g)))
+			VAR _s=VALUE(FORMAT([Periodstart],"yyyyMMdd")) VAR _e=VALUE(FORMAT([Historiskt periodslut],"yyyyMMdd")) RETURN IF([Periodstart]<=[Historiskt periodslut],CALCULATE(SUM('Tidsanvändning'[Debiterbart]),REMOVEFILTERS('Datum'),TREATAS(_ids,'Resurser'[ResursID]),FILTER(ALL('Tidsanvändning'[Datumnyckel]),'Tidsanvändning'[Datumnyckel]>=_s && 'Tidsanvändning'[Datumnyckel]<=_e)))
+		formatString: #,##0" h"
+		displayFolder: Uppdrag\Historik
+		lineageTag: 8f10176f-82a7-4e97-a51a-d1a3f049eb24
+
+	measure 'Tid debiterbar trend' =
+			VAR _g=SELECTEDVALUE('Resursval'[Resursgrupp],"Alla")
+			VAR _valid=CALCULATE(COUNTROWS('Resurser'),REMOVEFILTERS('Resurser'[ResursID],'Resurser'[Medarbetare],'Resurser'[Resursgrupp]),'Resurser'[Resursgrupp]=_g)>0
+			VAR _ids=CALCULATETABLE(VALUES('Resurser'[ResursID]),KEEPFILTERS(FILTER(VALUES('Resurser'[Resursgrupp]),_g="Alla" || NOT _valid || 'Resurser'[Resursgrupp]=_g)))
+			VAR _m=SELECTEDVALUE('Trendaxel'[Månadsstart]) VAR _s=VALUE(FORMAT(_m,"yyyyMMdd")) VAR _e=VALUE(FORMAT(MIN(EOMONTH(_m,0),[Historiskt periodslut]),"yyyyMMdd")) RETURN IF(_m>=[Periodstart] && _m<=[Historiskt periodslut],CALCULATE(SUM('Tidsanvändning'[Debiterbart]),REMOVEFILTERS('Datum'),TREATAS(_ids,'Resurser'[ResursID]),FILTER(ALL('Tidsanvändning'[Datumnyckel]),'Tidsanvändning'[Datumnyckel]>=_s && 'Tidsanvändning'[Datumnyckel]<=_e)))
+		formatString: #,##0
+		displayFolder: Uppdrag\Historik
+		lineageTag: 304b8d0b-299c-45cc-8e98-3844cedbb62d
+
+	measure 'Tid kundarbete' =
+			VAR _g=SELECTEDVALUE('Resursval'[Resursgrupp],"Alla")
+			VAR _valid=CALCULATE(COUNTROWS('Resurser'),REMOVEFILTERS('Resurser'[ResursID],'Resurser'[Medarbetare],'Resurser'[Resursgrupp]),'Resurser'[Resursgrupp]=_g)>0
+			VAR _ids=CALCULATETABLE(VALUES('Resurser'[ResursID]),KEEPFILTERS(FILTER(VALUES('Resurser'[Resursgrupp]),_g="Alla" || NOT _valid || 'Resurser'[Resursgrupp]=_g)))
+			VAR _s=VALUE(FORMAT([Periodstart],"yyyyMMdd")) VAR _e=VALUE(FORMAT([Historiskt periodslut],"yyyyMMdd")) RETURN IF([Periodstart]<=[Historiskt periodslut],CALCULATE(SUM('Tidsanvändning'[EjDebiterbartKundarbete]),REMOVEFILTERS('Datum'),TREATAS(_ids,'Resurser'[ResursID]),FILTER(ALL('Tidsanvändning'[Datumnyckel]),'Tidsanvändning'[Datumnyckel]>=_s && 'Tidsanvändning'[Datumnyckel]<=_e)))
+		formatString: #,##0" h"
+		displayFolder: Uppdrag\Historik
+		lineageTag: 6711b2a8-0ebc-4456-af5b-3c3794dda2ec
+
+	measure 'Tid kundarbete trend' =
+			VAR _g=SELECTEDVALUE('Resursval'[Resursgrupp],"Alla")
+			VAR _valid=CALCULATE(COUNTROWS('Resurser'),REMOVEFILTERS('Resurser'[ResursID],'Resurser'[Medarbetare],'Resurser'[Resursgrupp]),'Resurser'[Resursgrupp]=_g)>0
+			VAR _ids=CALCULATETABLE(VALUES('Resurser'[ResursID]),KEEPFILTERS(FILTER(VALUES('Resurser'[Resursgrupp]),_g="Alla" || NOT _valid || 'Resurser'[Resursgrupp]=_g)))
+			VAR _m=SELECTEDVALUE('Trendaxel'[Månadsstart]) VAR _s=VALUE(FORMAT(_m,"yyyyMMdd")) VAR _e=VALUE(FORMAT(MIN(EOMONTH(_m,0),[Historiskt periodslut]),"yyyyMMdd")) RETURN IF(_m>=[Periodstart] && _m<=[Historiskt periodslut],CALCULATE(SUM('Tidsanvändning'[EjDebiterbartKundarbete]),REMOVEFILTERS('Datum'),TREATAS(_ids,'Resurser'[ResursID]),FILTER(ALL('Tidsanvändning'[Datumnyckel]),'Tidsanvändning'[Datumnyckel]>=_s && 'Tidsanvändning'[Datumnyckel]<=_e)))
+		formatString: #,##0
+		displayFolder: Uppdrag\Historik
+		lineageTag: 229d00f6-ed79-43cd-8554-f2abad371512
+
+	measure 'Tid internt' =
+			VAR _g=SELECTEDVALUE('Resursval'[Resursgrupp],"Alla")
+			VAR _valid=CALCULATE(COUNTROWS('Resurser'),REMOVEFILTERS('Resurser'[ResursID],'Resurser'[Medarbetare],'Resurser'[Resursgrupp]),'Resurser'[Resursgrupp]=_g)>0
+			VAR _ids=CALCULATETABLE(VALUES('Resurser'[ResursID]),KEEPFILTERS(FILTER(VALUES('Resurser'[Resursgrupp]),_g="Alla" || NOT _valid || 'Resurser'[Resursgrupp]=_g)))
+			VAR _s=VALUE(FORMAT([Periodstart],"yyyyMMdd")) VAR _e=VALUE(FORMAT([Historiskt periodslut],"yyyyMMdd")) RETURN IF([Periodstart]<=[Historiskt periodslut],CALCULATE(SUM('Tidsanvändning'[InterntArbete]),REMOVEFILTERS('Datum'),TREATAS(_ids,'Resurser'[ResursID]),FILTER(ALL('Tidsanvändning'[Datumnyckel]),'Tidsanvändning'[Datumnyckel]>=_s && 'Tidsanvändning'[Datumnyckel]<=_e)))
+		formatString: #,##0" h"
+		displayFolder: Uppdrag\Historik
+		lineageTag: 85eb8488-d36b-42d2-aaf0-b05af2dbdbbe
+
+	measure 'Tid internt trend' =
+			VAR _g=SELECTEDVALUE('Resursval'[Resursgrupp],"Alla")
+			VAR _valid=CALCULATE(COUNTROWS('Resurser'),REMOVEFILTERS('Resurser'[ResursID],'Resurser'[Medarbetare],'Resurser'[Resursgrupp]),'Resurser'[Resursgrupp]=_g)>0
+			VAR _ids=CALCULATETABLE(VALUES('Resurser'[ResursID]),KEEPFILTERS(FILTER(VALUES('Resurser'[Resursgrupp]),_g="Alla" || NOT _valid || 'Resurser'[Resursgrupp]=_g)))
+			VAR _m=SELECTEDVALUE('Trendaxel'[Månadsstart]) VAR _s=VALUE(FORMAT(_m,"yyyyMMdd")) VAR _e=VALUE(FORMAT(MIN(EOMONTH(_m,0),[Historiskt periodslut]),"yyyyMMdd")) RETURN IF(_m>=[Periodstart] && _m<=[Historiskt periodslut],CALCULATE(SUM('Tidsanvändning'[InterntArbete]),REMOVEFILTERS('Datum'),TREATAS(_ids,'Resurser'[ResursID]),FILTER(ALL('Tidsanvändning'[Datumnyckel]),'Tidsanvändning'[Datumnyckel]>=_s && 'Tidsanvändning'[Datumnyckel]<=_e)))
+		formatString: #,##0
+		displayFolder: Uppdrag\Historik
+		lineageTag: fa00fda2-836e-4697-9173-b297d0a30aca
+
+	measure 'Tid ej rapporterat' =
+			VAR _g=SELECTEDVALUE('Resursval'[Resursgrupp],"Alla")
+			VAR _valid=CALCULATE(COUNTROWS('Resurser'),REMOVEFILTERS('Resurser'[ResursID],'Resurser'[Medarbetare],'Resurser'[Resursgrupp]),'Resurser'[Resursgrupp]=_g)>0
+			VAR _ids=CALCULATETABLE(VALUES('Resurser'[ResursID]),KEEPFILTERS(FILTER(VALUES('Resurser'[Resursgrupp]),_g="Alla" || NOT _valid || 'Resurser'[Resursgrupp]=_g)))
+			VAR _s=VALUE(FORMAT([Periodstart],"yyyyMMdd")) VAR _e=VALUE(FORMAT([Historiskt periodslut],"yyyyMMdd")) RETURN IF([Periodstart]<=[Historiskt periodslut],CALCULATE(SUM('Tidsanvändning'[EjTidrapporterat]),REMOVEFILTERS('Datum'),TREATAS(_ids,'Resurser'[ResursID]),FILTER(ALL('Tidsanvändning'[Datumnyckel]),'Tidsanvändning'[Datumnyckel]>=_s && 'Tidsanvändning'[Datumnyckel]<=_e)))
+		formatString: #,##0" h"
+		displayFolder: Uppdrag\Historik
+		lineageTag: 366d2f3f-7d7c-4c98-8bc4-a2168989f282
+
+	measure 'Tid ej rapporterat trend' =
+			VAR _g=SELECTEDVALUE('Resursval'[Resursgrupp],"Alla")
+			VAR _valid=CALCULATE(COUNTROWS('Resurser'),REMOVEFILTERS('Resurser'[ResursID],'Resurser'[Medarbetare],'Resurser'[Resursgrupp]),'Resurser'[Resursgrupp]=_g)>0
+			VAR _ids=CALCULATETABLE(VALUES('Resurser'[ResursID]),KEEPFILTERS(FILTER(VALUES('Resurser'[Resursgrupp]),_g="Alla" || NOT _valid || 'Resurser'[Resursgrupp]=_g)))
+			VAR _m=SELECTEDVALUE('Trendaxel'[Månadsstart]) VAR _s=VALUE(FORMAT(_m,"yyyyMMdd")) VAR _e=VALUE(FORMAT(MIN(EOMONTH(_m,0),[Historiskt periodslut]),"yyyyMMdd")) RETURN IF(_m>=[Periodstart] && _m<=[Historiskt periodslut],CALCULATE(SUM('Tidsanvändning'[EjTidrapporterat]),REMOVEFILTERS('Datum'),TREATAS(_ids,'Resurser'[ResursID]),FILTER(ALL('Tidsanvändning'[Datumnyckel]),'Tidsanvändning'[Datumnyckel]>=_s && 'Tidsanvändning'[Datumnyckel]<=_e)))
+		formatString: #,##0
+		displayFolder: Uppdrag\Historik
+		lineageTag: c3e00121-9708-4cc9-bf8b-0df8dbe85e46
+
+	measure 'Tid tillgänglig' =
+			VAR _g=SELECTEDVALUE('Resursval'[Resursgrupp],"Alla")
+			VAR _valid=CALCULATE(COUNTROWS('Resurser'),REMOVEFILTERS('Resurser'[ResursID],'Resurser'[Medarbetare],'Resurser'[Resursgrupp]),'Resurser'[Resursgrupp]=_g)>0
+			VAR _ids=CALCULATETABLE(VALUES('Resurser'[ResursID]),KEEPFILTERS(FILTER(VALUES('Resurser'[Resursgrupp]),_g="Alla" || NOT _valid || 'Resurser'[Resursgrupp]=_g)))
+			VAR _s=VALUE(FORMAT([Periodstart],"yyyyMMdd")) VAR _e=VALUE(FORMAT([Historiskt periodslut],"yyyyMMdd")) RETURN IF([Periodstart]<=[Historiskt periodslut],CALCULATE(SUM('Tidsanvändning'[Tillgängligt]),REMOVEFILTERS('Datum'),TREATAS(_ids,'Resurser'[ResursID]),FILTER(ALL('Tidsanvändning'[Datumnyckel]),'Tidsanvändning'[Datumnyckel]>=_s && 'Tidsanvändning'[Datumnyckel]<=_e)))
+		formatString: #,##0" h"
+		displayFolder: Uppdrag\Historik
+		lineageTag: a828629a-db0c-4779-a0b4-97744f10cad8
+
+	measure 'Tid tillgänglig trend' =
+			VAR _g=SELECTEDVALUE('Resursval'[Resursgrupp],"Alla")
+			VAR _valid=CALCULATE(COUNTROWS('Resurser'),REMOVEFILTERS('Resurser'[ResursID],'Resurser'[Medarbetare],'Resurser'[Resursgrupp]),'Resurser'[Resursgrupp]=_g)>0
+			VAR _ids=CALCULATETABLE(VALUES('Resurser'[ResursID]),KEEPFILTERS(FILTER(VALUES('Resurser'[Resursgrupp]),_g="Alla" || NOT _valid || 'Resurser'[Resursgrupp]=_g)))
+			VAR _m=SELECTEDVALUE('Trendaxel'[Månadsstart]) VAR _s=VALUE(FORMAT(_m,"yyyyMMdd")) VAR _e=VALUE(FORMAT(MIN(EOMONTH(_m,0),[Historiskt periodslut]),"yyyyMMdd")) RETURN IF(_m>=[Periodstart] && _m<=[Historiskt periodslut],CALCULATE(SUM('Tidsanvändning'[Tillgängligt]),REMOVEFILTERS('Datum'),TREATAS(_ids,'Resurser'[ResursID]),FILTER(ALL('Tidsanvändning'[Datumnyckel]),'Tidsanvändning'[Datumnyckel]>=_s && 'Tidsanvändning'[Datumnyckel]<=_e)))
+		formatString: #,##0
+		displayFolder: Uppdrag\Historik
+		lineageTag: d3684ea1-8196-4db2-840b-13befa1409c8
+
+	measure 'Utfall ej debiterbara timmar' = [Tid kundarbete]+[Tid internt]+[Tid ej rapporterat]
+		formatString: #,##0" h"
+		displayFolder: Uppdrag\Historik
+		lineageTag: 6c35306a-72d9-4616-a18d-4351a1692517
+
+	measure 'Ej debiterbart jämförelse' = FORMAT(DIVIDE([Utfall ej debiterbara timmar],[Tid tillgänglig]),"0.0 %","sv-SE") & " av tillgänglig tid"
+		formatString: @
+		displayFolder: Uppdrag\Historik
+		lineageTag: 497f7eb0-48fd-46c4-8610-0535d01b0a40
+
+	measure 'Tid summering' = VAR _total=[Tid tillgänglig] VAR _over=[Tid kapacitetsavvikelse] RETURN IF(NOT ISBLANK(_total),"Tillgängligt: " & FORMAT(_total,"#,##0","sv-SE") & " h · Debiterbart " & FORMAT([Tid debiterbar],"#,##0","sv-SE") & " h (" & FORMAT(DIVIDE([Tid debiterbar],_total),"0.0 %","sv-SE") & ")" & IF(_over>.01," · Rapporterat över kapacitet: " & FORMAT(_over,"#,##0","sv-SE") & " h"))
+		formatString: @
+		displayFolder: Uppdrag\Historik
+		lineageTag: 9e85dc27-1795-4fe3-9457-930fe38581d2
+
+	measure 'Historisk cellgrad' = DIVIDE([Tid debiterbar trend],[Tid tillgänglig trend])
+		formatString: 0 %
+		displayFolder: Uppdrag\Historik
+		lineageTag: 0f74a13c-b4ba-4ac8-a187-00f4bd97ab19
+
+	measure 'Historisk cellfärg' = VAR _v=[Historisk cellgrad] RETURN IF(ISBLANK(_v),BLANK(),IF(_v<.75,"#FAD5D1",IF(_v<.82,"#DCEBFA","#CDEEE5")))
+		formatString: @
+		displayFolder: Uppdrag\Historik
+		lineageTag: 914c27fc-b231-4380-8998-66f289a3b979
+
+	measure 'Uppdrag timmar periodslut' = VAR _e=VALUE(FORMAT([Historiskt periodslut],"yyyyMMdd")) RETURN IF(HASONEVALUE('Uppdragsregister'[UppdragID]),CALCULATE(SUM('Utförd tid'[Timmar]),REMOVEFILTERS('Datum'),REMOVEFILTERS('Trendaxel'),FILTER(ALL('Utförd tid'[Datumnyckel]),'Utförd tid'[Datumnyckel]<=_e),'Utförd tid'[Godkänd]="Ja"))
+		formatString: #,##0" h"
+		displayFolder: Uppdrag\Historik
+		lineageTag: fd49e4ee-ea33-4387-8288-cde7cb7f69bc
+
+	measure 'Uppdrag intäkt periodslut' = VAR _e=VALUE(FORMAT([Historiskt periodslut],"yyyyMMdd")) RETURN IF(HASONEVALUE('Uppdragsregister'[UppdragID]),CALCULATE(SUM('Uppdragsekonomi'[Intäkt]),REMOVEFILTERS('Datum'),REMOVEFILTERS('Trendaxel'),FILTER(ALL('Uppdragsekonomi'[Datumnyckel]),'Uppdragsekonomi'[Datumnyckel]<=_e)))
+		formatString: #,##0
+		displayFolder: Uppdrag\Historik
+		lineageTag: 5b3112fe-4d8e-460c-b901-587707605863
+
+	measure 'Uppdrag kostnad periodslut' = VAR _e=VALUE(FORMAT([Historiskt periodslut],"yyyyMMdd")) RETURN IF(HASONEVALUE('Uppdragsregister'[UppdragID]),CALCULATE(SUM('Uppdragsekonomi'[DirektKostnad]),REMOVEFILTERS('Datum'),REMOVEFILTERS('Trendaxel'),FILTER(ALL('Uppdragsekonomi'[Datumnyckel]),'Uppdragsekonomi'[Datumnyckel]<=_e)))
+		formatString: #,##0
+		displayFolder: Uppdrag\Historik
+		lineageTag: dfdb4c9a-7b07-4847-9ec5-cd6c0182b777
+
+	measure 'Uppdrag faktisk marginal' = VAR _r=[Uppdrag intäkt periodslut] RETURN DIVIDE(_r-[Uppdrag kostnad periodslut],_r)
+		formatString: 0.0 %
+		displayFolder: Uppdrag\Historik
+		lineageTag: 0f247e5d-0616-403b-b22c-7e735672940f
+
+	measure 'Uppdrag faktisk marginaltext' = VAR _v=[Uppdrag faktisk marginal] RETURN IF(ISBLANK(_v),"—",FORMAT(_v,"0.0 %","sv-SE"))
+		formatString: @
+		displayFolder: Uppdrag\Historik
+		lineageTag: 2bf3a363-ceaa-4546-93d9-88d783815c9f
+
+	measure 'Uppdrag status historisk' = VAR _end=SELECTEDVALUE('Uppdragsregister'[Slutförd]) VAR _e=VALUE(FORMAT([Historiskt periodslut],"yyyyMMdd")) RETURN IF(HASONEVALUE('Uppdragsregister'[UppdragID]),IF(NOT ISBLANK(_end) && _end>0 && _end<=_e,"Avslutat","Pågående"))
+		formatString: @
+		displayFolder: Uppdrag\Historik
+		lineageTag: ef1062f9-db3a-4029-b7c1-8e344b4fd2b4
+
+	measure 'Uppdrag marginalbakgrund' = VAR _v=[Uppdrag faktisk marginal] RETURN IF(ISBLANK(_v),"#F3F6FA",IF(_v<[Uppdrag kalkyl],"#FAD5D1",IF(_v>[Uppdrag kalkyl],"#CDEEE5","#EEF2F7")))
+		formatString: @
+		displayFolder: Uppdrag\Historik
+		lineageTag: 3de0b8ad-33ba-46fe-ad54-a446bf1315b0
+
+	measure 'Uppdrag över tidskalkyl' =
+			VAR _g=SELECTEDVALUE('Resursval'[Resursgrupp],"Alla")
+			VAR _valid=CALCULATE(COUNTROWS('Resurser'),REMOVEFILTERS('Resurser'[ResursID],'Resurser'[Medarbetare],'Resurser'[Resursgrupp]),'Resurser'[Resursgrupp]=_g)>0
+			VAR _ids=CALCULATETABLE(VALUES('Resurser'[ResursID]),KEEPFILTERS(FILTER(VALUES('Resurser'[Resursgrupp]),_g="Alla" || NOT _valid || 'Resurser'[Resursgrupp]=_g)))
+			VAR _s=VALUE(FORMAT([Periodstart],"yyyyMMdd")) VAR _e=VALUE(FORMAT([Historiskt periodslut],"yyyyMMdd"))
+			VAR _jobs=CALCULATETABLE(VALUES('Uppdragsregister'[UppdragID]),TREATAS(_ids,'Resurser'[ResursID]),FILTER(ALL('Uppdragsregister'[Slutförd]),'Uppdragsregister'[Slutförd]>=_s && 'Uppdragsregister'[Slutförd]<=_e),'Uppdragsregister'[Status]="Avslutat")
+			RETURN IF(_s<=_e,COALESCE(COUNTROWS(FILTER(_jobs,VAR _hours=[Uppdrag timmar periodslut] VAR _plan=[Uppdrag planerade] RETURN NOT ISBLANK(_hours) && NOT ISBLANK(_plan) && _hours>_plan)),0))
+		formatString: #,##0
+		displayFolder: Uppdrag\Historik
+		lineageTag: ec7b47a4-012b-4cc3-9015-d120bed9a536
+
+	measure 'Tidskalkyl jämförelse' = FORMAT(DIVIDE([Uppdrag över tidskalkyl],[Uppdrag utförda]),"0.0 %","sv-SE") & " av " & FORMAT([Uppdrag utförda],"#,##0","sv-SE") & " avslutade"
+		formatString: @
+		displayFolder: Uppdrag\Historik
+		lineageTag: 1be5b4d8-a159-4d66-a597-582b3f9d86e0
+
+	measure 'Grad jämförelsefärg' = IF([Utfall debiteringsgrad]<[Utfall mål],"#B42318","#007956")
+		formatString: @
+		displayFolder: Uppdrag\Historik
+		lineageTag: 7719aecc-714d-4260-9cba-a164d5ab5907
+
+	measure 'Marginal jämförelsefärg' = IF([Utfall marginal]<[Utfall kalkylmarginal],"#B42318","#007956")
+		formatString: @
+		displayFolder: Uppdrag\Historik
+		lineageTag: 9edfa579-1849-4784-92ab-9765b08fc6aa
+
+	measure 'Tid kapacitetsavvikelse' = VAR _total=[Tid debiterbar]+[Tid kundarbete]+[Tid internt]+[Tid ej rapporterat] RETURN IF(NOT ISBLANK([Tid tillgänglig]),MAX(0,_total-[Tid tillgänglig]))
+		formatString: #,##0" h"
+		displayFolder: Uppdrag\Historik
+		lineageTag: 0a77abfc-1d3e-4190-afee-ef268d8debb6
+
+	measure 'Tid kapacitetsavvikelse trend' = VAR _total=[Tid debiterbar trend]+[Tid kundarbete trend]+[Tid internt trend]+[Tid ej rapporterat trend] RETURN IF(NOT ISBLANK([Tid tillgänglig trend]),MAX(0,_total-[Tid tillgänglig trend]))
+		formatString: #,##0" h"
+		displayFolder: Uppdrag\Historik
+		lineageTag: be1686e0-0b75-4e5b-8f80-b7ab6c7c0919
 
 	column Planläge
 		dataType: dateTime
+		formatString: Long Date
 		lineageTag: 887551d4-8c8f-4453-8983-4a2125aa5ace
 		summarizeBy: none
 		sourceColumn: Planläge
 
+		variation Variation
+			isDefault
+			relationship: 0fe275b8-0fe8-4a0f-b095-45182739ec40
+			defaultHierarchy: LocalDateTable_7d75698d-2613-4d55-84e4-e1c312ddec46.Datumhierarki
+
+		annotation UnderlyingDateTimeDataType = Date
+
 	column Från
 		dataType: dateTime
+		formatString: Long Date
 		lineageTag: 8f815043-f3ce-47fd-8892-ffab6a4d01aa
 		summarizeBy: none
 		sourceColumn: Från
 
+		variation Variation
+			isDefault
+			relationship: df798755-58c3-42bc-a89b-ec098ca6f3b4
+			defaultHierarchy: LocalDateTable_8886e8e7-97a9-4acf-a98b-06fa9a64eddc.Datumhierarki
+
+		annotation UnderlyingDateTimeDataType = Date
+
 	column Till
 		dataType: dateTime
+		formatString: Long Date
 		lineageTag: b4817651-0c22-48f1-a87f-e69576020e20
 		summarizeBy: none
 		sourceColumn: Till
 
+		variation Variation
+			isDefault
+			relationship: b831a04c-6830-46e7-94f3-c8c2b12db21b
+			defaultHierarchy: LocalDateTable_b6e07943-965e-4e7c-9183-e39875f3391e.Datumhierarki
+
+		annotation UnderlyingDateTimeDataType = Date
+
 	column SenasteUtfall
 		dataType: dateTime
+		formatString: Long Date
 		lineageTag: 0197ce1b-562e-488d-9c1e-251e2de5d421
 		summarizeBy: none
 		sourceColumn: SenasteUtfall
+
+		variation Variation
+			isDefault
+			relationship: 1b73322a-1a42-4701-ace1-eeb73066e57a
+			defaultHierarchy: LocalDateTable_6e2b9800-a4fd-4a56-93a6-799efaaa4922.Datumhierarki
+
+		annotation UnderlyingDateTimeDataType = Date
 
 	partition Planinställning = m
 		mode: import

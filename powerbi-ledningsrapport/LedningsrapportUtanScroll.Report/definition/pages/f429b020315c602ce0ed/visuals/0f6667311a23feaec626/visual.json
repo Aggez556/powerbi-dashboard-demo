@@ -1,22 +1,41 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "0f6667311a23feaec626",
   "position": {
     "x": 1126,
     "y": 728,
-    "width": 750,
-    "height": 32,
     "z": 159,
+    "height": 32,
+    "width": 750,
     "tabOrder": 159
   },
   "visual": {
     "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Försäljning"
+                    }
+                  },
+                  "Property": "Kundbas ekvation"
+                }
+              },
+              "queryRef": "Försäljning.Kundbas ekvation",
+              "nativeQueryRef": "Kundbas ekvation"
+            }
+          ]
+        }
+      }
+    },
     "objects": {
       "outline": [
         {
-          "selector": {
-            "id": "default"
-          },
           "properties": {
             "show": {
               "expr": {
@@ -25,14 +44,14 @@
                 }
               }
             }
+          },
+          "selector": {
+            "id": "default"
           }
         }
       ],
       "fillCustom": [
         {
-          "selector": {
-            "id": "default"
-          },
           "properties": {
             "show": {
               "expr": {
@@ -48,14 +67,14 @@
                 }
               }
             }
+          },
+          "selector": {
+            "id": "default"
           }
         }
       ],
       "padding": [
         {
-          "selector": {
-            "id": "default"
-          },
           "properties": {
             "paddingUniform": {
               "expr": {
@@ -64,14 +83,14 @@
                 }
               }
             }
+          },
+          "selector": {
+            "id": "default"
           }
         }
       ],
       "layout": [
         {
-          "selector": {
-            "id": "default"
-          },
           "properties": {
             "paddingUniform": {
               "expr": {
@@ -80,14 +99,14 @@
                 }
               }
             }
+          },
+          "selector": {
+            "id": "default"
           }
         }
       ],
       "value": [
         {
-          "selector": {
-            "id": "default"
-          },
           "properties": {
             "fontSize": {
               "expr": {
@@ -149,14 +168,14 @@
                 }
               }
             }
+          },
+          "selector": {
+            "id": "default"
           }
         }
       ],
       "label": [
         {
-          "selector": {
-            "id": "default"
-          },
           "properties": {
             "show": {
               "expr": {
@@ -165,6 +184,9 @@
                 }
               }
             }
+          },
+          "selector": {
+            "id": "default"
           }
         }
       ]
@@ -332,29 +354,20 @@
             }
           }
         }
-      ]
-    },
-    "query": {
-      "queryState": {
-        "Data": {
-          "projections": [
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Försäljning"
-                    }
-                  },
-                  "Property": "Kundbas ekvation"
+      ],
+      "visualTooltip": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
-              },
-              "queryRef": "Försäljning.Kundbas ekvation",
-              "nativeQueryRef": "Kundbas ekvation"
+              }
             }
-          ]
+          }
         }
-      }
+      ]
     }
   }
 }

@@ -1,0 +1,11 @@
+EVALUATE
+CALCULATETABLE(
+ROW("LostShare",[Kunder logo churn],"CanonicalChurn",[Kunder revenue churn],"Growth",[Kunder befintlig tillväxt],"Display",FORMAT([Kunder befintlig tillväxt],"+0.0 %;−0.0 %;0.0 %","sv-SE"),"Color",[Kunder churn färg],"Caption",[Kunder churn undertext],"Summary",[Kundintäkt ekvation]),
+TREATAS({"R12"},'Periodtyp'[Periodtyp]),TREATAS({"September 2026"},'R12val'[Period]))
+
+EVALUATE
+CALCULATETABLE(SUMMARIZECOLUMNS('Kunder'[Kundbransch],"Canonical",[Kunder revenue churn],"Growth",[Kunder befintlig tillväxt],"Color",[Kunder churn färg]),TREATAS({"R12"},'Periodtyp'[Periodtyp]),TREATAS({"September 2026"},'R12val'[Period]))
+ORDER BY 'Kunder'[Kundbransch]
+
+EVALUATE
+CALCULATETABLE(ROW("Case","No comparison","Value",[Kunder befintlig tillväxt],"Color",[Kunder churn färg]),TREATAS({"Nonexistent test industry"},'Kunder'[Kundbransch]))

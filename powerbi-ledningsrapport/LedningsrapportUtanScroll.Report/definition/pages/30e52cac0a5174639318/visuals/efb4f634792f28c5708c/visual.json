@@ -3,9 +3,9 @@
   "name": "efb4f634792f28c5708c",
   "position": {
     "x": 304,
-    "y": 210,
+    "y": 208,
     "width": 224,
-    "height": 48,
+    "height": 52,
     "z": 117,
     "tabOrder": 117
   },
@@ -22,7 +22,7 @@
                     "value": "Utförda uppdrag",
                     "textStyle": {
                       "fontFamily": "Segoe UI Semibold",
-                      "fontSize": "14pt",
+                      "fontSize": "13pt",
                       "color": "#0F3163"
                     }
                   }

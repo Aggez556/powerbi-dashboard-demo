@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
   "name": "5ff7abb3302b57765354",
   "position": {
-    "x": 780,
+    "x": 740,
     "y": 456,
     "width": 428,
-    "height": 28,
-    "z": 145,
-    "tabOrder": 145
+    "height": 24,
+    "z": 310,
+    "tabOrder": 147
   },
   "visual": {
     "visualType": "textbox",
@@ -17,17 +17,17 @@
           "properties": {
             "paragraphs": [
               {
+                "horizontalTextAlignment": "left",
                 "textRuns": [
                   {
-                    "value": "Kommande 8 veckor",
+                    "value": "Timmar per månad",
                     "textStyle": {
                       "fontFamily": "Segoe UI",
-                      "fontSize": "11pt",
+                      "fontSize": "10.5pt",
                       "color": "#5B6B80"
                     }
                   }
-                ],
-                "horizontalTextAlignment": "left"
+                ]
               }
             ]
           }
@@ -195,7 +195,7 @@
             "altText": {
               "expr": {
                 "Literal": {
-                  "Value": "'plan-subtitle'"
+                  "Value": "'heat-legend'"
                 }
               }
             },

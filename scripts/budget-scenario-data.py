@@ -11,7 +11,7 @@ from openpyxl.worksheet.table import Table, TableStyleInfo
 ROOT=Path(__file__).resolve().parents[1]
 BASE=ROOT/'powerbi-ledningsrapport'; DATA=BASE/'data'
 MONTHS=['Januari','Februari','Mars','April','Maj','Juni','Juli','Augusti','September','Oktober','November','December']
-SCENARIOS={1:'Fastställd budget',2:'Försiktigt',3:'Offensivt'}
+SCENARIOS={1:'Huvudscenario',2:'Försiktigt scenario',3:'Offensivt scenario'}
 # ID, main RR row, subrow, leaf, main order, suborder, leaforder
 ACCOUNTS=[
  (1001,'Nettoomsättning','Produktförsäljning','',1,1,0),(1002,'Nettoomsättning','Teknisk service','',1,2,0),(1003,'Nettoomsättning','Bemanning','',1,3,0),
@@ -46,7 +46,7 @@ def main():
  path=DATA/'Budgetscenarier.xlsx'
  if not path.exists() or '--reset-workbook' in sys.argv:
   wb=Workbook();info=wb.active;info.title='Läs mig'
-  for row in [ ['Budgetscenarier – redigerbar demobudget'],['Belopp anges i kronor. Ändra blå beloppsceller och spara filen innan Uppdatera i Power BI.'],['Tre flikar per år 2026. Historiken har enbart Fastställd budget; inga tomma alternativ erbjuds.'],['Endast kontorader importeras. Inga Excel-summor ingår i faktatabellen.'],['Fastställd budget är avstämd mot ursprunglig Budget.csv per månad (EBIT).'],['Historisk detaljbudget: omsättning 95 % av utfall, direkta kostnader 94 % av utfall.'],['Gemensamma kostnader fördelas proportionellt för att nå befintligt budgeterat EBIT.'],['Försiktigt: omsättning −8 %, direkta kostnader −5 %, gemensamma kostnader +2 %.'],['Offensivt: omsättning +10 %, direkta kostnader +6 %, gemensamma kostnader +3 %.'],['Avskrivningar oförändrade mellan scenarier. Inga formler kräver Excel-omräkning.'],['November/december 2026 bygger på samma månader 2025 med 10 % tillväxt.'],['Ändra sökvägen via Power Query-parametern BudgetWorkbook. Utfall ändras aldrig här.'] ]:info.append(row)
+  for row in [ ['Budgetscenarier – redigerbar demobudget'],['Belopp anges i kronor. Ändra blå beloppsceller och spara filen innan Uppdatera i Power BI.'],['Tre flikar per år 2026. Historiken har enbart Huvudscenario; inga tomma alternativ erbjuds.'],['Endast kontorader importeras. Inga Excel-summor ingår i faktatabellen.'],['Huvudscenario är avstämd mot ursprunglig Budget.csv per månad (EBIT).'],['Historisk detaljbudget: omsättning 95 % av utfall, direkta kostnader 94 % av utfall.'],['Gemensamma kostnader fördelas proportionellt för att nå befintligt budgeterat EBIT.'],['Försiktigt scenario: omsättning −8 %, direkta kostnader −5 %, gemensamma kostnader +2 %.'],['Offensivt scenario: omsättning +10 %, direkta kostnader +6 %, gemensamma kostnader +3 %.'],['Avskrivningar oförändrade mellan scenarier. Inga formler kräver Excel-omräkning.'],['November/december 2026 bygger på samma månader 2025 med 10 % tillväxt.'],['Ändra sökvägen via Power Query-parametern BudgetWorkbook. Utfall ändras aldrig här.'] ]:info.append(row)
   info.column_dimensions['A'].width=125
   for year in [2023,2024,2025,2026]:
    for scenario in ([1,2,3] if year==2026 else [1]):
@@ -77,6 +77,9 @@ def main():
     for col in 'EFGHIJKLMNOP':ws.column_dimensions[col].width=16
    
   wb.save(path)
+  # Newly generated demo detail must not repeat one variance across all accounts.
+  import runpy
+  runpy.run_path(str(ROOT/'scripts/vary-budget-details.py'))
  # Utility dimensions and mapping are reproducible; workbook is preserved by default.
  write('Budgetkonton',['KontoID','RRgrupp','Undergrupp','Post','Gruppordning','Underordning','Postordning'],ACCOUNTS)
  write('Budgetrader',['KontoID','Rad','Undergrupp','Post','Radordning','Underordning','Postordning'],ACCOUNTS+CALC)
@@ -97,7 +100,7 @@ def main():
       if slot==3:label='Avvikelse'
       columns.append([mode,a,b,m,'Vald period' if m==13 else MONTHS[m-1],slot,label])
  write('Budgetkolumner',['LägeID','ScenarioA','ScenarioB','MånadID','Grupp','Position','Kolumn'],columns)
- manifest={'workbook':str(path.relative_to(ROOT)),'sourceActualHashes':source_hash,'latestCompleteActualMonth':202609,'historicalScenarios':'Fastställd budget only 2023–2025','assumptions':{'adminToPersonnel':.6,'adminToLicenses':.10,'adminToITOperations':.06,'adminToITConsultants':.04,'adminToMarketing':.08,'adminResidual':.12},'referenceActualQ3':{str(k):sum(actual[202600+m][k] for m in [7,8,9]) for k,*_ in ACCOUNTS}}
+ manifest={'workbook':str(path.relative_to(ROOT)),'sourceActualHashes':source_hash,'latestCompleteActualMonth':202609,'historicalScenarios':'Huvudscenario only 2023–2025','assumptions':{'adminToPersonnel':.6,'adminToLicenses':.10,'adminToITOperations':.06,'adminToITConsultants':.04,'adminToMarketing':.08,'adminResidual':.12},'referenceActualQ3':{str(k):sum(actual[202600+m][k] for m in [7,8,9]) for k,*_ in ACCOUNTS}}
  (BASE/'validation/budget-source-manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
  print('Budget workbook ready; existing actual and baseline CSV files unchanged.')
 if __name__=='__main__':main()

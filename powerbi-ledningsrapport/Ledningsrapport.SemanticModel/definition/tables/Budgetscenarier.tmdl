@@ -9,13 +9,13 @@ table Budgetscenarier
 		lineageTag: be38876f-24ae-4a00-883f-b1d146a63354
 
 	/// Budget calculation: Budget jämförelseläge.
-	measure 'Budget jämförelseläge' = IF([Budget valt år]<2026,1,SELECTEDVALUE('Budgetjämförelse'[Ordning],1))
+	measure 'Budget jämförelseläge' = IF(SELECTEDVALUE('Budgetscenarion'[ScenarioID])=4 || [Budget valt år]<2026,1,SELECTEDVALUE('Budgetjämförelse'[Ordning],1))
 		formatString: 0
 		displayFolder: Budget
 		lineageTag: f4810a67-c775-4123-8b96-f73bc539f6db
 
 	/// Budget calculation: Budget scenario A.
-	measure 'Budget scenario A' = IF([Budget valt år]<2026,1,SELECTEDVALUE('Budgetscenarion'[ScenarioID],1))
+	measure 'Budget scenario A' = VAR _s=SELECTEDVALUE('Budgetscenarion'[ScenarioID],1) RETURN IF(_s=4,4,IF([Budget valt år]<2026,1,_s))
 		formatString: 0
 		displayFolder: Budget
 		lineageTag: 922b4dbf-09bf-4756-bc7a-8c1b1fe3e2ba
@@ -27,13 +27,13 @@ table Budgetscenarier
 		lineageTag: f0c218cd-ef34-4445-951b-0e682a5eea16
 
 	/// Budget calculation: Budget scenario tillgängligt.
-	measure 'Budget scenario tillgängligt' = VAR _s=SELECTEDVALUE('Budgetscenarion'[ScenarioID]) RETURN IF([Budget valt år]=2026 || _s=1,1,0)
+	measure 'Budget scenario tillgängligt' = VAR _s=SELECTEDVALUE('Budgetscenarion'[ScenarioID]) RETURN IF(_s=4 || [Budget valt år]=2026 || _s=1,1,0)
 		formatString: 0
 		displayFolder: Budget
 		lineageTag: c3f964a3-1988-4bd4-847c-d0f643410230
 
 	/// Budget calculation: Budget jämförelse tillgänglig.
-	measure 'Budget jämförelse tillgänglig' = IF(SELECTEDVALUE('Budgetjämförelse'[Ordning])=1 || [Budget valt år]=2026,1,0)
+	measure 'Budget jämförelse tillgänglig' = IF(SELECTEDVALUE('Budgetjämförelse'[Ordning])=1 || ([Budget valt år]=2026 && [Budget scenario A]<>4),1,0)
 		formatString: 0
 		displayFolder: Budget
 		lineageTag: 91f55b1d-b275-408a-a79c-cd09c57551d7
@@ -71,22 +71,23 @@ table Budgetscenarier
 			VAR _months=FILTER(VALUES('Budgetmånader'[Nummer]),'Budgetmånader'[Nummer]<=_limit && (_column=13 || IF(_acc,'Budgetmånader'[Nummer]<=_column,'Budgetmånader'[Nummer]=_column)))
 			VAR _keys=SELECTCOLUMNS(_months,"MonthKey",_year*100+'Budgetmånader'[Nummer])
 			VAR _k=SELECTEDVALUE('Budgetkonton'[KontoID])
-			RETURN SUMX(_keys,VAR _date=[MonthKey]*100+15
-			VAR _admin=CALCULATE(SUM('Gemensamma kostnader'[Belopp]),REMOVEFILTERS('Datum'),REMOVEFILTERS('Gemensamma kostnader'[Kostnadstyp]),TREATAS({_date},'Gemensamma kostnader'[Datumnyckel]),'Gemensamma kostnader'[Kostnadstyp]="Administration")
+			RETURN SUMX(_keys,VAR _date=[MonthKey]*100+1
+			VAR _last=[MonthKey]*100+DAY(EOMONTH(DATE(_year,MOD([MonthKey],100),1),0))
+			VAR _admin=CALCULATE(SUM('Gemensamma kostnader'[Belopp]),REMOVEFILTERS('Datum'),REMOVEFILTERS('Gemensamma kostnader'[Kostnadstyp]),'Gemensamma kostnader'[Datumnyckel]>=_date,'Gemensamma kostnader'[Datumnyckel]<=_last,'Gemensamma kostnader'[Kostnadstyp]="Administration")
 			RETURN SWITCH(_k,
-			1001,CALCULATE(SUM('Försäljning'[Nettointäkt]),TREATAS({_date},'Försäljning'[Datumnyckel]),'Försäljning'[Områdesnyckel]=1),
-			1002,CALCULATE(SUM('Försäljning'[Nettointäkt]),TREATAS({_date},'Försäljning'[Datumnyckel]),'Försäljning'[Områdesnyckel]=2),
-			1003,CALCULATE(SUM('Försäljning'[Nettointäkt]),TREATAS({_date},'Försäljning'[Datumnyckel]),'Försäljning'[Områdesnyckel]=3),
-			2001,-CALCULATE(SUM('Direkta kostnader'[Belopp]),TREATAS({_date},'Direkta kostnader'[Datumnyckel]),'Direkta kostnader'[Kostnadstyp]="Varukostnad"),
-			2002,-CALCULATE(SUM('Direkta kostnader'[Belopp]),TREATAS({_date},'Direkta kostnader'[Datumnyckel]),'Direkta kostnader'[Kostnadstyp]="Direkt leveranspersonal"),
-			2003,-CALCULATE(SUM('Direkta kostnader'[Belopp]),TREATAS({_date},'Direkta kostnader'[Datumnyckel]),'Direkta kostnader'[Kostnadstyp]="Underleverantörer"),
-			2004,-CALCULATE(SUM('Direkta kostnader'[Belopp]),TREATAS({_date},'Direkta kostnader'[Datumnyckel]),'Direkta kostnader'[Kostnadstyp]="Övrigt direkt"),
-			2005,-CALCULATE(SUM('Direkta kostnader'[Belopp]),TREATAS({_date},'Direkta kostnader'[Datumnyckel]),'Direkta kostnader'[Kostnadstyp]="Ej uppdragsfördelad personal"),
+			1001,CALCULATE(SUM('Försäljning'[Nettointäkt]),'Försäljning'[Datumnyckel]>=_date,'Försäljning'[Datumnyckel]<=_last,'Försäljning'[Områdesnyckel]=1),
+			1002,CALCULATE(SUM('Försäljning'[Nettointäkt]),'Försäljning'[Datumnyckel]>=_date,'Försäljning'[Datumnyckel]<=_last,'Försäljning'[Områdesnyckel]=2),
+			1003,CALCULATE(SUM('Försäljning'[Nettointäkt]),'Försäljning'[Datumnyckel]>=_date,'Försäljning'[Datumnyckel]<=_last,'Försäljning'[Områdesnyckel]=3),
+			2001,-CALCULATE(SUM('Direkta kostnader'[Belopp]),'Direkta kostnader'[Datumnyckel]>=_date,'Direkta kostnader'[Datumnyckel]<=_last,'Direkta kostnader'[Kostnadstyp]="Varukostnad"),
+			2002,-CALCULATE(SUM('Direkta kostnader'[Belopp]),'Direkta kostnader'[Datumnyckel]>=_date,'Direkta kostnader'[Datumnyckel]<=_last,'Direkta kostnader'[Kostnadstyp]="Direkt leveranspersonal"),
+			2003,-CALCULATE(SUM('Direkta kostnader'[Belopp]),'Direkta kostnader'[Datumnyckel]>=_date,'Direkta kostnader'[Datumnyckel]<=_last,'Direkta kostnader'[Kostnadstyp]="Underleverantörer"),
+			2004,-CALCULATE(SUM('Direkta kostnader'[Belopp]),'Direkta kostnader'[Datumnyckel]>=_date,'Direkta kostnader'[Datumnyckel]<=_last,'Direkta kostnader'[Kostnadstyp]="Övrigt direkt"),
+			2005,-CALCULATE(SUM('Direkta kostnader'[Belopp]),'Direkta kostnader'[Datumnyckel]>=_date,'Direkta kostnader'[Datumnyckel]<=_last,'Direkta kostnader'[Kostnadstyp]="Ej uppdragsfördelad personal"),
 			3001,-ROUND(_admin*.6,0),
-			4001,-CALCULATE(SUM('Gemensamma kostnader'[Belopp]),TREATAS({_date},'Gemensamma kostnader'[Datumnyckel]),'Gemensamma kostnader'[Kostnadstyp]="Lokaler och drift"),
+			4001,-CALCULATE(SUM('Gemensamma kostnader'[Belopp]),'Gemensamma kostnader'[Datumnyckel]>=_date,'Gemensamma kostnader'[Datumnyckel]<=_last,'Gemensamma kostnader'[Kostnadstyp]="Lokaler och drift"),
 			4002,-ROUND(_admin*.10,0),4003,-ROUND(_admin*.06,0),4004,-ROUND(_admin*.04,0),4005,-ROUND(_admin*.08,0),
 			4006,-(_admin-ROUND(_admin*.6,0)-ROUND(_admin*.10,0)-ROUND(_admin*.06,0)-ROUND(_admin*.04,0)-ROUND(_admin*.08,0)),
-			5001,-CALCULATE(SUM('Gemensamma kostnader'[Belopp]),TREATAS({_date},'Gemensamma kostnader'[Datumnyckel]),'Gemensamma kostnader'[Kostnadstyp]="Avskrivningar")))
+			5001,-CALCULATE(SUM('Gemensamma kostnader'[Belopp]),'Gemensamma kostnader'[Datumnyckel]>=_date,'Gemensamma kostnader'[Datumnyckel]<=_last,'Gemensamma kostnader'[Kostnadstyp]="Avskrivningar")))
 		formatString: #,##0
 		isHidden
 		displayFolder: Budget
@@ -107,7 +108,9 @@ table Budgetscenarier
 			VAR _acc=SELECTEDVALUE('Budgetvisning'[Ordning],1)=2
 			VAR _months=FILTER(VALUES('Budgetmånader'[Nummer]),'Budgetmånader'[Nummer]<=_limit && (_column=13 || IF(_acc,'Budgetmånader'[Nummer]<=_column,'Budgetmånader'[Nummer]=_column)))
 			VAR _keys=SELECTCOLUMNS(_months,"MonthKey",_year*100+'Budgetmånader'[Nummer])
-			VAR _scenario=[Budget scenario A] RETURN CALCULATE(SUM('Budgetscenarier'[Belopp]),REMOVEFILTERS('Budgetscenarion'),REMOVEFILTERS('Budgetperioder'),TREATAS(_keys,'Budgetscenarier'[Månadsnyckel]),TREATAS({_scenario},'Budgetscenarier'[ScenarioID]))
+			VAR _scenario=[Budget scenario A]
+			VAR _prior=[RR föregående år konton]
+			RETURN IF(_scenario=4,_prior,CALCULATE(SUM('Budgetscenarier'[Belopp]),REMOVEFILTERS('Budgetscenarion'),REMOVEFILTERS('Budgetperioder'),TREATAS(_keys,'Budgetscenarier'[Månadsnyckel]),TREATAS({_scenario},'Budgetscenarier'[ScenarioID])))
 		formatString: #,##0
 		isHidden
 		displayFolder: Budget
@@ -224,7 +227,7 @@ table Budgetscenarier
 		lineageTag: e8187d23-756c-4483-9b68-2f8a79188625
 
 	/// Budget calculation: Budget omsättning jämförelse.
-	measure 'Budget omsättning jämförelse' = VAR _v=[Budget omsättning bas] RETURN IF([Budget jämförelseläge]=1,"Budget: ",[Budget B namn] & ": ") & IF(ISBLANK(_v),"—",FORMAT(_v/1000000,"0.00 ""Mkr""","sv-SE"))
+	measure 'Budget omsättning jämförelse' = VAR _v=[Budget omsättning bas] RETURN IF([Budget scenario A]=4,"Föregående år: ",IF([Budget scenario A]=4,"Föregående år: ",IF([Budget scenario A]=4,"Föregående år: ",IF([Budget scenario A]=4,"Föregående år: ",IF([Budget scenario A]=4,"Föregående år: ",IF([Budget scenario A]=4,"Föregående år: ",IF([Budget jämförelseläge]=1,"Budget: ",[Budget B namn] & ": "))))))) & IF(ISBLANK(_v),"—",FORMAT(_v/1000000,"0.00 ""Mkr""","sv-SE"))
 		formatString: @
 		displayFolder: Budget
 		lineageTag: 3b66f23e-8f11-4d65-bfe5-9fb71673d56e
@@ -262,7 +265,7 @@ table Budgetscenarier
 		lineageTag: 5bc40f4e-15f4-48e5-acc2-79abe4f728c4
 
 	/// Budget calculation: Budget resultat jämförelse.
-	measure 'Budget resultat jämförelse' = VAR _v=[Budget resultat bas] RETURN IF([Budget jämförelseläge]=1,"Budget: ",[Budget B namn] & ": ") & IF(ISBLANK(_v),"—",FORMAT(_v/1000000,"0.00 ""Mkr""","sv-SE"))
+	measure 'Budget resultat jämförelse' = VAR _v=[Budget resultat bas] RETURN IF([Budget scenario A]=4,"Föregående år: ",IF([Budget scenario A]=4,"Föregående år: ",IF([Budget scenario A]=4,"Föregående år: ",IF([Budget scenario A]=4,"Föregående år: ",IF([Budget scenario A]=4,"Föregående år: ",IF([Budget scenario A]=4,"Föregående år: ",IF([Budget jämförelseläge]=1,"Budget: ",[Budget B namn] & ": "))))))) & IF(ISBLANK(_v),"—",FORMAT(_v/1000000,"0.00 ""Mkr""","sv-SE"))
 		formatString: @
 		displayFolder: Budget
 		lineageTag: 0fcf196e-6eba-43ab-8d53-3d0f047cb02b
@@ -300,7 +303,7 @@ table Budgetscenarier
 		lineageTag: dc84874d-9dab-42e3-8be1-a6a144613925
 
 	/// Budget calculation: Budget marginal jämförelse.
-	measure 'Budget marginal jämförelse' = VAR _v=[Budget marginal bas] RETURN IF([Budget jämförelseläge]=1,"Budget: ",[Budget B namn] & ": ") & IF(ISBLANK(_v),"—",FORMAT(_v,"0.0 %","sv-SE"))
+	measure 'Budget marginal jämförelse' = VAR _v=[Budget marginal bas] RETURN IF([Budget scenario A]=4,"Föregående år: ",IF([Budget scenario A]=4,"Föregående år: ",IF([Budget scenario A]=4,"Föregående år: ",IF([Budget scenario A]=4,"Föregående år: ",IF([Budget scenario A]=4,"Föregående år: ",IF([Budget scenario A]=4,"Föregående år: ",IF([Budget jämförelseläge]=1,"Budget: ",[Budget B namn] & ": "))))))) & IF(ISBLANK(_v),"—",FORMAT(_v,"0.0 %","sv-SE"))
 		formatString: @
 		displayFolder: Budget
 		lineageTag: 084254a2-faf7-4a06-87a8-da7bc175a10f
@@ -329,7 +332,7 @@ table Budgetscenarier
 		lineageTag: 7335146f-e7d2-48ef-9525-290c041f78e2
 
 	/// Budget calculation: Budget matrisrubrik.
-	measure 'Budget matrisrubrik' = IF([Budget jämförelseläge]=1,[Budget A namn] & " mot utfall","A: " & [Budget A namn] & " · B: " & [Budget B namn]) & " · " & [Budget periodetikett]
+	measure 'Budget matrisrubrik' = IF([Budget scenario A]=4,"Utfall mot föregående år",IF([Budget jämförelseläge]=1,[Budget A namn] & " mot utfall","A: " & [Budget A namn] & " · B: " & [Budget B namn])) & " · " & [Budget periodetikett]
 		formatString: @
 		displayFolder: Budget
 		lineageTag: c5eb2dcf-c480-4964-82ba-514b6716d0ff
@@ -347,10 +350,46 @@ table Budgetscenarier
 		lineageTag: 61b28287-e0f0-4ead-a2c4-6af101003df1
 
 	/// Budget calculation: Budget utfallsnot.
-	measure 'Budget utfallsnot' = IF([Budget jämförelseläge]=1,"Utfall t.o.m. september 2026","Budgetscenarier från Excel · ingen utfallsjämförelse")
+	measure 'Budget utfallsnot' = IF([Budget jämförelseläge]=1,"Utfall · " & [Budget periodetikett],"Budgetscenarier från Excel · ingen utfallsjämförelse")
 		formatString: @
 		displayFolder: Budget
 		lineageTag: da06552f-f670-41b2-80df-b2a54aa02d0a
+
+	measure 'RR föregående år en post' =
+			VAR _year=[Budget valt år]-1
+			VAR _limit=IF([Budget jämförelseläge]=1 && [Budget valt år]=2026,9,12)
+			VAR _column=SELECTEDVALUE('Budgetkolumner'[MånadID],13)
+			VAR _acc=SELECTEDVALUE('Budgetvisning'[Ordning],1)=2
+			VAR _months=FILTER(VALUES('Budgetmånader'[Nummer]),'Budgetmånader'[Nummer]<=_limit && (_column=13 || IF(_acc,'Budgetmånader'[Nummer]<=_column,'Budgetmånader'[Nummer]=_column)))
+			VAR _keys=SELECTCOLUMNS(_months,"MonthKey",_year*100+'Budgetmånader'[Nummer])
+			VAR _k=SELECTEDVALUE('Budgetkonton'[KontoID])
+			RETURN SUMX(_keys,VAR _date=[MonthKey]*100+1
+			VAR _last=[MonthKey]*100+DAY(EOMONTH(DATE(_year,MOD([MonthKey],100),1),0))
+			VAR _admin=CALCULATE(SUM('Gemensamma kostnader'[Belopp]),REMOVEFILTERS('Datum'),REMOVEFILTERS('Gemensamma kostnader'[Kostnadstyp]),'Gemensamma kostnader'[Datumnyckel]>=_date,'Gemensamma kostnader'[Datumnyckel]<=_last,'Gemensamma kostnader'[Kostnadstyp]="Administration")
+			RETURN SWITCH(_k,
+			1001,CALCULATE(SUM('Försäljning'[Nettointäkt]),'Försäljning'[Datumnyckel]>=_date,'Försäljning'[Datumnyckel]<=_last,'Försäljning'[Områdesnyckel]=1),
+			1002,CALCULATE(SUM('Försäljning'[Nettointäkt]),'Försäljning'[Datumnyckel]>=_date,'Försäljning'[Datumnyckel]<=_last,'Försäljning'[Områdesnyckel]=2),
+			1003,CALCULATE(SUM('Försäljning'[Nettointäkt]),'Försäljning'[Datumnyckel]>=_date,'Försäljning'[Datumnyckel]<=_last,'Försäljning'[Områdesnyckel]=3),
+			2001,-CALCULATE(SUM('Direkta kostnader'[Belopp]),'Direkta kostnader'[Datumnyckel]>=_date,'Direkta kostnader'[Datumnyckel]<=_last,'Direkta kostnader'[Kostnadstyp]="Varukostnad"),
+			2002,-CALCULATE(SUM('Direkta kostnader'[Belopp]),'Direkta kostnader'[Datumnyckel]>=_date,'Direkta kostnader'[Datumnyckel]<=_last,'Direkta kostnader'[Kostnadstyp]="Direkt leveranspersonal"),
+			2003,-CALCULATE(SUM('Direkta kostnader'[Belopp]),'Direkta kostnader'[Datumnyckel]>=_date,'Direkta kostnader'[Datumnyckel]<=_last,'Direkta kostnader'[Kostnadstyp]="Underleverantörer"),
+			2004,-CALCULATE(SUM('Direkta kostnader'[Belopp]),'Direkta kostnader'[Datumnyckel]>=_date,'Direkta kostnader'[Datumnyckel]<=_last,'Direkta kostnader'[Kostnadstyp]="Övrigt direkt"),
+			2005,-CALCULATE(SUM('Direkta kostnader'[Belopp]),'Direkta kostnader'[Datumnyckel]>=_date,'Direkta kostnader'[Datumnyckel]<=_last,'Direkta kostnader'[Kostnadstyp]="Ej uppdragsfördelad personal"),
+			3001,-ROUND(_admin*.6,0),
+			4001,-CALCULATE(SUM('Gemensamma kostnader'[Belopp]),'Gemensamma kostnader'[Datumnyckel]>=_date,'Gemensamma kostnader'[Datumnyckel]<=_last,'Gemensamma kostnader'[Kostnadstyp]="Lokaler och drift"),
+			4002,-ROUND(_admin*.10,0),4003,-ROUND(_admin*.06,0),4004,-ROUND(_admin*.04,0),4005,-ROUND(_admin*.08,0),
+			4006,-(_admin-ROUND(_admin*.6,0)-ROUND(_admin*.10,0)-ROUND(_admin*.06,0)-ROUND(_admin*.04,0)-ROUND(_admin*.08,0)),
+			5001,-CALCULATE(SUM('Gemensamma kostnader'[Belopp]),'Gemensamma kostnader'[Datumnyckel]>=_date,'Gemensamma kostnader'[Datumnyckel]<=_last,'Gemensamma kostnader'[Kostnadstyp]="Avskrivningar")))
+		formatString: #,##0
+		isHidden
+		displayFolder: Budget
+		lineageTag: 71d1c903-5ec0-4e5a-9ca3-34f042c78da5
+
+	measure 'RR föregående år konton' = CALCULATE(SUMX(VALUES('Budgetkonton'[KontoID]),[RR föregående år en post]),REMOVEFILTERS('Datum'),REMOVEFILTERS('Områden'),REMOVEFILTERS('Kunder'),REMOVEFILTERS('Artiklar'))
+		formatString: #,##0
+		isHidden
+		displayFolder: Budget
+		lineageTag: ee6a21e9-bbdf-4533-be66-2487c80b441c
 
 	column Månadsnyckel
 		dataType: int64

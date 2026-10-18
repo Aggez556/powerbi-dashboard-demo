@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "source": "Actual refreshed Desktop DAX",
+  "year2025": {
+    "[Year]": 2025,
+    "[Active]": 276,
+    "[Previous]": 255,
+    "[Lost]": 19
+  },
+  "year2024": {
+    "[Year]": 2024,
+    "[Active]": 255,
+    "[Previous]": 225,
+    "[Lost]": 5
+  },
+  "lost2025FollowupRows": 19,
+  "distinctLastPurchaseDates2025": 18
+}

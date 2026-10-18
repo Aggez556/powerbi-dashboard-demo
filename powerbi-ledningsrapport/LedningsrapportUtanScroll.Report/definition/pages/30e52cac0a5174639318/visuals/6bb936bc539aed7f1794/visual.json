@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
   "name": "6bb936bc539aed7f1794",
   "position": {
-    "x": 1256,
-    "y": 508,
+    "x": 1216,
+    "y": 528,
     "z": 150,
-    "height": 292,
-    "width": 628,
+    "height": 276,
+    "width": 668,
     "tabOrder": 150
   },
   "visual": {
@@ -20,15 +20,16 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Planveckor"
+                      "Entity": "Trendaxel"
                     }
                   },
-                  "Property": "Vecka"
+                  "Property": "Månadsstart"
                 }
               },
-              "queryRef": "Planveckor.Vecka",
-              "nativeQueryRef": "Vecka",
-              "active": true
+              "queryRef": "Trendaxel.Månadsstart",
+              "nativeQueryRef": "Månad",
+              "active": true,
+              "displayName": "Månad"
             }
           ]
         },
@@ -76,14 +77,32 @@
                       "Entity": "Planinställning"
                     }
                   },
-                  "Property": "Plan celltext"
+                  "Property": "Historisk cellgrad"
                 }
               },
-              "queryRef": "Planinställning.Plan celltext",
-              "nativeQueryRef": "Plan celltext"
+              "queryRef": "Planinställning.Historisk cellgrad",
+              "nativeQueryRef": "Debiteringsgrad",
+              "displayName": "Debiteringsgrad"
             }
           ]
         }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Trendaxel"
+                  }
+                },
+                "Property": "Månadsstart"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ]
       }
     },
     "expansionStates": [
@@ -233,7 +252,7 @@
             "wordWrap": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
                 }
               }
             },
@@ -247,7 +266,7 @@
             "columnAdjustment": {
               "expr": {
                 "Literal": {
-                  "Value": "'fitToContent'"
+                  "Value": "'growToFit'"
                 }
               }
             },
@@ -303,7 +322,7 @@
                           "Entity": "Planinställning"
                         }
                       },
-                      "Property": "Plan cellfärg"
+                      "Property": "Historisk cellfärg"
                     }
                   }
                 }
@@ -313,13 +332,8 @@
               "solid": {
                 "color": {
                   "expr": {
-                    "Measure": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "Planinställning"
-                        }
-                      },
-                      "Property": "Plan textfärg"
+                    "Literal": {
+                      "Value": "'#0F3163'"
                     }
                   }
                 }
@@ -334,7 +348,7 @@
                 }
               }
             ],
-            "metadata": "Planinställning.Plan celltext"
+            "metadata": "Planinställning.Historisk cellgrad"
           }
         }
       ],
@@ -344,7 +358,7 @@
             "rowPadding": {
               "expr": {
                 "Literal": {
-                  "Value": "10D"
+                  "Value": "16D"
                 }
               }
             },
@@ -393,14 +407,7 @@
             "rowSubtotals": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "rowSubtotalsPosition": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Top'"
+                  "Value": "false"
                 }
               }
             },
@@ -416,39 +423,36 @@
       ],
       "columnWidth": [
         {
-          "selector": {
-            "metadata": "Resurser.Resursgrupp"
-          },
           "properties": {
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "136D"
+                  "Value": "128D"
                 }
               }
             }
+          },
+          "selector": {
+            "metadata": "Resurser.Resursgrupp"
           }
         },
         {
-          "selector": {
-            "metadata": "Planinställning.Plan celltext"
-          },
           "properties": {
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "58D"
+                  "Value": "44D"
                 }
               }
             }
+          },
+          "selector": {
+            "metadata": "Planinställning.Historisk cellgrad"
           }
         }
       ],
       "columnFormatting": [
         {
-          "selector": {
-            "metadata": "Planinställning.Plan celltext"
-          },
           "properties": {
             "alignment": {
               "expr": {
@@ -477,14 +481,10 @@
                   "Value": "true"
                 }
               }
-            },
-            "styleTotal": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
             }
+          },
+          "selector": {
+            "metadata": "Planinställning.Historisk cellgrad"
           }
         }
       ]
@@ -664,6 +664,19 @@
           }
         }
       ],
+      "stylePreset": [
+        {
+          "properties": {
+            "name": {
+              "expr": {
+                "Literal": {
+                  "Value": "'None'"
+                }
+              }
+            }
+          }
+        }
+      ],
       "visualTooltip": [
         {
           "properties": {
@@ -677,14 +690,61 @@
             "type": {
               "expr": {
                 "Literal": {
-                  "Value": "'Canvas'"
+                  "Value": "'Default'"
                 }
               }
             },
-            "section": {
+            "fontFamily": {
               "expr": {
                 "Literal": {
-                  "Value": "'9b71739249a33de0815d'"
+                  "Value": "'Segoe UI'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "11D"
+                }
+              }
+            },
+            "titleFontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#5B6B80'"
+                    }
+                  }
+                }
+              }
+            },
+            "valueFontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#0F3163'"
+                    }
+                  }
+                }
+              }
+            },
+            "background": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#FFFFFF'"
+                    }
+                  }
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
                 }
               }
             }

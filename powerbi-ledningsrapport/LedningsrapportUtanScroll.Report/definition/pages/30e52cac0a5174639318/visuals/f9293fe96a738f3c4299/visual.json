@@ -3,9 +3,9 @@
   "name": "f9293fe96a738f3c4299",
   "position": {
     "x": 1644,
-    "y": 210,
+    "y": 208,
     "width": 224,
-    "height": 48,
+    "height": 52,
     "z": 137,
     "tabOrder": 137
   },
@@ -17,17 +17,17 @@
           "properties": {
             "paragraphs": [
               {
+                "horizontalTextAlignment": "left",
                 "textRuns": [
                   {
-                    "value": "Ledig kapacitet",
+                    "value": "Uppdrag över tidskalkyl",
                     "textStyle": {
                       "fontFamily": "Segoe UI Semibold",
-                      "fontSize": "14pt",
+                      "fontSize": "13pt",
                       "color": "#0F3163"
                     }
                   }
-                ],
-                "horizontalTextAlignment": "left"
+                ]
               }
             ]
           }

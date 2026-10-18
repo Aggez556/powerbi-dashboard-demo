@@ -1,0 +1,413 @@
+{
+  "rules": {
+    "pageTitle": 30,
+    "panelTitle": 18,
+    "kpiLabel": 13,
+    "legend": 11,
+    "font": "Segoe UI",
+    "primary": "#0F3163",
+    "secondary": "#5B6B80",
+    "positive": "#007956",
+    "negative": "#B42318"
+  },
+  "pages": [
+    {
+      "page": "Start",
+      "changedVisuals": 1,
+      "changes": [
+        {
+          "visual": "ce10c502d27b150a2683",
+          "label": "Omsättning, lönsamhet,uppdrag och kunder.",
+          "changes": []
+        }
+      ]
+    },
+    {
+      "page": "Ledningsöversikt",
+      "changedVisuals": 12,
+      "changes": [
+        {
+          "visual": "0438db51fd2b3b0cf851",
+          "label": "Verksamhetsområden",
+          "changes": [
+            "text hierarchy"
+          ]
+        },
+        {
+          "visual": "0764d58a1032a72bb4f3",
+          "label": "",
+          "changes": [
+            "KPI size"
+          ]
+        },
+        {
+          "visual": "163f660157e0c409a106",
+          "label": "",
+          "changes": [
+            "KPI size"
+          ]
+        },
+        {
+          "visual": "2f8204519465478cd457",
+          "label": "",
+          "changes": [
+            "KPI size"
+          ]
+        },
+        {
+          "visual": "39f898b6874b22b8f613",
+          "label": "Vad förklarar resultatförändringen?",
+          "changes": [
+            "text hierarchy"
+          ]
+        },
+        {
+          "visual": "3c49bbdbcc8bb0d9b6df",
+          "label": "",
+          "changes": [
+            "KPI size"
+          ]
+        },
+        {
+          "visual": "5f7e43401a26b16bc6ba",
+          "label": "● Teknisk service   ● Bemanning",
+          "changes": [
+            "text hierarchy"
+          ]
+        },
+        {
+          "visual": "7396c31d0ca506311adb",
+          "label": "",
+          "changes": [
+            "KPI size"
+          ]
+        },
+        {
+          "visual": "bf05bb5075df93f0f732",
+          "label": "",
+          "changes": [
+            "legend size"
+          ]
+        },
+        {
+          "visual": "c3148b4b66bc4989eba9",
+          "label": "",
+          "changes": [
+            "legend size"
+          ]
+        },
+        {
+          "visual": "c44d7d10998d7fe62a4f",
+          "label": "",
+          "changes": [
+            "KPI size"
+          ]
+        },
+        {
+          "visual": "df6fd0c27ecebbabeb9d",
+          "label": "● Omsättning   ● Rörelsemarginal",
+          "changes": [
+            "text hierarchy"
+          ]
+        }
+      ]
+    },
+    {
+      "page": "Försäljningsöversikt",
+      "changedVisuals": 14,
+      "changes": [
+        {
+          "visual": "16b44fffe5bd208fc189",
+          "label": "● Vald period  ● Föregående år",
+          "changes": [
+            "text hierarchy"
+          ]
+        },
+        {
+          "visual": "19f72aa592bd9ddb917e",
+          "label": "Försäljningsöversikt",
+          "changes": [
+            "text hierarchy"
+          ]
+        },
+        {
+          "visual": "1cc00eed6a7077b416fd",
+          "label": "Försäljning per kundbransch",
+          "changes": [
+            "text hierarchy"
+          ]
+        },
+        {
+          "visual": "5e788998aa998709c7e1",
+          "label": "",
+          "changes": [
+            "secondary text color"
+          ]
+        },
+        {
+          "visual": "7300fff78f3cb991cd33",
+          "label": "",
+          "changes": [
+            "KPI size"
+          ]
+        },
+        {
+          "visual": "9467b1982434a125e77c",
+          "label": "",
+          "changes": [
+            "KPI size"
+          ]
+        },
+        {
+          "visual": "ab05a76fed29eeeadbf7",
+          "label": "",
+          "changes": [
+            "KPI size"
+          ]
+        },
+        {
+          "visual": "b27370fa9442fb6e910c",
+          "label": "",
+          "changes": [
+            "legend size"
+          ]
+        },
+        {
+          "visual": "bd40a85062bdd0a42a40",
+          "label": "",
+          "changes": [
+            "legend size"
+          ]
+        },
+        {
+          "visual": "dc75ee7531680533914d",
+          "label": "",
+          "changes": [
+            "legend size"
+          ]
+        },
+        {
+          "visual": "e6a321d9a2c8649ba24d",
+          "label": "Produkt- och tjänsteanalys",
+          "changes": [
+            "text hierarchy"
+          ]
+        },
+        {
+          "visual": "ee922ab2f78a42ef25b0",
+          "label": "",
+          "changes": [
+            "KPI size"
+          ]
+        },
+        {
+          "visual": "f176632ecddc38d45dea",
+          "label": "Omsättning och bruttomarginal",
+          "changes": [
+            "text hierarchy"
+          ]
+        },
+        {
+          "visual": "f9fdf955035ac2f4c922",
+          "label": "",
+          "changes": [
+            "KPI size"
+          ]
+        }
+      ]
+    },
+    {
+      "page": "Kunder",
+      "changedVisuals": 7,
+      "changes": [
+        {
+          "visual": "2959a3126b1062dede29",
+          "label": "Kunder",
+          "changes": [
+            "text hierarchy"
+          ]
+        },
+        {
+          "visual": "3d401dec41a60691ca41",
+          "label": "Vad driver försäljningsförändringen?",
+          "changes": [
+            "text hierarchy"
+          ]
+        },
+        {
+          "visual": "67b0d643a252f27c92dc",
+          "label": "Kunder att följa upp",
+          "changes": [
+            "text hierarchy"
+          ]
+        },
+        {
+          "visual": "c8ea5e69d9a402c6ee70",
+          "label": "Omsättning per kundgrupp (Mkr)",
+          "changes": [
+            "text hierarchy"
+          ]
+        },
+        {
+          "visual": "d5cf6cd421060b6d9ad3",
+          "label": "",
+          "changes": [
+            "secondary text color"
+          ]
+        },
+        {
+          "visual": "dbafefef842b27d3c9a1",
+          "label": "Kundbasens förändring",
+          "changes": [
+            "text hierarchy"
+          ]
+        },
+        {
+          "visual": "f04ae77c993fee7cc7dd",
+          "label": "",
+          "changes": [
+            "legend size"
+          ]
+        }
+      ]
+    },
+    {
+      "page": "Budget",
+      "changedVisuals": 5,
+      "changes": [
+        {
+          "visual": "0c7e7e1c28c91ec94335",
+          "label": "Resultaträkning",
+          "changes": [
+            "text hierarchy"
+          ]
+        },
+        {
+          "visual": "862a510f0d92db0ab301",
+          "label": "Rörelseresultat",
+          "changes": [
+            "text hierarchy"
+          ]
+        },
+        {
+          "visual": "c6f5d2356f173099efeb",
+          "label": "Bruttomarginal",
+          "changes": [
+            "text hierarchy"
+          ]
+        },
+        {
+          "visual": "e52c0ad37496a232db22",
+          "label": "Budget",
+          "changes": [
+            "text hierarchy"
+          ]
+        },
+        {
+          "visual": "fe3acdd388c7b5deefd2",
+          "label": "Omsättning",
+          "changes": [
+            "text hierarchy"
+          ]
+        }
+      ]
+    },
+    {
+      "page": "Uppdrag / beläggning",
+      "changedVisuals": 13,
+      "changes": [
+        {
+          "visual": "0b4fc49fb6945afbeac3",
+          "label": "Uppdragens bruttomarginal",
+          "changes": [
+            "text hierarchy"
+          ]
+        },
+        {
+          "visual": "0f03c0af04e4bc09cb88",
+          "label": "● Debiterbart   ● Kundarbete, ej deb.",
+          "changes": [
+            "text hierarchy"
+          ]
+        },
+        {
+          "visual": "1f91edfdcdc984fd38ec",
+          "label": "— Mål 82 %",
+          "changes": [
+            "text hierarchy"
+          ]
+        },
+        {
+          "visual": "2c2d9cbdeacbbec6fb14",
+          "label": "● Teknisk service   ● Bemanning",
+          "changes": [
+            "text hierarchy"
+          ]
+        },
+        {
+          "visual": "2f6e938544eea36e2f6b",
+          "label": "Uppdrag / beläggning",
+          "changes": [
+            "text hierarchy"
+          ]
+        },
+        {
+          "visual": "a9fd28da2e85f421c36b",
+          "label": "● Internt arbete   ● Ej rapporterat",
+          "changes": [
+            "text hierarchy"
+          ]
+        },
+        {
+          "visual": "c1b6e0590e04ef53c6ac",
+          "label": "Debiterbara timmar",
+          "changes": [
+            "text hierarchy"
+          ]
+        },
+        {
+          "visual": "c54475398feddd8d1705",
+          "label": "Ej debiterbara timmar",
+          "changes": [
+            "text hierarchy"
+          ]
+        },
+        {
+          "visual": "e17ee7f6f17c2d6d10ba",
+          "label": "Debiteringsgrad",
+          "changes": [
+            "text hierarchy"
+          ]
+        },
+        {
+          "visual": "ea44656301c23775a524",
+          "label": "",
+          "changes": [
+            "secondary text color"
+          ]
+        },
+        {
+          "visual": "efb4f634792f28c5708c",
+          "label": "Utförda uppdrag",
+          "changes": [
+            "text hierarchy"
+          ]
+        },
+        {
+          "visual": "f9293fe96a738f3c4299",
+          "label": "Uppdrag över tidskalkyl",
+          "changes": [
+            "text hierarchy"
+          ]
+        },
+        {
+          "visual": "fd24ec0909ffaaae6c00",
+          "label": "● Under 75 %   ● 75–82 %   ● Minst 82 %",
+          "changes": [
+            "text hierarchy"
+          ]
+        }
+      ]
+    }
+  ]
+}

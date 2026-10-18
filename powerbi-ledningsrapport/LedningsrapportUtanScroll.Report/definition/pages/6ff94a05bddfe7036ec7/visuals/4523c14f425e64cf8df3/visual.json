@@ -19,7 +19,7 @@
               {
                 "textRuns": [
                   {
-                    "value": "Uppdrag, debiteringsgrad och kommande kapacitet.",
+                    "value": "Utförda uppdrag, tidsanvändning och faktisk lönsamhet.",
                     "textStyle": {
                       "fontFamily": "Segoe UI",
                       "fontSize": "12pt",

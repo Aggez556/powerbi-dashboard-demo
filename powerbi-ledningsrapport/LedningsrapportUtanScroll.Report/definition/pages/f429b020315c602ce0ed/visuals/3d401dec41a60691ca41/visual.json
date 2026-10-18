@@ -2,9 +2,9 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
   "name": "3d401dec41a60691ca41",
   "position": {
-    "x": 312,
-    "y": 808,
-    "width": 750,
+    "x": 1126,
+    "y": 376,
+    "width": 380,
     "height": 40,
     "z": 154,
     "tabOrder": 154
@@ -19,10 +19,10 @@
               {
                 "textRuns": [
                   {
-                    "value": "Vad driver försäljningsförändringen?",
+                    "value": "Försäljningens förändring",
                     "textStyle": {
                       "fontFamily": "Segoe UI Semibold",
-                      "fontSize": "19pt",
+                      "fontSize": "18pt",
                       "color": "#0F3163"
                     }
                   }
@@ -210,5 +210,6 @@
         }
       ]
     }
-  }
+  },
+  "isHidden": true
 }

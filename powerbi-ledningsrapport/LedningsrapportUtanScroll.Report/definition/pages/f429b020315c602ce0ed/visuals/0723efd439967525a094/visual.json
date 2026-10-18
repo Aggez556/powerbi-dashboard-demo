@@ -2,8 +2,8 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
   "name": "0723efd439967525a094",
   "position": {
-    "x": 312,
-    "y": 1128,
+    "x": 1126,
+    "y": 728,
     "width": 750,
     "height": 32,
     "z": 161,
@@ -337,6 +337,19 @@
             }
           }
         }
+      ],
+      "visualTooltip": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "query": {
@@ -361,5 +374,6 @@
         }
       }
     }
-  }
+  },
+  "isHidden": true
 }

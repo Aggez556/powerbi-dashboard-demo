@@ -6,8 +6,8 @@
     "y": 334,
     "width": 224,
     "height": 32,
-    "z": 139,
-    "tabOrder": 139
+    "z": 300,
+    "tabOrder": 119
   },
   "visual": {
     "visualType": "cardVisual",
@@ -40,6 +40,13 @@
                   "Value": "false"
                 }
               }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "100D"
+                }
+              }
             }
           }
         }
@@ -70,6 +77,20 @@
               "expr": {
                 "Literal": {
                   "Value": "0D"
+                }
+              }
+            },
+            "backgroundShow": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "backgroundTransparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "100D"
                 }
               }
             }
@@ -117,7 +138,7 @@
             "textWrap": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
                 }
               }
             },
@@ -350,7 +371,7 @@
             "altText": {
               "expr": {
                 "Literal": {
-                  "Value": "'kpi-sub5'"
+                  "Value": "'Tidskalkyl jämförelse'"
                 }
               }
             },
@@ -358,6 +379,19 @@
               "expr": {
                 "Literal": {
                   "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "visualTooltip": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }
@@ -377,11 +411,12 @@
                       "Entity": "Planinställning"
                     }
                   },
-                  "Property": "Ledigt jämförelse"
+                  "Property": "Tidskalkyl jämförelse"
                 }
               },
-              "queryRef": "Planinställning.Ledigt jämförelse",
-              "nativeQueryRef": "Ledigt jämförelse"
+              "queryRef": "Planinställning.Tidskalkyl jämförelse",
+              "nativeQueryRef": "Tidskalkyl jämförelse",
+              "displayName": "Tidskalkyl jämförelse"
             }
           ]
         }

@@ -1,0 +1,4 @@
+EVALUATE
+CALCULATETABLE(
+ FILTER(SUMMARIZECOLUMNS('Trendaxel'[Månad],'Kundgrupper'[Kundgrupp],"Mkr",[Kundgrupp månadsintäkt]),NOT ISBLANK([Mkr])),
+ TREATAS({"Helår"},'Periodtyp'[Periodtyp]),TREATAS({"2025"},'Helårsval'[Period]))

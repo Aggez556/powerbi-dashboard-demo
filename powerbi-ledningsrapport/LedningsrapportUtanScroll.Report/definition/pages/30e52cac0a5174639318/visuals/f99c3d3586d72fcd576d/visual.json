@@ -2,7 +2,7 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
   "name": "f99c3d3586d72fcd576d",
   "position": {
-    "x": 780,
+    "x": 740,
     "y": 416,
     "width": 428,
     "height": 36,
@@ -17,17 +17,17 @@
           "properties": {
             "paragraphs": [
               {
+                "horizontalTextAlignment": "left",
                 "textRuns": [
                   {
-                    "value": "Bokningar och kapacitet",
+                    "value": "Tidsanvändning över tid",
                     "textStyle": {
                       "fontFamily": "Segoe UI Semibold",
                       "fontSize": "18pt",
                       "color": "#0F3163"
                     }
                   }
-                ],
-                "horizontalTextAlignment": "left"
+                ]
               }
             ]
           }

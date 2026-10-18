@@ -14,7 +14,7 @@ table Trendaxel
 	column Månadsstart
 		dataType: dateTime
 		isHidden
-		formatString: yyyy-MM-dd
+		formatString: MMM
 		lineageTag: 18774ffe-3f92-4dd7-851d-4eaa9b0a1f9a
 		summarizeBy: none
 		sourceColumn: Månadsstart

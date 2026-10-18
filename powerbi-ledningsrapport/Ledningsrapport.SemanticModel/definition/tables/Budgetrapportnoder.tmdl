@@ -20,16 +20,37 @@ table Budgetrapportnoder
 		lineageTag: 89e95efc-99a8-47ee-8bde-349dd3ea1677
 
 	measure Rapporttext =
-			VAR _v=[Rapportvärde] VAR _slot=SELECTEDVALUE('Budgetkolumner'[Position]) VAR _margin=SELECTEDVALUE('Budgetrapportnoder'[Typ])="marginal"
-			RETURN IF(ISBLANK(_v),BLANK(),IF(_margin,IF(_slot=3,FORMAT(_v,"+0.0;−0.0;0.0","sv-SE") & " pp",FORMAT(_v,"0.0 %","sv-SE")),FORMAT(_v,IF(_slot=3,"+#,##0;−#,##0;0","#,##0;−#,##0;0"),"sv-SE")))
+			VAR _v=[Rapportvärde] VAR _slot=SELECTEDVALUE('Budgetkolumner'[Position])
+			VAR _margin=SELECTEDVALUE('Budgetrapportnoder'[Typ])="marginal"
+			VAR _variance=[Rapportavvikelse]
+			VAR _rounded=IF(_margin,ROUND(_variance,1),DIVIDE(ROUND(_variance*100,1),100))
+			RETURN IF(ISBLANK(_v),BLANK(),IF(_slot=3,IF(ISBLANK(_variance),"—",IF(_margin,FORMAT(_rounded,"+0.0;−0.0;0.0","sv-SE") & " pp",FORMAT(_rounded,"+0.0 %;−0.0 %;0.0 %","sv-SE"))),IF(_margin,FORMAT(_v,"0.0 %","sv-SE"),FORMAT(_v,"#,##0;−#,##0;0","sv-SE"))))
 		formatString: @
 		displayFolder: Budget\Resultaträkning
 		lineageTag: edf3aa1c-16e3-4aca-8b62-105a3f2435b7
 
-	measure Rapportfärg = VAR _v=[Rapportvärde] RETURN IF(ISBLANK(_v),BLANK(),IF(SELECTEDVALUE('Budgetkolumner'[Position])=3,IF(_v<0,"#B42318",IF(_v>0,"#007956","#5B6B80")),IF(SELECTEDVALUE('Budgetrapportnoder'[Typ])="marginal","#5B6B80","#0F3163")))
+	measure Rapportfärg =
+			VAR _v=[Rapportvärde] VAR _variance=[Rapportavvikelse]
+			VAR _rounded=ROUND(IF(SELECTEDVALUE('Budgetrapportnoder'[Typ])="marginal",_variance,_variance*100),1)
+			RETURN IF(ISBLANK(_v),BLANK(),IF(SELECTEDVALUE('Budgetkolumner'[Position])=3,IF(ISBLANK(_variance) || _rounded=0,"#5B6B80",IF(_rounded>0,"#007956","#B42318")),IF(SELECTEDVALUE('Budgetrapportnoder'[Typ])="marginal","#5B6B80","#0F3163")))
 		formatString: @
 		displayFolder: Budget\Resultaträkning
 		lineageTag: aace1b18-85f7-44d8-89f4-299cf15ced6b
+
+	measure Rapportavvikelse =
+			VAR _rad=SELECTEDVALUE('Budgetrapportnoder'[Rad])
+			VAR _sub=SELECTEDVALUE('Budgetrapportnoder'[Undergrupp])
+			VAR _post=SELECTEDVALUE('Budgetrapportnoder'[Post])
+			VAR _ids=SELECTCOLUMNS(FILTER(ALL('Budgetrader'),'Budgetrader'[Rad]=_rad && (_sub="" || 'Budgetrader'[Undergrupp]=_sub) && (_post="" || 'Budgetrader'[Post]=_post)),"KontoID",'Budgetrader'[KontoID])
+			VAR _mode=[Budget jämförelseläge]
+			VAR _a=CALCULATE([RR rad A],REMOVEFILTERS('Budgetrader'),TREATAS(_ids,'Budgetrader'[KontoID]))
+			VAR _b=IF(_mode=1,CALCULATE([RR rad utfall],REMOVEFILTERS('Budgetrader'),TREATAS(_ids,'Budgetrader'[KontoID])),CALCULATE([RR rad B],REMOVEFILTERS('Budgetrader'),TREATAS(_ids,'Budgetrader'[KontoID])))
+			VAR _difference=IF(_mode=1,_b-_a,_a-_b)
+			VAR _reference=IF(_mode=1,_a,_b)
+			RETURN IF(HASONEVALUE('Budgetrapportnoder'[NodID]) && SELECTEDVALUE('Budgetkolumner'[Position])=3 && [Budget kolumn synlig]=1 && NOT ISBLANK(_a) && NOT ISBLANK(_b),IF(SELECTEDVALUE('Budgetrapportnoder'[Typ])="marginal",_difference*100,DIVIDE(_difference,ABS(_reference))))
+		formatString: 0.0 %
+		displayFolder: Budget\Resultaträkning
+		lineageTag: 9ebbae4b-9d29-44b8-8cf4-5c71e1263fd8
 
 	column NodID
 		dataType: string

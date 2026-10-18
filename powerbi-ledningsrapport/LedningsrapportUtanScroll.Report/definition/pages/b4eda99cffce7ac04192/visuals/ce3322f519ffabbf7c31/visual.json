@@ -2,10 +2,10 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
   "name": "ce3322f519ffabbf7c31",
   "position": {
-    "x": 32,
-    "y": 24,
-    "width": 208,
-    "height": 64,
+    "x": 20,
+    "y": 14,
+    "width": 232,
+    "height": 90,
     "z": 200,
     "tabOrder": 200
   },
@@ -27,7 +27,7 @@
                 "name": {
                   "expr": {
                     "Literal": {
-                      "Value": "'AubecoLogoBlue202610140002.svg'"
+                      "Value": "'DemobolagetBlue.png'"
                     }
                   }
                 },
@@ -36,7 +36,7 @@
                     "ResourcePackageItem": {
                       "PackageName": "RegisteredResources",
                       "PackageType": 1,
-                      "ItemName": "AubecoLogoBlue202610140002.svg"
+                      "ItemName": "DemobolagetBlue.png"
                     }
                   }
                 },
@@ -59,7 +59,7 @@
             "altText": {
               "expr": {
                 "Literal": {
-                  "Value": "'Aubeco – till startsidan'"
+                  "Value": "'Demobolaget – till startsidan'"
                 }
               }
             },
@@ -114,28 +114,28 @@
             "top": {
               "expr": {
                 "Literal": {
-                  "Value": "10D"
+                  "Value": "0D"
                 }
               }
             },
             "bottom": {
               "expr": {
                 "Literal": {
-                  "Value": "10D"
+                  "Value": "0D"
                 }
               }
             },
             "left": {
               "expr": {
                 "Literal": {
-                  "Value": "20D"
+                  "Value": "0D"
                 }
               }
             },
             "right": {
               "expr": {
                 "Literal": {
-                  "Value": "20D"
+                  "Value": "0D"
                 }
               }
             }
@@ -148,7 +148,7 @@
             "altText": {
               "expr": {
                 "Literal": {
-                  "Value": "'Aubeco – till startsidan'"
+                  "Value": "'Demobolaget – till startsidan'"
                 }
               }
             }

@@ -5,15 +5,19 @@ base=Path(__file__).resolve().parents[1]/'powerbi-ledningsrapport/validation'
 live=json.loads((base/'customer-live-result.json').read_text(encoding='utf-8-sig'))['resultSets']
 independent=json.loads((base/'customer-independent-checks.json').read_text(encoding='utf-8'))
 ref=live[0][0]
-expected={'Aktiva':270,'Tidigare':240,'Fortsatta':230,'Helt nya':35,'Återaktiverade':5,'Förlorade':10,'Intäkt':139500000,'Tidigare intäkt':120000000,'Fortsatta intäkt':110000000,'Nya intäkt':27000000,'Återaktiverade intäkt':2500000,'Förlorad intäkt':4000000,'Minskning':-18000000,'Ökning':12000000,'Ledning intäkt':139500000,'Ledning bryggfel':0}
+source=independent['reference']
+expected=dict(zip(['Aktiva','Tidigare','Fortsatta','Helt nya','Återaktiverade','Förlorade'],[source[k] for k in ['active','previous','continuing','new','reactivated','lost']]))
+expected.update({'Intäkt':source['revenue'],'Tidigare intäkt':source['previousRevenue'],'Fortsatta intäkt':source['cohortRevenue'][0],'Nya intäkt':source['cohortRevenue'][1],'Återaktiverade intäkt':source['cohortRevenue'][2],'Förlorad intäkt':-source['bridge'][1],'Minskning':source['bridge'][2],'Ökning':source['bridge'][3],'Ledning intäkt':source['revenue'],'Ledning bryggfel':0})
 for k,v in expected.items():assert math.isclose(ref['['+k+']'],v,abs_tol=.00001),(k,ref)
-for k,v in {'Logo churn':10/240,'Revenue churn':10/120,'Andel nya':29.5/139.5}.items():assert math.isclose(ref['['+k+']'],v)
+for k,v in {'Logo churn':source['logoChurn'],'Revenue churn':source['revenueChurn'],'Andel nya':source['newRevenueShare']}.items():assert math.isclose(ref['['+k+']'],v)
 groups={}
 for row in live[2]:groups[row['Kundgrupper[Kundgrupp]']]=groups.get(row['Kundgrupper[Kundgrupp]'],0)+row['[Mkr]']
 expected_trend_rows=sum(amount!=0 for month in independent['reference']['monthly'].values() for amount in month)
 assert len(live[2])==expected_trend_rows
-assert all(math.isclose(groups[k],v) for k,v in {'Befintliga':110,'Helt nya':27,'Återaktiverade':2.5}.items())
+assert all(math.isclose(groups[k],v/1000000) for k,v in zip(['Befintliga','Helt nya','Återaktiverade'],source['cohortRevenue']))
 for row in live[1]:
+    for field in ['[Aktiva]','[Nya]','[Förlorade]']:
+        assert row[field] is None or row[field]==int(row[field]),(field,row)
     industry=row['Kunder[Kundbransch]']
     if not industry:continue
     case=next(x['result'] for x in independent['scenarios'] if x['mode']=='R12 september' and x['industry']==industry)

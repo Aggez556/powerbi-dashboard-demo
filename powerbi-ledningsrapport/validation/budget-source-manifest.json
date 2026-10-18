@@ -1,12 +1,12 @@
 {
   "workbook": "powerbi-ledningsrapport\\data\\Budgetscenarier.xlsx",
   "sourceActualHashes": {
-    "Försäljning": "dd29469b945f1ebe91234f0dce3bd0a689b4b77d8d9176bdd6e8cab6a6f2c753",
-    "Direkta kostnader": "caa37561863de697d86423c3c4a014955234d102fe51368ceefadc40606cc3d6",
+    "Försäljning": "ef38f1602799f061db196d10f2bd206685336d69bfeeb1159681ac9c9911cb8d",
+    "Direkta kostnader": "97009f436398952bccb5ab4c8b56defe4fffb3d1789279a5027eec5421f42219",
     "Gemensamma kostnader": "322b63550939e5410618202eb9a3e9faa12463abcf51f9af8b4f96a2aa6ccb86",
     "Budget": "2720df4cf2974e4fcd58a2f9e67eaca2b8e2f3ffa28a55dbf4b60a55524eb620",
     "Uppdrag": "f30a440bb8711892121d87c3477c4db9152728d28d81ccabb7c6378354cdfde9",
-    "Kunder": "76d6381a475e390faa0d95a37dcf5cc290e1936074f130a9172754fec7297d90",
+    "Kunder": "0e082b1a4e2b8cff0b0fe93c9615b8fb54543e6ad7c8fe274933a094e539b316",
     "Artiklar": "e0f9143256f8265535a0f78eae73f109d46b1bed23e18edbd492ff5d9c5bdba1"
   },
   "latestCompleteActualMonth": 202609,
@@ -36,5 +36,6 @@
     "4005": -555832,
     "4006": -833749,
     "5001": -578992
-  }
+  },
+  "customerHistoryUpdate": "Customer/date redistribution; independently checked monthly financial totals unchanged. See customer-history-realism.json."
 }

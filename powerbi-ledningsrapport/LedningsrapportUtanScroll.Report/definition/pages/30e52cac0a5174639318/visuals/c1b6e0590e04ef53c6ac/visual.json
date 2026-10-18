@@ -3,9 +3,9 @@
   "name": "c1b6e0590e04ef53c6ac",
   "position": {
     "x": 572,
-    "y": 210,
+    "y": 208,
     "width": 224,
-    "height": 48,
+    "height": 52,
     "z": 121,
     "tabOrder": 121
   },
@@ -22,7 +22,7 @@
                     "value": "Debiterbara timmar",
                     "textStyle": {
                       "fontFamily": "Segoe UI Semibold",
-                      "fontSize": "14pt",
+                      "fontSize": "13pt",
                       "color": "#0F3163"
                     }
                   }

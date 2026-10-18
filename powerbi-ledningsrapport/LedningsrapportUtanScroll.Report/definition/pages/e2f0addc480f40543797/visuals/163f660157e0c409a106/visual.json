@@ -85,7 +85,7 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "29D"
+                  "Value": "30D"
                 }
               }
             },
@@ -324,6 +324,19 @@
               "expr": {
                 "Literal": {
                   "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "visualTooltip": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }

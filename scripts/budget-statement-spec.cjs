@@ -5,10 +5,11 @@ module.exports=function statementSpec(open=['r6','r6_s2']){
  const rect=(name,from,update)=>({name,type:'rect',...(from?{from:{data:from}}:{}),encode:{update}});
  return {$schema:'https://vega.github.io/schema/vega/v6.json',description:'Interaktiv resultaträkning. Kontogrupper kan expanderas; beräknade rader är blad utan pilar.',width:1252,height:572,padding:0,autosize:{type:'none',contains:'padding'},background:'#FFFFFF',
  signals:[
-  {name:'rowHeight',value:32},{name:'headerH',value:80},{name:'labelW',value:300},
-  {name:'columnW',update:"max(length(data('columns')) && indexof(data('columns')[0].Metric,' · ')>=0?168:112,(width-labelW-12)/max(1,length(data('columns'))))"},
+  {name:'rowHeight',value:36},{name:'headerH',value:80},{name:'labelW',value:300},
+  {name:'columnW',update:"max(length(data('columns')) && indexof(data('columns')[0].Metric,' · ')>=0?168:144,(width-labelW-12)/max(1,length(data('columns'))))"},
+  {name:'budgetW',update:"length(data('columns')) && data('columns')[0].Metric==='Föregående år'?120:length(data('columns')) && indexof(data('columns')[0].Metric,' · ')>=0?128:88"},
   {name:'bodyW',update:'max(20,width-labelW-12)'},
-  {name:'fullW',update:"length(data('columns'))*columnW"},
+  {name:'fullW',update:"length(data('columns'))/2*(columnW+budgetW)"},
   {name:'maxX',update:'fullW>bodyW+0.5?fullW-bodyW:0'},
   {name:'bodyH',update:'height-headerH-(maxX>0?12:0)'},
   {name:'fullH',update:"length(data('rows'))?data('rows')[length(data('rows'))-1].RowTop+rowHeight:0"},
@@ -25,7 +26,7 @@ module.exports=function statementSpec(open=['r6','r6_s2']){
  data:[
   {name:'dataset'},
   {name:'open',values:open.map(key=>({key})),on:[{trigger:'clickedNode',toggle:'{key:clickedNode}'},{trigger:'expandAll',remove:'true'},{trigger:'expandAll',insert:"data('expandables')"},{trigger:'collapseAll',remove:'true'}]},
-  {name:'valid',source:'dataset',transform:[{type:'filter',expr:'isValid(datum.Amount) && isValid(datum.Node)'},{type:'formula',expr:'datum.GroupOrder*10+datum.Slot',as:'ColumnKey'}]},
+  {name:'valid',source:'dataset',transform:[{type:'filter',expr:'isValid(datum.Amount) && isValid(datum.Node) && datum.Slot!==3'},{type:'formula',expr:'datum.GroupOrder*10+datum.Slot',as:'ColumnKey'}]},
   {name:'expandables',source:'valid',transform:[{type:'aggregate',groupby:['Node','Children']},{type:'filter',expr:'datum.Children===1'},{type:'formula',expr:'datum.Node',as:'key'}]},
   {name:'columns',source:'valid',transform:[{type:'aggregate',groupby:['Group','GroupOrder','Metric','Slot','ColumnKey']},{type:'collect',sort:{field:'ColumnKey',order:'ascending'}},{type:'window',sort:{field:'ColumnKey',order:'ascending'},ops:['row_number'],as:['ColumnNumber']},{type:'formula',expr:'datum.ColumnNumber-1',as:'ColumnIndex'}]},
   {name:'groups',source:'columns',transform:[{type:'aggregate',groupby:['Group','GroupOrder'],fields:['ColumnIndex','ColumnIndex'],ops:['min','max'],as:['First','Last']}]},
@@ -39,18 +40,26 @@ module.exports=function statementSpec(open=['r6','r6_s2']){
    {type:'formula',expr:'datum.RunningY-rowHeight',as:'RowTop'}
   ]},
   {name:'cells',source:'valid',transform:[
+   {type:'formula',expr:'datum.Slot===1?datum.Amount:0',as:'BaseValue'},
+   {type:'joinaggregate',groupby:['Node','GroupOrder'],fields:['BaseValue'],ops:['sum'],as:['BudgetAmount']},
+   {type:'formula',expr:"indexof(datum.Metric,'B · ')===0?datum.Amount:datum.BudgetAmount",as:'ReferenceAmount'},
+   {type:'formula',expr:"datum.Slot===2 && isValid(datum.BudgetAmount) && (datum.Kind==='marginal' || datum.ReferenceAmount!==0)?(datum.Amount-datum.BudgetAmount)*(indexof(datum.Metric,'B · ')===0?-1:1)*(datum.Kind==='marginal'?100:100/abs(datum.ReferenceAmount)):null",as:'Variance'},
+   {type:'formula',expr:'isValid(datum.Variance)?round(datum.Variance*10)/10:null',as:'RoundedVariance'},
+   {type:'formula',expr:"!isValid(datum.RoundedVariance)?'—':(datum.RoundedVariance>0?'+':datum.RoundedVariance<0?'−':'')+replace(format(abs(datum.RoundedVariance),'.1f'),'.',',')+(datum.Kind==='marginal'?' pp':' %')",as:'VarianceText'},
+   {type:'formula',expr:"!isValid(datum.RoundedVariance) || datum.RoundedVariance===0?'#5B6B80':datum.RoundedVariance>0?'#007956':'#B42318'",as:'VarianceColor'},
    {type:'lookup',from:'rows',key:'Node',fields:['Node'],values:['RowTop'],as:['RowTop'],default:null},
    {type:'filter',expr:'isValid(datum.RowTop)'},
    {type:'lookup',from:'columns',key:'ColumnKey',fields:['ColumnKey'],values:['ColumnIndex'],as:['ColumnIndex']}
-  ]}
+  ]},
+  {name:'varianceCells',source:'cells',transform:[{type:'filter',expr:'datum.Slot===2'}]}
  ],
  marks:[
-  rect('header',null,{x:{value:0},y:{value:0},width:{signal:'width'},height:{signal:'headerH'},fill:{value:'#EEF2F7'}}),
   {type:'group',name:'body',clip:true,encode:{update:{x:{value:0},y:{signal:'headerH'},width:{signal:'width-12'},height:{signal:'bodyH'}}},marks:[
    rect('rowBands','rows',{x:{value:0},y:{signal:'datum.RowTop-scrollY'},width:{signal:'width-12'},height:{signal:'rowHeight'},fill:{signal:"datum.Kind==='resultat'?'#E1EAF5':datum.Kind==='marginal'?'#F3F6FA':datum.Node===hoverNode && datum.Children===1?'#F2F5F9':'#FFFFFF'"}}),
    {name:'rowLines',type:'rule',from:{data:'rows'},encode:{update:{x:{value:0},x2:{signal:'width-12'},y:{signal:'datum.RowTop+rowHeight-scrollY'},stroke:{value:'#E7ECF2'},strokeWidth:{value:.6}}}},
    {type:'group',name:'numbers',clip:true,encode:{update:{x:{signal:'labelW'},y:{value:0},width:{signal:'bodyW'},height:{signal:'bodyH'}}},marks:[
-    text('cellText','cells',{x:{signal:'(datum.ColumnIndex+1)*columnW-12-scrollX'},y:{signal:'datum.RowTop+rowHeight/2-scrollY'},text:{field:'Text'},align:{value:'right'},fontSize:{signal:"datum.Kind==='konto'?15:16"},fontWeight:{signal:"datum.Kind==='resultat'?'bold':datum.Kind==='grupp'?'600':'normal'"},fontStyle:{signal:"datum.Kind==='marginal'?'italic':'normal'"},fill:{field:'Color'},limit:{signal:'columnW-12'},tooltip:{signal:"datum.Label+' · '+datum.Group+' · '+datum.Metric+': '+datum.Text"}})
+    text('cellText','cells',{x:{signal:'floor(datum.ColumnIndex/2)*(columnW+budgetW)+budgetW+(datum.Slot===2?columnW:0)-(datum.Slot===2?76:12)-scrollX'},y:{signal:'datum.RowTop+rowHeight/2-scrollY'},text:{field:'Text'},align:{value:'right'},fontSize:{signal:"datum.Kind==='konto'?15:16"},fontWeight:{signal:"datum.Kind==='resultat'?'bold':datum.Kind==='grupp'?'600':'normal'"},fontStyle:{signal:"datum.Kind==='marginal'?'italic':'normal'"},fill:{field:'Color'},limit:{signal:'datum.Slot===2?columnW-88:budgetW-16'},tooltip:{signal:"{'Post':datum.Label,'Period':datum.Group,'Jämförelse':datum.Metric,'Värde':datum.Text}"}}),
+    text('inlineVariance','varianceCells',{x:{signal:'floor(datum.ColumnIndex/2)*(columnW+budgetW)+budgetW+(datum.Slot===2?columnW:0)-70-scrollX'},y:{signal:'datum.RowTop+rowHeight/2-scrollY'},text:{signal:"'('+datum.VarianceText+')'"},align:{value:'left'},fontSize:{value:12},limit:{value:66},fill:{field:'VarianceColor'},tooltip:{signal:"{'Post':datum.Label,'Period':datum.Group,'Avvikelse':datum.VarianceText,'Tolkning':'Plus = bättre, minus = sämre'}"}})
    ]},
    rect('rowLabelBackground','rows',{x:{value:0},y:{signal:'datum.RowTop-scrollY'},width:{signal:'labelW'},height:{signal:'rowHeight'},fill:{signal:"datum.Kind==='resultat'?'#E1EAF5':datum.Kind==='marginal'?'#F3F6FA':datum.Node===hoverNode && datum.Children===1?'#F2F5F9':'#FFFFFF'"}}),
    text('sectionLabels','rows',{x:{value:8},y:{signal:'datum.RowTop-14-scrollY'},text:{signal:"datum.Before>0 && datum.Section?datum.Section:''"},fontSize:{value:15},fontWeight:{value:'bold'},fill:{value:'#5B6B80'}}),
@@ -58,10 +67,14 @@ module.exports=function statementSpec(open=['r6','r6_s2']){
    text('chevrons','rows',{x:{signal:'datum.Depth*18+10'},y:{signal:'datum.RowTop+rowHeight/2-scrollY'},text:{signal:"datum.Children===1?(indata('open','key',datum.Node)?'▾':'▸'):''"},fontSize:{value:16},fontWeight:{value:'bold'}}),
    rect('nodeHit','rows',{x:{value:0},y:{signal:'datum.RowTop-scrollY'},width:{signal:'labelW'},height:{signal:'rowHeight'},fill:{value:'#FFFFFF'},fillOpacity:{value:0},cursor:{signal:"datum.Children===1?'pointer':'default'"},tooltip:{signal:"datum.Children===1?'Klicka för att visa eller dölja underkategorier':datum.Kind==='konto'?'Kontopost utan underposter':'Beräknad rad utan underposter'"}})
   ]},
+  // Paint the opaque frozen header AFTER the scrolling body, including its
+  // section labels. This also masks overflow in canvas renderers.
+  rect('header',null,{x:{value:0},y:{value:0},width:{signal:'width'},height:{signal:'headerH'},fill:{value:'#EEF2F7'},fillOpacity:{value:1}}),
+  {type:'rule',name:'headerDivider',encode:{update:{x:{value:0},x2:{signal:'width'},y:{signal:'headerH'},stroke:{value:'#B8C6D8'},strokeWidth:{value:1}}}},
   {name:'columnHeaders',type:'group',clip:true,encode:{update:{x:{signal:'labelW'},y:{value:0},width:{signal:'bodyW'},height:{signal:'headerH'}}},marks:[
-   text('monthHeaders','groups',{x:{signal:'(datum.First+datum.Last+1)*columnW/2-scrollX'},y:{value:21},text:{field:'Group'},align:{value:'center'},fontSize:{value:15},fontWeight:{value:'600'}}),
-   text('metricHeaders','columns',{x:{signal:'(datum.ColumnIndex+1)*columnW-12-scrollX'},y:{signal:"indexof(datum.Metric,' · ')>=0?51:58"},text:{signal:"indexof(datum.Metric,' · ')>=0?split(datum.Metric,' · '):datum.Metric"},align:{value:'right'},fontSize:{value:14},lineHeight:{value:16},limit:{signal:'columnW-12'}}),
-   {type:'rule',from:{data:'groups'},encode:{update:{x:{signal:'(datum.Last+1)*columnW-scrollX'},y:{value:0},y2:{signal:'headerH'},stroke:{value:'#D7E0EB'},strokeWidth:{value:.8}}}}
+   text('monthHeaders','groups',{x:{signal:'(floor(datum.First/2)+0.5)*(columnW+budgetW)-scrollX'},y:{value:21},text:{field:'Group'},align:{value:'center'},fontSize:{value:15},fontWeight:{value:'600'}}),
+   text('metricHeaders','columns',{x:{signal:'floor(datum.ColumnIndex/2)*(columnW+budgetW)+budgetW+(datum.Slot===2?columnW:0)-(datum.Slot===2?76:12)-scrollX'},y:{signal:"datum.Slot===3 || indexof(datum.Metric,' · ')>=0?51:58"},text:{signal:"datum.Metric==='Föregående år'?'Föreg. år':datum.Slot===3?['Avvikelse','% / pp']:indexof(datum.Metric,' · ')>=0?split(datum.Metric,' · '):datum.Metric"},align:{value:'right'},fontSize:{value:14},lineHeight:{value:16},limit:{signal:'columnW-12'},tooltip:{field:'Metric'}}),
+   {type:'rule',from:{data:'groups'},encode:{update:{x:{signal:'(floor(datum.Last/2)+1)*(columnW+budgetW)-scrollX'},y:{value:0},y2:{signal:'headerH'},stroke:{value:'#D7E0EB'},strokeWidth:{value:.8}}}}
   ]},
   {type:'text',encode:{update:{x:{value:10},y:{value:24},text:{value:'Post'},font:{value:'Segoe UI Semibold'},fontSize:{value:15},fill:{value:'#0F3163'}}}},
   rect('expandAllButton',null,{x:{value:8},y:{value:38},width:{value:132},height:{value:32},fill:{value:'#FFFFFF'},stroke:{value:'#D7E0EB'},cornerRadius:{value:4},cursor:{value:'pointer'}}),

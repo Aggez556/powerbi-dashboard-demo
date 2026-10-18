@@ -1,0 +1,40 @@
+{
+  "status": "passed",
+  "source": "Actual Desktop DAX versus independently calculated CSVs, plus persisted PBIR checks",
+  "cases": 30,
+  "periodEndSnapshots": 8,
+  "resourceMonthCells": 48,
+  "fieldChecks": 426,
+  "year2025": {
+    "Case": "year2025:all",
+    "Jobs": 860,
+    "Hours": 38461.60000000002,
+    "Capacity": 48400,
+    "Rate": 0.7946611570247938,
+    "Margin": 0.32143449102506033,
+    "OverPlan": 146,
+    "Billable": 38461.6,
+    "CustomerNonbillable": 1551.5089,
+    "Internal": 6804.1127,
+    "Unreported": 1582.7784,
+    "Available": 48400
+  },
+  "forwardLookingBindingsRemoved": true,
+  "overreportedResourceMonths": [
+    {
+      "resource": 102,
+      "month": 202609,
+      "hours": 2.0
+    },
+    {
+      "resource": 202,
+      "month": 202609,
+      "hours": 28.0
+    },
+    {
+      "resource": 307,
+      "month": 202609,
+      "hours": 162.0
+    }
+  ]
+}

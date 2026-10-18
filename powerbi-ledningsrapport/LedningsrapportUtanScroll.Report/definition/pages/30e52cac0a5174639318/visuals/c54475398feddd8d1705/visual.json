@@ -3,9 +3,9 @@
   "name": "c54475398feddd8d1705",
   "position": {
     "x": 1376,
-    "y": 210,
+    "y": 208,
     "width": 224,
-    "height": 48,
+    "height": 52,
     "z": 133,
     "tabOrder": 133
   },
@@ -17,17 +17,17 @@
           "properties": {
             "paragraphs": [
               {
+                "horizontalTextAlignment": "left",
                 "textRuns": [
                   {
-                    "value": "Bokad beläggning",
+                    "value": "Ej debiterbara timmar",
                     "textStyle": {
                       "fontFamily": "Segoe UI Semibold",
-                      "fontSize": "14pt",
+                      "fontSize": "13pt",
                       "color": "#0F3163"
                     }
                   }
-                ],
-                "horizontalTextAlignment": "left"
+                ]
               }
             ]
           }

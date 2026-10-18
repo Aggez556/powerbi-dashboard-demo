@@ -2,6 +2,24 @@
 table Artiklar
 	lineageTag: f015febe-e3ce-4cd7-8107-525ae43008cb
 
+	measure Verksamhetsbakgrund = IF(ISINSCOPE('Artiklar'[Kategori]) || ISINSCOPE('Artiklar'[Artikel]),SWITCH(SELECTEDVALUE('Artiklar'[Områdesordning]),1,"#E8EEF6",2,"#E6F3EE",3,"#EEF0FC","#FFFFFF"),"#E8EEF6")
+		formatString: @
+		isHidden
+		displayFolder: Formatering
+		lineageTag: 2a6d6c51-77eb-4c79-9027-a9342000937c
+
+	measure Verksamhetsaccent = SWITCH(SELECTEDVALUE('Artiklar'[Områdesordning]),1,"#0F3163",2,"#007956",3,"#4A6BCE","#5B6B80")
+		formatString: @
+		isHidden
+		displayFolder: Formatering
+		lineageTag: 33a5abed-978c-4b02-a00c-1d3637dc53b4
+
+	measure Verksamhetsmarkor = IF(ISINSCOPE('Artiklar'[Kategori]) || ISINSCOPE('Artiklar'[Artikel]),"●",BLANK())
+		formatString: @
+		isHidden
+		displayFolder: Formatering
+		lineageTag: 3000d5ca-006a-47e8-b5ac-e5b11ca4cc8f
+
 	column Artikelnyckel
 		dataType: int64
 		isHidden

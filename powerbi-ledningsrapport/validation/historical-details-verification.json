@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "source": "Actual DAX captions and distinct month keys; persisted layout and registered resource checks",
+  "nonemptyCaptions": 7,
+  "distinctMonthlyGroups": 12,
+  "registeredImageReferencesChecked": 26
+}

@@ -1,0 +1,784 @@
+﻿{
+    "status":  "queried",
+    "resultSets":  [
+                       [
+                           {
+                               "[Case]":  "futureOct2026:all",
+                               "[Jobs]":  null,
+                               "[Hours]":  null,
+                               "[Capacity]":  null,
+                               "[Rate]":  null,
+                               "[Margin]":  null,
+                               "[OverPlan]":  null,
+                               "[Billable]":  null,
+                               "[CustomerNonbillable]":  null,
+                               "[Internal]":  null,
+                               "[Unreported]":  null,
+                               "[Available]":  null
+                           },
+                           {
+                               "[Case]":  "futureOct2026:dish",
+                               "[Jobs]":  null,
+                               "[Hours]":  null,
+                               "[Capacity]":  null,
+                               "[Rate]":  null,
+                               "[Margin]":  null,
+                               "[OverPlan]":  null,
+                               "[Billable]":  null,
+                               "[CustomerNonbillable]":  null,
+                               "[Internal]":  null,
+                               "[Unreported]":  null,
+                               "[Available]":  null
+                           },
+                           {
+                               "[Case]":  "futureOct2026:invalidGroup",
+                               "[Jobs]":  null,
+                               "[Hours]":  null,
+                               "[Capacity]":  null,
+                               "[Rate]":  null,
+                               "[Margin]":  null,
+                               "[OverPlan]":  null,
+                               "[Billable]":  null,
+                               "[CustomerNonbillable]":  null,
+                               "[Internal]":  null,
+                               "[Unreported]":  null,
+                               "[Available]":  null
+                           },
+                           {
+                               "[Case]":  "futureOct2026:north",
+                               "[Jobs]":  null,
+                               "[Hours]":  null,
+                               "[Capacity]":  null,
+                               "[Rate]":  null,
+                               "[Margin]":  null,
+                               "[OverPlan]":  null,
+                               "[Billable]":  null,
+                               "[CustomerNonbillable]":  null,
+                               "[Internal]":  null,
+                               "[Unreported]":  null,
+                               "[Available]":  null
+                           },
+                           {
+                               "[Case]":  "futureOct2026:staffing",
+                               "[Jobs]":  null,
+                               "[Hours]":  null,
+                               "[Capacity]":  null,
+                               "[Rate]":  null,
+                               "[Margin]":  null,
+                               "[OverPlan]":  null,
+                               "[Billable]":  null,
+                               "[CustomerNonbillable]":  null,
+                               "[Internal]":  null,
+                               "[Unreported]":  null,
+                               "[Available]":  null
+                           },
+                           {
+                               "[Case]":  "futureOct2026:technical",
+                               "[Jobs]":  null,
+                               "[Hours]":  null,
+                               "[Capacity]":  null,
+                               "[Rate]":  null,
+                               "[Margin]":  null,
+                               "[OverPlan]":  null,
+                               "[Billable]":  null,
+                               "[CustomerNonbillable]":  null,
+                               "[Internal]":  null,
+                               "[Unreported]":  null,
+                               "[Available]":  null
+                           },
+                           {
+                               "[Case]":  "r12sep2026:all",
+                               "[Jobs]":  960,
+                               "[Hours]":  39645.98000000001,
+                               "[Capacity]":  48600,
+                               "[Rate]":  0.81576090534979451,
+                               "[Margin]":  0.29453211009174313,
+                               "[OverPlan]":  160,
+                               "[Billable]":  39645.98,
+                               "[CustomerNonbillable]":  1424.9055,
+                               "[Internal]":  6281.2922,
+                               "[Unreported]":  1439.8223,
+                               "[Available]":  48600
+                           },
+                           {
+                               "[Case]":  "r12sep2026:dish",
+                               "[Jobs]":  160,
+                               "[Hours]":  14032.360000000008,
+                               "[Capacity]":  17010,
+                               "[Rate]":  0.82494767783656719,
+                               "[Margin]":  0.20939962755870345,
+                               "[OverPlan]":  27,
+                               "[Billable]":  14032.36,
+                               "[CustomerNonbillable]":  495.5098,
+                               "[Internal]":  2138.2251,
+                               "[Unreported]":  505.9051,
+                               "[Available]":  17010
+                           },
+                           {
+                               "[Case]":  "r12sep2026:invalidGroup",
+                               "[Jobs]":  640,
+                               "[Hours]":  15727.120000000003,
+                               "[Capacity]":  19440,
+                               "[Rate]":  0.809008230452675,
+                               "[Margin]":  0.3652,
+                               "[OverPlan]":  107,
+                               "[Billable]":  15727.12,
+                               "[CustomerNonbillable]":  583.7263,
+                               "[Internal]":  2581.6765,
+                               "[Unreported]":  577.4772,
+                               "[Available]":  19440
+                           },
+                           {
+                               "[Case]":  "r12sep2026:north",
+                               "[Jobs]":  320,
+                               "[Hours]":  7854.5599999999868,
+                               "[Capacity]":  9720,
+                               "[Rate]":  0.80808230452674756,
+                               "[Margin]":  0.36614765567548208,
+                               "[OverPlan]":  52,
+                               "[Billable]":  7854.56,
+                               "[CustomerNonbillable]":  280.4895,
+                               "[Internal]":  1284.6944,
+                               "[Unreported]":  302.2561,
+                               "[Available]":  9720
+                           },
+                           {
+                               "[Case]":  "r12sep2026:staffing",
+                               "[Jobs]":  320,
+                               "[Hours]":  23918.859999999993,
+                               "[Capacity]":  29160,
+                               "[Rate]":  0.82026268861454021,
+                               "[Margin]":  0.208,
+                               "[OverPlan]":  53,
+                               "[Billable]":  23918.86,
+                               "[CustomerNonbillable]":  841.1792,
+                               "[Internal]":  3699.6157,
+                               "[Unreported]":  862.3451,
+                               "[Available]":  29160
+                           },
+                           {
+                               "[Case]":  "r12sep2026:technical",
+                               "[Jobs]":  640,
+                               "[Hours]":  15727.120000000003,
+                               "[Capacity]":  19440,
+                               "[Rate]":  0.809008230452675,
+                               "[Margin]":  0.3652,
+                               "[OverPlan]":  107,
+                               "[Billable]":  15727.12,
+                               "[CustomerNonbillable]":  583.7263,
+                               "[Internal]":  2581.6765,
+                               "[Unreported]":  577.4772,
+                               "[Available]":  19440
+                           },
+                           {
+                               "[Case]":  "sep2026:all",
+                               "[Jobs]":  104,
+                               "[Hours]":  3894.3799999999978,
+                               "[Capacity]":  4400,
+                               "[Rate]":  0.88508636363636317,
+                               "[Margin]":  0.29274004495282335,
+                               "[OverPlan]":  20,
+                               "[Billable]":  3894.38,
+                               "[CustomerNonbillable]":  103.7011,
+                               "[Internal]":  485.0384,
+                               "[Unreported]":  108.8805,
+                               "[Available]":  4400
+                           },
+                           {
+                               "[Case]":  "sep2026:dish",
+                               "[Jobs]":  19,
+                               "[Hours]":  1438.6599999999994,
+                               "[Capacity]":  1540,
+                               "[Rate]":  0.9341948051948048,
+                               "[Margin]":  0.21106474616377724,
+                               "[OverPlan]":  3,
+                               "[Billable]":  1438.66,
+                               "[CustomerNonbillable]":  40.6109,
+                               "[Internal]":  180.148,
+                               "[Unreported]":  42.5811,
+                               "[Available]":  1540
+                           },
+                           {
+                               "[Case]":  "sep2026:invalidGroup",
+                               "[Jobs]":  65,
+                               "[Hours]":  1564.7200000000014,
+                               "[Capacity]":  1760,
+                               "[Rate]":  0.88904545454545536,
+                               "[Margin]":  0.36048016826659374,
+                               "[OverPlan]":  10,
+                               "[Billable]":  1564.72,
+                               "[CustomerNonbillable]":  32.565,
+                               "[Internal]":  157.1156,
+                               "[Unreported]":  35.5994,
+                               "[Available]":  1760
+                           },
+                           {
+                               "[Case]":  "sep2026:north",
+                               "[Jobs]":  33,
+                               "[Hours]":  769.36000000000035,
+                               "[Capacity]":  880,
+                               "[Rate]":  0.87427272727272765,
+                               "[Margin]":  0.36132060716109909,
+                               "[OverPlan]":  5,
+                               "[Billable]":  769.36,
+                               "[CustomerNonbillable]":  16.064,
+                               "[Internal]":  76.8146,
+                               "[Unreported]":  19.7614,
+                               "[Available]":  880
+                           },
+                           {
+                               "[Case]":  "sep2026:staffing",
+                               "[Jobs]":  39,
+                               "[Hours]":  2329.6599999999989,
+                               "[Capacity]":  2640,
+                               "[Rate]":  0.88244696969696934,
+                               "[Margin]":  0.20979295270483983,
+                               "[OverPlan]":  10,
+                               "[Billable]":  2329.66,
+                               "[CustomerNonbillable]":  71.1361,
+                               "[Internal]":  327.9228,
+                               "[Unreported]":  73.2811,
+                               "[Available]":  2640
+                           },
+                           {
+                               "[Case]":  "sep2026:technical",
+                               "[Jobs]":  65,
+                               "[Hours]":  1564.7200000000014,
+                               "[Capacity]":  1760,
+                               "[Rate]":  0.88904545454545536,
+                               "[Margin]":  0.36048016826659374,
+                               "[OverPlan]":  10,
+                               "[Billable]":  1564.72,
+                               "[CustomerNonbillable]":  32.565,
+                               "[Internal]":  157.1156,
+                               "[Unreported]":  35.5994,
+                               "[Available]":  1760
+                           },
+                           {
+                               "[Case]":  "year2024:all",
+                               "[Jobs]":  748,
+                               "[Hours]":  37798.000000000044,
+                               "[Capacity]":  48800,
+                               "[Rate]":  0.77454918032786979,
+                               "[Margin]":  0.33101184580478227,
+                               "[OverPlan]":  127,
+                               "[Billable]":  37798,
+                               "[CustomerNonbillable]":  1681.608,
+                               "[Internal]":  7563.8719,
+                               "[Unreported]":  1756.5201,
+                               "[Available]":  48800
+                           },
+                           {
+                               "[Case]":  "year2024:dish",
+                               "[Jobs]":  130,
+                               "[Hours]":  13300.699999999999,
+                               "[Capacity]":  17080,
+                               "[Rate]":  0.77872950819672127,
+                               "[Margin]":  0.30232342752434183,
+                               "[OverPlan]":  22,
+                               "[Billable]":  13300.7,
+                               "[CustomerNonbillable]":  593.3608,
+                               "[Internal]":  2585.1036,
+                               "[Unreported]":  600.8356,
+                               "[Available]":  17080
+                           },
+                           {
+                               "[Case]":  "year2024:invalidGroup",
+                               "[Jobs]":  486,
+                               "[Hours]":  14996.800000000039,
+                               "[Capacity]":  19520,
+                               "[Rate]":  0.76827868852459213,
+                               "[Margin]":  0.35609914858017527,
+                               "[OverPlan]":  76,
+                               "[Billable]":  14996.8,
+                               "[CustomerNonbillable]":  680.2117,
+                               "[Internal]":  3114.5057,
+                               "[Unreported]":  728.4826,
+                               "[Available]":  19520
+                           },
+                           {
+                               "[Case]":  "year2024:north",
+                               "[Jobs]":  244,
+                               "[Hours]":  7498.4000000000015,
+                               "[Capacity]":  9760,
+                               "[Rate]":  0.76827868852459025,
+                               "[Margin]":  0.357398196051946,
+                               "[OverPlan]":  50,
+                               "[Billable]":  7498.4,
+                               "[CustomerNonbillable]":  335.6308,
+                               "[Internal]":  1574.1552,
+                               "[Unreported]":  351.814,
+                               "[Available]":  9760
+                           },
+                           {
+                               "[Case]":  "year2024:staffing",
+                               "[Jobs]":  262,
+                               "[Hours]":  22801.200000000008,
+                               "[Capacity]":  29280,
+                               "[Rate]":  0.7787295081967216,
+                               "[Margin]":  0.30063323089683075,
+                               "[OverPlan]":  51,
+                               "[Billable]":  22801.2,
+                               "[CustomerNonbillable]":  1001.3963,
+                               "[Internal]":  4449.3662,
+                               "[Unreported]":  1028.0375,
+                               "[Available]":  29280
+                           },
+                           {
+                               "[Case]":  "year2024:technical",
+                               "[Jobs]":  486,
+                               "[Hours]":  14996.800000000039,
+                               "[Capacity]":  19520,
+                               "[Rate]":  0.76827868852459213,
+                               "[Margin]":  0.35609914858017527,
+                               "[OverPlan]":  76,
+                               "[Billable]":  14996.8,
+                               "[CustomerNonbillable]":  680.2117,
+                               "[Internal]":  3114.5057,
+                               "[Unreported]":  728.4826,
+                               "[Available]":  19520
+                           },
+                           {
+                               "[Case]":  "year2025:all",
+                               "[Jobs]":  860,
+                               "[Hours]":  38461.60000000002,
+                               "[Capacity]":  48400,
+                               "[Rate]":  0.79466115702479379,
+                               "[Margin]":  0.32143449102506033,
+                               "[OverPlan]":  146,
+                               "[Billable]":  38461.6,
+                               "[CustomerNonbillable]":  1551.5089,
+                               "[Internal]":  6804.1127,
+                               "[Unreported]":  1582.7784,
+                               "[Available]":  48400
+                           },
+                           {
+                               "[Case]":  "year2025:dish",
+                               "[Jobs]":  141,
+                               "[Hours]":  13528.199999999999,
+                               "[Capacity]":  16940,
+                               "[Rate]":  0.798595041322314,
+                               "[Margin]":  0.29026120412054385,
+                               "[OverPlan]":  24,
+                               "[Billable]":  13528.2,
+                               "[CustomerNonbillable]":  532.1236,
+                               "[Internal]":  2330.0951,
+                               "[Unreported]":  549.5813,
+                               "[Available]":  16940
+                           },
+                           {
+                               "[Case]":  "year2025:invalidGroup",
+                               "[Jobs]":  576,
+                               "[Hours]":  15270.40000000002,
+                               "[Capacity]":  19360,
+                               "[Rate]":  0.78876033057851336,
+                               "[Margin]":  0.35385113795159445,
+                               "[OverPlan]":  96,
+                               "[Billable]":  15270.4,
+                               "[CustomerNonbillable]":  630.4364,
+                               "[Internal]":  2808.2324,
+                               "[Unreported]":  650.9312,
+                               "[Available]":  19360
+                           },
+                           {
+                               "[Case]":  "year2025:north",
+                               "[Jobs]":  289,
+                               "[Hours]":  7635.6000000000013,
+                               "[Capacity]":  9680,
+                               "[Rate]":  0.7888016528925621,
+                               "[Margin]":  0.35493990897465738,
+                               "[OverPlan]":  50,
+                               "[Billable]":  7635.6,
+                               "[CustomerNonbillable]":  315.0858,
+                               "[Internal]":  1403.0064,
+                               "[Unreported]":  326.3078,
+                               "[Available]":  9680
+                           },
+                           {
+                               "[Case]":  "year2025:staffing",
+                               "[Jobs]":  284,
+                               "[Hours]":  23191.200000000008,
+                               "[Capacity]":  29040,
+                               "[Rate]":  0.79859504132231429,
+                               "[Margin]":  0.28876763774764824,
+                               "[OverPlan]":  50,
+                               "[Billable]":  23191.2,
+                               "[CustomerNonbillable]":  921.0725,
+                               "[Internal]":  3995.8803,
+                               "[Unreported]":  931.8472,
+                               "[Available]":  29040
+                           },
+                           {
+                               "[Case]":  "year2025:technical",
+                               "[Jobs]":  576,
+                               "[Hours]":  15270.40000000002,
+                               "[Capacity]":  19360,
+                               "[Rate]":  0.78876033057851336,
+                               "[Margin]":  0.35385113795159445,
+                               "[OverPlan]":  96,
+                               "[Billable]":  15270.4,
+                               "[CustomerNonbillable]":  630.4364,
+                               "[Internal]":  2808.2324,
+                               "[Unreported]":  650.9312,
+                               "[Available]":  19360
+                           }
+                       ],
+                       [
+                           {
+                               "[Job]":  10004,
+                               "[Hours]":  127.75999999999998,
+                               "[Revenue]":  118862,
+                               "[Cost]":  76398,
+                               "[Margin]":  0.35725463142131209,
+                               "[Status]":  "Pågående"
+                           },
+                           {
+                               "[Job]":  10005,
+                               "[Hours]":  118.82000000000001,
+                               "[Revenue]":  468877,
+                               "[Cost]":  301357,
+                               "[Margin]":  0.35727920115510037,
+                               "[Status]":  "Pågående"
+                           },
+                           {
+                               "[Job]":  10006,
+                               "[Hours]":  135.08,
+                               "[Revenue]":  743132,
+                               "[Cost]":  477679,
+                               "[Margin]":  0.35720840981144669,
+                               "[Status]":  "Pågående"
+                           },
+                           {
+                               "[Job]":  10007,
+                               "[Hours]":  119.33,
+                               "[Revenue]":  579831,
+                               "[Cost]":  372498,
+                               "[Margin]":  0.3575748795769802,
+                               "[Status]":  "Pågående"
+                           },
+                           {
+                               "[Job]":  10008,
+                               "[Hours]":  140,
+                               "[Revenue]":  748500,
+                               "[Cost]":  480848,
+                               "[Margin]":  0.35758450233800937,
+                               "[Status]":  "Pågående"
+                           },
+                           {
+                               "[Job]":  10009,
+                               "[Hours]":  115.02000000000001,
+                               "[Revenue]":  587754,
+                               "[Cost]":  377613,
+                               "[Margin]":  0.35753223287293662,
+                               "[Status]":  "Pågående"
+                           },
+                           {
+                               "[Job]":  10010,
+                               "[Hours]":  125,
+                               "[Revenue]":  92692,
+                               "[Cost]":  59583,
+                               "[Margin]":  0.357193716825616,
+                               "[Status]":  "Pågående"
+                           },
+                           {
+                               "[Job]":  10011,
+                               "[Hours]":  148.32,
+                               "[Revenue]":  138847,
+                               "[Cost]":  89240,
+                               "[Margin]":  0.35727815509157562,
+                               "[Status]":  "Pågående"
+                           }
+                       ],
+                       [
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Trendaxel[Månad]":  "Apr 25",
+                               "[Rate]":  0.82,
+                               "[Color]":  "#CDEEE5"
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Trendaxel[Månad]":  "Aug 25",
+                               "[Rate]":  0.8,
+                               "[Color]":  "#DCEBFA"
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Trendaxel[Månad]":  "Dec 25",
+                               "[Rate]":  0.78,
+                               "[Color]":  "#DCEBFA"
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Trendaxel[Månad]":  "Feb 25",
+                               "[Rate]":  0.8,
+                               "[Color]":  "#DCEBFA"
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Trendaxel[Månad]":  "Jan 25",
+                               "[Rate]":  0.78999999999999992,
+                               "[Color]":  "#DCEBFA"
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Trendaxel[Månad]":  "Jul 25",
+                               "[Rate]":  0.79,
+                               "[Color]":  "#DCEBFA"
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Trendaxel[Månad]":  "Jun 25",
+                               "[Rate]":  0.8,
+                               "[Color]":  "#DCEBFA"
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Trendaxel[Månad]":  "Maj 25",
+                               "[Rate]":  0.81,
+                               "[Color]":  "#DCEBFA"
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Trendaxel[Månad]":  "Mar 25",
+                               "[Rate]":  0.81,
+                               "[Color]":  "#DCEBFA"
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Trendaxel[Månad]":  "Nov 25",
+                               "[Rate]":  0.79,
+                               "[Color]":  "#DCEBFA"
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Trendaxel[Månad]":  "Okt 25",
+                               "[Rate]":  0.8,
+                               "[Color]":  "#DCEBFA"
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Diskpersonal",
+                               "Trendaxel[Månad]":  "Sep 25",
+                               "[Rate]":  0.78999999999999992,
+                               "[Color]":  "#DCEBFA"
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Trendaxel[Månad]":  "Apr 25",
+                               "[Rate]":  0.82,
+                               "[Color]":  "#CDEEE5"
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Trendaxel[Månad]":  "Aug 25",
+                               "[Rate]":  0.8,
+                               "[Color]":  "#DCEBFA"
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Trendaxel[Månad]":  "Dec 25",
+                               "[Rate]":  0.78,
+                               "[Color]":  "#DCEBFA"
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Trendaxel[Månad]":  "Feb 25",
+                               "[Rate]":  0.8,
+                               "[Color]":  "#DCEBFA"
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Trendaxel[Månad]":  "Jan 25",
+                               "[Rate]":  0.79,
+                               "[Color]":  "#DCEBFA"
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Trendaxel[Månad]":  "Jul 25",
+                               "[Rate]":  0.79,
+                               "[Color]":  "#DCEBFA"
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Trendaxel[Månad]":  "Jun 25",
+                               "[Rate]":  0.8,
+                               "[Color]":  "#DCEBFA"
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Trendaxel[Månad]":  "Maj 25",
+                               "[Rate]":  0.81,
+                               "[Color]":  "#DCEBFA"
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Trendaxel[Månad]":  "Mar 25",
+                               "[Rate]":  0.81,
+                               "[Color]":  "#DCEBFA"
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Trendaxel[Månad]":  "Nov 25",
+                               "[Rate]":  0.79,
+                               "[Color]":  "#DCEBFA"
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Trendaxel[Månad]":  "Okt 25",
+                               "[Rate]":  0.8,
+                               "[Color]":  "#DCEBFA"
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Städpersonal",
+                               "Trendaxel[Månad]":  "Sep 25",
+                               "[Rate]":  0.79,
+                               "[Color]":  "#DCEBFA"
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Nord",
+                               "Trendaxel[Månad]":  "Apr 25",
+                               "[Rate]":  0.77,
+                               "[Color]":  "#DCEBFA"
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Nord",
+                               "Trendaxel[Månad]":  "Aug 25",
+                               "[Rate]":  0.80999999999999994,
+                               "[Color]":  "#DCEBFA"
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Nord",
+                               "Trendaxel[Månad]":  "Dec 25",
+                               "[Rate]":  0.83,
+                               "[Color]":  "#CDEEE5"
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Nord",
+                               "Trendaxel[Månad]":  "Feb 25",
+                               "[Rate]":  0.75,
+                               "[Color]":  "#DCEBFA"
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Nord",
+                               "Trendaxel[Månad]":  "Jan 25",
+                               "[Rate]":  0.74,
+                               "[Color]":  "#FAD5D1"
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Nord",
+                               "Trendaxel[Månad]":  "Jul 25",
+                               "[Rate]":  0.801111111111111,
+                               "[Color]":  "#DCEBFA"
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Nord",
+                               "Trendaxel[Månad]":  "Jun 25",
+                               "[Rate]":  0.78999999999999992,
+                               "[Color]":  "#DCEBFA"
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Nord",
+                               "Trendaxel[Månad]":  "Maj 25",
+                               "[Rate]":  0.78,
+                               "[Color]":  "#DCEBFA"
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Nord",
+                               "Trendaxel[Månad]":  "Mar 25",
+                               "[Rate]":  0.76,
+                               "[Color]":  "#DCEBFA"
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Nord",
+                               "Trendaxel[Månad]":  "Nov 25",
+                               "[Rate]":  0.82,
+                               "[Color]":  "#CDEEE5"
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Nord",
+                               "Trendaxel[Månad]":  "Okt 25",
+                               "[Rate]":  0.8,
+                               "[Color]":  "#DCEBFA"
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Nord",
+                               "Trendaxel[Månad]":  "Sep 25",
+                               "[Rate]":  0.82000000000000006,
+                               "[Color]":  "#CDEEE5"
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Syd",
+                               "Trendaxel[Månad]":  "Apr 25",
+                               "[Rate]":  0.77,
+                               "[Color]":  "#DCEBFA"
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Syd",
+                               "Trendaxel[Månad]":  "Aug 25",
+                               "[Rate]":  0.80999999999999994,
+                               "[Color]":  "#DCEBFA"
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Syd",
+                               "Trendaxel[Månad]":  "Dec 25",
+                               "[Rate]":  0.83,
+                               "[Color]":  "#CDEEE5"
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Syd",
+                               "Trendaxel[Månad]":  "Feb 25",
+                               "[Rate]":  0.75,
+                               "[Color]":  "#DCEBFA"
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Syd",
+                               "Trendaxel[Månad]":  "Jan 25",
+                               "[Rate]":  0.74,
+                               "[Color]":  "#FAD5D1"
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Syd",
+                               "Trendaxel[Månad]":  "Jul 25",
+                               "[Rate]":  0.8,
+                               "[Color]":  "#DCEBFA"
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Syd",
+                               "Trendaxel[Månad]":  "Jun 25",
+                               "[Rate]":  0.78999999999999992,
+                               "[Color]":  "#DCEBFA"
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Syd",
+                               "Trendaxel[Månad]":  "Maj 25",
+                               "[Rate]":  0.78,
+                               "[Color]":  "#DCEBFA"
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Syd",
+                               "Trendaxel[Månad]":  "Mar 25",
+                               "[Rate]":  0.76,
+                               "[Color]":  "#DCEBFA"
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Syd",
+                               "Trendaxel[Månad]":  "Nov 25",
+                               "[Rate]":  0.82,
+                               "[Color]":  "#CDEEE5"
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Syd",
+                               "Trendaxel[Månad]":  "Okt 25",
+                               "[Rate]":  0.8,
+                               "[Color]":  "#DCEBFA"
+                           },
+                           {
+                               "Resurser[Resursgrupp]":  "Tekniker Syd",
+                               "Trendaxel[Månad]":  "Sep 25",
+                               "[Rate]":  0.82000000000000006,
+                               "[Color]":  "#CDEEE5"
+                           }
+                       ]
+                   ],
+    "source":  "Actual local Power BI Desktop DAX"
+}

@@ -1,0 +1,13 @@
+EVALUATE
+CALCULATETABLE(
+ ROW("Case","September", "OverviewBudget",[Budgetresultat],"OverviewActual",[Rörelseresultat],"BudgetPageBudget",[Budget resultat bas],"BudgetPageActual",[Budget resultat huvud]),
+ TREATAS({"Månad"},'Periodtyp'[Periodtyp]),TREATAS({"September 2026"},'Månadsval'[Period]),
+ TREATAS({2026},'Budgetår'[År]),TREATAS({9},'Budgetmånader'[Nummer]),TREATAS({1},'Budgetscenarion'[ScenarioID]),TREATAS({1},'Budgetjämförelse'[Ordning]))
+EVALUATE
+CALCULATETABLE(
+ ROW("Case","R12 September", "OverviewBudget",[Budgetresultat],"OverviewActual",[Rörelseresultat],"From",[Periodstart],"To",[Periodslut]),
+ TREATAS({"R12"},'Periodtyp'[Periodtyp]),TREATAS({"September 2026"},'R12val'[Period]))
+EVALUATE
+CALCULATETABLE(
+ ROW("Case","Budget page Jan-Sep", "Budget",[Budget resultat bas],"Actual",[Budget resultat huvud]),
+ TREATAS({2026},'Budgetår'[År]),TREATAS({1,2,3,4,5,6,7,8,9},'Budgetmånader'[Nummer]),TREATAS({1},'Budgetscenarion'[ScenarioID]),TREATAS({1},'Budgetjämförelse'[Ordning]))

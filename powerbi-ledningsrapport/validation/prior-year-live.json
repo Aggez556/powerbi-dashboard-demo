@@ -1,0 +1,224 @@
+﻿{
+    "status":  "queried",
+    "resultSets":  [
+                       [
+                           {
+                               "[ID]":  0,
+                               "[CurrentRevenue]":  8885294,
+                               "[CurrentEBIT]":  591563,
+                               "[CurrentMargin]":  0.27740747801929794,
+                               "[PriorRevenue]":  8343000,
+                               "[PriorEBIT]":  555458,
+                               "[PriorMargin]":  0.27740740740740738
+                           },
+                           {
+                               "[ID]":  1,
+                               "[CurrentRevenue]":  99619207,
+                               "[CurrentEBIT]":  6929433,
+                               "[CurrentMargin]":  0.27800869766008074,
+                               "[PriorRevenue]":  98901000,
+                               "[PriorEBIT]":  6584606,
+                               "[PriorMargin]":  0.27740740740740738
+                           },
+                           {
+                               "[ID]":  2,
+                               "[CurrentRevenue]":  24412994,
+                               "[CurrentEBIT]":  1625363,
+                               "[CurrentMargin]":  0.27740743310713956,
+                               "[PriorRevenue]":  22923000,
+                               "[PriorEBIT]":  1526162,
+                               "[PriorMargin]":  0.27740740740740738
+                           },
+                           {
+                               "[ID]":  3,
+                               "[CurrentRevenue]":  99619207,
+                               "[CurrentEBIT]":  6929433,
+                               "[CurrentMargin]":  0.27800869766008074,
+                               "[PriorRevenue]":  98901000,
+                               "[PriorEBIT]":  6584606,
+                               "[PriorMargin]":  0.27740740740740738
+                           },
+                           {
+                               "[ID]":  4,
+                               "[CurrentRevenue]":  8885294,
+                               "[CurrentEBIT]":  591563,
+                               "[CurrentMargin]":  0.27740747801929794,
+                               "[PriorRevenue]":  8343000,
+                               "[PriorEBIT]":  555458,
+                               "[PriorMargin]":  0.27740740740740738
+                           },
+                           {
+                               "[ID]":  5,
+                               "[CurrentRevenue]":  26483352,
+                               "[CurrentEBIT]":  1763202,
+                               "[CurrentMargin]":  0.27740744449569676,
+                               "[PriorRevenue]":  24867000,
+                               "[PriorEBIT]":  1655589,
+                               "[PriorMargin]":  0.27740740740740738
+                           },
+                           {
+                               "[ID]":  6,
+                               "[CurrentRevenue]":  16735408,
+                               "[CurrentEBIT]":  1114206,
+                               "[CurrentMargin]":  0.2774074584856252,
+                               "[PriorRevenue]":  15714000,
+                               "[PriorEBIT]":  1046203,
+                               "[PriorMargin]":  0.27740740740740738
+                           },
+                           {
+                               "[ID]":  7,
+                               "[CurrentRevenue]":  26483352,
+                               "[CurrentEBIT]":  1763202,
+                               "[CurrentMargin]":  0.27740744449569676,
+                               "[PriorRevenue]":  24867000,
+                               "[PriorEBIT]":  1655589,
+                               "[PriorMargin]":  0.27740740740740738
+                           },
+                           {
+                               "[ID]":  8,
+                               "[CurrentRevenue]":  9814750,
+                               "[CurrentEBIT]":  688341,
+                               "[CurrentMargin]":  0.270133319748338,
+                               "[PriorRevenue]":  8885294,
+                               "[PriorEBIT]":  591563,
+                               "[PriorMargin]":  0.27740747801929794
+                           },
+                           {
+                               "[ID]":  9,
+                               "[CurrentRevenue]":  123557846,
+                               "[CurrentEBIT]":  9415252,
+                               "[CurrentMargin]":  0.27174019365795676,
+                               "[PriorRevenue]":  99619207,
+                               "[PriorEBIT]":  6929433,
+                               "[PriorMargin]":  0.27800869766008074
+                           },
+                           {
+                               "[ID]":  10,
+                               "[CurrentRevenue]":  26508213,
+                               "[CurrentEBIT]":  1867925,
+                               "[CurrentMargin]":  0.27046591182891128,
+                               "[PriorRevenue]":  24412994,
+                               "[PriorEBIT]":  1625363,
+                               "[PriorMargin]":  0.27740743310713956
+                           },
+                           {
+                               "[ID]":  11,
+                               "[CurrentRevenue]":  123557846,
+                               "[CurrentEBIT]":  9415252,
+                               "[CurrentMargin]":  0.27174019365795676,
+                               "[PriorRevenue]":  99619207,
+                               "[PriorEBIT]":  6929433,
+                               "[PriorMargin]":  0.27800869766008074
+                           },
+                           {
+                               "[ID]":  12,
+                               "[CurrentRevenue]":  9814750,
+                               "[CurrentEBIT]":  688341,
+                               "[CurrentMargin]":  0.270133319748338,
+                               "[PriorRevenue]":  8885294,
+                               "[PriorEBIT]":  591563,
+                               "[PriorMargin]":  0.27740747801929794
+                           },
+                           {
+                               "[ID]":  13,
+                               "[CurrentRevenue]":  31541419,
+                               "[CurrentEBIT]":  2219913,
+                               "[CurrentMargin]":  0.27038089186792769,
+                               "[PriorRevenue]":  26483352,
+                               "[PriorEBIT]":  1763202,
+                               "[PriorMargin]":  0.27740744449569676
+                           },
+                           {
+                               "[ID]":  14,
+                               "[CurrentRevenue]":  17867878,
+                               "[CurrentEBIT]":  1276681,
+                               "[CurrentMargin]":  0.27145120422246,
+                               "[PriorRevenue]":  16735408,
+                               "[PriorEBIT]":  1114206,
+                               "[PriorMargin]":  0.2774074584856252
+                           },
+                           {
+                               "[ID]":  15,
+                               "[CurrentRevenue]":  31541419,
+                               "[CurrentEBIT]":  2219913,
+                               "[CurrentMargin]":  0.27038089186792769,
+                               "[PriorRevenue]":  26483352,
+                               "[PriorEBIT]":  1763202,
+                               "[PriorMargin]":  0.27740744449569676
+                           },
+                           {
+                               "[ID]":  16,
+                               "[CurrentRevenue]":  11409647,
+                               "[CurrentEBIT]":  728458,
+                               "[CurrentMargin]":  0.25274506739779068,
+                               "[PriorRevenue]":  9814750,
+                               "[PriorEBIT]":  688341,
+                               "[PriorMargin]":  0.270133319748338
+                           },
+                           {
+                               "[ID]":  17,
+                               "[CurrentRevenue]":  114047711,
+                               "[CurrentEBIT]":  5830056,
+                               "[CurrentMargin]":  0.25717996216513278,
+                               "[PriorRevenue]":  98105557,
+                               "[PriorEBIT]":  7245308,
+                               "[PriorMargin]":  0.27385216313485689
+                           },
+                           {
+                               "[ID]":  18,
+                               "[CurrentRevenue]":  30815799,
+                               "[CurrentEBIT]":  2108584,
+                               "[CurrentMargin]":  0.25368990107963774,
+                               "[PriorRevenue]":  26508213,
+                               "[PriorEBIT]":  1867925,
+                               "[PriorMargin]":  0.27046591182891128
+                           },
+                           {
+                               "[ID]":  19,
+                               "[CurrentRevenue]":  114047711,
+                               "[CurrentEBIT]":  5830056,
+                               "[CurrentMargin]":  0.25717996216513278,
+                               "[PriorRevenue]":  98105557,
+                               "[PriorEBIT]":  7245308,
+                               "[PriorMargin]":  0.27385216313485689
+                           },
+                           {
+                               "[ID]":  20,
+                               "[CurrentRevenue]":  11409647,
+                               "[CurrentEBIT]":  728458,
+                               "[CurrentMargin]":  0.25274506739779068,
+                               "[PriorRevenue]":  9814750,
+                               "[PriorEBIT]":  688341,
+                               "[PriorMargin]":  0.270133319748338
+                           },
+                           {
+                               "[ID]":  21,
+                               "[CurrentRevenue]":  36666899,
+                               "[CurrentEBIT]":  2018441,
+                               "[CurrentMargin]":  0.25339025806354665,
+                               "[PriorRevenue]":  31541419,
+                               "[PriorEBIT]":  2219913,
+                               "[PriorMargin]":  0.27038089186792769
+                           },
+                           {
+                               "[ID]":  22,
+                               "[CurrentRevenue]":  20771408,
+                               "[CurrentEBIT]":  1430116,
+                               "[CurrentMargin]":  0.25466593309418406,
+                               "[PriorRevenue]":  17867878,
+                               "[PriorEBIT]":  1276681,
+                               "[PriorMargin]":  0.27145120422246
+                           },
+                           {
+                               "[ID]":  23,
+                               "[CurrentRevenue]":  36666899,
+                               "[CurrentEBIT]":  2018441,
+                               "[CurrentMargin]":  0.25339025806354665,
+                               "[PriorRevenue]":  31541419,
+                               "[PriorEBIT]":  2219913,
+                               "[PriorMargin]":  0.27038089186792769
+                           }
+                       ]
+                   ],
+    "source":  "Actual local Power BI Desktop DAX"
+}

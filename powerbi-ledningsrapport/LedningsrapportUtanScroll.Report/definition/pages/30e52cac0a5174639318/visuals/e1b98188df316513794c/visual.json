@@ -138,7 +138,7 @@
             "customFormatString": {
               "expr": {
                 "Literal": {
-                  "Value": "'0.0 %'"
+                  "Value": "'#,##0\" h\"'"
                 }
               }
             },
@@ -370,6 +370,19 @@
             }
           }
         }
+      ],
+      "visualTooltip": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "query": {
@@ -384,11 +397,12 @@
                       "Entity": "Planinställning"
                     }
                   },
-                  "Property": "Plan beläggning"
+                  "Property": "Utfall ej debiterbara timmar"
                 }
               },
-              "queryRef": "Planinställning.Plan beläggning",
-              "nativeQueryRef": "Plan beläggning"
+              "queryRef": "Planinställning.Utfall ej debiterbara timmar",
+              "nativeQueryRef": "Utfall ej debiterbara timmar",
+              "displayName": "Utfall ej debiterbara timmar"
             }
           ]
         }

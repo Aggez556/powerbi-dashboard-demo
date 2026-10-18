@@ -1,0 +1,31 @@
+﻿{
+    "status":  "queried",
+    "resultSets":  [
+                       [
+                           {
+                               "[Case]":  "September",
+                               "[OverviewBudget]":  1110975,
+                               "[OverviewActual]":  588325,
+                               "[BudgetPageBudget]":  1110975,
+                               "[BudgetPageActual]":  588325
+                           }
+                       ],
+                       [
+                           {
+                               "[Case]":  "R12 September",
+                               "[OverviewBudget]":  9750000,
+                               "[OverviewActual]":  8000000,
+                               "[From]":  "\/Date(1759269600000)\/",
+                               "[To]":  "\/Date(1790719200000)\/"
+                           }
+                       ],
+                       [
+                           {
+                               "[Case]":  "Budget page Jan-Sep",
+                               "[Budget]":  7971076,
+                               "[Actual]":  5830056
+                           }
+                       ]
+                   ],
+    "source":  "Actual local Power BI Desktop DAX"
+}

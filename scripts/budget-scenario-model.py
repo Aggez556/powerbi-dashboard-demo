@@ -86,22 +86,23 @@ VAR _acc=SELECTEDVALUE('Budgetvisning'[Ordning],1)=2
 VAR _months=FILTER(VALUES('Budgetmånader'[Nummer]),'Budgetmånader'[Nummer]<=_limit && (_column=13 || IF(_acc,'Budgetmånader'[Nummer]<=_column,'Budgetmånader'[Nummer]=_column)))
 VAR _keys=SELECTCOLUMNS(_months,"MonthKey",_year*100+'Budgetmånader'[Nummer])"""
 baseActual="""VAR _k=SELECTEDVALUE('Budgetkonton'[KontoID])
-RETURN SUMX(_keys,VAR _date=[MonthKey]*100+15
-VAR _admin=CALCULATE(SUM('Gemensamma kostnader'[Belopp]),REMOVEFILTERS('Datum'),REMOVEFILTERS('Gemensamma kostnader'[Kostnadstyp]),TREATAS({_date},'Gemensamma kostnader'[Datumnyckel]),'Gemensamma kostnader'[Kostnadstyp]="Administration")
+RETURN SUMX(_keys,VAR _date=[MonthKey]*100+1
+VAR _last=[MonthKey]*100+DAY(EOMONTH(DATE(_year,MOD([MonthKey],100),1),0))
+VAR _admin=CALCULATE(SUM('Gemensamma kostnader'[Belopp]),REMOVEFILTERS('Datum'),REMOVEFILTERS('Gemensamma kostnader'[Kostnadstyp]),'Gemensamma kostnader'[Datumnyckel]>=_date,'Gemensamma kostnader'[Datumnyckel]<=_last,'Gemensamma kostnader'[Kostnadstyp]="Administration")
 RETURN SWITCH(_k,
-1001,CALCULATE(SUM('Försäljning'[Nettointäkt]),TREATAS({_date},'Försäljning'[Datumnyckel]),'Försäljning'[Områdesnyckel]=1),
-1002,CALCULATE(SUM('Försäljning'[Nettointäkt]),TREATAS({_date},'Försäljning'[Datumnyckel]),'Försäljning'[Områdesnyckel]=2),
-1003,CALCULATE(SUM('Försäljning'[Nettointäkt]),TREATAS({_date},'Försäljning'[Datumnyckel]),'Försäljning'[Områdesnyckel]=3),
-2001,-CALCULATE(SUM('Direkta kostnader'[Belopp]),TREATAS({_date},'Direkta kostnader'[Datumnyckel]),'Direkta kostnader'[Kostnadstyp]="Varukostnad"),
-2002,-CALCULATE(SUM('Direkta kostnader'[Belopp]),TREATAS({_date},'Direkta kostnader'[Datumnyckel]),'Direkta kostnader'[Kostnadstyp]="Direkt leveranspersonal"),
-2003,-CALCULATE(SUM('Direkta kostnader'[Belopp]),TREATAS({_date},'Direkta kostnader'[Datumnyckel]),'Direkta kostnader'[Kostnadstyp]="Underleverantörer"),
-2004,-CALCULATE(SUM('Direkta kostnader'[Belopp]),TREATAS({_date},'Direkta kostnader'[Datumnyckel]),'Direkta kostnader'[Kostnadstyp]="Övrigt direkt"),
-2005,-CALCULATE(SUM('Direkta kostnader'[Belopp]),TREATAS({_date},'Direkta kostnader'[Datumnyckel]),'Direkta kostnader'[Kostnadstyp]="Ej uppdragsfördelad personal"),
+1001,CALCULATE(SUM('Försäljning'[Nettointäkt]),'Försäljning'[Datumnyckel]>=_date,'Försäljning'[Datumnyckel]<=_last,'Försäljning'[Områdesnyckel]=1),
+1002,CALCULATE(SUM('Försäljning'[Nettointäkt]),'Försäljning'[Datumnyckel]>=_date,'Försäljning'[Datumnyckel]<=_last,'Försäljning'[Områdesnyckel]=2),
+1003,CALCULATE(SUM('Försäljning'[Nettointäkt]),'Försäljning'[Datumnyckel]>=_date,'Försäljning'[Datumnyckel]<=_last,'Försäljning'[Områdesnyckel]=3),
+2001,-CALCULATE(SUM('Direkta kostnader'[Belopp]),'Direkta kostnader'[Datumnyckel]>=_date,'Direkta kostnader'[Datumnyckel]<=_last,'Direkta kostnader'[Kostnadstyp]="Varukostnad"),
+2002,-CALCULATE(SUM('Direkta kostnader'[Belopp]),'Direkta kostnader'[Datumnyckel]>=_date,'Direkta kostnader'[Datumnyckel]<=_last,'Direkta kostnader'[Kostnadstyp]="Direkt leveranspersonal"),
+2003,-CALCULATE(SUM('Direkta kostnader'[Belopp]),'Direkta kostnader'[Datumnyckel]>=_date,'Direkta kostnader'[Datumnyckel]<=_last,'Direkta kostnader'[Kostnadstyp]="Underleverantörer"),
+2004,-CALCULATE(SUM('Direkta kostnader'[Belopp]),'Direkta kostnader'[Datumnyckel]>=_date,'Direkta kostnader'[Datumnyckel]<=_last,'Direkta kostnader'[Kostnadstyp]="Övrigt direkt"),
+2005,-CALCULATE(SUM('Direkta kostnader'[Belopp]),'Direkta kostnader'[Datumnyckel]>=_date,'Direkta kostnader'[Datumnyckel]<=_last,'Direkta kostnader'[Kostnadstyp]="Ej uppdragsfördelad personal"),
 3001,-ROUND(_admin*.6,0),
-4001,-CALCULATE(SUM('Gemensamma kostnader'[Belopp]),TREATAS({_date},'Gemensamma kostnader'[Datumnyckel]),'Gemensamma kostnader'[Kostnadstyp]="Lokaler och drift"),
+4001,-CALCULATE(SUM('Gemensamma kostnader'[Belopp]),'Gemensamma kostnader'[Datumnyckel]>=_date,'Gemensamma kostnader'[Datumnyckel]<=_last,'Gemensamma kostnader'[Kostnadstyp]="Lokaler och drift"),
 4002,-ROUND(_admin*.10,0),4003,-ROUND(_admin*.06,0),4004,-ROUND(_admin*.04,0),4005,-ROUND(_admin*.08,0),
 4006,-(_admin-ROUND(_admin*.6,0)-ROUND(_admin*.10,0)-ROUND(_admin*.06,0)-ROUND(_admin*.04,0)-ROUND(_admin*.08,0)),
-5001,-CALCULATE(SUM('Gemensamma kostnader'[Belopp]),TREATAS({_date},'Gemensamma kostnader'[Datumnyckel]),'Gemensamma kostnader'[Kostnadstyp]="Avskrivningar")))"""
+5001,-CALCULATE(SUM('Gemensamma kostnader'[Belopp]),'Gemensamma kostnader'[Datumnyckel]>=_date,'Gemensamma kostnader'[Datumnyckel]<=_last,'Gemensamma kostnader'[Kostnadstyp]="Avskrivningar")))"""
 # Context transition inside the account iterator is explicit; existing report selectors cannot change company totals here.
 add('RR utfall en post',keyvars+'\n'+baseActual,'#,##0',True)
 add('RR utfall konton',"CALCULATE(SUMX(VALUES('Budgetkonton'[KontoID]),[RR utfall en post]),REMOVEFILTERS('Datum'),REMOVEFILTERS('Områden'),REMOVEFILTERS('Kunder'),REMOVEFILTERS('Artiklar'))",'#,##0',True)

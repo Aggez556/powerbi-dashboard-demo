@@ -1,0 +1,8 @@
+EVALUATE
+UNION(
+ CALCULATETABLE(ROW("Area",2,"Period","R12 2026-09","Rate",DIVIDE([Timintäkt bas],[Debiterade timmar bas])), 'Försäljning'[Områdesnyckel]=2,'Försäljning'[Datumnyckel]>=20251001,'Försäljning'[Datumnyckel]<=20260930),
+ CALCULATETABLE(ROW("Area",2,"Period","Previous R12","Rate",DIVIDE([Timintäkt bas],[Debiterade timmar bas])), 'Försäljning'[Områdesnyckel]=2,'Försäljning'[Datumnyckel]>=20241001,'Försäljning'[Datumnyckel]<=20250930),
+ CALCULATETABLE(ROW("Area",3,"Period","R12 2026-09","Rate",DIVIDE([Timintäkt bas],[Debiterade timmar bas])), 'Försäljning'[Områdesnyckel]=3,'Försäljning'[Datumnyckel]>=20251001,'Försäljning'[Datumnyckel]<=20260930),
+ CALCULATETABLE(ROW("Area",3,"Period","Previous R12","Rate",DIVIDE([Timintäkt bas],[Debiterade timmar bas])), 'Försäljning'[Områdesnyckel]=3,'Försäljning'[Datumnyckel]>=20241001,'Försäljning'[Datumnyckel]<=20250930)
+)
+ORDER BY [Area],[Period]

@@ -43,57 +43,85 @@ table Uppdragsregister
 
 	column Startdatum
 		dataType: dateTime
+		formatString: Long Date
 		lineageTag: 98f2a8ef-aa53-48ff-b783-7a4b0610bf1e
 		summarizeBy: none
 		sourceColumn: Startdatum
 
+		variation Variation
+			isDefault
+			relationship: d9c1cc5f-6bdc-4603-bee1-ba0abff71eff
+			defaultHierarchy: LocalDateTable_6b24c84b-193f-4dec-8fd5-c15f62aa2d3f.Datumhierarki
+
+		annotation UnderlyingDateTimeDataType = Date
+
 	column Slutdatum
 		dataType: dateTime
+		formatString: Long Date
 		lineageTag: 72a5e060-5683-4449-b36e-63701e5eeb0a
 		summarizeBy: none
 		sourceColumn: Slutdatum
+
+		variation Variation
+			isDefault
+			relationship: 1c4cdc58-b1d8-4742-8b30-5de5afb717a2
+			defaultHierarchy: LocalDateTable_6f18f9cc-fe19-4604-ad8f-86a5ba27e3ec.Datumhierarki
+
+		annotation UnderlyingDateTimeDataType = Date
 
 	column Slutförd
 		dataType: int64
 		isHidden
 		lineageTag: 2ee2759d-2478-4828-a6fb-04689d1357d4
-		summarizeBy: none
+		summarizeBy: sum
 		sourceColumn: Slutförd
+
+		annotation SummarizationSetBy = Automatic
 
 	column PlaneradeTimmar
 		dataType: double
 		isHidden
 		lineageTag: 9e3c2622-cc63-4e72-85d8-be903a77ff86
-		summarizeBy: none
+		summarizeBy: sum
 		sourceColumn: PlaneradeTimmar
+
+		annotation SummarizationSetBy = Automatic
 
 	column Kalkylmarginal
 		dataType: double
 		isHidden
 		lineageTag: 42827a2c-14a1-4816-84e8-2ce6ad5cb23c
-		summarizeBy: none
+		summarizeBy: sum
 		sourceColumn: Kalkylmarginal
+
+		annotation SummarizationSetBy = Automatic
 
 	column Slutintäkt
 		dataType: double
 		isHidden
 		lineageTag: 9d420a86-6cd0-449f-9660-1f4fc00ca4d2
-		summarizeBy: none
+		summarizeBy: sum
 		sourceColumn: Slutintäkt
+
+		annotation SummarizationSetBy = Automatic
 
 	column KostnadHittills
 		dataType: double
 		isHidden
 		lineageTag: fecb4d57-65bd-4515-a8a4-1afb967b57c7
-		summarizeBy: none
+		summarizeBy: sum
 		sourceColumn: KostnadHittills
+
+		annotation SummarizationSetBy = Automatic
 
 	column ÅterståendeKostnad
 		dataType: double
 		isHidden
 		lineageTag: 9473ffac-be8f-4827-9c91-bafae4d753dc
-		summarizeBy: none
+		summarizeBy: sum
 		sourceColumn: ÅterståendeKostnad
+
+		annotation SummarizationSetBy = Automatic
 
 	column Ansvarig
 		dataType: string

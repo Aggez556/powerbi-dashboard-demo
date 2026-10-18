@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "monthlyIndustryCases": 221,
+  "periodIndustrySelections": 6,
+  "customerDimensionMatchesCSV": false,
+  "reference": "Independent CSV fact aggregation using the current imported customer-industry mapping; existing imported data was not changed.",
+  "checks": [
+    "monthly same-month prior-year comparison",
+    "single-month view contains one month",
+    "single and multiple industry selections",
+    "raw signed kronor and percentage values",
+    "future/outside-period points excluded",
+    "independent dynamic bounds contain zero and all points with tight padding"
+  ]
+}

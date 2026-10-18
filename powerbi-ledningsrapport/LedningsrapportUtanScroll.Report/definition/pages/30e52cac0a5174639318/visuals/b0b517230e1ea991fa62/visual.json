@@ -2,9 +2,9 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
   "name": "b0b517230e1ea991fa62",
   "position": {
-    "x": 1256,
+    "x": 1216,
     "y": 416,
-    "width": 628,
+    "width": 668,
     "height": 36,
     "z": 146,
     "tabOrder": 146
@@ -17,17 +17,17 @@
           "properties": {
             "paragraphs": [
               {
+                "horizontalTextAlignment": "left",
                 "textRuns": [
                   {
-                    "value": "Beläggning per resursgrupp",
+                    "value": "Debiteringsgrad per resursgrupp",
                     "textStyle": {
                       "fontFamily": "Segoe UI Semibold",
                       "fontSize": "18pt",
                       "color": "#0F3163"
                     }
                   }
-                ],
-                "horizontalTextAlignment": "left"
+                ]
               }
             ]
           }

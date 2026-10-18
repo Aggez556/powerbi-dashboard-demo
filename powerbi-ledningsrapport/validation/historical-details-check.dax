@@ -1,0 +1,9 @@
+EVALUATE
+CALCULATETABLE(
+ ROW("NonbillableCaption",[Ej debiterbart jämförelse],"OverrunCaption",[Tidskalkyl jämförelse],"TrendCaption",[Historisk trendtext],"TimeCaption",[Historisk tidsrubrik],"MatrixCaption",[Historisk heatrubrik],"TableCaption",[Historisk tabellrubrik],"TimeSummary",[Tid summering]),
+ TREATAS({"Helår"},'Periodtyp'[Periodtyp]),TREATAS({"2025"},'Helårsval'[Period]))
+EVALUATE
+CALCULATETABLE(
+ FILTER(SUMMARIZECOLUMNS('Trendaxel'[Månadsstart],"Billable",[Tid debiterbar trend],"Rate",[Historisk cellgrad]),NOT ISBLANK([Billable])),
+ TREATAS({"Helår"},'Periodtyp'[Periodtyp]),TREATAS({"2025"},'Helårsval'[Period]))
+ORDER BY 'Trendaxel'[Månadsstart]

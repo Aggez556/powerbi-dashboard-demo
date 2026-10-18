@@ -71,7 +71,7 @@ try:
 finally:workbook.write_bytes(original)
 assert read_budget()==budget
 report=BASE/os.environ.get('PBI_BUDGET_REPORT','LedningsrapportUtanScroll.Report');metadata=json.loads((report/'definition/pages/pages.json').read_text(encoding='utf-8-sig'))
-assert len(metadata['pageOrder'])==(7 if (BASE/'Ledningsrapport.SemanticModel/definition/tables/Planinställning.tmdl').exists() else 5)
+assert len(metadata['pageOrder'])==(6 if (DATA/'Tidsanvändning.csv').exists() else 7 if (BASE/'Ledningsrapport.SemanticModel/definition/tables/Planinställning.tmdl').exists() else 5)
 page_id=json.loads((BASE/'validation/budget-page-manifest.json').read_text(encoding='utf-8'))['page']
 page=report/'definition/pages'/page_id
 visuals=[json.loads(p.read_text(encoding='utf-8-sig')) for p in page.glob('visuals/*/visual.json')]

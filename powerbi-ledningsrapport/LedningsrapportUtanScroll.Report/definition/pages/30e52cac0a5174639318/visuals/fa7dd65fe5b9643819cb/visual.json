@@ -3,10 +3,10 @@
   "name": "fa7dd65fe5b9643819cb",
   "position": {
     "x": 304,
-    "y": 496,
+    "y": 536,
     "z": 148,
-    "height": 308,
-    "width": 428,
+    "height": 268,
+    "width": 388,
     "tabOrder": 148
   },
   "visual": {
@@ -23,44 +23,13 @@
                       "Entity": "Trendaxel"
                     }
                   },
-                  "Property": "Månad"
+                  "Property": "Månadsstart"
                 }
               },
-              "queryRef": "Trendaxel.Månad",
+              "queryRef": "Trendaxel.Månadsstart",
               "nativeQueryRef": "Månad",
-              "active": true
-            }
-          ]
-        },
-        "Tooltips": {
-          "projections": [
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Planinställning"
-                    }
-                  },
-                  "Property": "Trend timmar"
-                }
-              },
-              "queryRef": "Planinställning.Trend timmar",
-              "nativeQueryRef": "Trend timmar"
-            },
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Planinställning"
-                    }
-                  },
-                  "Property": "Trend kapacitet"
-                }
-              },
-              "queryRef": "Planinställning.Trend kapacitet",
-              "nativeQueryRef": "Trend kapacitet"
+              "active": true,
+              "displayName": "Månad"
             }
           ]
         },
@@ -78,7 +47,7 @@
                 }
               },
               "queryRef": "Planinställning.Trend teknisk",
-              "nativeQueryRef": "Trend teknisk",
+              "nativeQueryRef": "Teknisk service",
               "displayName": "Teknisk service"
             },
             {
@@ -93,7 +62,7 @@
                 }
               },
               "queryRef": "Planinställning.Trend bemanning",
-              "nativeQueryRef": "Trend bemanning",
+              "nativeQueryRef": "Bemanning",
               "displayName": "Bemanning"
             },
             {
@@ -108,23 +77,8 @@
                 }
               },
               "queryRef": "Planinställning.Trend mål",
-              "nativeQueryRef": "Trend mål",
-              "displayName": "Mål 82 %"
-            },
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Planinställning"
-                    }
-                  },
-                  "Property": "Trend vald månad"
-                }
-              },
-              "queryRef": "Planinställning.Trend vald månad",
-              "nativeQueryRef": "Trend vald månad",
-              "displayName": "Vald månad"
+              "nativeQueryRef": "Mål",
+              "displayName": "Mål"
             }
           ]
         }
@@ -139,7 +93,7 @@
                     "Entity": "Trendaxel"
                   }
                 },
-                "Property": "Månad"
+                "Property": "Månadsstart"
               }
             },
             "direction": "Ascending"
@@ -180,6 +134,13 @@
                       "Value": "'#5B6B80'"
                     }
                   }
+                }
+              }
+            },
+            "axisType": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Categorical'"
                 }
               }
             }
@@ -268,32 +229,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "position": {
-              "expr": {
-                "Literal": {
-                  "Value": "'TopRight'"
-                }
-              }
-            },
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "10D"
-                }
-              }
-            },
-            "labelColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#5B6B80'"
-                    }
-                  }
+                  "Value": "false"
                 }
               }
             }
@@ -354,24 +290,6 @@
           "selector": {
             "metadata": "Planinställning.Trend mål"
           }
-        },
-        {
-          "properties": {
-            "fill": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#9B570B'"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "Planinställning.Trend vald månad"
-          }
         }
       ],
       "lineStyles": [
@@ -419,34 +337,6 @@
           },
           "selector": {
             "metadata": "Planinställning.Trend mål"
-          }
-        },
-        {
-          "properties": {
-            "strokeWidth": {
-              "expr": {
-                "Literal": {
-                  "Value": "0D"
-                }
-              }
-            },
-            "showMarker": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "markerSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "9D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "Planinställning.Trend vald månad"
           }
         }
       ],
@@ -633,6 +523,80 @@
               "expr": {
                 "Literal": {
                   "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "visualTooltip": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "type": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Default'"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Segoe UI'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "11D"
+                }
+              }
+            },
+            "titleFontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#5B6B80'"
+                    }
+                  }
+                }
+              }
+            },
+            "valueFontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#0F3163'"
+                    }
+                  }
+                }
+              }
+            },
+            "background": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#FFFFFF'"
+                    }
+                  }
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
                 }
               }
             }

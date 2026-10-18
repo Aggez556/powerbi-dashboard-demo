@@ -59,3 +59,5 @@ if 'ref table Budgetrapportnoder' not in s:s+='\nref table Budgetrapportnoder\n'
 p.write_text(s,encoding='utf-8')
 (BASE/'validation/budget-statement-model.json').write_text(json.dumps({'nodes':len(nodes),'rootRows':len(tops),'expandableNodes':[n[0] for n in nodes if n[10]],'calculatedNodes':[n[0] for n in nodes if n[8] in ['resultat','marginal']],'financialAmountsInNodeTable':False,'measures':list(measures)},indent=2)+'\n',encoding='utf-8')
 print('Created',len(nodes),'presentation nodes and 3 measures; existing amounts and measures unchanged.')
+import runpy
+runpy.run_path(str(Path(__file__).with_name('budget-variance.py')))

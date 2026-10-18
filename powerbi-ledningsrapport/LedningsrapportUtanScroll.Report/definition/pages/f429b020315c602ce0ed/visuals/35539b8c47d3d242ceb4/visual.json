@@ -337,6 +337,19 @@
             }
           }
         }
+      ],
+      "visualTooltip": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "query": {
@@ -351,11 +364,11 @@
                       "Entity": "Försäljning"
                     }
                   },
-                  "Property": "Kunder revenue churn"
+                  "Property": "Kunder befintlig tillväxt"
                 }
               },
-              "queryRef": "Försäljning.Kunder revenue churn",
-              "nativeQueryRef": "Kunder revenue churn"
+              "queryRef": "Försäljning.Kunder befintlig tillväxt",
+              "nativeQueryRef": "Kunder befintlig tillväxt"
             }
           ]
         }

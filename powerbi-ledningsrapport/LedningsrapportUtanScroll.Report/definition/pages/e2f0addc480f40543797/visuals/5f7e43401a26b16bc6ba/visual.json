@@ -22,7 +22,7 @@
                     "value": "● ",
                     "textStyle": {
                       "fontFamily": "Segoe UI",
-                      "fontSize": "13.75pt",
+                      "fontSize": "11pt",
                       "color": "#0F3163"
                     }
                   },
@@ -30,7 +30,7 @@
                     "value": "Teknisk service   ",
                     "textStyle": {
                       "fontFamily": "Segoe UI",
-                      "fontSize": "13.75pt",
+                      "fontSize": "11pt",
                       "color": "#5B6B80"
                     }
                   },
@@ -38,7 +38,7 @@
                     "value": "● ",
                     "textStyle": {
                       "fontFamily": "Segoe UI",
-                      "fontSize": "13.75pt",
+                      "fontSize": "11pt",
                       "color": "#007956"
                     }
                   },
@@ -46,7 +46,7 @@
                     "value": "Bemanning",
                     "textStyle": {
                       "fontFamily": "Segoe UI",
-                      "fontSize": "13.75pt",
+                      "fontSize": "11pt",
                       "color": "#5B6B80"
                     }
                   }

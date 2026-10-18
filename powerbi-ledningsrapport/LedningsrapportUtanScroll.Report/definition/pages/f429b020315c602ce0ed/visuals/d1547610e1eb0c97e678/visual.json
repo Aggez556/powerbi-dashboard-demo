@@ -1,12 +1,12 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
   "name": "d1547610e1eb0c97e678",
   "position": {
     "x": 880,
     "y": 48,
-    "width": 92,
-    "height": 48,
     "z": 110,
+    "height": 48,
+    "width": 92,
     "tabOrder": 110
   },
   "visual": {
@@ -25,9 +25,6 @@
           }
         },
         {
-          "selector": {
-            "id": "default"
-          },
           "properties": {
             "text": {
               "expr": {
@@ -82,12 +79,12 @@
                 }
               }
             }
+          },
+          "selector": {
+            "id": "default"
           }
         },
         {
-          "selector": {
-            "id": "hover"
-          },
           "properties": {
             "fontColor": {
               "solid": {
@@ -128,6 +125,9 @@
                 }
               }
             }
+          },
+          "selector": {
+            "id": "hover"
           }
         }
       ],
@@ -144,9 +144,6 @@
           }
         },
         {
-          "selector": {
-            "id": "default"
-          },
           "properties": {
             "fillColor": {
               "solid": {
@@ -166,12 +163,12 @@
                 }
               }
             }
+          },
+          "selector": {
+            "id": "default"
           }
         },
         {
-          "selector": {
-            "id": "hover"
-          },
           "properties": {
             "fillColor": {
               "solid": {
@@ -191,6 +188,9 @@
                 }
               }
             }
+          },
+          "selector": {
+            "id": "hover"
           }
         }
       ],
@@ -445,5 +445,6 @@
       ]
     }
   },
+  "isHidden": true,
   "howCreated": "InsertVisualButton"
 }

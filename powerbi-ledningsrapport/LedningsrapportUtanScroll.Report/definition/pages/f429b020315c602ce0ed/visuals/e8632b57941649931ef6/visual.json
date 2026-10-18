@@ -32,23 +32,6 @@
             }
           ]
         }
-      },
-      "sortDefinition": {
-        "sort": [
-          {
-            "field": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "R12val"
-                  }
-                },
-                "Property": "Period"
-              }
-            },
-            "direction": "Ascending"
-          }
-        ]
       }
     },
     "objects": {
@@ -106,13 +89,6 @@
       "selection": [
         {
           "properties": {
-            "strictSingleSelect": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
             "singleSelect": {
               "expr": {
                 "Literal": {
@@ -353,5 +329,6 @@
         }
       ]
     }
-  }
+  },
+  "isHidden": true
 }

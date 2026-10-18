@@ -1,16 +1,38 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
   "name": "e713694d7071651efc28",
   "position": {
     "x": 1126,
     "y": 856,
-    "width": 750,
-    "height": 42,
     "z": 162,
+    "height": 42,
+    "width": 750,
     "tabOrder": 162
   },
   "visual": {
     "visualType": "advancedSlicerVisual",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Kundstatusval"
+                    }
+                  },
+                  "Property": "Status"
+                }
+              },
+              "queryRef": "Kundstatusval.Status",
+              "nativeQueryRef": "Status"
+            }
+          ]
+        }
+      }
+    },
     "objects": {
       "general": [
         {
@@ -20,7 +42,7 @@
                 "Version": 2,
                 "From": [
                   {
-                    "Name": "s",
+                    "Name": "k",
                     "Entity": "Kundstatusval",
                     "Type": 0
                   }
@@ -34,7 +56,7 @@
                             "Column": {
                               "Expression": {
                                 "SourceRef": {
-                                  "Source": "s"
+                                  "Source": "k"
                                 }
                               },
                               "Property": "Status"
@@ -45,7 +67,7 @@
                           [
                             {
                               "Literal": {
-                                "Value": "'Alla'"
+                                "Value": "'Helt nya'"
                               }
                             }
                           ]
@@ -136,9 +158,6 @@
       ],
       "value": [
         {
-          "selector": {
-            "id": "default"
-          },
           "properties": {
             "fontSize": {
               "expr": {
@@ -172,12 +191,12 @@
                 }
               }
             }
+          },
+          "selector": {
+            "id": "default"
           }
         },
         {
-          "selector": {
-            "id": "selected"
-          },
           "properties": {
             "fontColor": {
               "solid": {
@@ -218,6 +237,9 @@
                 }
               }
             }
+          },
+          "selector": {
+            "id": "selected"
           }
         }
       ],
@@ -234,9 +256,6 @@
           }
         },
         {
-          "selector": {
-            "id": "default"
-          },
           "properties": {
             "fillColor": {
               "solid": {
@@ -249,12 +268,12 @@
                 }
               }
             }
+          },
+          "selector": {
+            "id": "default"
           }
         },
         {
-          "selector": {
-            "id": "selected"
-          },
           "properties": {
             "fillColor": {
               "solid": {
@@ -267,6 +286,9 @@
                 }
               }
             }
+          },
+          "selector": {
+            "id": "selected"
           }
         }
       ],
@@ -459,28 +481,6 @@
           }
         }
       ]
-    },
-    "query": {
-      "queryState": {
-        "Values": {
-          "projections": [
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Kundstatusval"
-                    }
-                  },
-                  "Property": "Status"
-                }
-              },
-              "queryRef": "Kundstatusval.Status",
-              "nativeQueryRef": "Status"
-            }
-          ]
-        }
-      }
     }
   }
 }

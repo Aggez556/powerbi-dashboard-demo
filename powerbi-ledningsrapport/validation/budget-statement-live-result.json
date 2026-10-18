@@ -161,7 +161,7 @@
                                "[Metric]":  "Avvikelse",
                                "[Slot]":  3,
                                "[Amount]":  2238.045,
-                               "[Text]":  "+2 238",
+                               "[Text]":  "+5,3 %",
                                "[Color]":  "#007956"
                            },
                            {
@@ -323,7 +323,7 @@
                                "[Metric]":  "Avvikelse",
                                "[Slot]":  3,
                                "[Amount]":  1363.683,
-                               "[Text]":  "+1 364",
+                               "[Text]":  "+5,3 %",
                                "[Color]":  "#007956"
                            },
                            {
@@ -485,7 +485,7 @@
                                "[Metric]":  "Avvikelse",
                                "[Slot]":  3,
                                "[Amount]":  481.3,
-                               "[Text]":  "+481",
+                               "[Text]":  "+5,3 %",
                                "[Color]":  "#007956"
                            },
                            {
@@ -647,7 +647,7 @@
                                "[Metric]":  "Avvikelse",
                                "[Slot]":  3,
                                "[Amount]":  393.062,
-                               "[Text]":  "+393",
+                               "[Text]":  "+5,3 %",
                                "[Color]":  "#007956"
                            },
                            {
@@ -809,7 +809,7 @@
                                "[Metric]":  "Avvikelse",
                                "[Slot]":  3,
                                "[Amount]":  -2002.649,
-                               "[Text]":  "−2 003",
+                               "[Text]":  "−6,4 %",
                                "[Color]":  "#B42318"
                            },
                            {
@@ -971,7 +971,7 @@
                                "[Metric]":  "Avvikelse",
                                "[Slot]":  3,
                                "[Amount]":  -1039.053,
-                               "[Text]":  "−1 039",
+                               "[Text]":  "−6,4 %",
                                "[Color]":  "#B42318"
                            },
                            {
@@ -1133,7 +1133,7 @@
                                "[Metric]":  "Avvikelse",
                                "[Slot]":  3,
                                "[Amount]":  -641.537,
-                               "[Text]":  "−642",
+                               "[Text]":  "−6,4 %",
                                "[Color]":  "#B42318"
                            },
                            {
@@ -1295,7 +1295,7 @@
                                "[Metric]":  "Avvikelse",
                                "[Slot]":  3,
                                "[Amount]":  -136.583,
-                               "[Text]":  "−137",
+                               "[Text]":  "−6,4 %",
                                "[Color]":  "#B42318"
                            },
                            {
@@ -1457,7 +1457,7 @@
                                "[Metric]":  "Avvikelse",
                                "[Slot]":  3,
                                "[Amount]":  -99.869,
-                               "[Text]":  "−100",
+                               "[Text]":  "−6,4 %",
                                "[Color]":  "#B42318"
                            },
                            {
@@ -1619,7 +1619,7 @@
                                "[Metric]":  "Avvikelse",
                                "[Slot]":  3,
                                "[Amount]":  -85.607,
-                               "[Text]":  "−86",
+                               "[Text]":  "−6,4 %",
                                "[Color]":  "#B42318"
                            },
                            {
@@ -1781,7 +1781,7 @@
                                "[Metric]":  "Avvikelse",
                                "[Slot]":  3,
                                "[Amount]":  235.396,
-                               "[Text]":  "+235",
+                               "[Text]":  "+2,1 %",
                                "[Color]":  "#007956"
                            },
                            {
@@ -2105,7 +2105,7 @@
                                "[Metric]":  "Avvikelse",
                                "[Slot]":  3,
                                "[Amount]":  -704.278,
-                               "[Text]":  "−704",
+                               "[Text]":  "−20,3 %",
                                "[Color]":  "#B42318"
                            },
                            {
@@ -2267,7 +2267,7 @@
                                "[Metric]":  "Avvikelse",
                                "[Slot]":  3,
                                "[Amount]":  -704.278,
-                               "[Text]":  "−704",
+                               "[Text]":  "−20,3 %",
                                "[Color]":  "#B42318"
                            },
                            {
@@ -2429,7 +2429,7 @@
                                "[Metric]":  "Avvikelse",
                                "[Slot]":  3,
                                "[Amount]":  -828.178,
-                               "[Text]":  "−828",
+                               "[Text]":  "−20,3 %",
                                "[Color]":  "#B42318"
                            },
                            {
@@ -2591,7 +2591,7 @@
                                "[Metric]":  "Avvikelse",
                                "[Slot]":  3,
                                "[Amount]":  -358.659,
-                               "[Text]":  "−359",
+                               "[Text]":  "−20,3 %",
                                "[Color]":  "#B42318"
                            },
                            {
@@ -2753,7 +2753,7 @@
                                "[Metric]":  "Avvikelse",
                                "[Slot]":  3,
                                "[Amount]":  -234.76,
-                               "[Text]":  "−235",
+                               "[Text]":  "−20,3 %",
                                "[Color]":  "#B42318"
                            },
                            {
@@ -2915,7 +2915,7 @@
                                "[Metric]":  "Avvikelse",
                                "[Slot]":  3,
                                "[Amount]":  -117.379,
-                               "[Text]":  "−117",
+                               "[Text]":  "−20,3 %",
                                "[Color]":  "#B42318"
                            },
                            {
@@ -3077,7 +3077,7 @@
                                "[Metric]":  "Avvikelse",
                                "[Slot]":  3,
                                "[Amount]":  -70.428,
-                               "[Text]":  "−70",
+                               "[Text]":  "−20,3 %",
                                "[Color]":  "#B42318"
                            },
                            {
@@ -3239,7 +3239,7 @@
                                "[Metric]":  "Avvikelse",
                                "[Slot]":  3,
                                "[Amount]":  -46.953,
-                               "[Text]":  "−47",
+                               "[Text]":  "−20,3 %",
                                "[Color]":  "#B42318"
                            },
                            {
@@ -3401,7 +3401,7 @@
                                "[Metric]":  "Avvikelse",
                                "[Slot]":  3,
                                "[Amount]":  -93.903,
-                               "[Text]":  "−94",
+                               "[Text]":  "−20,3 %",
                                "[Color]":  "#B42318"
                            },
                            {
@@ -3563,7 +3563,7 @@
                                "[Metric]":  "Avvikelse",
                                "[Slot]":  3,
                                "[Amount]":  -140.856,
-                               "[Text]":  "−141",
+                               "[Text]":  "−20,3 %",
                                "[Color]":  "#B42318"
                            },
                            {
@@ -3725,7 +3725,7 @@
                                "[Metric]":  "Avvikelse",
                                "[Slot]":  3,
                                "[Amount]":  -97.817,
-                               "[Text]":  "−98",
+                               "[Text]":  "−20,3 %",
                                "[Color]":  "#B42318"
                            },
                            {
@@ -3887,7 +3887,7 @@
                                "[Metric]":  "Avvikelse",
                                "[Slot]":  3,
                                "[Amount]":  -97.817,
-                               "[Text]":  "−98",
+                               "[Text]":  "−20,3 %",
                                "[Color]":  "#B42318"
                            },
                            {
@@ -4049,7 +4049,7 @@
                                "[Metric]":  "Avvikelse",
                                "[Slot]":  3,
                                "[Amount]":  -1394.877,
-                               "[Text]":  "−1 395",
+                               "[Text]":  "−44,6 %",
                                "[Color]":  "#B42318"
                            },
                            {
@@ -4699,7 +4699,7 @@
                                "[Metric]":  "Avvikelse",
                                "[Slot]":  3,
                                "[Amount]":  -11312.046,
-                               "[Text]":  "−11 312",
+                               "[Text]":  "−8,0 %",
                                "[Color]":  "#B42318"
                            },
                            {
@@ -5185,7 +5185,7 @@
                                "[Metric]":  "Avvikelse",
                                "[Slot]":  3,
                                "[Amount]":  -6892.645,
-                               "[Text]":  "−6 893",
+                               "[Text]":  "−8,0 %",
                                "[Color]":  "#B42318"
                            },
                            {
@@ -5671,7 +5671,7 @@
                                "[Metric]":  "Avvikelse",
                                "[Slot]":  3,
                                "[Amount]":  -2432.697,
-                               "[Text]":  "−2 433",
+                               "[Text]":  "−8,0 %",
                                "[Color]":  "#B42318"
                            },
                            {
@@ -6157,7 +6157,7 @@
                                "[Metric]":  "Avvikelse",
                                "[Slot]":  3,
                                "[Amount]":  -1986.704,
-                               "[Text]":  "−1 987",
+                               "[Text]":  "−8,0 %",
                                "[Color]":  "#B42318"
                            },
                            {
@@ -6643,7 +6643,7 @@
                                "[Metric]":  "Avvikelse",
                                "[Slot]":  3,
                                "[Amount]":  5192.232,
-                               "[Text]":  "+5 192",
+                               "[Text]":  "+5,0 %",
                                "[Color]":  "#007956"
                            },
                            {
@@ -7129,7 +7129,7 @@
                                "[Metric]":  "Avvikelse",
                                "[Slot]":  3,
                                "[Amount]":  2694.316,
-                               "[Text]":  "+2 694",
+                               "[Text]":  "+5,0 %",
                                "[Color]":  "#007956"
                            },
                            {
@@ -7615,7 +7615,7 @@
                                "[Metric]":  "Avvikelse",
                                "[Slot]":  3,
                                "[Amount]":  1663.586,
-                               "[Text]":  "+1 664",
+                               "[Text]":  "+5,0 %",
                                "[Color]":  "#007956"
                            },
                            {
@@ -8101,7 +8101,7 @@
                                "[Metric]":  "Avvikelse",
                                "[Slot]":  3,
                                "[Amount]":  353.594,
-                               "[Text]":  "+354",
+                               "[Text]":  "+5,0 %",
                                "[Color]":  "#007956"
                            },
                            {
@@ -8587,7 +8587,7 @@
                                "[Metric]":  "Avvikelse",
                                "[Slot]":  3,
                                "[Amount]":  258.775,
-                               "[Text]":  "+259",
+                               "[Text]":  "+5,0 %",
                                "[Color]":  "#007956"
                            },
                            {
@@ -9073,7 +9073,7 @@
                                "[Metric]":  "Avvikelse",
                                "[Slot]":  3,
                                "[Amount]":  221.961,
-                               "[Text]":  "+222",
+                               "[Text]":  "+5,0 %",
                                "[Color]":  "#007956"
                            },
                            {
@@ -9559,7 +9559,7 @@
                                "[Metric]":  "Avvikelse",
                                "[Slot]":  3,
                                "[Amount]":  -6119.814,
-                               "[Text]":  "−6 120",
+                               "[Text]":  "−16,3 %",
                                "[Color]":  "#B42318"
                            },
                            {
@@ -10531,7 +10531,7 @@
                                "[Metric]":  "Avvikelse",
                                "[Slot]":  3,
                                "[Amount]":  -234.601,
-                               "[Text]":  "−235",
+                               "[Text]":  "−2,0 %",
                                "[Color]":  "#B42318"
                            },
                            {
@@ -11017,7 +11017,7 @@
                                "[Metric]":  "Avvikelse",
                                "[Slot]":  3,
                                "[Amount]":  -234.601,
-                               "[Text]":  "−235",
+                               "[Text]":  "−2,0 %",
                                "[Color]":  "#B42318"
                            },
                            {
@@ -11503,7 +11503,7 @@
                                "[Metric]":  "Avvikelse",
                                "[Slot]":  3,
                                "[Amount]":  -275.871,
-                               "[Text]":  "−276",
+                               "[Text]":  "−2,0 %",
                                "[Color]":  "#B42318"
                            },
                            {
@@ -11989,7 +11989,7 @@
                                "[Metric]":  "Avvikelse",
                                "[Slot]":  3,
                                "[Amount]":  -119.471,
-                               "[Text]":  "−119",
+                               "[Text]":  "−2,0 %",
                                "[Color]":  "#B42318"
                            },
                            {
@@ -12475,7 +12475,7 @@
                                "[Metric]":  "Avvikelse",
                                "[Slot]":  3,
                                "[Amount]":  -78.199,
-                               "[Text]":  "−78",
+                               "[Text]":  "−2,0 %",
                                "[Color]":  "#B42318"
                            },
                            {
@@ -12961,7 +12961,7 @@
                                "[Metric]":  "Avvikelse",
                                "[Slot]":  3,
                                "[Amount]":  -39.099,
-                               "[Text]":  "−39",
+                               "[Text]":  "−2,0 %",
                                "[Color]":  "#B42318"
                            },
                            {
@@ -13447,7 +13447,7 @@
                                "[Metric]":  "Avvikelse",
                                "[Slot]":  3,
                                "[Amount]":  -23.461,
-                               "[Text]":  "−23",
+                               "[Text]":  "−2,0 %",
                                "[Color]":  "#B42318"
                            },
                            {
@@ -13933,7 +13933,7 @@
                                "[Metric]":  "Avvikelse",
                                "[Slot]":  3,
                                "[Amount]":  -15.639,
-                               "[Text]":  "−16",
+                               "[Text]":  "−2,0 %",
                                "[Color]":  "#B42318"
                            },
                            {
@@ -14419,7 +14419,7 @@
                                "[Metric]":  "Avvikelse",
                                "[Slot]":  3,
                                "[Amount]":  -31.281,
-                               "[Text]":  "−31",
+                               "[Text]":  "−2,0 %",
                                "[Color]":  "#B42318"
                            },
                            {
@@ -14905,7 +14905,7 @@
                                "[Metric]":  "Avvikelse",
                                "[Slot]":  3,
                                "[Amount]":  -46.92,
-                               "[Text]":  "−47",
+                               "[Text]":  "−2,0 %",
                                "[Color]":  "#B42318"
                            },
                            {
@@ -15391,7 +15391,7 @@
                                "[Metric]":  "Avvikelse",
                                "[Slot]":  3,
                                "[Amount]":  0,
-                               "[Text]":  "0",
+                               "[Text]":  "0,0 %",
                                "[Color]":  "#5B6B80"
                            },
                            {
@@ -15877,7 +15877,7 @@
                                "[Metric]":  "Avvikelse",
                                "[Slot]":  3,
                                "[Amount]":  0,
-                               "[Text]":  "0",
+                               "[Text]":  "0,0 %",
                                "[Color]":  "#5B6B80"
                            },
                            {
@@ -16363,7 +16363,7 @@
                                "[Metric]":  "Avvikelse",
                                "[Slot]":  3,
                                "[Amount]":  -6630.286,
-                               "[Text]":  "−6 630",
+                               "[Text]":  "−63,7 %",
                                "[Color]":  "#B42318"
                            },
                            {

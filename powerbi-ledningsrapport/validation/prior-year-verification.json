@@ -1,0 +1,6 @@
+{
+  "status": "passed",
+  "cases": 24,
+  "checks": 144,
+  "source": "Source measure expressions under separate query-scoped test names against live imported facts; selector loading and Desktop screenshot still require reopening"
+}

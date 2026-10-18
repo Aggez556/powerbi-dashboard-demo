@@ -1,0 +1,994 @@
+﻿{
+    "source":  "Persisted original PBIP semantic model, parsed with Microsoft TOM",
+    "tables":  59,
+    "columns":  299,
+    "measures":  349,
+    "calculatedColumns":  84,
+    "hierarchies":  14,
+    "dynamicFormats":  1,
+    "relationships":  38,
+    "activeRelationships":  38,
+    "roles":  0,
+    "expressions":  [
+                        "DataFolder",
+                        "BudgetWorkbook"
+                    ],
+    "tableDetails":  [
+                         {
+                             "name":  "Datum",
+                             "hidden":  false,
+                             "columns":  7,
+                             "measures":  0,
+                             "calculatedColumns":  0,
+                             "hierarchies":  0,
+                             "partitionTypes":  [
+                                                    "MPartitionSource"
+                                                ],
+                             "dynamicFormats":  0
+                         },
+                         {
+                             "name":  "Kunder",
+                             "hidden":  false,
+                             "columns":  6,
+                             "measures":  9,
+                             "calculatedColumns":  0,
+                             "hierarchies":  0,
+                             "partitionTypes":  [
+                                                    "MPartitionSource"
+                                                ],
+                             "dynamicFormats":  0
+                         },
+                         {
+                             "name":  "Områden",
+                             "hidden":  false,
+                             "columns":  2,
+                             "measures":  0,
+                             "calculatedColumns":  0,
+                             "hierarchies":  0,
+                             "partitionTypes":  [
+                                                    "MPartitionSource"
+                                                ],
+                             "dynamicFormats":  0
+                         },
+                         {
+                             "name":  "Försäljning",
+                             "hidden":  false,
+                             "columns":  10,
+                             "measures":  192,
+                             "calculatedColumns":  0,
+                             "hierarchies":  0,
+                             "partitionTypes":  [
+                                                    "MPartitionSource"
+                                                ],
+                             "dynamicFormats":  0
+                         },
+                         {
+                             "name":  "Direkta kostnader",
+                             "hidden":  false,
+                             "columns":  6,
+                             "measures":  0,
+                             "calculatedColumns":  0,
+                             "hierarchies":  0,
+                             "partitionTypes":  [
+                                                    "MPartitionSource"
+                                                ],
+                             "dynamicFormats":  0
+                         },
+                         {
+                             "name":  "Gemensamma kostnader",
+                             "hidden":  false,
+                             "columns":  3,
+                             "measures":  0,
+                             "calculatedColumns":  0,
+                             "hierarchies":  0,
+                             "partitionTypes":  [
+                                                    "MPartitionSource"
+                                                ],
+                             "dynamicFormats":  0
+                         },
+                         {
+                             "name":  "Uppdrag",
+                             "hidden":  false,
+                             "columns":  6,
+                             "measures":  0,
+                             "calculatedColumns":  0,
+                             "hierarchies":  0,
+                             "partitionTypes":  [
+                                                    "MPartitionSource"
+                                                ],
+                             "dynamicFormats":  0
+                         },
+                         {
+                             "name":  "Budget",
+                             "hidden":  false,
+                             "columns":  2,
+                             "measures":  0,
+                             "calculatedColumns":  0,
+                             "hierarchies":  0,
+                             "partitionTypes":  [
+                                                    "MPartitionSource"
+                                                ],
+                             "dynamicFormats":  0
+                         },
+                         {
+                             "name":  "Periodtyp",
+                             "hidden":  false,
+                             "columns":  2,
+                             "measures":  0,
+                             "calculatedColumns":  0,
+                             "hierarchies":  0,
+                             "partitionTypes":  [
+                                                    "MPartitionSource"
+                                                ],
+                             "dynamicFormats":  0
+                         },
+                         {
+                             "name":  "Trendaxel",
+                             "hidden":  false,
+                             "columns":  3,
+                             "measures":  0,
+                             "calculatedColumns":  0,
+                             "hierarchies":  0,
+                             "partitionTypes":  [
+                                                    "MPartitionSource"
+                                                ],
+                             "dynamicFormats":  0
+                         },
+                         {
+                             "name":  "Bryggaxel",
+                             "hidden":  false,
+                             "columns":  4,
+                             "measures":  0,
+                             "calculatedColumns":  0,
+                             "hierarchies":  0,
+                             "partitionTypes":  [
+                                                    "MPartitionSource"
+                                                ],
+                             "dynamicFormats":  0
+                         },
+                         {
+                             "name":  "R12val",
+                             "hidden":  false,
+                             "columns":  3,
+                             "measures":  0,
+                             "calculatedColumns":  0,
+                             "hierarchies":  0,
+                             "partitionTypes":  [
+                                                    "MPartitionSource"
+                                                ],
+                             "dynamicFormats":  0
+                         },
+                         {
+                             "name":  "Månadsval",
+                             "hidden":  false,
+                             "columns":  3,
+                             "measures":  0,
+                             "calculatedColumns":  0,
+                             "hierarchies":  0,
+                             "partitionTypes":  [
+                                                    "MPartitionSource"
+                                                ],
+                             "dynamicFormats":  0
+                         },
+                         {
+                             "name":  "Helårsval",
+                             "hidden":  false,
+                             "columns":  3,
+                             "measures":  0,
+                             "calculatedColumns":  0,
+                             "hierarchies":  0,
+                             "partitionTypes":  [
+                                                    "MPartitionSource"
+                                                ],
+                             "dynamicFormats":  0
+                         },
+                         {
+                             "name":  "DateTableTemplate_023d4333-7488-4f50-aca6-bd5e3254769b",
+                             "hidden":  true,
+                             "columns":  7,
+                             "measures":  0,
+                             "calculatedColumns":  6,
+                             "hierarchies":  1,
+                             "partitionTypes":  [
+                                                    "CalculatedPartitionSource"
+                                                ],
+                             "dynamicFormats":  0
+                         },
+                         {
+                             "name":  "LocalDateTable_3d6a0f91-1dc2-404a-ba41-f7a4ef707410",
+                             "hidden":  true,
+                             "columns":  7,
+                             "measures":  0,
+                             "calculatedColumns":  6,
+                             "hierarchies":  1,
+                             "partitionTypes":  [
+                                                    "CalculatedPartitionSource"
+                                                ],
+                             "dynamicFormats":  0
+                         },
+                         {
+                             "name":  "LocalDateTable_f0d2acef-e62f-4d6f-bb54-4aca544598b0",
+                             "hidden":  true,
+                             "columns":  7,
+                             "measures":  0,
+                             "calculatedColumns":  6,
+                             "hierarchies":  1,
+                             "partitionTypes":  [
+                                                    "CalculatedPartitionSource"
+                                                ],
+                             "dynamicFormats":  0
+                         },
+                         {
+                             "name":  "LocalDateTable_ab4a90d1-4f02-41f9-b507-ba553491aef3",
+                             "hidden":  true,
+                             "columns":  7,
+                             "measures":  0,
+                             "calculatedColumns":  6,
+                             "hierarchies":  1,
+                             "partitionTypes":  [
+                                                    "CalculatedPartitionSource"
+                                                ],
+                             "dynamicFormats":  0
+                         },
+                         {
+                             "name":  "LocalDateTable_2522623d-48b9-4577-8ee7-3d6d096634f7",
+                             "hidden":  true,
+                             "columns":  7,
+                             "measures":  0,
+                             "calculatedColumns":  6,
+                             "hierarchies":  1,
+                             "partitionTypes":  [
+                                                    "CalculatedPartitionSource"
+                                                ],
+                             "dynamicFormats":  0
+                         },
+                         {
+                             "name":  "LocalDateTable_22d874ac-8916-43e9-82d3-d07586a720c3",
+                             "hidden":  true,
+                             "columns":  7,
+                             "measures":  0,
+                             "calculatedColumns":  6,
+                             "hierarchies":  1,
+                             "partitionTypes":  [
+                                                    "CalculatedPartitionSource"
+                                                ],
+                             "dynamicFormats":  0
+                         },
+                         {
+                             "name":  "Artiklar",
+                             "hidden":  false,
+                             "columns":  6,
+                             "measures":  3,
+                             "calculatedColumns":  0,
+                             "hierarchies":  0,
+                             "partitionTypes":  [
+                                                    "MPartitionSource"
+                                                ],
+                             "dynamicFormats":  0
+                         },
+                         {
+                             "name":  "Försäljningsserie",
+                             "hidden":  false,
+                             "columns":  4,
+                             "measures":  0,
+                             "calculatedColumns":  0,
+                             "hierarchies":  0,
+                             "partitionTypes":  [
+                                                    "MPartitionSource"
+                                                ],
+                             "dynamicFormats":  0
+                         },
+                         {
+                             "name":  "Områdesval",
+                             "hidden":  false,
+                             "columns":  2,
+                             "measures":  0,
+                             "calculatedColumns":  0,
+                             "hierarchies":  0,
+                             "partitionTypes":  [
+                                                    "MPartitionSource"
+                                                ],
+                             "dynamicFormats":  0
+                         },
+                         {
+                             "name":  "Kundstatusval",
+                             "hidden":  false,
+                             "columns":  2,
+                             "measures":  0,
+                             "calculatedColumns":  0,
+                             "hierarchies":  0,
+                             "partitionTypes":  [
+                                                    "MPartitionSource"
+                                                ],
+                             "dynamicFormats":  0
+                         },
+                         {
+                             "name":  "Kundgrupper",
+                             "hidden":  false,
+                             "columns":  2,
+                             "measures":  0,
+                             "calculatedColumns":  0,
+                             "hierarchies":  0,
+                             "partitionTypes":  [
+                                                    "MPartitionSource"
+                                                ],
+                             "dynamicFormats":  0
+                         },
+                         {
+                             "name":  "Kundbassteg",
+                             "hidden":  false,
+                             "columns":  2,
+                             "measures":  0,
+                             "calculatedColumns":  0,
+                             "hierarchies":  0,
+                             "partitionTypes":  [
+                                                    "MPartitionSource"
+                                                ],
+                             "dynamicFormats":  0
+                         },
+                         {
+                             "name":  "Kundintäktssteg",
+                             "hidden":  false,
+                             "columns":  2,
+                             "measures":  0,
+                             "calculatedColumns":  0,
+                             "hierarchies":  0,
+                             "partitionTypes":  [
+                                                    "MPartitionSource"
+                                                ],
+                             "dynamicFormats":  0
+                         },
+                         {
+                             "name":  "Budgetkonton",
+                             "hidden":  false,
+                             "columns":  7,
+                             "measures":  0,
+                             "calculatedColumns":  0,
+                             "hierarchies":  0,
+                             "partitionTypes":  [
+                                                    "MPartitionSource"
+                                                ],
+                             "dynamicFormats":  0
+                         },
+                         {
+                             "name":  "Budgetrader",
+                             "hidden":  false,
+                             "columns":  7,
+                             "measures":  0,
+                             "calculatedColumns":  0,
+                             "hierarchies":  0,
+                             "partitionTypes":  [
+                                                    "MPartitionSource"
+                                                ],
+                             "dynamicFormats":  0
+                         },
+                         {
+                             "name":  "Budgetscenarion",
+                             "hidden":  false,
+                             "columns":  3,
+                             "measures":  0,
+                             "calculatedColumns":  0,
+                             "hierarchies":  0,
+                             "partitionTypes":  [
+                                                    "MPartitionSource"
+                                                ],
+                             "dynamicFormats":  0
+                         },
+                         {
+                             "name":  "Budgetjämförelsescenario",
+                             "hidden":  false,
+                             "columns":  3,
+                             "measures":  0,
+                             "calculatedColumns":  0,
+                             "hierarchies":  0,
+                             "partitionTypes":  [
+                                                    "MPartitionSource"
+                                                ],
+                             "dynamicFormats":  0
+                         },
+                         {
+                             "name":  "Budgetår",
+                             "hidden":  false,
+                             "columns":  1,
+                             "measures":  0,
+                             "calculatedColumns":  0,
+                             "hierarchies":  0,
+                             "partitionTypes":  [
+                                                    "MPartitionSource"
+                                                ],
+                             "dynamicFormats":  0
+                         },
+                         {
+                             "name":  "Budgetmånader",
+                             "hidden":  false,
+                             "columns":  3,
+                             "measures":  0,
+                             "calculatedColumns":  0,
+                             "hierarchies":  0,
+                             "partitionTypes":  [
+                                                    "MPartitionSource"
+                                                ],
+                             "dynamicFormats":  0
+                         },
+                         {
+                             "name":  "Budgetperioder",
+                             "hidden":  false,
+                             "columns":  3,
+                             "measures":  0,
+                             "calculatedColumns":  0,
+                             "hierarchies":  0,
+                             "partitionTypes":  [
+                                                    "MPartitionSource"
+                                                ],
+                             "dynamicFormats":  0
+                         },
+                         {
+                             "name":  "Budgetjämförelse",
+                             "hidden":  false,
+                             "columns":  2,
+                             "measures":  0,
+                             "calculatedColumns":  0,
+                             "hierarchies":  0,
+                             "partitionTypes":  [
+                                                    "MPartitionSource"
+                                                ],
+                             "dynamicFormats":  0
+                         },
+                         {
+                             "name":  "Budgetvisning",
+                             "hidden":  false,
+                             "columns":  2,
+                             "measures":  0,
+                             "calculatedColumns":  0,
+                             "hierarchies":  0,
+                             "partitionTypes":  [
+                                                    "MPartitionSource"
+                                                ],
+                             "dynamicFormats":  0
+                         },
+                         {
+                             "name":  "Budgetkolumner",
+                             "hidden":  false,
+                             "columns":  7,
+                             "measures":  0,
+                             "calculatedColumns":  0,
+                             "hierarchies":  0,
+                             "partitionTypes":  [
+                                                    "MPartitionSource"
+                                                ],
+                             "dynamicFormats":  0
+                         },
+                         {
+                             "name":  "Budgetscenarier",
+                             "hidden":  false,
+                             "columns":  4,
+                             "measures":  46,
+                             "calculatedColumns":  0,
+                             "hierarchies":  0,
+                             "partitionTypes":  [
+                                                    "MPartitionSource"
+                                                ],
+                             "dynamicFormats":  1
+                         },
+                         {
+                             "name":  "Budgetrapportnoder",
+                             "hidden":  false,
+                             "columns":  12,
+                             "measures":  4,
+                             "calculatedColumns":  0,
+                             "hierarchies":  0,
+                             "partitionTypes":  [
+                                                    "MPartitionSource"
+                                                ],
+                             "dynamicFormats":  0
+                         },
+                         {
+                             "name":  "Resurser",
+                             "hidden":  false,
+                             "columns":  8,
+                             "measures":  0,
+                             "calculatedColumns":  0,
+                             "hierarchies":  0,
+                             "partitionTypes":  [
+                                                    "MPartitionSource"
+                                                ],
+                             "dynamicFormats":  0
+                         },
+                         {
+                             "name":  "Uppdragsregister",
+                             "hidden":  false,
+                             "columns":  15,
+                             "measures":  0,
+                             "calculatedColumns":  0,
+                             "hierarchies":  0,
+                             "partitionTypes":  [
+                                                    "MPartitionSource"
+                                                ],
+                             "dynamicFormats":  0
+                         },
+                         {
+                             "name":  "Utförd tid",
+                             "hidden":  false,
+                             "columns":  5,
+                             "measures":  0,
+                             "calculatedColumns":  0,
+                             "hierarchies":  0,
+                             "partitionTypes":  [
+                                                    "MPartitionSource"
+                                                ],
+                             "dynamicFormats":  0
+                         },
+                         {
+                             "name":  "Uppdragsekonomi",
+                             "hidden":  false,
+                             "columns":  5,
+                             "measures":  0,
+                             "calculatedColumns":  0,
+                             "hierarchies":  0,
+                             "partitionTypes":  [
+                                                    "MPartitionSource"
+                                                ],
+                             "dynamicFormats":  0
+                         },
+                         {
+                             "name":  "Arbetskapacitet",
+                             "hidden":  false,
+                             "columns":  5,
+                             "measures":  0,
+                             "calculatedColumns":  0,
+                             "hierarchies":  0,
+                             "partitionTypes":  [
+                                                    "MPartitionSource"
+                                                ],
+                             "dynamicFormats":  0
+                         },
+                         {
+                             "name":  "Planbokningar",
+                             "hidden":  false,
+                             "columns":  9,
+                             "measures":  0,
+                             "calculatedColumns":  0,
+                             "hierarchies":  0,
+                             "partitionTypes":  [
+                                                    "MPartitionSource"
+                                                ],
+                             "dynamicFormats":  0
+                         },
+                         {
+                             "name":  "Planveckor",
+                             "hidden":  false,
+                             "columns":  4,
+                             "measures":  0,
+                             "calculatedColumns":  0,
+                             "hierarchies":  0,
+                             "partitionTypes":  [
+                                                    "MPartitionSource"
+                                                ],
+                             "dynamicFormats":  0
+                         },
+                         {
+                             "name":  "Planinställning",
+                             "hidden":  false,
+                             "columns":  4,
+                             "measures":  95,
+                             "calculatedColumns":  0,
+                             "hierarchies":  0,
+                             "partitionTypes":  [
+                                                    "MPartitionSource"
+                                                ],
+                             "dynamicFormats":  0
+                         },
+                         {
+                             "name":  "Uppdragsområden",
+                             "hidden":  false,
+                             "columns":  2,
+                             "measures":  0,
+                             "calculatedColumns":  0,
+                             "hierarchies":  0,
+                             "partitionTypes":  [
+                                                    "MPartitionSource"
+                                                ],
+                             "dynamicFormats":  0
+                         },
+                         {
+                             "name":  "Resursval",
+                             "hidden":  false,
+                             "columns":  1,
+                             "measures":  0,
+                             "calculatedColumns":  0,
+                             "hierarchies":  0,
+                             "partitionTypes":  [
+                                                    "MPartitionSource"
+                                                ],
+                             "dynamicFormats":  0
+                         },
+                         {
+                             "name":  "Uppdragsstatusval",
+                             "hidden":  false,
+                             "columns":  2,
+                             "measures":  0,
+                             "calculatedColumns":  0,
+                             "hierarchies":  0,
+                             "partitionTypes":  [
+                                                    "MPartitionSource"
+                                                ],
+                             "dynamicFormats":  0
+                         },
+                         {
+                             "name":  "LocalDateTable_6b24c84b-193f-4dec-8fd5-c15f62aa2d3f",
+                             "hidden":  true,
+                             "columns":  7,
+                             "measures":  0,
+                             "calculatedColumns":  6,
+                             "hierarchies":  1,
+                             "partitionTypes":  [
+                                                    "CalculatedPartitionSource"
+                                                ],
+                             "dynamicFormats":  0
+                         },
+                         {
+                             "name":  "LocalDateTable_6f18f9cc-fe19-4604-ad8f-86a5ba27e3ec",
+                             "hidden":  true,
+                             "columns":  7,
+                             "measures":  0,
+                             "calculatedColumns":  6,
+                             "hierarchies":  1,
+                             "partitionTypes":  [
+                                                    "CalculatedPartitionSource"
+                                                ],
+                             "dynamicFormats":  0
+                         },
+                         {
+                             "name":  "LocalDateTable_1e2a6c4b-ef7f-46fc-898a-6eb8f826f492",
+                             "hidden":  true,
+                             "columns":  7,
+                             "measures":  0,
+                             "calculatedColumns":  6,
+                             "hierarchies":  1,
+                             "partitionTypes":  [
+                                                    "CalculatedPartitionSource"
+                                                ],
+                             "dynamicFormats":  0
+                         },
+                         {
+                             "name":  "LocalDateTable_f28ae418-fa27-4f4c-bd27-29ac23073302",
+                             "hidden":  true,
+                             "columns":  7,
+                             "measures":  0,
+                             "calculatedColumns":  6,
+                             "hierarchies":  1,
+                             "partitionTypes":  [
+                                                    "CalculatedPartitionSource"
+                                                ],
+                             "dynamicFormats":  0
+                         },
+                         {
+                             "name":  "LocalDateTable_7d75698d-2613-4d55-84e4-e1c312ddec46",
+                             "hidden":  true,
+                             "columns":  7,
+                             "measures":  0,
+                             "calculatedColumns":  6,
+                             "hierarchies":  1,
+                             "partitionTypes":  [
+                                                    "CalculatedPartitionSource"
+                                                ],
+                             "dynamicFormats":  0
+                         },
+                         {
+                             "name":  "LocalDateTable_8886e8e7-97a9-4acf-a98b-06fa9a64eddc",
+                             "hidden":  true,
+                             "columns":  7,
+                             "measures":  0,
+                             "calculatedColumns":  6,
+                             "hierarchies":  1,
+                             "partitionTypes":  [
+                                                    "CalculatedPartitionSource"
+                                                ],
+                             "dynamicFormats":  0
+                         },
+                         {
+                             "name":  "LocalDateTable_b6e07943-965e-4e7c-9183-e39875f3391e",
+                             "hidden":  true,
+                             "columns":  7,
+                             "measures":  0,
+                             "calculatedColumns":  6,
+                             "hierarchies":  1,
+                             "partitionTypes":  [
+                                                    "CalculatedPartitionSource"
+                                                ],
+                             "dynamicFormats":  0
+                         },
+                         {
+                             "name":  "LocalDateTable_6e2b9800-a4fd-4a56-93a6-799efaaa4922",
+                             "hidden":  true,
+                             "columns":  7,
+                             "measures":  0,
+                             "calculatedColumns":  6,
+                             "hierarchies":  1,
+                             "partitionTypes":  [
+                                                    "CalculatedPartitionSource"
+                                                ],
+                             "dynamicFormats":  0
+                         },
+                         {
+                             "name":  "Tidsanvändning",
+                             "hidden":  false,
+                             "columns":  7,
+                             "measures":  0,
+                             "calculatedColumns":  0,
+                             "hierarchies":  0,
+                             "partitionTypes":  [
+                                                    "MPartitionSource"
+                                                ],
+                             "dynamicFormats":  0
+                         }
+                     ],
+    "relationshipDetails":  [
+                                {
+                                    "name":  "Försäljning till Datum",
+                                    "active":  true,
+                                    "from":  "Försäljning",
+                                    "to":  "Datum",
+                                    "filterDirection":  "OneDirection"
+                                },
+                                {
+                                    "name":  "Försäljning till Områden",
+                                    "active":  true,
+                                    "from":  "Försäljning",
+                                    "to":  "Områden",
+                                    "filterDirection":  "OneDirection"
+                                },
+                                {
+                                    "name":  "Försäljning till Kunder",
+                                    "active":  true,
+                                    "from":  "Försäljning",
+                                    "to":  "Kunder",
+                                    "filterDirection":  "OneDirection"
+                                },
+                                {
+                                    "name":  "Direkta kostnader till Datum",
+                                    "active":  true,
+                                    "from":  "Direkta kostnader",
+                                    "to":  "Datum",
+                                    "filterDirection":  "OneDirection"
+                                },
+                                {
+                                    "name":  "Direkta kostnader till Områden",
+                                    "active":  true,
+                                    "from":  "Direkta kostnader",
+                                    "to":  "Områden",
+                                    "filterDirection":  "OneDirection"
+                                },
+                                {
+                                    "name":  "Gemensamma kostnader till Datum",
+                                    "active":  true,
+                                    "from":  "Gemensamma kostnader",
+                                    "to":  "Datum",
+                                    "filterDirection":  "OneDirection"
+                                },
+                                {
+                                    "name":  "Uppdrag till Datum",
+                                    "active":  true,
+                                    "from":  "Uppdrag",
+                                    "to":  "Datum",
+                                    "filterDirection":  "OneDirection"
+                                },
+                                {
+                                    "name":  "Uppdrag till Områden",
+                                    "active":  true,
+                                    "from":  "Uppdrag",
+                                    "to":  "Områden",
+                                    "filterDirection":  "OneDirection"
+                                },
+                                {
+                                    "name":  "Uppdrag till Kunder",
+                                    "active":  true,
+                                    "from":  "Uppdrag",
+                                    "to":  "Kunder",
+                                    "filterDirection":  "OneDirection"
+                                },
+                                {
+                                    "name":  "Budget till Datum",
+                                    "active":  true,
+                                    "from":  "Budget",
+                                    "to":  "Datum",
+                                    "filterDirection":  "OneDirection"
+                                },
+                                {
+                                    "name":  "2bd2cade-0c9c-4808-aca7-3a0a0b038b21",
+                                    "active":  true,
+                                    "from":  "Trendaxel",
+                                    "to":  "LocalDateTable_3d6a0f91-1dc2-404a-ba41-f7a4ef707410",
+                                    "filterDirection":  "OneDirection"
+                                },
+                                {
+                                    "name":  "59f17dd1-763c-4f3f-b88b-7f9d449e096f",
+                                    "active":  true,
+                                    "from":  "Bryggaxel",
+                                    "to":  "LocalDateTable_f0d2acef-e62f-4d6f-bb54-4aca544598b0",
+                                    "filterDirection":  "OneDirection"
+                                },
+                                {
+                                    "name":  "42bcd8ba-8bbf-45b0-bd86-f419c4ba5359",
+                                    "active":  true,
+                                    "from":  "R12val",
+                                    "to":  "LocalDateTable_ab4a90d1-4f02-41f9-b507-ba553491aef3",
+                                    "filterDirection":  "OneDirection"
+                                },
+                                {
+                                    "name":  "01caad2c-323e-403e-9252-d1b4c9c5c0b1",
+                                    "active":  true,
+                                    "from":  "Månadsval",
+                                    "to":  "LocalDateTable_2522623d-48b9-4577-8ee7-3d6d096634f7",
+                                    "filterDirection":  "OneDirection"
+                                },
+                                {
+                                    "name":  "a50346e5-841c-4b7c-951b-3af1bb13324f",
+                                    "active":  true,
+                                    "from":  "Helårsval",
+                                    "to":  "LocalDateTable_22d874ac-8916-43e9-82d3-d07586a720c3",
+                                    "filterDirection":  "OneDirection"
+                                },
+                                {
+                                    "name":  "Sälj Försäljning artikel",
+                                    "active":  true,
+                                    "from":  "Försäljning",
+                                    "to":  "Artiklar",
+                                    "filterDirection":  "OneDirection"
+                                },
+                                {
+                                    "name":  "Sälj Direkta kostnader artikel",
+                                    "active":  true,
+                                    "from":  "Direkta kostnader",
+                                    "to":  "Artiklar",
+                                    "filterDirection":  "OneDirection"
+                                },
+                                {
+                                    "name":  "Kundanalys direkta kostnader",
+                                    "active":  true,
+                                    "from":  "Direkta kostnader",
+                                    "to":  "Kunder",
+                                    "filterDirection":  "OneDirection"
+                                },
+                                {
+                                    "name":  "Excelbudget till Budgetkonton",
+                                    "active":  true,
+                                    "from":  "Budgetscenarier",
+                                    "to":  "Budgetkonton",
+                                    "filterDirection":  "OneDirection"
+                                },
+                                {
+                                    "name":  "Excelbudget till Budgetscenarion",
+                                    "active":  true,
+                                    "from":  "Budgetscenarier",
+                                    "to":  "Budgetscenarion",
+                                    "filterDirection":  "OneDirection"
+                                },
+                                {
+                                    "name":  "Excelbudget till Budgetperioder",
+                                    "active":  true,
+                                    "from":  "Budgetscenarier",
+                                    "to":  "Budgetperioder",
+                                    "filterDirection":  "OneDirection"
+                                },
+                                {
+                                    "name":  "Uppdragsanalys 0",
+                                    "active":  true,
+                                    "from":  "Resurser",
+                                    "to":  "Uppdragsområden",
+                                    "filterDirection":  "OneDirection"
+                                },
+                                {
+                                    "name":  "Uppdragsanalys 1",
+                                    "active":  true,
+                                    "from":  "Uppdragsregister",
+                                    "to":  "Resurser",
+                                    "filterDirection":  "OneDirection"
+                                },
+                                {
+                                    "name":  "Uppdragsanalys 2",
+                                    "active":  true,
+                                    "from":  "Uppdragsregister",
+                                    "to":  "Kunder",
+                                    "filterDirection":  "OneDirection"
+                                },
+                                {
+                                    "name":  "Uppdragsanalys 3",
+                                    "active":  true,
+                                    "from":  "Utförd tid",
+                                    "to":  "Uppdragsregister",
+                                    "filterDirection":  "OneDirection"
+                                },
+                                {
+                                    "name":  "Uppdragsanalys 4",
+                                    "active":  true,
+                                    "from":  "Uppdragsekonomi",
+                                    "to":  "Uppdragsregister",
+                                    "filterDirection":  "OneDirection"
+                                },
+                                {
+                                    "name":  "Uppdragsanalys 5",
+                                    "active":  true,
+                                    "from":  "Arbetskapacitet",
+                                    "to":  "Resurser",
+                                    "filterDirection":  "OneDirection"
+                                },
+                                {
+                                    "name":  "Uppdragsanalys 6",
+                                    "active":  true,
+                                    "from":  "Planbokningar",
+                                    "to":  "Resurser",
+                                    "filterDirection":  "OneDirection"
+                                },
+                                {
+                                    "name":  "Uppdragsanalys 7",
+                                    "active":  true,
+                                    "from":  "Planbokningar",
+                                    "to":  "Planveckor",
+                                    "filterDirection":  "OneDirection"
+                                },
+                                {
+                                    "name":  "d9c1cc5f-6bdc-4603-bee1-ba0abff71eff",
+                                    "active":  true,
+                                    "from":  "Uppdragsregister",
+                                    "to":  "LocalDateTable_6b24c84b-193f-4dec-8fd5-c15f62aa2d3f",
+                                    "filterDirection":  "OneDirection"
+                                },
+                                {
+                                    "name":  "1c4cdc58-b1d8-4742-8b30-5de5afb717a2",
+                                    "active":  true,
+                                    "from":  "Uppdragsregister",
+                                    "to":  "LocalDateTable_6f18f9cc-fe19-4604-ad8f-86a5ba27e3ec",
+                                    "filterDirection":  "OneDirection"
+                                },
+                                {
+                                    "name":  "cea9dd8d-ff86-4cd9-81dd-43a986b91468",
+                                    "active":  true,
+                                    "from":  "Planveckor",
+                                    "to":  "LocalDateTable_1e2a6c4b-ef7f-46fc-898a-6eb8f826f492",
+                                    "filterDirection":  "OneDirection"
+                                },
+                                {
+                                    "name":  "d1c659f0-72b7-42ce-8882-1709f8af449b",
+                                    "active":  true,
+                                    "from":  "Planveckor",
+                                    "to":  "LocalDateTable_f28ae418-fa27-4f4c-bd27-29ac23073302",
+                                    "filterDirection":  "OneDirection"
+                                },
+                                {
+                                    "name":  "0fe275b8-0fe8-4a0f-b095-45182739ec40",
+                                    "active":  true,
+                                    "from":  "Planinställning",
+                                    "to":  "LocalDateTable_7d75698d-2613-4d55-84e4-e1c312ddec46",
+                                    "filterDirection":  "OneDirection"
+                                },
+                                {
+                                    "name":  "df798755-58c3-42bc-a89b-ec098ca6f3b4",
+                                    "active":  true,
+                                    "from":  "Planinställning",
+                                    "to":  "LocalDateTable_8886e8e7-97a9-4acf-a98b-06fa9a64eddc",
+                                    "filterDirection":  "OneDirection"
+                                },
+                                {
+                                    "name":  "b831a04c-6830-46e7-94f3-c8c2b12db21b",
+                                    "active":  true,
+                                    "from":  "Planinställning",
+                                    "to":  "LocalDateTable_b6e07943-965e-4e7c-9183-e39875f3391e",
+                                    "filterDirection":  "OneDirection"
+                                },
+                                {
+                                    "name":  "1b73322a-1a42-4701-ace1-eeb73066e57a",
+                                    "active":  true,
+                                    "from":  "Planinställning",
+                                    "to":  "LocalDateTable_6e2b9800-a4fd-4a56-93a6-799efaaa4922",
+                                    "filterDirection":  "OneDirection"
+                                },
+                                {
+                                    "name":  "Historisk tidsanvändning till Resurser",
+                                    "active":  true,
+                                    "from":  "Tidsanvändning",
+                                    "to":  "Resurser",
+                                    "filterDirection":  "OneDirection"
+                                }
+                            ]
+}

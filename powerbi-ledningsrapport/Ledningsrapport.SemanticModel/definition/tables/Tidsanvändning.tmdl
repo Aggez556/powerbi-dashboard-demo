@@ -1,0 +1,62 @@
+/// Historisk tid per resurs och månad; residualens kategorier är syntetisk demodata.
+table Tidsanvändning
+	lineageTag: 7bb54b0c-dfec-4d19-9f8e-ed27c4a28a19
+
+	column ResursID
+		dataType: int64
+		isHidden
+		lineageTag: c564c809-1520-42f7-8313-aa9e9eab55f5
+		summarizeBy: none
+		sourceColumn: ResursID
+
+	column Datumnyckel
+		dataType: int64
+		isHidden
+		lineageTag: 5979474a-c690-48a1-8ffd-6ae0f60ed9ab
+		summarizeBy: none
+		sourceColumn: Datumnyckel
+
+	column Debiterbart
+		dataType: double
+		isHidden
+		lineageTag: fa7bdd79-4ad2-426d-aac8-02b0e788b314
+		summarizeBy: none
+		sourceColumn: Debiterbart
+
+	column EjDebiterbartKundarbete
+		dataType: double
+		isHidden
+		lineageTag: d1c53da6-6613-42bf-a9e7-18d9369f2035
+		summarizeBy: none
+		sourceColumn: EjDebiterbartKundarbete
+
+	column InterntArbete
+		dataType: double
+		isHidden
+		lineageTag: a8736348-a8c8-41a1-a1cd-8a0c2093d168
+		summarizeBy: none
+		sourceColumn: InterntArbete
+
+	column EjTidrapporterat
+		dataType: double
+		isHidden
+		lineageTag: 167b618a-dd4d-4e01-9eaa-ba9a941f8b1a
+		summarizeBy: none
+		sourceColumn: EjTidrapporterat
+
+	column Tillgängligt
+		dataType: double
+		isHidden
+		lineageTag: 6cae46d5-ea65-4704-a4d4-dcbf157464b1
+		summarizeBy: none
+		sourceColumn: Tillgängligt
+
+	partition Tidsanvändning = m
+		mode: import
+		source =
+				let
+				 Source=Csv.Document(File.Contents(DataFolder & "/Tidsanvändning.csv"),[Delimiter=",",Encoding=65001,QuoteStyle=QuoteStyle.Csv]),
+				 Headers=Table.PromoteHeaders(Source,[PromoteAllScalars=true]),
+				 Typed=Table.TransformColumnTypes(Headers,{{"ResursID", Int64.Type},{"Datumnyckel", Int64.Type},{"Debiterbart", type number},{"EjDebiterbartKundarbete", type number},{"InterntArbete", type number},{"EjTidrapporterat", type number},{"Tillgängligt", type number}},"en-US")
+				in Typed
+

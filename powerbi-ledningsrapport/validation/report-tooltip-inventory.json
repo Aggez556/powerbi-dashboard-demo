@@ -1,0 +1,36 @@
+{
+  "pages": [
+    {
+      "page": "Start",
+      "standardTooltips": 0,
+      "disabledDuplicateCards": 0,
+      "customTables": 0
+    },
+    {
+      "page": "Ledningsöversikt",
+      "standardTooltips": 3,
+      "disabledDuplicateCards": 36,
+      "customTables": 0
+    },
+    {
+      "page": "Försäljningsöversikt",
+      "standardTooltips": 3,
+      "disabledDuplicateCards": 16,
+      "customTables": 1
+    },
+    {
+      "page": "Budget",
+      "standardTooltips": 0,
+      "disabledDuplicateCards": 14,
+      "customTables": 1
+    },
+    {
+      "page": "Uppdrag / beläggning",
+      "standardTooltips": 4,
+      "disabledDuplicateCards": 18,
+      "customTables": 0
+    }
+  ],
+  "salesMonthTooltip": "fae4fbb4d503b8817e0c",
+  "modelAndFactDataChanged": false
+}

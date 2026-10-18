@@ -1,0 +1,152 @@
+﻿{
+    "status":  "queried",
+    "resultSets":  [
+                       [
+                           {
+                               "Artiklar[Kategori]":  "Maskiner",
+                               "Artiklar[Artikel]":  "Maskiner – standard",
+                               "Artiklar[Områdesordning]":  1,
+                               "Artiklar[Kategoriordning]":  1,
+                               "[Revenue]":  19230454,
+                               "[PreviousRevenue]":  16481335,
+                               "[GrossProfit]":  3830451
+                           },
+                           {
+                               "Artiklar[Kategori]":  "Maskiner",
+                               "Artiklar[Artikel]":  "Maskiner – utökad",
+                               "Artiklar[Områdesordning]":  1,
+                               "Artiklar[Kategoriordning]":  1,
+                               "[Revenue]":  15769546,
+                               "[PreviousRevenue]":  13518665,
+                               "[GrossProfit]":  3169549
+                           },
+                           {
+                               "Artiklar[Kategori]":  "Rengöringsprodukter",
+                               "Artiklar[Artikel]":  "Rengöringsprodukter – standard",
+                               "Artiklar[Områdesordning]":  1,
+                               "Artiklar[Kategoriordning]":  2,
+                               "[Revenue]":  16500032,
+                               "[PreviousRevenue]":  13750024,
+                               "[GrossProfit]":  5940034
+                           },
+                           {
+                               "Artiklar[Kategori]":  "Rengöringsprodukter",
+                               "Artiklar[Artikel]":  "Rengöringsprodukter – utökad",
+                               "Artiklar[Områdesordning]":  1,
+                               "Artiklar[Kategoriordning]":  2,
+                               "[Revenue]":  13499968,
+                               "[PreviousRevenue]":  11249976,
+                               "[GrossProfit]":  4859966
+                           },
+                           {
+                               "Artiklar[Kategori]":  "Förbrukningsmaterial",
+                               "Artiklar[Artikel]":  "Förbrukningsmaterial – standard",
+                               "Artiklar[Områdesordning]":  1,
+                               "Artiklar[Kategoriordning]":  3,
+                               "[Revenue]":  11000033,
+                               "[PreviousRevenue]":  9900041,
+                               "[GrossProfit]":  3300031
+                           },
+                           {
+                               "Artiklar[Kategori]":  "Förbrukningsmaterial",
+                               "Artiklar[Artikel]":  "Förbrukningsmaterial – utökad",
+                               "Artiklar[Områdesordning]":  1,
+                               "Artiklar[Kategoriordning]":  3,
+                               "[Revenue]":  8999967,
+                               "[PreviousRevenue]":  8099959,
+                               "[GrossProfit]":  2699969
+                           },
+                           {
+                               "Artiklar[Kategori]":  "Service",
+                               "Artiklar[Artikel]":  "Service – standard",
+                               "Artiklar[Områdesordning]":  2,
+                               "Artiklar[Kategoriordning]":  4,
+                               "[Revenue]":  6580451,
+                               "[PreviousRevenue]":  4931356,
+                               "[GrossProfit]":  2356450
+                           },
+                           {
+                               "Artiklar[Kategori]":  "Service",
+                               "Artiklar[Artikel]":  "Service – utökad",
+                               "Artiklar[Områdesordning]":  2,
+                               "Artiklar[Kategoriordning]":  4,
+                               "[Revenue]":  5419549,
+                               "[PreviousRevenue]":  4068644,
+                               "[GrossProfit]":  1963550
+                           },
+                           {
+                               "Artiklar[Kategori]":  "Reparationer",
+                               "Artiklar[Artikel]":  "Reparationer – standard",
+                               "Artiklar[Områdesordning]":  2,
+                               "Artiklar[Kategoriordning]":  5,
+                               "[Revenue]":  5500009,
+                               "[PreviousRevenue]":  4400024,
+                               "[GrossProfit]":  1265005
+                           },
+                           {
+                               "Artiklar[Kategori]":  "Reparationer",
+                               "Artiklar[Artikel]":  "Reparationer – utökad",
+                               "Artiklar[Områdesordning]":  2,
+                               "Artiklar[Kategoriordning]":  5,
+                               "[Revenue]":  4499991,
+                               "[PreviousRevenue]":  3599976,
+                               "[GrossProfit]":  1034995
+                           },
+                           {
+                               "Artiklar[Kategori]":  "Installationer",
+                               "Artiklar[Artikel]":  "Installationer – standard",
+                               "Artiklar[Områdesordning]":  2,
+                               "Artiklar[Kategoriordning]":  6,
+                               "[Revenue]":  4400040,
+                               "[PreviousRevenue]":  3300032,
+                               "[GrossProfit]":  1474037
+                           },
+                           {
+                               "Artiklar[Kategori]":  "Installationer",
+                               "Artiklar[Artikel]":  "Installationer – utökad",
+                               "Artiklar[Områdesordning]":  2,
+                               "Artiklar[Kategoriordning]":  6,
+                               "[Revenue]":  3599960,
+                               "[PreviousRevenue]":  2699968,
+                               "[GrossProfit]":  1205963
+                           },
+                           {
+                               "Artiklar[Kategori]":  "Diskpersonal",
+                               "Artiklar[Artikel]":  "Diskpersonal – standard",
+                               "Artiklar[Områdesordning]":  3,
+                               "Artiklar[Kategoriordning]":  7,
+                               "[Revenue]":  7680441,
+                               "[PreviousRevenue]":  7681344,
+                               "[GrossProfit]":  904441
+                           },
+                           {
+                               "Artiklar[Kategori]":  "Diskpersonal",
+                               "Artiklar[Artikel]":  "Diskpersonal – utökad",
+                               "Artiklar[Områdesordning]":  3,
+                               "Artiklar[Kategoriordning]":  7,
+                               "[Revenue]":  6319559,
+                               "[PreviousRevenue]":  6318656,
+                               "[GrossProfit]":  775559
+                           },
+                           {
+                               "Artiklar[Kategori]":  "Städpersonal",
+                               "Artiklar[Artikel]":  "Städpersonal – standard",
+                               "Artiklar[Områdesordning]":  3,
+                               "Artiklar[Kategoriordning]":  8,
+                               "[Revenue]":  5775016,
+                               "[PreviousRevenue]":  5500015,
+                               "[GrossProfit]":  693014
+                           },
+                           {
+                               "Artiklar[Kategori]":  "Städpersonal",
+                               "Artiklar[Artikel]":  "Städpersonal – utökad",
+                               "Artiklar[Områdesordning]":  3,
+                               "Artiklar[Kategoriordning]":  8,
+                               "[Revenue]":  4724984,
+                               "[PreviousRevenue]":  4499985,
+                               "[GrossProfit]":  566986
+                           }
+                       ]
+                   ],
+    "source":  "Actual local Power BI Desktop DAX"
+}

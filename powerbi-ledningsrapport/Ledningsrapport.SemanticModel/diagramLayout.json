@@ -4,7 +4,7 @@
     {
       "ordinal": 0,
       "scrollPosition": {
-        "x": 414.50401899717843,
+        "x": 416.61523947657093,
         "y": 0
       },
       "nodes": [
@@ -420,6 +420,126 @@
           "nodeLineageTag": "214889ad-3dec-4e24-9e25-82e49072ea93",
           "size": {
             "height": 224,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {},
+          "nodeIndex": "Arbetskapacitet",
+          "nodeLineageTag": "e042e544-0cd0-4e05-8f65-817a2d1a263c",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {},
+          "nodeIndex": "Budgetrapportnoder",
+          "nodeLineageTag": "fd8c3de2-1f7a-4f5b-b23c-ad64436483bb",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {},
+          "nodeIndex": "Planbokningar",
+          "nodeLineageTag": "af0e29b4-53a4-46f8-b6b7-879ec2986b3a",
+          "size": {
+            "height": 296,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {},
+          "nodeIndex": "Planinställning",
+          "nodeLineageTag": "a7dc1194-675e-44f9-86bd-831644b50673",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {},
+          "nodeIndex": "Planveckor",
+          "nodeLineageTag": "c826a6c0-0bd2-4bcf-b1d9-f8bc033a3877",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {},
+          "nodeIndex": "Resurser",
+          "nodeLineageTag": "61afefb1-05bc-41f9-8151-8f561e1caea8",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {},
+          "nodeIndex": "Resursval",
+          "nodeLineageTag": "17d16d84-b6a9-40cb-bb2c-23f8ba2d0e75",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {},
+          "nodeIndex": "Uppdragsekonomi",
+          "nodeLineageTag": "d0b139a3-3893-48d6-a2cb-4f2d3e79977b",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {},
+          "nodeIndex": "Uppdragsområden",
+          "nodeLineageTag": "4faa74e3-a482-49b0-8a04-af5a3d1ae11c",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {},
+          "nodeIndex": "Uppdragsregister",
+          "nodeLineageTag": "fd62f09d-5e73-42c8-bcb9-78e974aa8a3d",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {},
+          "nodeIndex": "Uppdragsstatusval",
+          "nodeLineageTag": "0d195123-9f36-403a-8c68-be85d22ed670",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {},
+          "nodeIndex": "Utförd tid",
+          "nodeLineageTag": "d0c55038-5ea1-42c9-a426-9b2cebc136cc",
+          "size": {
+            "height": 200,
             "width": 234
           },
           "zIndex": 0

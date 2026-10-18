@@ -36,17 +36,7 @@ cultureInfo sv-SE
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "Omsättning": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        },
-			        {
-			          "Vald period": {
+			          "Försäljning, Mkr": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -67,7 +57,7 @@ cultureInfo sv-SE
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "Tillväxt": {
+			          "Förändring mot föregående år": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -88,7 +78,7 @@ cultureInfo sv-SE
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "Bruttovinst": {
+			          "Bruttovinst, Mkr": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -106,19 +96,7 @@ cultureInfo sv-SE
 			          "ConceptualProperty": "Sälj bruttomarginal"
 			        }
 			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "Marginal": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        }
-			      ]
+			      "State": "Generated"
 			    },
 			    "försäljning.sälj_omsättning_föregående_år_mkr": {
 			      "Definition": {
@@ -130,7 +108,7 @@ cultureInfo sv-SE
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "Föregående år": {
+			          "Föregående år, Mkr": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -619,19 +597,7 @@ cultureInfo sv-SE
 			          "ConceptualProperty": "Plan bokat teknisk"
 			        }
 			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "Teknisk service": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        }
-			      ]
+			      "State": "Generated"
 			    },
 			    "planinställning.plan_bokat_bemanning": {
 			      "Definition": {
@@ -640,19 +606,7 @@ cultureInfo sv-SE
 			          "ConceptualProperty": "Plan bokat bemanning"
 			        }
 			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "Bemanning": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        }
-			      ]
+			      "State": "Generated"
 			    },
 			    "planinställning.plan_kapacitet": {
 			      "Definition": {
@@ -661,29 +615,7 @@ cultureInfo sv-SE
 			          "ConceptualProperty": "Plan kapacitet"
 			        }
 			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "Kapacitet": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        },
-			        {
-			          "Kapacitet, h": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        }
-			      ]
+			      "State": "Generated"
 			    },
 			    "planinställning.uppdrag_kund": {
 			      "Definition": {
@@ -734,19 +666,7 @@ cultureInfo sv-SE
 			          "ConceptualProperty": "Uppdrag hela timmar"
 			        }
 			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "Utfört hittills": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        }
-			      ]
+			      "State": "Generated"
 			    },
 			    "planinställning.uppdrag_kalkyl": {
 			      "Definition": {
@@ -776,19 +696,7 @@ cultureInfo sv-SE
 			          "ConceptualProperty": "Uppdrag prognos"
 			        }
 			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "Prognos slutmarginal": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        }
-			      ]
+			      "State": "Generated"
 			    },
 			    "planinställning.trend_teknisk": {
 			      "Definition": {
@@ -842,7 +750,7 @@ cultureInfo sv-SE
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "Mål 82 %": {
+			          "Mål": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -860,19 +768,7 @@ cultureInfo sv-SE
 			          "ConceptualProperty": "Trend vald månad"
 			        }
 			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "Vald månad": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        }
-			      ]
+			      "State": "Generated"
 			    },
 			    "planinställning.plan_bokat": {
 			      "Definition": {
@@ -881,19 +777,7 @@ cultureInfo sv-SE
 			          "ConceptualProperty": "Plan bokat"
 			        }
 			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "Bokat, h": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        }
-			      ]
+			      "State": "Generated"
 			    },
 			    "planinställning.plan_ledigt": {
 			      "Definition": {
@@ -902,19 +786,7 @@ cultureInfo sv-SE
 			          "ConceptualProperty": "Plan ledigt"
 			        }
 			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "Ledigt, h": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        }
-			      ]
+			      "State": "Generated"
 			    },
 			    "planinställning.plan_överbeläggning": {
 			      "Definition": {
@@ -923,19 +795,7 @@ cultureInfo sv-SE
 			          "ConceptualProperty": "Plan överbeläggning"
 			        }
 			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "Överbokat, h": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        }
-			      ]
+			      "State": "Generated"
 			    },
 			    "uppdragsregister.uppdrag": {
 			      "Definition": {
@@ -986,6 +846,375 @@ cultureInfo sv-SE
 			          "ConceptualProperty": "Status"
 			        }
 			      },
+			      "State": "Generated"
+			    },
+			    "planveckor.veckostart": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Planveckor",
+			          "ConceptualProperty": "Veckostart"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "planveckor.veckoslut": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Planveckor",
+			          "ConceptualProperty": "Veckoslut"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "planinställning.uppdrag_riskikon": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Planinställning",
+			          "ConceptualProperty": "Uppdrag riskikon"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Risk": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "planinställning.uppdrag_prognostext": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Planinställning",
+			          "ConceptualProperty": "Uppdrag prognostext"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "trendaxel.månadsstart": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Trendaxel",
+			          "ConceptualProperty": "Månadsstart"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Månad": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "planinställning.tid_debiterbar_trend": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Planinställning",
+			          "ConceptualProperty": "Tid debiterbar trend"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Debiterbart": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "planinställning.tid_kundarbete_trend": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Planinställning",
+			          "ConceptualProperty": "Tid kundarbete trend"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Kundarbete, ej debiterat": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "planinställning.tid_internt_trend": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Planinställning",
+			          "ConceptualProperty": "Tid internt trend"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Internt arbete": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "planinställning.tid_ej_rapporterat_trend": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Planinställning",
+			          "ConceptualProperty": "Tid ej rapporterat trend"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Ej rapporterat": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "planinställning.tid_tillgänglig_trend": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Planinställning",
+			          "ConceptualProperty": "Tid tillgänglig trend"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Tillgänglig tid": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "planinställning.tid_kapacitetsavvikelse_trend": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Planinställning",
+			          "ConceptualProperty": "Tid kapacitetsavvikelse trend"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Tid över kapacitet": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "planinställning.tid_summering": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Planinställning",
+			          "ConceptualProperty": "Tid summering"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Tid summering": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "planinställning.utfall_periodtext": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Planinställning",
+			          "ConceptualProperty": "Utfall periodtext"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Utfall periodtext": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "planinställning.historisk_tidsrubrik": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Planinställning",
+			          "ConceptualProperty": "Historisk tidsrubrik"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "planinställning.historisk_cellgrad": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Planinställning",
+			          "ConceptualProperty": "Historisk cellgrad"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Debiteringsgrad": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "planinställning.historisk_heatrubrik": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Planinställning",
+			          "ConceptualProperty": "Historisk heatrubrik"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "planinställning.uppdrag_över_tidskalkyl": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Planinställning",
+			          "ConceptualProperty": "Uppdrag över tidskalkyl"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Uppdrag över tidskalkyl": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "planinställning.historisk_tabellrubrik": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Planinställning",
+			          "ConceptualProperty": "Historisk tabellrubrik"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Historisk tabellrubrik": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "planinställning.tidskalkyl_jämförelse": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Planinställning",
+			          "ConceptualProperty": "Tidskalkyl jämförelse"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Tidskalkyl jämförelse": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "planinställning.utfall_ej_debiterbara_timmar": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Planinställning",
+			          "ConceptualProperty": "Utfall ej debiterbara timmar"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Utfall ej debiterbara timmar": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "planinställning.uppdrag_status_historisk": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Planinställning",
+			          "ConceptualProperty": "Uppdrag status historisk"
+			        }
+			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
@@ -1000,17 +1229,17 @@ cultureInfo sv-SE
 			        }
 			      ]
 			    },
-			    "planveckor.veckostart": {
+			    "planinställning.uppdrag_timmar_periodslut": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Planveckor",
-			          "ConceptualProperty": "Veckostart"
+			          "ConceptualEntity": "Planinställning",
+			          "ConceptualProperty": "Uppdrag timmar periodslut"
 			        }
 			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "Från": {
+			          "Utfört till periodslut": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -1021,17 +1250,674 @@ cultureInfo sv-SE
 			        }
 			      ]
 			    },
-			    "planveckor.veckoslut": {
+			    "planinställning.uppdrag_faktisk_marginaltext": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Planveckor",
-			          "ConceptualProperty": "Veckoslut"
+			          "ConceptualEntity": "Planinställning",
+			          "ConceptualProperty": "Uppdrag faktisk marginaltext"
 			        }
 			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "Till": {
+			          "Faktisk bruttomarginal": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "planinställning.historisk_trendtext": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Planinställning",
+			          "ConceptualProperty": "Historisk trendtext"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "planinställning.ej_debiterbart_jämförelse": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Planinställning",
+			          "ConceptualProperty": "Ej debiterbart jämförelse"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Ej debiterbart jämförelse": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "artiklar.verksamhetsmarkor": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Artiklar",
+			          "ConceptualProperty": "Verksamhetsmarkor"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "försäljning.sälj_omsättning": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Försäljning",
+			          "ConceptualProperty": "Sälj omsättning"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "RevenueKrona": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "försäljning.sälj_omsättning_föregående_år": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Försäljning",
+			          "ConceptualProperty": "Sälj omsättning föregående år"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "PreviousRevenueKrona": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "försäljning.sälj_bruttovinst": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Försäljning",
+			          "ConceptualProperty": "Sälj bruttovinst"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "GrossProfitKrona": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "artiklar.kategori": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Artiklar",
+			          "ConceptualProperty": "Kategori"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Category": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "artiklar.artikel": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Artiklar",
+			          "ConceptualProperty": "Artikel"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Article": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "artiklar.områdesordning": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Artiklar",
+			          "ConceptualProperty": "Områdesordning"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Area": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "artiklar.kategoriordning": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Artiklar",
+			          "ConceptualProperty": "Kategoriordning"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Order": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "kunder.kundbransch": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Kunder",
+			          "ConceptualProperty": "Kundbransch"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Bransch": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "kunder.bransch_månadsförändring_procent": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Kunder",
+			          "ConceptualProperty": "Bransch månadsförändring procent"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Förändring i procent": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Förändring": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Ändring, %": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "kunder.bransch_månadsförsäljning": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Kunder",
+			          "ConceptualProperty": "Bransch månadsförsäljning"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Försäljning": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "kunder.bransch_månadsförsäljning_föregående_år": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Kunder",
+			          "ConceptualProperty": "Bransch månadsförsäljning föregående år"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Samma månad föregående år": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "kunder.bransch_månadsförändring_kronor": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Kunder",
+			          "ConceptualProperty": "Bransch månadsförändring kronor"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Förändring": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Ändring, kr": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "kunder.bransch_månadsförändring_mkr": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Kunder",
+			          "ConceptualProperty": "Bransch månadsförändring Mkr"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Förändring i Mkr": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "försäljning.kundbas_bryggsteg": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Försäljning",
+			          "ConceptualProperty": "Kundbas bryggsteg"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Antal kunder": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "försäljning.kundintäkt_bryggsteg": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Försäljning",
+			          "ConceptualProperty": "Kundintäkt bryggsteg"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Försäljning": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "försäljning.kundgrupp_andel": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Försäljning",
+			          "ConceptualProperty": "Kundgrupp andel"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Andel av månadens försäljning": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "försäljning.kundgrupp_månadsintäkt": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Försäljning",
+			          "ConceptualProperty": "Kundgrupp månadsintäkt"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Försäljning": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "kundbassteg.steg": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Kundbassteg",
+			          "ConceptualProperty": "Steg"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Förändring": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "kundintäktssteg.steg": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Kundintäktssteg",
+			          "ConceptualProperty": "Steg"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Förändring": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "kundgrupper.kundgrupp": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Kundgrupper",
+			          "ConceptualProperty": "Kundgrupp"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Kundgrupp": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "bryggaxel.steg": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Bryggaxel",
+			          "ConceptualProperty": "Steg"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Förändring": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "försäljning.bryggsteg": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Försäljning",
+			          "ConceptualProperty": "Bryggsteg"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Förändring, Mkr": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "försäljning.trendomsättning_föregående_år": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Försäljning",
+			          "ConceptualProperty": "Trendomsättning föregående år"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Föregående år": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "försäljning.trendomsättning_förändring": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Försäljning",
+			          "ConceptualProperty": "Trendomsättning förändring"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Förändring mot föregående år": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "försäljning.sälj_marginal_procent": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Försäljning",
+			          "ConceptualProperty": "Sälj marginal procent"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Bruttomarginal": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "försäljning.sälj_trend_föregående_år": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Försäljning",
+			          "ConceptualProperty": "Sälj trend föregående år"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Föregående år, Mkr": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "försäljning.sälj_trend": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Försäljning",
+			          "ConceptualProperty": "Sälj trend"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Försäljning, Mkr": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "försäljningsserie.serie": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Försäljningsserie",
+			          "ConceptualProperty": "Serie"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Verksamhet": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",

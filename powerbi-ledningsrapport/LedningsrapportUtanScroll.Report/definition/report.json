@@ -52,8 +52,8 @@
       "type": "RegisteredResources",
       "items": [
         {
-          "name": "AubecoLogoBlue202610140002.svg",
-          "path": "AubecoLogoBlue202610140002.svg",
+          "name": "DemobolagetBlue.png",
+          "path": "DemobolagetBlue.png",
           "type": "Image"
         },
         {
@@ -94,6 +94,11 @@
         {
           "name": "navigation-projects-0F3163.png",
           "path": "navigation-projects-0F3163.png",
+          "type": "Image"
+        },
+        {
+          "name": "navigation-projects-FFFFFF.svg",
+          "path": "navigation-projects-FFFFFF.svg",
           "type": "Image"
         },
         {

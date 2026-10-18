@@ -57,7 +57,7 @@
                 }
               },
               "queryRef": "Planinställning.Uppdrag kund",
-              "nativeQueryRef": "Uppdrag kund",
+              "nativeQueryRef": "Kund",
               "displayName": "Kund"
             },
             {
@@ -77,16 +77,16 @@
             },
             {
               "field": {
-                "Column": {
+                "Measure": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Uppdragsregister"
+                      "Entity": "Planinställning"
                     }
                   },
-                  "Property": "Status"
+                  "Property": "Uppdrag status historisk"
                 }
               },
-              "queryRef": "Uppdragsregister.Status",
+              "queryRef": "Planinställning.Uppdrag status historisk",
               "nativeQueryRef": "Status",
               "displayName": "Status"
             },
@@ -102,8 +102,8 @@
                 }
               },
               "queryRef": "Planinställning.Uppdrag planerade",
-              "nativeQueryRef": "Uppdrag planerade",
-              "displayName": "Planerade timmar, h"
+              "nativeQueryRef": "Planerade timmar",
+              "displayName": "Planerade timmar"
             },
             {
               "field": {
@@ -113,12 +113,12 @@
                       "Entity": "Planinställning"
                     }
                   },
-                  "Property": "Uppdrag hela timmar"
+                  "Property": "Uppdrag timmar periodslut"
                 }
               },
-              "queryRef": "Planinställning.Uppdrag hela timmar",
-              "nativeQueryRef": "Uppdrag hela timmar",
-              "displayName": "Utfört hittills, h"
+              "queryRef": "Planinställning.Uppdrag timmar periodslut",
+              "nativeQueryRef": "Utfört till periodslut",
+              "displayName": "Utfört till periodslut"
             },
             {
               "field": {
@@ -132,7 +132,7 @@
                 }
               },
               "queryRef": "Planinställning.Uppdrag kalkyl",
-              "nativeQueryRef": "Uppdrag kalkyl",
+              "nativeQueryRef": "Kalkylmarginal",
               "displayName": "Kalkylmarginal"
             },
             {
@@ -143,12 +143,12 @@
                       "Entity": "Planinställning"
                     }
                   },
-                  "Property": "Uppdrag prognostext"
+                  "Property": "Uppdrag faktisk marginaltext"
                 }
               },
-              "queryRef": "Planinställning.Uppdrag prognostext",
-              "nativeQueryRef": "Prognos slutmarginal",
-              "displayName": "Prognos slutmarginal"
+              "queryRef": "Planinställning.Uppdrag faktisk marginaltext",
+              "nativeQueryRef": "Faktisk bruttomarginal",
+              "displayName": "Faktisk bruttomarginal"
             }
           ]
         }
@@ -181,8 +181,7 @@
             },
             "direction": "Ascending"
           }
-        ],
-        "isDefaultSort": false
+        ]
       }
     },
     "objects": {
@@ -228,7 +227,21 @@
             "wordWrap": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
+                }
+              }
+            },
+            "autoSizeColumnWidth": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "columnAdjustment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'growToFit'"
                 }
               }
             }
@@ -248,7 +261,7 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "11.5D"
+                  "Value": "12D"
                 }
               }
             },
@@ -257,7 +270,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#405572'"
+                      "Value": "'#5B6B80'"
                     }
                   }
                 }
@@ -306,36 +319,6 @@
                           "Entity": "Planinställning"
                         }
                       },
-                      "Property": "Uppdrag marginalfärg"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "selector": {
-            "data": [
-              {
-                "dataViewWildcard": {
-                  "matchingOption": 1
-                }
-              }
-            ],
-            "metadata": "Planinställning.Uppdrag prognostext"
-          }
-        },
-        {
-          "properties": {
-            "fontColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Measure": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "Planinställning"
-                        }
-                      },
                       "Property": "Uppdrag riskfärg"
                     }
                   }
@@ -352,6 +335,374 @@
               }
             ],
             "metadata": "Planinställning.Uppdrag riskikon"
+          }
+        },
+        {
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 1
+                }
+              }
+            ],
+            "metadata": "Planinställning.Uppdrag faktisk marginaltext"
+          },
+          "properties": {
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Planinställning"
+                        }
+                      },
+                      "Property": "Uppdrag marginalfärg"
+                    }
+                  }
+                }
+              }
+            },
+            "backColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Planinställning"
+                        }
+                      },
+                      "Property": "Uppdrag marginalbakgrund"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 1
+                }
+              }
+            ],
+            "metadata": "Planinställning.Uppdrag faktisk marginaltext"
+          },
+          "properties": {
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Planinställning"
+                        }
+                      },
+                      "Property": "Uppdrag marginalfärg"
+                    }
+                  }
+                }
+              }
+            },
+            "backColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Planinställning"
+                        }
+                      },
+                      "Property": "Uppdrag marginalbakgrund"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 1
+                }
+              }
+            ],
+            "metadata": "Planinställning.Uppdrag faktisk marginaltext"
+          },
+          "properties": {
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Planinställning"
+                        }
+                      },
+                      "Property": "Uppdrag marginalfärg"
+                    }
+                  }
+                }
+              }
+            },
+            "backColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Planinställning"
+                        }
+                      },
+                      "Property": "Uppdrag marginalbakgrund"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 1
+                }
+              }
+            ],
+            "metadata": "Planinställning.Uppdrag faktisk marginaltext"
+          },
+          "properties": {
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Planinställning"
+                        }
+                      },
+                      "Property": "Uppdrag marginalfärg"
+                    }
+                  }
+                }
+              }
+            },
+            "backColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Planinställning"
+                        }
+                      },
+                      "Property": "Uppdrag marginalbakgrund"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 1
+                }
+              }
+            ],
+            "metadata": "Planinställning.Uppdrag faktisk marginaltext"
+          },
+          "properties": {
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Planinställning"
+                        }
+                      },
+                      "Property": "Uppdrag marginalfärg"
+                    }
+                  }
+                }
+              }
+            },
+            "backColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Planinställning"
+                        }
+                      },
+                      "Property": "Uppdrag marginalbakgrund"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 1
+                }
+              }
+            ],
+            "metadata": "Planinställning.Uppdrag faktisk marginaltext"
+          },
+          "properties": {
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Planinställning"
+                        }
+                      },
+                      "Property": "Uppdrag marginalfärg"
+                    }
+                  }
+                }
+              }
+            },
+            "backColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Planinställning"
+                        }
+                      },
+                      "Property": "Uppdrag marginalbakgrund"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 1
+                }
+              }
+            ],
+            "metadata": "Planinställning.Uppdrag faktisk marginaltext"
+          },
+          "properties": {
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Planinställning"
+                        }
+                      },
+                      "Property": "Uppdrag marginalfärg"
+                    }
+                  }
+                }
+              }
+            },
+            "backColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Planinställning"
+                        }
+                      },
+                      "Property": "Uppdrag marginalbakgrund"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 1
+                }
+              }
+            ],
+            "metadata": "Planinställning.Uppdrag faktisk marginaltext"
+          },
+          "properties": {
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Planinställning"
+                        }
+                      },
+                      "Property": "Uppdrag marginalfärg"
+                    }
+                  }
+                }
+              }
+            },
+            "backColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Planinställning"
+                        }
+                      },
+                      "Property": "Uppdrag marginalbakgrund"
+                    }
+                  }
+                }
+              }
+            }
           }
         }
       ],
@@ -408,62 +759,65 @@
       ],
       "columnWidth": [
         {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
-                  "Value": "50D"
-                }
-              }
-            }
-          },
           "selector": {
             "metadata": "Planinställning.Uppdrag riskikon"
-          }
-        },
-        {
+          },
           "properties": {
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "310D"
+                  "Value": "44D"
                 }
               }
             }
-          },
+          }
+        },
+        {
           "selector": {
             "metadata": "Uppdragsregister.Uppdrag"
-          }
-        },
-        {
+          },
           "properties": {
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "216D"
+                  "Value": "300D"
                 }
               }
             }
-          },
+          }
+        },
+        {
           "selector": {
             "metadata": "Planinställning.Uppdrag kund"
-          }
-        },
-        {
+          },
           "properties": {
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "172D"
+                  "Value": "224D"
                 }
               }
             }
-          },
-          "selector": {
-            "metadata": "Uppdragsregister.Typ"
           }
         },
         {
+          "selector": {
+            "metadata": "Uppdragsregister.Typ"
+          },
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "160D"
+                }
+              }
+            }
+          }
+        },
+        {
+          "selector": {
+            "metadata": "Planinställning.Uppdrag status historisk"
+          },
           "properties": {
             "value": {
               "expr": {
@@ -472,26 +826,12 @@
                 }
               }
             }
-          },
-          "selector": {
-            "metadata": "Uppdragsregister.Status"
           }
         },
         {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
-                  "Value": "170D"
-                }
-              }
-            }
-          },
           "selector": {
             "metadata": "Planinställning.Uppdrag planerade"
-          }
-        },
-        {
+          },
           "properties": {
             "value": {
               "expr": {
@@ -500,37 +840,48 @@
                 }
               }
             }
-          },
+          }
+        },
+        {
           "selector": {
-            "metadata": "Planinställning.Uppdrag hela timmar"
-          }
-        },
-        {
+            "metadata": "Planinställning.Uppdrag timmar periodslut"
+          },
           "properties": {
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "170D"
+                  "Value": "200D"
                 }
               }
             }
-          },
+          }
+        },
+        {
           "selector": {
             "metadata": "Planinställning.Uppdrag kalkyl"
-          }
-        },
-        {
+          },
           "properties": {
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "192D"
+                  "Value": "160D"
                 }
               }
             }
-          },
+          }
+        },
+        {
           "selector": {
-            "metadata": "Planinställning.Uppdrag prognostext"
+            "metadata": "Planinställning.Uppdrag faktisk marginaltext"
+          },
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "190D"
+                }
+              }
+            }
           }
         }
       ],
@@ -565,7 +916,7 @@
         },
         {
           "selector": {
-            "metadata": "Planinställning.Uppdrag hela timmar"
+            "metadata": "Planinställning.Uppdrag timmar periodslut"
           },
           "properties": {
             "alignment": {
@@ -621,7 +972,7 @@
         },
         {
           "selector": {
-            "metadata": "Planinställning.Uppdrag prognostext"
+            "metadata": "Planinställning.Uppdrag faktisk marginaltext"
           },
           "properties": {
             "alignment": {
@@ -818,6 +1169,93 @@
               "expr": {
                 "Literal": {
                   "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "stylePreset": [
+        {
+          "properties": {
+            "name": {
+              "expr": {
+                "Literal": {
+                  "Value": "'None'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "visualTooltip": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "type": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Default'"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Segoe UI'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "11D"
+                }
+              }
+            },
+            "titleFontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#5B6B80'"
+                    }
+                  }
+                }
+              }
+            },
+            "valueFontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#0F3163'"
+                    }
+                  }
+                }
+              }
+            },
+            "background": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#FFFFFF'"
+                    }
+                  }
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
                 }
               }
             }

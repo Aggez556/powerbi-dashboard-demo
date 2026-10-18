@@ -1,0 +1,79 @@
+﻿{
+    "status":  "queried",
+    "resultSets":  [
+                       [
+                           {
+                               "[NonbillableCaption]":  "20,5 % av tillgänglig kapacitet",
+                               "[OverrunCaption]":  "17,0 % av 860 avslutade uppdrag",
+                               "[TrendCaption]":  "jan 2025–dec 2025",
+                               "[TimeCaption]":  "Tillgängliga timmar per månad · jan 2025–dec 2025",
+                               "[MatrixCaption]":  "Historiskt utfall · jan 2025–dec 2025",
+                               "[TableCaption]":  "Uppdrag aktiva under vald period · Utfall t.o.m. 31 december 2025",
+                               "[TimeSummary]":  "Tillgängligt: 48 400 h · Debiterbart 38 462 h (79,5 %)"
+                           }
+                       ],
+                       [
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1735686000000)\/",
+                               "[Billable]":  3234,
+                               "[Rate]":  0.77
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1738364400000)\/",
+                               "[Billable]":  3120,
+                               "[Rate]":  0.78
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1740783600000)\/",
+                               "[Billable]":  3318,
+                               "[Rate]":  0.79
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1743458400000)\/",
+                               "[Billable]":  3200,
+                               "[Rate]":  0.8
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1746050400000)\/",
+                               "[Billable]":  3192,
+                               "[Rate]":  0.798
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1748728800000)\/",
+                               "[Billable]":  3024.8,
+                               "[Rate]":  0.796
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1751320800000)\/",
+                               "[Billable]":  2859.2,
+                               "[Rate]":  0.79422222222222216
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1753999200000)\/",
+                               "[Billable]":  3376.8,
+                               "[Rate]":  0.804
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1756677600000)\/",
+                               "[Billable]":  3528.8,
+                               "[Rate]":  0.802
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1759269600000)\/",
+                               "[Billable]":  3680,
+                               "[Rate]":  0.8
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1761951600000)\/",
+                               "[Billable]":  3208,
+                               "[Rate]":  0.802
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1764543600000)\/",
+                               "[Billable]":  2720,
+                               "[Rate]":  0.8
+                           }
+                       ]
+                   ],
+    "source":  "Actual local Power BI Desktop DAX"
+}

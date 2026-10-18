@@ -1,0 +1,28 @@
+﻿{
+    "status":  "queried",
+    "resultSets":  [
+                       [
+                           {
+                               "[Area]":  2,
+                               "[Period]":  "Previous R12",
+                               "[Rate]":  786.472847648538
+                           },
+                           {
+                               "[Area]":  2,
+                               "[Period]":  "R12 2026-09",
+                               "[Rate]":  809.88835044712334
+                           },
+                           {
+                               "[Area]":  3,
+                               "[Period]":  "Previous R12",
+                               "[Rate]":  408.36429509442661
+                           },
+                           {
+                               "[Area]":  3,
+                               "[Period]":  "R12 2026-09",
+                               "[Rate]":  333.07703449967283
+                           }
+                       ]
+                   ],
+    "source":  "Actual local Power BI Desktop DAX"
+}

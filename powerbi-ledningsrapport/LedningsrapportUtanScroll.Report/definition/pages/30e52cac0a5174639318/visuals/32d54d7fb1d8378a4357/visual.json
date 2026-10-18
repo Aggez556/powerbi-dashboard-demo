@@ -17,17 +17,17 @@
           "properties": {
             "paragraphs": [
               {
+                "horizontalTextAlignment": "left",
                 "textRuns": [
                   {
-                    "value": "Ledig tid och överbeläggning räknas per medarbetare och dag. Ledig kapacitet kan finnas samtidigt som andra är överbelagda.",
+                    "value": "Tidskalkyl gäller hela uppdraget. Utfall visas till periodslut. — = ingen registrerad intäkt. Ej debiterbara timmar inkluderar internt arbete och ej rapporterad tid.",
                     "textStyle": {
                       "fontFamily": "Segoe UI",
                       "fontSize": "10pt",
                       "color": "#5B6B80"
                     }
                   }
-                ],
-                "horizontalTextAlignment": "left"
+                ]
               }
             ]
           }

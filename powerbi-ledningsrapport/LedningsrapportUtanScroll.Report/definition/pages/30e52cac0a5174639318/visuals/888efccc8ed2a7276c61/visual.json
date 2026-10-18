@@ -138,7 +138,7 @@
             "customFormatString": {
               "expr": {
                 "Literal": {
-                  "Value": "'#,##0\" h\"'"
+                  "Value": "'#,##0'"
                 }
               }
             },
@@ -370,6 +370,19 @@
             }
           }
         }
+      ],
+      "visualTooltip": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "query": {
@@ -384,11 +397,12 @@
                       "Entity": "Planinställning"
                     }
                   },
-                  "Property": "Plan ledigt"
+                  "Property": "Uppdrag över tidskalkyl"
                 }
               },
-              "queryRef": "Planinställning.Plan ledigt",
-              "nativeQueryRef": "Plan ledigt"
+              "queryRef": "Planinställning.Uppdrag över tidskalkyl",
+              "nativeQueryRef": "Uppdrag över tidskalkyl",
+              "displayName": "Uppdrag över tidskalkyl"
             }
           ]
         }

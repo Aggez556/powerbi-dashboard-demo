@@ -55,6 +55,6 @@ table Budgetkolumner
 				let
 				 Source=Csv.Document(File.Contents(DataFolder & "/Budgetkolumner.csv"),[Delimiter=",",Encoding=65001,QuoteStyle=QuoteStyle.Csv]),
 				 Headers=Table.PromoteHeaders(Source,[PromoteAllScalars=true]),
-				 Typed=Table.TransformColumnTypes(Headers,{{"LägeID", Int64.Type}, {"ScenarioA", Int64.Type}, {"ScenarioB", Int64.Type}, {"MånadID", Int64.Type}, {"Grupp", type text}, {"Position", Int64.Type}, {"Kolumn", type text}},"en-US")
+				 Typed=Table.TransformColumnTypes(Headers,{{"LägeID", Int64.Type},{"ScenarioA", Int64.Type},{"ScenarioB", Int64.Type},{"MånadID", Int64.Type},{"Grupp", type text},{"Position", Int64.Type},{"Kolumn", type text}},"en-US")
 				in Typed
 

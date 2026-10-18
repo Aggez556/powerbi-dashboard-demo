@@ -46,7 +46,8 @@
                 }
               },
               "queryRef": "Försäljning.Trendomsättning föregående år",
-              "nativeQueryRef": "Trendomsättning föregående år"
+              "nativeQueryRef": "Föregående år",
+              "displayName": "Föregående år"
             },
             {
               "field": {
@@ -60,7 +61,8 @@
                 }
               },
               "queryRef": "Försäljning.Trendomsättning förändring",
-              "nativeQueryRef": "Trendomsättning förändring"
+              "nativeQueryRef": "Förändring mot föregående år",
+              "displayName": "Förändring mot föregående år"
             }
           ]
         },
@@ -141,7 +143,7 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "13.75D"
+                  "Value": "11D"
                 }
               }
             },
@@ -649,6 +651,67 @@
               "expr": {
                 "Literal": {
                   "Value": "true"
+                }
+              }
+            },
+            "type": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Default'"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Segoe UI'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "11D"
+                }
+              }
+            },
+            "titleFontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#5B6B80'"
+                    }
+                  }
+                }
+              }
+            },
+            "valueFontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#0F3163'"
+                    }
+                  }
+                }
+              }
+            },
+            "background": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#FFFFFF'"
+                    }
+                  }
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
                 }
               }
             }

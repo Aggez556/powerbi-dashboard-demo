@@ -1,0 +1,53 @@
+﻿{
+    "status":  "queried",
+    "resultSets":  [
+                       [
+                           {
+                               "Artiklar[Kategori]":  "Diskpersonal",
+                               "Artiklar[Område]":  "Bemanning",
+                               "[Color]":  "#EEF0FC"
+                           },
+                           {
+                               "Artiklar[Kategori]":  "Städpersonal",
+                               "Artiklar[Område]":  "Bemanning",
+                               "[Color]":  "#EEF0FC"
+                           },
+                           {
+                               "Artiklar[Kategori]":  "Förbrukningsmaterial",
+                               "Artiklar[Område]":  "Produktförsäljning",
+                               "[Color]":  "#E8EEF6"
+                           },
+                           {
+                               "Artiklar[Kategori]":  "Maskiner",
+                               "Artiklar[Område]":  "Produktförsäljning",
+                               "[Color]":  "#E8EEF6"
+                           },
+                           {
+                               "Artiklar[Kategori]":  "Rengöringsprodukter",
+                               "Artiklar[Område]":  "Produktförsäljning",
+                               "[Color]":  "#E8EEF6"
+                           },
+                           {
+                               "Artiklar[Kategori]":  "Installationer",
+                               "Artiklar[Område]":  "Teknisk service",
+                               "[Color]":  "#E6F3EE"
+                           },
+                           {
+                               "Artiklar[Kategori]":  "Reparationer",
+                               "Artiklar[Område]":  "Teknisk service",
+                               "[Color]":  "#E6F3EE"
+                           },
+                           {
+                               "Artiklar[Kategori]":  "Service",
+                               "Artiklar[Område]":  "Teknisk service",
+                               "[Color]":  "#E6F3EE"
+                           }
+                       ],
+                       [
+                           {
+                               "[TotalColor]":  "#E8EEF6"
+                           }
+                       ]
+                   ],
+    "source":  "Actual local Power BI Desktop DAX"
+}

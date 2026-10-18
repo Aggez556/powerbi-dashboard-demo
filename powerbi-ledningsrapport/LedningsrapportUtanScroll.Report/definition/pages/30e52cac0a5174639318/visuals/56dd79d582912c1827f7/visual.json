@@ -27,7 +27,7 @@
                 "name": {
                   "expr": {
                     "Literal": {
-                      "Value": "'navigation-projects-FFFFFF.png'"
+                      "Value": "'navigation-projects-FFFFFF.svg'"
                     }
                   }
                 },
@@ -36,7 +36,7 @@
                     "ResourcePackageItem": {
                       "PackageName": "RegisteredResources",
                       "PackageType": 1,
-                      "ItemName": "navigation-projects-FFFFFF.png"
+                      "ItemName": "navigation-projects-FFFFFF.svg"
                     }
                   }
                 },

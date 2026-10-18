@@ -1,0 +1,117 @@
+﻿{
+    "status":  "queried",
+    "resultSets":  [
+                       [
+                           {
+                               "[Year]":  2024,
+                               "[Active]":  255,
+                               "[Previous]":  225,
+                               "[Lost]":  5
+                           },
+                           {
+                               "[Year]":  2025,
+                               "[Active]":  276,
+                               "[Previous]":  255,
+                               "[Lost]":  19
+                           }
+                       ],
+                       [
+                           {
+                               "Kunder[Kundnyckel]":  1,
+                               "[Visible]":  1,
+                               "[LastPurchase]":  "2024-10-22"
+                           },
+                           {
+                               "Kunder[Kundnyckel]":  2,
+                               "[Visible]":  1,
+                               "[LastPurchase]":  "2024-10-17"
+                           },
+                           {
+                               "Kunder[Kundnyckel]":  3,
+                               "[Visible]":  1,
+                               "[LastPurchase]":  "2024-10-30"
+                           },
+                           {
+                               "Kunder[Kundnyckel]":  4,
+                               "[Visible]":  1,
+                               "[LastPurchase]":  "2024-10-09"
+                           },
+                           {
+                               "Kunder[Kundnyckel]":  281,
+                               "[Visible]":  1,
+                               "[LastPurchase]":  "2024-02-11"
+                           },
+                           {
+                               "Kunder[Kundnyckel]":  282,
+                               "[Visible]":  1,
+                               "[LastPurchase]":  "2024-02-06"
+                           },
+                           {
+                               "Kunder[Kundnyckel]":  283,
+                               "[Visible]":  1,
+                               "[LastPurchase]":  "2024-02-07"
+                           },
+                           {
+                               "Kunder[Kundnyckel]":  284,
+                               "[Visible]":  1,
+                               "[LastPurchase]":  "2024-02-14"
+                           },
+                           {
+                               "Kunder[Kundnyckel]":  285,
+                               "[Visible]":  1,
+                               "[LastPurchase]":  "2024-02-20"
+                           },
+                           {
+                               "Kunder[Kundnyckel]":  286,
+                               "[Visible]":  1,
+                               "[LastPurchase]":  "2024-07-31"
+                           },
+                           {
+                               "Kunder[Kundnyckel]":  287,
+                               "[Visible]":  1,
+                               "[LastPurchase]":  "2024-08-04"
+                           },
+                           {
+                               "Kunder[Kundnyckel]":  288,
+                               "[Visible]":  1,
+                               "[LastPurchase]":  "2024-09-07"
+                           },
+                           {
+                               "Kunder[Kundnyckel]":  289,
+                               "[Visible]":  1,
+                               "[LastPurchase]":  "2024-02-20"
+                           },
+                           {
+                               "Kunder[Kundnyckel]":  290,
+                               "[Visible]":  1,
+                               "[LastPurchase]":  "2024-03-13"
+                           },
+                           {
+                               "Kunder[Kundnyckel]":  291,
+                               "[Visible]":  1,
+                               "[LastPurchase]":  "2024-03-31"
+                           },
+                           {
+                               "Kunder[Kundnyckel]":  292,
+                               "[Visible]":  1,
+                               "[LastPurchase]":  "2024-03-20"
+                           },
+                           {
+                               "Kunder[Kundnyckel]":  293,
+                               "[Visible]":  1,
+                               "[LastPurchase]":  "2024-03-14"
+                           },
+                           {
+                               "Kunder[Kundnyckel]":  294,
+                               "[Visible]":  1,
+                               "[LastPurchase]":  "2024-07-06"
+                           },
+                           {
+                               "Kunder[Kundnyckel]":  295,
+                               "[Visible]":  1,
+                               "[LastPurchase]":  "2024-08-11"
+                           }
+                       ]
+                   ],
+    "source":  "Actual local Power BI Desktop DAX"
+}

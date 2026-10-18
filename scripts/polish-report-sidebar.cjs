@@ -5,7 +5,7 @@ const read=p=>JSON.parse(fs.readFileSync(p,'utf8').replace(/^\uFEFF/,''));
 const lit=v=>({expr:{Literal:{Value:typeof v==='boolean'?String(v):typeof v==='number'?`${v}D`:"'"+v.replace(/'/g,"''")+"'"}}});
 const color=c=>({solid:{color:lit(c)}});
 const resource=name=>({expr:{ResourcePackageItem:{PackageName:'RegisteredResources',PackageType:1,ItemName:name}}});
-function icon(kind,ink){const name=`navigation-${kind}-${ink.slice(1)}.png`;return{image:{name:lit(name),url:resource(name),scaling:lit('Fit')}};}
+function icon(kind,ink){const extension=kind==='projects'&&ink==='#FFFFFF'?'svg':'png';const name=`navigation-${kind}-${ink.slice(1)}.${extension}`;return{image:{name:lit(name),url:resource(name),scaling:lit('Fit')}};}
 function decorate(page,key,label,box,ink='#708198',size=10.5,back=null){
  const name=crypto.createHash('sha256').update('report-sidebar:'+page+':'+key).digest('hex').slice(0,20);
  const v={$schema:'https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json',name,position:{x:box[0],y:box[1],width:box[2],height:box[3],z:180,tabOrder:180},visual:{visualType:'textbox',objects:{general:[{properties:{paragraphs:[{textRuns:[{value:label,textStyle:{fontFamily:'Segoe UI Semibold',fontSize:size+'pt',color:ink}}],horizontalTextAlignment:'left'}]}}]},visualContainerObjects:{background:[{properties:{show:lit(!!back),color:color(back||'#FFFFFF'),transparency:lit(0)}}],border:[{properties:{show:lit(false)}}],padding:[{properties:{top:lit(0),bottom:lit(0),left:lit(0),right:lit(0)}}],general:[{properties:{altText:lit(label||'Avdelare')}}]}}};
@@ -15,10 +15,10 @@ function polish(reportPath){
  if(reportPath)report=path.resolve(reportPath);
  const reportFile=path.join(report,'definition/report.json'), definition=read(reportFile);
  const resources=definition.resourcePackages.find(p=>p.name==='RegisteredResources');
- const logo='AubecoLogoBlue202610140002.svg';
- fs.copyFileSync(path.resolve(__dirname,'../assets/aubeco/AubecoLogo-blue.svg'),path.join(report,'StaticResources/RegisteredResources',logo));
+ const logo='DemobolagetBlue.png';
+ fs.copyFileSync(path.resolve(__dirname,'../assets/demobolaget/DemobolagetBlue.png'),path.join(report,'StaticResources/RegisteredResources',logo));
  if(!resources.items.some(r=>r.name===logo))resources.items.push({name:logo,path:logo,type:'Image'});
- for(const name of fs.readdirSync(path.join(report,'StaticResources/RegisteredResources')).filter(n=>n.startsWith('navigation-')&&n.endsWith('.png'))){if(!resources.items.some(r=>r.name===name))resources.items.push({name,path:name,type:'Image'});}
+ for(const name of fs.readdirSync(path.join(report,'StaticResources/RegisteredResources')).filter(n=>n.startsWith('navigation-')&&/\.(png|svg)$/.test(n))){if(!resources.items.some(r=>r.name===name))resources.items.push({name,path:name,type:'Image'});}
  fs.writeFileSync(reportFile,JSON.stringify(definition,null,2)+'\n');
  const meta=read(path.join(report,'definition/pages/pages.json')),home=meta.pageOrder[0];
  const targets=meta.pageOrder.slice(1).filter(p=>!['Hidden','HiddenInViewMode'].includes(read(path.join(report,'definition/pages',p,'page.json')).visibility));
@@ -81,6 +81,7 @@ function polish(reportPath){
   decorate(page,'footer-title','Verksamhet & ekonomi',[32,1100,224,30],'#0F3163',11.5);
   decorate(page,'footer-detail','Rapportöversikt',[32,1136,224,24]);
  }
+ require('./fix-sidebar-click-targets.cjs')(report);
  console.log(`Polished ${count} sidebar buttons across ${targets.filter(Boolean).length} analysis pages.`);
 }
 module.exports=polish;

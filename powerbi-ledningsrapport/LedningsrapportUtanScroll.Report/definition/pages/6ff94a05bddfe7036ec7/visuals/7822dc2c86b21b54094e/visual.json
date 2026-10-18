@@ -5,7 +5,7 @@
     "x": 684,
     "y": 1044,
     "width": 552,
-    "height": 40,
+    "height": 64,
     "z": 38,
     "tabOrder": 38
   },
@@ -19,7 +19,7 @@
               {
                 "textRuns": [
                   {
-                    "value": "Samma period och samma grund för alla nyckeltal.",
+                    "value": "Gemensamma nyckeltal. Period och urval väljs på respektive sida.",
                     "textStyle": {
                       "fontFamily": "Segoe UI",
                       "fontSize": "12pt",

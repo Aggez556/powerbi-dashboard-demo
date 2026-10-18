@@ -1,0 +1,58 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/bookmark/2.1.0/schema.json",
+  "displayName": "Branschutveckling – Procent",
+  "name": "1cd7f7d3c5b985b98c8d",
+  "options": {
+    "applyOnlyToTargetVisuals": true,
+    "targetVisualNames": [
+      "1b35af19283d2bfe8933",
+      "42aead062e128fb7a2d1",
+      "0dc474020aa36c915a10",
+      "dfa64d667e583600761b",
+      "d08f96e4341210f00cac",
+      "3b58c7b8c58ff2fd6c03"
+    ],
+    "suppressActiveSection": true,
+    "suppressData": true
+  },
+  "explorationState": {
+    "version": "1.0",
+    "activeSection": "f429b020315c602ce0ed",
+    "sections": {
+      "f429b020315c602ce0ed": {
+        "visualContainers": {
+          "1b35af19283d2bfe8933": {
+            "singleVisual": {}
+          },
+          "42aead062e128fb7a2d1": {
+            "singleVisual": {
+              "display": {
+                "mode": "hidden"
+              }
+            }
+          },
+          "0dc474020aa36c915a10": {
+            "singleVisual": {}
+          },
+          "dfa64d667e583600761b": {
+            "singleVisual": {}
+          },
+          "d08f96e4341210f00cac": {
+            "singleVisual": {
+              "display": {
+                "mode": "hidden"
+              }
+            }
+          },
+          "3b58c7b8c58ff2fd6c03": {
+            "singleVisual": {
+              "display": {
+                "mode": "hidden"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

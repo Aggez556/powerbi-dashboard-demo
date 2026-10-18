@@ -1,0 +1,6 @@
+EVALUATE
+SUMMARIZECOLUMNS('Artiklar'[Kategori],'Artiklar'[Område],"Color",[Verksamhetsbakgrund])
+ORDER BY 'Artiklar'[Område],'Artiklar'[Kategori]
+
+EVALUATE
+ROW("TotalColor",[Verksamhetsbakgrund])

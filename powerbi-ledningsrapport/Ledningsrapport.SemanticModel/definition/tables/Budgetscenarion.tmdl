@@ -29,6 +29,6 @@ table Budgetscenarion
 				let
 				 Source=Csv.Document(File.Contents(DataFolder & "/Budgetscenarion.csv"),[Delimiter=",",Encoding=65001,QuoteStyle=QuoteStyle.Csv]),
 				 Headers=Table.PromoteHeaders(Source,[PromoteAllScalars=true]),
-				 Typed=Table.TransformColumnTypes(Headers,{{"ScenarioID", Int64.Type}, {"Scenario", type text}, {"Ordning", Int64.Type}},"en-US")
+				 Typed=Table.TransformColumnTypes(Headers,{{"ScenarioID", Int64.Type},{"Scenario", type text},{"Ordning", Int64.Type}},"en-US")
 				in Typed
 

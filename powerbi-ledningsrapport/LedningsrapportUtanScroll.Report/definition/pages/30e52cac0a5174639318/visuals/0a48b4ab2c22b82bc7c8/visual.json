@@ -2,15 +2,15 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
   "name": "0a48b4ab2c22b82bc7c8",
   "position": {
-    "x": 780,
-    "y": 496,
+    "x": 740,
+    "y": 536,
     "z": 149,
-    "height": 308,
+    "height": 248,
     "width": 428,
     "tabOrder": 149
   },
   "visual": {
-    "visualType": "lineStackedColumnComboChart",
+    "visualType": "columnChart",
     "query": {
       "queryState": {
         "Category": {
@@ -20,15 +20,16 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Planveckor"
+                      "Entity": "Trendaxel"
                     }
                   },
-                  "Property": "Vecka"
+                  "Property": "Månadsstart"
                 }
               },
-              "queryRef": "Planveckor.Vecka",
-              "nativeQueryRef": "Vecka",
-              "active": true
+              "queryRef": "Trendaxel.Månadsstart",
+              "nativeQueryRef": "Månad",
+              "active": true,
+              "displayName": "Månad"
             }
           ]
         },
@@ -42,11 +43,12 @@
                       "Entity": "Planinställning"
                     }
                   },
-                  "Property": "Plan beläggning"
+                  "Property": "Tid tillgänglig trend"
                 }
               },
-              "queryRef": "Planinställning.Plan beläggning",
-              "nativeQueryRef": "Plan beläggning"
+              "queryRef": "Planinställning.Tid tillgänglig trend",
+              "nativeQueryRef": "Tillgänglig tid",
+              "displayName": "Tillgänglig tid"
             },
             {
               "field": {
@@ -56,25 +58,12 @@
                       "Entity": "Planinställning"
                     }
                   },
-                  "Property": "Plan ledigt"
+                  "Property": "Tid kapacitetsavvikelse trend"
                 }
               },
-              "queryRef": "Planinställning.Plan ledigt",
-              "nativeQueryRef": "Plan ledigt"
-            },
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Planinställning"
-                    }
-                  },
-                  "Property": "Plan överbeläggning"
-                }
-              },
-              "queryRef": "Planinställning.Plan överbeläggning",
-              "nativeQueryRef": "Plan överbeläggning"
+              "queryRef": "Planinställning.Tid kapacitetsavvikelse trend",
+              "nativeQueryRef": "Tid över kapacitet",
+              "displayName": "Tid över kapacitet"
             }
           ]
         },
@@ -88,12 +77,12 @@
                       "Entity": "Planinställning"
                     }
                   },
-                  "Property": "Plan bokat teknisk"
+                  "Property": "Tid debiterbar trend"
                 }
               },
-              "queryRef": "Planinställning.Plan bokat teknisk",
-              "nativeQueryRef": "Plan bokat teknisk",
-              "displayName": "Teknisk service"
+              "queryRef": "Planinställning.Tid debiterbar trend",
+              "nativeQueryRef": "Debiterbart",
+              "displayName": "Debiterbart"
             },
             {
               "field": {
@@ -103,17 +92,13 @@
                       "Entity": "Planinställning"
                     }
                   },
-                  "Property": "Plan bokat bemanning"
+                  "Property": "Tid kundarbete trend"
                 }
               },
-              "queryRef": "Planinställning.Plan bokat bemanning",
-              "nativeQueryRef": "Plan bokat bemanning",
-              "displayName": "Bemanning"
-            }
-          ]
-        },
-        "Y2": {
-          "projections": [
+              "queryRef": "Planinställning.Tid kundarbete trend",
+              "nativeQueryRef": "Kundarbete, ej debiterat",
+              "displayName": "Kundarbete, ej debiterat"
+            },
             {
               "field": {
                 "Measure": {
@@ -122,12 +107,27 @@
                       "Entity": "Planinställning"
                     }
                   },
-                  "Property": "Plan kapacitet"
+                  "Property": "Tid internt trend"
                 }
               },
-              "queryRef": "Planinställning.Plan kapacitet",
-              "nativeQueryRef": "Plan kapacitet",
-              "displayName": "Kapacitet"
+              "queryRef": "Planinställning.Tid internt trend",
+              "nativeQueryRef": "Internt arbete",
+              "displayName": "Internt arbete"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Planinställning"
+                    }
+                  },
+                  "Property": "Tid ej rapporterat trend"
+                }
+              },
+              "queryRef": "Planinställning.Tid ej rapporterat trend",
+              "nativeQueryRef": "Ej rapporterat",
+              "displayName": "Ej rapporterat"
             }
           ]
         }
@@ -139,10 +139,10 @@
               "Column": {
                 "Expression": {
                   "SourceRef": {
-                    "Entity": "Planveckor"
+                    "Entity": "Trendaxel"
                   }
                 },
-                "Property": "Vecka"
+                "Property": "Månadsstart"
               }
             },
             "direction": "Ascending"
@@ -185,6 +185,13 @@
                   }
                 }
               }
+            },
+            "axisType": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Categorical'"
+                }
+              }
             }
           }
         }
@@ -220,24 +227,10 @@
                 }
               }
             },
-            "secShow": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            },
             "labelDisplayUnits": {
               "expr": {
                 "Literal": {
                   "Value": "1D"
-                }
-              }
-            },
-            "sharedAxis": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
                 }
               }
             },
@@ -249,6 +242,20 @@
                       "Value": "'#5B6B80'"
                     }
                   }
+                }
+              }
+            },
+            "titleText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Timmar'"
+                }
+              }
+            },
+            "titleFontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
                 }
               }
             }
@@ -261,32 +268,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "position": {
-              "expr": {
-                "Literal": {
-                  "Value": "'TopRight'"
-                }
-              }
-            },
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "10D"
-                }
-              }
-            },
-            "labelColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#5B6B80'"
-                    }
-                  }
+                  "Value": "false"
                 }
               }
             }
@@ -309,7 +291,7 @@
             }
           },
           "selector": {
-            "metadata": "Planinställning.Plan bokat teknisk"
+            "metadata": "Planinställning.Tid debiterbar trend"
           }
         },
         {
@@ -319,7 +301,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#007956'"
+                      "Value": "'#65BBA6'"
                     }
                   }
                 }
@@ -327,7 +309,7 @@
             }
           },
           "selector": {
-            "metadata": "Planinställning.Plan bokat bemanning"
+            "metadata": "Planinställning.Tid kundarbete trend"
           }
         },
         {
@@ -337,7 +319,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#8296B4'"
+                      "Value": "'#6D8FBE'"
                     }
                   }
                 }
@@ -345,28 +327,32 @@
             }
           },
           "selector": {
-            "metadata": "Planinställning.Plan kapacitet"
+            "metadata": "Planinställning.Tid internt trend"
+          }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#B8CBDD'"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Planinställning.Tid ej rapporterat trend"
           }
         }
       ],
-      "lineStyles": [
+      "labels": [
         {
           "properties": {
-            "lineStyle": {
-              "expr": {
-                "Literal": {
-                  "Value": "'dashed'"
-                }
-              }
-            },
-            "strokeWidth": {
-              "expr": {
-                "Literal": {
-                  "Value": "2D"
-                }
-              }
-            },
-            "showMarker": {
+            "show": {
               "expr": {
                 "Literal": {
                   "Value": "false"
@@ -376,7 +362,7 @@
           }
         }
       ],
-      "labels": [
+      "totals": [
         {
           "properties": {
             "show": {
@@ -578,14 +564,61 @@
             "type": {
               "expr": {
                 "Literal": {
-                  "Value": "'Canvas'"
+                  "Value": "'Default'"
                 }
               }
             },
-            "section": {
+            "fontFamily": {
               "expr": {
                 "Literal": {
-                  "Value": "'9b71739249a33de0815d'"
+                  "Value": "'Segoe UI'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "11D"
+                }
+              }
+            },
+            "titleFontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#5B6B80'"
+                    }
+                  }
+                }
+              }
+            },
+            "valueFontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#0F3163'"
+                    }
+                  }
+                }
+              }
+            },
+            "background": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#FFFFFF'"
+                    }
+                  }
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
                 }
               }
             }

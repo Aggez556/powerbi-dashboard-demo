@@ -19,7 +19,7 @@
               {
                 "textRuns": [
                   {
-                    "value": "Återaktiverad: köp historiskt, men inte under hela föregående jämförelseperiod. Negativ nettochurn betyder tillväxt i befintlig kundstock.",
+                    "value": "Återaktiverad: köp historiskt, men inte under hela föregående jämförelseperiod. Försäljningsförändringen avser föregående periods kundbas, inklusive förlorade kunder.",
                     "textStyle": {
                       "fontFamily": "Segoe UI",
                       "fontSize": "10pt",

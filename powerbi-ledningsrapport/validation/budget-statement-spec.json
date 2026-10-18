@@ -12,7 +12,7 @@
   "signals": [
     {
       "name": "rowHeight",
-      "value": 32
+      "value": 36
     },
     {
       "name": "headerH",
@@ -24,7 +24,11 @@
     },
     {
       "name": "columnW",
-      "update": "max(length(data('columns')) && indexof(data('columns')[0].Metric,' · ')>=0?168:112,(width-labelW-12)/max(1,length(data('columns'))))"
+      "update": "max(length(data('columns')) && indexof(data('columns')[0].Metric,' · ')>=0?168:144,(width-labelW-12)/max(1,length(data('columns'))))"
+    },
+    {
+      "name": "budgetW",
+      "update": "length(data('columns')) && data('columns')[0].Metric==='Föregående år'?120:length(data('columns')) && indexof(data('columns')[0].Metric,' · ')>=0?128:88"
     },
     {
       "name": "bodyW",
@@ -32,7 +36,7 @@
     },
     {
       "name": "fullW",
-      "update": "length(data('columns'))*columnW"
+      "update": "length(data('columns'))/2*(columnW+budgetW)"
     },
     {
       "name": "maxX",
@@ -211,7 +215,7 @@
       "transform": [
         {
           "type": "filter",
-          "expr": "isValid(datum.Amount) && isValid(datum.Node)"
+          "expr": "isValid(datum.Amount) && isValid(datum.Node) && datum.Slot!==3"
         },
         {
           "type": "formula",
@@ -379,6 +383,52 @@
       "source": "valid",
       "transform": [
         {
+          "type": "formula",
+          "expr": "datum.Slot===1?datum.Amount:0",
+          "as": "BaseValue"
+        },
+        {
+          "type": "joinaggregate",
+          "groupby": [
+            "Node",
+            "GroupOrder"
+          ],
+          "fields": [
+            "BaseValue"
+          ],
+          "ops": [
+            "sum"
+          ],
+          "as": [
+            "BudgetAmount"
+          ]
+        },
+        {
+          "type": "formula",
+          "expr": "indexof(datum.Metric,'B · ')===0?datum.Amount:datum.BudgetAmount",
+          "as": "ReferenceAmount"
+        },
+        {
+          "type": "formula",
+          "expr": "datum.Slot===2 && isValid(datum.BudgetAmount) && (datum.Kind==='marginal' || datum.ReferenceAmount!==0)?(datum.Amount-datum.BudgetAmount)*(indexof(datum.Metric,'B · ')===0?-1:1)*(datum.Kind==='marginal'?100:100/abs(datum.ReferenceAmount)):null",
+          "as": "Variance"
+        },
+        {
+          "type": "formula",
+          "expr": "isValid(datum.Variance)?round(datum.Variance*10)/10:null",
+          "as": "RoundedVariance"
+        },
+        {
+          "type": "formula",
+          "expr": "!isValid(datum.RoundedVariance)?'—':(datum.RoundedVariance>0?'+':datum.RoundedVariance<0?'−':'')+replace(format(abs(datum.RoundedVariance),'.1f'),'.',',')+(datum.Kind==='marginal'?' pp':' %')",
+          "as": "VarianceText"
+        },
+        {
+          "type": "formula",
+          "expr": "!isValid(datum.RoundedVariance) || datum.RoundedVariance===0?'#5B6B80':datum.RoundedVariance>0?'#007956':'#B42318'",
+          "as": "VarianceColor"
+        },
+        {
           "type": "lookup",
           "from": "rows",
           "key": "Node",
@@ -412,32 +462,19 @@
           ]
         }
       ]
+    },
+    {
+      "name": "varianceCells",
+      "source": "cells",
+      "transform": [
+        {
+          "type": "filter",
+          "expr": "datum.Slot===2"
+        }
+      ]
     }
   ],
   "marks": [
-    {
-      "name": "header",
-      "type": "rect",
-      "encode": {
-        "update": {
-          "x": {
-            "value": 0
-          },
-          "y": {
-            "value": 0
-          },
-          "width": {
-            "signal": "width"
-          },
-          "height": {
-            "signal": "headerH"
-          },
-          "fill": {
-            "value": "#EEF2F7"
-          }
-        }
-      }
-    },
     {
       "type": "group",
       "name": "body",
@@ -553,7 +590,7 @@
                     "value": "middle"
                   },
                   "x": {
-                    "signal": "(datum.ColumnIndex+1)*columnW-12-scrollX"
+                    "signal": "floor(datum.ColumnIndex/2)*(columnW+budgetW)+budgetW+(datum.Slot===2?columnW:0)-(datum.Slot===2?76:12)-scrollX"
                   },
                   "y": {
                     "signal": "datum.RowTop+rowHeight/2-scrollY"
@@ -571,10 +608,51 @@
                     "signal": "datum.Kind==='marginal'?'italic':'normal'"
                   },
                   "limit": {
-                    "signal": "columnW-12"
+                    "signal": "datum.Slot===2?columnW-88:budgetW-16"
                   },
                   "tooltip": {
-                    "signal": "datum.Label+' · '+datum.Group+' · '+datum.Metric+': '+datum.Text"
+                    "signal": "{'Post':datum.Label,'Period':datum.Group,'Jämförelse':datum.Metric,'Värde':datum.Text}"
+                  }
+                }
+              }
+            },
+            {
+              "name": "inlineVariance",
+              "type": "text",
+              "from": {
+                "data": "varianceCells"
+              },
+              "encode": {
+                "update": {
+                  "font": {
+                    "value": "Segoe UI"
+                  },
+                  "fontSize": {
+                    "value": 12
+                  },
+                  "fill": {
+                    "field": "VarianceColor"
+                  },
+                  "baseline": {
+                    "value": "middle"
+                  },
+                  "x": {
+                    "signal": "floor(datum.ColumnIndex/2)*(columnW+budgetW)+budgetW+(datum.Slot===2?columnW:0)-70-scrollX"
+                  },
+                  "y": {
+                    "signal": "datum.RowTop+rowHeight/2-scrollY"
+                  },
+                  "text": {
+                    "signal": "'('+datum.VarianceText+')'"
+                  },
+                  "align": {
+                    "value": "left"
+                  },
+                  "limit": {
+                    "value": 66
+                  },
+                  "tooltip": {
+                    "signal": "{'Post':datum.Label,'Period':datum.Group,'Avvikelse':datum.VarianceText,'Tolkning':'Plus = bättre, minus = sämre'}"
                   }
                 }
               }
@@ -756,6 +834,55 @@
       ]
     },
     {
+      "name": "header",
+      "type": "rect",
+      "encode": {
+        "update": {
+          "x": {
+            "value": 0
+          },
+          "y": {
+            "value": 0
+          },
+          "width": {
+            "signal": "width"
+          },
+          "height": {
+            "signal": "headerH"
+          },
+          "fill": {
+            "value": "#EEF2F7"
+          },
+          "fillOpacity": {
+            "value": 1
+          }
+        }
+      }
+    },
+    {
+      "type": "rule",
+      "name": "headerDivider",
+      "encode": {
+        "update": {
+          "x": {
+            "value": 0
+          },
+          "x2": {
+            "signal": "width"
+          },
+          "y": {
+            "signal": "headerH"
+          },
+          "stroke": {
+            "value": "#B8C6D8"
+          },
+          "strokeWidth": {
+            "value": 1
+          }
+        }
+      }
+    },
+    {
       "name": "columnHeaders",
       "type": "group",
       "clip": true,
@@ -797,7 +924,7 @@
                 "value": "middle"
               },
               "x": {
-                "signal": "(datum.First+datum.Last+1)*columnW/2-scrollX"
+                "signal": "(floor(datum.First/2)+0.5)*(columnW+budgetW)-scrollX"
               },
               "y": {
                 "value": 21
@@ -835,13 +962,13 @@
                 "value": "middle"
               },
               "x": {
-                "signal": "(datum.ColumnIndex+1)*columnW-12-scrollX"
+                "signal": "floor(datum.ColumnIndex/2)*(columnW+budgetW)+budgetW+(datum.Slot===2?columnW:0)-(datum.Slot===2?76:12)-scrollX"
               },
               "y": {
-                "signal": "indexof(datum.Metric,' · ')>=0?51:58"
+                "signal": "datum.Slot===3 || indexof(datum.Metric,' · ')>=0?51:58"
               },
               "text": {
-                "signal": "indexof(datum.Metric,' · ')>=0?split(datum.Metric,' · '):datum.Metric"
+                "signal": "datum.Metric==='Föregående år'?'Föreg. år':datum.Slot===3?['Avvikelse','% / pp']:indexof(datum.Metric,' · ')>=0?split(datum.Metric,' · '):datum.Metric"
               },
               "align": {
                 "value": "right"
@@ -851,6 +978,9 @@
               },
               "limit": {
                 "signal": "columnW-12"
+              },
+              "tooltip": {
+                "field": "Metric"
               }
             }
           }
@@ -863,7 +993,7 @@
           "encode": {
             "update": {
               "x": {
-                "signal": "(datum.Last+1)*columnW-scrollX"
+                "signal": "(floor(datum.Last/2)+1)*(columnW+budgetW)-scrollX"
               },
               "y": {
                 "value": 0

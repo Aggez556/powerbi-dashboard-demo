@@ -67,3 +67,19 @@ Budgetrapportnoder ?r en frist?ende presentationstabell med 26 noder och inga fi
 ?ppna Ledningsrapport.pbip och v?lj Uppdatera f?rsta g?ngen f?r att l?sa den nya presentationstabellen. Ingen ny projektfil kr?vs. Vega-definitionen ?r redigerbar i Denebs editor och sparas ?ven i validation/budget-statement-spec.json. ?terskapa komponenten med scripts/install-budget-statement.cjs. Scripts/budget-statement-model.py skapar endast den nya presentationsdimensionen och dess tre m?tt; skriv inte ?ver Desktop-tilldelade lineageTag efter att modellen laddats.
 
 Verifiering: scripts/test-budget-statement.mjs k?r den riktiga Vega-motorn lokalt och testar klicksignal, expandera/f?ll ihop, nio hopf?llda huvudrader, 26 fullt expanderade rader, standardvy med 16 rader, gemensam skroll, enbart riktiga expanderare samt A/B-rubriker f?r tolv budgetm?nader. Underlaget st?mmer med samtliga 81 huvudv?rden fr?n tidigare k?rd Desktop-DAX. Dessa komponenttester ers?tter inte en genomf?rd Power BI-rendering eller en k?rning av de tre nya DAX-m?tten i Desktop. Den slutliga Power BI-granskningen redovisas separat.
+# Procentuell budgetavvikelse
+
+Dummybudgetens underkategorier har nu olika konto- och månadsprofiler. Omfördelningen görs inom samma huvudgrupp och scenario, med exakt oförändrad månadssumma. Därför är omsättning, direkta kostnader, bruttovinst, rörelseresultat och marginaler på huvudnivå oförändrade. Utfallsdata ändras inte. Kör Uppdatera i Desktop för att läsa de ändrade Excel-beloppen. Verifiering: validation/budget-detail-variation.json. Äldre live-DAX-kontroller av detaljbelopp avser budgeten före denna omfördelning tills en ny uppdatering och kontroll körts.
+
+Månadsavstånd: budgetdelen använder 88 enheter och utfallsdelen 144 i standardläget. Det minskar varje månads bredd från 288 till 232 (cirka 19 procent), samtidigt som avvikelsen behåller sitt utrymme. Scenariojämförelsens längre rubriker har separat bredd.
+
+Senaste placering: avvikelsen skrivs inom parentes med sex enheters mellanrum direkt efter utfallsbeloppet, exempelvis 9 362 (+5,3 %). Utfallsrubriken är inriktad mot beloppet och månadsbredden är åter kompakt. Ingen separat procentkolumn finns.
+
+Layoutjustering: procentavvikelsen ligger till höger om utfallsbeloppet på samma rad, i mindre färgad text. Utfallscellen reserverar separat utrymme för belopp och avvikelse. Radhöjden är 36 för en kompakt tabell utan två textrader.
+
+Uppdatering: avvikelsen visas nu integrerat under Utfall för varje månad och för Vald period, utan separat avvikelsekolumn. Beloppet behåller sin vanliga färg medan den mindre avvikelseraden visar grönt, rött eller neutralt. Scenariojämförelsen visar motsvarande avvikelse under B. Visualen beräknar indikatorerna från samma bundna månadsbelopp; inga nya modellmått eller kolumnbindningar krävs. Radhöjden har ökats för att hålla de två textraderna åtskilda.
+
+Kolumnen Avvikelse under Vald period visar en färgprick och ett signerat procenttal. Grönt och positivt betyder bättre än budget; rött och negativt betyder sämre. Beräkningen är (utfall − budget) / absolutbeloppet av budget. Eftersom kostnader lagras med negativt tecken blir en lägre kostnad positiv. Marginalrader visar skillnaden i procentenheter (pp). Nollbudget visas som ett neutralt streck; avvikelser som avrundas till noll är grå.
+
+Vid scenariojämförelse används (scenario A − scenario B) / absolutbeloppet av scenario B. Måttet Rapportavvikelse kompletterar de tre befintliga presentationsmåtten; de ursprungliga beloppen påverkas inte. Faktisk Desktop-DAX verifieras i validation/budget-variance-verification.json. Lokala Vega-tester ersätter inte visuell granskning i Desktop.
+

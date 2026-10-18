@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "5e788998aa998709c7e1",
   "position": {
     "x": 1126,
@@ -10,10 +10,10 @@
     "tabOrder": 160
   },
   "visual": {
-    "visualType": "pivotTable",
+    "visualType": "deneb7E15AEF80B9E4D4F8E12924291ECE89A",
     "query": {
       "queryState": {
-        "Rows": {
+        "dataset": {
           "projections": [
             {
               "field": {
@@ -27,8 +27,8 @@
                 }
               },
               "queryRef": "Artiklar.Kategori",
-              "nativeQueryRef": "Kategori",
-              "active": true
+              "nativeQueryRef": "Category",
+              "displayName": "Category"
             },
             {
               "field": {
@@ -42,27 +42,38 @@
                 }
               },
               "queryRef": "Artiklar.Artikel",
-              "nativeQueryRef": "Artikel",
-              "active": false
-            }
-          ]
-        },
-        "Values": {
-          "projections": [
+              "nativeQueryRef": "Article",
+              "displayName": "Article"
+            },
             {
               "field": {
-                "Measure": {
+                "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Försäljning"
+                      "Entity": "Artiklar"
                     }
                   },
-                  "Property": "Sälj omsättning Mkr"
+                  "Property": "Områdesordning"
                 }
               },
-              "queryRef": "Försäljning.Sälj omsättning Mkr",
-              "nativeQueryRef": "Omsättning",
-              "displayName": "Omsättning"
+              "queryRef": "Artiklar.Områdesordning",
+              "nativeQueryRef": "Area",
+              "displayName": "Area"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Artiklar"
+                    }
+                  },
+                  "Property": "Kategoriordning"
+                }
+              },
+              "queryRef": "Artiklar.Kategoriordning",
+              "nativeQueryRef": "Order",
+              "displayName": "Order"
             },
             {
               "field": {
@@ -72,12 +83,12 @@
                       "Entity": "Försäljning"
                     }
                   },
-                  "Property": "Sälj tillväxt"
+                  "Property": "Sälj omsättning"
                 }
               },
-              "queryRef": "Försäljning.Sälj tillväxt",
-              "nativeQueryRef": "Tillväxt",
-              "displayName": "Tillväxt"
+              "queryRef": "Försäljning.Sälj omsättning",
+              "nativeQueryRef": "RevenueKrona",
+              "displayName": "RevenueKrona"
             },
             {
               "field": {
@@ -87,12 +98,12 @@
                       "Entity": "Försäljning"
                     }
                   },
-                  "Property": "Sälj bruttovinst Mkr"
+                  "Property": "Sälj omsättning föregående år"
                 }
               },
-              "queryRef": "Försäljning.Sälj bruttovinst Mkr",
-              "nativeQueryRef": "Bruttovinst",
-              "displayName": "Bruttovinst"
+              "queryRef": "Försäljning.Sälj omsättning föregående år",
+              "nativeQueryRef": "PreviousRevenueKrona",
+              "displayName": "PreviousRevenueKrona"
             },
             {
               "field": {
@@ -102,669 +113,70 @@
                       "Entity": "Försäljning"
                     }
                   },
-                  "Property": "Sälj bruttomarginal"
+                  "Property": "Sälj bruttovinst"
                 }
               },
-              "queryRef": "Försäljning.Sälj bruttomarginal",
-              "nativeQueryRef": "Marginal",
-              "displayName": "Marginal"
+              "queryRef": "Försäljning.Sälj bruttovinst",
+              "nativeQueryRef": "GrossProfitKrona",
+              "displayName": "GrossProfitKrona"
             }
           ]
         }
       }
     },
     "objects": {
-      "columnHeaders": [
+      "vega": [
         {
           "properties": {
-            "fontSize": {
+            "provider": {
               "expr": {
                 "Literal": {
-                  "Value": "11.5D"
+                  "Value": "'vega'"
                 }
               }
             },
-            "fontColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#0F3163'"
-                    }
-                  }
-                }
-              }
-            },
-            "backColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#EEF2F7'"
-                    }
-                  }
-                }
-              }
-            },
-            "autoSizeColumnWidth": {
+            "jsonSpec": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "'{\"$schema\":\"https://vega.github.io/schema/vega/v6.json\",\"width\":750,\"height\":304,\"padding\":0,\"autosize\":\"none\",\"background\":\"#FFFFFF\",\"signals\":[{\"name\":\"rowH\",\"value\":30},{\"name\":\"bodyH\",\"value\":242},{\"name\":\"clicked\",\"value\":null,\"on\":[{\"events\":\"@rowHit:click, @rowLabel:click, @expander:click\",\"update\":\"datum.Depth===0?datum.Category:null\",\"force\":true}]},{\"name\":\"scrollY\",\"value\":0,\"on\":[{\"events\":{\"type\":\"wheel\",\"consume\":true},\"update\":\"clamp(scrollY+event.deltaY,0,maxY)\"},{\"events\":{\"signal\":\"maxY\"},\"update\":\"clamp(scrollY,0,maxY)\"}]},{\"name\":\"maxY\",\"update\":\"max(0,length(data(''rows''))*rowH-bodyH)\"}],\"data\":[{\"name\":\"dataset\"},{\"name\":\"facts\",\"source\":\"dataset\",\"transform\":[{\"type\":\"formula\",\"expr\":\"datum.RevenueKrona/1000000\",\"as\":\"Revenue\"},{\"type\":\"formula\",\"expr\":\"datum.PreviousRevenueKrona/1000000\",\"as\":\"PreviousRevenue\"},{\"type\":\"formula\",\"expr\":\"datum.GrossProfitKrona/1000000\",\"as\":\"GrossProfit\"}]},{\"name\":\"open\",\"values\":[],\"on\":[{\"trigger\":\"clicked\",\"toggle\":\"{key:clicked}\"}]},{\"name\":\"categories\",\"source\":\"facts\",\"transform\":[{\"type\":\"aggregate\",\"groupby\":[\"Category\",\"Area\",\"Order\"],\"fields\":[\"Revenue\",\"PreviousRevenue\",\"GrossProfit\"],\"ops\":[\"sum\",\"sum\",\"sum\"],\"as\":[\"Revenue\",\"PreviousRevenue\",\"GrossProfit\"]},{\"type\":\"formula\",\"expr\":\"datum.Category\",\"as\":\"Label\"},{\"type\":\"formula\",\"expr\":\"0\",\"as\":\"Depth\"},{\"type\":\"formula\",\"expr\":\"datum.Order*100\",\"as\":\"Sort\"}]},{\"name\":\"articles\",\"source\":\"facts\",\"transform\":[{\"type\":\"filter\",\"expr\":\"indata(''open'',''key'',datum.Category)\"},{\"type\":\"collect\",\"sort\":{\"field\":[\"Order\",\"Article\"],\"order\":[\"ascending\",\"ascending\"]}},{\"type\":\"window\",\"groupby\":[\"Category\"],\"sort\":{\"field\":\"Article\",\"order\":\"ascending\"},\"ops\":[\"row_number\"],\"as\":[\"ArticleOrder\"]},{\"type\":\"formula\",\"expr\":\"datum.Article\",\"as\":\"Label\"},{\"type\":\"formula\",\"expr\":\"1\",\"as\":\"Depth\"},{\"type\":\"formula\",\"expr\":\"datum.Order*100+datum.ArticleOrder\",\"as\":\"Sort\"}]},{\"name\":\"rows\",\"source\":[\"categories\",\"articles\"],\"transform\":[{\"type\":\"collect\",\"sort\":{\"field\":\"Sort\",\"order\":\"ascending\"}},{\"type\":\"window\",\"sort\":{\"field\":\"Sort\",\"order\":\"ascending\"},\"ops\":[\"row_number\"],\"as\":[\"Row\"]},{\"type\":\"formula\",\"expr\":\"datum.PreviousRevenue?datum.Revenue/datum.PreviousRevenue-1:null\",\"as\":\"Growth\"},{\"type\":\"formula\",\"expr\":\"datum.Revenue?datum.GrossProfit/datum.Revenue:null\",\"as\":\"Margin\"},{\"type\":\"formula\",\"expr\":\"datum.Depth===1?''#FFFFFF'':datum.Area===1?''#E3EBF5'':datum.Area===2?''#E4F1E9'':''#FAEBD7''\",\"as\":\"Background\"}]},{\"name\":\"total\",\"source\":\"facts\",\"transform\":[{\"type\":\"aggregate\",\"fields\":[\"Revenue\",\"PreviousRevenue\",\"GrossProfit\"],\"ops\":[\"sum\",\"sum\",\"sum\"],\"as\":[\"Revenue\",\"PreviousRevenue\",\"GrossProfit\"]},{\"type\":\"formula\",\"expr\":\"datum.PreviousRevenue?datum.Revenue/datum.PreviousRevenue-1:null\",\"as\":\"Growth\"},{\"type\":\"formula\",\"expr\":\"datum.Revenue?datum.GrossProfit/datum.Revenue:null\",\"as\":\"Margin\"},{\"type\":\"formula\",\"expr\":\"0\",\"as\":\"Depth\"}]}],\"marks\":[{\"type\":\"rect\",\"encode\":{\"update\":{\"width\":{\"signal\":\"width\"},\"height\":{\"value\":34},\"fill\":{\"value\":\"#EEF2F7\"}}}},{\"name\":\"header8\",\"type\":\"text\",\"encode\":{\"update\":{\"x\":{\"value\":8},\"y\":{\"value\":17},\"text\":{\"value\":\"Kategori\"},\"fill\":{\"value\":\"#0F3163\"},\"font\":{\"value\":\"Segoe UI\"},\"fontSize\":{\"value\":15},\"baseline\":{\"value\":\"middle\"},\"align\":{\"value\":\"left\"},\"fontWeight\":{\"value\":\"600\"}}}},{\"name\":\"header388\",\"type\":\"text\",\"encode\":{\"update\":{\"x\":{\"value\":388},\"y\":{\"value\":17},\"text\":{\"value\":\"Omsättning\"},\"fill\":{\"value\":\"#0F3163\"},\"font\":{\"value\":\"Segoe UI\"},\"fontSize\":{\"value\":15},\"baseline\":{\"value\":\"middle\"},\"align\":{\"value\":\"right\"},\"fontWeight\":{\"value\":\"600\"}}}},{\"name\":\"header490\",\"type\":\"text\",\"encode\":{\"update\":{\"x\":{\"value\":490},\"y\":{\"value\":17},\"text\":{\"value\":\"Tillväxt\"},\"fill\":{\"value\":\"#0F3163\"},\"font\":{\"value\":\"Segoe UI\"},\"fontSize\":{\"value\":15},\"baseline\":{\"value\":\"middle\"},\"align\":{\"value\":\"right\"},\"fontWeight\":{\"value\":\"600\"}}}},{\"name\":\"header620\",\"type\":\"text\",\"encode\":{\"update\":{\"x\":{\"value\":620},\"y\":{\"value\":17},\"text\":{\"value\":\"Bruttovinst\"},\"fill\":{\"value\":\"#0F3163\"},\"font\":{\"value\":\"Segoe UI\"},\"fontSize\":{\"value\":15},\"baseline\":{\"value\":\"middle\"},\"align\":{\"value\":\"right\"},\"fontWeight\":{\"value\":\"600\"}}}},{\"name\":\"header736\",\"type\":\"text\",\"encode\":{\"update\":{\"x\":{\"value\":736},\"y\":{\"value\":17},\"text\":{\"value\":\"Marginal\"},\"fill\":{\"value\":\"#0F3163\"},\"font\":{\"value\":\"Segoe UI\"},\"fontSize\":{\"value\":15},\"baseline\":{\"value\":\"middle\"},\"align\":{\"value\":\"right\"},\"fontWeight\":{\"value\":\"600\"}}}},{\"type\":\"group\",\"clip\":true,\"encode\":{\"update\":{\"y\":{\"value\":34},\"width\":{\"signal\":\"width\"},\"height\":{\"signal\":\"bodyH\"}}},\"marks\":[{\"name\":\"rowHit\",\"type\":\"rect\",\"from\":{\"data\":\"rows\"},\"encode\":{\"update\":{\"x\":{\"value\":0},\"y\":{\"signal\":\"(datum.Row-1)*rowH-scrollY\"},\"width\":{\"signal\":\"width\"},\"height\":{\"signal\":\"rowH-1\"},\"fill\":{\"field\":\"Background\"},\"cursor\":{\"signal\":\"datum.Depth===0?''pointer'':''default''\"},\"tooltip\":{\"signal\":\"{''Post'':datum.Label,''Verksamhet'':datum.Area===1?''Produktförsäljning'':datum.Area===2?''Teknisk service'':''Bemanning'',''Föregående år'':replace(format(datum.PreviousRevenue,''.2f''),''.'','','')+'' Mkr''}\"}}}},{\"name\":\"expander\",\"type\":\"text\",\"from\":{\"data\":\"rows\"},\"encode\":{\"update\":{\"x\":{\"value\":9},\"y\":{\"signal\":\"(datum.Row-.5)*rowH-scrollY\"},\"text\":{\"signal\":\"datum.Depth===0?(indata(''open'',''key'',datum.Category)?''▾'':''▸''):''''\"},\"fill\":{\"value\":\"#0F3163\"},\"font\":{\"value\":\"Segoe UI\"},\"fontSize\":{\"value\":16},\"baseline\":{\"value\":\"middle\"}}}},{\"name\":\"rowLabel\",\"type\":\"text\",\"from\":{\"data\":\"rows\"},\"encode\":{\"update\":{\"x\":{\"signal\":\"datum.Depth===0?26:42\"},\"y\":{\"signal\":\"(datum.Row-.5)*rowH-scrollY\"},\"text\":{\"field\":\"Label\"},\"fill\":{\"value\":\"#0F3163\"},\"font\":{\"value\":\"Segoe UI\"},\"fontSize\":{\"value\":16},\"baseline\":{\"value\":\"middle\"},\"limit\":{\"value\":240},\"fontWeight\":{\"value\":\"normal\"}}}},{\"name\":\"rowsRevenue\",\"type\":\"text\",\"from\":{\"data\":\"rows\"},\"encode\":{\"update\":{\"x\":{\"value\":388},\"y\":{\"signal\":\"(datum.Row-.5)*rowH-scrollY\"},\"text\":{\"signal\":\"replace(format(datum.Revenue,''.1f''),''.'','','')+'' Mkr''\"},\"fill\":{\"value\":\"#0F3163\"},\"font\":{\"value\":\"Segoe UI\"},\"fontSize\":{\"value\":16},\"baseline\":{\"value\":\"middle\"},\"align\":{\"value\":\"right\"},\"fontWeight\":{\"value\":\"normal\"},\"tooltip\":{\"signal\":\"{''Post'':datum.Label||''Totalt'',''Nyckeltal'':''Omsättning'',''Värde'':(replace(format(datum.Revenue,''.1f''),''.'','','')+'' Mkr'')}\"}}}},{\"name\":\"rowsGrowth\",\"type\":\"text\",\"from\":{\"data\":\"rows\"},\"encode\":{\"update\":{\"x\":{\"value\":490},\"y\":{\"signal\":\"(datum.Row-.5)*rowH-scrollY\"},\"text\":{\"signal\":\"isValid(datum.Growth)?replace(replace(format(datum.Growth,''+.1%''),''.'','',''),''%'','' %''):''—''\"},\"fill\":{\"signal\":\"datum.Growth>0?''#007956'':datum.Growth<0?''#B42318'':''#5B6B80''\"},\"font\":{\"value\":\"Segoe UI\"},\"fontSize\":{\"value\":16},\"baseline\":{\"value\":\"middle\"},\"align\":{\"value\":\"right\"},\"fontWeight\":{\"value\":\"normal\"},\"tooltip\":{\"signal\":\"{''Post'':datum.Label||''Totalt'',''Nyckeltal'':''Förändring mot föregående år'',''Värde'':(isValid(datum.Growth)?replace(replace(format(datum.Growth,''+.1%''),''.'','',''),''%'','' %''):''—'')}\"}}}},{\"name\":\"rowsGrossProfit\",\"type\":\"text\",\"from\":{\"data\":\"rows\"},\"encode\":{\"update\":{\"x\":{\"value\":620},\"y\":{\"signal\":\"(datum.Row-.5)*rowH-scrollY\"},\"text\":{\"signal\":\"replace(format(datum.GrossProfit,''.2f''),''.'','','')+'' Mkr''\"},\"fill\":{\"value\":\"#0F3163\"},\"font\":{\"value\":\"Segoe UI\"},\"fontSize\":{\"value\":16},\"baseline\":{\"value\":\"middle\"},\"align\":{\"value\":\"right\"},\"fontWeight\":{\"value\":\"normal\"},\"tooltip\":{\"signal\":\"{''Post'':datum.Label||''Totalt'',''Nyckeltal'':''Bruttovinst'',''Värde'':(replace(format(datum.GrossProfit,''.2f''),''.'','','')+'' Mkr'')}\"}}}},{\"name\":\"rowsMargin\",\"type\":\"text\",\"from\":{\"data\":\"rows\"},\"encode\":{\"update\":{\"x\":{\"value\":736},\"y\":{\"signal\":\"(datum.Row-.5)*rowH-scrollY\"},\"text\":{\"signal\":\"isValid(datum.Margin)?replace(replace(format(datum.Margin,''.1%''),''.'','',''),''%'','' %''):''—''\"},\"fill\":{\"value\":\"#0F3163\"},\"font\":{\"value\":\"Segoe UI\"},\"fontSize\":{\"value\":16},\"baseline\":{\"value\":\"middle\"},\"align\":{\"value\":\"right\"},\"fontWeight\":{\"value\":\"normal\"},\"tooltip\":{\"signal\":\"{''Post'':datum.Label||''Totalt'',''Nyckeltal'':''Bruttomarginal'',''Värde'':(isValid(datum.Margin)?replace(replace(format(datum.Margin,''.1%''),''.'','',''),''%'','' %''):''—'')}\"}}}},{\"type\":\"rect\",\"encode\":{\"update\":{\"x\":{\"value\":744},\"y\":{\"value\":0},\"width\":{\"value\":6},\"height\":{\"signal\":\"bodyH\"},\"fill\":{\"value\":\"#EEF2F7\"},\"opacity\":{\"signal\":\"maxY>0?1:0\"}}}},{\"type\":\"rect\",\"encode\":{\"update\":{\"x\":{\"value\":744},\"y\":{\"signal\":\"maxY>0?scrollY/maxY*(bodyH-bodyH*bodyH/(maxY+bodyH)):0\"},\"width\":{\"value\":6},\"height\":{\"signal\":\"bodyH*bodyH/(maxY+bodyH)\"},\"fill\":{\"value\":\"#9AAAC0\"},\"opacity\":{\"signal\":\"maxY>0?1:0\"},\"cornerRadius\":{\"value\":3}}}}]},{\"type\":\"rect\",\"encode\":{\"update\":{\"y\":{\"value\":276},\"width\":{\"signal\":\"width\"},\"height\":{\"value\":28},\"fill\":{\"value\":\"#FFFFFF\"}}}},{\"type\":\"rule\",\"encode\":{\"update\":{\"x\":{\"value\":0},\"x2\":{\"signal\":\"width\"},\"y\":{\"value\":276},\"stroke\":{\"value\":\"#D5DDE7\"},\"strokeWidth\":{\"value\":1}}}},{\"name\":\"totalLabel\",\"type\":\"text\",\"encode\":{\"update\":{\"x\":{\"value\":8},\"y\":{\"value\":290},\"text\":{\"value\":\"Totalt\"},\"fill\":{\"value\":\"#0F3163\"},\"font\":{\"value\":\"Segoe UI\"},\"fontSize\":{\"value\":16},\"baseline\":{\"value\":\"middle\"},\"fontWeight\":{\"value\":\"600\"}}}},{\"name\":\"totalRevenue\",\"type\":\"text\",\"from\":{\"data\":\"total\"},\"encode\":{\"update\":{\"x\":{\"value\":388},\"y\":{\"value\":290},\"text\":{\"signal\":\"replace(format(datum.Revenue,''.1f''),''.'','','')+'' Mkr''\"},\"fill\":{\"value\":\"#0F3163\"},\"font\":{\"value\":\"Segoe UI\"},\"fontSize\":{\"value\":16},\"baseline\":{\"value\":\"middle\"},\"align\":{\"value\":\"right\"},\"fontWeight\":{\"value\":\"600\"},\"tooltip\":{\"signal\":\"{''Post'':datum.Label||''Totalt'',''Nyckeltal'':''Omsättning'',''Värde'':(replace(format(datum.Revenue,''.1f''),''.'','','')+'' Mkr'')}\"}}}},{\"name\":\"totalGrowth\",\"type\":\"text\",\"from\":{\"data\":\"total\"},\"encode\":{\"update\":{\"x\":{\"value\":490},\"y\":{\"value\":290},\"text\":{\"signal\":\"isValid(datum.Growth)?replace(replace(format(datum.Growth,''+.1%''),''.'','',''),''%'','' %''):''—''\"},\"fill\":{\"signal\":\"datum.Growth>0?''#007956'':datum.Growth<0?''#B42318'':''#5B6B80''\"},\"font\":{\"value\":\"Segoe UI\"},\"fontSize\":{\"value\":16},\"baseline\":{\"value\":\"middle\"},\"align\":{\"value\":\"right\"},\"fontWeight\":{\"value\":\"600\"},\"tooltip\":{\"signal\":\"{''Post'':datum.Label||''Totalt'',''Nyckeltal'':''Förändring mot föregående år'',''Värde'':(isValid(datum.Growth)?replace(replace(format(datum.Growth,''+.1%''),''.'','',''),''%'','' %''):''—'')}\"}}}},{\"name\":\"totalGrossProfit\",\"type\":\"text\",\"from\":{\"data\":\"total\"},\"encode\":{\"update\":{\"x\":{\"value\":620},\"y\":{\"value\":290},\"text\":{\"signal\":\"replace(format(datum.GrossProfit,''.2f''),''.'','','')+'' Mkr''\"},\"fill\":{\"value\":\"#0F3163\"},\"font\":{\"value\":\"Segoe UI\"},\"fontSize\":{\"value\":16},\"baseline\":{\"value\":\"middle\"},\"align\":{\"value\":\"right\"},\"fontWeight\":{\"value\":\"600\"},\"tooltip\":{\"signal\":\"{''Post'':datum.Label||''Totalt'',''Nyckeltal'':''Bruttovinst'',''Värde'':(replace(format(datum.GrossProfit,''.2f''),''.'','','')+'' Mkr'')}\"}}}},{\"name\":\"totalMargin\",\"type\":\"text\",\"from\":{\"data\":\"total\"},\"encode\":{\"update\":{\"x\":{\"value\":736},\"y\":{\"value\":290},\"text\":{\"signal\":\"isValid(datum.Margin)?replace(replace(format(datum.Margin,''.1%''),''.'','',''),''%'','' %''):''—''\"},\"fill\":{\"value\":\"#0F3163\"},\"font\":{\"value\":\"Segoe UI\"},\"fontSize\":{\"value\":16},\"baseline\":{\"value\":\"middle\"},\"align\":{\"value\":\"right\"},\"fontWeight\":{\"value\":\"600\"},\"tooltip\":{\"signal\":\"{''Post'':datum.Label||''Totalt'',''Nyckeltal'':''Bruttomarginal'',''Värde'':(isValid(datum.Margin)?replace(replace(format(datum.Margin,''.1%''),''.'','',''),''%'','' %''):''—'')}\"}}}}]}'"
                 }
               }
             },
-            "columnAdjustment": {
+            "jsonConfig": {
               "expr": {
                 "Literal": {
-                  "Value": "'fitToContent'"
+                  "Value": "'{}'"
                 }
               }
             },
-            "wordWrap": {
+            "renderMode": {
+              "expr": {
+                "Literal": {
+                  "Value": "'svg'"
+                }
+              }
+            },
+            "enableSelection": {
               "expr": {
                 "Literal": {
                   "Value": "false"
                 }
               }
             },
-            "fontFamily": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Segoe UI Semibold'"
-                }
-              }
-            },
-            "outlineWeight": {
-              "expr": {
-                "Literal": {
-                  "Value": "0D"
-                }
-              }
-            },
-            "defaultColumnWidth": {
-              "expr": {
-                "Literal": {
-                  "Value": "90D"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "rowHeaders": [
-        {
-          "properties": {
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "11.5D"
-                }
-              }
-            },
-            "fontColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#5B6B80'"
-                    }
-                  }
-                }
-              }
-            },
-            "stepped": {
+            "enableTooltips": {
               "expr": {
                 "Literal": {
                   "Value": "true"
                 }
               }
             },
-            "steppedLayoutIndentation": {
-              "expr": {
-                "Literal": {
-                  "Value": "8D"
-                }
-              }
-            },
-            "showExpandCollapseButtons": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "autoExpand": {
+            "enableContextMenu": {
               "expr": {
                 "Literal": {
                   "Value": "false"
                 }
               }
-            },
-            "wordWrap": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            },
-            "fontFamily": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Segoe UI'"
-                }
-              }
-            },
-            "outlineWeight": {
-              "expr": {
-                "Literal": {
-                  "Value": "0D"
-                }
-              }
-            },
-            "expandCollapseButtonsColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#70839A'"
-                    }
-                  }
-                }
-              }
-            },
-            "expandCollapseButtonsSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "10D"
-                }
-              }
             }
-          }
-        }
-      ],
-      "values": [
-        {
-          "properties": {
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "11.5D"
-                }
-              }
-            },
-            "fontColorPrimary": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#5B6B80'"
-                    }
-                  }
-                }
-              }
-            },
-            "fontColorSecondary": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#5B6B80'"
-                    }
-                  }
-                }
-              }
-            },
-            "backColorPrimary": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#FFFFFF'"
-                    }
-                  }
-                }
-              }
-            },
-            "backColorSecondary": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#F7F9FC'"
-                    }
-                  }
-                }
-              }
-            },
-            "fontFamily": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Segoe UI'"
-                }
-              }
-            }
-          }
-        },
-        {
-          "properties": {
-            "fontColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Measure": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "Försäljning"
-                        }
-                      },
-                      "Property": "Sälj tillväxt färg"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "selector": {
-            "data": [
-              {
-                "dataViewWildcard": {
-                  "matchingOption": 1
-                }
-              }
-            ],
-            "metadata": "Försäljning.Sälj tillväxt"
-          }
-        }
-      ],
-      "grid": [
-        {
-          "properties": {
-            "rowPadding": {
-              "expr": {
-                "Literal": {
-                  "Value": "3D"
-                }
-              }
-            },
-            "gridHorizontal": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "gridHorizontalColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#E7ECF2'"
-                    }
-                  }
-                }
-              }
-            },
-            "gridVertical": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            },
-            "gridHorizontalWeight": {
-              "expr": {
-                "Literal": {
-                  "Value": "1D"
-                }
-              }
-            },
-            "outlineWeight": {
-              "expr": {
-                "Literal": {
-                  "Value": "0D"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "subTotals": [
-        {
-          "properties": {
-            "rowSubtotals": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "rowSubtotalsLabel": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Totalt'"
-                }
-              }
-            },
-            "rowSubtotalsPosition": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Bottom'"
-                }
-              }
-            },
-            "fontColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#0F3163'"
-                    }
-                  }
-                }
-              }
-            },
-            "backColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#EEF2F7'"
-                    }
-                  }
-                }
-              }
-            },
-            "bold": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "columnWidth": [
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
-                  "Value": "230D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "Artiklar.Kategori"
-          }
-        },
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
-                  "Value": "230D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "Artiklar.Artikel"
-          }
-        },
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
-                  "Value": "136D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "Försäljning.Sälj omsättning Mkr"
-          }
-        },
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
-                  "Value": "112D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "Försäljning.Sälj tillväxt"
-          }
-        },
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
-                  "Value": "136D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "Försäljning.Sälj bruttovinst Mkr"
-          }
-        },
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
-                  "Value": "114D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "Försäljning.Sälj bruttomarginal"
-          }
-        }
-      ],
-      "rowTotal": [
-        {
-          "properties": {
-            "fontColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#0F3163'"
-                    }
-                  }
-                }
-              }
-            },
-            "backColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#E8EEF6'"
-                    }
-                  }
-                }
-              }
-            },
-            "bold": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "applyToHeaders": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "fontFamily": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Segoe UI Semibold'"
-                }
-              }
-            },
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "11.5D"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "columnFormatting": [
-        {
-          "properties": {
-            "alignment": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Right'"
-                }
-              }
-            },
-            "styleHeader": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "styleValues": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "styleTotal": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "Försäljning.Sälj omsättning Mkr"
-          }
-        },
-        {
-          "properties": {
-            "alignment": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Right'"
-                }
-              }
-            },
-            "styleHeader": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "styleValues": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "styleTotal": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "Försäljning.Sälj tillväxt"
-          }
-        },
-        {
-          "properties": {
-            "alignment": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Right'"
-                }
-              }
-            },
-            "styleHeader": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "styleValues": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "styleTotal": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "Försäljning.Sälj bruttovinst Mkr"
-          }
-        },
-        {
-          "properties": {
-            "alignment": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Right'"
-                }
-              }
-            },
-            "styleHeader": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "styleValues": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "styleTotal": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "Försäljning.Sälj bruttomarginal"
           }
         }
       ]
@@ -944,13 +356,74 @@
           }
         }
       ],
-      "stylePreset": [
+      "visualTooltip": [
         {
           "properties": {
-            "name": {
+            "show": {
               "expr": {
                 "Literal": {
-                  "Value": "'None'"
+                  "Value": "true"
+                }
+              }
+            },
+            "type": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Default'"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Segoe UI'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "11D"
+                }
+              }
+            },
+            "titleFontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#5B6B80'"
+                    }
+                  }
+                }
+              }
+            },
+            "valueFontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#0F3163'"
+                    }
+                  }
+                }
+              }
+            },
+            "background": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#FFFFFF'"
+                    }
+                  }
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
                 }
               }
             }

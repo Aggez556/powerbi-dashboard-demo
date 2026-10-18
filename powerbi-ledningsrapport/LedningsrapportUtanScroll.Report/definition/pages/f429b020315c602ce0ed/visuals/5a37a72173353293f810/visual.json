@@ -32,23 +32,6 @@
             }
           ]
         }
-      },
-      "sortDefinition": {
-        "sort": [
-          {
-            "field": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "Periodtyp"
-                  }
-                },
-                "Property": "Periodtyp"
-              }
-            },
-            "direction": "Ascending"
-          }
-        ]
       }
     },
     "objects": {
@@ -106,13 +89,6 @@
       "selection": [
         {
           "properties": {
-            "strictSingleSelect": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
             "singleSelect": {
               "expr": {
                 "Literal": {
@@ -163,7 +139,7 @@
                           [
                             {
                               "Literal": {
-                                "Value": "'R12'"
+                                "Value": "'Helår'"
                               }
                             }
                           ]

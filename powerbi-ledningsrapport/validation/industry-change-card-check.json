@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "defaultView": "percentage",
+  "fiveFixedIndustryColors": true,
+  "independentDisplayOnlyToggle": true,
+  "alternatingTransitionsCovered": true,
+  "dynamicAxisBindings": true,
+  "zeroReferenceLine": true,
+  "labelsHidden": true,
+  "unchangedPeriodAndIndustryControls": true
+}

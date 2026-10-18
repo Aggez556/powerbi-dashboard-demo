@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "actualDesktopDAXCells": 936,
+  "varianceTextAndColorChecks": 52,
+  "modes": [
+    "budget versus actual",
+    "scenario A versus B"
+  ]
+}

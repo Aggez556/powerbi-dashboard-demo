@@ -1,0 +1,1587 @@
+﻿{
+    "status":  "queried",
+    "resultSets":  [
+                       [
+                           {
+                               "[Omsättning]":  1540074,
+                               "[Budgetomsättning]":  42522878,
+                               "[EBIT]":  -11372346,
+                               "[BudgetEBIT]":  3128451,
+                               "[Bruttomarginal]":  -1.1184358673674122,
+                               "[Budgetmarginal]":  0.26216593335944949,
+                               "[Titel]":  "Fastställd budget mot utfall · juli–september 2026",
+                               "[KPItext]":  "1,54 Mkr",
+                               "[Avvikelse]":  "−14,50 Mkr · −463,5 %"
+                           }
+                       ],
+                       [
+                           {
+                               "Budgetrader[Rad]":  "Avskrivningar",
+                               "Budgetkolumner[Grupp]":  "Augusti",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  -160.034,
+                               "[Färg]":  "#0F3163"
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Avskrivningar",
+                               "Budgetkolumner[Grupp]":  "Augusti",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -194.311,
+                               "[Färg]":  "#0F3163"
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Avskrivningar",
+                               "Budgetkolumner[Grupp]":  "Juli",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  -152.591,
+                               "[Färg]":  "#0F3163"
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Avskrivningar",
+                               "Budgetkolumner[Grupp]":  "Juli",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -179.905,
+                               "[Färg]":  "#0F3163"
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Avskrivningar",
+                               "Budgetkolumner[Grupp]":  "September",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  -168.55,
+                               "[Färg]":  "#0F3163"
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Avskrivningar",
+                               "Budgetkolumner[Grupp]":  "September",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -204.776,
+                               "[Färg]":  "#0F3163"
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Avskrivningar",
+                               "Budgetkolumner[Grupp]":  "Vald period",
+                               "Budgetkolumner[Kolumn]":  "Avvikelse",
+                               "[Värde]":  -97.817,
+                               "[Färg]":  "#B42318"
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Avskrivningar",
+                               "Budgetkolumner[Grupp]":  "Vald period",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  -481.175,
+                               "[Färg]":  "#0F3163"
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Avskrivningar",
+                               "Budgetkolumner[Grupp]":  "Vald period",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -578.992,
+                               "[Färg]":  "#0F3163"
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Bruttomarginal",
+                               "Budgetkolumner[Grupp]":  "Augusti",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  0.2605235812737634,
+                               "[Färg]":  "#0F3163"
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Bruttomarginal",
+                               "Budgetkolumner[Grupp]":  "Augusti",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -0.38103667988444268,
+                               "[Färg]":  "#0F3163"
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Bruttomarginal",
+                               "Budgetkolumner[Grupp]":  "Juli",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  0.26689256421744484,
+                               "[Färg]":  "#0F3163"
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Bruttomarginal",
+                               "Budgetkolumner[Grupp]":  "Juli",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -3.1805097178834174,
+                               "[Färg]":  "#0F3163"
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Bruttomarginal",
+                               "Budgetkolumner[Grupp]":  "September",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  0.25959992495720569,
+                               "[Färg]":  "#0F3163"
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Bruttomarginal",
+                               "Budgetkolumner[Grupp]":  "September",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -0.503997375108207,
+                               "[Färg]":  "#0F3163"
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Bruttomarginal",
+                               "Budgetkolumner[Grupp]":  "Vald period",
+                               "Budgetkolumner[Kolumn]":  "Avvikelse",
+                               "[Värde]":  -138.06018007268617,
+                               "[Färg]":  "#B42318"
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Bruttomarginal",
+                               "Budgetkolumner[Grupp]":  "Vald period",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  0.26216593335944949,
+                               "[Färg]":  "#0F3163"
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Bruttomarginal",
+                               "Budgetkolumner[Grupp]":  "Vald period",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -1.1184358673674122,
+                               "[Färg]":  "#0F3163"
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Bruttovinst",
+                               "Budgetkolumner[Grupp]":  "Augusti",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  3716.873,
+                               "[Färg]":  "#0F3163"
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Bruttovinst",
+                               "Budgetkolumner[Grupp]":  "Augusti",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -171.332,
+                               "[Färg]":  "#0F3163"
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Bruttovinst",
+                               "Budgetkolumner[Grupp]":  "Juli",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  3511.032,
+                               "[Färg]":  "#0F3163"
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Bruttovinst",
+                               "Budgetkolumner[Grupp]":  "Juli",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -1190.169,
+                               "[Färg]":  "#0F3163"
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Bruttovinst",
+                               "Budgetkolumner[Grupp]":  "September",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  3920.145,
+                               "[Färg]":  "#0F3163"
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Bruttovinst",
+                               "Budgetkolumner[Grupp]":  "September",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -360.973,
+                               "[Färg]":  "#0F3163"
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Bruttovinst",
+                               "Budgetkolumner[Grupp]":  "Vald period",
+                               "Budgetkolumner[Kolumn]":  "Avvikelse",
+                               "[Värde]":  -12870.524,
+                               "[Färg]":  "#B42318"
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Bruttovinst",
+                               "Budgetkolumner[Grupp]":  "Vald period",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  11148.05,
+                               "[Färg]":  "#0F3163"
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Bruttovinst",
+                               "Budgetkolumner[Grupp]":  "Vald period",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -1722.474,
+                               "[Färg]":  "#0F3163"
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Direkta kostnader",
+                               "Budgetkolumner[Grupp]":  "Augusti",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  -10550.062,
+                               "[Färg]":  "#0F3163"
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Direkta kostnader",
+                               "Budgetkolumner[Grupp]":  "Augusti",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -620.979,
+                               "[Färg]":  "#0F3163"
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Direkta kostnader",
+                               "Budgetkolumner[Grupp]":  "Juli",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  -9644.194,
+                               "[Färg]":  "#0F3163"
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Direkta kostnader",
+                               "Budgetkolumner[Grupp]":  "Juli",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -1564.376,
+                               "[Färg]":  "#0F3163"
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Direkta kostnader",
+                               "Budgetkolumner[Grupp]":  "September",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  -11180.572,
+                               "[Färg]":  "#0F3163"
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Direkta kostnader",
+                               "Budgetkolumner[Grupp]":  "September",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -1077.193,
+                               "[Färg]":  "#0F3163"
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Direkta kostnader",
+                               "Budgetkolumner[Grupp]":  "Vald period",
+                               "Budgetkolumner[Kolumn]":  "Avvikelse",
+                               "[Värde]":  28112.28,
+                               "[Färg]":  "#007956"
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Direkta kostnader",
+                               "Budgetkolumner[Grupp]":  "Vald period",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  -31374.828,
+                               "[Färg]":  "#0F3163"
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Direkta kostnader",
+                               "Budgetkolumner[Grupp]":  "Vald period",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -3262.548,
+                               "[Färg]":  "#0F3163"
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Gemensam personal",
+                               "Budgetkolumner[Grupp]":  "Augusti",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  -1152.248,
+                               "[Färg]":  "#0F3163"
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Gemensam personal",
+                               "Budgetkolumner[Grupp]":  "Augusti",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -1399.039,
+                               "[Färg]":  "#0F3163"
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Gemensam personal",
+                               "Budgetkolumner[Grupp]":  "Juli",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  -1098.658,
+                               "[Färg]":  "#0F3163"
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Gemensam personal",
+                               "Budgetkolumner[Grupp]":  "Juli",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -1295.316,
+                               "[Färg]":  "#0F3163"
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Gemensam personal",
+                               "Budgetkolumner[Grupp]":  "September",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  -1213.561,
+                               "[Färg]":  "#0F3163"
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Gemensam personal",
+                               "Budgetkolumner[Grupp]":  "September",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -1474.39,
+                               "[Färg]":  "#0F3163"
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Gemensam personal",
+                               "Budgetkolumner[Grupp]":  "Vald period",
+                               "Budgetkolumner[Kolumn]":  "Avvikelse",
+                               "[Värde]":  -704.278,
+                               "[Färg]":  "#B42318"
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Gemensam personal",
+                               "Budgetkolumner[Grupp]":  "Vald period",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  -3464.467,
+                               "[Färg]":  "#0F3163"
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Gemensam personal",
+                               "Budgetkolumner[Grupp]":  "Vald period",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -4168.745,
+                               "[Färg]":  "#0F3163"
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Nettoomsättning",
+                               "Budgetkolumner[Grupp]":  "Augusti",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  14266.935,
+                               "[Färg]":  "#0F3163"
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Nettoomsättning",
+                               "Budgetkolumner[Grupp]":  "Augusti",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  449.647,
+                               "[Färg]":  "#0F3163"
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Nettoomsättning",
+                               "Budgetkolumner[Grupp]":  "Juli",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  13155.226,
+                               "[Färg]":  "#0F3163"
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Nettoomsättning",
+                               "Budgetkolumner[Grupp]":  "Juli",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  374.207,
+                               "[Färg]":  "#0F3163"
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Nettoomsättning",
+                               "Budgetkolumner[Grupp]":  "September",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  15100.717,
+                               "[Färg]":  "#0F3163"
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Nettoomsättning",
+                               "Budgetkolumner[Grupp]":  "September",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  716.22,
+                               "[Färg]":  "#0F3163"
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Nettoomsättning",
+                               "Budgetkolumner[Grupp]":  "Vald period",
+                               "Budgetkolumner[Kolumn]":  "Avvikelse",
+                               "[Värde]":  -40982.804,
+                               "[Färg]":  "#B42318"
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Nettoomsättning",
+                               "Budgetkolumner[Grupp]":  "Vald period",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  42522.878,
+                               "[Färg]":  "#0F3163"
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Nettoomsättning",
+                               "Budgetkolumner[Grupp]":  "Vald period",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  1540.074,
+                               "[Färg]":  "#0F3163"
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Rörelsemarginal",
+                               "Budgetkolumner[Grupp]":  "Augusti",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  0.07357102278800598,
+                               "[Färg]":  "#0F3163"
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Rörelsemarginal",
+                               "Budgetkolumner[Grupp]":  "Augusti",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -7.5833865232059816,
+                               "[Färg]":  "#0F3163"
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Rörelsemarginal",
+                               "Budgetkolumner[Grupp]":  "Juli",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  0.07357098996246815,
+                               "[Färg]":  "#0F3163"
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Rörelsemarginal",
+                               "Budgetkolumner[Grupp]":  "Juli",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -11.193232622585896,
+                               "[Färg]":  "#0F3163"
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Rörelsemarginal",
+                               "Budgetkolumner[Grupp]":  "September",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  0.0735710099063508,
+                               "[Färg]":  "#0F3163"
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Rörelsemarginal",
+                               "Budgetkolumner[Grupp]":  "September",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -5.2692091815363993,
+                               "[Färg]":  "#0F3163"
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Rörelsemarginal",
+                               "Budgetkolumner[Grupp]":  "Vald period",
+                               "Budgetkolumner[Kolumn]":  "Avvikelse",
+                               "[Värde]":  -745.78564384986532,
+                               "[Färg]":  "#B42318"
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Rörelsemarginal",
+                               "Budgetkolumner[Grupp]":  "Vald period",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  0.073571008058297471,
+                               "[Färg]":  "#0F3163"
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Rörelsemarginal",
+                               "Budgetkolumner[Grupp]":  "Vald period",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -7.3842854304403556,
+                               "[Färg]":  "#0F3163"
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Rörelseresultat",
+                               "Budgetkolumner[Grupp]":  "Augusti",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  1049.633,
+                               "[Färg]":  "#0F3163"
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Rörelseresultat",
+                               "Budgetkolumner[Grupp]":  "Augusti",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -3409.847,
+                               "[Färg]":  "#0F3163"
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Rörelseresultat",
+                               "Budgetkolumner[Grupp]":  "Juli",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  967.843,
+                               "[Färg]":  "#0F3163"
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Rörelseresultat",
+                               "Budgetkolumner[Grupp]":  "Juli",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -4188.586,
+                               "[Färg]":  "#0F3163"
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Rörelseresultat",
+                               "Budgetkolumner[Grupp]":  "September",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  1110.975,
+                               "[Färg]":  "#0F3163"
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Rörelseresultat",
+                               "Budgetkolumner[Grupp]":  "September",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -3773.913,
+                               "[Färg]":  "#0F3163"
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Rörelseresultat",
+                               "Budgetkolumner[Grupp]":  "Vald period",
+                               "Budgetkolumner[Kolumn]":  "Avvikelse",
+                               "[Värde]":  -14500.797,
+                               "[Färg]":  "#B42318"
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Rörelseresultat",
+                               "Budgetkolumner[Grupp]":  "Vald period",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  3128.451,
+                               "[Färg]":  "#0F3163"
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Rörelseresultat",
+                               "Budgetkolumner[Grupp]":  "Vald period",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -11372.346,
+                               "[Färg]":  "#0F3163"
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Övriga rörelsekostnader",
+                               "Budgetkolumner[Grupp]":  "Augusti",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  -1354.958,
+                               "[Färg]":  "#0F3163"
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Övriga rörelsekostnader",
+                               "Budgetkolumner[Grupp]":  "Augusti",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -1645.165,
+                               "[Färg]":  "#0F3163"
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Övriga rörelsekostnader",
+                               "Budgetkolumner[Grupp]":  "Juli",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  -1291.94,
+                               "[Färg]":  "#0F3163"
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Övriga rörelsekostnader",
+                               "Budgetkolumner[Grupp]":  "Juli",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -1523.196,
+                               "[Färg]":  "#0F3163"
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Övriga rörelsekostnader",
+                               "Budgetkolumner[Grupp]":  "September",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  -1427.059,
+                               "[Färg]":  "#0F3163"
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Övriga rörelsekostnader",
+                               "Budgetkolumner[Grupp]":  "September",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -1733.774,
+                               "[Färg]":  "#0F3163"
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Övriga rörelsekostnader",
+                               "Budgetkolumner[Grupp]":  "Vald period",
+                               "Budgetkolumner[Kolumn]":  "Avvikelse",
+                               "[Värde]":  -828.178,
+                               "[Färg]":  "#B42318"
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Övriga rörelsekostnader",
+                               "Budgetkolumner[Grupp]":  "Vald period",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  -4073.957,
+                               "[Färg]":  "#0F3163"
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Övriga rörelsekostnader",
+                               "Budgetkolumner[Grupp]":  "Vald period",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -4902.135,
+                               "[Färg]":  "#0F3163"
+                           }
+                       ],
+                       [
+                           {
+                               "[A]":  "Försiktigt",
+                               "[B]":  "Fastställd budget",
+                               "[OmsättningA]":  130088565,
+                               "[OmsättningB]":  141400611,
+                               "[EBITA]":  3772701,
+                               "[EBITB]":  10402987,
+                               "[Titel]":  "A: Försiktigt · B: Fastställd budget · januari–december 2026"
+                           }
+                       ],
+                       [
+                           {
+                               "Budgetrader[Rad]":  "Avskrivningar",
+                               "Budgetkolumner[Grupp]":  "Januari",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  -102.059
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Avskrivningar",
+                               "Budgetkolumner[Grupp]":  "Januari",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -102.263
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Avskrivningar",
+                               "Budgetkolumner[Grupp]":  "Mars",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  -223.701
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Avskrivningar",
+                               "Budgetkolumner[Grupp]":  "Mars",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -231.58
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Avskrivningar",
+                               "Budgetkolumner[Grupp]":  "September",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  -392.251
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Avskrivningar",
+                               "Budgetkolumner[Grupp]":  "September",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -436.356
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Avskrivningar",
+                               "Budgetkolumner[Grupp]":  "Vald period",
+                               "Budgetkolumner[Kolumn]":  "Avvikelse",
+                               "[Värde]":  -44.105
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Avskrivningar",
+                               "Budgetkolumner[Grupp]":  "Vald period",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  -392.251
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Avskrivningar",
+                               "Budgetkolumner[Grupp]":  "Vald period",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -436.356
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Bruttomarginal",
+                               "Budgetkolumner[Grupp]":  "Januari",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  0.26482804123785525
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Bruttomarginal",
+                               "Budgetkolumner[Grupp]":  "Januari",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -0.32637531817850246
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Bruttomarginal",
+                               "Budgetkolumner[Grupp]":  "Mars",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  0.26251155561100742
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Bruttomarginal",
+                               "Budgetkolumner[Grupp]":  "Mars",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -0.27612920777953986
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Bruttomarginal",
+                               "Budgetkolumner[Grupp]":  "September",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  0.26124933271955736
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Bruttomarginal",
+                               "Budgetkolumner[Grupp]":  "September",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -0.39985913912626836
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Bruttomarginal",
+                               "Budgetkolumner[Grupp]":  "Vald period",
+                               "Budgetkolumner[Kolumn]":  "Avvikelse",
+                               "[Värde]":  -66.110847184582582
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Bruttomarginal",
+                               "Budgetkolumner[Grupp]":  "Vald period",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  0.26124933271955736
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Bruttomarginal",
+                               "Budgetkolumner[Grupp]":  "Vald period",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -0.39985913912626836
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Bruttovinst",
+                               "Budgetkolumner[Grupp]":  "Januari",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  2355.294
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Bruttovinst",
+                               "Budgetkolumner[Grupp]":  "Januari",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -85.01
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Bruttovinst",
+                               "Budgetkolumner[Grupp]":  "Mars",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  5180.098
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Bruttovinst",
+                               "Budgetkolumner[Grupp]":  "Mars",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -166.454
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Bruttovinst",
+                               "Budgetkolumner[Grupp]":  "September",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  9100.243
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Bruttovinst",
+                               "Budgetkolumner[Grupp]":  "September",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -527.427
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Bruttovinst",
+                               "Budgetkolumner[Grupp]":  "Vald period",
+                               "Budgetkolumner[Kolumn]":  "Avvikelse",
+                               "[Värde]":  -9627.67
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Bruttovinst",
+                               "Budgetkolumner[Grupp]":  "Vald period",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  9100.243
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Bruttovinst",
+                               "Budgetkolumner[Grupp]":  "Vald period",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -527.427
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Direkta kostnader",
+                               "Budgetkolumner[Grupp]":  "Januari",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  -6538.379
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Direkta kostnader",
+                               "Budgetkolumner[Grupp]":  "Januari",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -345.477
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Direkta kostnader",
+                               "Budgetkolumner[Grupp]":  "Mars",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  -14552.74
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Direkta kostnader",
+                               "Budgetkolumner[Grupp]":  "Mars",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -769.266
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Direkta kostnader",
+                               "Budgetkolumner[Grupp]":  "September",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  -25733.312
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Direkta kostnader",
+                               "Budgetkolumner[Grupp]":  "September",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -1846.459
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Direkta kostnader",
+                               "Budgetkolumner[Grupp]":  "Vald period",
+                               "Budgetkolumner[Kolumn]":  "Avvikelse",
+                               "[Värde]":  23886.853
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Direkta kostnader",
+                               "Budgetkolumner[Grupp]":  "Vald period",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  -25733.312
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Direkta kostnader",
+                               "Budgetkolumner[Grupp]":  "Vald period",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -1846.459
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Gemensam personal",
+                               "Budgetkolumner[Grupp]":  "Januari",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  -734.822
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Gemensam personal",
+                               "Budgetkolumner[Grupp]":  "Januari",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -736.292
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Gemensam personal",
+                               "Budgetkolumner[Grupp]":  "Mars",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  -1610.639
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Gemensam personal",
+                               "Budgetkolumner[Grupp]":  "Mars",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -1667.37
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Gemensam personal",
+                               "Budgetkolumner[Grupp]":  "September",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  -2824.2
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Gemensam personal",
+                               "Budgetkolumner[Grupp]":  "September",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -3141.76
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Gemensam personal",
+                               "Budgetkolumner[Grupp]":  "Vald period",
+                               "Budgetkolumner[Kolumn]":  "Avvikelse",
+                               "[Värde]":  -317.56
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Gemensam personal",
+                               "Budgetkolumner[Grupp]":  "Vald period",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  -2824.2
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Gemensam personal",
+                               "Budgetkolumner[Grupp]":  "Vald period",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -3141.76
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Nettoomsättning",
+                               "Budgetkolumner[Grupp]":  "Januari",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  8893.673
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Nettoomsättning",
+                               "Budgetkolumner[Grupp]":  "Januari",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  260.467
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Nettoomsättning",
+                               "Budgetkolumner[Grupp]":  "Mars",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  19732.838
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Nettoomsättning",
+                               "Budgetkolumner[Grupp]":  "Mars",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  602.812
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Nettoomsättning",
+                               "Budgetkolumner[Grupp]":  "September",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  34833.555
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Nettoomsättning",
+                               "Budgetkolumner[Grupp]":  "September",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  1319.032
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Nettoomsättning",
+                               "Budgetkolumner[Grupp]":  "Vald period",
+                               "Budgetkolumner[Kolumn]":  "Avvikelse",
+                               "[Värde]":  -33514.523
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Nettoomsättning",
+                               "Budgetkolumner[Grupp]":  "Vald period",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  34833.555
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Nettoomsättning",
+                               "Budgetkolumner[Grupp]":  "Vald period",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  1319.032
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Rörelsemarginal",
+                               "Budgetkolumner[Grupp]":  "Januari",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  0.073571065632838092
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Rörelsemarginal",
+                               "Budgetkolumner[Grupp]":  "Januari",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -6.8699297799721268
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Rörelsemarginal",
+                               "Budgetkolumner[Grupp]":  "Mars",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  0.073571019029295234
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Rörelsemarginal",
+                               "Budgetkolumner[Grupp]":  "Mars",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -6.6788783235901077
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Rörelsemarginal",
+                               "Budgetkolumner[Grupp]":  "September",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  0.073571015074401683
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Rörelsemarginal",
+                               "Budgetkolumner[Grupp]":  "September",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -5.913443343300238
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Rörelsemarginal",
+                               "Budgetkolumner[Grupp]":  "Vald period",
+                               "Budgetkolumner[Kolumn]":  "Avvikelse",
+                               "[Värde]":  -598.70143583746392
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Rörelsemarginal",
+                               "Budgetkolumner[Grupp]":  "Vald period",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  0.073571015074401683
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Rörelsemarginal",
+                               "Budgetkolumner[Grupp]":  "Vald period",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -5.913443343300238
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Rörelseresultat",
+                               "Budgetkolumner[Grupp]":  "Januari",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  654.317
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Rörelseresultat",
+                               "Budgetkolumner[Grupp]":  "Januari",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -1789.39
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Rörelseresultat",
+                               "Budgetkolumner[Grupp]":  "Mars",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  1451.765
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Rörelseresultat",
+                               "Budgetkolumner[Grupp]":  "Mars",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -4026.108
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Rörelseresultat",
+                               "Budgetkolumner[Grupp]":  "September",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  2562.74
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Rörelseresultat",
+                               "Budgetkolumner[Grupp]":  "September",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -7800.021
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Rörelseresultat",
+                               "Budgetkolumner[Grupp]":  "Vald period",
+                               "Budgetkolumner[Kolumn]":  "Avvikelse",
+                               "[Värde]":  -10362.761
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Rörelseresultat",
+                               "Budgetkolumner[Grupp]":  "Vald period",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  2562.74
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Rörelseresultat",
+                               "Budgetkolumner[Grupp]":  "Vald period",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -7800.021
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Övriga rörelsekostnader",
+                               "Budgetkolumner[Grupp]":  "Januari",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  -864.096
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Övriga rörelsekostnader",
+                               "Budgetkolumner[Grupp]":  "Januari",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -865.825
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Övriga rörelsekostnader",
+                               "Budgetkolumner[Grupp]":  "Mars",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  -1893.993
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Övriga rörelsekostnader",
+                               "Budgetkolumner[Grupp]":  "Mars",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -1960.704
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Övriga rörelsekostnader",
+                               "Budgetkolumner[Grupp]":  "September",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  -3321.052
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Övriga rörelsekostnader",
+                               "Budgetkolumner[Grupp]":  "September",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -3694.478
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Övriga rörelsekostnader",
+                               "Budgetkolumner[Grupp]":  "Vald period",
+                               "Budgetkolumner[Kolumn]":  "Avvikelse",
+                               "[Värde]":  -373.426
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Övriga rörelsekostnader",
+                               "Budgetkolumner[Grupp]":  "Vald period",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  -3321.052
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Övriga rörelsekostnader",
+                               "Budgetkolumner[Grupp]":  "Vald period",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -3694.478
+                           }
+                       ],
+                       [
+                           {
+                               "[Omsättning]":  139500000,
+                               "[Bruttovinst]":  36040000,
+                               "[EBIT]":  8000000,
+                               "[BudgetEBIT]":  9750000,
+                               "[Kunder]":  270,
+                               "[Uppdrag]":  960
+                           }
+                       ],
+                       [
+                           {
+                               "Budgetrader[Rad]":  "Avskrivningar",
+                               "Budgetkolumner[Grupp]":  "Augusti",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  -160.034
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Avskrivningar",
+                               "Budgetkolumner[Grupp]":  "Augusti",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -194.311
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Avskrivningar",
+                               "Budgetkolumner[Grupp]":  "Juli",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  -152.591
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Avskrivningar",
+                               "Budgetkolumner[Grupp]":  "Juli",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -179.905
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Avskrivningar",
+                               "Budgetkolumner[Grupp]":  "September",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  -168.55
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Avskrivningar",
+                               "Budgetkolumner[Grupp]":  "September",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -204.776
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Avskrivningar",
+                               "Budgetkolumner[Grupp]":  "Vald period",
+                               "Budgetkolumner[Kolumn]":  "Avvikelse",
+                               "[Värde]":  -97.817
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Avskrivningar",
+                               "Budgetkolumner[Grupp]":  "Vald period",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  -481.175
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Avskrivningar",
+                               "Budgetkolumner[Grupp]":  "Vald period",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -578.992
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Direkta kostnader",
+                               "Budgetkolumner[Grupp]":  "Augusti",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  -10550.062
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Direkta kostnader",
+                               "Budgetkolumner[Grupp]":  "Augusti",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -620.979
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Direkta kostnader",
+                               "Budgetkolumner[Grupp]":  "Juli",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  -9644.194
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Direkta kostnader",
+                               "Budgetkolumner[Grupp]":  "Juli",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -1564.376
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Direkta kostnader",
+                               "Budgetkolumner[Grupp]":  "September",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  -11180.572
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Direkta kostnader",
+                               "Budgetkolumner[Grupp]":  "September",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -1077.193
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Direkta kostnader",
+                               "Budgetkolumner[Grupp]":  "Vald period",
+                               "Budgetkolumner[Kolumn]":  "Avvikelse",
+                               "[Värde]":  28112.28
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Direkta kostnader",
+                               "Budgetkolumner[Grupp]":  "Vald period",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  -31374.828
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Direkta kostnader",
+                               "Budgetkolumner[Grupp]":  "Vald period",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -3262.548
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Gemensam personal",
+                               "Budgetkolumner[Grupp]":  "Augusti",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  -1152.248
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Gemensam personal",
+                               "Budgetkolumner[Grupp]":  "Augusti",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -1399.039
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Gemensam personal",
+                               "Budgetkolumner[Grupp]":  "Juli",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  -1098.658
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Gemensam personal",
+                               "Budgetkolumner[Grupp]":  "Juli",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -1295.316
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Gemensam personal",
+                               "Budgetkolumner[Grupp]":  "September",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  -1213.561
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Gemensam personal",
+                               "Budgetkolumner[Grupp]":  "September",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -1474.39
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Gemensam personal",
+                               "Budgetkolumner[Grupp]":  "Vald period",
+                               "Budgetkolumner[Kolumn]":  "Avvikelse",
+                               "[Värde]":  -704.278
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Gemensam personal",
+                               "Budgetkolumner[Grupp]":  "Vald period",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  -3464.467
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Gemensam personal",
+                               "Budgetkolumner[Grupp]":  "Vald period",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -4168.745
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Nettoomsättning",
+                               "Budgetkolumner[Grupp]":  "Augusti",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  14266.935
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Nettoomsättning",
+                               "Budgetkolumner[Grupp]":  "Augusti",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  449.647
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Nettoomsättning",
+                               "Budgetkolumner[Grupp]":  "Juli",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  13155.226
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Nettoomsättning",
+                               "Budgetkolumner[Grupp]":  "Juli",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  374.207
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Nettoomsättning",
+                               "Budgetkolumner[Grupp]":  "September",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  15100.717
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Nettoomsättning",
+                               "Budgetkolumner[Grupp]":  "September",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  716.22
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Nettoomsättning",
+                               "Budgetkolumner[Grupp]":  "Vald period",
+                               "Budgetkolumner[Kolumn]":  "Avvikelse",
+                               "[Värde]":  -40982.804
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Nettoomsättning",
+                               "Budgetkolumner[Grupp]":  "Vald period",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  42522.878
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Nettoomsättning",
+                               "Budgetkolumner[Grupp]":  "Vald period",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  1540.074
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Övriga rörelsekostnader",
+                               "Budgetkolumner[Grupp]":  "Augusti",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  -1354.958
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Övriga rörelsekostnader",
+                               "Budgetkolumner[Grupp]":  "Augusti",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -1645.165
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Övriga rörelsekostnader",
+                               "Budgetkolumner[Grupp]":  "Juli",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  -1291.94
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Övriga rörelsekostnader",
+                               "Budgetkolumner[Grupp]":  "Juli",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -1523.196
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Övriga rörelsekostnader",
+                               "Budgetkolumner[Grupp]":  "September",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  -1427.059
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Övriga rörelsekostnader",
+                               "Budgetkolumner[Grupp]":  "September",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -1733.774
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Övriga rörelsekostnader",
+                               "Budgetkolumner[Grupp]":  "Vald period",
+                               "Budgetkolumner[Kolumn]":  "Avvikelse",
+                               "[Värde]":  -828.178
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Övriga rörelsekostnader",
+                               "Budgetkolumner[Grupp]":  "Vald period",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  -4073.957
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Övriga rörelsekostnader",
+                               "Budgetkolumner[Grupp]":  "Vald period",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -4902.135
+                           }
+                       ],
+                       [
+                           {
+                               "Budgetrader[Rad]":  "Bruttomarginal",
+                               "Budgetkolumner[Grupp]":  "Augusti",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  0.2605235812737634
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Bruttomarginal",
+                               "Budgetkolumner[Grupp]":  "Augusti",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -0.38103667988444268
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Bruttomarginal",
+                               "Budgetkolumner[Grupp]":  "Juli",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  0.26689256421744484
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Bruttomarginal",
+                               "Budgetkolumner[Grupp]":  "Juli",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -3.1805097178834174
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Bruttomarginal",
+                               "Budgetkolumner[Grupp]":  "September",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  0.25959992495720569
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Bruttomarginal",
+                               "Budgetkolumner[Grupp]":  "September",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -0.503997375108207
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Bruttomarginal",
+                               "Budgetkolumner[Grupp]":  "Vald period",
+                               "Budgetkolumner[Kolumn]":  "Avvikelse",
+                               "[Värde]":  -138.06018007268617
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Bruttomarginal",
+                               "Budgetkolumner[Grupp]":  "Vald period",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  0.26216593335944949
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Bruttomarginal",
+                               "Budgetkolumner[Grupp]":  "Vald period",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -1.1184358673674122
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Bruttovinst",
+                               "Budgetkolumner[Grupp]":  "Augusti",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  3716.873
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Bruttovinst",
+                               "Budgetkolumner[Grupp]":  "Augusti",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -171.332
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Bruttovinst",
+                               "Budgetkolumner[Grupp]":  "Juli",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  3511.032
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Bruttovinst",
+                               "Budgetkolumner[Grupp]":  "Juli",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -1190.169
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Bruttovinst",
+                               "Budgetkolumner[Grupp]":  "September",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  3920.145
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Bruttovinst",
+                               "Budgetkolumner[Grupp]":  "September",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -360.973
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Bruttovinst",
+                               "Budgetkolumner[Grupp]":  "Vald period",
+                               "Budgetkolumner[Kolumn]":  "Avvikelse",
+                               "[Värde]":  -12870.524
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Bruttovinst",
+                               "Budgetkolumner[Grupp]":  "Vald period",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  11148.05
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Bruttovinst",
+                               "Budgetkolumner[Grupp]":  "Vald period",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -1722.474
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Rörelsemarginal",
+                               "Budgetkolumner[Grupp]":  "Augusti",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  0.07357102278800598
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Rörelsemarginal",
+                               "Budgetkolumner[Grupp]":  "Augusti",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -7.5833865232059816
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Rörelsemarginal",
+                               "Budgetkolumner[Grupp]":  "Juli",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  0.07357098996246815
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Rörelsemarginal",
+                               "Budgetkolumner[Grupp]":  "Juli",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -11.193232622585896
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Rörelsemarginal",
+                               "Budgetkolumner[Grupp]":  "September",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  0.0735710099063508
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Rörelsemarginal",
+                               "Budgetkolumner[Grupp]":  "September",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -5.2692091815363993
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Rörelsemarginal",
+                               "Budgetkolumner[Grupp]":  "Vald period",
+                               "Budgetkolumner[Kolumn]":  "Avvikelse",
+                               "[Värde]":  -745.78564384986532
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Rörelsemarginal",
+                               "Budgetkolumner[Grupp]":  "Vald period",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  0.073571008058297471
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Rörelsemarginal",
+                               "Budgetkolumner[Grupp]":  "Vald period",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -7.3842854304403556
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Rörelseresultat",
+                               "Budgetkolumner[Grupp]":  "Augusti",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  1049.633
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Rörelseresultat",
+                               "Budgetkolumner[Grupp]":  "Augusti",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -3409.847
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Rörelseresultat",
+                               "Budgetkolumner[Grupp]":  "Juli",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  967.843
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Rörelseresultat",
+                               "Budgetkolumner[Grupp]":  "Juli",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -4188.586
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Rörelseresultat",
+                               "Budgetkolumner[Grupp]":  "September",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  1110.975
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Rörelseresultat",
+                               "Budgetkolumner[Grupp]":  "September",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -3773.913
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Rörelseresultat",
+                               "Budgetkolumner[Grupp]":  "Vald period",
+                               "Budgetkolumner[Kolumn]":  "Avvikelse",
+                               "[Värde]":  -14500.797
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Rörelseresultat",
+                               "Budgetkolumner[Grupp]":  "Vald period",
+                               "Budgetkolumner[Kolumn]":  "Budget",
+                               "[Värde]":  3128.451
+                           },
+                           {
+                               "Budgetrader[Rad]":  "Rörelseresultat",
+                               "Budgetkolumner[Grupp]":  "Vald period",
+                               "Budgetkolumner[Kolumn]":  "Utfall",
+                               "[Värde]":  -11372.346
+                           }
+                       ]
+                   ],
+    "source":  "Actual local Power BI Desktop DAX"
+}

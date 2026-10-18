@@ -4,7 +4,7 @@
   "position": {
     "x": 304,
     "y": 154,
-    "width": 1040,
+    "width": 1580,
     "height": 32,
     "z": 114,
     "tabOrder": 114
@@ -17,6 +17,7 @@
           "properties": {
             "paragraphs": [
               {
+                "horizontalTextAlignment": "left",
                 "textRuns": [
                   {
                     "value": "Historiskt utfall · vald period",
@@ -26,8 +27,7 @@
                       "color": "#0F3163"
                     }
                   }
-                ],
-                "horizontalTextAlignment": "left"
+                ]
               }
             ]
           }

@@ -6,8 +6,8 @@
     "Datum": 1400,
     "Kunder": 302,
     "Områden": 3,
-    "Försäljning": 102258,
-    "Direkta kostnader": 213256,
+    "Försäljning": 104996,
+    "Direkta kostnader": 214077,
     "Gemensamma kostnader": 138,
     "Uppdrag": 3446,
     "Budget": 46,
@@ -23,14 +23,16 @@
     "Kundstatusval": 5,
     "Kundgrupper": 3,
     "Kundbassteg": 4,
-    "Kundintäktssteg": 6
+    "Kundintäktssteg": 6,
+    "Tidsanvändning": 1350,
+    "Uppdragsregister": 3436
   },
   "sha256": {
     "Datum": "27a97547bd600fcb2fc3d2ccb517585d96057ac1486ec703545945a0d87150ff",
-    "Kunder": "76d6381a475e390faa0d95a37dcf5cc290e1936074f130a9172754fec7297d90",
+    "Kunder": "0e082b1a4e2b8cff0b0fe93c9615b8fb54543e6ad7c8fe274933a094e539b316",
     "Områden": "9b6ba81d0bcc4b05a9fe3c6b97f33c6168021300bccf7700ad4c7953ad8b8076",
-    "Försäljning": "dd29469b945f1ebe91234f0dce3bd0a689b4b77d8d9176bdd6e8cab6a6f2c753",
-    "Direkta kostnader": "caa37561863de697d86423c3c4a014955234d102fe51368ceefadc40606cc3d6",
+    "Försäljning": "ef38f1602799f061db196d10f2bd206685336d69bfeeb1159681ac9c9911cb8d",
+    "Direkta kostnader": "97009f436398952bccb5ab4c8b56defe4fffb3d1789279a5027eec5421f42219",
     "Gemensamma kostnader": "322b63550939e5410618202eb9a3e9faa12463abcf51f9af8b4f96a2aa6ccb86",
     "Uppdrag": "f30a440bb8711892121d87c3477c4db9152728d28d81ccabb7c6378354cdfde9",
     "Budget": "2720df4cf2974e4fcd58a2f9e67eaca2b8e2f3ffa28a55dbf4b60a55524eb620",
@@ -46,10 +48,16 @@
     "Kundstatusval": "1d2f4f765420bf01cb81fc5836470b4a2701ebfa22e5def0ab308702ef7493eb",
     "Kundgrupper": "6180693b78591ba7a50b8a9fcc2c048338b9a85ada5028a7239b5ab49ff923a7",
     "Kundbassteg": "ff4ccb597a0f6256a13043d9946d245c562adc9f0fe48ef577a6b3b6a0049ffc",
-    "Kundintäktssteg": "d81e16b69c3da3ed7088d589f8f6fd30ac8182d8a294fd7c7b1c68e6daf1d83a"
+    "Kundintäktssteg": "d81e16b69c3da3ed7088d589f8f6fd30ac8182d8a294fd7c7b1c68e6daf1d83a",
+    "Tidsanvändning": "3ba2855663a135ecc643f3b8f35e39c309294ec402c8cd6b7c701e9baabfd5d5",
+    "Uppdragsregister": "62bd9cd37cd8ebc5db12e57519816bc556d1d728dd73e0af79b0b6df34d5f552"
   },
   "measures": 70,
   "assumptions": "Nettointäkter exkl moms inklusive kreditnotor. Alla direkta personalkostnader inkluderade, också ej uppdragsfördelade. Gemensamma kostnader inkluderar avskrivningar. Uppdrag har en rad per unik identitet; avbokade exkluderas. Kund 301 har endast kreditnotor. Oktober 2026 är komplett demoutfall.",
   "enrichment": "scripts/extend-sales-overview-data.py; integer transportation allocations, preserving each month/area net revenue, direct cost, positive-customer set and all prior overview controls.",
-  "customerEnrichment": "scripts/extend-customer-data.py; integer balanced allocation preserving each date/area/article/billing/industry total; attributable costs only, unallocated personnel retained."
+  "customerEnrichment": "scripts/extend-customer-data.py; integer balanced allocation preserving each date/area/article/billing/industry total; attributable costs only, unallocated personnel retained.",
+  "realisticCustomerHistory": "scripts/realistic-customer-history.py; varied purchase dates and historical lapsed cohorts; exact monthly financial/industry/hour totals and reference customer revenues preserved.",
+  "spreadCustomerAcquisition": "scripts/spread-customer-acquisition.py; customer starts spread over 2024-2026, actual reactivation events; monthly finance unchanged, period cohort totals intentionally recalculated.",
+  "randomizedCustomerBehaviour": "scripts/randomize-customer-behaviour.py; seeded uneven customer starts, purchase sizes, dates, industries and margins. Monthly area/article/billing revenue and hours, monthly cost buckets unchanged. Industry and customer totals intentionally vary.",
+  "historicalTimeEstimates": "scripts/vary-assignment-estimates.py; synthetic original planned hours varied; actual hours and financial data unchanged."
 }

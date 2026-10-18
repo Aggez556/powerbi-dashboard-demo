@@ -1,0 +1,1991 @@
+[
+  {
+    "case": 0,
+    "month": 202510,
+    "industry": "Restaurang",
+    "current": 3235861,
+    "previous": 2860025,
+    "delta": 375836,
+    "percent": 0.1314100401220269
+  },
+  {
+    "case": 0,
+    "month": 202510,
+    "industry": "Hotell",
+    "current": 2333230,
+    "previous": 1940942,
+    "delta": 392288,
+    "percent": 0.20211217027608244
+  },
+  {
+    "case": 0,
+    "month": 202510,
+    "industry": "Catering",
+    "current": 1272942,
+    "previous": 1095978,
+    "delta": 176964,
+    "percent": 0.16146674477042422
+  },
+  {
+    "case": 0,
+    "month": 202510,
+    "industry": "Kontor",
+    "current": 1202520,
+    "previous": 956195,
+    "delta": 246325,
+    "percent": 0.2576095880024472
+  },
+  {
+    "case": 0,
+    "month": 202510,
+    "industry": "Livsmedel",
+    "current": 732099,
+    "previous": 696668,
+    "delta": 35431,
+    "percent": 0.05085779740134469
+  },
+  {
+    "case": 0,
+    "month": 202511,
+    "industry": "Restaurang",
+    "current": 2951704,
+    "previous": 2540907,
+    "delta": 410797,
+    "percent": 0.16167337096556467
+  },
+  {
+    "case": 0,
+    "month": 202511,
+    "industry": "Hotell",
+    "current": 1938508,
+    "previous": 1793423,
+    "delta": 145085,
+    "percent": 0.0808983714383054
+  },
+  {
+    "case": 0,
+    "month": 202511,
+    "industry": "Catering",
+    "current": 1273883,
+    "previous": 1012878,
+    "delta": 261005,
+    "percent": 0.25768651308449786
+  },
+  {
+    "case": 0,
+    "month": 202511,
+    "industry": "Kontor",
+    "current": 980642,
+    "previous": 828815,
+    "delta": 151827,
+    "percent": 0.1831856324994118
+  },
+  {
+    "case": 0,
+    "month": 202511,
+    "industry": "Livsmedel",
+    "current": 754249,
+    "previous": 618804,
+    "delta": 135445,
+    "percent": 0.2188819076799762
+  },
+  {
+    "case": 0,
+    "month": 202512,
+    "industry": "Restaurang",
+    "current": 3357133,
+    "previous": 2901690,
+    "delta": 455443,
+    "percent": 0.1569578418094283
+  },
+  {
+    "case": 0,
+    "month": 202512,
+    "industry": "Hotell",
+    "current": 2466461,
+    "previous": 1822364,
+    "delta": 644097,
+    "percent": 0.3534403664690479
+  },
+  {
+    "case": 0,
+    "month": 202512,
+    "industry": "Catering",
+    "current": 1291272,
+    "previous": 1229077,
+    "delta": 62195,
+    "percent": 0.05060301348084782
+  },
+  {
+    "case": 0,
+    "month": 202512,
+    "industry": "Kontor",
+    "current": 969018,
+    "previous": 900203,
+    "delta": 68815,
+    "percent": 0.07644386877182147
+  },
+  {
+    "case": 0,
+    "month": 202512,
+    "industry": "Livsmedel",
+    "current": 692767,
+    "previous": 696474,
+    "delta": -3707,
+    "percent": -0.005322524602497724
+  },
+  {
+    "case": 0,
+    "month": 202601,
+    "industry": "Restaurang",
+    "current": 3723826,
+    "previous": 2955220,
+    "delta": 768606,
+    "percent": 0.2600841900095424
+  },
+  {
+    "case": 0,
+    "month": 202601,
+    "industry": "Hotell",
+    "current": 2159876,
+    "previous": 2070050,
+    "delta": 89826,
+    "percent": 0.04339315475471607
+  },
+  {
+    "case": 0,
+    "month": 202601,
+    "industry": "Catering",
+    "current": 1460207,
+    "previous": 1213389,
+    "delta": 246818,
+    "percent": 0.20341209620327858
+  },
+  {
+    "case": 0,
+    "month": 202601,
+    "industry": "Kontor",
+    "current": 1238137,
+    "previous": 1071232,
+    "delta": 166905,
+    "percent": 0.15580658531485242
+  },
+  {
+    "case": 0,
+    "month": 202601,
+    "industry": "Livsmedel",
+    "current": 779715,
+    "previous": 743237,
+    "delta": 36478,
+    "percent": 0.04907990318027762
+  },
+  {
+    "case": 0,
+    "month": 202602,
+    "industry": "Restaurang",
+    "current": 3774783,
+    "previous": 3137729,
+    "delta": 637054,
+    "percent": 0.20303028081775068
+  },
+  {
+    "case": 0,
+    "month": 202602,
+    "industry": "Hotell",
+    "current": 2286144,
+    "previous": 2202724,
+    "delta": 83420,
+    "percent": 0.037871290275132065
+  },
+  {
+    "case": 0,
+    "month": 202602,
+    "industry": "Catering",
+    "current": 1784905,
+    "previous": 1356755,
+    "delta": 428150,
+    "percent": 0.31556913370505363
+  },
+  {
+    "case": 0,
+    "month": 202602,
+    "industry": "Kontor",
+    "current": 1371433,
+    "previous": 1029724,
+    "delta": 341709,
+    "percent": 0.3318452323146785
+  },
+  {
+    "case": 0,
+    "month": 202602,
+    "industry": "Livsmedel",
+    "current": 827126,
+    "previous": 913403,
+    "delta": -86277,
+    "percent": -0.09445666370703841
+  },
+  {
+    "case": 0,
+    "month": 202603,
+    "industry": "Restaurang",
+    "current": 4180668,
+    "previous": 4089344,
+    "delta": 91324,
+    "percent": 0.02233218824339552
+  },
+  {
+    "case": 0,
+    "month": 202603,
+    "industry": "Hotell",
+    "current": 3088848,
+    "previous": 2326478,
+    "delta": 762370,
+    "percent": 0.32769276133279573
+  },
+  {
+    "case": 0,
+    "month": 202603,
+    "industry": "Catering",
+    "current": 1715930,
+    "previous": 1396481,
+    "delta": 319449,
+    "percent": 0.22875284375512447
+  },
+  {
+    "case": 0,
+    "month": 202603,
+    "industry": "Kontor",
+    "current": 1482581,
+    "previous": 1184395,
+    "delta": 298186,
+    "percent": 0.2517622921407132
+  },
+  {
+    "case": 0,
+    "month": 202603,
+    "industry": "Livsmedel",
+    "current": 941620,
+    "previous": 818052,
+    "delta": 123568,
+    "percent": 0.15105152239710923
+  },
+  {
+    "case": 0,
+    "month": 202604,
+    "industry": "Restaurang",
+    "current": 4524950,
+    "previous": 3770974,
+    "delta": 753976,
+    "percent": 0.19994197785505813
+  },
+  {
+    "case": 0,
+    "month": 202604,
+    "industry": "Hotell",
+    "current": 3201072,
+    "previous": 2678535,
+    "delta": 522537,
+    "percent": 0.19508313313061057
+  },
+  {
+    "case": 0,
+    "month": 202604,
+    "industry": "Catering",
+    "current": 1830387,
+    "previous": 1634836,
+    "delta": 195551,
+    "percent": 0.11961505618912234
+  },
+  {
+    "case": 0,
+    "month": 202604,
+    "industry": "Kontor",
+    "current": 1430269,
+    "previous": 1271006,
+    "delta": 159263,
+    "percent": 0.125304679914965
+  },
+  {
+    "case": 0,
+    "month": 202604,
+    "industry": "Livsmedel",
+    "current": 1008079,
+    "previous": 962719,
+    "delta": 45360,
+    "percent": 0.04711655218189316
+  },
+  {
+    "case": 0,
+    "month": 202605,
+    "industry": "Restaurang",
+    "current": 5016875,
+    "previous": 3999977,
+    "delta": 1016898,
+    "percent": 0.25422596179928036
+  },
+  {
+    "case": 0,
+    "month": 202605,
+    "industry": "Hotell",
+    "current": 3233880,
+    "previous": 2876317,
+    "delta": 357563,
+    "percent": 0.12431279306140457
+  },
+  {
+    "case": 0,
+    "month": 202605,
+    "industry": "Catering",
+    "current": 1884001,
+    "previous": 1609222,
+    "delta": 274779,
+    "percent": 0.17075269913038724
+  },
+  {
+    "case": 0,
+    "month": 202605,
+    "industry": "Kontor",
+    "current": 1595961,
+    "previous": 1464434,
+    "delta": 131527,
+    "percent": 0.08981422174027645
+  },
+  {
+    "case": 0,
+    "month": 202605,
+    "industry": "Livsmedel",
+    "current": 995428,
+    "previous": 997271,
+    "delta": -1843,
+    "percent": -0.0018480433101935182
+  },
+  {
+    "case": 0,
+    "month": 202606,
+    "industry": "Restaurang",
+    "current": 5732500,
+    "previous": 4351575,
+    "delta": 1380925,
+    "percent": 0.3173391243400378
+  },
+  {
+    "case": 0,
+    "month": 202606,
+    "industry": "Hotell",
+    "current": 3324099,
+    "previous": 3175223,
+    "delta": 148876,
+    "percent": 0.04688678558954757
+  },
+  {
+    "case": 0,
+    "month": 202606,
+    "industry": "Catering",
+    "current": 2074984,
+    "previous": 1805346,
+    "delta": 269638,
+    "percent": 0.14935530363708674
+  },
+  {
+    "case": 0,
+    "month": 202606,
+    "industry": "Kontor",
+    "current": 1598230,
+    "previous": 1445809,
+    "delta": 152421,
+    "percent": 0.10542263881328723
+  },
+  {
+    "case": 0,
+    "month": 202606,
+    "industry": "Livsmedel",
+    "current": 1020274,
+    "previous": 1050079,
+    "delta": -29805,
+    "percent": -0.028383578759312394
+  },
+  {
+    "case": 0,
+    "month": 202607,
+    "industry": "Restaurang",
+    "current": 5079266,
+    "previous": 4208999,
+    "delta": 870267,
+    "percent": 0.20676341334364773
+  },
+  {
+    "case": 0,
+    "month": 202607,
+    "industry": "Hotell",
+    "current": 3745116,
+    "previous": 3379839,
+    "delta": 365277,
+    "percent": 0.10807526630706374
+  },
+  {
+    "case": 0,
+    "month": 202607,
+    "industry": "Catering",
+    "current": 2045503,
+    "previous": 1747601,
+    "delta": 297902,
+    "percent": 0.17046339524868662
+  },
+  {
+    "case": 0,
+    "month": 202607,
+    "industry": "Kontor",
+    "current": 1983062,
+    "previous": 1491639,
+    "delta": 491423,
+    "percent": 0.3294516970929293
+  },
+  {
+    "case": 0,
+    "month": 202607,
+    "industry": "Livsmedel",
+    "current": 994659,
+    "previous": 1083841,
+    "delta": -89182,
+    "percent": -0.08228328693968949
+  },
+  {
+    "case": 0,
+    "month": 202608,
+    "industry": "Restaurang",
+    "current": 5103966,
+    "previous": 5209349,
+    "delta": -105383,
+    "percent": -0.02022959106790503
+  },
+  {
+    "case": 0,
+    "month": 202608,
+    "industry": "Hotell",
+    "current": 3887678,
+    "previous": 3171353,
+    "delta": 716325,
+    "percent": 0.22587362554720336
+  },
+  {
+    "case": 0,
+    "month": 202608,
+    "industry": "Catering",
+    "current": 2687825,
+    "previous": 1714440,
+    "delta": 973385,
+    "percent": 0.5677568185529969
+  },
+  {
+    "case": 0,
+    "month": 202608,
+    "industry": "Kontor",
+    "current": 2034554,
+    "previous": 1658660,
+    "delta": 375894,
+    "percent": 0.22662510701409572
+  },
+  {
+    "case": 0,
+    "month": 202608,
+    "industry": "Livsmedel",
+    "current": 1303803,
+    "previous": 1164759,
+    "delta": 139044,
+    "percent": 0.11937576786270808
+  },
+  {
+    "case": 0,
+    "month": 202609,
+    "industry": "Restaurang",
+    "current": 5650409,
+    "previous": 4940971,
+    "delta": 709438,
+    "percent": 0.14358270874287665
+  },
+  {
+    "case": 0,
+    "month": 202609,
+    "industry": "Hotell",
+    "current": 4047449,
+    "previous": 3920393,
+    "delta": 127056,
+    "percent": 0.03240899573078515
+  },
+  {
+    "case": 0,
+    "month": 202609,
+    "industry": "Catering",
+    "current": 2578872,
+    "previous": 2041071,
+    "delta": 537801,
+    "percent": 0.26348960913167646
+  },
+  {
+    "case": 0,
+    "month": 202609,
+    "industry": "Kontor",
+    "current": 2092936,
+    "previous": 1616370,
+    "delta": 476566,
+    "percent": 0.29483719692892096
+  },
+  {
+    "case": 0,
+    "month": 202609,
+    "industry": "Livsmedel",
+    "current": 1525825,
+    "previous": 1154736,
+    "delta": 371089,
+    "percent": 0.3213626318050186
+  },
+  {
+    "case": 1,
+    "month": 202510,
+    "industry": "Hotell",
+    "current": 2333230,
+    "previous": 1940942,
+    "delta": 392288,
+    "percent": 0.20211217027608244
+  },
+  {
+    "case": 1,
+    "month": 202511,
+    "industry": "Hotell",
+    "current": 1938508,
+    "previous": 1793423,
+    "delta": 145085,
+    "percent": 0.0808983714383054
+  },
+  {
+    "case": 1,
+    "month": 202512,
+    "industry": "Hotell",
+    "current": 2466461,
+    "previous": 1822364,
+    "delta": 644097,
+    "percent": 0.3534403664690479
+  },
+  {
+    "case": 1,
+    "month": 202601,
+    "industry": "Hotell",
+    "current": 2159876,
+    "previous": 2070050,
+    "delta": 89826,
+    "percent": 0.04339315475471607
+  },
+  {
+    "case": 1,
+    "month": 202602,
+    "industry": "Hotell",
+    "current": 2286144,
+    "previous": 2202724,
+    "delta": 83420,
+    "percent": 0.037871290275132065
+  },
+  {
+    "case": 1,
+    "month": 202603,
+    "industry": "Hotell",
+    "current": 3088848,
+    "previous": 2326478,
+    "delta": 762370,
+    "percent": 0.32769276133279573
+  },
+  {
+    "case": 1,
+    "month": 202604,
+    "industry": "Hotell",
+    "current": 3201072,
+    "previous": 2678535,
+    "delta": 522537,
+    "percent": 0.19508313313061057
+  },
+  {
+    "case": 1,
+    "month": 202605,
+    "industry": "Hotell",
+    "current": 3233880,
+    "previous": 2876317,
+    "delta": 357563,
+    "percent": 0.12431279306140457
+  },
+  {
+    "case": 1,
+    "month": 202606,
+    "industry": "Hotell",
+    "current": 3324099,
+    "previous": 3175223,
+    "delta": 148876,
+    "percent": 0.04688678558954757
+  },
+  {
+    "case": 1,
+    "month": 202607,
+    "industry": "Hotell",
+    "current": 3745116,
+    "previous": 3379839,
+    "delta": 365277,
+    "percent": 0.10807526630706374
+  },
+  {
+    "case": 1,
+    "month": 202608,
+    "industry": "Hotell",
+    "current": 3887678,
+    "previous": 3171353,
+    "delta": 716325,
+    "percent": 0.22587362554720336
+  },
+  {
+    "case": 1,
+    "month": 202609,
+    "industry": "Hotell",
+    "current": 4047449,
+    "previous": 3920393,
+    "delta": 127056,
+    "percent": 0.03240899573078515
+  },
+  {
+    "case": 2,
+    "month": 202510,
+    "industry": "Hotell",
+    "current": 2333230,
+    "previous": 1940942,
+    "delta": 392288,
+    "percent": 0.20211217027608244
+  },
+  {
+    "case": 2,
+    "month": 202510,
+    "industry": "Restaurang",
+    "current": 3235861,
+    "previous": 2860025,
+    "delta": 375836,
+    "percent": 0.1314100401220269
+  },
+  {
+    "case": 2,
+    "month": 202511,
+    "industry": "Hotell",
+    "current": 1938508,
+    "previous": 1793423,
+    "delta": 145085,
+    "percent": 0.0808983714383054
+  },
+  {
+    "case": 2,
+    "month": 202511,
+    "industry": "Restaurang",
+    "current": 2951704,
+    "previous": 2540907,
+    "delta": 410797,
+    "percent": 0.16167337096556467
+  },
+  {
+    "case": 2,
+    "month": 202512,
+    "industry": "Hotell",
+    "current": 2466461,
+    "previous": 1822364,
+    "delta": 644097,
+    "percent": 0.3534403664690479
+  },
+  {
+    "case": 2,
+    "month": 202512,
+    "industry": "Restaurang",
+    "current": 3357133,
+    "previous": 2901690,
+    "delta": 455443,
+    "percent": 0.1569578418094283
+  },
+  {
+    "case": 2,
+    "month": 202601,
+    "industry": "Hotell",
+    "current": 2159876,
+    "previous": 2070050,
+    "delta": 89826,
+    "percent": 0.04339315475471607
+  },
+  {
+    "case": 2,
+    "month": 202601,
+    "industry": "Restaurang",
+    "current": 3723826,
+    "previous": 2955220,
+    "delta": 768606,
+    "percent": 0.2600841900095424
+  },
+  {
+    "case": 2,
+    "month": 202602,
+    "industry": "Hotell",
+    "current": 2286144,
+    "previous": 2202724,
+    "delta": 83420,
+    "percent": 0.037871290275132065
+  },
+  {
+    "case": 2,
+    "month": 202602,
+    "industry": "Restaurang",
+    "current": 3774783,
+    "previous": 3137729,
+    "delta": 637054,
+    "percent": 0.20303028081775068
+  },
+  {
+    "case": 2,
+    "month": 202603,
+    "industry": "Hotell",
+    "current": 3088848,
+    "previous": 2326478,
+    "delta": 762370,
+    "percent": 0.32769276133279573
+  },
+  {
+    "case": 2,
+    "month": 202603,
+    "industry": "Restaurang",
+    "current": 4180668,
+    "previous": 4089344,
+    "delta": 91324,
+    "percent": 0.02233218824339552
+  },
+  {
+    "case": 2,
+    "month": 202604,
+    "industry": "Hotell",
+    "current": 3201072,
+    "previous": 2678535,
+    "delta": 522537,
+    "percent": 0.19508313313061057
+  },
+  {
+    "case": 2,
+    "month": 202604,
+    "industry": "Restaurang",
+    "current": 4524950,
+    "previous": 3770974,
+    "delta": 753976,
+    "percent": 0.19994197785505813
+  },
+  {
+    "case": 2,
+    "month": 202605,
+    "industry": "Hotell",
+    "current": 3233880,
+    "previous": 2876317,
+    "delta": 357563,
+    "percent": 0.12431279306140457
+  },
+  {
+    "case": 2,
+    "month": 202605,
+    "industry": "Restaurang",
+    "current": 5016875,
+    "previous": 3999977,
+    "delta": 1016898,
+    "percent": 0.25422596179928036
+  },
+  {
+    "case": 2,
+    "month": 202606,
+    "industry": "Hotell",
+    "current": 3324099,
+    "previous": 3175223,
+    "delta": 148876,
+    "percent": 0.04688678558954757
+  },
+  {
+    "case": 2,
+    "month": 202606,
+    "industry": "Restaurang",
+    "current": 5732500,
+    "previous": 4351575,
+    "delta": 1380925,
+    "percent": 0.3173391243400378
+  },
+  {
+    "case": 2,
+    "month": 202607,
+    "industry": "Hotell",
+    "current": 3745116,
+    "previous": 3379839,
+    "delta": 365277,
+    "percent": 0.10807526630706374
+  },
+  {
+    "case": 2,
+    "month": 202607,
+    "industry": "Restaurang",
+    "current": 5079266,
+    "previous": 4208999,
+    "delta": 870267,
+    "percent": 0.20676341334364773
+  },
+  {
+    "case": 2,
+    "month": 202608,
+    "industry": "Hotell",
+    "current": 3887678,
+    "previous": 3171353,
+    "delta": 716325,
+    "percent": 0.22587362554720336
+  },
+  {
+    "case": 2,
+    "month": 202608,
+    "industry": "Restaurang",
+    "current": 5103966,
+    "previous": 5209349,
+    "delta": -105383,
+    "percent": -0.02022959106790503
+  },
+  {
+    "case": 2,
+    "month": 202609,
+    "industry": "Hotell",
+    "current": 4047449,
+    "previous": 3920393,
+    "delta": 127056,
+    "percent": 0.03240899573078515
+  },
+  {
+    "case": 2,
+    "month": 202609,
+    "industry": "Restaurang",
+    "current": 5650409,
+    "previous": 4940971,
+    "delta": 709438,
+    "percent": 0.14358270874287665
+  },
+  {
+    "case": 3,
+    "month": 202501,
+    "industry": "Restaurang",
+    "current": 2955220,
+    "previous": 2822796,
+    "delta": 132424,
+    "percent": 0.046912352150137664
+  },
+  {
+    "case": 3,
+    "month": 202501,
+    "industry": "Hotell",
+    "current": 2070050,
+    "previous": 2063357,
+    "delta": 6693,
+    "percent": 0.0032437430846915974
+  },
+  {
+    "case": 3,
+    "month": 202501,
+    "industry": "Catering",
+    "current": 1213389,
+    "previous": 1312689,
+    "delta": -99300,
+    "percent": -0.07564624979717206
+  },
+  {
+    "case": 3,
+    "month": 202501,
+    "industry": "Kontor",
+    "current": 1071232,
+    "previous": 965448,
+    "delta": 105784,
+    "percent": 0.1095698577240825
+  },
+  {
+    "case": 3,
+    "month": 202501,
+    "industry": "Livsmedel",
+    "current": 743237,
+    "previous": 685824,
+    "delta": 57413,
+    "percent": 0.08371389744307578
+  },
+  {
+    "case": 3,
+    "month": 202502,
+    "industry": "Restaurang",
+    "current": 3137729,
+    "previous": 2911283,
+    "delta": 226446,
+    "percent": 0.07778220118071655
+  },
+  {
+    "case": 3,
+    "month": 202502,
+    "industry": "Hotell",
+    "current": 2202724,
+    "previous": 1919994,
+    "delta": 282730,
+    "percent": 0.14725566850729743
+  },
+  {
+    "case": 3,
+    "month": 202502,
+    "industry": "Catering",
+    "current": 1356755,
+    "previous": 1182841,
+    "delta": 173914,
+    "percent": 0.14703075054043613
+  },
+  {
+    "case": 3,
+    "month": 202502,
+    "industry": "Kontor",
+    "current": 1029724,
+    "previous": 957956,
+    "delta": 71768,
+    "percent": 0.07491784591359102
+  },
+  {
+    "case": 3,
+    "month": 202502,
+    "industry": "Livsmedel",
+    "current": 913403,
+    "previous": 705512,
+    "delta": 207891,
+    "percent": 0.2946668518749504
+  },
+  {
+    "case": 3,
+    "month": 202503,
+    "industry": "Restaurang",
+    "current": 4089344,
+    "previous": 3445581,
+    "delta": 643763,
+    "percent": 0.18683728520676193
+  },
+  {
+    "case": 3,
+    "month": 202503,
+    "industry": "Hotell",
+    "current": 2326478,
+    "previous": 2246123,
+    "delta": 80355,
+    "percent": 0.03577497759472656
+  },
+  {
+    "case": 3,
+    "month": 202503,
+    "industry": "Catering",
+    "current": 1396481,
+    "previous": 1291372,
+    "delta": 105109,
+    "percent": 0.08139327784712694
+  },
+  {
+    "case": 3,
+    "month": 202503,
+    "industry": "Kontor",
+    "current": 1184395,
+    "previous": 1124653,
+    "delta": 59742,
+    "percent": 0.053120384687543626
+  },
+  {
+    "case": 3,
+    "month": 202503,
+    "industry": "Livsmedel",
+    "current": 818052,
+    "previous": 777565,
+    "delta": 40487,
+    "percent": 0.052068958865175256
+  },
+  {
+    "case": 3,
+    "month": 202504,
+    "industry": "Restaurang",
+    "current": 3770974,
+    "previous": 3358239,
+    "delta": 412735,
+    "percent": 0.12290221154599182
+  },
+  {
+    "case": 3,
+    "month": 202504,
+    "industry": "Hotell",
+    "current": 2678535,
+    "previous": 2240066,
+    "delta": 438469,
+    "percent": 0.19573932196640634
+  },
+  {
+    "case": 3,
+    "month": 202504,
+    "industry": "Catering",
+    "current": 1634836,
+    "previous": 1391931,
+    "delta": 242905,
+    "percent": 0.17450936863968114
+  },
+  {
+    "case": 3,
+    "month": 202504,
+    "industry": "Kontor",
+    "current": 1271006,
+    "previous": 1156864,
+    "delta": 114142,
+    "percent": 0.09866501161761451
+  },
+  {
+    "case": 3,
+    "month": 202504,
+    "industry": "Livsmedel",
+    "current": 962719,
+    "previous": 824460,
+    "delta": 138259,
+    "percent": 0.16769643160371636
+  },
+  {
+    "case": 3,
+    "month": 202505,
+    "industry": "Restaurang",
+    "current": 3999977,
+    "previous": 3468114,
+    "delta": 531863,
+    "percent": 0.15335799226899693
+  },
+  {
+    "case": 3,
+    "month": 202505,
+    "industry": "Hotell",
+    "current": 2876317,
+    "previous": 2623583,
+    "delta": 252734,
+    "percent": 0.09633161977341674
+  },
+  {
+    "case": 3,
+    "month": 202505,
+    "industry": "Catering",
+    "current": 1609222,
+    "previous": 1273878,
+    "delta": 335344,
+    "percent": 0.26324655893264504
+  },
+  {
+    "case": 3,
+    "month": 202505,
+    "industry": "Kontor",
+    "current": 1464434,
+    "previous": 1136668,
+    "delta": 327766,
+    "percent": 0.28835684650223287
+  },
+  {
+    "case": 3,
+    "month": 202505,
+    "industry": "Livsmedel",
+    "current": 997271,
+    "previous": 814377,
+    "delta": 182894,
+    "percent": 0.22458148989964108
+  },
+  {
+    "case": 3,
+    "month": 202506,
+    "industry": "Restaurang",
+    "current": 4351575,
+    "previous": 3522694,
+    "delta": 828881,
+    "percent": 0.2352974740354967
+  },
+  {
+    "case": 3,
+    "month": 202506,
+    "industry": "Hotell",
+    "current": 3175223,
+    "previous": 2371431,
+    "delta": 803792,
+    "percent": 0.3389480866194294
+  },
+  {
+    "case": 3,
+    "month": 202506,
+    "industry": "Catering",
+    "current": 1805346,
+    "previous": 1478061,
+    "delta": 327285,
+    "percent": 0.22142861492184693
+  },
+  {
+    "case": 3,
+    "month": 202506,
+    "industry": "Kontor",
+    "current": 1445809,
+    "previous": 1239131,
+    "delta": 206678,
+    "percent": 0.16679269584894577
+  },
+  {
+    "case": 3,
+    "month": 202506,
+    "industry": "Livsmedel",
+    "current": 1050079,
+    "previous": 791569,
+    "delta": 258510,
+    "percent": 0.3265792369332301
+  },
+  {
+    "case": 3,
+    "month": 202507,
+    "industry": "Restaurang",
+    "current": 4208999,
+    "previous": 2638960,
+    "delta": 1570039,
+    "percent": 0.5949461151362658
+  },
+  {
+    "case": 3,
+    "month": 202507,
+    "industry": "Hotell",
+    "current": 3379839,
+    "previous": 1732865,
+    "delta": 1646974,
+    "percent": 0.9504341076771705
+  },
+  {
+    "case": 3,
+    "month": 202507,
+    "industry": "Catering",
+    "current": 1747601,
+    "previous": 1107681,
+    "delta": 639920,
+    "percent": 0.5777114530266385
+  },
+  {
+    "case": 3,
+    "month": 202507,
+    "industry": "Kontor",
+    "current": 1491639,
+    "previous": 879351,
+    "delta": 612288,
+    "percent": 0.6962953359921124
+  },
+  {
+    "case": 3,
+    "month": 202507,
+    "industry": "Livsmedel",
+    "current": 1083841,
+    "previous": 628609,
+    "delta": 455232,
+    "percent": 0.7241894404948068
+  },
+  {
+    "case": 3,
+    "month": 202508,
+    "industry": "Restaurang",
+    "current": 5209349,
+    "previous": 3428965,
+    "delta": 1780384,
+    "percent": 0.519219064644871
+  },
+  {
+    "case": 3,
+    "month": 202508,
+    "industry": "Hotell",
+    "current": 3171353,
+    "previous": 2176317,
+    "delta": 995036,
+    "percent": 0.4572109669685069
+  },
+  {
+    "case": 3,
+    "month": 202508,
+    "industry": "Catering",
+    "current": 1714440,
+    "previous": 1310856,
+    "delta": 403584,
+    "percent": 0.30787821087899814
+  },
+  {
+    "case": 3,
+    "month": 202508,
+    "industry": "Kontor",
+    "current": 1658660,
+    "previous": 1100489,
+    "delta": 558171,
+    "percent": 0.5072027071601806
+  },
+  {
+    "case": 3,
+    "month": 202508,
+    "industry": "Livsmedel",
+    "current": 1164759,
+    "previous": 868667,
+    "delta": 296092,
+    "percent": 0.3408578891566043
+  },
+  {
+    "case": 3,
+    "month": 202509,
+    "industry": "Restaurang",
+    "current": 4940971,
+    "previous": 3825646,
+    "delta": 1115325,
+    "percent": 0.29153899759674573
+  },
+  {
+    "case": 3,
+    "month": 202509,
+    "industry": "Hotell",
+    "current": 3920393,
+    "previous": 2452255,
+    "delta": 1468138,
+    "percent": 0.5986889617923096
+  },
+  {
+    "case": 3,
+    "month": 202509,
+    "industry": "Catering",
+    "current": 2041071,
+    "previous": 1541288,
+    "delta": 499783,
+    "percent": 0.3242632136239301
+  },
+  {
+    "case": 3,
+    "month": 202509,
+    "industry": "Kontor",
+    "current": 1616370,
+    "previous": 1176368,
+    "delta": 440002,
+    "percent": 0.3740343157923371
+  },
+  {
+    "case": 3,
+    "month": 202509,
+    "industry": "Livsmedel",
+    "current": 1154736,
+    "previous": 752387,
+    "delta": 402349,
+    "percent": 0.5347633598135002
+  },
+  {
+    "case": 3,
+    "month": 202510,
+    "industry": "Restaurang",
+    "current": 3235861,
+    "previous": 2860025,
+    "delta": 375836,
+    "percent": 0.1314100401220269
+  },
+  {
+    "case": 3,
+    "month": 202510,
+    "industry": "Hotell",
+    "current": 2333230,
+    "previous": 1940942,
+    "delta": 392288,
+    "percent": 0.20211217027608244
+  },
+  {
+    "case": 3,
+    "month": 202510,
+    "industry": "Catering",
+    "current": 1272942,
+    "previous": 1095978,
+    "delta": 176964,
+    "percent": 0.16146674477042422
+  },
+  {
+    "case": 3,
+    "month": 202510,
+    "industry": "Kontor",
+    "current": 1202520,
+    "previous": 956195,
+    "delta": 246325,
+    "percent": 0.2576095880024472
+  },
+  {
+    "case": 3,
+    "month": 202510,
+    "industry": "Livsmedel",
+    "current": 732099,
+    "previous": 696668,
+    "delta": 35431,
+    "percent": 0.05085779740134469
+  },
+  {
+    "case": 3,
+    "month": 202511,
+    "industry": "Restaurang",
+    "current": 2951704,
+    "previous": 2540907,
+    "delta": 410797,
+    "percent": 0.16167337096556467
+  },
+  {
+    "case": 3,
+    "month": 202511,
+    "industry": "Hotell",
+    "current": 1938508,
+    "previous": 1793423,
+    "delta": 145085,
+    "percent": 0.0808983714383054
+  },
+  {
+    "case": 3,
+    "month": 202511,
+    "industry": "Catering",
+    "current": 1273883,
+    "previous": 1012878,
+    "delta": 261005,
+    "percent": 0.25768651308449786
+  },
+  {
+    "case": 3,
+    "month": 202511,
+    "industry": "Kontor",
+    "current": 980642,
+    "previous": 828815,
+    "delta": 151827,
+    "percent": 0.1831856324994118
+  },
+  {
+    "case": 3,
+    "month": 202511,
+    "industry": "Livsmedel",
+    "current": 754249,
+    "previous": 618804,
+    "delta": 135445,
+    "percent": 0.2188819076799762
+  },
+  {
+    "case": 3,
+    "month": 202512,
+    "industry": "Restaurang",
+    "current": 3357133,
+    "previous": 2901690,
+    "delta": 455443,
+    "percent": 0.1569578418094283
+  },
+  {
+    "case": 3,
+    "month": 202512,
+    "industry": "Hotell",
+    "current": 2466461,
+    "previous": 1822364,
+    "delta": 644097,
+    "percent": 0.3534403664690479
+  },
+  {
+    "case": 3,
+    "month": 202512,
+    "industry": "Catering",
+    "current": 1291272,
+    "previous": 1229077,
+    "delta": 62195,
+    "percent": 0.05060301348084782
+  },
+  {
+    "case": 3,
+    "month": 202512,
+    "industry": "Kontor",
+    "current": 969018,
+    "previous": 900203,
+    "delta": 68815,
+    "percent": 0.07644386877182147
+  },
+  {
+    "case": 3,
+    "month": 202512,
+    "industry": "Livsmedel",
+    "current": 692767,
+    "previous": 696474,
+    "delta": -3707,
+    "percent": -0.005322524602497724
+  },
+  {
+    "case": 4,
+    "month": 202401,
+    "industry": "Restaurang",
+    "current": 2822796,
+    "previous": 2948242,
+    "delta": -125446,
+    "percent": -0.042549424368827256
+  },
+  {
+    "case": 4,
+    "month": 202401,
+    "industry": "Hotell",
+    "current": 2063357,
+    "previous": 1875485,
+    "delta": 187872,
+    "percent": 0.10017248871625206
+  },
+  {
+    "case": 4,
+    "month": 202401,
+    "industry": "Catering",
+    "current": 1312689,
+    "previous": 1023311,
+    "delta": 289378,
+    "percent": 0.2827859761108793
+  },
+  {
+    "case": 4,
+    "month": 202401,
+    "industry": "Kontor",
+    "current": 965448,
+    "previous": 914305,
+    "delta": 51143,
+    "percent": 0.055936476339952204
+  },
+  {
+    "case": 4,
+    "month": 202401,
+    "industry": "Livsmedel",
+    "current": 685824,
+    "previous": 609657,
+    "delta": 76167,
+    "percent": 0.12493418430363303
+  },
+  {
+    "case": 4,
+    "month": 202402,
+    "industry": "Restaurang",
+    "current": 2911283,
+    "previous": 2654948,
+    "delta": 256335,
+    "percent": 0.09654991359529452
+  },
+  {
+    "case": 4,
+    "month": 202402,
+    "industry": "Hotell",
+    "current": 1919994,
+    "previous": 1930895,
+    "delta": -10901,
+    "percent": -0.005645568505796535
+  },
+  {
+    "case": 4,
+    "month": 202402,
+    "industry": "Catering",
+    "current": 1182841,
+    "previous": 1062258,
+    "delta": 120583,
+    "percent": 0.11351573723144472
+  },
+  {
+    "case": 4,
+    "month": 202402,
+    "industry": "Kontor",
+    "current": 957956,
+    "previous": 955617,
+    "delta": 2339,
+    "percent": 0.002447633309160469
+  },
+  {
+    "case": 4,
+    "month": 202402,
+    "industry": "Livsmedel",
+    "current": 705512,
+    "previous": 605282,
+    "delta": 100230,
+    "percent": 0.16559223634603376
+  },
+  {
+    "case": 4,
+    "month": 202403,
+    "industry": "Restaurang",
+    "current": 3445581,
+    "previous": 3161200,
+    "delta": 284381,
+    "percent": 0.08995982538276603
+  },
+  {
+    "case": 4,
+    "month": 202403,
+    "industry": "Hotell",
+    "current": 2246123,
+    "previous": 2233088,
+    "delta": 13035,
+    "percent": 0.0058372083858764185
+  },
+  {
+    "case": 4,
+    "month": 202403,
+    "industry": "Catering",
+    "current": 1291372,
+    "previous": 1294100,
+    "delta": -2728,
+    "percent": -0.0021080287458465343
+  },
+  {
+    "case": 4,
+    "month": 202403,
+    "industry": "Kontor",
+    "current": 1124653,
+    "previous": 986076,
+    "delta": 138577,
+    "percent": 0.140533792527148
+  },
+  {
+    "case": 4,
+    "month": 202403,
+    "industry": "Livsmedel",
+    "current": 777565,
+    "previous": 668536,
+    "delta": 109029,
+    "percent": 0.16308620627759762
+  },
+  {
+    "case": 4,
+    "month": 202404,
+    "industry": "Restaurang",
+    "current": 3358239,
+    "previous": 3142405,
+    "delta": 215834,
+    "percent": 0.06868433572375299
+  },
+  {
+    "case": 4,
+    "month": 202404,
+    "industry": "Hotell",
+    "current": 2240066,
+    "previous": 2109010,
+    "delta": 131056,
+    "percent": 0.062141004547157194
+  },
+  {
+    "case": 4,
+    "month": 202404,
+    "industry": "Catering",
+    "current": 1391931,
+    "previous": 1323293,
+    "delta": 68638,
+    "percent": 0.05186908719384142
+  },
+  {
+    "case": 4,
+    "month": 202404,
+    "industry": "Kontor",
+    "current": 1156864,
+    "previous": 1096304,
+    "delta": 60560,
+    "percent": 0.05524015236649688
+  },
+  {
+    "case": 4,
+    "month": 202404,
+    "industry": "Livsmedel",
+    "current": 824460,
+    "previous": 752988,
+    "delta": 71472,
+    "percent": 0.09491784729637126
+  },
+  {
+    "case": 4,
+    "month": 202405,
+    "industry": "Restaurang",
+    "current": 3468114,
+    "previous": 3304681,
+    "delta": 163433,
+    "percent": 0.04945500034647822
+  },
+  {
+    "case": 4,
+    "month": 202405,
+    "industry": "Hotell",
+    "current": 2623583,
+    "previous": 2134052,
+    "delta": 489531,
+    "percent": 0.22939038036561432
+  },
+  {
+    "case": 4,
+    "month": 202405,
+    "industry": "Catering",
+    "current": 1273878,
+    "previous": 1482917,
+    "delta": -209039,
+    "percent": -0.14096473369716578
+  },
+  {
+    "case": 4,
+    "month": 202405,
+    "industry": "Kontor",
+    "current": 1136668,
+    "previous": 1107809,
+    "delta": 28859,
+    "percent": 0.02605051953901801
+  },
+  {
+    "case": 4,
+    "month": 202405,
+    "industry": "Livsmedel",
+    "current": 814377,
+    "previous": 718541,
+    "delta": 95836,
+    "percent": 0.133375826849129
+  },
+  {
+    "case": 4,
+    "month": 202406,
+    "industry": "Restaurang",
+    "current": 3522694,
+    "previous": 3290654,
+    "delta": 232040,
+    "percent": 0.0705148581406614
+  },
+  {
+    "case": 4,
+    "month": 202406,
+    "industry": "Hotell",
+    "current": 2371431,
+    "previous": 2362804,
+    "delta": 8627,
+    "percent": 0.003651170389080093
+  },
+  {
+    "case": 4,
+    "month": 202406,
+    "industry": "Catering",
+    "current": 1478061,
+    "previous": 1377985,
+    "delta": 100076,
+    "percent": 0.07262488343487049
+  },
+  {
+    "case": 4,
+    "month": 202406,
+    "industry": "Kontor",
+    "current": 1239131,
+    "previous": 1036776,
+    "delta": 202355,
+    "percent": 0.19517716459485945
+  },
+  {
+    "case": 4,
+    "month": 202406,
+    "industry": "Livsmedel",
+    "current": 791569,
+    "previous": 760781,
+    "delta": 30788,
+    "percent": 0.04046893915594632
+  },
+  {
+    "case": 4,
+    "month": 202407,
+    "industry": "Restaurang",
+    "current": 2638960,
+    "previous": 2430220,
+    "delta": 208740,
+    "percent": 0.08589345820542996
+  },
+  {
+    "case": 4,
+    "month": 202407,
+    "industry": "Hotell",
+    "current": 1732865,
+    "previous": 1745754,
+    "delta": -12889,
+    "percent": -0.007383056261076876
+  },
+  {
+    "case": 4,
+    "month": 202407,
+    "industry": "Catering",
+    "current": 1107681,
+    "previous": 996217,
+    "delta": 111464,
+    "percent": 0.11188726954067237
+  },
+  {
+    "case": 4,
+    "month": 202407,
+    "industry": "Kontor",
+    "current": 879351,
+    "previous": 821864,
+    "delta": 57487,
+    "percent": 0.06994709586987628
+  },
+  {
+    "case": 4,
+    "month": 202407,
+    "industry": "Livsmedel",
+    "current": 628609,
+    "previous": 566945,
+    "delta": 61664,
+    "percent": 0.10876540052386034
+  },
+  {
+    "case": 4,
+    "month": 202408,
+    "industry": "Restaurang",
+    "current": 3428965,
+    "previous": 3155475,
+    "delta": 273490,
+    "percent": 0.0866715787638945
+  },
+  {
+    "case": 4,
+    "month": 202408,
+    "industry": "Hotell",
+    "current": 2176317,
+    "previous": 2212797,
+    "delta": -36480,
+    "percent": -0.01648592256768244
+  },
+  {
+    "case": 4,
+    "month": 202408,
+    "industry": "Catering",
+    "current": 1310856,
+    "previous": 1284556,
+    "delta": 26300,
+    "percent": 0.02047400035498647
+  },
+  {
+    "case": 4,
+    "month": 202408,
+    "industry": "Kontor",
+    "current": 1100489,
+    "previous": 929381,
+    "delta": 171108,
+    "percent": 0.18410963856588416
+  },
+  {
+    "case": 4,
+    "month": 202408,
+    "industry": "Livsmedel",
+    "current": 868667,
+    "previous": 760791,
+    "delta": 107876,
+    "percent": 0.14179452701201775
+  },
+  {
+    "case": 4,
+    "month": 202409,
+    "industry": "Restaurang",
+    "current": 3825646,
+    "previous": 3519308,
+    "delta": 306338,
+    "percent": 0.08704495315556354
+  },
+  {
+    "case": 4,
+    "month": 202409,
+    "industry": "Hotell",
+    "current": 2452255,
+    "previous": 2256388,
+    "delta": 195867,
+    "percent": 0.0868055494001918
+  },
+  {
+    "case": 4,
+    "month": 202409,
+    "industry": "Catering",
+    "current": 1541288,
+    "previous": 1525522,
+    "delta": 15766,
+    "percent": 0.01033482309661873
+  },
+  {
+    "case": 4,
+    "month": 202409,
+    "industry": "Kontor",
+    "current": 1176368,
+    "previous": 1090777,
+    "delta": 85591,
+    "percent": 0.07846791782371648
+  },
+  {
+    "case": 4,
+    "month": 202409,
+    "industry": "Livsmedel",
+    "current": 752387,
+    "previous": 761005,
+    "delta": -8618,
+    "percent": -0.01132449852497684
+  },
+  {
+    "case": 4,
+    "month": 202410,
+    "industry": "Restaurang",
+    "current": 2860025,
+    "previous": 3130159,
+    "delta": -270134,
+    "percent": -0.08630040838181063
+  },
+  {
+    "case": 4,
+    "month": 202410,
+    "industry": "Hotell",
+    "current": 1940942,
+    "previous": 2414921,
+    "delta": -473979,
+    "percent": -0.19627101673305256
+  },
+  {
+    "case": 4,
+    "month": 202410,
+    "industry": "Catering",
+    "current": 1095978,
+    "previous": 1348179,
+    "delta": -252201,
+    "percent": -0.18706788935297167
+  },
+  {
+    "case": 4,
+    "month": 202410,
+    "industry": "Kontor",
+    "current": 956195,
+    "previous": 1112510,
+    "delta": -156315,
+    "percent": -0.1405066021878455
+  },
+  {
+    "case": 4,
+    "month": 202410,
+    "industry": "Livsmedel",
+    "current": 696668,
+    "previous": 823231,
+    "delta": -126563,
+    "percent": -0.15373935140926423
+  },
+  {
+    "case": 4,
+    "month": 202411,
+    "industry": "Restaurang",
+    "current": 2540907,
+    "previous": 3468304,
+    "delta": -927397,
+    "percent": -0.26739207405117893
+  },
+  {
+    "case": 4,
+    "month": 202411,
+    "industry": "Hotell",
+    "current": 1793423,
+    "previous": 1995213,
+    "delta": -201790,
+    "percent": -0.10113707158082871
+  },
+  {
+    "case": 4,
+    "month": 202411,
+    "industry": "Catering",
+    "current": 1012878,
+    "previous": 1233961,
+    "delta": -221083,
+    "percent": -0.17916530587271395
+  },
+  {
+    "case": 4,
+    "month": 202411,
+    "industry": "Kontor",
+    "current": 828815,
+    "previous": 966074,
+    "delta": -137259,
+    "percent": -0.14207917819959962
+  },
+  {
+    "case": 4,
+    "month": 202411,
+    "industry": "Livsmedel",
+    "current": 618804,
+    "previous": 679448,
+    "delta": -60644,
+    "percent": -0.08925480684320213
+  },
+  {
+    "case": 4,
+    "month": 202412,
+    "industry": "Restaurang",
+    "current": 2901690,
+    "previous": 3263885,
+    "delta": -362195,
+    "percent": -0.11097051519891173
+  },
+  {
+    "case": 4,
+    "month": 202412,
+    "industry": "Hotell",
+    "current": 1822364,
+    "previous": 2378386,
+    "delta": -556022,
+    "percent": -0.23378122811015536
+  },
+  {
+    "case": 4,
+    "month": 202412,
+    "industry": "Catering",
+    "current": 1229077,
+    "previous": 1318427,
+    "delta": -89350,
+    "percent": -0.06777015337216244
+  },
+  {
+    "case": 4,
+    "month": 202412,
+    "industry": "Kontor",
+    "current": 900203,
+    "previous": 1067009,
+    "delta": -166806,
+    "percent": -0.1563304526953381
+  },
+  {
+    "case": 4,
+    "month": 202412,
+    "industry": "Livsmedel",
+    "current": 696474,
+    "previous": 720293,
+    "delta": -23819,
+    "percent": -0.0330684874072079
+  },
+  {
+    "case": 5,
+    "month": 202609,
+    "industry": "Restaurang",
+    "current": 5650409,
+    "previous": 4940971,
+    "delta": 709438,
+    "percent": 0.14358270874287665
+  },
+  {
+    "case": 5,
+    "month": 202609,
+    "industry": "Hotell",
+    "current": 4047449,
+    "previous": 3920393,
+    "delta": 127056,
+    "percent": 0.03240899573078515
+  },
+  {
+    "case": 5,
+    "month": 202609,
+    "industry": "Catering",
+    "current": 2578872,
+    "previous": 2041071,
+    "delta": 537801,
+    "percent": 0.26348960913167646
+  },
+  {
+    "case": 5,
+    "month": 202609,
+    "industry": "Kontor",
+    "current": 2092936,
+    "previous": 1616370,
+    "delta": 476566,
+    "percent": 0.29483719692892096
+  },
+  {
+    "case": 5,
+    "month": 202609,
+    "industry": "Livsmedel",
+    "current": 1525825,
+    "previous": 1154736,
+    "delta": 371089,
+    "percent": 0.3213626318050186
+  }
+]

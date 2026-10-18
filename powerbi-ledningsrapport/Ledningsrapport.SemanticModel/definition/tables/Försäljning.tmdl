@@ -969,7 +969,7 @@ table Försäljning
 		displayFolder: Kundanalys
 		lineageTag: f30fb4d6-9e49-4ec7-b5f2-ecc5d35341fa
 
-	measure 'Kunder churn undertext' = VAR c=[Kunder revenue churn] RETURN IF(ISBLANK(c),"Ej beräkningsbart",IF(c<0,"Befintlig kundstock växer " & FORMAT(-c,"0.0 %","sv-SE"),"Nettobortfall: " & FORMAT(([Kundintäkt föregående]-[Kundintäkt ingående bas A])/1000000,"0.0","sv-SE") & " Mkr"))
+	measure 'Kunder churn undertext' = VAR _d=[Kundintäkt ingående bas A]-[Kundintäkt föregående] RETURN IF(ISBLANK([Kunder revenue churn]),"Ej jämförbart",FORMAT(_d/1000000,"+0.0;−0.0;0.0","sv-SE") & " Mkr mot föregående period")
 		formatString: General
 		displayFolder: Kundanalys
 		lineageTag: 2c7d81f9-b708-4737-8c1a-1fed9f284b28
@@ -1024,7 +1024,7 @@ table Försäljning
 		displayFolder: Kundanalys
 		lineageTag: 94941ef5-acb4-4716-be1d-fdcd5c1c9781
 
-	measure 'Kundintäkt ekvation' = "Befintlig kundstock: " & FORMAT(([Kundintäkt ingående bas A]-[Kundintäkt föregående])/1000000,"+0.0;−0.0;0.0","sv-SE") & " Mkr netto · Nettochurn " & IF(ISBLANK([Kunder revenue churn]),"Ej beräkningsbart",FORMAT([Kunder revenue churn],"0.0 %;−0.0 %;0.0 %","sv-SE"))
+	measure 'Kundintäkt ekvation' = "Befintliga kunder: " & FORMAT(([Kundintäkt ingående bas A]-[Kundintäkt föregående])/1000000,"+0.0;−0.0;0.0","sv-SE") & " Mkr · Förändring " & IF(ISBLANK([Kunder befintlig tillväxt]),"Ej jämförbart",FORMAT([Kunder befintlig tillväxt],"+0.0 %;−0.0 %;0.0 %","sv-SE"))
 		formatString: General
 		displayFolder: Kundanalys
 		lineageTag: f25094ce-e931-499f-9a5b-3b1910477b8c
@@ -1093,6 +1093,11 @@ table Försäljning
 		formatString: General
 		displayFolder: Kundanalys
 		lineageTag: a70fd772-1577-431b-ac2c-a834c754553f
+
+	measure 'Kunder befintlig tillväxt' = IF(ISBLANK([Kunder revenue churn]),BLANK(),-[Kunder revenue churn])
+		formatString: +0.0 %;−0.0 %;0.0 %
+		displayFolder: Kunder
+		lineageTag: 659280de-174f-49ff-909d-cb04442882df
 
 	column Fakturarad
 		dataType: int64

@@ -1,0 +1,62 @@
+﻿{
+    "status":  "queried",
+    "resultSets":  [
+                       [
+                           {
+                               "[LostShare]":  0.038610038610038609,
+                               "[CanonicalChurn]":  -0.097564525,
+                               "[Growth]":  0.097564525,
+                               "[Display]":  "+9,8 %",
+                               "[Color]":  "#007956",
+                               "[Caption]":  "+11,7 Mkr mot föregående period",
+                               "[Summary]":  "Befintliga kunder: +11,7 Mkr · Förändring +9,8 %"
+                           }
+                       ],
+                       [
+                           {
+                               "Kunder[Kundbransch]":  "",
+                               "[Canonical]":  null,
+                               "[Growth]":  null,
+                               "[Color]":  "#5B6B80"
+                           },
+                           {
+                               "Kunder[Kundbransch]":  "Catering",
+                               "[Canonical]":  -0.137945219916768,
+                               "[Growth]":  0.137945219916768,
+                               "[Color]":  "#007956"
+                           },
+                           {
+                               "Kunder[Kundbransch]":  "Hotell",
+                               "[Canonical]":  -0.093962138287124339,
+                               "[Growth]":  0.093962138287124339,
+                               "[Color]":  "#007956"
+                           },
+                           {
+                               "Kunder[Kundbransch]":  "Kontor",
+                               "[Canonical]":  -0.14198562561526032,
+                               "[Growth]":  0.14198562561526032,
+                               "[Color]":  "#007956"
+                           },
+                           {
+                               "Kunder[Kundbransch]":  "Livsmedel",
+                               "[Canonical]":  0.0072197880320288644,
+                               "[Growth]":  -0.0072197880320288644,
+                               "[Color]":  "#B42318"
+                           },
+                           {
+                               "Kunder[Kundbransch]":  "Restaurang",
+                               "[Canonical]":  -0.094703287495029667,
+                               "[Growth]":  0.094703287495029667,
+                               "[Color]":  "#007956"
+                           }
+                       ],
+                       [
+                           {
+                               "[Case]":  "No comparison",
+                               "[Value]":  null,
+                               "[Color]":  "#5B6B80"
+                           }
+                       ]
+                   ],
+    "source":  "Actual local Power BI Desktop DAX"
+}

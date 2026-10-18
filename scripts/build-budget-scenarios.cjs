@@ -37,7 +37,7 @@ for(const [i,label,title] of [[0,'omsättning','Omsättning'],[1,'resultat','Rö
 }
 text('filters-panel','',[288,392,296,792],12,'#0F3163','#FFFFFF');text('matrix-panel','',[600,392,1300,792],12,'#0F3163','#FFFFFF');
 text('scenario-label','Budgetscenario',[312,412,248,32],15,'#0F3163',null,true);
-tiles('scenario','Budgetscenarion','Scenario',[312,452,248,120],['Fastställd budget'],1,3,'Budget scenario tillgängligt');
+tiles('scenario','Budgetscenarion','Scenario',[312,452,248,120],['Huvudscenario'],1,3,'Budget scenario tillgängligt');
 text('scenario-help','Förberedda versioner från Excel',[312,580,248,28],10.5,'#5B6B80');
 text('comparison-label','Jämförelse',[312,620,248,32],15,'#0F3163',null,true);
 const modeState=tiles('comparison','Budgetjämförelse','Läge',[312,660,248,80],['Scenario mot utfall'],1,2,'Budget jämförelse tillgänglig');
@@ -50,7 +50,7 @@ for(let active=0;active<2;active++)for(let i=0;i<2;i++){
  if(active)v.isHidden=true;save(v);modeVariants.push({v,active});
 }
 // Empty in actual mode, populated only for valid comparison scenarios.
-const b=slicer('scenario-b','Budgetjämförelsescenario','Scenario',[312,752,248,80],'Försiktigt','Jämförelsescenario');
+const b=slicer('scenario-b','Budgetjämförelsescenario','Scenario',[312,752,248,80],'Försiktigt scenario','Jämförelsescenario');
 b.visual.visualContainerObjects.background=[{properties:{show:lit(false)}}];b.visual.visualContainerObjects.border=[{properties:{show:lit(false)}}];measureFilter(b,'Budget B tillgängligt');controls.push(b);
 b.isHidden=true;save(b);
 text('months-label','Period',[312,840,248,32],15,'#0F3163',null,true);
@@ -125,7 +125,7 @@ for(const name of fs.readdirSync(path.join(report,'definition/pages',meta.pageOr
  if(v.visual.visualType==='actionButton'&&v.position.y===760){v.visual.visualContainerObjects.visualLink=[{properties:{show:lit(true),type:lit('PageNavigation'),navigationSection:lit(budget)}}];for(const t of v.visual.objects.text||[])if(t.selector)t.properties.text=lit('Öppna budget →');write(file,v);}
  if(v.visual.visualType==='textbox'&&[524,668].includes(v.position.y)){v.visual.objects.general[0].properties.paragraphs[0].textRuns[0].value=v.position.y===524?'BUDGET':'Scenarier, utfall och resultaträkning.';write(file,v);}
 }
-write(path.join(root,'powerbi-ledningsrapport/validation/budget-page-manifest.json'),{page:budget,visuals:placements,default:{year:2026,scenario:'Fastställd budget',mode:'Scenario mot utfall',months:[7,8,9],view:'Månad'},nativeMatrix:true,screenshotsVerified:false});
+write(path.join(root,'powerbi-ledningsrapport/validation/budget-page-manifest.json'),{page:budget,visuals:placements,default:{year:2026,scenario:'Huvudscenario',mode:'Scenario mot utfall',months:[7,8,9],view:'Månad'},nativeMatrix:true,screenshotsVerified:false});
 require('./polish-budget-header.cjs')(report);
 require('./polish-budget-page.cjs')(report);
 require('./install-budget-statement.cjs')(report);

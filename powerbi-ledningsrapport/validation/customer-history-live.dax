@@ -1,0 +1,9 @@
+EVALUATE
+UNION(
+ CALCULATETABLE(ROW("Year",2024,"Active",[Kunder aktiva],"Previous",[Kunder föregående],"Lost",[Kunder förlorade]),TREATAS({"Helår"},'Periodtyp'[Periodtyp]),TREATAS({"2024"},'Helårsval'[Period])),
+ CALCULATETABLE(ROW("Year",2025,"Active",[Kunder aktiva],"Previous",[Kunder föregående],"Lost",[Kunder förlorade]),TREATAS({"Helår"},'Periodtyp'[Periodtyp]),TREATAS({"2025"},'Helårsval'[Period]))
+)
+EVALUATE
+CALCULATETABLE(
+ FILTER(SUMMARIZECOLUMNS('Kunder'[Kundnyckel],"Visible",[Kund tabell synlig],"LastPurchase",[Kund senaste köp text]),[Visible]=1),
+ TREATAS({"Helår"},'Periodtyp'[Periodtyp]),TREATAS({"2025"},'Helårsval'[Period]),TREATAS({"Förlorade"},'Kundstatusval'[Status]))

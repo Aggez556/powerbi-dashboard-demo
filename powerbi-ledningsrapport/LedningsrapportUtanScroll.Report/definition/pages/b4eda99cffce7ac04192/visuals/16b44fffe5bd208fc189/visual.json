@@ -23,7 +23,7 @@
                     "value": "● ",
                     "textStyle": {
                       "fontFamily": "Segoe UI",
-                      "fontSize": "10.5pt",
+                      "fontSize": "11pt",
                       "color": "#0F3163"
                     }
                   },
@@ -31,7 +31,7 @@
                     "value": "Vald period  ",
                     "textStyle": {
                       "fontFamily": "Segoe UI",
-                      "fontSize": "10.5pt",
+                      "fontSize": "11pt",
                       "color": "#5B6B80"
                     }
                   },
@@ -39,7 +39,7 @@
                     "value": "● ",
                     "textStyle": {
                       "fontFamily": "Segoe UI",
-                      "fontSize": "10.5pt",
+                      "fontSize": "11pt",
                       "color": "#BCC8D8"
                     }
                   },
@@ -47,7 +47,7 @@
                     "value": "Föregående år",
                     "textStyle": {
                       "fontFamily": "Segoe UI",
-                      "fontSize": "10.5pt",
+                      "fontSize": "11pt",
                       "color": "#5B6B80"
                     }
                   }

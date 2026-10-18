@@ -1,0 +1,5 @@
+EVALUATE
+CALCULATETABLE(
+SUMMARIZECOLUMNS('Artiklar'[Kategori],'Artiklar'[Artikel],'Artiklar'[Områdesordning],'Artiklar'[Kategoriordning],"Revenue",[Sälj omsättning],"PreviousRevenue",[Sälj omsättning föregående år],"GrossProfit",[Sälj bruttovinst]),
+TREATAS({"R12"},'Periodtyp'[Periodtyp]),TREATAS({"September 2026"},'R12val'[Period]))
+ORDER BY 'Artiklar'[Kategoriordning],'Artiklar'[Artikel]

@@ -1,0 +1,26 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import * as vega from '../.tools/vega-validation/node_modules/vega/build/vega.module.js';
+const base='powerbi-ledningsrapport/';
+const result=JSON.parse(fs.readFileSync(base+'validation/budget-regression-check.json','utf8').replace(/^\uFEFF/,''));
+const kpi=result.resultSets[0][0];
+assert.equal(kpi['[Revenue]'],114047711);assert.equal(kpi['[EBIT]'],5830056);
+assert(Math.abs(kpi['[Margin]']-.25717996216513278)<1e-10);
+const visual=JSON.parse(fs.readFileSync(base+'LedningsrapportUtanScroll.Report/definition/pages/cbe967640ff6843fb323/visuals/2fe3adc88d453480ae9c/visual.json','utf8'));
+const bindings=visual.visual.query.queryState.dataset.projections;
+const data=result.resultSets[1].map(row=>Object.fromEntries(bindings.map(p=>{
+ const f=p.field.Column||p.field.Measure;
+ const key=p.field.Column?`${f.Expression.SourceRef.Entity}[${f.Property}]`:`[${f.Property}]`;
+ const alias=p.nativeQueryRef;
+ return [alias,row[key]??row[`[${alias}]`]];
+})));
+assert(data.every(r=>Number.isFinite(r.Amount)&&r.Node));
+const literal=visual.visual.objects.vega[0].properties.jsonSpec.expr.Literal.Value;
+const spec=JSON.parse(literal.slice(1,-1).replaceAll("''","'"));
+const view=new vega.View(vega.parse(spec),{renderer:'none'});
+await view.change('dataset',vega.changeset().insert(data)).runAsync();
+assert(view.data('rows').length>=9);assert.equal(view.data('columns').length,20);
+const svg=await view.toSVG();assert(svg.includes('Nettoomsättning'));
+fs.writeFileSync(base+'validation/budget-live-render.svg',svg);
+console.log(JSON.stringify({status:'passed',kpi,liveDatasetRows:data.length,renderedRows:view.data('rows').length,columns:view.data('columns').length,source:'Actual live DAX and installed Vega specification; not a Desktop screenshot'}));
+view.finalize();

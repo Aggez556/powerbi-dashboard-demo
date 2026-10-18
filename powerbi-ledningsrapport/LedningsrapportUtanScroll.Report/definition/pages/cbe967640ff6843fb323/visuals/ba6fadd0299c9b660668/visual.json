@@ -1,16 +1,38 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
   "name": "ba6fadd0299c9b660668",
   "position": {
     "x": 312,
     "y": 456,
+    "z": 2129,
+    "height": 160,
     "width": 248,
-    "height": 120,
-    "z": 129,
     "tabOrder": 129
   },
   "visual": {
     "visualType": "advancedSlicerVisual",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Budgetscenarion"
+                    }
+                  },
+                  "Property": "Scenario"
+                }
+              },
+              "queryRef": "Budgetscenarion.Scenario",
+              "nativeQueryRef": "Scenario"
+            }
+          ]
+        }
+      }
+    },
     "objects": {
       "general": [
         {
@@ -20,7 +42,7 @@
                 "Version": 2,
                 "From": [
                   {
-                    "Name": "s",
+                    "Name": "b",
                     "Entity": "Budgetscenarion",
                     "Type": 0
                   }
@@ -34,7 +56,7 @@
                             "Column": {
                               "Expression": {
                                 "SourceRef": {
-                                  "Source": "s"
+                                  "Source": "b"
                                 }
                               },
                               "Property": "Scenario"
@@ -45,7 +67,7 @@
                           [
                             {
                               "Literal": {
-                                "Value": "'Fastställd budget'"
+                                "Value": "'Huvudscenario'"
                               }
                             }
                           ]
@@ -72,7 +94,7 @@
             "rowCount": {
               "expr": {
                 "Literal": {
-                  "Value": "3D"
+                  "Value": "4D"
                 }
               }
             },
@@ -143,9 +165,6 @@
       ],
       "value": [
         {
-          "selector": {
-            "id": "default"
-          },
           "properties": {
             "fontFamily": {
               "expr": {
@@ -179,12 +198,12 @@
                 }
               }
             }
+          },
+          "selector": {
+            "id": "default"
           }
         },
         {
-          "selector": {
-            "id": "selected"
-          },
           "properties": {
             "fontColor": {
               "solid": {
@@ -204,6 +223,9 @@
                 }
               }
             }
+          },
+          "selector": {
+            "id": "selected"
           }
         }
       ],
@@ -220,9 +242,6 @@
           }
         },
         {
-          "selector": {
-            "id": "default"
-          },
           "properties": {
             "fillColor": {
               "solid": {
@@ -235,12 +254,12 @@
                 }
               }
             }
+          },
+          "selector": {
+            "id": "default"
           }
         },
         {
-          "selector": {
-            "id": "selected"
-          },
           "properties": {
             "fillColor": {
               "solid": {
@@ -253,6 +272,9 @@
                 }
               }
             }
+          },
+          "selector": {
+            "id": "selected"
           }
         }
       ],
@@ -445,28 +467,6 @@
           }
         }
       ]
-    },
-    "query": {
-      "queryState": {
-        "Values": {
-          "projections": [
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Budgetscenarion"
-                    }
-                  },
-                  "Property": "Scenario"
-                }
-              },
-              "queryRef": "Budgetscenarion.Scenario",
-              "nativeQueryRef": "Scenario"
-            }
-          ]
-        }
-      }
     }
   },
   "filterConfig": {
@@ -484,7 +484,6 @@
           }
         },
         "type": "Advanced",
-        "howCreated": "User",
         "filter": {
           "Version": 2,
           "From": [
@@ -518,7 +517,8 @@
               }
             }
           ]
-        }
+        },
+        "howCreated": "User"
       }
     ]
   }

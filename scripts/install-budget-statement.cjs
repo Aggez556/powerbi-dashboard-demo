@@ -29,7 +29,7 @@ function install(reportPath){
  for(const name of remove){const p=path.join(dir,name,'visual.json');if(fs.existsSync(p))fs.unlinkSync(p);if(fs.existsSync(path.join(dir,name)))fs.rmdirSync(path.join(dir,name));}
  for(const name of fs.readdirSync(dir)){
   const p=path.join(dir,name,'visual.json');if(!fs.existsSync(p))continue;const v=read(p);
-  if(v.visual.visualType==='textbox'&&v.position.x===624&&v.position.y===1132){v.visual.objects.general[0].properties.paragraphs[0].textRuns[0].value='Pilar visar kontogrupper med detaljer · Blå summeringsrader och kursiva marginaler är beräknade.';fs.writeFileSync(p,JSON.stringify(v,null,2)+'\n');}
+  if(v.visual.visualType==='textbox'&&v.position.x===624&&v.position.y===1132){v.visual.objects.general[0].properties.paragraphs[0].textRuns[0].value='Avvikelse: + bättre / − sämre · Marginaler i pp · Nollreferens: — · Klickpilar öppnar underkategorier.';fs.writeFileSync(p,JSON.stringify(v,null,2)+'\n');}
  }
  const manifest=read(path.join(report,'../validation/budget-statement-model.json'));
  for(const kind of ['expand','collapse','reset']){

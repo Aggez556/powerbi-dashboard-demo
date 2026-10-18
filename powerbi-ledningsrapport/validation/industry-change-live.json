@@ -1,0 +1,3472 @@
+﻿{
+    "status":  "queried",
+    "resultSets":  [
+                       [
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1759269600000)\/",
+                               "Kunder[Kundbransch]":  "Catering",
+                               "[Current]":  1272942,
+                               "[Previous]":  1095978,
+                               "[Delta]":  176964,
+                               "[Percent]":  0.16146674477042422,
+                               "[Mkr]":  0.176964,
+                               "[Case]":  0
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1759269600000)\/",
+                               "Kunder[Kundbransch]":  "Hotell",
+                               "[Current]":  2333230,
+                               "[Previous]":  1940942,
+                               "[Delta]":  392288,
+                               "[Percent]":  0.20211217027608244,
+                               "[Mkr]":  0.392288,
+                               "[Case]":  0
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1759269600000)\/",
+                               "Kunder[Kundbransch]":  "Kontor",
+                               "[Current]":  1202520,
+                               "[Previous]":  956195,
+                               "[Delta]":  246325,
+                               "[Percent]":  0.25760958800244721,
+                               "[Mkr]":  0.246325,
+                               "[Case]":  0
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1759269600000)\/",
+                               "Kunder[Kundbransch]":  "Livsmedel",
+                               "[Current]":  732099,
+                               "[Previous]":  696668,
+                               "[Delta]":  35431,
+                               "[Percent]":  0.05085779740134469,
+                               "[Mkr]":  0.035431,
+                               "[Case]":  0
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1759269600000)\/",
+                               "Kunder[Kundbransch]":  "Restaurang",
+                               "[Current]":  3235861,
+                               "[Previous]":  2860025,
+                               "[Delta]":  375836,
+                               "[Percent]":  0.13141004012202689,
+                               "[Mkr]":  0.375836,
+                               "[Case]":  0
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1761951600000)\/",
+                               "Kunder[Kundbransch]":  "Catering",
+                               "[Current]":  1273883,
+                               "[Previous]":  1012878,
+                               "[Delta]":  261005,
+                               "[Percent]":  0.25768651308449786,
+                               "[Mkr]":  0.261005,
+                               "[Case]":  0
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1761951600000)\/",
+                               "Kunder[Kundbransch]":  "Hotell",
+                               "[Current]":  1938508,
+                               "[Previous]":  1793423,
+                               "[Delta]":  145085,
+                               "[Percent]":  0.0808983714383054,
+                               "[Mkr]":  0.145085,
+                               "[Case]":  0
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1761951600000)\/",
+                               "Kunder[Kundbransch]":  "Kontor",
+                               "[Current]":  980642,
+                               "[Previous]":  828815,
+                               "[Delta]":  151827,
+                               "[Percent]":  0.1831856324994118,
+                               "[Mkr]":  0.151827,
+                               "[Case]":  0
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1761951600000)\/",
+                               "Kunder[Kundbransch]":  "Livsmedel",
+                               "[Current]":  754249,
+                               "[Previous]":  618804,
+                               "[Delta]":  135445,
+                               "[Percent]":  0.2188819076799762,
+                               "[Mkr]":  0.135445,
+                               "[Case]":  0
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1761951600000)\/",
+                               "Kunder[Kundbransch]":  "Restaurang",
+                               "[Current]":  2951704,
+                               "[Previous]":  2540907,
+                               "[Delta]":  410797,
+                               "[Percent]":  0.16167337096556467,
+                               "[Mkr]":  0.410797,
+                               "[Case]":  0
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1764543600000)\/",
+                               "Kunder[Kundbransch]":  "Catering",
+                               "[Current]":  1291272,
+                               "[Previous]":  1229077,
+                               "[Delta]":  62195,
+                               "[Percent]":  0.050603013480847822,
+                               "[Mkr]":  0.062195,
+                               "[Case]":  0
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1764543600000)\/",
+                               "Kunder[Kundbransch]":  "Hotell",
+                               "[Current]":  2466461,
+                               "[Previous]":  1822364,
+                               "[Delta]":  644097,
+                               "[Percent]":  0.35344036646904792,
+                               "[Mkr]":  0.644097,
+                               "[Case]":  0
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1764543600000)\/",
+                               "Kunder[Kundbransch]":  "Kontor",
+                               "[Current]":  969018,
+                               "[Previous]":  900203,
+                               "[Delta]":  68815,
+                               "[Percent]":  0.076443868771821466,
+                               "[Mkr]":  0.068815,
+                               "[Case]":  0
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1764543600000)\/",
+                               "Kunder[Kundbransch]":  "Livsmedel",
+                               "[Current]":  692767,
+                               "[Previous]":  696474,
+                               "[Delta]":  -3707,
+                               "[Percent]":  -0.0053225246024977239,
+                               "[Mkr]":  -0.003707,
+                               "[Case]":  0
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1764543600000)\/",
+                               "Kunder[Kundbransch]":  "Restaurang",
+                               "[Current]":  3357133,
+                               "[Previous]":  2901690,
+                               "[Delta]":  455443,
+                               "[Percent]":  0.15695784180942829,
+                               "[Mkr]":  0.455443,
+                               "[Case]":  0
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1767222000000)\/",
+                               "Kunder[Kundbransch]":  "Catering",
+                               "[Current]":  1460207,
+                               "[Previous]":  1213389,
+                               "[Delta]":  246818,
+                               "[Percent]":  0.20341209620327858,
+                               "[Mkr]":  0.246818,
+                               "[Case]":  0
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1767222000000)\/",
+                               "Kunder[Kundbransch]":  "Hotell",
+                               "[Current]":  2159876,
+                               "[Previous]":  2070050,
+                               "[Delta]":  89826,
+                               "[Percent]":  0.043393154754716071,
+                               "[Mkr]":  0.089826,
+                               "[Case]":  0
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1767222000000)\/",
+                               "Kunder[Kundbransch]":  "Kontor",
+                               "[Current]":  1238137,
+                               "[Previous]":  1071232,
+                               "[Delta]":  166905,
+                               "[Percent]":  0.15580658531485242,
+                               "[Mkr]":  0.166905,
+                               "[Case]":  0
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1767222000000)\/",
+                               "Kunder[Kundbransch]":  "Livsmedel",
+                               "[Current]":  779715,
+                               "[Previous]":  743237,
+                               "[Delta]":  36478,
+                               "[Percent]":  0.04907990318027762,
+                               "[Mkr]":  0.036478,
+                               "[Case]":  0
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1767222000000)\/",
+                               "Kunder[Kundbransch]":  "Restaurang",
+                               "[Current]":  3723826,
+                               "[Previous]":  2955220,
+                               "[Delta]":  768606,
+                               "[Percent]":  0.26008419000954242,
+                               "[Mkr]":  0.768606,
+                               "[Case]":  0
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1769900400000)\/",
+                               "Kunder[Kundbransch]":  "Catering",
+                               "[Current]":  1784905,
+                               "[Previous]":  1356755,
+                               "[Delta]":  428150,
+                               "[Percent]":  0.31556913370505363,
+                               "[Mkr]":  0.42815,
+                               "[Case]":  0
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1769900400000)\/",
+                               "Kunder[Kundbransch]":  "Hotell",
+                               "[Current]":  2286144,
+                               "[Previous]":  2202724,
+                               "[Delta]":  83420,
+                               "[Percent]":  0.037871290275132065,
+                               "[Mkr]":  0.08342,
+                               "[Case]":  0
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1769900400000)\/",
+                               "Kunder[Kundbransch]":  "Kontor",
+                               "[Current]":  1371433,
+                               "[Previous]":  1029724,
+                               "[Delta]":  341709,
+                               "[Percent]":  0.3318452323146785,
+                               "[Mkr]":  0.341709,
+                               "[Case]":  0
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1769900400000)\/",
+                               "Kunder[Kundbransch]":  "Livsmedel",
+                               "[Current]":  827126,
+                               "[Previous]":  913403,
+                               "[Delta]":  -86277,
+                               "[Percent]":  -0.09445666370703841,
+                               "[Mkr]":  -0.086277,
+                               "[Case]":  0
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1769900400000)\/",
+                               "Kunder[Kundbransch]":  "Restaurang",
+                               "[Current]":  3774783,
+                               "[Previous]":  3137729,
+                               "[Delta]":  637054,
+                               "[Percent]":  0.20303028081775068,
+                               "[Mkr]":  0.637054,
+                               "[Case]":  0
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1772319600000)\/",
+                               "Kunder[Kundbransch]":  "Catering",
+                               "[Current]":  1715930,
+                               "[Previous]":  1396481,
+                               "[Delta]":  319449,
+                               "[Percent]":  0.22875284375512447,
+                               "[Mkr]":  0.319449,
+                               "[Case]":  0
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1772319600000)\/",
+                               "Kunder[Kundbransch]":  "Hotell",
+                               "[Current]":  3088848,
+                               "[Previous]":  2326478,
+                               "[Delta]":  762370,
+                               "[Percent]":  0.32769276133279573,
+                               "[Mkr]":  0.76237,
+                               "[Case]":  0
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1772319600000)\/",
+                               "Kunder[Kundbransch]":  "Kontor",
+                               "[Current]":  1482581,
+                               "[Previous]":  1184395,
+                               "[Delta]":  298186,
+                               "[Percent]":  0.25176229214071322,
+                               "[Mkr]":  0.298186,
+                               "[Case]":  0
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1772319600000)\/",
+                               "Kunder[Kundbransch]":  "Livsmedel",
+                               "[Current]":  941620,
+                               "[Previous]":  818052,
+                               "[Delta]":  123568,
+                               "[Percent]":  0.15105152239710923,
+                               "[Mkr]":  0.123568,
+                               "[Case]":  0
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1772319600000)\/",
+                               "Kunder[Kundbransch]":  "Restaurang",
+                               "[Current]":  4180668,
+                               "[Previous]":  4089344,
+                               "[Delta]":  91324,
+                               "[Percent]":  0.022332188243395518,
+                               "[Mkr]":  0.091324,
+                               "[Case]":  0
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1774994400000)\/",
+                               "Kunder[Kundbransch]":  "Catering",
+                               "[Current]":  1830387,
+                               "[Previous]":  1634836,
+                               "[Delta]":  195551,
+                               "[Percent]":  0.11961505618912234,
+                               "[Mkr]":  0.195551,
+                               "[Case]":  0
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1774994400000)\/",
+                               "Kunder[Kundbransch]":  "Hotell",
+                               "[Current]":  3201072,
+                               "[Previous]":  2678535,
+                               "[Delta]":  522537,
+                               "[Percent]":  0.19508313313061057,
+                               "[Mkr]":  0.522537,
+                               "[Case]":  0
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1774994400000)\/",
+                               "Kunder[Kundbransch]":  "Kontor",
+                               "[Current]":  1430269,
+                               "[Previous]":  1271006,
+                               "[Delta]":  159263,
+                               "[Percent]":  0.125304679914965,
+                               "[Mkr]":  0.159263,
+                               "[Case]":  0
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1774994400000)\/",
+                               "Kunder[Kundbransch]":  "Livsmedel",
+                               "[Current]":  1008079,
+                               "[Previous]":  962719,
+                               "[Delta]":  45360,
+                               "[Percent]":  0.047116552181893159,
+                               "[Mkr]":  0.04536,
+                               "[Case]":  0
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1774994400000)\/",
+                               "Kunder[Kundbransch]":  "Restaurang",
+                               "[Current]":  4524950,
+                               "[Previous]":  3770974,
+                               "[Delta]":  753976,
+                               "[Percent]":  0.19994197785505813,
+                               "[Mkr]":  0.753976,
+                               "[Case]":  0
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1777586400000)\/",
+                               "Kunder[Kundbransch]":  "Catering",
+                               "[Current]":  1884001,
+                               "[Previous]":  1609222,
+                               "[Delta]":  274779,
+                               "[Percent]":  0.17075269913038724,
+                               "[Mkr]":  0.274779,
+                               "[Case]":  0
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1777586400000)\/",
+                               "Kunder[Kundbransch]":  "Hotell",
+                               "[Current]":  3233880,
+                               "[Previous]":  2876317,
+                               "[Delta]":  357563,
+                               "[Percent]":  0.12431279306140457,
+                               "[Mkr]":  0.357563,
+                               "[Case]":  0
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1777586400000)\/",
+                               "Kunder[Kundbransch]":  "Kontor",
+                               "[Current]":  1595961,
+                               "[Previous]":  1464434,
+                               "[Delta]":  131527,
+                               "[Percent]":  0.089814221740276451,
+                               "[Mkr]":  0.131527,
+                               "[Case]":  0
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1777586400000)\/",
+                               "Kunder[Kundbransch]":  "Livsmedel",
+                               "[Current]":  995428,
+                               "[Previous]":  997271,
+                               "[Delta]":  -1843,
+                               "[Percent]":  -0.0018480433101935182,
+                               "[Mkr]":  -0.001843,
+                               "[Case]":  0
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1777586400000)\/",
+                               "Kunder[Kundbransch]":  "Restaurang",
+                               "[Current]":  5016875,
+                               "[Previous]":  3999977,
+                               "[Delta]":  1016898,
+                               "[Percent]":  0.25422596179928036,
+                               "[Mkr]":  1.016898,
+                               "[Case]":  0
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1780264800000)\/",
+                               "Kunder[Kundbransch]":  "Catering",
+                               "[Current]":  2074984,
+                               "[Previous]":  1805346,
+                               "[Delta]":  269638,
+                               "[Percent]":  0.14935530363708674,
+                               "[Mkr]":  0.269638,
+                               "[Case]":  0
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1780264800000)\/",
+                               "Kunder[Kundbransch]":  "Hotell",
+                               "[Current]":  3324099,
+                               "[Previous]":  3175223,
+                               "[Delta]":  148876,
+                               "[Percent]":  0.046886785589547571,
+                               "[Mkr]":  0.148876,
+                               "[Case]":  0
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1780264800000)\/",
+                               "Kunder[Kundbransch]":  "Kontor",
+                               "[Current]":  1598230,
+                               "[Previous]":  1445809,
+                               "[Delta]":  152421,
+                               "[Percent]":  0.10542263881328723,
+                               "[Mkr]":  0.152421,
+                               "[Case]":  0
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1780264800000)\/",
+                               "Kunder[Kundbransch]":  "Livsmedel",
+                               "[Current]":  1020274,
+                               "[Previous]":  1050079,
+                               "[Delta]":  -29805,
+                               "[Percent]":  -0.028383578759312394,
+                               "[Mkr]":  -0.029805,
+                               "[Case]":  0
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1780264800000)\/",
+                               "Kunder[Kundbransch]":  "Restaurang",
+                               "[Current]":  5732500,
+                               "[Previous]":  4351575,
+                               "[Delta]":  1380925,
+                               "[Percent]":  0.3173391243400378,
+                               "[Mkr]":  1.380925,
+                               "[Case]":  0
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1782856800000)\/",
+                               "Kunder[Kundbransch]":  "Catering",
+                               "[Current]":  2045503,
+                               "[Previous]":  1747601,
+                               "[Delta]":  297902,
+                               "[Percent]":  0.17046339524868662,
+                               "[Mkr]":  0.297902,
+                               "[Case]":  0
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1782856800000)\/",
+                               "Kunder[Kundbransch]":  "Hotell",
+                               "[Current]":  3745116,
+                               "[Previous]":  3379839,
+                               "[Delta]":  365277,
+                               "[Percent]":  0.10807526630706374,
+                               "[Mkr]":  0.365277,
+                               "[Case]":  0
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1782856800000)\/",
+                               "Kunder[Kundbransch]":  "Kontor",
+                               "[Current]":  1983062,
+                               "[Previous]":  1491639,
+                               "[Delta]":  491423,
+                               "[Percent]":  0.32945169709292932,
+                               "[Mkr]":  0.491423,
+                               "[Case]":  0
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1782856800000)\/",
+                               "Kunder[Kundbransch]":  "Livsmedel",
+                               "[Current]":  994659,
+                               "[Previous]":  1083841,
+                               "[Delta]":  -89182,
+                               "[Percent]":  -0.08228328693968949,
+                               "[Mkr]":  -0.089182,
+                               "[Case]":  0
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1782856800000)\/",
+                               "Kunder[Kundbransch]":  "Restaurang",
+                               "[Current]":  5079266,
+                               "[Previous]":  4208999,
+                               "[Delta]":  870267,
+                               "[Percent]":  0.20676341334364773,
+                               "[Mkr]":  0.870267,
+                               "[Case]":  0
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1785535200000)\/",
+                               "Kunder[Kundbransch]":  "Catering",
+                               "[Current]":  2687825,
+                               "[Previous]":  1714440,
+                               "[Delta]":  973385,
+                               "[Percent]":  0.56775681855299687,
+                               "[Mkr]":  0.973385,
+                               "[Case]":  0
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1785535200000)\/",
+                               "Kunder[Kundbransch]":  "Hotell",
+                               "[Current]":  3887678,
+                               "[Previous]":  3171353,
+                               "[Delta]":  716325,
+                               "[Percent]":  0.22587362554720336,
+                               "[Mkr]":  0.716325,
+                               "[Case]":  0
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1785535200000)\/",
+                               "Kunder[Kundbransch]":  "Kontor",
+                               "[Current]":  2034554,
+                               "[Previous]":  1658660,
+                               "[Delta]":  375894,
+                               "[Percent]":  0.22662510701409572,
+                               "[Mkr]":  0.375894,
+                               "[Case]":  0
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1785535200000)\/",
+                               "Kunder[Kundbransch]":  "Livsmedel",
+                               "[Current]":  1303803,
+                               "[Previous]":  1164759,
+                               "[Delta]":  139044,
+                               "[Percent]":  0.11937576786270808,
+                               "[Mkr]":  0.139044,
+                               "[Case]":  0
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1785535200000)\/",
+                               "Kunder[Kundbransch]":  "Restaurang",
+                               "[Current]":  5103966,
+                               "[Previous]":  5209349,
+                               "[Delta]":  -105383,
+                               "[Percent]":  -0.02022959106790503,
+                               "[Mkr]":  -0.105383,
+                               "[Case]":  0
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1788213600000)\/",
+                               "Kunder[Kundbransch]":  "Catering",
+                               "[Current]":  2578872,
+                               "[Previous]":  2041071,
+                               "[Delta]":  537801,
+                               "[Percent]":  0.26348960913167646,
+                               "[Mkr]":  0.537801,
+                               "[Case]":  0
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1788213600000)\/",
+                               "Kunder[Kundbransch]":  "Hotell",
+                               "[Current]":  4047449,
+                               "[Previous]":  3920393,
+                               "[Delta]":  127056,
+                               "[Percent]":  0.032408995730785151,
+                               "[Mkr]":  0.127056,
+                               "[Case]":  0
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1788213600000)\/",
+                               "Kunder[Kundbransch]":  "Kontor",
+                               "[Current]":  2092936,
+                               "[Previous]":  1616370,
+                               "[Delta]":  476566,
+                               "[Percent]":  0.29483719692892096,
+                               "[Mkr]":  0.476566,
+                               "[Case]":  0
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1788213600000)\/",
+                               "Kunder[Kundbransch]":  "Livsmedel",
+                               "[Current]":  1525825,
+                               "[Previous]":  1154736,
+                               "[Delta]":  371089,
+                               "[Percent]":  0.32136263180501862,
+                               "[Mkr]":  0.371089,
+                               "[Case]":  0
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1788213600000)\/",
+                               "Kunder[Kundbransch]":  "Restaurang",
+                               "[Current]":  5650409,
+                               "[Previous]":  4940971,
+                               "[Delta]":  709438,
+                               "[Percent]":  0.14358270874287665,
+                               "[Mkr]":  0.709438,
+                               "[Case]":  0
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1759269600000)\/",
+                               "Kunder[Kundbransch]":  "Hotell",
+                               "[Current]":  2333230,
+                               "[Previous]":  1940942,
+                               "[Delta]":  392288,
+                               "[Percent]":  0.20211217027608244,
+                               "[Mkr]":  0.392288,
+                               "[Case]":  1
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1761951600000)\/",
+                               "Kunder[Kundbransch]":  "Hotell",
+                               "[Current]":  1938508,
+                               "[Previous]":  1793423,
+                               "[Delta]":  145085,
+                               "[Percent]":  0.0808983714383054,
+                               "[Mkr]":  0.145085,
+                               "[Case]":  1
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1764543600000)\/",
+                               "Kunder[Kundbransch]":  "Hotell",
+                               "[Current]":  2466461,
+                               "[Previous]":  1822364,
+                               "[Delta]":  644097,
+                               "[Percent]":  0.35344036646904792,
+                               "[Mkr]":  0.644097,
+                               "[Case]":  1
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1767222000000)\/",
+                               "Kunder[Kundbransch]":  "Hotell",
+                               "[Current]":  2159876,
+                               "[Previous]":  2070050,
+                               "[Delta]":  89826,
+                               "[Percent]":  0.043393154754716071,
+                               "[Mkr]":  0.089826,
+                               "[Case]":  1
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1769900400000)\/",
+                               "Kunder[Kundbransch]":  "Hotell",
+                               "[Current]":  2286144,
+                               "[Previous]":  2202724,
+                               "[Delta]":  83420,
+                               "[Percent]":  0.037871290275132065,
+                               "[Mkr]":  0.08342,
+                               "[Case]":  1
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1772319600000)\/",
+                               "Kunder[Kundbransch]":  "Hotell",
+                               "[Current]":  3088848,
+                               "[Previous]":  2326478,
+                               "[Delta]":  762370,
+                               "[Percent]":  0.32769276133279573,
+                               "[Mkr]":  0.76237,
+                               "[Case]":  1
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1774994400000)\/",
+                               "Kunder[Kundbransch]":  "Hotell",
+                               "[Current]":  3201072,
+                               "[Previous]":  2678535,
+                               "[Delta]":  522537,
+                               "[Percent]":  0.19508313313061057,
+                               "[Mkr]":  0.522537,
+                               "[Case]":  1
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1777586400000)\/",
+                               "Kunder[Kundbransch]":  "Hotell",
+                               "[Current]":  3233880,
+                               "[Previous]":  2876317,
+                               "[Delta]":  357563,
+                               "[Percent]":  0.12431279306140457,
+                               "[Mkr]":  0.357563,
+                               "[Case]":  1
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1780264800000)\/",
+                               "Kunder[Kundbransch]":  "Hotell",
+                               "[Current]":  3324099,
+                               "[Previous]":  3175223,
+                               "[Delta]":  148876,
+                               "[Percent]":  0.046886785589547571,
+                               "[Mkr]":  0.148876,
+                               "[Case]":  1
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1782856800000)\/",
+                               "Kunder[Kundbransch]":  "Hotell",
+                               "[Current]":  3745116,
+                               "[Previous]":  3379839,
+                               "[Delta]":  365277,
+                               "[Percent]":  0.10807526630706374,
+                               "[Mkr]":  0.365277,
+                               "[Case]":  1
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1785535200000)\/",
+                               "Kunder[Kundbransch]":  "Hotell",
+                               "[Current]":  3887678,
+                               "[Previous]":  3171353,
+                               "[Delta]":  716325,
+                               "[Percent]":  0.22587362554720336,
+                               "[Mkr]":  0.716325,
+                               "[Case]":  1
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1788213600000)\/",
+                               "Kunder[Kundbransch]":  "Hotell",
+                               "[Current]":  4047449,
+                               "[Previous]":  3920393,
+                               "[Delta]":  127056,
+                               "[Percent]":  0.032408995730785151,
+                               "[Mkr]":  0.127056,
+                               "[Case]":  1
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1759269600000)\/",
+                               "Kunder[Kundbransch]":  "Hotell",
+                               "[Current]":  2333230,
+                               "[Previous]":  1940942,
+                               "[Delta]":  392288,
+                               "[Percent]":  0.20211217027608244,
+                               "[Mkr]":  0.392288,
+                               "[Case]":  2
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1759269600000)\/",
+                               "Kunder[Kundbransch]":  "Restaurang",
+                               "[Current]":  3235861,
+                               "[Previous]":  2860025,
+                               "[Delta]":  375836,
+                               "[Percent]":  0.13141004012202689,
+                               "[Mkr]":  0.375836,
+                               "[Case]":  2
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1761951600000)\/",
+                               "Kunder[Kundbransch]":  "Hotell",
+                               "[Current]":  1938508,
+                               "[Previous]":  1793423,
+                               "[Delta]":  145085,
+                               "[Percent]":  0.0808983714383054,
+                               "[Mkr]":  0.145085,
+                               "[Case]":  2
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1761951600000)\/",
+                               "Kunder[Kundbransch]":  "Restaurang",
+                               "[Current]":  2951704,
+                               "[Previous]":  2540907,
+                               "[Delta]":  410797,
+                               "[Percent]":  0.16167337096556467,
+                               "[Mkr]":  0.410797,
+                               "[Case]":  2
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1764543600000)\/",
+                               "Kunder[Kundbransch]":  "Hotell",
+                               "[Current]":  2466461,
+                               "[Previous]":  1822364,
+                               "[Delta]":  644097,
+                               "[Percent]":  0.35344036646904792,
+                               "[Mkr]":  0.644097,
+                               "[Case]":  2
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1764543600000)\/",
+                               "Kunder[Kundbransch]":  "Restaurang",
+                               "[Current]":  3357133,
+                               "[Previous]":  2901690,
+                               "[Delta]":  455443,
+                               "[Percent]":  0.15695784180942829,
+                               "[Mkr]":  0.455443,
+                               "[Case]":  2
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1767222000000)\/",
+                               "Kunder[Kundbransch]":  "Hotell",
+                               "[Current]":  2159876,
+                               "[Previous]":  2070050,
+                               "[Delta]":  89826,
+                               "[Percent]":  0.043393154754716071,
+                               "[Mkr]":  0.089826,
+                               "[Case]":  2
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1767222000000)\/",
+                               "Kunder[Kundbransch]":  "Restaurang",
+                               "[Current]":  3723826,
+                               "[Previous]":  2955220,
+                               "[Delta]":  768606,
+                               "[Percent]":  0.26008419000954242,
+                               "[Mkr]":  0.768606,
+                               "[Case]":  2
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1769900400000)\/",
+                               "Kunder[Kundbransch]":  "Hotell",
+                               "[Current]":  2286144,
+                               "[Previous]":  2202724,
+                               "[Delta]":  83420,
+                               "[Percent]":  0.037871290275132065,
+                               "[Mkr]":  0.08342,
+                               "[Case]":  2
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1769900400000)\/",
+                               "Kunder[Kundbransch]":  "Restaurang",
+                               "[Current]":  3774783,
+                               "[Previous]":  3137729,
+                               "[Delta]":  637054,
+                               "[Percent]":  0.20303028081775068,
+                               "[Mkr]":  0.637054,
+                               "[Case]":  2
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1772319600000)\/",
+                               "Kunder[Kundbransch]":  "Hotell",
+                               "[Current]":  3088848,
+                               "[Previous]":  2326478,
+                               "[Delta]":  762370,
+                               "[Percent]":  0.32769276133279573,
+                               "[Mkr]":  0.76237,
+                               "[Case]":  2
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1772319600000)\/",
+                               "Kunder[Kundbransch]":  "Restaurang",
+                               "[Current]":  4180668,
+                               "[Previous]":  4089344,
+                               "[Delta]":  91324,
+                               "[Percent]":  0.022332188243395518,
+                               "[Mkr]":  0.091324,
+                               "[Case]":  2
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1774994400000)\/",
+                               "Kunder[Kundbransch]":  "Hotell",
+                               "[Current]":  3201072,
+                               "[Previous]":  2678535,
+                               "[Delta]":  522537,
+                               "[Percent]":  0.19508313313061057,
+                               "[Mkr]":  0.522537,
+                               "[Case]":  2
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1774994400000)\/",
+                               "Kunder[Kundbransch]":  "Restaurang",
+                               "[Current]":  4524950,
+                               "[Previous]":  3770974,
+                               "[Delta]":  753976,
+                               "[Percent]":  0.19994197785505813,
+                               "[Mkr]":  0.753976,
+                               "[Case]":  2
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1777586400000)\/",
+                               "Kunder[Kundbransch]":  "Hotell",
+                               "[Current]":  3233880,
+                               "[Previous]":  2876317,
+                               "[Delta]":  357563,
+                               "[Percent]":  0.12431279306140457,
+                               "[Mkr]":  0.357563,
+                               "[Case]":  2
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1777586400000)\/",
+                               "Kunder[Kundbransch]":  "Restaurang",
+                               "[Current]":  5016875,
+                               "[Previous]":  3999977,
+                               "[Delta]":  1016898,
+                               "[Percent]":  0.25422596179928036,
+                               "[Mkr]":  1.016898,
+                               "[Case]":  2
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1780264800000)\/",
+                               "Kunder[Kundbransch]":  "Hotell",
+                               "[Current]":  3324099,
+                               "[Previous]":  3175223,
+                               "[Delta]":  148876,
+                               "[Percent]":  0.046886785589547571,
+                               "[Mkr]":  0.148876,
+                               "[Case]":  2
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1780264800000)\/",
+                               "Kunder[Kundbransch]":  "Restaurang",
+                               "[Current]":  5732500,
+                               "[Previous]":  4351575,
+                               "[Delta]":  1380925,
+                               "[Percent]":  0.3173391243400378,
+                               "[Mkr]":  1.380925,
+                               "[Case]":  2
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1782856800000)\/",
+                               "Kunder[Kundbransch]":  "Hotell",
+                               "[Current]":  3745116,
+                               "[Previous]":  3379839,
+                               "[Delta]":  365277,
+                               "[Percent]":  0.10807526630706374,
+                               "[Mkr]":  0.365277,
+                               "[Case]":  2
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1782856800000)\/",
+                               "Kunder[Kundbransch]":  "Restaurang",
+                               "[Current]":  5079266,
+                               "[Previous]":  4208999,
+                               "[Delta]":  870267,
+                               "[Percent]":  0.20676341334364773,
+                               "[Mkr]":  0.870267,
+                               "[Case]":  2
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1785535200000)\/",
+                               "Kunder[Kundbransch]":  "Hotell",
+                               "[Current]":  3887678,
+                               "[Previous]":  3171353,
+                               "[Delta]":  716325,
+                               "[Percent]":  0.22587362554720336,
+                               "[Mkr]":  0.716325,
+                               "[Case]":  2
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1785535200000)\/",
+                               "Kunder[Kundbransch]":  "Restaurang",
+                               "[Current]":  5103966,
+                               "[Previous]":  5209349,
+                               "[Delta]":  -105383,
+                               "[Percent]":  -0.02022959106790503,
+                               "[Mkr]":  -0.105383,
+                               "[Case]":  2
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1788213600000)\/",
+                               "Kunder[Kundbransch]":  "Hotell",
+                               "[Current]":  4047449,
+                               "[Previous]":  3920393,
+                               "[Delta]":  127056,
+                               "[Percent]":  0.032408995730785151,
+                               "[Mkr]":  0.127056,
+                               "[Case]":  2
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1788213600000)\/",
+                               "Kunder[Kundbransch]":  "Restaurang",
+                               "[Current]":  5650409,
+                               "[Previous]":  4940971,
+                               "[Delta]":  709438,
+                               "[Percent]":  0.14358270874287665,
+                               "[Mkr]":  0.709438,
+                               "[Case]":  2
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1735686000000)\/",
+                               "Kunder[Kundbransch]":  "Catering",
+                               "[Current]":  1213389,
+                               "[Previous]":  1312689,
+                               "[Delta]":  -99300,
+                               "[Percent]":  -0.075646249797172063,
+                               "[Mkr]":  -0.0993,
+                               "[Case]":  3
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1735686000000)\/",
+                               "Kunder[Kundbransch]":  "Hotell",
+                               "[Current]":  2070050,
+                               "[Previous]":  2063357,
+                               "[Delta]":  6693,
+                               "[Percent]":  0.0032437430846915974,
+                               "[Mkr]":  0.006693,
+                               "[Case]":  3
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1735686000000)\/",
+                               "Kunder[Kundbransch]":  "Kontor",
+                               "[Current]":  1071232,
+                               "[Previous]":  965448,
+                               "[Delta]":  105784,
+                               "[Percent]":  0.1095698577240825,
+                               "[Mkr]":  0.105784,
+                               "[Case]":  3
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1735686000000)\/",
+                               "Kunder[Kundbransch]":  "Livsmedel",
+                               "[Current]":  743237,
+                               "[Previous]":  685824,
+                               "[Delta]":  57413,
+                               "[Percent]":  0.08371389744307578,
+                               "[Mkr]":  0.057413,
+                               "[Case]":  3
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1735686000000)\/",
+                               "Kunder[Kundbransch]":  "Restaurang",
+                               "[Current]":  2955220,
+                               "[Previous]":  2822796,
+                               "[Delta]":  132424,
+                               "[Percent]":  0.046912352150137664,
+                               "[Mkr]":  0.132424,
+                               "[Case]":  3
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1738364400000)\/",
+                               "Kunder[Kundbransch]":  "Catering",
+                               "[Current]":  1356755,
+                               "[Previous]":  1182841,
+                               "[Delta]":  173914,
+                               "[Percent]":  0.14703075054043613,
+                               "[Mkr]":  0.173914,
+                               "[Case]":  3
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1738364400000)\/",
+                               "Kunder[Kundbransch]":  "Hotell",
+                               "[Current]":  2202724,
+                               "[Previous]":  1919994,
+                               "[Delta]":  282730,
+                               "[Percent]":  0.14725566850729743,
+                               "[Mkr]":  0.28273,
+                               "[Case]":  3
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1738364400000)\/",
+                               "Kunder[Kundbransch]":  "Kontor",
+                               "[Current]":  1029724,
+                               "[Previous]":  957956,
+                               "[Delta]":  71768,
+                               "[Percent]":  0.074917845913591019,
+                               "[Mkr]":  0.071768,
+                               "[Case]":  3
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1738364400000)\/",
+                               "Kunder[Kundbransch]":  "Livsmedel",
+                               "[Current]":  913403,
+                               "[Previous]":  705512,
+                               "[Delta]":  207891,
+                               "[Percent]":  0.2946668518749504,
+                               "[Mkr]":  0.207891,
+                               "[Case]":  3
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1738364400000)\/",
+                               "Kunder[Kundbransch]":  "Restaurang",
+                               "[Current]":  3137729,
+                               "[Previous]":  2911283,
+                               "[Delta]":  226446,
+                               "[Percent]":  0.077782201180716548,
+                               "[Mkr]":  0.226446,
+                               "[Case]":  3
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1740783600000)\/",
+                               "Kunder[Kundbransch]":  "Catering",
+                               "[Current]":  1396481,
+                               "[Previous]":  1291372,
+                               "[Delta]":  105109,
+                               "[Percent]":  0.081393277847126938,
+                               "[Mkr]":  0.105109,
+                               "[Case]":  3
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1740783600000)\/",
+                               "Kunder[Kundbransch]":  "Hotell",
+                               "[Current]":  2326478,
+                               "[Previous]":  2246123,
+                               "[Delta]":  80355,
+                               "[Percent]":  0.035774977594726559,
+                               "[Mkr]":  0.080355,
+                               "[Case]":  3
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1740783600000)\/",
+                               "Kunder[Kundbransch]":  "Kontor",
+                               "[Current]":  1184395,
+                               "[Previous]":  1124653,
+                               "[Delta]":  59742,
+                               "[Percent]":  0.053120384687543626,
+                               "[Mkr]":  0.059742,
+                               "[Case]":  3
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1740783600000)\/",
+                               "Kunder[Kundbransch]":  "Livsmedel",
+                               "[Current]":  818052,
+                               "[Previous]":  777565,
+                               "[Delta]":  40487,
+                               "[Percent]":  0.052068958865175256,
+                               "[Mkr]":  0.040487,
+                               "[Case]":  3
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1740783600000)\/",
+                               "Kunder[Kundbransch]":  "Restaurang",
+                               "[Current]":  4089344,
+                               "[Previous]":  3445581,
+                               "[Delta]":  643763,
+                               "[Percent]":  0.18683728520676193,
+                               "[Mkr]":  0.643763,
+                               "[Case]":  3
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1743458400000)\/",
+                               "Kunder[Kundbransch]":  "Catering",
+                               "[Current]":  1634836,
+                               "[Previous]":  1391931,
+                               "[Delta]":  242905,
+                               "[Percent]":  0.17450936863968114,
+                               "[Mkr]":  0.242905,
+                               "[Case]":  3
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1743458400000)\/",
+                               "Kunder[Kundbransch]":  "Hotell",
+                               "[Current]":  2678535,
+                               "[Previous]":  2240066,
+                               "[Delta]":  438469,
+                               "[Percent]":  0.19573932196640634,
+                               "[Mkr]":  0.438469,
+                               "[Case]":  3
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1743458400000)\/",
+                               "Kunder[Kundbransch]":  "Kontor",
+                               "[Current]":  1271006,
+                               "[Previous]":  1156864,
+                               "[Delta]":  114142,
+                               "[Percent]":  0.098665011617614512,
+                               "[Mkr]":  0.114142,
+                               "[Case]":  3
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1743458400000)\/",
+                               "Kunder[Kundbransch]":  "Livsmedel",
+                               "[Current]":  962719,
+                               "[Previous]":  824460,
+                               "[Delta]":  138259,
+                               "[Percent]":  0.16769643160371636,
+                               "[Mkr]":  0.138259,
+                               "[Case]":  3
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1743458400000)\/",
+                               "Kunder[Kundbransch]":  "Restaurang",
+                               "[Current]":  3770974,
+                               "[Previous]":  3358239,
+                               "[Delta]":  412735,
+                               "[Percent]":  0.12290221154599182,
+                               "[Mkr]":  0.412735,
+                               "[Case]":  3
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1746050400000)\/",
+                               "Kunder[Kundbransch]":  "Catering",
+                               "[Current]":  1609222,
+                               "[Previous]":  1273878,
+                               "[Delta]":  335344,
+                               "[Percent]":  0.26324655893264504,
+                               "[Mkr]":  0.335344,
+                               "[Case]":  3
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1746050400000)\/",
+                               "Kunder[Kundbransch]":  "Hotell",
+                               "[Current]":  2876317,
+                               "[Previous]":  2623583,
+                               "[Delta]":  252734,
+                               "[Percent]":  0.096331619773416741,
+                               "[Mkr]":  0.252734,
+                               "[Case]":  3
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1746050400000)\/",
+                               "Kunder[Kundbransch]":  "Kontor",
+                               "[Current]":  1464434,
+                               "[Previous]":  1136668,
+                               "[Delta]":  327766,
+                               "[Percent]":  0.28835684650223287,
+                               "[Mkr]":  0.327766,
+                               "[Case]":  3
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1746050400000)\/",
+                               "Kunder[Kundbransch]":  "Livsmedel",
+                               "[Current]":  997271,
+                               "[Previous]":  814377,
+                               "[Delta]":  182894,
+                               "[Percent]":  0.22458148989964108,
+                               "[Mkr]":  0.182894,
+                               "[Case]":  3
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1746050400000)\/",
+                               "Kunder[Kundbransch]":  "Restaurang",
+                               "[Current]":  3999977,
+                               "[Previous]":  3468114,
+                               "[Delta]":  531863,
+                               "[Percent]":  0.15335799226899693,
+                               "[Mkr]":  0.531863,
+                               "[Case]":  3
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1748728800000)\/",
+                               "Kunder[Kundbransch]":  "Catering",
+                               "[Current]":  1805346,
+                               "[Previous]":  1478061,
+                               "[Delta]":  327285,
+                               "[Percent]":  0.22142861492184693,
+                               "[Mkr]":  0.327285,
+                               "[Case]":  3
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1748728800000)\/",
+                               "Kunder[Kundbransch]":  "Hotell",
+                               "[Current]":  3175223,
+                               "[Previous]":  2371431,
+                               "[Delta]":  803792,
+                               "[Percent]":  0.33894808661942938,
+                               "[Mkr]":  0.803792,
+                               "[Case]":  3
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1748728800000)\/",
+                               "Kunder[Kundbransch]":  "Kontor",
+                               "[Current]":  1445809,
+                               "[Previous]":  1239131,
+                               "[Delta]":  206678,
+                               "[Percent]":  0.16679269584894577,
+                               "[Mkr]":  0.206678,
+                               "[Case]":  3
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1748728800000)\/",
+                               "Kunder[Kundbransch]":  "Livsmedel",
+                               "[Current]":  1050079,
+                               "[Previous]":  791569,
+                               "[Delta]":  258510,
+                               "[Percent]":  0.3265792369332301,
+                               "[Mkr]":  0.25851,
+                               "[Case]":  3
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1748728800000)\/",
+                               "Kunder[Kundbransch]":  "Restaurang",
+                               "[Current]":  4351575,
+                               "[Previous]":  3522694,
+                               "[Delta]":  828881,
+                               "[Percent]":  0.2352974740354967,
+                               "[Mkr]":  0.828881,
+                               "[Case]":  3
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1751320800000)\/",
+                               "Kunder[Kundbransch]":  "Catering",
+                               "[Current]":  1747601,
+                               "[Previous]":  1107681,
+                               "[Delta]":  639920,
+                               "[Percent]":  0.57771145302663851,
+                               "[Mkr]":  0.63992,
+                               "[Case]":  3
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1751320800000)\/",
+                               "Kunder[Kundbransch]":  "Hotell",
+                               "[Current]":  3379839,
+                               "[Previous]":  1732865,
+                               "[Delta]":  1646974,
+                               "[Percent]":  0.95043410767717051,
+                               "[Mkr]":  1.646974,
+                               "[Case]":  3
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1751320800000)\/",
+                               "Kunder[Kundbransch]":  "Kontor",
+                               "[Current]":  1491639,
+                               "[Previous]":  879351,
+                               "[Delta]":  612288,
+                               "[Percent]":  0.69629533599211235,
+                               "[Mkr]":  0.612288,
+                               "[Case]":  3
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1751320800000)\/",
+                               "Kunder[Kundbransch]":  "Livsmedel",
+                               "[Current]":  1083841,
+                               "[Previous]":  628609,
+                               "[Delta]":  455232,
+                               "[Percent]":  0.72418944049480682,
+                               "[Mkr]":  0.455232,
+                               "[Case]":  3
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1751320800000)\/",
+                               "Kunder[Kundbransch]":  "Restaurang",
+                               "[Current]":  4208999,
+                               "[Previous]":  2638960,
+                               "[Delta]":  1570039,
+                               "[Percent]":  0.59494611513626583,
+                               "[Mkr]":  1.570039,
+                               "[Case]":  3
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1753999200000)\/",
+                               "Kunder[Kundbransch]":  "Catering",
+                               "[Current]":  1714440,
+                               "[Previous]":  1310856,
+                               "[Delta]":  403584,
+                               "[Percent]":  0.30787821087899814,
+                               "[Mkr]":  0.403584,
+                               "[Case]":  3
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1753999200000)\/",
+                               "Kunder[Kundbransch]":  "Hotell",
+                               "[Current]":  3171353,
+                               "[Previous]":  2176317,
+                               "[Delta]":  995036,
+                               "[Percent]":  0.45721096696850688,
+                               "[Mkr]":  0.995036,
+                               "[Case]":  3
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1753999200000)\/",
+                               "Kunder[Kundbransch]":  "Kontor",
+                               "[Current]":  1658660,
+                               "[Previous]":  1100489,
+                               "[Delta]":  558171,
+                               "[Percent]":  0.50720270716018057,
+                               "[Mkr]":  0.558171,
+                               "[Case]":  3
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1753999200000)\/",
+                               "Kunder[Kundbransch]":  "Livsmedel",
+                               "[Current]":  1164759,
+                               "[Previous]":  868667,
+                               "[Delta]":  296092,
+                               "[Percent]":  0.34085788915660431,
+                               "[Mkr]":  0.296092,
+                               "[Case]":  3
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1753999200000)\/",
+                               "Kunder[Kundbransch]":  "Restaurang",
+                               "[Current]":  5209349,
+                               "[Previous]":  3428965,
+                               "[Delta]":  1780384,
+                               "[Percent]":  0.519219064644871,
+                               "[Mkr]":  1.780384,
+                               "[Case]":  3
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1756677600000)\/",
+                               "Kunder[Kundbransch]":  "Catering",
+                               "[Current]":  2041071,
+                               "[Previous]":  1541288,
+                               "[Delta]":  499783,
+                               "[Percent]":  0.32426321362393012,
+                               "[Mkr]":  0.499783,
+                               "[Case]":  3
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1756677600000)\/",
+                               "Kunder[Kundbransch]":  "Hotell",
+                               "[Current]":  3920393,
+                               "[Previous]":  2452255,
+                               "[Delta]":  1468138,
+                               "[Percent]":  0.59868896179230957,
+                               "[Mkr]":  1.468138,
+                               "[Case]":  3
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1756677600000)\/",
+                               "Kunder[Kundbransch]":  "Kontor",
+                               "[Current]":  1616370,
+                               "[Previous]":  1176368,
+                               "[Delta]":  440002,
+                               "[Percent]":  0.37403431579233709,
+                               "[Mkr]":  0.440002,
+                               "[Case]":  3
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1756677600000)\/",
+                               "Kunder[Kundbransch]":  "Livsmedel",
+                               "[Current]":  1154736,
+                               "[Previous]":  752387,
+                               "[Delta]":  402349,
+                               "[Percent]":  0.53476335981350021,
+                               "[Mkr]":  0.402349,
+                               "[Case]":  3
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1756677600000)\/",
+                               "Kunder[Kundbransch]":  "Restaurang",
+                               "[Current]":  4940971,
+                               "[Previous]":  3825646,
+                               "[Delta]":  1115325,
+                               "[Percent]":  0.29153899759674573,
+                               "[Mkr]":  1.115325,
+                               "[Case]":  3
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1759269600000)\/",
+                               "Kunder[Kundbransch]":  "Catering",
+                               "[Current]":  1272942,
+                               "[Previous]":  1095978,
+                               "[Delta]":  176964,
+                               "[Percent]":  0.16146674477042422,
+                               "[Mkr]":  0.176964,
+                               "[Case]":  3
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1759269600000)\/",
+                               "Kunder[Kundbransch]":  "Hotell",
+                               "[Current]":  2333230,
+                               "[Previous]":  1940942,
+                               "[Delta]":  392288,
+                               "[Percent]":  0.20211217027608244,
+                               "[Mkr]":  0.392288,
+                               "[Case]":  3
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1759269600000)\/",
+                               "Kunder[Kundbransch]":  "Kontor",
+                               "[Current]":  1202520,
+                               "[Previous]":  956195,
+                               "[Delta]":  246325,
+                               "[Percent]":  0.25760958800244721,
+                               "[Mkr]":  0.246325,
+                               "[Case]":  3
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1759269600000)\/",
+                               "Kunder[Kundbransch]":  "Livsmedel",
+                               "[Current]":  732099,
+                               "[Previous]":  696668,
+                               "[Delta]":  35431,
+                               "[Percent]":  0.05085779740134469,
+                               "[Mkr]":  0.035431,
+                               "[Case]":  3
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1759269600000)\/",
+                               "Kunder[Kundbransch]":  "Restaurang",
+                               "[Current]":  3235861,
+                               "[Previous]":  2860025,
+                               "[Delta]":  375836,
+                               "[Percent]":  0.13141004012202689,
+                               "[Mkr]":  0.375836,
+                               "[Case]":  3
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1761951600000)\/",
+                               "Kunder[Kundbransch]":  "Catering",
+                               "[Current]":  1273883,
+                               "[Previous]":  1012878,
+                               "[Delta]":  261005,
+                               "[Percent]":  0.25768651308449786,
+                               "[Mkr]":  0.261005,
+                               "[Case]":  3
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1761951600000)\/",
+                               "Kunder[Kundbransch]":  "Hotell",
+                               "[Current]":  1938508,
+                               "[Previous]":  1793423,
+                               "[Delta]":  145085,
+                               "[Percent]":  0.0808983714383054,
+                               "[Mkr]":  0.145085,
+                               "[Case]":  3
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1761951600000)\/",
+                               "Kunder[Kundbransch]":  "Kontor",
+                               "[Current]":  980642,
+                               "[Previous]":  828815,
+                               "[Delta]":  151827,
+                               "[Percent]":  0.1831856324994118,
+                               "[Mkr]":  0.151827,
+                               "[Case]":  3
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1761951600000)\/",
+                               "Kunder[Kundbransch]":  "Livsmedel",
+                               "[Current]":  754249,
+                               "[Previous]":  618804,
+                               "[Delta]":  135445,
+                               "[Percent]":  0.2188819076799762,
+                               "[Mkr]":  0.135445,
+                               "[Case]":  3
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1761951600000)\/",
+                               "Kunder[Kundbransch]":  "Restaurang",
+                               "[Current]":  2951704,
+                               "[Previous]":  2540907,
+                               "[Delta]":  410797,
+                               "[Percent]":  0.16167337096556467,
+                               "[Mkr]":  0.410797,
+                               "[Case]":  3
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1764543600000)\/",
+                               "Kunder[Kundbransch]":  "Catering",
+                               "[Current]":  1291272,
+                               "[Previous]":  1229077,
+                               "[Delta]":  62195,
+                               "[Percent]":  0.050603013480847822,
+                               "[Mkr]":  0.062195,
+                               "[Case]":  3
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1764543600000)\/",
+                               "Kunder[Kundbransch]":  "Hotell",
+                               "[Current]":  2466461,
+                               "[Previous]":  1822364,
+                               "[Delta]":  644097,
+                               "[Percent]":  0.35344036646904792,
+                               "[Mkr]":  0.644097,
+                               "[Case]":  3
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1764543600000)\/",
+                               "Kunder[Kundbransch]":  "Kontor",
+                               "[Current]":  969018,
+                               "[Previous]":  900203,
+                               "[Delta]":  68815,
+                               "[Percent]":  0.076443868771821466,
+                               "[Mkr]":  0.068815,
+                               "[Case]":  3
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1764543600000)\/",
+                               "Kunder[Kundbransch]":  "Livsmedel",
+                               "[Current]":  692767,
+                               "[Previous]":  696474,
+                               "[Delta]":  -3707,
+                               "[Percent]":  -0.0053225246024977239,
+                               "[Mkr]":  -0.003707,
+                               "[Case]":  3
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1764543600000)\/",
+                               "Kunder[Kundbransch]":  "Restaurang",
+                               "[Current]":  3357133,
+                               "[Previous]":  2901690,
+                               "[Delta]":  455443,
+                               "[Percent]":  0.15695784180942829,
+                               "[Mkr]":  0.455443,
+                               "[Case]":  3
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1704063600000)\/",
+                               "Kunder[Kundbransch]":  "Catering",
+                               "[Current]":  1312689,
+                               "[Previous]":  1023311,
+                               "[Delta]":  289378,
+                               "[Percent]":  0.2827859761108793,
+                               "[Mkr]":  0.289378,
+                               "[Case]":  4
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1704063600000)\/",
+                               "Kunder[Kundbransch]":  "Hotell",
+                               "[Current]":  2063357,
+                               "[Previous]":  1875485,
+                               "[Delta]":  187872,
+                               "[Percent]":  0.10017248871625206,
+                               "[Mkr]":  0.187872,
+                               "[Case]":  4
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1704063600000)\/",
+                               "Kunder[Kundbransch]":  "Kontor",
+                               "[Current]":  965448,
+                               "[Previous]":  914305,
+                               "[Delta]":  51143,
+                               "[Percent]":  0.055936476339952204,
+                               "[Mkr]":  0.051143,
+                               "[Case]":  4
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1704063600000)\/",
+                               "Kunder[Kundbransch]":  "Livsmedel",
+                               "[Current]":  685824,
+                               "[Previous]":  609657,
+                               "[Delta]":  76167,
+                               "[Percent]":  0.12493418430363303,
+                               "[Mkr]":  0.076167,
+                               "[Case]":  4
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1704063600000)\/",
+                               "Kunder[Kundbransch]":  "Restaurang",
+                               "[Current]":  2822796,
+                               "[Previous]":  2948242,
+                               "[Delta]":  -125446,
+                               "[Percent]":  -0.042549424368827256,
+                               "[Mkr]":  -0.125446,
+                               "[Case]":  4
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1706742000000)\/",
+                               "Kunder[Kundbransch]":  "Catering",
+                               "[Current]":  1182841,
+                               "[Previous]":  1062258,
+                               "[Delta]":  120583,
+                               "[Percent]":  0.11351573723144472,
+                               "[Mkr]":  0.120583,
+                               "[Case]":  4
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1706742000000)\/",
+                               "Kunder[Kundbransch]":  "Hotell",
+                               "[Current]":  1919994,
+                               "[Previous]":  1930895,
+                               "[Delta]":  -10901,
+                               "[Percent]":  -0.005645568505796535,
+                               "[Mkr]":  -0.010901,
+                               "[Case]":  4
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1706742000000)\/",
+                               "Kunder[Kundbransch]":  "Kontor",
+                               "[Current]":  957956,
+                               "[Previous]":  955617,
+                               "[Delta]":  2339,
+                               "[Percent]":  0.0024476333091604692,
+                               "[Mkr]":  0.002339,
+                               "[Case]":  4
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1706742000000)\/",
+                               "Kunder[Kundbransch]":  "Livsmedel",
+                               "[Current]":  705512,
+                               "[Previous]":  605282,
+                               "[Delta]":  100230,
+                               "[Percent]":  0.16559223634603376,
+                               "[Mkr]":  0.10023,
+                               "[Case]":  4
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1706742000000)\/",
+                               "Kunder[Kundbransch]":  "Restaurang",
+                               "[Current]":  2911283,
+                               "[Previous]":  2654948,
+                               "[Delta]":  256335,
+                               "[Percent]":  0.096549913595294523,
+                               "[Mkr]":  0.256335,
+                               "[Case]":  4
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1709247600000)\/",
+                               "Kunder[Kundbransch]":  "Catering",
+                               "[Current]":  1291372,
+                               "[Previous]":  1294100,
+                               "[Delta]":  -2728,
+                               "[Percent]":  -0.0021080287458465343,
+                               "[Mkr]":  -0.002728,
+                               "[Case]":  4
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1709247600000)\/",
+                               "Kunder[Kundbransch]":  "Hotell",
+                               "[Current]":  2246123,
+                               "[Previous]":  2233088,
+                               "[Delta]":  13035,
+                               "[Percent]":  0.0058372083858764185,
+                               "[Mkr]":  0.013035,
+                               "[Case]":  4
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1709247600000)\/",
+                               "Kunder[Kundbransch]":  "Kontor",
+                               "[Current]":  1124653,
+                               "[Previous]":  986076,
+                               "[Delta]":  138577,
+                               "[Percent]":  0.140533792527148,
+                               "[Mkr]":  0.138577,
+                               "[Case]":  4
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1709247600000)\/",
+                               "Kunder[Kundbransch]":  "Livsmedel",
+                               "[Current]":  777565,
+                               "[Previous]":  668536,
+                               "[Delta]":  109029,
+                               "[Percent]":  0.16308620627759762,
+                               "[Mkr]":  0.109029,
+                               "[Case]":  4
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1709247600000)\/",
+                               "Kunder[Kundbransch]":  "Restaurang",
+                               "[Current]":  3445581,
+                               "[Previous]":  3161200,
+                               "[Delta]":  284381,
+                               "[Percent]":  0.089959825382766034,
+                               "[Mkr]":  0.284381,
+                               "[Case]":  4
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1711922400000)\/",
+                               "Kunder[Kundbransch]":  "Catering",
+                               "[Current]":  1391931,
+                               "[Previous]":  1323293,
+                               "[Delta]":  68638,
+                               "[Percent]":  0.051869087193841423,
+                               "[Mkr]":  0.068638,
+                               "[Case]":  4
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1711922400000)\/",
+                               "Kunder[Kundbransch]":  "Hotell",
+                               "[Current]":  2240066,
+                               "[Previous]":  2109010,
+                               "[Delta]":  131056,
+                               "[Percent]":  0.062141004547157194,
+                               "[Mkr]":  0.131056,
+                               "[Case]":  4
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1711922400000)\/",
+                               "Kunder[Kundbransch]":  "Kontor",
+                               "[Current]":  1156864,
+                               "[Previous]":  1096304,
+                               "[Delta]":  60560,
+                               "[Percent]":  0.055240152366496882,
+                               "[Mkr]":  0.06056,
+                               "[Case]":  4
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1711922400000)\/",
+                               "Kunder[Kundbransch]":  "Livsmedel",
+                               "[Current]":  824460,
+                               "[Previous]":  752988,
+                               "[Delta]":  71472,
+                               "[Percent]":  0.094917847296371261,
+                               "[Mkr]":  0.071472,
+                               "[Case]":  4
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1711922400000)\/",
+                               "Kunder[Kundbransch]":  "Restaurang",
+                               "[Current]":  3358239,
+                               "[Previous]":  3142405,
+                               "[Delta]":  215834,
+                               "[Percent]":  0.068684335723752987,
+                               "[Mkr]":  0.215834,
+                               "[Case]":  4
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1714514400000)\/",
+                               "Kunder[Kundbransch]":  "Catering",
+                               "[Current]":  1273878,
+                               "[Previous]":  1482917,
+                               "[Delta]":  -209039,
+                               "[Percent]":  -0.14096473369716578,
+                               "[Mkr]":  -0.209039,
+                               "[Case]":  4
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1714514400000)\/",
+                               "Kunder[Kundbransch]":  "Hotell",
+                               "[Current]":  2623583,
+                               "[Previous]":  2134052,
+                               "[Delta]":  489531,
+                               "[Percent]":  0.22939038036561432,
+                               "[Mkr]":  0.489531,
+                               "[Case]":  4
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1714514400000)\/",
+                               "Kunder[Kundbransch]":  "Kontor",
+                               "[Current]":  1136668,
+                               "[Previous]":  1107809,
+                               "[Delta]":  28859,
+                               "[Percent]":  0.026050519539018008,
+                               "[Mkr]":  0.028859,
+                               "[Case]":  4
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1714514400000)\/",
+                               "Kunder[Kundbransch]":  "Livsmedel",
+                               "[Current]":  814377,
+                               "[Previous]":  718541,
+                               "[Delta]":  95836,
+                               "[Percent]":  0.133375826849129,
+                               "[Mkr]":  0.095836,
+                               "[Case]":  4
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1714514400000)\/",
+                               "Kunder[Kundbransch]":  "Restaurang",
+                               "[Current]":  3468114,
+                               "[Previous]":  3304681,
+                               "[Delta]":  163433,
+                               "[Percent]":  0.04945500034647822,
+                               "[Mkr]":  0.163433,
+                               "[Case]":  4
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1717192800000)\/",
+                               "Kunder[Kundbransch]":  "Catering",
+                               "[Current]":  1478061,
+                               "[Previous]":  1377985,
+                               "[Delta]":  100076,
+                               "[Percent]":  0.072624883434870488,
+                               "[Mkr]":  0.100076,
+                               "[Case]":  4
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1717192800000)\/",
+                               "Kunder[Kundbransch]":  "Hotell",
+                               "[Current]":  2371431,
+                               "[Previous]":  2362804,
+                               "[Delta]":  8627,
+                               "[Percent]":  0.0036511703890800928,
+                               "[Mkr]":  0.008627,
+                               "[Case]":  4
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1717192800000)\/",
+                               "Kunder[Kundbransch]":  "Kontor",
+                               "[Current]":  1239131,
+                               "[Previous]":  1036776,
+                               "[Delta]":  202355,
+                               "[Percent]":  0.19517716459485945,
+                               "[Mkr]":  0.202355,
+                               "[Case]":  4
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1717192800000)\/",
+                               "Kunder[Kundbransch]":  "Livsmedel",
+                               "[Current]":  791569,
+                               "[Previous]":  760781,
+                               "[Delta]":  30788,
+                               "[Percent]":  0.040468939155946321,
+                               "[Mkr]":  0.030788,
+                               "[Case]":  4
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1717192800000)\/",
+                               "Kunder[Kundbransch]":  "Restaurang",
+                               "[Current]":  3522694,
+                               "[Previous]":  3290654,
+                               "[Delta]":  232040,
+                               "[Percent]":  0.0705148581406614,
+                               "[Mkr]":  0.23204,
+                               "[Case]":  4
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1719784800000)\/",
+                               "Kunder[Kundbransch]":  "Catering",
+                               "[Current]":  1107681,
+                               "[Previous]":  996217,
+                               "[Delta]":  111464,
+                               "[Percent]":  0.11188726954067237,
+                               "[Mkr]":  0.111464,
+                               "[Case]":  4
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1719784800000)\/",
+                               "Kunder[Kundbransch]":  "Hotell",
+                               "[Current]":  1732865,
+                               "[Previous]":  1745754,
+                               "[Delta]":  -12889,
+                               "[Percent]":  -0.0073830562610768761,
+                               "[Mkr]":  -0.012889,
+                               "[Case]":  4
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1719784800000)\/",
+                               "Kunder[Kundbransch]":  "Kontor",
+                               "[Current]":  879351,
+                               "[Previous]":  821864,
+                               "[Delta]":  57487,
+                               "[Percent]":  0.069947095869876283,
+                               "[Mkr]":  0.057487,
+                               "[Case]":  4
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1719784800000)\/",
+                               "Kunder[Kundbransch]":  "Livsmedel",
+                               "[Current]":  628609,
+                               "[Previous]":  566945,
+                               "[Delta]":  61664,
+                               "[Percent]":  0.10876540052386034,
+                               "[Mkr]":  0.061664,
+                               "[Case]":  4
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1719784800000)\/",
+                               "Kunder[Kundbransch]":  "Restaurang",
+                               "[Current]":  2638960,
+                               "[Previous]":  2430220,
+                               "[Delta]":  208740,
+                               "[Percent]":  0.085893458205429957,
+                               "[Mkr]":  0.20874,
+                               "[Case]":  4
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1722463200000)\/",
+                               "Kunder[Kundbransch]":  "Catering",
+                               "[Current]":  1310856,
+                               "[Previous]":  1284556,
+                               "[Delta]":  26300,
+                               "[Percent]":  0.02047400035498647,
+                               "[Mkr]":  0.0263,
+                               "[Case]":  4
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1722463200000)\/",
+                               "Kunder[Kundbransch]":  "Hotell",
+                               "[Current]":  2176317,
+                               "[Previous]":  2212797,
+                               "[Delta]":  -36480,
+                               "[Percent]":  -0.016485922567682439,
+                               "[Mkr]":  -0.03648,
+                               "[Case]":  4
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1722463200000)\/",
+                               "Kunder[Kundbransch]":  "Kontor",
+                               "[Current]":  1100489,
+                               "[Previous]":  929381,
+                               "[Delta]":  171108,
+                               "[Percent]":  0.18410963856588416,
+                               "[Mkr]":  0.171108,
+                               "[Case]":  4
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1722463200000)\/",
+                               "Kunder[Kundbransch]":  "Livsmedel",
+                               "[Current]":  868667,
+                               "[Previous]":  760791,
+                               "[Delta]":  107876,
+                               "[Percent]":  0.14179452701201775,
+                               "[Mkr]":  0.107876,
+                               "[Case]":  4
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1722463200000)\/",
+                               "Kunder[Kundbransch]":  "Restaurang",
+                               "[Current]":  3428965,
+                               "[Previous]":  3155475,
+                               "[Delta]":  273490,
+                               "[Percent]":  0.0866715787638945,
+                               "[Mkr]":  0.27349,
+                               "[Case]":  4
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1725141600000)\/",
+                               "Kunder[Kundbransch]":  "Catering",
+                               "[Current]":  1541288,
+                               "[Previous]":  1525522,
+                               "[Delta]":  15766,
+                               "[Percent]":  0.01033482309661873,
+                               "[Mkr]":  0.015766,
+                               "[Case]":  4
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1725141600000)\/",
+                               "Kunder[Kundbransch]":  "Hotell",
+                               "[Current]":  2452255,
+                               "[Previous]":  2256388,
+                               "[Delta]":  195867,
+                               "[Percent]":  0.0868055494001918,
+                               "[Mkr]":  0.195867,
+                               "[Case]":  4
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1725141600000)\/",
+                               "Kunder[Kundbransch]":  "Kontor",
+                               "[Current]":  1176368,
+                               "[Previous]":  1090777,
+                               "[Delta]":  85591,
+                               "[Percent]":  0.078467917823716482,
+                               "[Mkr]":  0.085591,
+                               "[Case]":  4
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1725141600000)\/",
+                               "Kunder[Kundbransch]":  "Livsmedel",
+                               "[Current]":  752387,
+                               "[Previous]":  761005,
+                               "[Delta]":  -8618,
+                               "[Percent]":  -0.01132449852497684,
+                               "[Mkr]":  -0.008618,
+                               "[Case]":  4
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1725141600000)\/",
+                               "Kunder[Kundbransch]":  "Restaurang",
+                               "[Current]":  3825646,
+                               "[Previous]":  3519308,
+                               "[Delta]":  306338,
+                               "[Percent]":  0.087044953155563543,
+                               "[Mkr]":  0.306338,
+                               "[Case]":  4
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1727733600000)\/",
+                               "Kunder[Kundbransch]":  "Catering",
+                               "[Current]":  1095978,
+                               "[Previous]":  1348179,
+                               "[Delta]":  -252201,
+                               "[Percent]":  -0.18706788935297167,
+                               "[Mkr]":  -0.252201,
+                               "[Case]":  4
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1727733600000)\/",
+                               "Kunder[Kundbransch]":  "Hotell",
+                               "[Current]":  1940942,
+                               "[Previous]":  2414921,
+                               "[Delta]":  -473979,
+                               "[Percent]":  -0.19627101673305256,
+                               "[Mkr]":  -0.473979,
+                               "[Case]":  4
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1727733600000)\/",
+                               "Kunder[Kundbransch]":  "Kontor",
+                               "[Current]":  956195,
+                               "[Previous]":  1112510,
+                               "[Delta]":  -156315,
+                               "[Percent]":  -0.1405066021878455,
+                               "[Mkr]":  -0.156315,
+                               "[Case]":  4
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1727733600000)\/",
+                               "Kunder[Kundbransch]":  "Livsmedel",
+                               "[Current]":  696668,
+                               "[Previous]":  823231,
+                               "[Delta]":  -126563,
+                               "[Percent]":  -0.15373935140926423,
+                               "[Mkr]":  -0.126563,
+                               "[Case]":  4
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1727733600000)\/",
+                               "Kunder[Kundbransch]":  "Restaurang",
+                               "[Current]":  2860025,
+                               "[Previous]":  3130159,
+                               "[Delta]":  -270134,
+                               "[Percent]":  -0.086300408381810634,
+                               "[Mkr]":  -0.270134,
+                               "[Case]":  4
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1730415600000)\/",
+                               "Kunder[Kundbransch]":  "Catering",
+                               "[Current]":  1012878,
+                               "[Previous]":  1233961,
+                               "[Delta]":  -221083,
+                               "[Percent]":  -0.17916530587271395,
+                               "[Mkr]":  -0.221083,
+                               "[Case]":  4
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1730415600000)\/",
+                               "Kunder[Kundbransch]":  "Hotell",
+                               "[Current]":  1793423,
+                               "[Previous]":  1995213,
+                               "[Delta]":  -201790,
+                               "[Percent]":  -0.10113707158082871,
+                               "[Mkr]":  -0.20179,
+                               "[Case]":  4
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1730415600000)\/",
+                               "Kunder[Kundbransch]":  "Kontor",
+                               "[Current]":  828815,
+                               "[Previous]":  966074,
+                               "[Delta]":  -137259,
+                               "[Percent]":  -0.14207917819959962,
+                               "[Mkr]":  -0.137259,
+                               "[Case]":  4
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1730415600000)\/",
+                               "Kunder[Kundbransch]":  "Livsmedel",
+                               "[Current]":  618804,
+                               "[Previous]":  679448,
+                               "[Delta]":  -60644,
+                               "[Percent]":  -0.089254806843202125,
+                               "[Mkr]":  -0.060644,
+                               "[Case]":  4
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1730415600000)\/",
+                               "Kunder[Kundbransch]":  "Restaurang",
+                               "[Current]":  2540907,
+                               "[Previous]":  3468304,
+                               "[Delta]":  -927397,
+                               "[Percent]":  -0.26739207405117893,
+                               "[Mkr]":  -0.927397,
+                               "[Case]":  4
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1733007600000)\/",
+                               "Kunder[Kundbransch]":  "Catering",
+                               "[Current]":  1229077,
+                               "[Previous]":  1318427,
+                               "[Delta]":  -89350,
+                               "[Percent]":  -0.067770153372162439,
+                               "[Mkr]":  -0.08935,
+                               "[Case]":  4
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1733007600000)\/",
+                               "Kunder[Kundbransch]":  "Hotell",
+                               "[Current]":  1822364,
+                               "[Previous]":  2378386,
+                               "[Delta]":  -556022,
+                               "[Percent]":  -0.23378122811015536,
+                               "[Mkr]":  -0.556022,
+                               "[Case]":  4
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1733007600000)\/",
+                               "Kunder[Kundbransch]":  "Kontor",
+                               "[Current]":  900203,
+                               "[Previous]":  1067009,
+                               "[Delta]":  -166806,
+                               "[Percent]":  -0.1563304526953381,
+                               "[Mkr]":  -0.166806,
+                               "[Case]":  4
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1733007600000)\/",
+                               "Kunder[Kundbransch]":  "Livsmedel",
+                               "[Current]":  696474,
+                               "[Previous]":  720293,
+                               "[Delta]":  -23819,
+                               "[Percent]":  -0.0330684874072079,
+                               "[Mkr]":  -0.023819,
+                               "[Case]":  4
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1733007600000)\/",
+                               "Kunder[Kundbransch]":  "Restaurang",
+                               "[Current]":  2901690,
+                               "[Previous]":  3263885,
+                               "[Delta]":  -362195,
+                               "[Percent]":  -0.11097051519891173,
+                               "[Mkr]":  -0.362195,
+                               "[Case]":  4
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1788213600000)\/",
+                               "Kunder[Kundbransch]":  "Catering",
+                               "[Current]":  2578872,
+                               "[Previous]":  2041071,
+                               "[Delta]":  537801,
+                               "[Percent]":  0.26348960913167646,
+                               "[Mkr]":  0.537801,
+                               "[Case]":  5
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1788213600000)\/",
+                               "Kunder[Kundbransch]":  "Hotell",
+                               "[Current]":  4047449,
+                               "[Previous]":  3920393,
+                               "[Delta]":  127056,
+                               "[Percent]":  0.032408995730785151,
+                               "[Mkr]":  0.127056,
+                               "[Case]":  5
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1788213600000)\/",
+                               "Kunder[Kundbransch]":  "Kontor",
+                               "[Current]":  2092936,
+                               "[Previous]":  1616370,
+                               "[Delta]":  476566,
+                               "[Percent]":  0.29483719692892096,
+                               "[Mkr]":  0.476566,
+                               "[Case]":  5
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1788213600000)\/",
+                               "Kunder[Kundbransch]":  "Livsmedel",
+                               "[Current]":  1525825,
+                               "[Previous]":  1154736,
+                               "[Delta]":  371089,
+                               "[Percent]":  0.32136263180501862,
+                               "[Mkr]":  0.371089,
+                               "[Case]":  5
+                           },
+                           {
+                               "Trendaxel[Månadsstart]":  "\/Date(1788213600000)\/",
+                               "Kunder[Kundbransch]":  "Restaurang",
+                               "[Current]":  5650409,
+                               "[Previous]":  4940971,
+                               "[Delta]":  709438,
+                               "[Percent]":  0.14358270874287665,
+                               "[Mkr]":  0.709438,
+                               "[Case]":  5
+                           }
+                       ],
+                       [
+                           {
+                               "[Case]":  0,
+                               "[TopPercent]":  0.65,
+                               "[BottomPercent]":  -0.15000000000000002,
+                               "[TopMoney]":  1.5,
+                               "[BottomMoney]":  -0.30000000000000004
+                           },
+                           {
+                               "[Case]":  1,
+                               "[TopPercent]":  0.45,
+                               "[BottomPercent]":  -0.05,
+                               "[TopMoney]":  0.9,
+                               "[BottomMoney]":  -0.1
+                           },
+                           {
+                               "[Case]":  2,
+                               "[TopPercent]":  0.45,
+                               "[BottomPercent]":  -0.1,
+                               "[TopMoney]":  1.5,
+                               "[BottomMoney]":  -0.30000000000000004
+                           },
+                           {
+                               "[Case]":  3,
+                               "[TopPercent]":  1.05,
+                               "[BottomPercent]":  -0.2,
+                               "[TopMoney]":  2,
+                               "[BottomMoney]":  -0.30000000000000004
+                           },
+                           {
+                               "[Case]":  4,
+                               "[TopPercent]":  0.35000000000000003,
+                               "[BottomPercent]":  -0.35000000000000003,
+                               "[TopMoney]":  0.70000000000000007,
+                               "[BottomMoney]":  -1.1
+                           },
+                           {
+                               "[Case]":  5,
+                               "[TopPercent]":  0.4,
+                               "[BottomPercent]":  -0.05,
+                               "[TopMoney]":  0.9,
+                               "[BottomMoney]":  -0.1
+                           }
+                       ],
+                       [
+                           {
+                               "[CustomerKey]":  0,
+                               "[Industry]":  ""
+                           },
+                           {
+                               "[CustomerKey]":  1,
+                               "[Industry]":  "Restaurang"
+                           },
+                           {
+                               "[CustomerKey]":  2,
+                               "[Industry]":  "Hotell"
+                           },
+                           {
+                               "[CustomerKey]":  3,
+                               "[Industry]":  "Catering"
+                           },
+                           {
+                               "[CustomerKey]":  4,
+                               "[Industry]":  "Kontor"
+                           },
+                           {
+                               "[CustomerKey]":  5,
+                               "[Industry]":  "Livsmedel"
+                           },
+                           {
+                               "[CustomerKey]":  6,
+                               "[Industry]":  "Restaurang"
+                           },
+                           {
+                               "[CustomerKey]":  7,
+                               "[Industry]":  "Hotell"
+                           },
+                           {
+                               "[CustomerKey]":  8,
+                               "[Industry]":  "Catering"
+                           },
+                           {
+                               "[CustomerKey]":  9,
+                               "[Industry]":  "Kontor"
+                           },
+                           {
+                               "[CustomerKey]":  10,
+                               "[Industry]":  "Livsmedel"
+                           },
+                           {
+                               "[CustomerKey]":  11,
+                               "[Industry]":  "Restaurang"
+                           },
+                           {
+                               "[CustomerKey]":  12,
+                               "[Industry]":  "Hotell"
+                           },
+                           {
+                               "[CustomerKey]":  13,
+                               "[Industry]":  "Catering"
+                           },
+                           {
+                               "[CustomerKey]":  14,
+                               "[Industry]":  "Kontor"
+                           },
+                           {
+                               "[CustomerKey]":  15,
+                               "[Industry]":  "Livsmedel"
+                           },
+                           {
+                               "[CustomerKey]":  16,
+                               "[Industry]":  "Restaurang"
+                           },
+                           {
+                               "[CustomerKey]":  17,
+                               "[Industry]":  "Hotell"
+                           },
+                           {
+                               "[CustomerKey]":  18,
+                               "[Industry]":  "Catering"
+                           },
+                           {
+                               "[CustomerKey]":  19,
+                               "[Industry]":  "Kontor"
+                           },
+                           {
+                               "[CustomerKey]":  20,
+                               "[Industry]":  "Livsmedel"
+                           },
+                           {
+                               "[CustomerKey]":  21,
+                               "[Industry]":  "Restaurang"
+                           },
+                           {
+                               "[CustomerKey]":  22,
+                               "[Industry]":  "Hotell"
+                           },
+                           {
+                               "[CustomerKey]":  23,
+                               "[Industry]":  "Catering"
+                           },
+                           {
+                               "[CustomerKey]":  24,
+                               "[Industry]":  "Kontor"
+                           },
+                           {
+                               "[CustomerKey]":  25,
+                               "[Industry]":  "Livsmedel"
+                           },
+                           {
+                               "[CustomerKey]":  26,
+                               "[Industry]":  "Restaurang"
+                           },
+                           {
+                               "[CustomerKey]":  27,
+                               "[Industry]":  "Hotell"
+                           },
+                           {
+                               "[CustomerKey]":  28,
+                               "[Industry]":  "Catering"
+                           },
+                           {
+                               "[CustomerKey]":  29,
+                               "[Industry]":  "Kontor"
+                           },
+                           {
+                               "[CustomerKey]":  30,
+                               "[Industry]":  "Livsmedel"
+                           },
+                           {
+                               "[CustomerKey]":  31,
+                               "[Industry]":  "Restaurang"
+                           },
+                           {
+                               "[CustomerKey]":  32,
+                               "[Industry]":  "Hotell"
+                           },
+                           {
+                               "[CustomerKey]":  33,
+                               "[Industry]":  "Catering"
+                           },
+                           {
+                               "[CustomerKey]":  34,
+                               "[Industry]":  "Kontor"
+                           },
+                           {
+                               "[CustomerKey]":  35,
+                               "[Industry]":  "Livsmedel"
+                           },
+                           {
+                               "[CustomerKey]":  36,
+                               "[Industry]":  "Restaurang"
+                           },
+                           {
+                               "[CustomerKey]":  37,
+                               "[Industry]":  "Hotell"
+                           },
+                           {
+                               "[CustomerKey]":  38,
+                               "[Industry]":  "Catering"
+                           },
+                           {
+                               "[CustomerKey]":  39,
+                               "[Industry]":  "Kontor"
+                           },
+                           {
+                               "[CustomerKey]":  40,
+                               "[Industry]":  "Livsmedel"
+                           },
+                           {
+                               "[CustomerKey]":  41,
+                               "[Industry]":  "Restaurang"
+                           },
+                           {
+                               "[CustomerKey]":  42,
+                               "[Industry]":  "Hotell"
+                           },
+                           {
+                               "[CustomerKey]":  43,
+                               "[Industry]":  "Catering"
+                           },
+                           {
+                               "[CustomerKey]":  44,
+                               "[Industry]":  "Kontor"
+                           },
+                           {
+                               "[CustomerKey]":  45,
+                               "[Industry]":  "Livsmedel"
+                           },
+                           {
+                               "[CustomerKey]":  46,
+                               "[Industry]":  "Restaurang"
+                           },
+                           {
+                               "[CustomerKey]":  47,
+                               "[Industry]":  "Hotell"
+                           },
+                           {
+                               "[CustomerKey]":  48,
+                               "[Industry]":  "Catering"
+                           },
+                           {
+                               "[CustomerKey]":  49,
+                               "[Industry]":  "Kontor"
+                           },
+                           {
+                               "[CustomerKey]":  50,
+                               "[Industry]":  "Livsmedel"
+                           },
+                           {
+                               "[CustomerKey]":  51,
+                               "[Industry]":  "Restaurang"
+                           },
+                           {
+                               "[CustomerKey]":  52,
+                               "[Industry]":  "Hotell"
+                           },
+                           {
+                               "[CustomerKey]":  53,
+                               "[Industry]":  "Catering"
+                           },
+                           {
+                               "[CustomerKey]":  54,
+                               "[Industry]":  "Kontor"
+                           },
+                           {
+                               "[CustomerKey]":  55,
+                               "[Industry]":  "Livsmedel"
+                           },
+                           {
+                               "[CustomerKey]":  56,
+                               "[Industry]":  "Restaurang"
+                           },
+                           {
+                               "[CustomerKey]":  57,
+                               "[Industry]":  "Hotell"
+                           },
+                           {
+                               "[CustomerKey]":  58,
+                               "[Industry]":  "Catering"
+                           },
+                           {
+                               "[CustomerKey]":  59,
+                               "[Industry]":  "Kontor"
+                           },
+                           {
+                               "[CustomerKey]":  60,
+                               "[Industry]":  "Livsmedel"
+                           },
+                           {
+                               "[CustomerKey]":  61,
+                               "[Industry]":  "Restaurang"
+                           },
+                           {
+                               "[CustomerKey]":  62,
+                               "[Industry]":  "Hotell"
+                           },
+                           {
+                               "[CustomerKey]":  63,
+                               "[Industry]":  "Catering"
+                           },
+                           {
+                               "[CustomerKey]":  64,
+                               "[Industry]":  "Kontor"
+                           },
+                           {
+                               "[CustomerKey]":  65,
+                               "[Industry]":  "Livsmedel"
+                           },
+                           {
+                               "[CustomerKey]":  66,
+                               "[Industry]":  "Restaurang"
+                           },
+                           {
+                               "[CustomerKey]":  67,
+                               "[Industry]":  "Hotell"
+                           },
+                           {
+                               "[CustomerKey]":  68,
+                               "[Industry]":  "Catering"
+                           },
+                           {
+                               "[CustomerKey]":  69,
+                               "[Industry]":  "Kontor"
+                           },
+                           {
+                               "[CustomerKey]":  70,
+                               "[Industry]":  "Livsmedel"
+                           },
+                           {
+                               "[CustomerKey]":  71,
+                               "[Industry]":  "Restaurang"
+                           },
+                           {
+                               "[CustomerKey]":  72,
+                               "[Industry]":  "Hotell"
+                           },
+                           {
+                               "[CustomerKey]":  73,
+                               "[Industry]":  "Catering"
+                           },
+                           {
+                               "[CustomerKey]":  74,
+                               "[Industry]":  "Kontor"
+                           },
+                           {
+                               "[CustomerKey]":  75,
+                               "[Industry]":  "Livsmedel"
+                           },
+                           {
+                               "[CustomerKey]":  76,
+                               "[Industry]":  "Restaurang"
+                           },
+                           {
+                               "[CustomerKey]":  77,
+                               "[Industry]":  "Hotell"
+                           },
+                           {
+                               "[CustomerKey]":  78,
+                               "[Industry]":  "Catering"
+                           },
+                           {
+                               "[CustomerKey]":  79,
+                               "[Industry]":  "Kontor"
+                           },
+                           {
+                               "[CustomerKey]":  80,
+                               "[Industry]":  "Livsmedel"
+                           },
+                           {
+                               "[CustomerKey]":  81,
+                               "[Industry]":  "Restaurang"
+                           },
+                           {
+                               "[CustomerKey]":  82,
+                               "[Industry]":  "Hotell"
+                           },
+                           {
+                               "[CustomerKey]":  83,
+                               "[Industry]":  "Catering"
+                           },
+                           {
+                               "[CustomerKey]":  84,
+                               "[Industry]":  "Kontor"
+                           },
+                           {
+                               "[CustomerKey]":  85,
+                               "[Industry]":  "Livsmedel"
+                           },
+                           {
+                               "[CustomerKey]":  86,
+                               "[Industry]":  "Restaurang"
+                           },
+                           {
+                               "[CustomerKey]":  87,
+                               "[Industry]":  "Hotell"
+                           },
+                           {
+                               "[CustomerKey]":  88,
+                               "[Industry]":  "Catering"
+                           },
+                           {
+                               "[CustomerKey]":  89,
+                               "[Industry]":  "Kontor"
+                           },
+                           {
+                               "[CustomerKey]":  90,
+                               "[Industry]":  "Livsmedel"
+                           },
+                           {
+                               "[CustomerKey]":  91,
+                               "[Industry]":  "Restaurang"
+                           },
+                           {
+                               "[CustomerKey]":  92,
+                               "[Industry]":  "Hotell"
+                           },
+                           {
+                               "[CustomerKey]":  93,
+                               "[Industry]":  "Catering"
+                           },
+                           {
+                               "[CustomerKey]":  94,
+                               "[Industry]":  "Kontor"
+                           },
+                           {
+                               "[CustomerKey]":  95,
+                               "[Industry]":  "Livsmedel"
+                           },
+                           {
+                               "[CustomerKey]":  96,
+                               "[Industry]":  "Restaurang"
+                           },
+                           {
+                               "[CustomerKey]":  97,
+                               "[Industry]":  "Hotell"
+                           },
+                           {
+                               "[CustomerKey]":  98,
+                               "[Industry]":  "Catering"
+                           },
+                           {
+                               "[CustomerKey]":  99,
+                               "[Industry]":  "Kontor"
+                           },
+                           {
+                               "[CustomerKey]":  100,
+                               "[Industry]":  "Livsmedel"
+                           },
+                           {
+                               "[CustomerKey]":  101,
+                               "[Industry]":  "Restaurang"
+                           },
+                           {
+                               "[CustomerKey]":  102,
+                               "[Industry]":  "Hotell"
+                           },
+                           {
+                               "[CustomerKey]":  103,
+                               "[Industry]":  "Catering"
+                           },
+                           {
+                               "[CustomerKey]":  104,
+                               "[Industry]":  "Kontor"
+                           },
+                           {
+                               "[CustomerKey]":  105,
+                               "[Industry]":  "Livsmedel"
+                           },
+                           {
+                               "[CustomerKey]":  106,
+                               "[Industry]":  "Restaurang"
+                           },
+                           {
+                               "[CustomerKey]":  107,
+                               "[Industry]":  "Hotell"
+                           },
+                           {
+                               "[CustomerKey]":  108,
+                               "[Industry]":  "Catering"
+                           },
+                           {
+                               "[CustomerKey]":  109,
+                               "[Industry]":  "Kontor"
+                           },
+                           {
+                               "[CustomerKey]":  110,
+                               "[Industry]":  "Livsmedel"
+                           },
+                           {
+                               "[CustomerKey]":  111,
+                               "[Industry]":  "Restaurang"
+                           },
+                           {
+                               "[CustomerKey]":  112,
+                               "[Industry]":  "Hotell"
+                           },
+                           {
+                               "[CustomerKey]":  113,
+                               "[Industry]":  "Catering"
+                           },
+                           {
+                               "[CustomerKey]":  114,
+                               "[Industry]":  "Kontor"
+                           },
+                           {
+                               "[CustomerKey]":  115,
+                               "[Industry]":  "Livsmedel"
+                           },
+                           {
+                               "[CustomerKey]":  116,
+                               "[Industry]":  "Restaurang"
+                           },
+                           {
+                               "[CustomerKey]":  117,
+                               "[Industry]":  "Hotell"
+                           },
+                           {
+                               "[CustomerKey]":  118,
+                               "[Industry]":  "Catering"
+                           },
+                           {
+                               "[CustomerKey]":  119,
+                               "[Industry]":  "Kontor"
+                           },
+                           {
+                               "[CustomerKey]":  120,
+                               "[Industry]":  "Livsmedel"
+                           },
+                           {
+                               "[CustomerKey]":  121,
+                               "[Industry]":  "Restaurang"
+                           },
+                           {
+                               "[CustomerKey]":  122,
+                               "[Industry]":  "Hotell"
+                           },
+                           {
+                               "[CustomerKey]":  123,
+                               "[Industry]":  "Catering"
+                           },
+                           {
+                               "[CustomerKey]":  124,
+                               "[Industry]":  "Kontor"
+                           },
+                           {
+                               "[CustomerKey]":  125,
+                               "[Industry]":  "Livsmedel"
+                           },
+                           {
+                               "[CustomerKey]":  126,
+                               "[Industry]":  "Restaurang"
+                           },
+                           {
+                               "[CustomerKey]":  127,
+                               "[Industry]":  "Hotell"
+                           },
+                           {
+                               "[CustomerKey]":  128,
+                               "[Industry]":  "Catering"
+                           },
+                           {
+                               "[CustomerKey]":  129,
+                               "[Industry]":  "Kontor"
+                           },
+                           {
+                               "[CustomerKey]":  130,
+                               "[Industry]":  "Livsmedel"
+                           },
+                           {
+                               "[CustomerKey]":  131,
+                               "[Industry]":  "Restaurang"
+                           },
+                           {
+                               "[CustomerKey]":  132,
+                               "[Industry]":  "Hotell"
+                           },
+                           {
+                               "[CustomerKey]":  133,
+                               "[Industry]":  "Catering"
+                           },
+                           {
+                               "[CustomerKey]":  134,
+                               "[Industry]":  "Kontor"
+                           },
+                           {
+                               "[CustomerKey]":  135,
+                               "[Industry]":  "Livsmedel"
+                           },
+                           {
+                               "[CustomerKey]":  136,
+                               "[Industry]":  "Restaurang"
+                           },
+                           {
+                               "[CustomerKey]":  137,
+                               "[Industry]":  "Hotell"
+                           },
+                           {
+                               "[CustomerKey]":  138,
+                               "[Industry]":  "Catering"
+                           },
+                           {
+                               "[CustomerKey]":  139,
+                               "[Industry]":  "Kontor"
+                           },
+                           {
+                               "[CustomerKey]":  140,
+                               "[Industry]":  "Livsmedel"
+                           },
+                           {
+                               "[CustomerKey]":  141,
+                               "[Industry]":  "Restaurang"
+                           },
+                           {
+                               "[CustomerKey]":  142,
+                               "[Industry]":  "Hotell"
+                           },
+                           {
+                               "[CustomerKey]":  143,
+                               "[Industry]":  "Catering"
+                           },
+                           {
+                               "[CustomerKey]":  144,
+                               "[Industry]":  "Kontor"
+                           },
+                           {
+                               "[CustomerKey]":  145,
+                               "[Industry]":  "Livsmedel"
+                           },
+                           {
+                               "[CustomerKey]":  146,
+                               "[Industry]":  "Restaurang"
+                           },
+                           {
+                               "[CustomerKey]":  147,
+                               "[Industry]":  "Hotell"
+                           },
+                           {
+                               "[CustomerKey]":  148,
+                               "[Industry]":  "Catering"
+                           },
+                           {
+                               "[CustomerKey]":  149,
+                               "[Industry]":  "Kontor"
+                           },
+                           {
+                               "[CustomerKey]":  150,
+                               "[Industry]":  "Livsmedel"
+                           },
+                           {
+                               "[CustomerKey]":  151,
+                               "[Industry]":  "Restaurang"
+                           },
+                           {
+                               "[CustomerKey]":  152,
+                               "[Industry]":  "Hotell"
+                           },
+                           {
+                               "[CustomerKey]":  153,
+                               "[Industry]":  "Catering"
+                           },
+                           {
+                               "[CustomerKey]":  154,
+                               "[Industry]":  "Kontor"
+                           },
+                           {
+                               "[CustomerKey]":  155,
+                               "[Industry]":  "Livsmedel"
+                           },
+                           {
+                               "[CustomerKey]":  156,
+                               "[Industry]":  "Restaurang"
+                           },
+                           {
+                               "[CustomerKey]":  157,
+                               "[Industry]":  "Hotell"
+                           },
+                           {
+                               "[CustomerKey]":  158,
+                               "[Industry]":  "Catering"
+                           },
+                           {
+                               "[CustomerKey]":  159,
+                               "[Industry]":  "Kontor"
+                           },
+                           {
+                               "[CustomerKey]":  160,
+                               "[Industry]":  "Livsmedel"
+                           },
+                           {
+                               "[CustomerKey]":  161,
+                               "[Industry]":  "Restaurang"
+                           },
+                           {
+                               "[CustomerKey]":  162,
+                               "[Industry]":  "Hotell"
+                           },
+                           {
+                               "[CustomerKey]":  163,
+                               "[Industry]":  "Catering"
+                           },
+                           {
+                               "[CustomerKey]":  164,
+                               "[Industry]":  "Kontor"
+                           },
+                           {
+                               "[CustomerKey]":  165,
+                               "[Industry]":  "Livsmedel"
+                           },
+                           {
+                               "[CustomerKey]":  166,
+                               "[Industry]":  "Restaurang"
+                           },
+                           {
+                               "[CustomerKey]":  167,
+                               "[Industry]":  "Hotell"
+                           },
+                           {
+                               "[CustomerKey]":  168,
+                               "[Industry]":  "Catering"
+                           },
+                           {
+                               "[CustomerKey]":  169,
+                               "[Industry]":  "Kontor"
+                           },
+                           {
+                               "[CustomerKey]":  170,
+                               "[Industry]":  "Livsmedel"
+                           },
+                           {
+                               "[CustomerKey]":  171,
+                               "[Industry]":  "Restaurang"
+                           },
+                           {
+                               "[CustomerKey]":  172,
+                               "[Industry]":  "Hotell"
+                           },
+                           {
+                               "[CustomerKey]":  173,
+                               "[Industry]":  "Catering"
+                           },
+                           {
+                               "[CustomerKey]":  174,
+                               "[Industry]":  "Kontor"
+                           },
+                           {
+                               "[CustomerKey]":  175,
+                               "[Industry]":  "Livsmedel"
+                           },
+                           {
+                               "[CustomerKey]":  176,
+                               "[Industry]":  "Restaurang"
+                           },
+                           {
+                               "[CustomerKey]":  177,
+                               "[Industry]":  "Hotell"
+                           },
+                           {
+                               "[CustomerKey]":  178,
+                               "[Industry]":  "Catering"
+                           },
+                           {
+                               "[CustomerKey]":  179,
+                               "[Industry]":  "Kontor"
+                           },
+                           {
+                               "[CustomerKey]":  180,
+                               "[Industry]":  "Livsmedel"
+                           },
+                           {
+                               "[CustomerKey]":  181,
+                               "[Industry]":  "Restaurang"
+                           },
+                           {
+                               "[CustomerKey]":  182,
+                               "[Industry]":  "Hotell"
+                           },
+                           {
+                               "[CustomerKey]":  183,
+                               "[Industry]":  "Catering"
+                           },
+                           {
+                               "[CustomerKey]":  184,
+                               "[Industry]":  "Kontor"
+                           },
+                           {
+                               "[CustomerKey]":  185,
+                               "[Industry]":  "Livsmedel"
+                           },
+                           {
+                               "[CustomerKey]":  186,
+                               "[Industry]":  "Restaurang"
+                           },
+                           {
+                               "[CustomerKey]":  187,
+                               "[Industry]":  "Hotell"
+                           },
+                           {
+                               "[CustomerKey]":  188,
+                               "[Industry]":  "Catering"
+                           },
+                           {
+                               "[CustomerKey]":  189,
+                               "[Industry]":  "Kontor"
+                           },
+                           {
+                               "[CustomerKey]":  190,
+                               "[Industry]":  "Livsmedel"
+                           },
+                           {
+                               "[CustomerKey]":  191,
+                               "[Industry]":  "Restaurang"
+                           },
+                           {
+                               "[CustomerKey]":  192,
+                               "[Industry]":  "Hotell"
+                           },
+                           {
+                               "[CustomerKey]":  193,
+                               "[Industry]":  "Catering"
+                           },
+                           {
+                               "[CustomerKey]":  194,
+                               "[Industry]":  "Kontor"
+                           },
+                           {
+                               "[CustomerKey]":  195,
+                               "[Industry]":  "Livsmedel"
+                           },
+                           {
+                               "[CustomerKey]":  196,
+                               "[Industry]":  "Restaurang"
+                           },
+                           {
+                               "[CustomerKey]":  197,
+                               "[Industry]":  "Hotell"
+                           },
+                           {
+                               "[CustomerKey]":  198,
+                               "[Industry]":  "Catering"
+                           },
+                           {
+                               "[CustomerKey]":  199,
+                               "[Industry]":  "Kontor"
+                           },
+                           {
+                               "[CustomerKey]":  200,
+                               "[Industry]":  "Livsmedel"
+                           },
+                           {
+                               "[CustomerKey]":  201,
+                               "[Industry]":  "Restaurang"
+                           },
+                           {
+                               "[CustomerKey]":  202,
+                               "[Industry]":  "Hotell"
+                           },
+                           {
+                               "[CustomerKey]":  203,
+                               "[Industry]":  "Catering"
+                           },
+                           {
+                               "[CustomerKey]":  204,
+                               "[Industry]":  "Kontor"
+                           },
+                           {
+                               "[CustomerKey]":  205,
+                               "[Industry]":  "Livsmedel"
+                           },
+                           {
+                               "[CustomerKey]":  206,
+                               "[Industry]":  "Restaurang"
+                           },
+                           {
+                               "[CustomerKey]":  207,
+                               "[Industry]":  "Hotell"
+                           },
+                           {
+                               "[CustomerKey]":  208,
+                               "[Industry]":  "Catering"
+                           },
+                           {
+                               "[CustomerKey]":  209,
+                               "[Industry]":  "Kontor"
+                           },
+                           {
+                               "[CustomerKey]":  210,
+                               "[Industry]":  "Livsmedel"
+                           },
+                           {
+                               "[CustomerKey]":  211,
+                               "[Industry]":  "Restaurang"
+                           },
+                           {
+                               "[CustomerKey]":  212,
+                               "[Industry]":  "Hotell"
+                           },
+                           {
+                               "[CustomerKey]":  213,
+                               "[Industry]":  "Catering"
+                           },
+                           {
+                               "[CustomerKey]":  214,
+                               "[Industry]":  "Kontor"
+                           },
+                           {
+                               "[CustomerKey]":  215,
+                               "[Industry]":  "Livsmedel"
+                           },
+                           {
+                               "[CustomerKey]":  216,
+                               "[Industry]":  "Restaurang"
+                           },
+                           {
+                               "[CustomerKey]":  217,
+                               "[Industry]":  "Hotell"
+                           },
+                           {
+                               "[CustomerKey]":  218,
+                               "[Industry]":  "Catering"
+                           },
+                           {
+                               "[CustomerKey]":  219,
+                               "[Industry]":  "Kontor"
+                           },
+                           {
+                               "[CustomerKey]":  220,
+                               "[Industry]":  "Livsmedel"
+                           },
+                           {
+                               "[CustomerKey]":  221,
+                               "[Industry]":  "Restaurang"
+                           },
+                           {
+                               "[CustomerKey]":  222,
+                               "[Industry]":  "Hotell"
+                           },
+                           {
+                               "[CustomerKey]":  223,
+                               "[Industry]":  "Catering"
+                           },
+                           {
+                               "[CustomerKey]":  224,
+                               "[Industry]":  "Kontor"
+                           },
+                           {
+                               "[CustomerKey]":  225,
+                               "[Industry]":  "Livsmedel"
+                           },
+                           {
+                               "[CustomerKey]":  226,
+                               "[Industry]":  "Restaurang"
+                           },
+                           {
+                               "[CustomerKey]":  227,
+                               "[Industry]":  "Hotell"
+                           },
+                           {
+                               "[CustomerKey]":  228,
+                               "[Industry]":  "Catering"
+                           },
+                           {
+                               "[CustomerKey]":  229,
+                               "[Industry]":  "Kontor"
+                           },
+                           {
+                               "[CustomerKey]":  230,
+                               "[Industry]":  "Livsmedel"
+                           },
+                           {
+                               "[CustomerKey]":  231,
+                               "[Industry]":  "Restaurang"
+                           },
+                           {
+                               "[CustomerKey]":  232,
+                               "[Industry]":  "Hotell"
+                           },
+                           {
+                               "[CustomerKey]":  233,
+                               "[Industry]":  "Catering"
+                           },
+                           {
+                               "[CustomerKey]":  234,
+                               "[Industry]":  "Kontor"
+                           },
+                           {
+                               "[CustomerKey]":  235,
+                               "[Industry]":  "Livsmedel"
+                           },
+                           {
+                               "[CustomerKey]":  236,
+                               "[Industry]":  "Restaurang"
+                           },
+                           {
+                               "[CustomerKey]":  237,
+                               "[Industry]":  "Hotell"
+                           },
+                           {
+                               "[CustomerKey]":  238,
+                               "[Industry]":  "Catering"
+                           },
+                           {
+                               "[CustomerKey]":  239,
+                               "[Industry]":  "Kontor"
+                           },
+                           {
+                               "[CustomerKey]":  240,
+                               "[Industry]":  "Livsmedel"
+                           },
+                           {
+                               "[CustomerKey]":  241,
+                               "[Industry]":  "Restaurang"
+                           },
+                           {
+                               "[CustomerKey]":  242,
+                               "[Industry]":  "Hotell"
+                           },
+                           {
+                               "[CustomerKey]":  243,
+                               "[Industry]":  "Catering"
+                           },
+                           {
+                               "[CustomerKey]":  244,
+                               "[Industry]":  "Kontor"
+                           },
+                           {
+                               "[CustomerKey]":  245,
+                               "[Industry]":  "Livsmedel"
+                           },
+                           {
+                               "[CustomerKey]":  246,
+                               "[Industry]":  "Restaurang"
+                           },
+                           {
+                               "[CustomerKey]":  247,
+                               "[Industry]":  "Hotell"
+                           },
+                           {
+                               "[CustomerKey]":  248,
+                               "[Industry]":  "Catering"
+                           },
+                           {
+                               "[CustomerKey]":  249,
+                               "[Industry]":  "Kontor"
+                           },
+                           {
+                               "[CustomerKey]":  250,
+                               "[Industry]":  "Livsmedel"
+                           },
+                           {
+                               "[CustomerKey]":  251,
+                               "[Industry]":  "Restaurang"
+                           },
+                           {
+                               "[CustomerKey]":  252,
+                               "[Industry]":  "Hotell"
+                           },
+                           {
+                               "[CustomerKey]":  253,
+                               "[Industry]":  "Catering"
+                           },
+                           {
+                               "[CustomerKey]":  254,
+                               "[Industry]":  "Kontor"
+                           },
+                           {
+                               "[CustomerKey]":  255,
+                               "[Industry]":  "Livsmedel"
+                           },
+                           {
+                               "[CustomerKey]":  256,
+                               "[Industry]":  "Restaurang"
+                           },
+                           {
+                               "[CustomerKey]":  257,
+                               "[Industry]":  "Hotell"
+                           },
+                           {
+                               "[CustomerKey]":  258,
+                               "[Industry]":  "Catering"
+                           },
+                           {
+                               "[CustomerKey]":  259,
+                               "[Industry]":  "Kontor"
+                           },
+                           {
+                               "[CustomerKey]":  260,
+                               "[Industry]":  "Livsmedel"
+                           },
+                           {
+                               "[CustomerKey]":  261,
+                               "[Industry]":  "Restaurang"
+                           },
+                           {
+                               "[CustomerKey]":  262,
+                               "[Industry]":  "Hotell"
+                           },
+                           {
+                               "[CustomerKey]":  263,
+                               "[Industry]":  "Catering"
+                           },
+                           {
+                               "[CustomerKey]":  264,
+                               "[Industry]":  "Kontor"
+                           },
+                           {
+                               "[CustomerKey]":  265,
+                               "[Industry]":  "Livsmedel"
+                           },
+                           {
+                               "[CustomerKey]":  266,
+                               "[Industry]":  "Restaurang"
+                           },
+                           {
+                               "[CustomerKey]":  267,
+                               "[Industry]":  "Hotell"
+                           },
+                           {
+                               "[CustomerKey]":  268,
+                               "[Industry]":  "Catering"
+                           },
+                           {
+                               "[CustomerKey]":  269,
+                               "[Industry]":  "Kontor"
+                           },
+                           {
+                               "[CustomerKey]":  270,
+                               "[Industry]":  "Livsmedel"
+                           },
+                           {
+                               "[CustomerKey]":  271,
+                               "[Industry]":  "Restaurang"
+                           },
+                           {
+                               "[CustomerKey]":  272,
+                               "[Industry]":  "Hotell"
+                           },
+                           {
+                               "[CustomerKey]":  273,
+                               "[Industry]":  "Catering"
+                           },
+                           {
+                               "[CustomerKey]":  274,
+                               "[Industry]":  "Kontor"
+                           },
+                           {
+                               "[CustomerKey]":  275,
+                               "[Industry]":  "Livsmedel"
+                           },
+                           {
+                               "[CustomerKey]":  276,
+                               "[Industry]":  "Restaurang"
+                           },
+                           {
+                               "[CustomerKey]":  277,
+                               "[Industry]":  "Hotell"
+                           },
+                           {
+                               "[CustomerKey]":  278,
+                               "[Industry]":  "Catering"
+                           },
+                           {
+                               "[CustomerKey]":  279,
+                               "[Industry]":  "Kontor"
+                           },
+                           {
+                               "[CustomerKey]":  280,
+                               "[Industry]":  "Livsmedel"
+                           },
+                           {
+                               "[CustomerKey]":  281,
+                               "[Industry]":  "Restaurang"
+                           },
+                           {
+                               "[CustomerKey]":  282,
+                               "[Industry]":  "Hotell"
+                           },
+                           {
+                               "[CustomerKey]":  283,
+                               "[Industry]":  "Catering"
+                           },
+                           {
+                               "[CustomerKey]":  284,
+                               "[Industry]":  "Kontor"
+                           },
+                           {
+                               "[CustomerKey]":  285,
+                               "[Industry]":  "Livsmedel"
+                           },
+                           {
+                               "[CustomerKey]":  286,
+                               "[Industry]":  "Restaurang"
+                           },
+                           {
+                               "[CustomerKey]":  287,
+                               "[Industry]":  "Hotell"
+                           },
+                           {
+                               "[CustomerKey]":  288,
+                               "[Industry]":  "Catering"
+                           },
+                           {
+                               "[CustomerKey]":  289,
+                               "[Industry]":  "Kontor"
+                           },
+                           {
+                               "[CustomerKey]":  290,
+                               "[Industry]":  "Livsmedel"
+                           },
+                           {
+                               "[CustomerKey]":  291,
+                               "[Industry]":  "Restaurang"
+                           },
+                           {
+                               "[CustomerKey]":  292,
+                               "[Industry]":  "Hotell"
+                           },
+                           {
+                               "[CustomerKey]":  293,
+                               "[Industry]":  "Catering"
+                           },
+                           {
+                               "[CustomerKey]":  294,
+                               "[Industry]":  "Kontor"
+                           },
+                           {
+                               "[CustomerKey]":  295,
+                               "[Industry]":  "Livsmedel"
+                           },
+                           {
+                               "[CustomerKey]":  296,
+                               "[Industry]":  "Restaurang"
+                           },
+                           {
+                               "[CustomerKey]":  297,
+                               "[Industry]":  "Hotell"
+                           },
+                           {
+                               "[CustomerKey]":  298,
+                               "[Industry]":  "Catering"
+                           },
+                           {
+                               "[CustomerKey]":  299,
+                               "[Industry]":  "Kontor"
+                           },
+                           {
+                               "[CustomerKey]":  300,
+                               "[Industry]":  "Livsmedel"
+                           },
+                           {
+                               "[CustomerKey]":  301,
+                               "[Industry]":  "Restaurang"
+                           }
+                       ]
+                   ],
+    "source":  "Actual local Power BI Desktop DAX"
+}

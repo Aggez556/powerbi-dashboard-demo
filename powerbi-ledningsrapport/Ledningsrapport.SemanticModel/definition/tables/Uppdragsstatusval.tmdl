@@ -9,12 +9,10 @@ table Uppdragsstatusval
 		sourceColumn: Urval
 		sortByColumn: Visningsordning
 
-
-
-
 	column Visningsordning
 		dataType: int64
 		isHidden
+		lineageTag: 8d3aab51-1f15-4d46-95f2-a6fd9bbe0626
 		summarizeBy: none
 		sourceColumn: Visningsordning
 

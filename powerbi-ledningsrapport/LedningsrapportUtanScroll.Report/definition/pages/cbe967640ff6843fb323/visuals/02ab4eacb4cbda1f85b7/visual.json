@@ -1,12 +1,12 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "02ab4eacb4cbda1f85b7",
   "position": {
     "x": 312,
     "y": 584,
-    "width": 248,
-    "height": 28,
     "z": 130,
+    "height": 28,
+    "width": 248,
     "tabOrder": 130
   },
   "visual": {
@@ -19,15 +19,9 @@
               {
                 "textRuns": [
                   {
-                    "value": "Förberedda versioner från Excel",
-                    "textStyle": {
-                      "fontFamily": "Segoe UI",
-                      "fontSize": "10.5pt",
-                      "color": "#5B6B80"
-                    }
+                    "value": ""
                   }
-                ],
-                "horizontalTextAlignment": "left"
+                ]
               }
             ]
           }
@@ -210,5 +204,6 @@
         }
       ]
     }
-  }
+  },
+  "isHidden": true
 }

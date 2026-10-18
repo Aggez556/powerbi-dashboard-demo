@@ -1,0 +1,27 @@
+const fs=require('fs'),path=require('path');
+module.exports=function(){
+ const root=path.resolve(__dirname,'../powerbi-ledningsrapport/LedningsrapportUtanScroll.Report');
+ const file=path.join(root,'definition/pages/b4eda99cffce7ac04192/visuals/5e788998aa998709c7e1/visual.json');
+ const v=JSON.parse(fs.readFileSync(file,'utf8'));
+ const lit=x=>({expr:{Literal:{Value:typeof x==='boolean'?String(x):"'"+x.replace(/'/g,"''")+"'"}}});
+ const col=(p)=>({Column:{Expression:{SourceRef:{Entity:'Artiklar'}},Property:p}});
+ const mea=(p)=>({Measure:{Expression:{SourceRef:{Entity:'Försäljning'}},Property:p}});
+ const fields=[['Category',col('Kategori')],['Article',col('Artikel')],['Area',col('Områdesordning')],['Order',col('Kategoriordning')],['RevenueKrona',mea('Sälj omsättning')],['PreviousRevenueKrona',mea('Sälj omsättning föregående år')],['GrossProfitKrona',mea('Sälj bruttovinst')]];
+ const objects={vega:[{properties:{provider:lit('vega'),jsonSpec:lit(JSON.stringify(require('./sales-colored-rows-spec.cjs')())),jsonConfig:lit('{}'),renderMode:lit('svg'),enableSelection:lit(false),enableTooltips:lit(true),enableContextMenu:lit(false)}}]};
+ Object.assign(v.position,{y:864,height:304});
+ const container=v.visual.visualContainerObjects;
+ v.visual={visualType:'deneb7E15AEF80B9E4D4F8E12924291ECE89A',query:{queryState:{dataset:{projections:fields.map(([name,field])=>{const f=field.Column||field.Measure;return {field,queryRef:f.Expression.SourceRef.Entity+'.'+f.Property,nativeQueryRef:name,displayName:name};})}}},objects,visualContainerObjects:container};
+ delete v.visual.visualContainerObjects.stylePreset;
+ v.visual.visualContainerObjects.padding=[{properties:Object.fromEntries(['top','bottom','left','right'].map(k=>[k,{expr:{Literal:{Value:'0D'}}}]))}];
+ fs.writeFileSync(file,JSON.stringify(v,null,2)+'\n');
+ const legendFile=path.join(root,'definition/pages/b4eda99cffce7ac04192/visuals/c0a1b2c3d4e5f6071829/visual.json');
+ const legend=JSON.parse(fs.readFileSync(legendFile,'utf8'));
+ Object.assign(legend.position,{x:1486,y:816,width:390,height:28});
+ legend.visual.objects.general[0].properties.paragraphs=[{horizontalTextAlignment:'right',textRuns:[['● ','#0F3163'],['Produktförsäljning   ','#5B6B80'],['● ','#007956'],['Service   ','#5B6B80'],['● ','#4A6BCE'],['Bemanning','#5B6B80']].map(([value,color])=>({value,textStyle:{fontFamily:'Segoe UI',fontSize:'11pt',color}}))}];
+ fs.writeFileSync(legendFile,JSON.stringify(legend,null,2)+'\n');
+ const titleFile=path.join(root,'definition/pages/b4eda99cffce7ac04192/visuals/e6a321d9a2c8649ba24d/visual.json');
+ const title=JSON.parse(fs.readFileSync(titleFile,'utf8'));title.position.width=360;
+ fs.writeFileSync(titleFile,JSON.stringify(title,null,2)+'\n');
+ console.log('Installed full-width area-colored rows, expandable articles and a fixed total row.');
+};
+if(require.main===module)module.exports();
